@@ -1,0 +1,449 @@
+Description: 'The Ziblaxian Zirax Sect Homeworld '
+PlanetType: Alien
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 4
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: TarantulaHawksFew
+   Biome: [Organics]
+   Time: Always
+   MaxHeight: 255
+-  Name: DustDevil
+   Biome: [HeatBasin]
+   Time: Always
+   MaxHeight: 255
+SpecialEffectsGlobal:
+-  Name: ThunderAndLightning
+   Biome: [Any]
+   Time: Always
+   PlyDist: 75
+   Struct: Avoid
+   Lifetime: 600
+   SpawnY: 50
+-  Name: BirdFlocksCrows
+   Biome: [HeatBasin, CraterField]
+   Time: Always
+   PlyDist: 50
+   Struct: Avoid
+   Lifetime: 1000
+   SpawnY: 30
+-  Name: Clear
+   Type: Weather
+   Lifetime: 1500
+-  Name: Fog
+   Type: Weather
+   Delay: 12
+   Lifetime: 400
+-  Name: RainHeavy
+   Type: Weather
+   Delay: 8
+   Lifetime: 400
+AtmosphereColor: 0,0.5,0
+SkyColor: 0.68,1,0.18
+SkyHorizonColor: 0.87,0.72,0.53
+AtmosphereParams: [1, 1.6]
+LightZenithColor: 0.87,0.63,0.87
+LightHorizonColor: 0.65,0.16,0.16
+DayLightIntensity: 1.1000000000000001
+NightLightIntensity: 0.69999999999999996
+NightLightColor: 0.87,0.72,0.53
+SunFlare: EnvironmentalEffects/SunFlareWhite4
+AtmosphereFog: 0.90000000000000002
+FogCloudIntensity: 0.90000000000000002
+CloudsDensity: 1
+CloudsSharpness: 1
+CloudsBrightness: 0.29999999999999999
+CloudsOpacity: 0.20000000000000001
+CloudsZenithColor: 1,1,0
+CloudsHorizonColor: 1,0.87,0.68
+CloudsNightZenithColor: 1,0.41,0.71
+CloudsNightHorizonColor: 1,0.27,0
+WindSpeed: 6
+PvP: False
+BaseAttackCount: 1
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+RandomResources:
+-  Name: IronResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 4]
+   SizeMinMax: [4, 30]
+   DepthMinMax: [0, 1]
+   DroneProb: 0.10000000000000001
+   MaxDroneCount: 1
+-  Name: CopperResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 4]
+   SizeMinMax: [4, 30]
+   DepthMinMax: [0, 1]
+   DroneProb: 0.10000000000000001
+   MaxDroneCount: 1
+-  Name: SiliconResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 4]
+   SizeMinMax: [4, 30]
+   DepthMinMax: [0, 1]
+   DroneProb: 0.10000000000000001
+   MaxDroneCount: 1
+-  Name: PentaxidResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 7]
+   SizeMinMax: [4, 30]
+   DepthMinMax: [0, 1]
+   DroneProb: 0.10000000000000001
+   MaxDroneCount: 1
+-  Name: GoldResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 4]
+   SizeMinMax: [4, 30]
+   DepthMinMax: [0, 1]
+   DroneProb: 0.10000000000000001
+   MaxDroneCount: 1
+AsteroidResources:
+-  Name: IronResource
+   Threshold: 0.7
+   Amount: 0.7
+-  Name: CopperResource
+   Threshold: 0.7
+   Amount: 0.7
+-  Name: SiliconResource
+   Threshold: 0.7
+   Amount: 0.7
+-  Name: NeodymiumResource
+   Amount: 1750
+   InitialDelay: 1
+   Delay: 3
+   DespawnDelay: 6
+-  Name: ErestrumResource
+   Amount: 1750
+   InitialDelay: 1
+   Delay: 6
+   DespawnDelay: 9
+-  Name: ZascosiumResource
+   Amount: 1750
+   InitialDelay: 1
+   Delay: 6
+   DespawnDelay: 9
+-  Name: TitanResource
+   Amount: 5000
+   InitialDelay: 1
+   Delay: 6
+   DespawnDelay: 9
+POIs:
+   Random:
+   #ZiblaxCapital
+   -  GroupName: ZiblaxCapital
+      Faction: Zirax
+      DroneBaseSetup: DroneBaseSetup
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [5, 8]
+      ReserveCount: 2
+      NoShieldReload: True
+      IsCommandCenter: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: DarkSoundscape
+      -  Key: SI
+         Value: Off
+      -  Key: PersonalContainer
+         Value: RawDiamond
+      -  Key: RegenAfter
+         Value: 160
+      -  Key: StationInterface
+         Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1"
+  #HavenPortal
+   -  GroupName: HavenPortal
+      Faction: Admin
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [2, 4]
+      ReserveCount: 2
+      TroopTransport: False
+      SpawnPOIAvoid: [ZiblaxCapital]
+      SpawnPOIAvoidDistance: 1000
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: SunnySkies
+   #ZiblaxCapitalDefenses
+   -  GroupName: ZiraxTurret
+      Faction: Zirax
+      CountMinMax: [2, 5]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      SpawnPOINear: [ZiblaxCapital]
+      SpawnPOINearRange: [200, 400]
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiraxHoverTank
+      Faction: Zirax
+      CountMinMax: [1, 3]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      SpawnPOINear: [ZiblaxCapital]
+      SpawnPOINearRange: [100, 300]
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 120
+   #ZiblaxPOIs Around Planet
+   -  GroupName: ZiraxSmall
+      Faction: Zirax
+      CountMinMax: [3, 5]
+      IsImportant: True
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiraxMedium
+      Faction: Zirax
+      CountMinMax: [3, 5]
+      IsImportant: True
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: XenuShrine
+      Faction: Xenu
+      CountMinMax: [2, 3]
+      IsImportant: True
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiraxSupportTown
+      Faction: Zirax
+      CountMinMax: [2, 3]
+      IsImportant: True
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiraxSupportTrade
+      Faction: Zirax
+      CountMinMax: [2, 3]
+      IsImportant: True
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiraxSupportDepot
+      Faction: Zirax
+      CountMinMax: [2, 3]
+      IsImportant: True
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiblonCiv
+      Faction: Ziblon
+      CountMinMax: [2, 3]
+      IsImportant: True
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiblonCityAlt
+      Faction: Ziblon
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      SpawnPOIAvoid: [ZiblaxCapital]
+      SpawnPOIAvoidDistance: 1000
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiraxHoverTank
+      Faction: Zirax
+      CountMinMax: [1, 3]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      SpawnPOINear: [ZiblonCityAlt]
+      SpawnPOINearRange: [100, 300]
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: Artifacts
+      Faction: Alien
+      CountMinMax: [1, 6]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 120
+      - Key: Music
+        Value: EvilWhispering
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseSetup
+      DronesMinMax: [2, 3]
+      ReserveCount: 3
+      DroneProb: 1
+      Difficulty: 5
+      PresetStyle: 2
+      Stock:
+      -  Name: DroneLargeSlow02Cannon
+         Amount: 100000
+         Extra: 0
+      -  Name: EnemyDroneV2Plasma
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneSmallFast01Plasma
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneTroopsTransport
+         Amount: 100000
+         Extra: 2
+      -  Name: ZiraxMinigun
+         Amount: 100000
+         Extra: 3
+      -  Name: RipperDog
+         Amount: 100000
+         Extra: 3
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 10]
+      CenterX: -1500
+      Radius: 2000
+   -  DronesMinMax: [5, 10]
+      CenterX: 1500
+      Radius: 2000
+CreatureSpawning:
+-  Biomes: [Water]
+   Entities:
+   -  Name: Telluropods
+      Period: Always
+      Amount: 45
+      AllowInWater: True
+-  Biomes: [HeatBasin, Barren, CraterField]
+   Entities:
+   -  Name: Hexapods
+      Period: Always
+      Amount: 100
+      Color: "1,0,1"
+   -  Name: AlienBugs04
+      Period: Night
+      Amount: 50
+      Color: "1,0.41,0.71"
+   -  Name: WormDesertHerd
+      Period: Day
+      Amount: 50
+      Color: "0.94,0.5,0.5"
+-  Biomes: [Rifts, Mountains]
+   Entities:
+   -  Name: GolemsDesert
+      Period: Always
+      Amount: 75
+   -  Name: Spiders02
+      Period: Always
+      Amount: 75
+-  Biomes: [Organics]
+   Entities:
+   -  Name: Triceratopses
+      Period: Day
+      Amount: 70
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 30
+   -  Name: RaptorsNight
+      Period: Night
+      Amount: 30
+   -  Name: Spiders01
+      Period: Night
+      Amount: 60

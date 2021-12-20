@@ -1,0 +1,88 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.95.5.2902, Playfield Version: 12.0.0 [2810] (Alpha 12.0.0)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+PlanetSize:
+   SizeRange: [2]
+   SizeProbs: [1]
+PlanetAxis: [-10, 10]
+PlayfieldLevelOverride: [6, 8]
+TemperatureMin: [-120, -80]
+TemperatureMax: [-20, 10]
+TemperatureNight: [-60, -30]
+HumidityMin: [0, 0.25]
+HumidityMax: [0.25, 1]
+Radiation: [0, 10]
+LandWaterRatio: [0, 0.7]
+BaseLevel: [3, 4]
+SeaLevel: [0, 0]
+TerrainLevel: [225, 375]
+TerrainHeightMapMax: 512
+TemperatureHeightRange: [0, 125]
+TemperatureGradientRange: [0, 0.6]
+TemperatureNoiseFac: 0.10000000000000001
+HumidityHeightFac: [10, 10]
+GravityMinMax: [-4, -7]
+Water: [WaterBlue]
+Music: [DistantWorlds]
+BiomeStampTries: 100
+GroundShapes:
+- GroundShapeOcean_01
+Biomes:
+-  Name: Pole
+   Weather: PoleFog
+   IgnoreForcedBiome: True
+   Texture: [1, 1, 0]
+   UndergroundLayers:
+   - [1, 1]
+   - [2, -1]
+   - [3, 4]
+   SelectionCriteria:
+   - +Lat > 0.975
+   Color: [0, 0, 0]
+   Decorations:
+   - [RealRock1, 0.0001]
+   UndergroundLayersDefault: True
+-  Name: MoonCraters
+   Texture: [0, 4, 0.2]
+   SelectionCriteria:
+   - +Lat < 0.975
+   - +Lat > 0.75
+   Color: [0.41, 0.41, 0.41]
+   StampProb: 1
+   Stamps:
+   - CraterMeteorite_Large, 0.3
+   - CraterMoon_13, 0.3
+   - CraterMoon_7, 0.2
+   - CraterMoon_03, 0.2
+   StampTries: 50
+   Decorations:
+   - [RockResourceZascosium, 0.0001]
+   - [CrystalStraight, 0.001]
+-  Name: MoonRugged
+   AmbientSound: Mountains
+   Texture: [4, 0, 0.6]
+   SelectionCriteria:
+   - +Lat < 0.75
+   Color: [0.5, 0.5, 0]
+   StampProb: 1
+   Stamps:
+   - MountainSharp_01, 0.5
+   - MountainIce_01, 0.3
+   - Mountain_2_LO, 0.2
+   StampTries: 75
+   Decorations:
+   - [AlienPlantSpike1, 0.0001]
+   - [PromethiumStone, 0.0001]
+   - [RockGrey02Large, 0.0001]
+   - [RockFormationJ, 0.0001]
+   - [RockResourceErestrum, 0.0001]
+-  Name: MoonScape
+   Texture: [0, 4, 0.3]
+   SelectionCriteria:
+   - true
+   Color: [0.5, 0.5, 0.5]
+   Decorations:
+   - [RockGrey01Large, 0.0001]
+   - [RockResourceSathium, 0.0001]
+   - [RockResourceCobalt, 1E-05]

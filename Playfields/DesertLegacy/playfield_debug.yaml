@@ -1,0 +1,2000 @@
+---
+Seed: 0
+PlanetSize: 3
+PlanetAxis: 15
+TemperatureMinMax: [15, 65]
+TemperatureNight: 45
+HumidityMinMax: [0.02072796, 0.4354175]
+SeaLevel: 20
+TerrainLevel: 140
+BaseLevel: 50
+LandWaterRatio: 0
+TemperatureHeightRange: [154, 113]
+TemperatureGradientRange: [0.75, 0.03]
+TemperatureNoiseFac: 0.6
+HumidityHeightFac: [10, 390]
+HumidityNoiseFac: 0.97
+
+Gravity: -8.547514
+Radiation: 4.086627
+AtmosphereDensity: 0.9072091
+AtmosphereO2: 0.1558161
+AtmosphereBreathable: True
+GroundFogIntensity: 0
+GroundFogHeight: 0
+AtmosphereFog: 0
+PvP: True
+PlayfieldLevel: 0
+
+Water: WaterGreen
+Music: desert
+
+TerrainHeightMapMax: 490
+
+BiomeStampTries: 200
+
+Biome:
+   - BiomeClusterData:
+         - Name: Pole
+           IgnoreForcedBiome: True
+           Weather: PoleFog
+           Texture: [6, 5, 0.5, 2, 2, 0.5, -0.35]
+           SelectionCriteria:
+               - "+Lat > 0.975"
+           Color: [0.8, 0.7, 0.4]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: 0
+           AmbientSound: ArcticLowPlains
+           Decorations:
+           Grass:
+
+         - Name: Water
+           IgnoreForcedBiome: True
+           Texture: [1, 2, 0.01]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height < SeaLevel - 10"
+           Color: [0.1, 0.9, 1]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: 0
+           AmbientSound: Water
+           Decorations:
+               - [CoralBig08, 0.004, Plant]
+               - [FingerSponge03-01, 0.01, Free]
+               - [RealRock5Water, 0.001, Free]
+               - [RockGrey01Large, 0.001, Free]
+               - [RockGrey02Large, 0.001, Free]
+               - [Hydrilla2, 0.01, Plant]
+               - [AntlerTree, 0.01, Plant]
+               - [SeaWeed02-04, 0.04, Plant]
+               - [LavaPlant2, 0.06, Plant]
+               - [CrystalStraight, 0.03, Free]
+               - [RockResourceMagnesium, 0.006, Free]
+               - [PromethiumStone, 0.01]
+           Grass:
+               - Name: GrassGreen01
+                 Density: 0.8
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Seaweed02
+                 Density: 0.8
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Seaweed03
+                 Density: 0.05
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Seaweed05
+                 Density: 0.05
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: ShallowWater
+           IgnoreForcedBiome: True
+           Texture: [1, 10, 0.25]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height < SeaLevel"
+               - "Height > SeaLevel - 4"
+           Color: [0.4, 0.4, 1]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: 0
+           AmbientSound: SmallLake
+           Decorations:
+               - [OmicronPlant, 0.02, Plant]
+               - [FingerSponge03-01, 0.003, Free]
+               - [RockGrey01Large, 0.002, Free]
+               - [RockGrey02Large, 0.002, Free]
+           Grass:
+               - Name: GrassGreen01
+                 Density: 0.3
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Shore
+           IgnoreForcedBiome: True
+           Texture: [4, 2, 0.2]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height < SeaLevel + 2"
+           Color: [0, 1, 0]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: 0
+           AmbientSound: Oasis
+           Decorations:
+               - [RockGrey01Large, 0.001, Free]
+               - [RockGrey02Large, 0.001, Free]
+           Grass:
+               - Name: GrassBrown02c
+                 Density: 0.1
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Oasis
+           IgnoreForcedBiome: True
+           Texture: [7, 2, 0.25]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height < SeaLevel + 10"
+           Color: [0, 1, 0.4]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: -8
+           AmbientSound: DesertLowPlains
+           Decorations:
+               - [OmicronPalm, 0.001, Tree]
+               - [ChineseBanyan, 0.15, Tree]
+               - [ElderberryBushGreen, 0.02, BigPlant]
+               - [AkuaPlant2, 0.1, Tree]
+               - [OmicronPalmGreen, 0.1, Tree]
+               - [RiverBirch, 0.1, Tree]
+               - [OnionFlower, 0.02, BigPlant]
+               - [AlienDesertPlant, 0.02, BigPlant]
+               - [LeafPlant, 0.02, Plant]
+               - [AlienBush01, 0.02, BigPlant]
+               - [BushGreen01, 0.005, Plant]
+               - [BushGreen02, 0.005, Plant]
+               - [AlienPlant07, 0.001, Plant]
+               - [AlienPlant14, 0.001, Plant]
+               - [DeadTree01, 0.002, Free]
+               - [AridRockBrown01, 0.0003, Free]
+               - [AridRockBrown03, 0.0003, Free]
+               - [DesertPlant20, 0.001, Plant]
+               - [BigFlower, 0.01, Plant]
+               - [AlienPlantWorm1, 0.002, Free]
+               - [CobraLeavesPlant, 0.002, Free]
+               - [MushroomBellBrown01, 0.0001, Free]
+               - [PixieStalks, 0.001, Free]
+               - [InsanityPepper, 0.001, Free]
+           Grass:
+               - Name: GrassBrown04
+                 Density: 0.9
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: GrassBrown02c
+                 Density: 0.9
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Plant01Brown
+                 Density: 0.01
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: DustBowl
+           IgnoreForcedBiome: True
+           Texture: [1, 1, 0.5, 2, 9, 0.2, -0.1]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height < 55"
+           Color: [0.2, 0.3, 0.4]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: 0
+           AmbientSound: DesertLowPlains
+           Decorations:
+               - [Cactus2, 0.004, Free]
+               - [SkeletonMammothTorso, 0.00001, Free]
+               - [ElderberryBushRed, 0.002, Free]
+               - [DesertRock1, 0.002, Free]
+               - [DesertRock2, 0.002, Free]
+               - [Boulder1, 0.0005, BigPlant]
+               - [Boulder2, 0.0005, BigPlant]
+               - [Boulder3, 0.001, BigPlant]
+               - [Boulder4, 0.001, BigPlant]
+               - [Boulder5, 0.001, BigPlant]
+               - [RealRock1, 0.005, BigPlant]
+               - [RealRock7, 0.005, BigPlant]
+               - [RockGrey01Large, 0.15, Free]
+               - [RockGrey02Large, 0.01, Free]
+               - [AridRock03, 0.0003, Free]
+               - [RealRock8Dark, 0.002, Free]
+               - [BushGreen01, 0.003, Free]
+               - [Cactus1, 0.007, Plant]
+               - [OpuntiaCactus, 0.003, Plant]
+               - [AlienPlant07, 0.01, Free]
+               - [Snakeweed, 0.015, Free]
+               - [CornDogBush, 0.003, Plant]
+               - [RockResourceSilicon, 0.003, Free]
+               - [RockResourceIron, 0.0025, Free]
+               - [RockResourceMagnesium, 0.0001, Free]
+           Grass:
+               - Name: GrassBrown02b
+                 Density: 0.05
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Plant01Brown
+                 Density: 0.005
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: SandDrift
+           IgnoreForcedBiome: True
+           Texture: [5, 4, 0.55, 2, 10, 0.5, -0.2]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 190"
+               - "Height < 220"
+               - "Temperature > 15"
+               - "Temperature < 40"
+           Color: [0.6, 1, 0.6]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: 0
+           AmbientSound: ArcticLowPlains
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [Snakeweed, 0.003]
+               - [CornDogBush, 0.003]
+               - [CrystalStraight, 0.00002, Free]
+               - [RockResourceCopper, 0.0015, Free]
+           Grass:
+
+         - Name: Mountains
+           IgnoreForcedBiome: True
+           Texture: [3, 3, 0.7, 10, 10, 0.5, 0.2]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 270"
+           Color: [0.6, 0.6, 0.6]
+           StampProb: 0.9
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+               - _Valley_1, 0.9
+               - _Valley_2, 0.9
+               - _Valley_3, 0.9
+           Temperature: 0
+           AmbientSound: Mountains
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [Snakeweed, 0.003]
+               - [CrystalStraight, 0.00002, Free]
+           Grass:
+               - Name: GrassBrown06
+                 Density: 0.5
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Plant01Brown
+                 Density: 0.001
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Flowers
+           Texture: [2, 5, -0.43]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height < 130"
+               - "Height > 62"
+               - "Humidity > 0.3"
+               - "Temperature > 32"
+           Color: [1, 0.2, 0.7]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: -8
+           AmbientSound: DesertLowPlains
+           Decorations:
+               - [DesertRock1, 0.005, Free]
+               - [DesertRock2, 0.005, Free]
+               - [AridRockBrown01, 0.0005, Free]
+               - [AridRockBrown02, 0.0005, Free]
+               - [AridRockBrown03, 0.0005, Free]
+               - [AlienDesertPlant, 0.019, BigPlant]
+               - [OmicronPlant, 0.02, Bush]
+               - [RockGrey01Large, 0.0005]
+               - [RockGrey02Large, 0.0005]
+               - [Cactus3, 0.008, BigPlant]
+               - [MoundzTree, 0.001, Plant]
+               - [AlienPlantTube2, 0.04, Plant]
+               - [AlienPlant05, 0.04, Plant]
+               - [EggPlant, 0.02, Plant]
+               - [AlienPlantTube1, 0.01, Plant]
+               - [PulpitFungus, 0.003, Plant]
+               - [Snakeweed, 0.04, Plant]
+               - [OpuntiaCactus, 0.002, Plant]
+               - [CoralBig08, 0.005, Plant]
+               - [ClusterShroom, 0.02, Plant]
+               - [RockResourceCopper, 0.001, Free]
+               - [RockResourceSilicon, 0.001, Free]
+               - [RockResourceCobalt, 0.0008, Free]
+           Grass:
+               - Name: GrassType03Red
+                 Density: 0.8
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: GrassBrown04
+                 Density: 0.15
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: GrassBrown02c
+                 Density: 0.15
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Plant01Brown
+                 Density: 0.01
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: FlowersEdge
+           Texture: [2, 5, -0.65]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height < 130"
+               - "Height > 60"
+               - "Humidity > 0.25"
+               - "Temperature > 32"
+           Color: [0.9, 0.1, 0.6]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: -4
+           AmbientSound: DesertLowPlains
+           Decorations:
+               - [RockGrey01Large, 0.001]
+               - [RockGrey02Large, 0.001]
+               - [Snakeweed, 0.0006, Plant]
+           Grass:
+               - Name: GrassBrown04
+                 Density: 0.025
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: GrassBrown02c
+                 Density: 0.025
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Plant01Brown
+                 Density: 0.0005
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Dunes
+           Texture: [6, 5, -0.7]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Temperature > 19"
+               - "Height < 260"
+           Color: [1, 0.8, 0]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOff
+           StampTries: 15
+           Stamps:
+               - Mountain_10_ADD, 0.5
+               - DunesSea_01_BM2, 0.1
+           Temperature: 0
+           AmbientSound: ArcticLowPlains
+           Decorations:
+           Grass:
+
+         - Name: Sand
+           Texture: [4, 5, -0.7]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.9, 0.5, 0]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 300
+           Stamps:
+               - DunesDesert_01, 0.5
+           Temperature: 0
+           Decorations:
+               - [RockGrey01Large, 0.0001]
+               - [RockGrey02Large, 0.0001]
+               - [DesertRock1, 0.00028, Free]
+               - [DesertRock2, 0.00028, Free]
+               - [SkeletonMammothTorso, 0.000007, Free]
+               - [CoralBig08, 0.00001, Free]
+               - [RockResourceGold, 0.000008, Free]
+           Grass:
+               - Name: GrassBrown01
+                 Density: 0.002
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Plantation
+           Texture: [7, 2, -0.45]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0, 0.8, 0.3]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 3
+           Stamps:
+               - Plantation_01, 1
+           Temperature: -5
+           AmbientSound: DesertLowPlains
+           Decorations:
+               - [OmicronPalm, 0.001, Tree]
+               - [AlienPalmTree, 0.001, Tree]
+               - [WeepingPalm1, 0.005, Tree]
+               - [WeepingPalm3, 0.005, Tree]
+               - [ElderberryBushOrange, 0.001, BigPlant]
+               - [DesertRock1, 0.0001, Free]
+               - [DesertRock2, 0.0001, Free]
+               - [Boulder1, 0.0001, Free]
+               - [Boulder2, 0.0001, Free]
+               - [Boulder3, 0.0001, Free]
+               - [Boulder4, 0.0001, Free]
+               - [Boulder5, 0.0001, Free]
+               - [ModRocksBrown02, 0.0001, Free]
+               - [ModRocksBrown04, 0.0001, Free]
+               - [DeadTree02b, 0.0005, Plant]
+               - [RiverBirch, 0.009, Plant]
+               - [OmicronPlant, 0.005, Plant]
+               - [ElderberryBush, 0.08, BigPlant]
+               - [PulpitFungus, 0.04, Plant]
+               - [EggPlant, 0.03, Plant]
+               - [DesertPlant20, 0.01, Plant]
+               - [Snakeweed, 0.005, Plant]
+               - [Cactus1, 0.002, Plant]
+               - [CattailWinter, 0.01, Plant]
+           Grass:
+               - Name: GrassBrown04
+                 Density: 0.9
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: GrassBrown02c
+                 Density: 0.9
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Plant01Brown
+                 Density: 0.01
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Technical_Height
+           Texture: [0, 0, 0]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.3, 0, 0]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 7
+           Stamps:
+               - GroundShape_4_ADD, 0.9
+               - GroundShape_2_ADD, 0.5
+           Temperature: 0
+           Decorations:
+           Grass:
+
+         - Name: Plateau
+           Texture: [5, 6, 0.5, 2, 1, 0.5, -0.2]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 260"
+           Color: [0.6, 0.4, 0.4]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapAll
+           StampTries: 7
+           Stamps:
+               - MountainEroded_01_BM, 0.4
+               - MountainEroded_01b, 0.2
+           Temperature: 0
+           AmbientSound: DesertHighPlains
+           Decorations:
+               - [DesertRock1, 0.0002, Free]
+               - [DesertRock2, 0.0002, Free]
+               - [RockGrey01Large, 0.002]
+               - [RockGrey02Large, 0.002]
+               - [BushGreen01, 0.001, Plant]
+               - [BushGreen02, 0.001, Plant]
+               - [ElderberryBushRed, 0.0001, Free]
+               - [ClusterShroom, 0.002, Plant]
+               - [PulpitFungus, 0.002]
+               - [DesertPlant20, 0.003, Plant]
+               - [Snakeweed, 0.005, Plant]
+               - [RockResourceSilicon, 0.0005, Plant]
+               - [RockResourceCobalt, 0.0001, Plant]
+               - [RockResourceIron, 0.0005, Plant]
+           Grass:
+               - Name: GrassGreen06
+                 Density: 0.008
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: GrassBrown06
+                 Density: 0.1
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Plant01Brown
+                 Density: 0.001
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: LowMountains
+           Texture: [2, 1, 0.55, 10, 9, 0.5, 0.8]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 260"
+           Color: [0.4, 0.4, 0.4]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 15
+           Stamps:
+               - MountainPlateau_01, 0.2
+               - MountainPlateau_02, 0.4
+               - MountainPlateau_03, 0.4
+               - MountainPlateau_04, 0.2
+               - MountainPlateau_05, 0.2
+               - MountainPlateau_06, 0.4
+           Temperature: 0
+           AmbientSound: DesertCricket
+           Decorations:
+               - [DesertRock1, 0.002, Free]
+               - [DesertRock2, 0.002, Free]
+               - [RealRock1, 0.0003, Free]
+               - [RockGrey01Large, 0.0007, Plant]
+               - [RockGrey02Large, 0.0007, Plant]
+               - [Boulder1, 0.0001, Free]
+               - [Boulder2, 0.0001, Free]
+               - [Boulder3, 0.0001, Free]
+               - [Boulder4, 0.00008, Free]
+               - [Snakeweed, 0.001, Free]
+               - [Cactus1, 0.0008, Free]
+               - [CornDogBush, 0.004, Free]
+               - [CrystalStraight, 0.0002, Free]
+               - [RockResourceSilicon, 0.0006, Free]
+               - [RockResourceIron, 0.0004, Free]
+           Grass:
+               - Name: GrassBrown06
+                 Density: 0.1
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: LowMountains_1
+           Texture: [2, 1, 0.55, 10, 9, 0.5, -0.2]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 260"
+           Color: [0.4, 0.4, 0.4]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 12
+           Stamps:
+               - MountainPlateau_01_LO, 0.4
+               - MountainPlateau_02_LO, 0.2
+               - MountainPlateau_03_LO, 0.4
+               - MountainPlateau_04_LO, 0.2
+               - MountainPlateau_05_LO, 0.1
+               - MountainPlateau_06_LO, 0.4
+           Temperature: 0
+           AmbientSound: DesertCricket
+           Decorations:
+               - [DesertRock1, 0.002, Free]
+               - [DesertRock2, 0.002, Free]
+               - [RealRock1, 0.0003, Free]
+               - [RockGrey01Large, 0.0007, Plant]
+               - [RockGrey02Large, 0.0007, Plant]
+               - [Boulder1, 0.0001, Free]
+               - [Boulder2, 0.0001, Free]
+               - [Boulder3, 0.0001, Free]
+               - [Boulder4, 0.00008, Free]
+               - [Snakeweed, 0.001, Free]
+               - [Cactus1, 0.0008, Free]
+               - [CrystalStraight, 0.0002, Free]
+           Grass:
+               - Name: GrassBrown06
+                 Density: 0.1
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Nest
+           Texture: [0, 0, 0.2]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [1, 0, 0]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOff
+           StampTries: 60
+           Stamps:
+               - Nest_01, 0.5
+               - Nest_02, 0.5
+           Temperature: 0
+           AmbientSound: LavaFog
+           Decorations:
+               - [FingerSponge03-01, 0.4]
+               - [BulbShroomYoung, 0.03]
+               - [RockGrey01Large, 0.007]
+               - [ScalyPods, 0.7]
+               - [Mushroom2, 0.05]
+               - [BulbShroom, 0.05]
+               - [AlienPlantSpike1, 0.07]
+               - [CrystalsPyramidBlue, 1.2]
+               - [PromethiumStone, 0.01]
+               - [RockResourceMagnesium, 0.005]
+           Grass:
+               - Name: GrassBrown01
+                 Density: 0.5
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: GrassType01Red
+                 Density: 1
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: LargeCrater
+           Texture: [5, 6, 0.5, 2, 2, 0.5, -0.3]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 260"
+           Color: [0.8, 0.4, 0.4]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapAll
+           StampTries: 2
+           Stamps:
+               - CraterMoon_9, 0.8
+               - CraterMoon_12, 0.4
+           Temperature: 0
+           AmbientSound: DesertHighPlains
+           Decorations:
+               - [DesertRock1, 0.0002, Free]
+               - [DesertRock2, 0.0002, Free]
+               - [Boulder1, 0.01]
+               - [Boulder2, 0.01]
+               - [Boulder3, 0.01]
+               - [Boulder4, 0.015]
+               - [Boulder5, 0.015]
+               - [Snakeweed, 0.005, Plant]
+               - [CrystalStraight, 0.0003, Free]
+               - [CrystalsPyramidBlue, 0.00002, Free]
+               - [RockResourceSilicon, 0.001, Free]
+               - [RockResourceSathium, 0.0025, Free]
+               - [RockResourceNeodymium, 0.0005, Free]
+           Grass:
+               - Name: GrassBrown02
+                 Density: 0.01
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: GrassBrown02c
+                 Density: 0.025
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Wadi
+           Texture: [2, 3, 0.2, 10, 9, 0.5, 0.5]
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.4, 0.4, 0.6]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapAll
+           StampTries: 3
+           Stamps:
+               - RiftLava_2b_BM, 0.4
+           Temperature: 0
+           AmbientSound: DesertHighPlains
+           Decorations:
+               - [DesertRock1, 0.002, Free]
+               - [DesertRock2, 0.002, Free]
+               - [Boulder1, 0.01]
+               - [Boulder2, 0.01]
+               - [Boulder3, 0.01]
+               - [Boulder4, 0.015]
+               - [Boulder5, 0.015]
+               - [RockResourceGold, 0.0008, Free]
+           Grass:
+               - Name: GrassBrown06
+                 Density: 0.1
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Plains
+           Texture: [6, 5, 0.5, 2, 2, 0.5, -0.35]
+           UndergroundLayersDefault: True
+           UndergroundLayers:
+               - [11, 3]
+               - [9, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "true"
+           Color: [0.8, 0.7, 0.4]
+           StampProb: 0.3
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+               - Hollow_01_SUB, 0.4
+               - Pools_01, 0.4
+               - Spring_01, 0.6
+               - DunesSea_01_BM2, 0.1
+           Temperature: 0
+           AmbientSound: DesertLowPlains
+           Decorations:
+               - [Cactus2, 0.003, Free]
+               - [DesertRock1, 0.0008, Free]
+               - [DesertRock2, 0.0008, Free]
+               - [Boulder2, 0.00001, Free]
+               - [SkeletonMammothTorso, 0.00001, Free]
+               - [ModRocksBrown02, 0.00001, Free]
+               - [ModRocksBrown04, 0.00001, Free]
+               - [Cactus1, 0.007, Plant]
+               - [OpuntiaCactus, 0.003, Plant]
+               - [Snakeweed, 0.001, Plant]
+               - [CornDogBush, 0.002, Free]
+               - [RockResourceSilicon, 0.0005, Free]
+           Grass:
+               - Name: GrassBrown02b
+                 Density: 0.05
+                 YScale: 0
+                 Preset: GrassDense
+               - Name: Plant01Brown
+                 Density: 0.005
+                 YScale: 0
+                 Preset: GrassDense
+
+
+
+
+# Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
+
+Description: "Water is quite common in the universe, as life-enabling liquid, or at least as ice or vapor.\nHowever, not every planet is gifted with water. Some worlds get scorched by their home star, or maybe their magnetic field is too weak to stem against the push of the stellar wind.\n\nBut even this place of glaring sunshine has managed to keep some spots here or there..."
+
+PlanetType: Desert
+PlayfieldType: Planet
+Difficulty: 3
+
+LandClaimZone: Device
+
+# Special Effects 
+SpecialEffectsLocal:
+  - Name: FireFliesRed
+    Biome: [ Water, ShallowWater, Shore ]
+    Time: Night
+    MaxHeight: 40
+  - Name: FireFliesGreenFew
+    Biome: [ Plains, Sand, Flowers, FlowersEdge, Wadi, DustBowl ]
+    Time: Night
+    MaxHeight: 150
+  - Name: Pollen
+    Biome: [ Plains, DustBowl, Plantation, Flowers, FlowersEdge, Oasis ]
+    Time: Day
+    MaxHeight: 150
+  - Name: FireFliesGreen
+    Biome: [ Oasis, Plantation ]
+    Time: Night
+    MaxHeight: 150
+
+SpecialEffectsGlobal:
+# Weather
+  - Name: Clear
+    Type: Weather
+    InitialDelay: 0
+    Delay: 2
+    Lifetime: 1200
+  - Name: HeatWave
+    Type: Weather
+    InitialDelay: 48
+    Delay: 12
+    Lifetime: 1200
+  - Name: Wind
+    Type: Weather
+    InitialDelay: 20
+    Delay: 8
+    Lifetime: 500
+# Global Effects
+  - Name: BirdFlocksVultures
+    Biome: [ Dunes, Plains, Mountains, Water, Flowers, Plantation ]
+    Time: Day
+    InitialDelay: 2
+    Delay: 4
+    Lifetime: 600
+    PlyDist: 50
+    SpawnY: 40
+    Struct: True
+# ==================
+
+# Atmosphere and Sky
+AtmosphereEnabled: True
+AtmosphereColor: "0.77, 0.57, 0.44"  
+SkyColor: "0.90, 0.3, 0.3"
+SkyHorizonColor: "1, 0.2, 0"
+AtmosphereParams: [5, 1.5]       
+
+# Light
+DayLightIntensity: 1.4
+NightLightIntensity: 0.3
+LightZenithColor: "1, 0.7, 0.7"
+LightHorizonColor: "1, 0.5, 0"
+NightLightColor: "0.78, 0.78, 1"
+DayShadowStrength: 1
+NightShadowStrength: 1
+
+# Sun
+SunFlare: EnvironmentalEffects/SunFlareBlue
+
+# Fog
+AtmosphereFog: 0.35
+FogColor: "0.8, 0.4, 0.2"
+FogCloudIntensity: 0.8
+GroundFogIntensity: 0.05
+GroundFogHeight: 60
+
+# Clouds & Wind
+CloudsDensity: 0.1
+CloudsSharpness: 0.05
+CloudsOpacity: 0.3
+
+CloudsBrightness: 0.7
+CloudsZenithColor: "0.85, 0.36, 0.20" 
+CloudsHorizonColor: "0.2, 0.04, 0.03" 
+CloudsNightZenithColor: "0.03, 0.012, 0.012"
+CloudsNightHorizonColor: "0.03, 0.012, 0.012"
+
+WindSpeed: 3
+
+
+# ==============================================================
+
+### Resource Deposits
+RandomResources:
+    - Name: IronResource
+      Biome: [ Sand, Dunes ]
+      CountMinMax: [ 2, 3 ] 
+      IsScalingCount: True
+      SizeMinMax: [ 5, 7 ] 
+      DepthMinMax: [ 5, 15 ] 
+      DroneProb: 0.2 
+
+    - Name: CobaltResource
+      Biome: [ Wadi, Oasis, Flowers, Nest ]
+      IsImportant: True
+      CountMinMax: [ 1, 2 ]
+      IsScalingCount: True
+      SizeMinMax: [ 2, 5 ]
+      DepthMinMax: [ 10, 15 ] 
+      DroneProb: 0.3
+
+    - Name: CopperResource
+      Biome: [ Plateau ]
+      CountMinMax: [ 1, 3 ]
+      IsScalingCount: True
+      SizeMinMax: [ 4, 6 ]
+      DepthMinMax: [ 10, 15 ] 
+      DroneProb: 0.3
+
+    - Name: TitanResource
+      Biome: [ Sand, Dunes ]
+      CountMinMax: [ 3, 4 ]
+      IsScalingCount: True
+      SizeMinMax: [ 3, 6 ]
+      DepthMinMax: [ 15, 20 ] 
+      DroneProb: 0.8
+      MaxDroneCount: 4 
+
+    - Name: NeodymiumResource
+      Biome: [ Mountains, LowMountains, LowMountains_1 ]
+      CountMinMax: [ 4, 6 ]
+      IsScalingCount: True
+      SizeMinMax: [ 7, 9 ]
+      DepthMinMax: [ 10, 15 ] 
+      DroneProb: 0.8
+      MaxDroneCount: 4 
+      
+    - Name: PromethiumResource
+      Biome: [ Mountains, LowMountains, LowMountains_1 ]
+      CountMinMax: [ 2, 3 ]
+      IsScalingCount: True
+      SizeMinMax: [ 3, 5 ]
+      DroneProb: 0.8
+      DepthMinMax: [ 0, 1 ]
+      # DistTypeCylinder:
+        # MaxRadius: 13
+        # YVariance: 10
+
+
+### Resource Asteroids
+AsteroidResources:
+     - Name: IronResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: CobaltResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: CopperResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: TitanResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: NeodymiumResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: PromethiumResource
+       Threshold: 0.2
+       Amount: 0.2
+
+### POIs
+POIs:
+    Random:
+
+# Zirax drone base & perimeter defenses ====            # Forced to spawn on mountains. Allows different attack vectors
+        - GroupName: DroneBaseInvincible                  #CommandCenter
+          Faction: Zirax  
+          NoShieldReload: True
+          IsCommandCenter: True
+          DroneBaseSetup: DroneBaseSetup
+          Biome: [ Plateau, LowMountains, LowMountains_1, Mountains, SandDrift ]
+          IsImportant: True
+          CountMinMax: [ 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          SpawnResource: ["IronResource:0-1","PromethiumResource:0-1","CopperResource:0-1"]
+          SpawnResourceRange: [150,400]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - GroupName: RadosDefenceT1Sand
+          Faction: Rados  
+          NoShieldReload: True
+          CountMinMax: [ 2, 2 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: True
+          SpawnPOINear: [DroneBaseInvincible]
+          SpawnPOINearRange: [200, 300]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+# Farr MAIN World Type
+
+# MainSingle
+
+        - GroupName: FarrMainSingle               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+# Main Hub
+
+        - GroupName: FarrMain               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 1, 2 ]
+       #   SpawnPOIAvoid: [FarrMainSingle]
+       #   SpawnPOIAvoidDistance: 2000
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: FarrAuxT2               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 1, 2 ]
+       #   SpawnPOINear: [FarrMain]
+       #   SpawnPOINearRange: [300, 800]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: FarrAuxT1               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 1, 2 ]
+       #   SpawnPOINear: [FarrMain]
+       #   SpawnPOINearRange: [300, 800]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+           #Trading
+
+        - GroupName: FarrTradingT1               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 2, 4 ]
+       #   SpawnPOIAvoid: [FarrMainSingle]
+        #  SpawnPOIAvoidDistance: 2000
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+        # - GroupName: FarrAuxT1               
+          # BiomesExcluded: [ Radiated ]
+          # Faction: Farr    
+          # NoShieldReload: True
+          # IsImportant: True
+          # CountMinMax: [ 2, 4 ]
+          # SpawnPOINear: [FarrTradingT1]
+          # SpawnPOINearRange: [300, 800]
+          # DroneProb: 1.0
+          # DronesMinMax: [ 3, 5 ]
+          # ReserveCount: 5
+          # Properties: 
+            # - Key: Music
+              # Value: moonstone
+            # - Key: RegenAfter
+              # Value: 720 
+
+           #Patch AuxT3
+
+        - GroupName: FarrAuxT3               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 1, 2 ]
+      #    SpawnPOIAvoid: [FarrMainSingle]
+      #    SpawnPOIAvoidDistance: 2000
+          # SpawnPOINear: [FarrMain]
+          # SpawnPOINearRange: [300, 1200]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: FarrAuxT1               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 1, 3 ]
+          SpawnPOINear: [FarrAuxT3]
+          SpawnPOINearRange: [300, 800]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+           #Patch AuxT2
+
+        - GroupName: FarrAuxT2               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 1, 2 ]
+          SpawnPOIAvoid: [FarrMainSingle]
+          SpawnPOIAvoidDistance: 2000
+          # SpawnPOINear: [FarrMain]
+          # SpawnPOINearRange: [300, 1200]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: FarrAuxT1               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 1, 3 ]
+          SpawnPOINear: [FarrAuxT2]
+          SpawnPOINearRange: [300, 800]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+           #Settlement Hubs around Monuments
+
+        - GroupName: FarrMonument               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 2, 6 ]
+       #   SpawnPOIAvoid: [FarrMainSingle]
+       #   SpawnPOIAvoidDistance: 2000
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: FarrAuxT1               
+          BiomesExcluded: [ Radiated ]
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 3, 6 ]
+          SpawnPOINear: [FarrMonument]
+          SpawnPOINearRange: [300, 800]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+           #Defenses
+
+        - GroupName: FarrDefenseT2               
+          Faction: Farr    
+          NoShieldReload: True
+          IsImportant: True
+          IsScalingCount: True
+          CountMinMax: [ 8, 12 ]
+      #    SpawnPOINear: [FarrMain]
+      #    SpawnPOINearRange: [500, 1600]
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+           #Ruins
+
+        - GroupName: FarrRuinT1               
+          Faction: None    
+          NoShieldReload: True
+          IsImportant: True
+          IsScalingCount: True
+          CountMinMax: [ 4, 8 ]
+        #  SpawnPOINear: [FarrRuinT2]
+       #   SpawnPOINearRange: [300, 600]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          Properties: 
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 180 
+
+# Civilian foothold on this planet. ===
+
+          # Main Trading Station. Tied to Plantation spawn.
+        - GroupName: TS_Planet
+          Faction: Polaris  
+          NoShieldReload: True
+          IsImportant: True
+          Biome: [ Plantation ]
+          CountMinMax: [ 1, 1 ]
+          SpawnPOIAvoid: [DroneBaseInvincible]  
+          SpawnPOIAvoidDistance: 1000  
+          SpawnResource: ["IronResource:1-2"]
+          SpawnResourceRange: [150,400]
+          Properties: 
+            - Key: Music
+              Value: SunnySkies      
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: PolarisSettlement
+          Faction: Polaris  
+          NoShieldReload: True
+          IsImportant: True
+          BiomesExcluded: [ LowMountains, LowMountains_1, Mountains ]
+          CountMinMax: [ 2, 3 ]
+          SpawnPOINear: [TS_Planet]
+          SpawnPOINearRange: [150, 300]
+          Properties:
+            - Key: RegenAfter
+              Value: 180
+
+        - GroupName: JunkT1
+          Faction: None  
+          BiomesExcluded: [ LowMountains, LowMountains_1, Mountains ]
+          CountMinMax: [ 3, 4 ]
+          SpawnPOINear: [TS_Planet]
+          SpawnPOINearRange: [150, 450]
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 180
+
+        - GroupName: Ruins
+          Faction: Polaris  
+          NoShieldReload: True
+          BiomesExcluded: [ Plantation, LowMountains, LowMountains_1, Mountains ]
+          CountMinMax: [ 1, 2 ]
+          SpawnPOINear: [TS_Planet]
+          SpawnPOINearRange: [250, 500]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: Wreckage
+          Faction: Polaris  
+          NoShieldReload: True
+          BiomesExcluded: [ Plantation, LowMountains, LowMountains_1, Mountains ] 
+          CountMinMax: [ 1, 1 ]
+          SpawnPOINear: [TS_Planet]
+          SpawnPOINearRange: [400, 650]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+ 
+        - GroupName: PolarisDefenceSand
+          Faction: Polaris   
+          NoShieldReload: True 
+          BiomesExcluded: [ LowMountains, LowMountains_1, Mountains ]
+          CountMinMax: [ 5, 6 ]
+          SpawnPOINear: [PolarisMiningMain]
+          SpawnPOINearRange: [300, 400] 
+          Properties: 
+            - Key: RegenAfter
+              Value: 180
+ 
+# Scattered Polaris Settlements around planet  ===
+        - GroupName: PolarisSettlement
+          Faction: Polaris  
+          NoShieldReload: True
+          Biome: [ Plantation, Oasis ]
+          IsScalingCount: True
+          CountMinMax: [ 3, 4 ]        # Higher number of possible spawns than biomes available, to fill up all spots
+          DroneProb: 0.8 
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 3
+          TroopTransport: False
+          Properties: 
+            - Key: RegenAfter
+              Value: 180
+
+# Trader
+
+        - GroupName: TraderMain 
+          Faction: Trader    
+          NoShieldReload: True
+          CountMinMax: [ 0, 1 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: TraderSettlement
+          Faction: Trader    
+          NoShieldReload: True
+          CountMinMax: [ 3, 5 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: TraderDefenseHQ 
+          Faction: Trader    
+          NoShieldReload: True
+          CountMinMax: [ 1, 3 ]
+          SpawnPOINear: [TraderMain]
+          SpawnPOINearRange: [100,250]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: TraderDefenseA 
+          Faction: Trader    
+          NoShieldReload: True
+          CountMinMax: [ 1, 2 ]
+          SpawnPOINear: [TraderSettlement]
+          SpawnPOINearRange: [100,250]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 180 
+
+# Civilians
+
+        - GroupName: CivilMain
+          Territory: False
+          Faction: Colonists                    #primarily for outside the territories
+          NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          Properties:  
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: CivilSettlement 
+          Territory: False
+          Faction: Colonists                    #primarily for outside the territories
+          NoShieldReload: True
+          CountMinMax: [ 3, 4 ]
+          Properties:  
+            - Key: RegenAfter
+              Value: 180 
+
+        # - GroupName: CivilSettlement 
+        # #  Territory: False
+          # Faction: Main                    #fill up territories when CIV faction is not placed
+          # NoShieldReload: True
+          # CountMinMax: [ 3, 4 ]
+          # Properties:  
+            # - Key: RegenAfter
+              # Value: 720 
+
+# Kriel
+
+        - GroupName: KrielMain 
+          Faction: Kriel    
+          NoShieldReload: True
+          CountMinMax: [ 1, 2 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: KrielDefenseT1 
+          Faction: Kriel    
+          NoShieldReload: True
+          CountMinMax: [ 1, 4 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 180 
+
+# Pirates
+
+        - GroupName: PiratesAuxDesert 
+          Faction: Pirates    
+          NoShieldReload: True
+          CountMinMax: [ 0, 3 ]
+          Properties:  
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: PiratesDefenseT2Desert 
+          Faction: Pirates    
+          NoShieldReload: True 
+          CountMinMax: [ 1, 3 ]
+     #     IsImportant: True
+          Properties:  
+            - Key: RegenAfter
+              Value: 180 
+
+# Zirax Spaceport ===
+        - GroupName: PlanetVesselBase 
+          Faction: Zirax  
+          NoShieldReload: True
+          IsImportant: True
+          BiomesExcluded: [ Plains ]
+          PlanetVesselBaseSetup: PlanetVesselBaseSetup
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 3
+          TroopTransport: True
+          SpawnPOIAvoid: [TS_Planet]
+          SpawnPOIAvoidDistance: 1500
+          SpawnResource: ["NeodymiumResource:1-2"]
+          SpawnResourceRange: [80,100]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+          # Storage
+        - GroupName: RadosAuxT1Sand
+          Faction: Rados  
+          NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.9
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: False
+          SpawnPOINear: [PlanetVesselBase ]
+          SpawnPOINearRange: [100, 250]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+          
+          # Defence
+        - GroupName: RadosDefenceT1Sand
+          Faction: Rados  
+          NoShieldReload: True
+          CountMinMax: [ 2, 4 ]
+          DroneProb: 0.7
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: False
+          SpawnPOINear: [PlanetVesselBase]
+          SpawnPOINearRange: [250, 400]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: CrashedShip
+          Faction: None  
+          CountMinMax: [ 0, 1 ]
+          DroneProb: 0.3
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          SpawnPOINear: [PlanetVesselBase] 
+          SpawnPOINearRange: [500, 700]
+          Properties:
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 180 
+
+# Zirax mining facilities ===
+
+          # === Power station / Refinery cluster ===
+        - GroupName: RadosMainSand
+          Faction: Rados  
+          NoShieldReload: True
+          IsImportant: True
+          BiomesExcluded: [ Plains ]
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 2
+          TroopTransport: True
+          SpawnPOIAvoid: [TS_Planet]
+          SpawnPOIAvoidDistance: 1000
+          SpawnResource: ["PromethiumResource:1-2"]
+          SpawnResourceRange: [80,100]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: RadosAuxT1Sand
+          Faction: Rados  
+          NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1
+          DronesMinMax: [ 3, 3 ]
+          ReserveCount: 2
+          TroopTransport: False
+          SpawnPOINear: [RadosMainSand]
+          SpawnPOINearRange: [100, 250]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+          # Defence
+        - GroupName: RadosDefenceT1Sand
+          Faction: Rados  
+          NoShieldReload: True
+          CountMinMax: [ 1, 2 ]
+          DroneProb: 0.7
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: False
+          SpawnPOINear: [RadosMainSand]
+          SpawnPOINearRange: [250, 400]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+# Zirax military cluster ====
+
+        - GroupName: RadosBunker
+          Faction: Rados  
+          NoShieldReload: True
+          IsImportant: True
+          BiomesExcluded: [ Plains ] 
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 5
+          TroopTransport: True
+          SpawnPOINear: [PlanetVesselBase] 
+          SpawnPOINearRange: [1500, 2000]
+          SpawnResource: ["TitanResource:1-2"]
+          SpawnResourceRange: [80,100]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: RadosMainSand 
+          Faction: Rados  
+          NoShieldReload: True
+          BiomesExcluded: [ Plains ] 
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 2
+          TroopTransport: True
+          SpawnPOINear: [RadosBunker]
+          SpawnPOINearRange: [200, 250]
+          SpawnResource: ["PromethiumResource:1-1"]
+          SpawnResourceRange: [80,100]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: RadosAuxT1Sand
+          Faction: Rados  
+          NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1
+          DronesMinMax: [ 1, 3 ]
+          ReserveCount: 2
+          TroopTransport: True
+          SpawnPOINear: [RadosBunker]
+          SpawnPOINearRange: [150, 400]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: RadosDefenceT1Sand
+          Faction: Rados  
+          NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.7
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: False
+          SpawnPOINear: [RadosBunker]
+          SpawnPOINearRange: [300, 550]
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+        - GroupName: JunkT1
+          Faction: None  
+          CountMinMax: [ 1, 1 ]
+          SpawnPOINear: [RadosBunker]
+          SpawnPOINearRange: [300, 650]
+          Properties:
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 180 
+
+# === General Zirax outposts ===
+
+        - GroupName: RadosAuxT1Sand
+          Faction: Rados  
+          NoShieldReload: True
+          BiomesExcluded: [Plains]
+          CountMinMax: [ 5, 7 ]
+          IsScalingCount: True
+          DroneProb: 0.3
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: True
+          SpawnPOIAvoid: [TS_Planet]
+          SpawnPOIAvoidDistance: 1000
+          Properties: 
+            - Key: RegenAfter
+              Value: 180 
+
+# =========== Alien Artifacts ===========
+
+        - GroupName: Artifacts
+          Faction: TheLegacy  
+          BiomesExcluded: [ Plains]
+          CountMinMax: [ 1, 1 ]
+          IsScalingCount: True
+          Properties:  
+            - Key: Music
+              Value: EvilWhispering  
+            - Key: RegenAfter
+              Value: 180 
+
+    FixedPlayerStart:
+        - Mode: Creative
+          SubMode: Empty
+          Armor: ArmorLight
+          Pos: [ 0, 147, 0 ]
+          RotY: 160
+
+        - Mode: Creative
+          SubMode: Normal
+          Armor: ArmorLight
+          Pos: [ 0, 52, 0 ]
+          RotY: 30
+
+        - Mode: Debug
+          Pos: [ 0, 147, 0 ]
+          RotY: 160
+
+        - Mode: Survival
+          Spawn: EscapePod
+          # Spawn: Structure
+          # Structure: "Wreckage"
+          Armor: ArmorLight
+          Items: [ "SurvivalTent, Flashlight, AntibioticOintment:2, Bandages:2, StomachPills:2, PowerBar:2, EnergyDrink:1", "SurvivalTent, Flashlight, AntibioticOintment:1, Bandages:1, PowerBar:1", "SurvivalTent, Flashlight, Bandages:1", "#FreshStart: SurvivalTent, Flashlight, Bandages:1, WaterBottle: 1" ]
+
+# ==============================================================
+### Drones
+DroneBaseSetup: 
+    Random:
+        - GroupName: DroneBaseSetup
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          DroneProb: 1.0
+          Difficulty: 5
+          PresetStyle: 2
+
+          Stock:
+              - Name: DroneSmallFast01Minigun
+                Amount: 300
+                Extra: 0
+
+              - Name: DroneSmallFast01Rocket  
+                Amount: 100
+                Extra: 0  
+
+              - Name: DroneSmallFast01Minigun    # Base attack drones  
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneSmallAttackBase
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+
+              - Name: ZiraxMale
+                Amount: 500
+                Extra: 3
+
+              - Name: ZiraxRocket
+                Amount: 500
+                Extra: 3
+
+              - Name: RipperDog
+                Amount: 150
+                Extra: 3
+
+              - Name: Mechanoid
+                Amount: 300
+                Extra: 3
+
+                
+          PlanetVesselBase:
+              Name: PlanetVesselBaseSetup
+              Position3D: [ 0, 102, 0]
+              BaseType: PlanetVesselBase
+              KeyId: 0
+              PlanetVessel:
+                - Name: PVZiraxT2
+                  Mission: PlanetPatrol
+                  FixedMaxSpeed: 5
+                  RespawnDelay: 12
+
+                  RangePatrolTask:
+                    Position3D: [ 1500, 80, 0 ]
+                    Radius: 800
+                    DistToGround: 60
+
+                  AttackCVCircleAround:
+                    DistToTarget: 210
+                
+                
+# Drones that patrol on whole planet 
+# Type determined by stock of drone base (default drone - type = 0)
+DroneSpawning:
+    Random:
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: -5000
+          Radius: 3000
+
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: -5000
+          Radius: 3000
+
+
+# ==============================================================
+
+SpawnRateZones:
+   - SpawnAt: [TS_Planet]    #'Peaceful' zone
+     Radius: 400
+     RadiusRandom: 100
+     RateMultiplyerCenter: 0.0
+     RateMultiplyerEdge: 1.0
+     AffectEnemies: true
+     Color: "0.0, 1.0, 0.0, 0.7"
+
+SpawnZones:
+   - SpawnAt: [DroneBaseInvincible, RadosBunker ]
+     BiomesExcluded: [ LowMountains, LowMountains_1, Mountains ]
+     Radius: 500
+     RadiusRandom: 50
+     RateMultiplyerCenter: 1.0
+     RateMultiplyerEdge: 0.6
+     Color: "1.0, 1.0, 1.0, 1.0"
+     SpawnOnlyIfPoiIsAlien: true
+     Entities:
+       - Names: [ZiraxMinigunPatrol, ZiraxRocketPatrol, ZiraxShotgunPatrol, ZiraxMechanoidPatrol]
+         Biomes: [Any]
+         Amount: 200
+         Period: Always
+         DelayMinMax: [-1, -1]
+
+   - SpawnAt: [ PlanetVesselBase, RadosMain ]
+     BiomesExcluded: [ LowMountains, LowMountains_1, Mountains ]
+     Radius: 500
+     RadiusRandom: 25
+     RateMultiplyerCenter: 1.0
+     RateMultiplyerEdge: 0.6
+     Color: "1.0, 1.0, 1.0, 1.0" 
+     SpawnOnlyIfPoiIsAlien: true
+     Entities:
+       - Names: [ZiraxMinigunPatrol, ZiraxShotgunPatrol, ZiraxCrawlerPatrol]
+         Biomes: [Any]
+         Amount: 50
+         Period: Always
+         DelayMinMax: [-1, -1]
+
+   - SpawnAt: [ RadosAuxT1Sand ]
+     BiomesExcluded: [ LowMountains, LowMountains_1, Mountains ]
+     Radius: 100
+     RadiusRandom: 25
+     RateMultiplyerCenter: 0.3
+     RateMultiplyerEdge: 0
+     Color: "1.0, 1.0, 1.0, 1.0" 
+     SpawnOnlyIfPoiIsAlien: true
+     Entities:
+       - Names: [ZiraxShotgunPatrol, ZiraxCrawlerPatrol]
+         Biomes: [Any]
+         Amount: 10
+         Period: Always
+         DelayMinMax: [-1, -1]
+
+
+### Creatures
+CreatureSpawning:
+    - Biomes: [Nest] 
+      Entities:
+        - Name: Spiders03     
+          Period: Always
+          Amount: 100
+          DelayMinMax: [20, 24]
+          Color: "1.0, 1.0, 0.3"
+        - Name: Spiders02   
+          Period: Always
+          Amount: 400
+          DelayMinMax: [20, 24]
+          Color: "1.0, 1.0, 0.7"
+
+    - Biomes: [LargeCrater]
+      Entities:
+        - Name: AlienBugs01
+          Period: Day
+          Amount: 12
+          DelayMinMax: [20, 24]
+        - Name: Otyughs
+          Period: Night
+          Amount: 12
+          DelayMinMax: [20, 24]
+
+    - Biomes: [Wadi]
+      Entities:
+        - Name: CaveWormsGrey
+          Period: Always
+          Amount: 20
+          DelayMinMax: [20, 24]
+
+    - Biomes: [Oasis, Shore]
+      Entities:
+        - Name: Slimes
+          Period: Always
+          Amount: 20
+          Color: "1.0, 1.0, 0"
+          DelayMinMax: [20, 24]
+        - Name: AlienBugs01
+          Period: Always
+          Amount: 8
+          DelayMinMax: [20, 24]
+
+    - Biomes: [Flowers, FlowersEdge, Plantation]
+      Entities:
+        - Name: AlienBugs01
+          Period: Always
+          Amount: 10
+          DelayMinMax: [20, 24]
+        - Name: Spiders02
+          Period: Night
+          Amount: 8
+          DelayMinMax: [20, 24]
+        - Name: MegalonopsesBrown
+          Period: Day
+          Amount: 10
+          DelayMinMax: [20, 24]
+
+    - Biomes: [Dunes, Sand, Plains, Plateau, DustBowl]
+      Entities:
+        - Name: WormDesertHerd
+          Period: Always
+          Amount: 6
+          DelayMinMax: [20, 24]
+        - Name: GolemsDesert
+          Period: Night
+          Amount: 8
+          DelayMinMax: [20, 24]
+        - Name: MegalonopsesBrown
+          Period: Day
+          Amount: 10
+          DelayMinMax: [20, 24]
+          
+    - Biomes: [LowMountains, LowMountains_1, SandDrift]
+      Entities:
+        - Name: CaveWormsGrey
+          Period: Always
+          Amount: 8
+          DelayMinMax: [20, 24]
+        - Name: GolemsDesert
+          Period: Night
+          Amount: 6
+          DelayMinMax: [20, 24]
+
+
+
+
+Build: 3385

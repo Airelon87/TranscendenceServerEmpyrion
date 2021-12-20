@@ -1,0 +1,623 @@
+---
+Seed: 1
+PlanetSize: 3
+PlanetAxis: 15
+TemperatureMinMax: [65, 90]
+TemperatureNight: 180
+HumidityMinMax: [0.15, 0.35]
+SeaLevel: 0
+TerrainLevel: 184
+BaseLevel: 72
+LandWaterRatio: 0
+TemperatureHeightRange: [30, 200]
+TemperatureGradientRange: [0.75, 0.1]
+TemperatureNoiseFac: 0.5
+HumidityHeightFac: [0, 365]
+HumidityNoiseFac: 0.6
+
+Gravity: -5.87
+Radiation: 5.3
+AtmosphereDensity: 0.0
+AtmosphereO2: 0.0
+AtmosphereBreathable: False
+GroundFogIntensity: 0
+GroundFogHeight: 0
+AtmosphereFog: 0
+PvP: False
+PlayfieldLevel: 0
+
+Water: WaterBlue
+Music: BarrenMoon
+
+TerrainHeightMapMax: 490
+
+GroundShapes:
+   - GroundShape_3, 0.5
+
+BiomeStampTries: 20
+
+Biome:
+   - BiomeClusterData:
+         - Name: Pole
+           IgnoreForcedBiome: True
+           Weather: PoleFog
+           Texture: [10, 6, 0.5, 2, 7, 0.5, 0.02]
+           SelectionCriteria:
+               - "+Lat > 0.975"
+           Color: [0.6, 0.6, 0.6]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Decorations:
+           Grass:
+
+         - Name: Unknown
+           IgnoreForcedBiome: True
+           Texture: [11, 11, 0.2]
+           SelectionCriteria:
+               - "Height < 11"
+           Color: [0, 1, 0]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: -50
+           Radiation: -10
+           Decorations:
+               - [GlowTube01, 0.002]
+               - [KavaePlant, 0.002, Plant]
+               - [ScalyPods, 0.05, Plant]
+               - [CrystalStraight, 0.008]
+           Grass:
+
+         - Name: Mountains
+           IgnoreForcedBiome: True
+           Texture: [1, 6, 0.5, 2, 7, 0.8, 0.15]
+           UndergroundLayers:
+               - [1, 2]
+               - [10, 3]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height > 170"
+           Color: [0.7, 0.7, 0.7]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapAll
+           StampTries: 7
+           Stamps:
+               - Mountain_4a, 0.1
+               - Mountain_4b, 0.1
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+           Grass:
+
+         - Name: LargeCrater
+           IgnoreForcedBiome: True
+           Texture: [8, 9, 0.5, 3, 7, 0.5, 0.001]
+           UndergroundLayers:
+               - [9, 8]
+               - [10, 3]
+               - [9, 4]
+               - [10, 3]
+               - [9, 3]
+               - [10, 3]
+               - [9, 2]
+               - [10, 2]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "false"
+           Color: [0.7, 0.2, 0.2]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapAll
+           StampTries: 60
+           Stamps:
+               - CraterMoon_10, 0.05
+               - CraterMoon_11, 0.055
+               - CraterMoon_12, 0.019
+               - CraterMoon_13, 0.008
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [RockResourceIron, 0.0003, Free]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: RayCrater
+           IgnoreForcedBiome: True
+           Texture: [8, 9, 0.5, 3, 7, 0.5, 0.001]
+           UndergroundLayers:
+               - [9, 8]
+               - [10, 3]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "false"
+           Color: [0.8, 0.2, 0.6]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 30
+           Stamps:
+               - CraterMoon_14, 0.025
+               - CraterMoon_14b, 0.007
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: MareEdge
+           Texture: [0, 0, 0.5, 2, 7, 0.8, 0.5]
+           UndergroundLayers:
+               - [5, 30]
+               - [10, 2]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height < 108"
+               - "Height > 105"
+           Color: [0.1, 0.1, 0.3]
+           StampProb: 0.8
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapOther
+           StampTries: 0
+           Stamps:
+               - CraterMoon_1, 1
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: Mare
+           Texture: [4, 5, 0.5, 2, 7, 0.5, 0.5]
+           UndergroundLayers:
+               - [5, 30]
+               - [10, 2]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height < 108"
+               - "Height > 10"
+           Color: [0.3, 0.3, 0.3]
+           StampProb: 0.9
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+               - CraterMoon_1, 1
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [RockResourceCobalt, 0.00025, Free]
+               - [RockResourceSilicon, 0.0005, Free]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: SmallCrater_2
+           Texture: [9, 6, -0.4]
+           UndergroundLayers:
+               - [9, 5]
+               - [10, 3]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "false"
+           Color: [0.8, 0.3, 0.4]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOff
+           StampTries: 2200
+           Stamps:
+               - CraterMoon_2, 0.20
+               - CraterMoon_3, 0.30
+               - CraterMoon_4, 0.04
+               - CraterMoon_5, 0.10
+               - CraterMoon_6, 0.08
+               - CraterMoon_7, 0.02
+               - CraterMoon_8, 0.015
+               - CraterMoon_9, 0.004
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [CrystalStraight, 0.0001, Free]
+               - [CrystalStraight, 0.01, Tree]
+           Grass:
+
+         - Name: SmallCrater
+           Texture: [8, 9, 0.5, 3, 3, 0.5, 0.001]
+           UndergroundLayers:
+               - [9, 5]
+               - [10, 3]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "false"
+           Color: [0.9, 0.3, 0.3]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapAll
+           StampTries: 2200
+           Stamps:
+               - CraterMoon_2, 0.20
+               - CraterMoon_3, 0.30
+               - CraterMoon_4, 0.04
+               - CraterMoon_5, 0.10
+               - CraterMoon_6, 0.08
+               - CraterMoon_7, 0.02
+               - CraterMoon_8, 0.015
+               - CraterMoon_9, 0.004
+               - CraterMoon_10, 0.0007
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [RockResourceIron, 0.0003, Free]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: SmallCrater_1
+           Texture: [6, 6, 0]
+           UndergroundLayers:
+               - [9, 5]
+               - [10, 3]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "false"
+           Color: [0.9, 0.2, 0.2]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 9000
+           Stamps:
+               - CraterMoon_01, 1
+               - CraterMoon_02, 0.7
+               - CraterMoon_03, 0.4
+               - CraterMoon_1, 0.1
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [RockResourceIron, 0.001, Free]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: LowMountains
+           Texture: [1, 6, 0.5, 7, 7, 1, 0.25]
+           UndergroundLayers:
+               - [1, 3]
+               - [10, 3]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height > 155"
+           Color: [0.5, 0.5, 1]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Decorations:
+           Grass:
+
+         - Name: LowMountains_1
+           Texture: [0, 0, 0.5, 1, 6, 0.5, -0.4]
+           UndergroundLayers:
+               - [2, 5]
+               - [10, 3]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height > 150"
+           Color: [0.4, 0.4, 1]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Decorations:
+           Grass:
+
+         - Name: RegolithEdge
+           Texture: [0, 3, 0]
+           UndergroundLayers:
+               - [6, 8]
+               - [10, 2]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height > 140"
+           Color: [0.4, 0.4, 0.4]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+           Grass:
+
+         - Name: Regolith
+           Texture: [6, 0, 0]
+           UndergroundLayers:
+               - [6, 8]
+               - [10, 2]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height > 130"
+           Color: [0.5, 0.5, 0.5]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapAll
+           StampTries: 2
+           Stamps:
+               - CraterMoon_15, 0.7
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+           Grass:
+
+         - Name: Craters
+           Texture: [10, 0, 0.5, 6, 6, 0.5, -0.4]
+           UndergroundLayersDefault: True
+           UndergroundLayers:
+               - [9, 5]
+               - [10, 3]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "true"
+           Color: [0.6, 0.6, 0.6]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [RockResourceIron, 0.0002, Free]
+           Grass:
+
+
+
+
+# Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
+
+
+Description: "This barren rock carries its history on the surface: 
+\nCompletely solidified, and no atmosphere to remove tracks and shapes -
+\nAll encounters will be remembered."
+
+
+PlanetType: Barren
+PlayfieldType: Moon
+Difficulty: 2
+
+LandClaimZone: Device
+
+
+# Atmosphere and Sky
+AtmosphereEnabled: False
+
+# Light
+DayLightIntensity: 1.6
+NightLightIntensity: 0.7
+
+DayShadowStrength: 0.95
+
+# Sun
+SunFlare: EnvironmentalEffects/SunFlareWhiteMoon
+
+# ==============================================================
+
+### Resource Deposits
+RandomResources:
+    - Name: IronResource
+      IsScalingCount: True
+      CountMinMax: [ 3, 5 ]
+      SizeMinMax: [ 8, 13 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.3
+      MaxDroneCount: 1
+
+    - Name: SiliconResource
+      IsScalingCount: True
+      CountMinMax: [ 3, 5 ]
+      SizeMinMax: [ 8, 9 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.4
+
+    - Name: CopperResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 5, 6 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.7
+      MaxDroneCount: 1
+
+    - Name: CobaltResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 5, 6 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.7
+      MaxDroneCount: 1
+
+    - Name: MagnesiumResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 3, 4 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.7
+      MaxDroneCount: 1 
+
+    - Name: PromethiumResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 4 ]
+      SizeMinMax: [ 3, 6 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.7
+      MaxDroneCount: 1
+      DistTypeCylinder:
+        MaxRadius: 8
+        YVariance: 10
+
+    - Name: PentaxidResource
+      IsScalingCount: True
+      CountMinMax: [ 4, 5 ]
+      SizeMinMax: [ 2, 3 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.6
+      MaxDroneCount: 2
+      DistTypeCylinder:
+        MaxRadius: 5
+        YVariance: 10
+
+### Resource Asteroids
+AsteroidResources:
+     - Name: IronResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: SiliconResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: CopperResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: CobaltResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: MagnesiumResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: PromethiumResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: PentaxidResource
+       Threshold: 0.2
+       Amount: 0.2
+
+### POIs
+POIs:
+    Random:  
+        - GroupName: DroneBaseT1
+          Faction: Zirax  
+          DroneBaseSetup: DroneBaseSetup
+          CountMinMax: [ 0, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 4, 5 ] 
+          ReserveCount: 5
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+
+        - GroupName: CrashedShip    
+          Faction: None      
+          CountMinMax: [ 1, 1 ]
+          IsScalingCount: True
+          DroneProb: 1.0
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 4
+          TroopTransport: False
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 120
+
+        - GroupName: GhystAuxT1
+          Faction: Zirax  
+          CountMinMax: [ 3, 4 ]
+          IsScalingCount: True 
+          DroneProb: 0.7
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: False
+          SpawnResource: ["PentaxidResource:0-1"]
+          ResourceDistance: 400
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+
+    FixedPlayerStart:
+        - Mode: Debug
+          Pos: [ -596, 104, -1063 ]
+          RotY: 125
+
+        - Mode: Survival
+          Spawn: EscapePod
+          Armor: ArmorMedium
+
+### Drones
+DroneBaseSetup:
+    Random:
+        - GroupName: DroneBaseSetup
+          Difficulty: 0
+          PresetStyle: 0
+          Stock:
+              - Name: DroneSmallFast01Rocket
+                Amount: 100
+                Extra: 0
+
+              - Name: DroneSmallFast01Minigun
+                Amount: 200
+                Extra: 0
+
+              - Name: DroneLargeSlow01Minigun
+                Amount: 100
+                Extra: 0
+
+              - Name: DroneSmallSlow01Cannon
+                Amount: 200
+                Extra: 0
+
+              - Name: DroneSmallAttackBase
+                Amount: 300
+                Extra: 1
+
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+
+              - Name: ZiraxMinigun
+                Amount: 500
+                Extra: 3
+
+              # - Name: RipperDog  # No atmosphere. But Zirax wear at least masks.
+                # Amount: 400
+                # Extra: 3
+
+              - Name: ZiraxRocketPatrol
+                Amount: 100
+                Extra: 3
+                
+DroneSpawning:
+    Random:
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: -5000
+          Radius: 2000
+    
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: -2500
+          Radius: 1500
+
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: 2500
+          Radius: 1500
+          
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: 5000
+          Radius: 2000
+          
+
+Build: 2306

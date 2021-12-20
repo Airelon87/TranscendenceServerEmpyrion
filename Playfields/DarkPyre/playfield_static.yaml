@@ -1,0 +1,295 @@
+Description: A harsh dark world
+PlanetClass: Planet
+PlanetType: Arid
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 4
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: WindLines
+   Biome: [Any]
+   Time: Always
+   MaxHeight: 255
+   FollowPlayerY: True
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Lifetime: 1000
+-  Name: FogRadiationGreen
+   Type: Weather
+   Delay: 5
+   Lifetime: 400
+-  Name: HeatWave
+   Type: Weather
+   Delay: 7
+   Lifetime: 800
+-  Name: MeteorFireRain
+   Type: Weather
+   Delay: 10
+   Lifetime: 250
+AtmosphereColor: 0.8,0.36,0.36
+SkyColor: 0.55,0,0
+SkyHorizonColor: 1,0.84,0
+AtmosphereParams: [1, 1.6]
+LightZenithColor: 0.65,0.16,0.16
+LightHorizonColor: 0.5,0,0.5
+OrbitUsesLightColor: True
+DayLightIntensity: 1.5
+NightLightIntensity: 0.5
+NightLightColor: 0.65,0.16,0.16
+SunFlare: EnvironmentalEffects/SunFlareRed
+AtmosphereFog: 0.80000000000000004
+FogCloudIntensity: 0.69999999999999996
+GroundFogIntensity: 0.20000000000000001
+GroundFogHeight: 20
+CloudsDensity: 0.69999999999999996
+CloudsSharpness: 0.5
+CloudsBrightness: 0.20000000000000001
+CloudsOpacity: 0.10000000000000001
+CloudsZenithColor: 0,0,0
+CloudsHorizonColor: 0.82,0.71,0.55
+CloudsNightZenithColor: 0,0,0
+CloudsNightHorizonColor: 1,0.55,0
+WindSpeed: 3
+PvP: False
+BaseAttackCount: 0
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+RestrictToOrigin: 255
+RandomResources:
+-  Name: IronResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [5, 6]
+   SizeMinMax: [10, 30]
+   DepthMinMax: [1, 3]
+   DroneProb: 0.10000000000000001
+   MaxDroneCount: 2
+-  Name: CopperResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [4, 7]
+   SizeMinMax: [15, 22]
+   DepthMinMax: [2, 5]
+   DroneProb: 0.5
+   MaxDroneCount: 1
+-  Name: SiliconResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [5, 6]
+   SizeMinMax: [14, 55]
+   DepthMinMax: [2, 3]
+   DroneProb: 0.5
+   MaxDroneCount: 2
+-  Name: NeodymiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [10, 12]
+   SizeMinMax: [35, 75]
+   DepthMinMax: [3, 10]
+   DroneProb: 1
+   MaxDroneCount: 4
+-  Name: SathiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [5, 6]
+   SizeMinMax: [10, 30]
+   DepthMinMax: [2, 3]
+   DroneProb: 1
+   MaxDroneCount: 2
+-  Name: ZascosiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [10, 12]
+   SizeMinMax: [20, 45]
+   DepthMinMax: [3, 7]
+   DroneProb: 1
+   MaxDroneCount: 3
+-  Name: GoldResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [4, 6]
+   SizeMinMax: [6, 8]
+   DepthMinMax: [5, 10]
+   DroneProb: 1
+   MaxDroneCount: 6
+AsteroidResources:
+-  Name: IronResource
+   Threshold: 0.80000000000000004
+   Amount: 0.80000000000000004
+-  Name: CopperResource
+   Threshold: 0.80000000000000004
+   Amount: 0.80000000000000004
+-  Name: SiliconResource
+   Threshold: 0.80000000000000004
+   Amount: 0.80000000000000004
+-  Name: NeodymiumResource
+   Threshold: 0.80000000000000004
+   Amount: 0.80000000000000004
+-  Name: ZascosiumResource
+   Threshold: 0.80000000000000004
+   Amount: 0.80000000000000004
+-  Name: SathiumResource
+   Threshold: 0.80000000000000004
+   Amount: 0.80000000000000004
+-  Name: ErestrumResource
+   Amount: 12000
+   InitialDelay: 0
+   Delay: 4
+   DespawnDelay: 12
+-  Name: PromethiumResource
+   Amount: 5000
+   InitialDelay: 2
+   Delay: 6
+   DespawnDelay: 18
+-  Name: CobaltResource
+   Amount: 7500
+   InitialDelay: 1
+   Delay: 7
+   DespawnDelay: 12
+POIs:
+   Random:
+   -  GroupName: DroneComputeUnit
+      Faction: Kriel
+      DroneBaseSetup: DroneBaseSetup
+      CountMinMax: [1, 1]
+      PlaceAt: OnWater, Terrain
+      DroneProb: 1
+      DronesMinMax: [1, 5]
+      ReserveCount: 1
+      NoShieldReload: True
+      IsCommandCenter: True
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+      -  Key: SI
+         Value: Off
+   -  GroupName: DarkPyreLavaColony
+      Faction: Kriel
+      CountMinMax: [1, 2]
+      IsImportant: True
+      PlaceAt: OnWater, Terrain
+      DroneProb: 0
+      DronesMinMax: [1, 5]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: ExtraktTechno
+      -  Key: StationInterface
+         Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1,IfNeutral:0.2,IfHonored:-0.60"
+   -  GroupName: GalorSkyMarket
+      Faction: Galorian
+      CountMinMax: [1, 4]
+      PlaceAt: OnWater, Terrain
+      DroneProb: 0
+      DronesMinMax: [1, 6]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: ExtraktTechno
+   -  GroupName: GalorSkyRepair
+      Faction: Galorian
+      CountMinMax: [1, 6]
+      PlaceAt: OnWater, Terrain
+      DroneProb: 0
+      DronesMinMax: [1, 5]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: ExtraktTechno
+   -  GroupName: Graveyard
+      Faction: Alien
+      CountMinMax: [1, 3]
+      DroneProb: 1
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [0, 350, 0]
+      Items: [Pistol, Pistol, Pistol, '#FreshStart: Pistol']
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorLight
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseSetup
+      DronesMinMax: [2, 3]
+      ReserveCount: 3
+      DroneProb: 1
+      Difficulty: 5
+      PresetStyle: 2
+      Stock:
+      -  Name: DroneBomberAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneLargeAttackBase
+         Amount: 99999
+         Extra: 0
+      -  Name: DroneTroopsTransport
+         Amount: 90000
+         Extra: 2
+      -  Name: Overseer
+         Amount: 90000
+         Extra: 3
+      -  Name: TotalHorror
+         Amount: 50000
+         Extra: 3
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 10]
+      CenterX: -2000
+      Radius: 2000
+   -  DronesMinMax: [5, 10]
+      CenterX: 2000
+      Radius: 2000
+CreatureSpawning:
+-  Biomes: [PyreFlows, PyreDesolation, PyreRanges]
+   Entities:
+   -  Name: Crawlers
+      Period: Night
+      Amount: 200
+-  Biomes: [PyreTropics, PyreOasis]
+   Entities:
+   -  Name: TotalHorrors
+      Period: Night
+      Amount: 50
+   -  Name: WormDesertHerd
+      Period: Day
+      Amount: 75
+   -  Name: Overseers
+      Period: Always
+      Amount: 35

@@ -1,0 +1,260 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.64.0.2054, Playfield Version: 10.5.0 [2625] (Alpha EXPERIMENTAL 10.5.0)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -70
+PlayfieldLevel: 10
+Music: ColdDivide
+Description: A mysterious deep space anomaly
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 3
+LandClaimZone: Device
+SunFlare: EnvironmentalEffects/SunFlareRedSpace
+# Stars: SkyboxStarsPurple
+# Nebula: PrefabNebulaRed2
+Build: 2723
+Radiation: 5.67
+PvP: False
+UseFixed: True
+AllowBA: False
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+POIs:
+   Fixed:
+   -  Type: BA_Admin
+      Prefab: DeepSpaceBastion
+      Mode: Survival
+      Name: DeepSpaceBastion
+      Pos: [0, -3000, 0]
+      Rot: [0, 0, 0]
+      Faction: Admin
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: Anomalous
+      -  Key: PersonalContainer
+         Value: FusionCell:2, OxygenBottleLarge:2, SpawnNewCV, PlasticMaterial:300, FuelTankMSSmall, WarpDrive, PentaxidTank, GeneratorBA, OxygenTankSmallMS, SentryGunBlocks:4, PassengerSeatMS, ThrusterMSDirectional:7, CockpitBlocksCV, ContainerHarvestControllerLarge, ContainerAmmoControllerLarge, WindowLargeBlocks:3, DoorBlocks, Ventilator, ContainerExtensionLarge:6, DrillAttachmentCV, 5.8mmBullet:1000, MultiToolT2, MultiCharge, RemoteConnection, ConstructorT0, ColorTool, TextureTool, TransportationBoost
+      -  Key: StationInterface
+         Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1"
+   -  Type: CV_Player
+      Prefab: DeepSpaceMiner
+      Mode: Survival
+      Name: DeepSpaceMiner
+      Pos: [-2031, 2896, -5141]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: CV_Player
+      Prefab: MicroFalconFighter
+      Mode: Survival
+      Name: AbandonedFighterShip
+      Pos: [-435, -2796, 313]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV8
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [100, -2900, -268]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV5
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [175, -2924, -380]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV7
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [257, -2940, -330]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV5
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [152, -2886, -370]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV1
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [237, -2980, -410]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV5
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [244, -2963, -248]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV5
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [200, -2850, -337]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV10
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [304, -2929, -283]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV5
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [272, -2878, -180]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV9
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [49, -2958, 560]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV5
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [93, -2965, 487]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV5
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [189, -3013, 523]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: ZiblaxDeepSpaceOne
+      Mode: Survival
+      Name: ZiblaxDeepSpaceOne
+      Pos: [1049, -2958, 1560]
+      Rot: [0, 0, 0]
+      Faction: Zirax
+      InitPower: True
+      NoShieldReload: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: StationInterface
+         Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1,IfNeutral:0.1,IfHonored:-0.70"
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-932, 1127, 1650]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDroneLaser
+         Pos: [500, 2500, 750]
+         Radius: 500
+      SpaceVessel:
+      -  Name: AlienFighterShip
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [629, -2911, -299]
+            Radius: 530
+      -  Name: AlienFighterShip
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [35, -2902, 524]
+            Radius: 630
+      -  Name: AlienFighterShip
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [5, -2919, 556]
+            Radius: 330
+      -  Name: AlienFighterShip
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [287, -2873, -1004]
+            Radius: 730
+      -  Name: AsteroidSecurityDrone
+         Faction: Polaris
+         FixedMaxSpeed: 5
+         Mission: Immobile
+         Immobile:
+            Position3D: [264, -2997, -481]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 2
+            Extra: 2
+      -  Name: AsteroidSecurityDrone
+         Faction: Polaris
+         FixedMaxSpeed: 5
+         Mission: Immobile
+         Immobile:
+            Position3D: [161, -2961, 587]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 2
+            Extra: 2

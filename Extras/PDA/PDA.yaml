@@ -1,0 +1,3087 @@
+# -------
+# Created with eWPDA 2.7.0
+# Website: https://empyrion-homeworld.net/tools/ewpda
+# -------
+Creator: Airelon87 Transcendence Server
+Chapters:
+  - ChapterTitle: Haven Welcomes You
+    Category: Tutorial
+    Rewards:
+      - Item: PlayerBike
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+      - Type: XP
+        Count: 500
+    Description: >-
+      Welcome to Transcendence Server and Haven Station. 
+
+
+      Please read the information board ahead of you carefully. 
+
+
+      Everything you need to get started with is already in your backpack.
+
+
+      The tutorial missions are entrance missions for the server. DO NOT skip
+      them. 
+
+
+      The missions will lead you succesfully out of the start zone with a warp
+      SV into our large and dangerous custom universe. 
+
+
+      Get familar with using the PDA. Some tasks must be autocompleted and more
+      info about your missions will be there.
+    PictureFile: Start3.jpg
+    PlayerLevel: 1
+    Visibility: Always
+    ActivateChapterOnCompletion: Free Hover Vessel at HavenGarage
+    NoSkip: true
+    AutoActivateOnGameStart: true
+    CompletedMessage: |-
+      Your mission now is to level up 
+
+      and move off of the start planet ASAP. 
+
+      The next mission will get you a free Hover Vessel.
+    Tasks:
+      - TaskTitle: HavenPortal
+        StartDelay: 8
+        StartMessage: Haven Portal
+        Actions:
+          - ActionTitle: Take Start Planet Portal
+            Description: Arrive at a Haven Portal
+            Check: PlayfieldEntered
+            Names:
+              - Ovus
+              - Xyril
+              - Rackora
+              - Suvo
+            NamesRequired: NeedOne
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Welcome to the HavenPortal 
+
+
+              You may return to Haven Station at anytime via a HavenPortal. You
+              now have a special token, hold on to it for when you find a
+              technology cache!
+          - ActionTitle: 'Open Inventory ({keybind(Inventory)})'
+            Description: Look at your starting equiptment
+            Check: WindowOpened
+            Names:
+              - Player
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              You'll want to use the transportation boosters in your 
+
+
+              inventory and equip them at an armor locker before your next
+              mission.
+    Activatable: Always
+  - ChapterTitle: Free Hover Vessel at HavenGarage
+    Category: Tutorial
+    Rewards:
+      - Type: XP
+        Count: 2000
+      - Type: UP
+        Count: 50
+    Description: |-
+      Its time to build a hover vessel! 
+
+      All the parts are waiting for you at HavenGarage.
+    PictureFile: hvsmall.jpg
+    PlayerLevel: 1
+    Visibility: Always
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 360
+      DelayAdd: 0
+    ActivateChapterOnCompletion: Hunting and Gathering
+    NoSkip: true
+    CompletedMessage: Fuel up your hover vessel and enjoy your new ride!
+    Tasks:
+      - TaskTitle: FindHavenGarage
+        StartMessage: >-
+          Find Haven Garage 
+
+
+          When you get there empty your inventory into a cargo box 
+
+
+          and follow the mission tasks. 
+
+
+          You may need to auto complete this task in your PDA when you get
+          there.
+        Rewards:
+          - Item: SpawnNewGV
+            Count: 1
+        Actions:
+          - ActionTitle: GoToHavenGarage
+            Description: Arrive at a Haven Portal
+            Check: NearPoi
+            Names:
+              - HavenGarage
+            Guiding: Destination
+            TriggerDistance: 100
+            AllowManualCompletion: true
+            CompletedMessage: Walk up to the ramp and proceed inside.
+      - TaskTitle: PlaceStarterBlock
+        StartMessage: Place the HV starter block
+        Rewards:
+          - Item: CockpitBlocksSV
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceHVstarterBlock
+            Description: Place the starter block in a safe flat location.
+            Check: ToolbarContains
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Grab your tools from the red locker and study the sign to the
+              left.
+            Types:
+              - SpawnNewGV
+      - TaskTitle: PlaceCockPit
+        StartMessage: Place the HV Cockpit. You can right click for different options.
+        Rewards:
+          - Item: PlasticSmallBlocks
+            Count: 12
+          - Item: RemoteConnection
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceCockPit
+            Description: Place the cockpit according to the diagram.
+            Check: ToolbarContains
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              If your inventory is getting heavy, utilize a cargo box in the
+              garage.
+            Types:
+              - CockpitBlocksSV
+      - TaskTitle: PlaceWiFiBlock
+        StartMessage: Place the WiFi block
+        Rewards:
+          - Item: FuelTankSV
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceWiFiBlock
+            Description: >-
+              Place the Wifi according to the diagram. Some carbon blocks have
+              also been provided.
+            Check: BlocksPlaced
+            Types:
+              - RemoteConnection
+            AllowManualCompletion: true
+            CompletedMessage: With WiFi your hotbar can utilize items in your cargo boxes.
+      - TaskTitle: PlaceFuelTank
+        StartMessage: Place the WiFi block
+        Rewards:
+          - Item: GeneratorSV
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceFuelTank
+            Description: Place the Fuel Tank according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - FuelTankSV
+            AllowManualCompletion: true
+            CompletedMessage: The energy cell you have will go in this tank.
+      - TaskTitle: PlaceGenerator
+        StartMessage: Place the generator
+        Rewards:
+          - Item: HoverEngineThruster
+            Count: 4
+        Actions:
+          - ActionTitle: PlaceHVGenerator
+            Description: Place the generator according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - GeneratorSV
+            AllowManualCompletion: true
+            CompletedMessage: 'The next items are heavy, make sure you have room for them.'
+      - TaskTitle: PlaceTheHoverThrusters
+        StartMessage: Place all 4 hover thrusters
+        Rewards:
+          - Item: ThrusterGVDirectional
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceHoverThruster
+            Description: Place the Hover Thrusters according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - HoverEngineThruster
+            Amount: 4
+            AllowManualCompletion: true
+            CompletedMessage: Your half way to a functional HV!
+      - TaskTitle: PlaceTheSmallThruster
+        StartMessage: Place the HV thruster on the rear of the HV.
+        Rewards:
+          - Item: ConstructorHV
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceSmallHVThruster
+            Description: Place the Thruster on the back of the HV facing to the rear.
+            Check: BlocksPlaced
+            Types:
+              - ThrusterGVDirectional
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              This will add additional thrust as your HV will get heavier under
+              load.
+      - TaskTitle: PlaceTheHVConstructor
+        StartMessage: Place the constructor
+        Rewards:
+          - Item: ContainerControllerSmall
+            Count: 2
+        Actions:
+          - ActionTitle: ConstructorPlacement
+            Description: >-
+              Place the constructor according to the diagram. Rotate it before
+              you place it.
+            Check: BlocksPlaced
+            Types:
+              - ConstructorHV
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Your constructor will need an input box and output box to
+              function.
+      - TaskTitle: PlaceCargoControllers
+        StartMessage: Place the controllers
+        Rewards:
+          - Item: ContainerExtensionSmall
+            Count: 6
+        Actions:
+          - ActionTitle: CargoControllerPlacement
+            Description: >-
+              Place the cargo controllers according to the diagram. Your
+              extensions must touch one controller to expand its volume.
+            Check: BlocksPlaced
+            Types:
+              - ContainerControllerSmall
+            Amount: 2
+            AllowManualCompletion: true
+            CompletedMessage: Controllers are the heart of your cargo holds.
+      - TaskTitle: PlaceCargoExtenders
+        StartMessage: Place the Cargo Extenders
+        Rewards:
+          - Item: SpotlightBlocks
+            Count: 1
+        Actions:
+          - ActionTitle: ExtenderPlacement
+            Description: >-
+              Place the cargo extenders according to the diagram. Place 3
+              touching the controller on each side of your HV.
+            Check: BlocksPlaced
+            Types:
+              - ContainerExtensionSmall
+            Amount: 6
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              You can always add more extenders to increase the cargo holds
+              volume.
+      - TaskTitle: PlaceSpotlight
+        StartMessage: Place the Spotlight
+        Rewards:
+          - Item: PlasticSmallBlocks
+            Count: 25
+        Actions:
+          - ActionTitle: SpotLightPlacement
+            Description: Place the spotlight according to the diagram.
+            Check: ToolbarContains
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: You can now see while piloting at night!
+            Types:
+              - SpotlightBlocks
+      - TaskTitle: ProtectYourHVwithBlocks
+        StartMessage: Place Some more Blocks to protect your HVs devices
+        Actions:
+          - ActionTitle: BlockPlacement
+            Description: Place the blocks on top of your devices to protect them.
+            Check: ToolbarContains
+            AllowManualCompletion: true
+            CompletedMessage: If your HV flips over. Consider making it wider with blocks.
+            Types:
+              - PlasticSmallBlocks
+          - ActionTitle: Power Vessel
+            Description: >-
+              The whole structure, be it vessel or base, needs to be powered on
+              by a switch - [4cd22e]Y[-].
+
+
+              Alternatively you can press [4cd22e]P[-] and flip the switch
+              there.
+            Check: MainPowerSwitched
+            Names:
+              - Hover Vessel
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              norm;10|Fuel her up and take it out for a spin! Don't forgot
+              anything you have in the garage.
+    Activatable: Always
+  - ChapterTitle: Hunting and Gathering
+    Category: Tutorial
+    Rewards:
+      - Type: XP
+        Count: 3000
+      - Type: UP
+        Count: 10
+    Description: |-
+      To survive you will need some supplies 
+
+      Complete the gathering tasks to set yourself up for success.
+    PictureFile: Fiber.jpg
+    PlayerLevel: 1
+    Visibility: Always
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    ActivateChapterOnCompletion: MoreCargo
+    CompletedMessage: |-
+      Place this fridge on your HV. It will keep your food cold. 
+
+      Your fiber though will be used for crafting items in the constructor.
+    Tasks:
+      - TaskTitle: PickenTime
+        StartMessage: Pick the following plants
+        Rewards:
+          - Item: FridgeSV
+            Count: 1
+        Actions:
+          - ActionTitle: PickFiberPlants
+            Description: Fiber Picken
+            Check: ItemsPickedUp
+            Types:
+              - Fiber
+            Required: NeedOne
+            Amount: 12
+            AllowManualCompletion: true
+            CompletedMessage: Thats all the Fiber you need
+          - ActionTitle: PickVeggiePlants
+            Description: Veggie Picken
+            Check: ItemsPickedUp
+            Types:
+              - PlantProtein
+              - Vegetables
+            Required: NeedOne
+            Amount: 8
+            AllowManualCompletion: true
+            CompletedMessage: Thats all the Veggies you need
+          - ActionTitle: PickSpicePlants
+            Description: Spice Picken
+            Check: ItemsPickedUp
+            Types:
+              - Spice
+            Required: NeedOne
+            Amount: 3
+            AllowManualCompletion: true
+            CompletedMessage: Thats all the Spice you need
+      - TaskTitle: RockCollection
+        StartMessage: Drill the following Rocks
+        Rewards:
+          - Item: DrillT2
+            Count: 1
+          - Item: DrillCharge
+            Count: 3
+        Actions:
+          - ActionTitle: GetSomeIron
+            Description: IronRocks
+            Check: ItemsPickedUp
+            Types:
+              - IronOre
+            Required: NeedAll
+            Amount: 20
+            AllowManualCompletion: true
+            CompletedMessage: Thats all the Iron you need
+          - ActionTitle: GetSomeCopper
+            Description: CopperRocks
+            Check: ItemsPickedUp
+            Types:
+              - CopperOre
+            Required: NeedAll
+            Amount: 20
+            AllowManualCompletion: true
+            CompletedMessage: Thats all the Copper you need
+          - ActionTitle: GetSomeSilicon
+            Description: SiliconRocks
+            Check: ItemsPickedUp
+            Types:
+              - SiliconOre
+            Required: NeedAll
+            Amount: 20
+            AllowManualCompletion: true
+            CompletedMessage: Thats all the Silicon you need
+      - TaskTitle: HuntingTime
+        StartMessage: Kill Parasuars on a start world and loot their meat.
+        Rewards:
+          - Item: Sniper
+            Count: 1
+          - Item: 12.7mmBullet
+            Count: 100
+          - Item: WaterBottle
+            Count: 10
+        Actions:
+          - ActionTitle: Kill 5 Parasuars
+            Description: |-
+              Kill 5 Parasuars 
+
+              Loot their meat so you can make food items.
+            Check: SubjectKilled
+            Names:
+              - Parasaur
+              - Parasaur02
+            Amount: 5
+            AllowManualCompletion: true
+            CompletedMessage: Thats enough Parasaur killen for today.
+          - ActionTitle: Cook Up Some Meat
+            Description: |-
+              Place the meat in the fridge. 
+
+              Make your HV constructor input and output the fridge. 
+
+              Then craft three grilled steaks.
+            Check: ItemsCrafted
+            Names:
+              - ConstructorHV
+            Types:
+              - Steak
+            Amount: 2
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              You can collect Natural Sweetner, Spice, and water to make better
+              meat items.
+    NoSkip: false
+  - ChapterTitle: MoreCargo
+    Category: Tutorial
+    Rewards:
+      - Type: XP
+        Count: 3000
+      - Type: UP
+        Count: 12
+    Description: |-
+      Get your HV ready to handle more weight. 
+
+      Extra cargo spaced is being sent to you for this.
+    PictureFile: Ores.jpg
+    PlayerLevel: 1
+    Visibility: Always
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    HideTasks: true
+    ActivateChapterOnCompletion: Catch The Talon In The Act
+    CompletedMessage: >-
+      Haven command is ready for you to do your part. Your about to have a chat
+      with the Talon.
+    Tasks:
+      - TaskTitle: GoBackToHavenGarage
+        StartMessage: 'Stuff can get heavy, its time to get your HV ready for the weight.'
+        Rewards:
+          - Item: ContainerExtensionSmall
+            Count: 6
+        Actions:
+          - ActionTitle: GoBackToTheHavenGarage
+            Description: Go back to Haven Garage
+            Check: NearPoi
+            Names:
+              - HavenGarage
+            Guiding: Destination
+            AllowManualCompletion: true
+            CompletedMessage: Go inside the garage and place your cargo extenders.
+            TriggerDistance: 100
+      - TaskTitle: PlaceYourExtraExtenders
+        StartMessage: >-
+          Add these extenders onto your extender blocks to expand the cargo
+          holds.
+        Actions:
+          - ActionTitle: PlaceSixCargoExtenders
+            Description: Go back to Haven Garage
+            Check: BlocksPlaced
+            Types:
+              - ContainerExtensionSmall
+            Amount: 6
+            AllowManualCompletion: true
+            CompletedMessage: Now Your ready to mine!
+      - TaskTitle: All Done
+        StartMessage: Go Back to Haven Garage
+        Rewards:
+          - Item: EnergyCell
+            Count: 10
+        Actions:
+          - ActionTitle: GobackTo_HavenGarage
+            Description: Go back to Haven Garage
+            Check: NearPoi
+            Names:
+              - HavenGarage
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: Take these fuel cells to get you to your next destination.
+    NoSkip: false
+  - ChapterTitle: Catch The Talon In The Act
+    Category: Tutorial
+    Rewards:
+      - Type: XP
+        Count: 2500
+      - Item: Explosives
+        Count: 5
+      - Item: MoneyCard
+        Count: 1000
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      The Talon have been stealing technology! 
+
+
+      Talon with tech will upset the entire balance of the solar system. 
+
+
+      A recent tip has Talon stealing Syndicate technology from a crash site
+      right now!
+    PictureFile: Default.jpg
+    PlayerLevel: 1
+    Visibility: Always
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    HideTasks: true
+    ActivateChapterOnCompletion: LeapOfFaith
+    CompletedMessage: >-
+      Welcome back to Haven Station. The Talon may have still gotten away with
+      some tech, but its really the Syndicates fualt. 
+
+
+      That problem will be dealt with later. 
+
+
+      For now we have more pressing issues to contend with.
+    Tasks:
+      - TaskTitle: Find The Damaged Syndicate Frigate
+        StartMessage: Follow your guidance system to the Frigate.
+        Rewards:
+          - Item: Explosives
+            Count: 5
+          - Item: Sniper
+            Count: 1
+          - Item: 12.7mmBullet
+            Count: 150
+        Actions:
+          - ActionTitle: Find Damaged Frigate
+            Description: pda_IuuKamC
+            Check: NearPoi
+            Names:
+              - DamagedFrigate
+            Guiding: Destination
+            TriggerDistance: 150
+            AllowManualCompletion: true
+            CompletedMessage: The Talon must have ambushed it when it landed.
+      - TaskTitle: Board The Frigate
+        StartMessage: |-
+          It appears that some of the ships defenses are still in operation. 
+
+          Use your sniper rifle and destroy the Sentry Turrets from a distance.
+
+          Make sure to destroy the sentry turret before boarding the frigate.
+        Actions:
+          - ActionTitle: BoardFrigate
+            Description: Use the ramp to board the frigate. Watch out for enemy defenses.
+            Check: Signal
+            Names:
+              - Ramps
+            AllowManualCompletion: true
+            CompletedMessage: A motion sensor was triggered!
+      - TaskTitle: Recover The Tech
+        StartMessage: Eliminate Talon forces on the ship and get the tech.
+        Rewards:
+          - Item: Robotics
+            Count: 1
+        Actions:
+          - ActionTitle: Pull the override switch to unlock cargo room
+            Description: >-
+              The override switch on the bridge will unlock on doors and cargo
+              on the frigate.
+            Check: Signal
+            Names:
+              - Doors
+            AllowManualCompletion: true
+            CompletedMessage: ''
+          - ActionTitle: Loot the Frigate Locker
+            Description: ===
+            Check: InventoryClosed
+            Names:
+              - ContainerPersonal
+            AllowManualCompletion: true
+            CompletedMessage: The stolen tech has fallen from the locker and into your backpack.
+      - TaskTitle: ReportBackToHaven
+        Actions:
+          - ActionTitle: GoToHavenPortal
+            Description: ===
+            Check: NearPoi
+            Names:
+              - HavenPortal
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Your going back to Haven. Only take your tools, weapons, ammo, and
+              some food with you.
+          - ActionTitle: TakePortalToHavenStation
+            Description: ===
+            Check: PlayfieldEntered
+            Names:
+              - Haven Station
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              You may want to relax on the station in the garden for a bit
+              before starting the next mission.
+    NoSkip: true
+    Activatable: Always
+  - ChapterTitle: LeapOfFaith
+    Category: Tutorial
+    Rewards:
+      - Type: XP
+        Count: 500
+    Description: Are you ready for a leap of faith?
+    PictureFile: Default.jpg
+    PlayerLevel: 8
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    ActivateChapterOnCompletion: LunaFare
+    NoSkip: true
+    CompletedMessage: Welcome to LunaFare.
+    Tasks:
+      - TaskTitle: TakeTheLeapOfFaithPortal
+        Actions:
+          - ActionTitle: JumpIntoLeapOfFaithPortal
+            Description: pda_qKC0k0O
+            Check: PlayfieldEntered
+            Names:
+              - LunaFare
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Your real journey begins. You won't need anything from your start
+              planet now.
+  - ChapterTitle: LunaFare
+    Category: Tutorial
+    Rewards:
+      - Type: XP
+        Count: 25000
+      - Type: UP
+        Count: 50
+    Description: |-
+      The troops from Haven need the Ziblax presence weakened on this world. 
+
+      Your crusade on this world will be gradial. 
+
+      Lunafare base has all the facilities you need for success. 
+
+      Complete missions here via the instance on ground level 
+
+      A pilots seat awaits you upon your success!
+    PictureFile: Artifact.jpg
+    PlayerLevel: 8
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    HideTasks: true
+    ActivateChapterOnCompletion: LunaFare Small Vessel Build
+    CompletedMessage: The next chapter will get you a free SV.
+    Tasks:
+      - TaskTitle: GoToLockerRoom
+        StartMessage: |-
+          Find the locker room near the cafe and the portal 
+
+          Open the set of lockers and loot it.
+        Rewards:
+          - Item: DrillCharge
+            Count: 3
+          - Item: MultiBoost
+            Count: 1
+        Actions:
+          - ActionTitle: LootTheSetOfLockers
+            Description: Loot the set of lockers
+            Check: InventoryClosed
+            Names:
+              - ContainerPersonal
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Put on the suit and add boosters with the armor locker nearby.
+              Make sure to keep one of your transportation boosters equiped.
+      - TaskTitle: Find the portal at the bottom of LunaFare station
+        StartMessage: >-
+          Down the elevator you'll find a portal that will speed up your
+          LunaFare missions.
+        Actions:
+          - ActionTitle: Enter the LunaFare Portal
+            Description: >-
+              The Lunafare Portal takes you to an instance version of this
+              world. Only you can access it for a short time. Please read the
+              signs.
+            Check: PlayfieldEntered
+            Names:
+              - MoonLunaFareInstance
+            NamesRequired: NeedOne
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              The portal here will return you to the admin station on LunaFare
+              proper. Most your LF missions can be done within the instance.
+      - TaskTitle: GatherLunarMedSupplies
+        StartMessage: Find lunar plants to make medical supplies.
+        Rewards:
+          - Item: AntiParasiteInjection
+            Count: 3
+          - Item: CannedMeat
+            Count: 5
+          - Item: 5.8mmBullet
+            Count: 500
+          - Item: OxygenBottleSmall
+            Count: 5
+        Actions:
+          - ActionTitle: CollectConfettiMossScrapings
+            Description: 'Pick the Confetti Moss, it looks similar to FireMoss.'
+            Check: ItemsPickedUp
+            Types:
+              - ConfettiMossScrapings
+            Amount: 3
+            AllowManualCompletion: true
+            CompletedMessage: This is also for medical kits you'll need.
+          - ActionTitle: PickHerbalLeaves
+            Description: Pick plants that have herbal leaves.
+            Check: ItemsPickedUp
+            Types:
+              - HerbalLeaves
+            Amount: 3
+            AllowManualCompletion: true
+            CompletedMessage: Slime sluaghtering is good for your health.
+          - ActionTitle: KillSlimesAndLoot
+            Description: Kill and loot slimes for AlienTooth
+            Check: SubjectKilled
+            Names:
+              - Slime
+            Amount: 5
+            AllowManualCompletion: true
+            CompletedMessage: This Slimes alientooth and parts are valuable medical ingredients.
+          - ActionTitle: CraftAntiToxicPillsAtLunarFare
+            Description: >-
+              Go back to LunaFare and use the cafes food pro to make 3
+              AntiToxicPills.
+            Check: ItemsCrafted
+            Names:
+              - FoodProcessorV2
+            Types:
+              - AntiToxicPills
+            Amount: 3
+            AllowManualCompletion: true
+            CompletedMessage: |-
+              The chef has heard a rumor that your a beast. 
+
+              He has slipped some supplies in your backpack.
+      - TaskTitle: LunarCreeps
+        StartMessage: Did you just hear chatter about a Creepy problem from the locals?
+        Rewards:
+          - Item: 5.8mmBullet
+            Count: 500
+          - Item: 12.7mmBullet
+            Count: 200
+          - Item: Explosives
+            Count: 5
+          - Item: OxygenBottleSmall
+            Count: 5
+        Actions:
+          - ActionTitle: Exterminate a Nearby Creepy Den
+            Description: Exterminate a nearby Creepy Den
+            Check: NearPoi
+            Names:
+              - CreepyDen
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: 'Get ready, theirs a bunch of them!'
+          - ActionTitle: Kill 5 Creepys
+            Description: Kill 5 Creepys at the Den
+            Check: SubjectKilled
+            Names:
+              - Creepy
+            Amount: 5
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              An Ammo restock is here for you. 
+
+
+              If you need to make more there is a constructor at the top of
+              LunaFare.
+      - TaskTitle: ZiblaxCommunicationAndResponse
+        StartMessage: |-
+          The Ziblax are amassing troops 
+
+          Gather Intel by intercepting a Ziblax Zwitter post. 
+
+          Watch out for Ziblax Frigates and Defenses on the planet.
+        Rewards:
+          - Item: PulseRifleT2
+            Count: 1
+          - Item: 5.8mmBullet
+            Count: 250
+          - Item: OxygenBottleSmall
+            Count: 5
+        Actions:
+          - ActionTitle: Find Ziblax Com Tower
+            Description: Find A Ziblax Com Tower.
+            Check: NearPoi
+            Names:
+              - ZiblaxComAux
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: |-
+              Post Intercepted: Commander ZoogZoog your so sweet, 
+
+              I cant wait to splatter some human brains with you. 
+
+              We'll have plenty of ears for snacks while we... ComError
+          - ActionTitle: Locate ZiblaxLunarPost
+            Description: pda_UiCu0q4
+            Check: NearPoi
+            Names:
+              - ZiblaxLunarPost
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: Get ready for a nasty battle.
+          - ActionTitle: SnipeTheSentryTurrets
+            Description: Snipe Two of the Zirax Sentry turrets.
+            Check: BlockDestroyed
+            Types:
+              - SentryGun01
+              - SentryGun02
+            Names:
+              - ZiblaxLunarPost
+            Amount: 2
+            AllowManualCompletion: true
+            CompletedMessage: Lets see how tough they are without their sentry turrets.
+          - ActionTitle: Kill 6 Zirax
+            Description: Kill 6 ZiraxMinigun
+            Check: SubjectKilled
+            Names:
+              - ZiraxMinigun
+              - ZiraxShotgun
+              - RipperDog
+              - ZiraxCommander
+            Amount: 7
+            AllowManualCompletion: true
+            CompletedMessage: Those Zirax didnt stand a chance.
+      - TaskTitle: EndTheZiraxThreat
+        StartMessage: >-
+          If we can take out their shielded DroneSat the LunaFare forces will
+          stand a chance.
+        Rewards:
+          - Item: MoneyCard
+            Count: 5000
+          - Item: Token
+            Count: 1
+            Meta: 7238
+        Actions:
+          - ActionTitle: FindZiblaxDroneSat
+            Description: Find their DroneSat
+            Check: NearPoi
+            Names:
+              - ZiblaxDroneSat
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              We have hacked a switch inside the dronesat with an overload
+              command. 
+
+              But we forgot which one.
+          - ActionTitle: Initiate The Drone Sat Overload Switch
+            Description: Initiate DroneSat OverLoad with the hacked switch.
+            Check: Signal
+            Names:
+              - Emitter
+            AllowManualCompletion: true
+            CompletedMessage: The Ziblaxians reign on this world is over thanks to you.
+      - TaskTitle: Report To LunaFare
+        StartMessage: >-
+          If we can take out their shielded DroneSat the LunaFare forces will
+          stand a chance.
+        Actions:
+          - ActionTitle: ReportToLunaFare
+            Description: 'Return to LunaFare, You have now earned a small warp ship.'
+            Check: NearPoi
+            Names:
+              - LunaFare
+            TriggerDistance: 50
+            Guiding: Destination
+            AllowManualCompletion: true
+            CompletedMessage: Go to the top of LunaFare Base.
+    NoSkip: true
+    Activatable: Always
+  - ChapterTitle: LunaFare Small Vessel Build
+    Category: Tutorial
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Type: UP
+        Count: 12
+      - Item: CPUExtenderSVT2
+        Count: 1
+    Description: >-
+      Report To The Top Level of LunaFare. 
+
+
+      Parts for a small vessel are waiting to be assembled. 
+
+
+      When building place blocks between devices especially fuel tanks. 
+
+
+      You can lift up your SV when done and press O, then get out to place
+      blocks under it. 
+
+
+      Do not remove the core unless you can afford to recraft it in the
+      constructor. 
+
+
+      You should be able to unlock all of these SV devices in your tech tree
+      after the tutorial.
+    PictureFile: Vessel.jpg
+    PlayerLevel: 10
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 480
+      DelayAdd: 60
+    HideTasks: true
+    NoSkip: true
+    CompletedMessage: >-
+      Before you leave please name your vessel in the control panel. This is the
+      completion of the entrance missions. The SV build can be repeated but a
+      time penalty will apply.
+    Tasks:
+      - TaskTitle: Report To LunaFare Hanger
+        StartMessage: Find the LCD panels with the ship blueprint.
+        Rewards:
+          - Item: SpawnNewSV
+            Count: 1
+          - Item: PlasticSmallBlocks
+            Count: 100
+        Actions:
+          - ActionTitle: Find SV Blueprint
+            Description: 'When you find it, stand on top of it and inspect the blueprint.'
+            Check: Signal
+            Names:
+              - SVBuild
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Keep your blocks for the build, use them to shape your SV. 
+
+
+              But empty your inventory into a cargo box. These items will be
+              heavy.
+      - TaskTitle: PlaceStarterBlock
+        StartMessage: Place the SV starter block
+        Rewards:
+          - Item: CockpitBlocksSV
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceSVstarterBlock
+            Description: Place the starter block in the hanger.
+            Check: ToolbarContains
+            AllowManualCompletion: true
+            CompletedMessage: Keep an eye out for drones near the hanger.
+            Types:
+              - SpawnNewSV
+      - TaskTitle: PlaceSVCockPit
+        StartMessage: >-
+          Place the SV Cockpit, you may want to remove the blocks around the
+          core first.
+        Rewards:
+          - Item: RemoteConnection
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceSVCockPit
+            Description: Place the cockpit according to the diagram.
+            Check: ToolbarContains
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              If your inventory is getting heavy, utilize a cargo box in the
+              garage.
+            Types:
+              - CockpitBlocksSV
+      - TaskTitle: PlaceSVWiFiBlock
+        StartMessage: Place the WiFi block
+        Rewards:
+          - Item: FuelTankSV
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceSVWiFiBlock
+            Description: Place the Wifi according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - RemoteConnection
+            AllowManualCompletion: true
+            CompletedMessage: With WiFi your hotbar can utilize items in your cargo boxes.
+      - TaskTitle: PlaceSVFuelTank
+        StartMessage: Place the WiFi block
+        Rewards:
+          - Item: GeneratorSV
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceSVFuelTank
+            Description: Place the Fuel Tank according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - FuelTankSV
+            AllowManualCompletion: true
+            CompletedMessage: The energy cell you have will go in this tank.
+      - TaskTitle: PlaceSVGenerator
+        StartMessage: Place the generator
+        Rewards:
+          - Item: ThrusterSVDirectional
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceSVGenerator
+            Description: Place the generator according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - GeneratorSV
+            AllowManualCompletion: true
+            CompletedMessage: 'The next items are heavy, make sure you have room for them.'
+      - TaskTitle: PlaceFirstThruster
+        StartMessage: Place first thruster
+        Rewards:
+          - Item: ThrusterSVDirectional
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceFirstThruster
+            Description: Place the Thruster according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - ThrusterSVDirectional
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Thrusters are very heavy aren't they.
+      - TaskTitle: PlaceSecondThruster
+        StartMessage: Place second thruster
+        Rewards:
+          - Item: ThrusterSVDirectional
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceSecondThruster
+            Description: Place the Thruster according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - ThrusterSVDirectional
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Thrusters are very heavy aren't they.
+      - TaskTitle: PlaceThirdThruster
+        StartMessage: Place third thruster
+        Rewards:
+          - Item: ThrusterSVDirectional
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceThirdThruster
+            Description: Place the Thruster according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - ThrusterSVDirectional
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Thrusters are very heavy aren't they.
+      - TaskTitle: PlaceFourthThruster
+        StartMessage: Place fourth thruster
+        Rewards:
+          - Item: ThrusterSVDirectional
+            Count: 1
+        Actions:
+          - ActionTitle: PlacefourthThruster
+            Description: Place the Thruster according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - ThrusterSVDirectional
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Thrusters are very heavy aren't they.
+      - TaskTitle: PlaceFifthThruster
+        StartMessage: Place fifth thruster
+        Rewards:
+          - Item: ThrusterSVDirectional
+            Count: 1
+        Actions:
+          - ActionTitle: PlacefifthThruster
+            Description: Place the Thruster according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - ThrusterSVDirectional
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Thrusters are very heavy aren't they.
+      - TaskTitle: PlaceSixthThruster
+        StartMessage: Place sixth thruster
+        Rewards:
+          - Item: ThrusterSVDirectional
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceSixthThruster
+            Description: Place the Thruster according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - ThrusterSVDirectional
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Thrusters are very heavy aren't they.
+      - TaskTitle: PlaceSeventhThruster
+        StartMessage: Place seventh thruster
+        Rewards:
+          - Item: ThrusterSVDirectional
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceSeventhThruster
+            Description: Place the Thruster according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - ThrusterSVDirectional
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Thrusters are very heavy aren't they.
+      - TaskTitle: PlaceLastThruster
+        StartMessage: Place Last thruster
+        Rewards:
+          - Item: ConstructorSV
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceLastThruster
+            Description: Place the Thruster according to the diagram.
+            Check: BlocksPlaced
+            Types:
+              - ThrusterSVDirectional
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Thats it for thrusters.
+      - TaskTitle: PlaceSVConstructor
+        StartMessage: Place the constructor
+        Rewards:
+          - Item: ContainerControllerSmall
+            Count: 2
+        Actions:
+          - ActionTitle: SVConstructorPlacement
+            Description: 'This isnt on the diagram, so place it where you think is best.'
+            Check: BlocksPlaced
+            Types:
+              - ConstructorSV
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Your constructor will need an input box and output box to
+              function.
+      - TaskTitle: PlaceSVCargoControllers
+        StartMessage: Place the controllers
+        Rewards:
+          - Item: ContainerExtensionSmall
+            Count: 9
+        Actions:
+          - ActionTitle: SVCargoControllerPlacement
+            Description: |-
+              Place the cargo controllers according to the diagram. 
+
+              Your extensions must touch one controller to expand its volume.
+            Check: BlocksPlaced
+            Types:
+              - ContainerControllerSmall
+            Amount: 2
+            AllowManualCompletion: true
+            CompletedMessage: Controllers are the heart of your cargo holds.
+      - TaskTitle: PlaceSVCargoExtenders
+        StartMessage: Place the Cargo Extenders
+        Rewards:
+          - Item: SpotlightBlocks
+            Count: 2
+          - Item: DetectorSVT1
+            Count: 1
+        Actions:
+          - ActionTitle: SV ExtenderPlacement
+            Description: >-
+              Place the cargo extenders according to the diagram. Save one to
+              add to your ammo controller.
+            Check: BlocksPlaced
+            Types:
+              - ContainerExtensionSmall
+            Amount: 8
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              You can always add more extenders to increase the cargo holds
+              volume.
+      - TaskTitle: SVPlaceSpotlight
+        StartMessage: Place the Spotlight
+        Rewards:
+          - Item: ContainerAmmoControllerSmall
+            Count: 1
+        Actions:
+          - ActionTitle: SV SpotLightPlacement
+            Description: pda_4i8meum
+            Check: ToolbarContains
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: You can now see while piloting at night!
+            Types:
+              - SpotlightBlocks
+              - DetectorSVT1
+      - TaskTitle: PlaceAmmoController
+        StartMessage: |-
+          Place the Ammo Controller according to the diagram. 
+
+          Don't forget you have another extender for it.
+        Rewards:
+          - Item: PentaxidTankSV
+            Count: 1
+        Actions:
+          - ActionTitle: AmmoCtrlPlacement
+            Description: Place the Ammo Controller according to the diagram.
+            Check: ToolbarContains
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: You can now fill your SV with Ammo!
+            Types:
+              - ContainerAmmoControllerSmall
+      - TaskTitle: PlacePentaxidTank
+        StartMessage: Place the Pentaxid Tank according to the diagram.
+        Rewards:
+          - Item: WarpDriveSV
+            Count: 1
+        Actions:
+          - ActionTitle: PentaxidTankPlacement
+            Description: Place the Pentaxid Tank according to the diagram.
+            Check: ToolbarContains
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Sheilds and Warp Drive both use the Pentaxid Tank.
+            Types:
+              - PentaxidTankSV
+      - TaskTitle: PlaceWarpCore
+        StartMessage: Place the WarpCore according to the diagram.
+        Rewards:
+          - Item: OxygenTankSV
+            Count: 1
+        Actions:
+          - ActionTitle: PlaceWarpDrive
+            Description: Place the WarpDrive according to the diagram.
+            Check: ToolbarContains
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: This is required to warp to other orbits.
+            Types:
+              - WarpDriveSV
+      - TaskTitle: Place OxygenTank
+        StartMessage: Place the O2 Tank wherever it will fit.
+        Rewards:
+          - Item: FridgeSV
+            Count: 1
+        Actions:
+          - ActionTitle: Place Oxygen Tank
+            Description: Place the O2 tank wherever it will fit.
+            Check: ToolbarContains
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: This is required to have O2 in your cockpit.
+            Types:
+              - OxygenTankSV
+      - TaskTitle: Place SV Fridge
+        StartMessage: Place the fridge wherever it will fit.
+        Rewards:
+          - Item: WeaponSV02
+            Count: 1
+        Actions:
+          - ActionTitle: Place SV fridge
+            Description: Place the fridge wherever it will fit.
+            Check: ToolbarContains
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Cant have your food spoiling in space afterall
+            Types:
+              - FridgeSV
+      - TaskTitle: Place First Weapon
+        StartMessage: Place the first weapon according to diagram.
+        Rewards:
+          - Item: WeaponSV02
+            Count: 1
+        Actions:
+          - ActionTitle: Place first weapon
+            Description: Place the first weapon.
+            Check: ToolbarContains
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: This weapon is great for killing drones.
+            Types:
+              - WeaponSV02
+      - TaskTitle: Place Second Weapon
+        StartMessage: Place the second weapon according to diagram.
+        Rewards:
+          - Item: EnergyCellLarge
+            Count: 10
+        Actions:
+          - ActionTitle: Place first weapon
+            Description: Place the second weapon.
+            Check: ToolbarContains
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: This weapon is great for killing drones.
+            Types:
+              - WeaponSV02
+      - TaskTitle: FuelUpYourSV
+        StartMessage: Place Fuel in your SV and Power it on.
+        Rewards:
+          - Item: OxygenBottleLarge
+            Count: 3
+          - Item: 15mmBullet
+            Count: 300
+        Actions:
+          - ActionTitle: Power Vessel
+            Description: >-
+              The whole structure, be it vessel or base, needs to be powered on
+              by a switch - [4cd22e]Y[-].
+
+
+              Alternatively you can press [4cd22e]P[-] and flip the switch
+              there.
+            Check: MainPowerSwitched
+            Names:
+              - Small Vessel
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              norm;10|Fuel her up and take it out for a spin! Don't forgot
+              anything you have in the garage.
+          - ActionTitle: CollectPentaxidCrystals
+            Description: Pick the purplish crystals you see on the ground.
+            Check: ItemsPickedUp
+            Types:
+              - CrystalWarp
+              - PentaxidCrystal
+              - PentaxidOre
+            Amount: 15
+            Required: NeedOne
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              These are used to make Pentaxid that goes in your Pentaxid tank
+              for the Warp drive. 
+
+
+              You will need a total of 30 Pentaxid to reach Adelevine later on.
+      - TaskTitle: FlyAway
+        StartMessage: |-
+          Go back tothe planet you started on and find your HV. 
+
+          The starter worlds are just a short flight away. 
+
+          Look on your map when you get to space.
+        Actions:
+          - ActionTitle: FlyAway
+            Description: pda_W4C0iCm
+            Check: PlayfieldEntered
+            Names:
+              - Neptafar Moon 2 Sector
+            AllowManualCompletion: true
+            CompletedMessage: Thank You For Your Stay On LunaFare
+    Activatable: Always
+  - ChapterTitle: AdelevineCommons
+    Category: SoloMission
+    Rewards:
+      - Type: XP
+        Count: 5000
+      - Item: AncientRelics
+        Count: 1
+      - Item: SmallOptronicBridge
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: |-
+      Report to planet Adelevine and find the Commons. 
+
+      Hint Ancient relics are used to build sheild generators.
+    PictureFile: Artifact.jpg
+    PlayerLevel: 11
+    Visibility: Always
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: Thanks for the help. Heres some Relics and Robotics for your efforts.
+    Tasks:
+      - TaskTitle: AdelevineCrypts
+        StartMessage: |-
+          The spiders have gotten terrible down there 
+
+          We need them killed.
+        Rewards:
+          - Item: AncientRelics
+            Count: 1
+        Actions:
+          - ActionTitle: OpenCryptDoor
+            Description: Pull the lever when you get to the Crypt
+            Check: Signal
+            Names:
+              - CryptDoor
+            AllowManualCompletion: true
+            CompletedMessage: Can you hear the spiders yet?
+          - ActionTitle: Kill 15 Crypt Spiders
+            Description: This problem is pretty bad. Just kill 10 of them.
+            Check: SubjectKilled
+            Names:
+              - Spider01
+            Amount: 10
+            AllowManualCompletion: true
+            CompletedMessage: 'Man, they turned that place into a hatchery.'
+          - ActionTitle: CloseCryptDoor
+            Description: Lets close the door and keep the Spiders locked up.
+            Check: Signal
+            Names:
+              - CryptDoor
+            AllowManualCompletion: true
+            CompletedMessage: I dont think anyone needs to go down there anyway.
+      - TaskTitle: Adelevines Invasive Species
+        StartMessage: >-
+          Creepys are the leading cause of death on Adel. 
+
+
+          These critters keep laying eggs on Syndicate Frigates and they've just
+          plagued the entire solar system.
+        Rewards:
+          - Item: Robotics
+            Count: 1
+          - Item: Sniper2Epic
+            Count: 1
+        Actions:
+          - ActionTitle: Kill Adel Creepys
+            Description: Creepys should be easy to find around here...Just listen for them.
+            Check: SubjectKilled
+            Names:
+              - Creepy
+            Amount: 10
+            AllowManualCompletion: true
+            CompletedMessage: A dead Creepy is a good Creepy
+    NoSkip: false
+  - ChapterTitle: RoboticsSyndicate
+    Category: SoloMission
+    Rewards:
+      - Type: XP
+        Count: 10000
+      - Item: Robotics
+        Count: 7
+      - Item: SmallOptronicBridge
+        Count: 1
+      - Item: SmallOptronicMatrix
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      The Robotics Syndicate are no allies of anyone. 
+
+
+      They have valuable robotic and cores tech required to construct
+      Autominers. 
+
+
+      Decimate their syndicate on their home planet of Nebulon at once. Haven is
+      declaring war!
+    PictureFile: Mechanoids.jpg
+    PlayerLevel: 15
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    HideTasks: true
+    CompletedMessage: |-
+      Haven Station thanks you again for your heroism. 
+
+      Use your loot and rewards to construct Autominers. 
+
+      They will need unlocked in your tech tree. 
+
+      Feel free to come back for some more Syndicate conquering tomorrow.
+    Tasks:
+      - TaskTitle: Report To Nebulon
+        StartMessage: |-
+          Planet Nebulon is very hot and arid. 
+
+          Once on Nebulon you will be directed to your targets.
+        Rewards:
+          - Item: RadiationBoost
+            Count: 1
+        Actions:
+          - ActionTitle: Report To Nebulon
+            Description: 'If you are already on Nebulon, please autocomplete this task.'
+            Check: PlayfieldEntered
+            Names:
+              - Nebulon
+            AllowManualCompletion: true
+            CompletedMessage: Welcome to Nebulon
+      - TaskTitle: StealFromBeacons
+        StartMessage: Find a Robotics Beacon on Nebulon.
+        Rewards:
+          - Item: Robotics
+            Count: 2
+        Actions:
+          - ActionTitle: FindBeacon
+            Description: ===
+            Check: NearPoi
+            Names:
+              - AlienRoboticsBeacon
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: ''
+          - ActionTitle: KillFourTurretRobots
+            Description: Kill four of the turret robots guarding the beacon.
+            Check: SubjectKilled
+            Names:
+              - TurretRobotV2
+            Amount: 4
+            AllowManualCompletion: true
+            CompletedMessage: Turret robots are the worst. Thanks for killing those.
+      - TaskTitle: Raid A Robotics Frigate
+        StartMessage: Raid a Robotics Frigate on Nebulon.
+        Rewards:
+          - Item: Robotics
+            Count: 2
+          - Item: SpareParts
+            Count: 4
+        Actions:
+          - ActionTitle: FindFrigate
+            Description: ===
+            Check: NearPoi
+            Names:
+              - RoboticsFrigate
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: ''
+          - ActionTitle: KillTwoTurretRobots
+            Description: Kill two of the turret robots on board the frigate.
+            Check: SubjectKilled
+            Names:
+              - TurretRobotV2
+            Amount: 2
+            AllowManualCompletion: true
+            CompletedMessage: Turret robots are the worst. Thanks for killing those.
+          - ActionTitle: Deactivate Frigate Sheilds
+            Description: There should be a control for shields on the bridge.
+            Check: Signal
+            Names:
+              - Emitter
+            AllowManualCompletion: true
+            CompletedMessage: The Frigates sheilds and Lasers are powering down.
+          - ActionTitle: KillFrigateCommander
+            Description: Kill the Frigates Commander On The Bridge.
+            Check: SubjectKilled
+            Names:
+              - ZiraxCommander
+            Amount: 1
+            AllowManualCompletion: true
+            CompletedMessage: Knew it! The Zirax are helping the Robotics Syndicate.
+      - TaskTitle: Decore Alien Robotics Facility
+        StartMessage: Decore the Alien Robotics Facility.
+        Rewards:
+          - Item: Robotics
+            Count: 4
+          - Item: SpareParts
+            Count: 8
+          - Item: AncientRelics
+            Count: 1
+        Actions:
+          - ActionTitle: FindFacility
+            Description: The Syndicates liar is accesed by teleporter atop a large window.
+            Check: NearPoi
+            Names:
+              - AlienRobotics
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: ''
+          - ActionTitle: Find Core Switch
+            Description: In a secret room a switch will you access the core panel.
+            Check: Signal
+            Names:
+              - CoreDoor
+            AllowManualCompletion: true
+            CompletedMessage: Make your way back to the room with the core
+          - ActionTitle: DestroyFacilityCore
+            Description: Youll have to blow up the cap on top of the core to get in.
+            Check: BlockDestroyed
+            Types:
+              - CoreNPCAdmin
+            AllowManualCompletion: true
+            CompletedMessage: The Robotics Syndicates liar has been disabled!
+    NoSkip: false
+  - ChapterTitle: Srisaringka Hunting
+    Category: SoloMission
+    Rewards:
+      - Item: Sniper2Epic
+        Count: 1
+      - Item: 15mmBullet
+        Count: 500
+      - Item: MoneyCard
+        Count: 15000
+      - Type: XP
+        Count: 7000
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      The Zirax introduced species to the enviroment on Srisaringka to detour
+      the Talon from their illegal acitivities.
+    PictureFile: Elem.jpg
+    PlayerLevel: 12
+    Visibility: ByLevel
+    CompletedMessage: >-
+      Thanks for killing all those critters, enjoy your new sniper rifle and
+      this old artifact one of the Talon dropped.
+    Tasks:
+      - TaskTitle: Go To Srisaringka
+        StartMessage: Go to Srisaringka. You can autocomplete this task
+        Actions:
+          - ActionTitle: GoToSrisaringka
+            Description: Arrive at Srisaringka
+            Check: PlayfieldEntered
+            Names:
+              - Srisaringka
+            NamesRequired: NeedOne
+            AllowManualCompletion: true
+            CompletedMessage: Welcome to Srisaringka
+      - TaskTitle: Kill NonNative Species
+        StartMessage: Start Hunting
+        Actions:
+          - ActionTitle: Kill Five Otyughs
+            Description: Otyugh on Srisaringka roam in the plains
+            Check: SubjectKilled
+            Names:
+              - Otyugh
+            Amount: 3
+            AllowManualCompletion: true
+            CompletedMessage: Thats enough dead Otyughs for today.
+          - ActionTitle: Kill Ten Creepys
+            Description: Creepys on Srisaringka are found in dens or roaming around
+            Check: SubjectKilled
+            Names:
+              - Creepy
+            Amount: 10
+            AllowManualCompletion: true
+            CompletedMessage: Thats enough dead Creepys for today.
+          - ActionTitle: Kill Fifteen Spiders
+            Description: Spiders on Srisaringka are everywhere
+            Check: SubjectKilled
+            Names:
+              - Spider01
+              - Spider02
+              - Spider03
+            Amount: 15
+            AllowManualCompletion: true
+            CompletedMessage: Thats enough dead Spiders for today.
+    NoSkip: false
+  - ChapterTitle: Illegal Tree Mining
+    Category: SoloMission
+    Rewards:
+      - Item: Chemicals
+        Count: 10
+      - Item: SpareParts
+        Count: 10
+      - Item: LuxuryGoods
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+      - Type: XP
+        Count: 10000
+    Description: >-
+      The Zirax are doing illegal tree drilling on Srisaringka. Please
+      investigate.
+    PictureFile: ZiraxTroopers.jpg
+    PlayerLevel: 15
+    Visibility: ByLevel
+    CompletedMessage: |-
+      BOOM 
+
+      The Zirax wont be getting that shipment anytime soon.
+    Tasks:
+      - TaskTitle: Go To Srisaringka
+        StartMessage: Go to Srisaringka. You can autocomplete this task
+        Actions:
+          - ActionTitle: GoToSrisaringka
+            Description: Arrive at Srisaringka
+            Check: PlayfieldEntered
+            Names:
+              - Srisaringka
+            NamesRequired: NeedOne
+            AllowManualCompletion: true
+            CompletedMessage: Please proceed to any ZiraxTreeStation on the planet
+          - ActionTitle: FindZiraxTreeStation
+            Description: Find Any ZiraxTreeStation location
+            Check: NearPoi
+            Names:
+              - ZiraxTreeStation
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: Looks like some of the Talon here have sided with the Zirax.
+      - TaskTitle: Find A Way Inside The Top Section
+        StartMessage: >-
+          There has to be a switch somewhere that will let you access the inside
+          of the top section.
+        Actions:
+          - ActionTitle: FindTopSectionAccessSwitch
+            Description: The access switch is probably somewhere half way up
+            Check: Signal
+            Names:
+              - Door
+            NamesRequired: NeedOne
+            AllowManualCompletion: false
+            CompletedMessage: Access Panel Open
+      - TaskTitle: Fueling Overload Switch
+        StartMessage: >-
+          Talon intel discovered that turning on the fueling switch while the
+          Zirax ship is fueling will over pressurize the system.
+        Actions:
+          - ActionTitle: FindFuelingSwitch
+            Description: The fuel switch is at the very top. it might cause a big boom.
+            Check: Signal
+            Names:
+              - Boom
+            NamesRequired: NeedOne
+            AllowManualCompletion: false
+            CompletedMessage: System pressur overload. Self Destruct Initaited!
+    NoSkip: false
+  - ChapterTitle: Syndicate BugTrons
+    Category: SoloMission
+    Rewards:
+      - Type: XP
+        Count: 7500
+      - Item: Robotics
+        Count: 3
+      - Item: ScienceEquipment
+        Count: 2
+      - Item: AncientRelics
+        Count: 1
+      - Item: SmallOptronicBridge
+        Count: 1
+      - Item: SmallOptronicMatrix
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: |-
+      The Syndicate Bugtrons on Nebulon are nearly indestructable. 
+
+      We think the core is vulnerable. 
+
+      We need you to destroy two on the planet.
+    PictureFile: Mechanoids.jpg
+    PlayerLevel: 15
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: >-
+      Looks like its back to the drawing board for the Syndicate with that awful
+      design.
+    Tasks:
+      - TaskTitle: Destroy A Bugtron
+        StartMessage: Find and destroy a Bugtron.
+        Rewards:
+          - Item: MoneyCard
+            Count: 1000
+        Actions:
+          - ActionTitle: Decore A SyndicateBugTron
+            Description: ===
+            Check: BlockDestroyed
+            Types:
+              - CoreNPCAdmin
+            Names:
+              - SyndicateBugtron
+            AllowManualCompletion: true
+            CompletedMessage: Bugtron has been disabled.
+      - TaskTitle: Destroy Another Bugtron
+        StartMessage: Find and destroy a Bugtron.
+        Rewards:
+          - Item: MoneyCard
+            Count: 1000
+        Actions:
+          - ActionTitle: Decore Another SyndicateBugTron
+            Description: ===
+            Check: BlockDestroyed
+            Types:
+              - CoreNPCAdmin
+            Names:
+              - SyndicateBugtron
+            AllowManualCompletion: true
+            CompletedMessage: Bugtron has been disabled.
+    NoSkip: false
+  - ChapterTitle: SyndicateCity RoyalFlush
+    Category: SoloMission
+    Rewards:
+      - Type: XP
+        Count: 10000
+      - Item: Robotics
+        Count: 5
+      - Item: RawDiamond
+        Count: 1
+      - Item: MoneyCard
+        Count: 1000
+      - Item: LargeOptronicMatrix
+        Count: 1
+      - Item: LargeOptronicBridge
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      Something called project Royal Flush has been on our radar.  
+
+
+      Your going undercover to the dance party at any SyndicateCity on Nebulon
+      to investigate. 
+
+
+      Bring lots of ammo just in case.
+    PictureFile: Mechanoids.jpg
+    PlayerLevel: 17
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    HideTasks: true
+    CompletedMessage: >-
+      The Syndicate have failed to win you over and another one of their liars
+      has been destroyed.
+    Tasks:
+      - TaskTitle: Investigate Royal Flush
+        StartMessage: Explore the city and figure out what the royal flush is all about.
+        Rewards:
+          - Item: Medikit01
+            Count: 2
+        Actions:
+          - ActionTitle: Investigate RoyalFlush
+            Description: ===
+            Check: Signal
+            Names:
+              - Flush
+            AllowManualCompletion: true
+            CompletedMessage: This is not what we expected.
+      - TaskTitle: Bugtron Facility Found
+        StartMessage: Haven Station is uploading secret base schematics.
+        Actions:
+          - ActionTitle: Find the switch to access the bottom level
+            Description: ===
+            Check: Signal
+            Names:
+              - Hatch
+            AllowManualCompletion: true
+            CompletedMessage: Hatch to elevator access open
+      - TaskTitle: Activate Bugtrons
+        StartMessage: The city will overload if all bugtrons in the facility are turned on
+        Actions:
+          - ActionTitle: Power up Bugtron One
+            Description: ===
+            Check: Signal
+            Names:
+              - BugtronOne
+            AllowManualCompletion: true
+            CompletedMessage: BugtronOne Powered Up
+          - ActionTitle: Power up Bugtron Two
+            Description: ===
+            Check: Signal
+            Names:
+              - BugtronTwo
+            AllowManualCompletion: true
+            CompletedMessage: BugtronTwo Powered Up
+          - ActionTitle: Power up Bugtron Three
+            Description: ===
+            Check: Signal
+            Names:
+              - BugtronThree
+            AllowManualCompletion: true
+            CompletedMessage: BugtronThree Powered Up
+      - TaskTitle: PowerUp Computer
+        StartMessage: >-
+          The bugtrons werent enough. You'll have to find and power up the city
+          computer core.
+        Actions:
+          - ActionTitle: Power On Computer Core
+            Description: ===
+            Check: Signal
+            Names:
+              - CompPower
+            AllowManualCompletion: true
+            CompletedMessage: The computer power has overloaded the city. The Core is exposed
+      - TaskTitle: Destroy SyndicateCity Core
+        StartMessage: Make it to the core and destroy it.
+        Actions:
+          - ActionTitle: Destroy SyndicateCity Core
+            Description: ===
+            Check: BlockDestroyed
+            Types:
+              - CoreNPCAdmin
+            Names:
+              - SyndicateCity
+            AllowManualCompletion: true
+            CompletedMessage: The Cities Core has been destroyed.
+    NoSkip: false
+  - ChapterTitle: Check Out The Raptor Lab
+    Category: SoloMission
+    Rewards:
+      - Item: RawDiamond
+        Count: 1
+      - Item: Robotics
+        Count: 3
+      - Item: AncientRelics
+        Count: 3
+      - Item: SmallOptronicBridge
+        Count: 1
+      - Item: LargeOptronicBridge
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      Go to Kiwayah and find Raptor Run. 
+
+
+      Bring all the handheld firepower you have. 
+
+
+      Your wits will be stonger than your guns within the lab. 
+
+
+      The signs within the lab will tell you how to activate the shutoff
+      switch. 
+
+
+      To access the lab arena stand in front of the teleporter and wait for it
+      to turn on. Then use the teleporter.
+    PictureFile: Raptor.jpg
+    PlayerLevel: 18
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: Thank you for visiting RaptorRun. Seeya back soon!
+    Tasks:
+      - TaskTitle: Find Raptor Run
+        StartMessage: Raptor Run is located on Kiwayah.
+        Rewards:
+          - Item: EmergencyRations
+            Count: 1
+          - Item: Bandages
+            Count: 5
+        Actions:
+          - ActionTitle: FindRaptorRun
+            Description: Raptor Run will be indicated on your map with 3 chevrons.
+            Check: NearPoi
+            Names:
+              - RaptorRun
+            Guiding: Destination
+            TriggerDistance: 100
+            AllowManualCompletion: true
+            CompletedMessage: Take this ration and some bandages cuz youll need it.
+      - TaskTitle: RaptorWastenTime
+        StartMessage: |-
+          Once your in the arena waste some Raptors 
+
+          before you go for the shutoff switch.
+        Rewards:
+          - Item: Medikit02
+            Count: 1
+        Actions:
+          - ActionTitle: Kill 50 Raptors
+            Description: >-
+              If you dont get all 40 raptors you can repeat RaptorRun multiple
+              times a day.
+            Check: SubjectKilled
+            Names:
+              - Raptor
+              - RaptorNight
+            Amount: 50
+            AllowManualCompletion: true
+            CompletedMessage: Thats a lot of dead raptors.
+          - ActionTitle: ActivateTheShutOff
+            Description: Activate the Shutoff Switch
+            Check: Signal
+            Names:
+              - ReplicatorCutoff
+            AllowManualCompletion: true
+            CompletedMessage: You can now begin looting.
+    NoSkip: false
+  - ChapterTitle: DroneCallers
+    Category: SoloMission
+    Rewards:
+      - Item: RawDiamond
+        Count: 1
+      - Item: LargeOptronicMatrix
+        Count: 1
+      - Item: SmallOptronicMatrix
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: Destroy A Ziblax Drone Caller on any planet.
+    PictureFile: Artifact.jpg
+    PlayerLevel: 19
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: A Diamond for your efforts. Use this to make advanced technology.
+    Tasks:
+      - TaskTitle: DestroyDroneCaller
+        StartMessage: Drone Callers are located on several planets.
+        Rewards:
+          - Item: Pizza
+            Count: 1
+          - Item: Beer
+            Count: 1
+        Actions:
+          - ActionTitle: Decore A ZiblaxDroneCaller
+            Description: ===
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            Names:
+              - ZiblaxDroneCaller
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Those are some nasty sheilds on that thing. Your quite a pilot
+              might I add.
+    NoSkip: false
+  - ChapterTitle: I Died In Ziblax Orbit
+    Category: SoloMission
+    Rewards:
+      - Type: XP
+        Count: 10000
+      - Item: MoneyCard
+        Count: 2000
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      You must have died in Ziblax Orbit and spawned on Ziblax Station to do
+      this mission. 
+
+
+      This mission will let you escape from your dire situation.
+    PictureFile: Stunned.jpg
+    PlayerLevel: 1
+    Visibility: Always
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 5
+      DelayAdd: 5
+    CompletedMessage: Your Safely back on Haven Station.
+    Tasks:
+      - TaskTitle: Read Sign Above Door
+        StartMessage: |-
+          Your distress comm has been answered. 
+
+          Haven has beamed in supplies to your backpack. 
+
+          Follow our orders and you will live.
+        Rewards:
+          - Item: PulseRifleT2
+            Count: 1
+          - Item: 5.8mmBullet
+            Count: 1000
+          - Item: Medikit01
+            Count: 2
+          - Item: EmergencyRations
+            Count: 1
+        Actions:
+          - ActionTitle: Pull Pink Switch
+            Description: ===
+            Check: Signal
+            Names:
+              - Dead
+            AllowManualCompletion: true
+            CompletedMessage: 'The door is open, The Ziblax are about to be up your butt!'
+      - TaskTitle: EscapeFromZiblaxStation
+        StartMessage: |+
+          In Cell Block A1 we have hacked the teleporter. 
+
+        Actions:
+          - ActionTitle: Pull Pink Switch At Teleporter
+            Description: >-
+              In Cell block A1 a pink switch will turn on the teleporter we
+              hacked for your escape.
+            Check: Signal
+            Names:
+              - Escape
+            AllowManualCompletion: true
+            CompletedMessage: ''
+    NoSkip: false
+  - ChapterTitle: Robotics Syndicate Secret Ocean Lab
+    Category: SoloMission
+    Rewards:
+      - Item: ScifiCannonEpic
+        Count: 1
+      - Item: SciFiCannonPlasmaCharge
+        Count: 50
+      - Item: RawDiamond
+        Count: 1
+      - Item: Robotics
+        Count: 10
+      - Item: AncientRelics
+        Count: 2
+      - Item: OxygenBottleSmall
+        Count: 3
+      - Item: LargeOptronicBridge
+        Count: 1
+      - Item: SmallOptronicMatrix
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      Haven has gathered Intel that an innocent boat on Alago leads to a
+      Syndicate secret lab. 
+
+
+      Find this boat and use the self destruct switch to destroy their secret
+      lab.
+    PictureFile: Mechanoids.jpg
+    PlayerLevel: 19
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    HideTasks: true
+    CompletedMessage: No matter where the Syndicate hides we will find them.
+    Tasks:
+      - TaskTitle: Go To Alago
+        Actions:
+          - ActionTitle: Travel To Alago
+            Description: Go to Alago in your ship. Its a huge ocean world.
+            Check: PlayfieldEntered
+            Names:
+              - Alago
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Alago is dominantly Talon. If you are unfriendly with the Talon
+              take precuations.
+      - TaskTitle: Find SyndicateBoat
+        StartMessage: You must find thier little boat and teleport down to their secret lab.
+        Actions:
+          - ActionTitle: Go To SyndicateBoat
+            Description: The SyndicateBoat is located on Alago.
+            Check: NearPoi
+            Names:
+              - SyndicateBoat
+            Guiding: Destination
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Those are some nasty sheilds on that thing. Your quite a pilot
+              might I add.
+      - TaskTitle: Hit the lever in the Syndicate Lab
+        StartMessage: You must find thier little boat and teleport down to their secret lab.
+        Actions:
+          - ActionTitle: Flip The Core Switch
+            Description: Haven has hacked the lever in the Syndicate Lab to blow the core!
+            Check: Signal
+            Names:
+              - Core
+            AllowManualCompletion: false
+            CompletedMessage: Hope you brought a swim suit. The teleporter has been deactivated.
+    NoSkip: false
+  - ChapterTitle: Syndicate Forces Of Encalafar
+    Category: SoloMission
+    Rewards:
+      - Item: ArmorMediumEpic
+        Count: 1
+      - Item: Robotics
+        Count: 15
+      - Item: ScienceEquipment
+        Count: 2
+      - Item: LuxuryGoods
+        Count: 2
+      - Item: LargeOptronicBridge
+        Count: 1
+      - Item: SmallOptronicBridge
+        Count: 1
+      - Item: LargeOptronicMatrix
+        Count: 1
+      - Item: SmallOptronicMatrix
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      The Syndicate have used their robotics technology to build a mechanized
+      army and several colonies on Encalafar. 
+
+
+      This build up must be destroyed. n
+
+      A diamond will await you upon your success.
+    PictureFile: Mechanoids.jpg
+    PlayerLevel: 19
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: >-
+      The Syndicate will struggle for decades to rebuild their forces thanks to
+      your efforts.
+    Tasks:
+      - TaskTitle: Go To Encalafar
+        Actions:
+          - ActionTitle: Travel To Encalafar
+            Description: Go to Encalafar in your ship. Its a huge snow world.
+            Check: PlayfieldEntered
+            Names:
+              - Encalafar
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Encalafar is extremely cold and barren. Make sure you are equipted
+              to survive on this world.
+      - TaskTitle: Destroy Three Syndicate CatCat
+        StartMessage: The Syndicate have deployed dozens of CatCat walkers across this world
+        Rewards:
+          - Item: EmergencyRations
+            Count: 3
+          - Item: LargeOptronicBridge
+            Count: 1
+          - Item: SmallOptronicBridge
+            Count: 1
+        Actions:
+          - ActionTitle: Destroy First CatCat
+            Description: Decore the first CatCat
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            Names:
+              - SyndicateCatCat
+            AllowManualCompletion: false
+            CompletedMessage: The first CatCat has been destroyed!
+          - ActionTitle: Destroy Second CatCat
+            Description: Decore the second CatCat
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            Names:
+              - SyndicateCatCat
+            AllowManualCompletion: false
+            CompletedMessage: The second CatCat has been destroyed!
+          - ActionTitle: Destroy Third CatCat
+            Description: Decore the third CatCat
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            Names:
+              - SyndicateCatCat
+            AllowManualCompletion: false
+            CompletedMessage: The last CatCat has been destroyed
+      - TaskTitle: Find and Destroy Cat Cat Facilities
+        StartMessage: >-
+          The Syndicate must be mass producing these. The construction facility
+          must be destroyed.
+        Rewards:
+          - Item: MoneyCard
+            Count: 1500
+        Actions:
+          - ActionTitle: Destroy CatCatFacility
+            Description: Decore the CatCatFacility
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            Names:
+              - CatCatFacility
+            AllowManualCompletion: false
+            CompletedMessage: The CatCatFacility has been destroyed
+      - TaskTitle: The SyndicateDestroyer
+        StartMessage: >-
+          The Syndicate are shipping supplies for CatCats on their Destroyers.
+          Their are a few here on Encalafar.
+        Rewards:
+          - Item: MoneyCard
+            Count: 2000
+          - Item: RawDiamond
+            Count: 1
+        Actions:
+          - ActionTitle: Kill SyndicateDestroyer Commander
+            Description: Kill Commander on SyndicateDestroyer
+            Check: SubjectKilled
+            Names:
+              - ZiraxCommander
+            Amount: 1
+            AllowManualCompletion: false
+            CompletedMessage: >-
+              Now its time to destory the core. A combo of switches will let you
+              access Engineering.
+          - ActionTitle: Destroy SyndicateDestroyer
+            Description: Decore the SyndicateDestroyer
+            Check: BlockDestroyed
+            Types:
+              - CoreNPCAdmin
+            Names:
+              - SyndicateDestroyer
+            AllowManualCompletion: false
+            CompletedMessage: The SyndicateDestroyer has been destroyed
+    NoSkip: false
+  - ChapterTitle: SyndicateStation
+    Category: SoloMission
+    Rewards:
+      - Item: Robotics
+        Count: 10
+      - Item: AncientRelics
+        Count: 5
+      - Item: LuxuryGoods
+        Count: 5
+      - Item: MoneyCard
+        Count: 3000
+      - Item: LargeOptronicBridge
+        Count: 2
+      - Item: SmallOptronicBridge
+        Count: 2
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      Destroy a SyndicateStation in Nebulon Orbit, you will need a powerful CV. 
+
+
+      The core will have to be destroyed by hand to ensure it the station is
+      ruined. 
+
+
+      This mission will only award 1 player per station attack.
+    PictureFile: Artifact.jpg
+    PlayerLevel: 25
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: 'The Syndicate have suffered a massive loss, Haven has you to thank.'
+    Tasks:
+      - TaskTitle: DestroySyndicateStation
+        StartMessage: 'The station is armed with high power energy weapons, be prepared!'
+        Rewards:
+          - Item: Beer
+            Count: 5
+        Actions:
+          - ActionTitle: Decore Syndicate Station
+            Description: ===
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            Names:
+              - SyndicateStation
+            AllowManualCompletion: true
+            CompletedMessage: You have destroyed SyndicateStation
+    NoSkip: false
+  - ChapterTitle: Zed City
+    Category: SoloMission
+    Rewards:
+      - Item: ArmorMediumEpic
+        Count: 1
+      - Item: RawDiamond
+        Count: 1
+      - Item: Robotics
+        Count: 5
+      - Item: AncientRelics
+        Count: 5
+      - Item: SmallOptronicBridge
+        Count: 2
+      - Item: MoneyCard
+        Count: 10000
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: |-
+      Go To Haven and take the Instance portal to Zed City. 
+
+      Bring only food and medical supplies. 
+
+      Be prepared to take on an inifinite amount of Total Horrors. 
+
+      You may bring up to four friends with you.
+    PictureFile: Artifact.jpg
+    PlayerLevel: 15
+    Visibility: ByLevel
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: Your nightmare is not over till you have escaped Zed City.
+    Tasks:
+      - TaskTitle: Kill Zombies
+        StartMessage: >-
+          While you battle for your life to find the escape portal atop the
+          tower 
+
+
+          Kill a hundred total horrors for the fun of it.
+        Rewards:
+          - Item: Explosives
+            Count: 5
+        Actions:
+          - ActionTitle: Kill The Zombies
+            Description: Kill one hundred total horrors
+            Check: SubjectKilled
+            Names:
+              - TotalHorror
+            Amount: 100
+            AllowManualCompletion: false
+            CompletedMessage: They just never end do they?
+    NoSkip: false
+  - ChapterTitle: Diamond Hiest
+    Category: FactionMission
+    Rewards:
+      - Item: ArmorHeavyEpic
+        Count: 1
+      - Item: DrillEpic
+        Count: 1
+      - Item: LuxuryGoods
+        Count: 75
+      - Item: ScienceEquipment
+        Count: 6
+      - Item: MoneyCard
+        Count: 50000
+      - Item: MoneyCard
+        Count: 50000
+      - Item: MoneyCard
+        Count: 50000
+      - Item: SmallOptronicMatrix
+        Count: 6
+      - Item: LargeOptronicMatrix
+        Count: 6
+      - Item: Token
+        Count: 1
+        Meta: 7238
+      - Type: Reputation
+        Count: 28000
+        Faction:
+          - RoboticsSyndicate
+    Description: >-
+      For the thickest of theives the Haven Dark Market has a chore. 
+
+
+      Three Raw Diamonds must be acquired from the Alien factions. 
+
+
+      Your hunt will most likely cost you your life!
+
+
+      You must keep all the diamonds in your inventory! 
+
+
+      This mission can only be completed once and you will need a party of three
+      or more faction members. 
+
+
+      Diamonds are very hard to come by.
+    PictureFile: Artifact.jpg
+    PlayerLevel: 25
+    Visibility: ByLevel
+    HideTasks: true
+    Activatable: Always
+    CompletedMessage: >-
+      Surely these were acquired legally. Never the less, take this bit of cash
+      and spend it wisely.
+    Tasks:
+      - TaskTitle: Locate The LostCity
+        StartMessage: Go to Talonia & find the LostCity
+        Actions:
+          - ActionTitle: LocateLostCity
+            Description: Go to Talonia & find the LostCity
+            Check: NearPoi
+            Names:
+              - TalonLostCity
+            TriggerDistance: 200
+            AllowManualCompletion: true
+            CompletedMessage: |-
+              Fight your way to the top of the pyramid 
+
+              Take the teleporter.
+      - TaskTitle: DiamondCollection
+        PictureFile: Artifact.jpg
+        StartDelay: 1
+        StartMessage: The Diamond is in the Tombs
+        Actions:
+          - ActionTitle: Collect Your Diamonds
+            Description: For the Glory of Haven!
+            Check: InventoryClosed
+            Names:
+              - ContainerPersonal
+            AllowManualCompletion: true
+            CompletedMessage: One RawDiamond!
+          - ActionTitle: Decore Lost City
+            Description: Destroy the Lost Cities Core!
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            AllowManualCompletion: true
+            CompletedMessage: The Talon Lost City Has Fallen.
+      - TaskTitle: Locate PolarisSkyT3
+        StartMessage: Go to Polaria Oura 3 & find the PolarisSkyT3
+        Actions:
+          - ActionTitle: LocatePolariaSkyT3
+            Description: Go to Polaria Oura 3 & find the PolarisSkyT3
+            Check: NearPoi
+            Names:
+              - PolarisSkyT3
+            TriggerDistance: 250
+            AllowManualCompletion: true
+            CompletedMessage: |-
+              Find the diamond inside the main structure 
+
+              Be careful not to destroy it.
+      - TaskTitle: DiamondCollectionTwo
+        PictureFile: Artifact.jpg
+        StartDelay: 1
+        StartMessage: The Diamond is near the control room
+        Actions:
+          - ActionTitle: Collect Your Diamonds
+            Description: For the Glory of Haven!
+            Check: InventoryClosed
+            Names:
+              - ContainerPersonal
+            AllowManualCompletion: true
+            CompletedMessage: Two RawDiamonds!
+          - ActionTitle: Decore The Polaris Sky Base
+            Description: Destroy the PolarisSkyT3 Core!
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            AllowManualCompletion: true
+            CompletedMessage: The Polaris Sky Base Has Been Rendered Useless.
+      - TaskTitle: Locate ZiblaxCapital
+        StartMessage: Go to Ziblax & find the Ziblax City
+        Actions:
+          - ActionTitle: LocateZiblaxCapital
+            Description: Go to Ziblax & find the Ziblax City
+            Check: NearPoi
+            Names:
+              - ZiblaxCapital
+            TriggerDistance: 50
+            AllowManualCompletion: true
+            CompletedMessage: |-
+              The city is an armed fotress 
+
+              Find the bank Get the Diamond Get Out!
+      - TaskTitle: DiamondCollectionThree
+        PictureFile: Artifact.jpg
+        StartDelay: 1
+        StartMessage: The bank is near the sheild generator!
+        Actions:
+          - ActionTitle: Collect Your Diamonds
+            Description: For the Glory of Haven!
+            Check: InventoryClosed
+            Names:
+              - ContainerPersonal
+            AllowManualCompletion: true
+            CompletedMessage: Three RawDiamonds!
+          - ActionTitle: Decore ZiblaxCity
+            Description: Destroy the Ziblax Cities Core!
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            AllowManualCompletion: true
+            CompletedMessage: The Capital of the Ziblax Empire Has Fallen!
+      - TaskTitle: DiamondVerification
+        PictureFile: Artifact.jpg
+        StartMessage: Lets make sure these are real diamonds!
+        Actions:
+          - ActionTitle: PlaceThreeDiamondsInYourToolbar
+            Description: All 3 Diamonds must be on your hotbar.
+            Check: ToolbarContains
+            Amount: 3
+            AllowManualCompletion: true
+            CompletedMessage: These diamonds are real!
+            Types:
+              - RawDiamond
+    NoSkip: false
+  - ChapterTitle: The Talon Armada
+    Category: ZiraxMission
+    Rewards:
+      - Type: Reputation
+        Count: 2500
+        Faction:
+          - Zirax
+      - Item: RawDiamond
+        Count: 1
+      - Item: ZascosiumIngot
+        Count: 50
+      - Item: ErestrumIngot
+        Count: 50
+      - Item: SmallOptronicBridge
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: |-
+      The Talon have stolen Ziblax and Syndicate tech and built an Armada. 
+
+      Our forces are spread thin, so we are now open to hiring mercenaries. 
+
+      Talon Sky Destroyers have been detected on P100 series worlds.
+    PictureFile: ZiraxTroopers.jpg
+    PlayerLevel: 20
+    Visibility: Always
+    Activatable: ByReputation
+    ReputationLevel: 12001
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: >-
+      Despite your past wrong doings with the empire, your hire may be needed
+      again.
+    Tasks:
+      - TaskTitle: Reign Terror On A Talon Sky Destroyer
+        StartMessage: >-
+          We know you can just blow it out of the sky, but we prefer to strike
+          fear into the Talon.
+        Actions:
+          - ActionTitle: DestroySkyDestroyerSheilds
+            Description: Destroy the sheild emitter on the Sky Destroyer.
+            Check: BlockDestroyed
+            Types:
+              - ShieldGeneratorPOI
+            Names:
+              - TalonSkyDestroyer
+            AllowManualCompletion: true
+            CompletedMessage: Now their wooden ship can set to flames!
+          - ActionTitle: DestroyBallistaTurrets
+            Description: Destroy a Ballista Turret
+            Check: BlockDestroyed
+            Types:
+              - TurretEnemyBallista
+            Names:
+              - TalonSkyDestroyer
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Good job, The Talon should know by now that Ballistas are just
+              decoration.
+          - ActionTitle: Decore Sky Destroyer
+            Description: Blow the Talon Sky Destroyers Core
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            Names:
+              - TalonSkyDestroyer
+            AllowManualCompletion: true
+            CompletedMessage: The Talon Sky Destroyer has been disabled.
+    NoSkip: false
+  - ChapterTitle: SystemWideChiefAssassin
+    Category: ZiraxMission
+    Rewards:
+      - Type: Reputation
+        Count: 10000
+        Faction:
+          - Zirax
+      - Item: Robotics
+        Count: 5
+      - Item: SmallOptronicBridge
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: |-
+      We will hire anyone to assinate Talon Cheifs across the solar system. 
+
+      You can earn your keep in the Empire this way.
+    PictureFile: ZiraxTroopers.jpg
+    PlayerLevel: 20
+    Visibility: Always
+    Activatable: Always
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: >-
+      When you are friendly with us you should come to Ziblax Station and buy
+      wares from the OverLord.
+    Tasks:
+      - TaskTitle: Kill 10 Talon Chiefs
+        StartMessage: Kill any 10 Talon Chiefs in the solar system.
+        Actions:
+          - ActionTitle: ChiefAssination
+            Description: ===
+            Check: SubjectKilled
+            Names:
+              - TalonChief
+            Amount: 10
+            AllowManualCompletion: true
+            CompletedMessage: The Talonians know your on our side now.
+    NoSkip: false
+  - ChapterTitle: TalonOfSrisaringka
+    Category: ZiraxMission
+    Rewards:
+      - Type: Reputation
+        Count: 12000
+        Faction:
+          - Zirax
+      - Item: Robotics
+        Count: 5
+      - Item: LuxuryGoods
+        Count: 7
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: >-
+      The Talon on Srisaringka stole Ziblax Ziraxian technology and took it to
+      there tree. 
+
+
+      We need you to show them there great tree is not safe from the Zirax.
+    PictureFile: ZiraxTroopers.jpg
+    PlayerLevel: 10
+    Visibility: Always
+    Activatable: Always
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    HideTasks: true
+    CompletedMessage: >-
+      When you are friendly with us you should come to Teldrassil on Srisaringka
+      and buy wares from the Ziblax OverLord.
+    Tasks:
+      - TaskTitle: Find TreeOfSrisaringka
+        StartMessage: |-
+          Find one of the Trees of Srisaringka 
+
+          There are five on the planet 
+
+          If you already found it then autocomplete this task.
+        Actions:
+          - ActionTitle: GoTo TreeOfSrisaringka
+            Description: Find TreeOfSrisaringka
+            Check: NearPoi
+            Names:
+              - TreeOfSrisaringka
+            Guiding: Destination
+            TriggerDistance: 100
+            AllowManualCompletion: true
+            CompletedMessage: This is not the holy Talon site it appears to be from the outside.
+      - TaskTitle: Kill the Tree Dwellers
+        StartMessage: Kill Talon and spiders on the tree.
+        Actions:
+          - ActionTitle: Kill Three Tree TalonGuardian
+            Description: ===
+            Check: SubjectKilled
+            Names:
+              - TalonGuardian
+              - TalonCheif
+              - TalonGuardianRed
+              - TalonGuardianBlue
+            Amount: 3
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              Glory to Ziblax and all Zirax for these Talon have been
+              sacraficed.
+          - ActionTitle: Kill Seven Tree Spiders
+            Description: ===
+            Check: SubjectKilled
+            Names:
+              - Spider01
+              - Spider02
+              - Spider03
+            Amount: 7
+            AllowManualCompletion: true
+            CompletedMessage: Even the Zirax hate spiders
+          - ActionTitle: Find Talon Tree Alter
+            Description: Investigate the Tree Alter
+            Check: Signal
+            Names:
+              - Alter
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              A secret hatch has been opened! A Vault below the tree can now be
+              raided for your personal glory & honor!
+    NoSkip: false
+  - ChapterTitle: Strikedown The Zirax Leadership
+    Category: TalonMission
+    Rewards:
+      - Type: Reputation
+        Count: 2500
+        Faction:
+          - Talon
+      - Item: AncientRelics
+        Count: 4
+      - Item: RawDiamond
+        Count: 1
+      - Item: SmallOptronicMatrix
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: |-
+      The Zirax Ziblaxians have been hiring mercenaries to kill our Chiefs. 
+
+      A Talonian gift of reciprocation must be honored.
+    PictureFile: bak.jpg
+    PlayerLevel: 20
+    Visibility: Always
+    Activatable: ByReputation
+    ReputationLevel: 12001
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: >-
+      With the efforts of our Polaris allies the Ziblax will be forced back
+      within their borders. 
+
+
+      Talonia will stand strong!
+    Tasks:
+      - TaskTitle: Talonian Gift For The Zirax
+        StartMessage: Find 7 Zirax Commanders and put a spear through their eye!
+        Actions:
+          - ActionTitle: Kill 7 Zirax Commanders
+            Description: ===
+            Check: SubjectKilled
+            Names:
+              - ZiraxCommander
+            Amount: 10
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              When you are honored with Talon you should come for a vacation on
+              Talonia and tour the sky isles.
+    NoSkip: false
+  - ChapterTitle: Hover Tank Hunt
+    Category: PolarisMission
+    Rewards:
+      - Type: Reputation
+        Count: 2500
+        Faction:
+          - Polaris
+      - Item: Robotics
+        Count: 10
+      - Item: LargeOptronicBridge
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: |-
+      The Talon have asked for our help with the Ziblaxians. 
+
+      Zirax Hover tanks have deployed on all P100 series planets.. 
+
+      Goal - Take out atleast three hover tanks anywhere in the solar system.
+    PictureFile: bak.jpg
+    PlayerLevel: 20
+    Visibility: Always
+    Activatable: ByReputation
+    ReputationLevel: 12001
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: >-
+      With the efforts of our Talon allies the Ziblax will be forced back within
+      their borders. 
+
+
+      For Polaria!
+    Tasks:
+      - TaskTitle: Destroy Three Zirax Hover Tanks
+        StartMessage: 'Hover tanks are small, but pack a punch.'
+        Actions:
+          - ActionTitle: Destroy Three HoverTanks
+            Description: >-
+              Take out the core of 3 Zirax Hover Tanks anywhere in the solar
+              system.
+            Check: BlockDestroyed
+            Types:
+              - CoreNPC
+            Names:
+              - ZiraxHoverTank
+            Amount: 3
+            AllowManualCompletion: true
+            CompletedMessage: >-
+              When you are honored with Polaris you should come to our
+              PolarisSkyT3 for some special shopping.
+    NoSkip: false
+  - ChapterTitle: Take Down Ziblax Station
+    Category: PolarisMission
+    Rewards:
+      - Type: Reputation
+        Count: 5000
+        Faction:
+          - Polaris
+      - Item: Robotics
+        Count: 7
+      - Item: RawDiamond
+        Count: 1
+      - Item: LargeOptronicBridge
+        Count: 1
+      - Item: SmallOptronicBridge
+        Count: 1
+      - Item: Token
+        Count: 1
+        Meta: 7238
+    Description: |-
+      Ziblax Station is the heart of the Ziblax Empires Space Command. 
+
+      Our schematics show a weakness. 
+
+      You will be rewarded well for taking down this key Ziblax asset.
+    PictureFile: bak.jpg
+    PlayerLevel: 24
+    Visibility: ByLevel
+    Activatable: ByReputation
+    ReputationLevel: 18001
+    RepeatConditions:
+      NumRepeats: 0
+      Delay: 1380
+      DelayAdd: 0
+    CompletedMessage: >-
+      When your friendly with us you can visit the special vendor PolariaWares
+      on Polaria at the SkyT3. 
+
+
+      For Polaria!
+    Tasks:
+      - TaskTitle: Report To Ziblax Orbit And Find ZiblaxStation
+        StartMessage: Warp To Ziblax Orbit
+        Actions:
+          - ActionTitle: Warp Into Ziblax Orbit
+            Description: ===
+            Check: PlayfieldEntered
+            Names:
+              - Ziblax Orbit
+            AllowManualCompletion: true
+            CompletedMessage: ''
+          - ActionTitle: Find Ziblax Station
+            Description: Beware of high Zirax Presence
+            Check: NearPoi
+            Names:
+              - ZiblaxStation
+            Guiding: Destination
+            TriggerDistance: 300
+            AllowManualCompletion: true
+      - TaskTitle: InvadeTheStation
+        StartMessage: >-
+          Eliminate Outer Defenses then board the station. Beware as Drones will
+          not stop attacking.
+        Rewards:
+          - Item: LaserRifleEpic
+            Count: 1
+          - Item: PulseLaserChargeRifle
+            Count: 250
+        Actions:
+          - ActionTitle: Kill Station Dogs
+            Description: ===
+            Check: SubjectKilled
+            Names:
+              - RipperDog
+            Amount: 5
+            AllowManualCompletion: true
+            CompletedMessage: ''
+          - ActionTitle: Kill Zirax Laser Troops
+            Description: ===
+            Check: SubjectKilled
+            Names:
+              - ZiraxLaser
+            Amount: 3
+            AllowManualCompletion: true
+            CompletedMessage: ''
+          - ActionTitle: Kill Zirax Minigun Troops
+            Description: ===
+            Check: SubjectKilled
+            Names:
+              - ZiraxMinigun
+            Amount: 6
+            AllowManualCompletion: true
+            CompletedMessage: ''
+          - ActionTitle: Kill Station Commander
+            Description: ===
+            Check: SubjectKilled
+            Names:
+              - ZiraxCommander
+            AllowManualCompletion: true
+            CompletedMessage: Glad he is dead.
+      - TaskTitle: BlowTheZiblaxStationCore
+        StartMessage: |-
+          Locate the switch on the command deck. 
+
+          Pull it and the core will blow!
+        Actions:
+          - ActionTitle: Hurry Up And Hit The Core Switch
+            Description: ===
+            Check: Signal
+            Names:
+              - Core
+            AllowManualCompletion: true
+            CompletedMessage: The Core has been destroyed!
+    NoSkip: false
+  - ChapterTitle: Diamonds Robotics And Relics
+    Category: FAQ
+    Description: '[i] Special Item Information. '
+    PictureFile: UCH.jpg
+    PlayerLevel: 1
+    Visibility: Always
+    Tasks:
+      - TaskTitle: Ancient Relics
+        PictureFile: BP_DefaultSV.jpg
+        Actions:
+          - ActionTitle: SUMMARY
+            Description: >-
+              Ancient Relics are acquired from several Solo and Faction
+              Missions. 
+
+
+              They are required to craft Shield Emitters.
+      - TaskTitle: Robotics
+        PictureFile: Artifact.jpg
+        Actions:
+          - ActionTitle: SUMMARY
+            Description: >-
+              Robotics are acquired from most missions. 
+
+
+              They are required to make Autominers and Sheild Emitters. 
+
+
+              The Robotics Syndicate daily missions will reward the most
+              Robotics.
+      - TaskTitle: Diamonds
+        PictureFile: raidpoi.jpg
+        Actions:
+          - ActionTitle: SUMMARY
+            Description: >-
+              Diamonds are the hardest item to acquire. 
+
+
+              They are required to craft higher level Sheild Emitters and T3
+              Autominers 
+
+
+              Only certain daily missions will reward this special object. 
+
+
+              The Diamond Hiest Mission will reward the most but is not
+              repeatable and requires a team to back you up.
+    NoSkip: false

@@ -1,0 +1,246 @@
+---
+# Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
+
+
+Description: "This barren rock carries its history on the surface: 
+\nCompletely solidified, and no atmosphere to remove tracks and shapes -
+\nAll encounters will be remembered."
+
+
+PlanetType: MoonBarren
+PlayfieldType: Moon
+Difficulty: 2
+
+LandClaimZone: Device
+
+
+# Atmosphere and Sky
+AtmosphereEnabled: False
+
+# Light
+DayLightIntensity: 1.6
+NightLightIntensity: 0.7
+
+DayShadowStrength: 0.95
+
+# Sun
+SunFlare: EnvironmentalEffects/SunFlareWhiteMoon
+
+# ==============================================================
+
+### Resource Deposits
+RandomResources:
+    - Name: IronResource
+      IsScalingCount: True
+      CountMinMax: [ 3, 5 ]
+      SizeMinMax: [ 18, 130 ]
+      DepthMinMax: [ 6, 15 ]
+      DroneProb: 0.3
+      MaxDroneCount: 1
+
+    - Name: SiliconResource
+      IsScalingCount: True
+      CountMinMax: [ 3, 5 ]
+      SizeMinMax: [ 8, 90 ]
+      DepthMinMax: [ 6, 15 ]
+      DroneProb: 0.4
+
+    - Name: CopperResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 5, 60 ]
+      DepthMinMax: [ 6, 15 ]
+      DroneProb: 0.7
+      MaxDroneCount: 1
+
+    - Name: CobaltResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 5, 60 ]
+      DepthMinMax: [ 6, 15 ]
+      DroneProb: 0.7
+      MaxDroneCount: 1
+
+    - Name: MagnesiumResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 3, 4 ]
+      DepthMinMax: [ 6, 15 ]
+      DroneProb: 0.7
+      MaxDroneCount: 1 
+
+    - Name: TitanResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 3, 40 ]
+      DroneProb: 0.7
+      MaxDroneCount: 1
+      DepthMinMax: [ 2, 5 ]
+      # DistTypeCylinder:
+        # MaxRadius: 13
+        # YVariance: 10
+
+    - Name: PentaxidResource
+      IsScalingCount: True
+      CountMinMax: [ 4, 5 ]
+      SizeMinMax: [ 2, 30 ]
+      DroneProb: 1
+      MaxDroneCount: 2
+      DepthMinMax: [ 0, 5 ]
+      # DistTypeCylinder:
+        # MaxRadius: 13
+        # YVariance: 10
+
+### Resource Asteroids
+AsteroidResources:
+     - Name: IronResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: SiliconResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: CopperResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: CobaltResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: MagnesiumResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: PromethiumResource
+       Threshold: 0.2
+       Amount: 0.2
+     - Name: PentaxidResource
+       Threshold: 0.2
+       Amount: 0.2
+
+### POIs
+POIs:
+    Random:  
+        - GroupName: SyndicateDestroyer          #CommandCenter
+          Faction: RoboticsSyndicate 
+          NoShieldReload: True
+          LevelMod: +2
+          IsCommandCenter: True
+          IsImportant: True
+          DroneBaseSetup: DroneBaseSetup
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 4, 5 ] 
+          ReserveCount: 5
+          SpawnResource: ["PentaxidResource:1-2"]
+          ResourceDistance: 400
+          Properties: 
+            - Key: RegenAfter
+              Value: 240
+            - Key: SI
+              Value: Off
+            - Key: Music
+              Value: EnergyMatrix
+            - Key: PersonalContainer
+              Value: Beer:2, Robotics:3, AutoMiningDeviceEpic
+
+        - GroupName: CrashedShip    
+          Faction: None      
+          CountMinMax: [ 1, 1 ]
+          IsScalingCount: True
+          DroneProb: 1.0
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 4
+          TroopTransport: False
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 720
+
+        - GroupName: RoboticsFrigateSnow
+          Faction: RoboticsSyndicate  
+          NoShieldReload: True
+          CountMinMax: [ 3, 4 ]
+          DroneProb: 0.7
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: False
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+            - Key: SI
+              Value: Off
+            - Key: Music
+              Value: EnergyMatrix
+            - Key: PersonalContainer
+              Value: AncientRelics, Robotics, GoldSeedCrystal
+
+    FixedPlayerStart:
+        - Mode: Debug
+          Pos: [ -596, 104, -1063 ]
+          RotY: 125
+
+        - Mode: Survival
+          Spawn: EscapePod
+          Armor: ArmorMedium
+
+### Drones
+DroneBaseSetup:
+    Random:
+        - GroupName: DroneBaseSetup
+          Difficulty: 0
+          PresetStyle: 0
+          Stock:
+              - Name: DroneSmallFast01Stun
+                Amount: 10000
+                Extra: 0
+
+              - Name: DroneSmallFast01Minigun
+                Amount: 20000
+                Extra: 0
+
+              - Name: DroneLargeSlow01Minigun
+                Amount: 10000
+                Extra: 0
+
+              - Name: DroneSmallSlow01Cannon
+                Amount: 20000
+                Extra: 0
+
+              - Name: DroneSmallAttackBase
+                Amount: 30000
+                Extra: 1
+
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+
+              - Name: AssaultCyborg
+                Amount: 50000
+                Extra: 3
+
+              # - Name: RipperDog  # No atmosphere. But Zirax wear at least masks.
+                # Amount: 400
+                # Extra: 3
+
+              - Name: Nebulobot
+                Amount: 10000
+                Extra: 3
+                
+DroneSpawning:
+    Random:
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: -5000
+          Radius: 2000
+    
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: -2500
+          Radius: 1500
+
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: 2500
+          Radius: 1500
+          
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: 5000
+          Radius: 2000
+          

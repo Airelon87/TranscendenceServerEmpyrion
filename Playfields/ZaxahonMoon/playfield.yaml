@@ -1,0 +1,885 @@
+---
+Seed: 237
+PlanetSize: 3
+PlanetAxis: 20
+TemperatureMinMax: [11, 31]
+TemperatureNight: 10
+HumidityMinMax: [0.1, 0.28]
+SeaLevel: 15
+TerrainLevel: 179
+BaseLevel: 7
+LandWaterRatio: 0.05366549
+TemperatureHeightRange: [70, 388]
+TemperatureGradientRange: [0.75, 0.1]
+TemperatureNoiseFac: 0.5
+HumidityHeightFac: [0, 365]
+HumidityNoiseFac: 0.6
+
+Gravity: -4.13
+Radiation: 23.2
+AtmosphereDensity: 1.5
+AtmosphereO2: 0.17
+AtmosphereBreathable: True
+GroundFogIntensity: 0.4923615
+GroundFogHeight: 87.33716
+AtmosphereFog: 0
+PvP: True
+PlayfieldLevel: 9
+
+Water: WaterBrown
+Music: Vanguard
+
+TerrainHeightMapMax: 490
+
+GroundShapes:
+   - GroundShape_3, 0.5
+
+BiomeStampTries: 10
+
+Biome:
+   - BiomeClusterData:
+         - Name: Pole
+           IgnoreForcedBiome: True
+           Weather: PoleFog
+           Texture: [0, 0, 0.02]
+           SelectionCriteria:
+               - "+Lat > 0.975"
+           Color: [0.6, 0.6, 0.6]
+           StampProb: 1
+           Stamps:
+           Decorations:
+           Grass:
+
+         - Name: LiquidPools
+           IgnoreForcedBiome: True
+           Texture: [11, 11, 0.2]
+           UndergroundLayers:
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height < SeaLevel"
+           Color: [0, 1, 0]
+           StampProb: 1
+           Stamps:
+           Temperature: 10
+           Decorations:
+               - [Hydrilla2, 0.008]
+               - [SkeletonDragonTorso, 0.003]
+               - [SkeletonDragonHead, 0.002]
+           Grass:
+               - Name: Plant01Blue
+                 Density: 0.01
+                 Preset: GrassDense
+
+         - Name: Dunes
+           IgnoreForcedBiome: True
+           Texture: [4, 5, -0.25]
+           UndergroundLayers:
+               - [0, 2]
+               - [10, 2]
+               - [11, 1]
+               - [15, 30]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.3, 0.3, 0.5]
+           StampProb: 1
+           StampForcesBiome: True
+           StampTries: 15
+           Stamps:
+               - IceDunes_01a, 0.5
+               - IceDunes_01b, 0.5
+           Decorations:
+               - [CrystalsPyramidBlue, 0.008, Plant]
+               - [PromethiumStone, 0.003, Plant]
+               - [RealRock1Dark, 0.0006, Free]
+               - [RealRock2Dark, 0.0002, Free]
+               - [RealRock4Dark, 0.0006, Free]
+               - [RealRock8Dark, 0.0006, Free]
+               - [RealRock10Dark, 0.0004, Free]
+           Grass:
+
+         - Name: Mountains
+           IgnoreForcedBiome: True
+           Texture: [1, 6, 0.5, 2, 7, 0.8, 0.18]
+           UndergroundLayers:
+               - [1, 3]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 170"
+           Color: [0.7, 0.7, 0.7]
+           StampProb: 1
+           StampForcesBiome: True
+           StampTries: 15
+           Stamps:
+               - Mountain_4a, 0.1
+               - Mountain_4b, 0.1
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+           Grass:
+
+         - Name: MareEdge
+           Texture: [0, 0, 0.5, 2, 7, 0.8, 0]
+           SelectionCriteria:
+               - "Height < 102"
+               - "Height > 99"
+           Color: [0.1, 0.1, 0.3]
+           StampProb: 1
+           Stamps:
+           Decorations:
+               - [AlienPlant20, 0.003, Plant]
+               - [AlienDeadTree, 0.001, Free]
+               - [RealRock1Dark, 0.0001, Free]
+               - [RealRock2Dark, 0.0001, Free]
+               - [RealRock3Dark, 0.0001, Free]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: Mare
+           Texture: [4, 4, 0.5, 7, 7, 0.5, -0.1]
+           UndergroundLayers:
+               - [10, 2]
+               - [11, 1]
+               - [15, 30]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height < 102"
+               - "Height > 10"
+           Color: [0.3, 0.3, 0.3]
+           StampProb: 0.9
+           Stamps:
+               - CraterMoon_1, 1
+           Decorations:
+               - [AlienPlant20, 0.003, Plant]
+               - [AlienDeadTree, 0.001, Free]
+               - [RealRock1Dark, 0.0001, Free]
+               - [RealRock2Dark, 0.0001, Free]
+               - [RealRock3Dark, 0.0001, Free]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: Rifts
+           Texture: [7, 2, 0.2]
+           UndergroundLayers:
+               - [9, 2]
+               - [15, 2]
+               - [9, 2]
+               - [15, 17]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.6, 0.7, 0.2]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 1
+           Stamps:
+               - RiftLava_1b_BM, 0.5
+           Temperature: 5
+           Decorations:
+           Grass:
+
+         - Name: LargeCrater
+           Texture: [9, 8, 0.5, 3, 2, 0.5, -0.05]
+           UndergroundLayers:
+               - [8, 1]
+               - [9, 3]
+               - [15, 3]
+               - [9, 2]
+               - [15, 6]
+               - [9, 1]
+               - [15, 9]
+               - [11, 3]
+               - [15, 10]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.7, 0.2, 0.2]
+           StampProb: 1
+           StampForcesBiome: True
+           StampTries: 56
+           Stamps:
+               - CraterMoon_10, 0.09
+               - CraterMoon_11, 0.055
+               - CraterMoon_12, 0.019
+               - CraterMoon_13, 0.011
+           Temperature: 5
+           Decorations:
+               - [RockGrey01Large, 0.004]
+               - [RockGrey02Large, 0.004]
+               - [RockResourceSilicon, 0.0001, Free]
+               - [RockResourceCobalt, 0.0001, Free]
+               - [RockResourceIron, 0.0002, Free]
+               - [CrystalStraight, 0.00015, Free]
+           Grass:
+
+         - Name: RayCrater
+           Texture: [9, 8, 0.5, 3, 7, 0.5, 0.001]
+           UndergroundLayers:
+               - [9, 2]
+               - [15, 2]
+               - [9, 2]
+               - [15, 17]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.7, 0.7, 0.2]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 19
+           Stamps:
+               - CraterMoon_14, 0.025
+               - CraterMoon_14b, 0.007
+           Temperature: 5
+           Decorations:
+           Grass:
+
+         - Name: SmallCrater
+           Texture: [9, 8, 0.5, 3, 3, 0.5, 0.1]
+           UndergroundLayers:
+               - [8, 1]
+               - [9, 2]
+               - [15, 2]
+               - [9, 2]
+               - [15, 17]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.9, 0.3, 0.3]
+           StampProb: 1
+           StampForcesBiome: True
+           StampTries: 1200
+           Stamps:
+               - CraterMoon_1, 0.3
+               - CraterMoon_2, 0.05
+               - CraterMoon_3, 0.15
+               - CraterMoon_4, 0.04
+               - CraterMoon_5, 0.10
+               - CraterMoon_6, 0.08
+               - CraterMoon_7, 0.02
+               - CraterMoon_8, 0.015
+               - CraterMoon_9, 0.008
+               - CraterMoon_10, 0.003
+           Temperature: 5
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: LowMountains
+           Texture: [1, 6, 0.5, 7, 7, 1, 0]
+           UndergroundLayers:
+               - [1, 1]
+               - [15, 30]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 150"
+               - "Height < 280"
+           Color: [0.5, 0.5, 1]
+           StampProb: 1
+           Stamps:
+           Decorations:
+           Grass:
+
+         - Name: RegolithEdge
+           Texture: [0, 5, 0.9, 3, 3, 1, 0]
+           UndergroundLayers:
+               - [0, 2]
+               - [10, 2]
+               - [11, 1]
+               - [15, 30]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 140"
+           Color: [0.4, 0.4, 0.4]
+           StampProb: 1
+           Stamps:
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+           Grass:
+
+         - Name: Regolith
+           Texture: [0, 7, 0.1]
+           UndergroundLayers:
+               - [0, 3]
+               - [10, 1]
+               - [11, 1]
+               - [15, 60]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 130"
+           Color: [0.5, 0.5, 0.5]
+           StampProb: 1
+           Stamps:
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+               - [RockResourceIron, 0.0001, Free]
+           Grass:
+
+         - Name: Flats
+           Texture: [10, 0, 0.8, 7, 3, 0.6, 0]
+           UndergroundLayersDefault: True
+           UndergroundLayers:
+               - [10, 2]
+               - [11, 3]
+               - [10, 1]
+               - [11, 12]
+               - [15, 40]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height > 90"
+           Color: [0.6, 0.6, 0.6]
+           StampProb: 1
+           Stamps:
+           Decorations:
+               - [RockGrey01Large, 0.005]
+               - [RockGrey02Large, 0.005]
+           Grass:
+
+         - Name: GreetingsStranger
+           Texture: [8, 9, 0.5, 3, 3, 0.5, 0.001]
+           Color: [0.3, 0.3, 0.3]
+           StampProb: 1
+           StampForcesBiome: True
+           StampTries: 1
+           Stamps:
+               - CraterMoon_1_BM, 0.3
+           Temperature: 5
+           Decorations:
+               - [GlowTube01, 1]
+           Grass:
+
+
+
+
+# Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
+
+Description: "This world has a thick atmosphere & high levels of radiation. Somehow it supports life."
+
+PlanetType: Barren
+PlayfieldType: Moon
+Difficulty: 5
+
+LandClaimZone: Device
+
+#Effects - Biomes Are Now Biome<spellnumber> Water = BiomeOne / Catchall = BiomeThree / Mountains = BiomeSeven, Special = BiomeEight
+SpecialEffectsLocal:  
+  - Name: Grime
+    Biome: [ Any ]
+    Time: Night
+    MaxHeight: 50   
+  - Name: Moths
+    Biome: [ LiquidPools, Mountains, Rifts, Dunes ]
+    Time: Day
+    MaxHeight: 15    
+    
+SpecialEffectsGlobal:
+  - Name: Clear                 
+    Type: Weather            
+    InitialDelay: 0           
+    Delay: 2                    
+    Lifetime: 1000 
+  - Name: FogRadiationPurple                  
+    Type: Weather            
+    InitialDelay: 0           
+    Delay: 4                    
+    Lifetime: 500   
+  - Name: MeteorFireRain
+    Type: Weather
+    InitialDelay: 5  
+    Delay: 5
+    Lifetime: 200
+  - Name: AcidRainHeavy
+    Type: Weather
+    InitialDelay: 5  
+    Delay: 5
+    Lifetime: 600
+    
+# Atmosphere and Sky
+AtmosphereEnabled: True
+AtmosphereColor: "1, 0.89, 0.71" 
+SkyColor: "1, 0.9, 0.7"
+SkyHorizonColor: "1, 0.2, 0.2"
+AtmosphereParams: [5, 2]
+
+# Light
+DayLightIntensity: 0.8
+NightLightIntensity: 0.8
+DayShadowStrength: 0.25
+
+DayShadowStrength: 1
+NightShadowStrength: 1
+
+LightZenithColor: "0.74, 0.72, 0.42"
+LightHorizonColor: "1, 0.3, 0.2"
+NightLightColor: "0.71, 0.71, 0.3"
+
+# Sun
+SunFlare: EnvironmentalEffects/SunFlareWhiteMoon
+
+# Fog
+AtmosphereFog: 0.9
+FogColor: "0.85, 0.65, 0.13"
+FogCloudIntensity: 0.9
+GroundFogIntensity: 0.05
+GroundFogHeight: 65
+
+# Clouds and Wind
+CloudsDensity: 0.8
+CloudsSharpness: 1
+CloudsBrightness: 0.85
+CloudsOpacity: 0.1
+ 
+CloudsZenithColor: "0.89, 0.92, 0.89"
+CloudsHorizonColor: "1, 0.3, 0.1"
+
+WindSpeed: 9
+
+# ==============================================================
+
+### Resource Deposits
+RandomResources:
+    - Name: SathiumResource
+      IsScalingCount: True 
+      CountMinMax: [ 1, 2 ] 
+      SizeMinMax: [ 6, 11 ] 
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.3
+      MaxDroneCount: 1
+
+    - Name: NeodymiumResource
+      IsScalingCount: True 
+      CountMinMax: [ 7, 10 ]
+      SizeMinMax: [ 3, 6 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.7
+      MaxDroneCount: 1
+
+    - Name: PentaxidResource
+      IsScalingCount: True 
+      CountMinMax: [ 7, 10 ]
+      SizeMinMax: [ 2, 3 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.6
+      MaxDroneCount: 2
+    - Name: TitanResource
+      IsScalingCount: True 
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 6, 11 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.3
+      MaxDroneCount: 1
+
+### Resource Asteroids
+AsteroidResources:
+     - Name: SathiumResource
+       Threshold: 0.5
+       Amount: 0.4
+     - Name: NeodymiumResource
+       Threshold: 0.5
+       Amount: 0.4
+     - Name: PentaxidResource
+       Threshold: 0.5
+       Amount: 0.4
+
+### POIs
+POIs:
+    Random:
+        - GroupName: ZiblaxDroneCaller
+          Faction: Zirax
+          DroneBaseSetup: DroneBaseSetup
+          IsCommandCenter: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 4, 5 ] 
+          ReserveCount: 5
+          Properties: 
+            - Key: RegenAfter
+              Value: 60
+
+       # ================================
+        # Spawn crashed Talos Front
+        - GroupName: CrashedTalosFront  
+          Faction: Public       
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 120
+
+       #  Spawn crashed Talos Mid
+        - GroupName: CrashedTalosMid  
+          Faction: Public        
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.6
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 3
+          TroopTransport: False
+          SpawnPOINear: [CrashedTalosFront]
+          SpawnPOINearRange: [300, 1000]
+          SpawnResource: ["PentaxidResource:0-1"]
+          SpawnResourceRange: [250,400]
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 120
+
+        # Spawn crashed Talos Back
+        - GroupName: CrashedTalosBack     
+          Faction: Public        
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.9
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 3
+          TroopTransport: False
+          SpawnPOINear: [CrashedTalosMid]
+          SpawnPOINearRange: [300, 1000]
+          Properties: 
+            - Key: MapMarker 
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 720
+
+       # ================================
+          # Endboss Main
+        - GroupName: XenuMainframe
+          Faction: Xenu
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False 
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120
+
+          # Endboss Main
+        - GroupName: XenuRadarMain
+          Faction: Xenu
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.9
+          DronesMinMax: [ 2, 4 ]
+          ReserveCount: 3
+          TroopTransport: True
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+
+          # Endboss  Teleporter Access
+        - GroupName: XenuRadarAddition
+          Faction: Xenu
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.9
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 3
+          TroopTransport: True 
+          SpawnPOINear: [XenuRadarMain]
+          SpawnPOINearRange: [300, 500]
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+
+          # Endboss Main Defense Turrets
+        - GroupName: XenuRadarTurret
+          Faction: Xenu
+          # IsImportant: True
+          CountMinMax: [ 3, 3 ]
+          DroneProb: 0.9
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 3
+          TroopTransport: False
+          SpawnPOINear: [XenuRadarMain]
+          SpawnPOINearRange: [100, 350] 
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+
+        - GroupName: AlienWatchtower
+          Faction: Alien
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 1
+          TroopTransport: False
+          SpawnPOINear: [XenuRadarMain]
+          SpawnPOINearRange: [550, 700]
+          Properties: 
+            - Key: Music
+              Value: EvilWhispering
+            - Key: RegenAfter
+              Value: 120
+
+       # ================================
+        - GroupName: XenuShrine
+          Faction: Xenu
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False 
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120
+
+       # ================================
+        - GroupName: TribalVillage
+          Faction: Talon
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0 
+          DronesMinMax: [ 0, 0 ]
+          ReserveCount: 0
+          TroopTransport: False 
+          SpawnResource: ["SathiumResource:1-1"]
+          SpawnResourceRange: [150,400]
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 720
+
+       # ================================
+        - GroupName: AbandonedPOI
+          Faction: Alien
+          CountMinMax: [ 2, 2 ]
+          DroneProb: 0.1
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 1
+          TroopTransport: False
+          SpawnResource: ["NeodymiumResource:1-2"]
+          SpawnResourceRange: [250,400]
+          Properties: 
+            - Key: Music
+              Value: DarkSoundscape
+            - Key: RegenAfter
+              Value: 120
+
+       # Alien Artifacts
+        - GroupName: Artifacts
+          Faction: Alien
+          CountMinMax: [ 2, 3 ]
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 1
+          TroopTransport: False
+          Properties:
+            - Key: Music
+              Value: EvilWhispering
+            - Key: RegenAfter
+              Value: 120
+
+       # ================================
+       # Military Xenu Compound
+       # Main Building
+        - GroupName: XenuMain
+          Faction: Xenu
+          CountMinMax: [ 1, 1 ]
+          IsImportant: True
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 4 ]
+          ReserveCount: 3
+          TroopTransport: False
+          Properties:
+            - Key: RegenAfter
+              Value: 120
+
+       # Auxiliary Buildings
+        - GroupName: XenuAuxT2
+          Faction: Xenu
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.8
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 3
+          TroopTransport: False
+          SpawnPOINear: [XenuMain]
+          SpawnPOINearRange: [150, 250]
+          Properties:
+            - Key: RegenAfter
+              Value: 120
+
+       # Defence Buildings
+        - GroupName: XenuDefenceT2
+          Faction: Xenu
+          CountMinMax: [ 2, 2 ]
+          DroneProb: 0.8
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 3
+          TroopTransport: True 
+          SpawnPOINear: [XenuMain]
+          SpawnPOINearRange: [300, 500]
+          Properties:
+            - Key: RegenAfter
+              Value: 120
+
+       # ================================
+       # Military Xenu Large Bunker
+        - GroupName: XenuBunker
+          Faction: Xenu
+          CountMinMax: [ 1, 1 ]
+          IsImportant: True
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 3
+          TroopTransport: True 
+          Properties:
+            - Key: RegenAfter
+              Value: 120
+
+    FixedPlayerStart:
+        - Mode: Debug
+          Pos: [ -596, 104, -1063 ]
+          RotY: 125
+
+        - Mode: Survival
+          Spawn: EscapePod
+          Armor: ArmorMedium
+
+### Drones
+DroneBaseSetup:
+    Random:
+        - GroupName: DroneBaseSetup
+          Difficulty: 7
+          PresetStyle: 4
+
+          Stock:
+              - Name: DroneSmallFast01Rocket
+                Amount: 100000
+                Extra: 0
+
+              - Name: DroneSmallFast01Minigun
+                Amount: 200000
+                Extra: 0
+
+              - Name: DroneLargeSlow01Minigun
+                Amount: 100000
+                Extra: 0
+
+              - Name: DroneSmallSlow01Cannon
+                Amount: 100000
+                Extra: 0
+
+              - Name: DroneSmallAttackBase
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+
+              - Name: ZiraxMale
+                Amount: 5000
+                Extra: 3
+
+              - Name: Mechanoid
+                Amount: 4000
+                Extra: 3
+
+          PlanetVesselBase:
+              Name: PlanetVesselBaseSetup        # Name of planet vessel base setup defined under RandomPOIs
+              Position3D: [ 0, 102, 0]
+              BaseType: PlanetVesselBase
+              KeyId: 0                         # Unique Key Id
+              PlanetVessel:
+                - Name: Patrol-S-Easy          # GroupName
+                  Mission: PlanetPatrol
+                  FixedMaxSpeed: 15             # Max speed of a planet vessel in m/s
+                  RangePatrolCenter: [ -1000, 0 ]
+                  RangePatrolRadius: 800
+                  RangePatrolAltitude: 60
+                  RespawnDelay: 12             # Integer [1, 200] Respawn Delay in game hours after destruction of planet vessel 
+                  InitialDelay: 96             # Integer [1, 200] Initial delay in game hours before planet vessel becomes active
+
+DroneSpawning:
+    Random:
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: -2500
+          Radius: 1500
+
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: 2500
+          Radius: 1500
+          
+# ==============================================================
+#SpawnZone Section
+# ==============================================================      
+SpawnZones:
+   - SpawnAt: [TribalVillage]           
+     Radius: 1000
+     RadiusRandom: 25
+     RateMultiplyerCenter: 1.0
+     RateMultiplyerEdge: 0.3
+     Color: "1.0, 1.0, 1.0, 1.0"
+     SpawnOnlyIfPoiIsAlien: true
+     Entities:
+       - Names: [GolemsSwamp]
+         Biomes: [Any]
+         Amount: 100
+         Period: Always
+         DelayMinMax: [-1, -1]
+         
+   - SpawnAt: [XenuAuxT2, XenuBunker, XenuDefenceT2, XenuMain, XenuRadarMain, XenuShrine]           
+     Radius: 750
+     RadiusRandom: 25
+     RateMultiplyerCenter: 1.0
+     RateMultiplyerEdge: 0.3
+     Color: "1.0, 1.0, 1.0, 1.0"
+     SpawnOnlyIfPoiIsAlien: true
+     Entities:
+       - Names: [ZiraxMinigunPatrol, ZiraxRocketPatrol, ZiraxShotgunPatrol, ZiraxMechanoidPatrol, ZiraxRipperDogPatrol]
+         Biomes: [Any]
+         Amount: 180
+         Period: Always
+         DelayMinMax: [-1, -1]
+
+CreatureSpawning:
+    - Biomes: [LiquidPools]
+      Entities:
+        - Name: Telluropods
+          Period: Always
+          Amount: 12
+          AllowInWater: true 
+    - Biomes: [Dunes, Rifts, RayCrater, LargeCrater]
+      Entities:
+        - Name: AlienBugs01
+          Period: Always
+          Amount: 30
+        - Name: Otyughs
+          Period: Always
+          Amount: 30
+
+Build: 2088

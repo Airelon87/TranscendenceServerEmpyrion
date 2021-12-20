@@ -1,0 +1,306 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Arechthorios - Hendrakes PvP Orbit by Airelon87
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -200
+PlayfieldLevel: 6
+Music: space
+Description: Arechthorios, or the 'Soul Forge', is a creation of the Great Machine Entity known only as Baker. Here, she separates the worthy from the unworthy, capturing the souls of the defeated into power crystals to fuel the Forge Machines of the Great Empire. WARNING PVP
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 3
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+# Stars: SkyboxStarsBlue
+# Nebula: PrefabNebulaRed2
+Build: 2450
+Radiation: 3
+PvP: True
+UseFixed: True
+AllowBA: False
+AllowCV: False
+AllowSV: False
+AllowHV: False
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+POIs:
+   Fixed:
+   #D20 Peices 
+   -  Type: BA_Admin
+      Prefab: ForgeEntry
+      Name: Forge
+      Pos: [116.92, 289.04, 84.95]
+      Rot: [323, 234, 180]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [-44.66, 289.04, 137.45]
+      Rot: [323, 162, 180]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [-144.52, 289.04, 0]
+      Rot: [323, 90, 180]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [-44.66, 289.04, -137.45]
+      Rot: [323, 18, 180]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [116.92, 289.04, -84.95]
+      Rot: [323, 306, 180]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [261.44, 0, 189.95]
+      Rot: [79, 54, 180]
+   -  Type: BA_Admin
+      Prefab: ForgeEntry
+      Name: Forge
+      Pos: [-99.86, 0, 307.34]
+      Rot: [79, 342, 180]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [-323.16, 0, 0]
+      Rot: [79, 270, 180]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [-99.86, 0, -307.34]
+      Rot: [79, 198, 180]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [261.44, 0, -189.95]
+      Rot: [79, 126, 180]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [99.86, 0, 307.34]	
+      Rot: [281, 18, 0]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [-261.44, 0, 189.95]
+      Rot: [281, 306, 0]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [-261.44, 0, -189.95]
+      Rot: [281, 234, 0]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [99.86, 0, -307.34]
+      Rot: [281, 162, 0]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [323.16, 0, 0]	
+      Rot: [281, 90, 0]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [44.66, -289.04, 137.45]
+      Rot: [37, 198, 0]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [-116.92, -289.04, 84.95]
+      Rot: [37, 126, 0]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [-116.92, -289.04, -84.95]
+      Rot: [37, 54, 0]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [44.66, -289.04, -137.45]
+      Rot: [37, 342, 0]
+   -  Type: BA_Admin
+      Prefab: Forge
+      Name: Forge
+      Pos: [144.52, -289.04, 0]
+      Rot: [37, 270, 0]
+   #NEO
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [630, -100, 610]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [640, 0, 600]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [600, 100, 660]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   #Erestrum
+   -  Type: AsteroidVoxel03Erestrum
+      Prefab: AsteroidVoxel03Erestrum
+      Name: Erestrum Asteroid
+      Pos: [-610, -150, 600]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel03Erestrum
+      Prefab: AsteroidVoxel03Erestrum
+      Name: Erestrum Asteroid
+      Pos: [-600, 0, 620]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel03Erestrum
+      Prefab: AsteroidVoxel03Erestrum
+      Name: Erestrum Asteroid
+      Pos: [-650, 150, 600]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   #Zascosium
+   -  Type: AsteroidVoxel03Zascosium
+      Prefab: AsteroidVoxel03Zascosium
+      Name: Zascosium Asteroid
+      Pos: [630, -150, -620]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel03Zascosium
+      Prefab: AsteroidVoxel03Zascosium
+      Name: Zascosium Asteroid
+      Pos: [630, 0, -600]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel03Zascosium
+      Prefab: AsteroidVoxel03Zascosium
+      Name: Zascosium Asteroid
+      Pos: [600, 150, -630]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   #Promo
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-610, -150, -610]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-620, 0, -600]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-600, 150, -620]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   #Pent
+   -  Type: AsteroidVoxel01Pentaxid
+      Prefab: AsteroidVoxel01Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [150, 600, 0]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Pentaxid
+      Prefab: AsteroidVoxel01Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [0, 600, 150]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Pentaxid
+      Prefab: AsteroidVoxel01Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [150, -600, 0]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Pentaxid
+      Prefab: AsteroidVoxel01Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [0, -600, 150]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [0, 500, 0]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDroneLaser
+         Pos: [-4573, 1073, 1557]
+         Radius: 589
+      SpaceVessel:
+      -  Name: AlienIceDragon
+         Faction: Talon
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 10
+            DelayBeforeSelfDestruction: 7
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [3498, 883, -2792]
+            - [5000, 516, 1122]
+            - [3842, -2028, 3388]
+            - [1713, 2246, 4719]
+            - [-1713, 800, 800]
+            - [-2701, -733, 4424]
+            - [-4012, 572, 1350]
+            - [-4211, -1437, -1650]
+            - [-2447, 2282, -4490]
+            - [-1750, -750, 1700]
+            - [1055, 1790, -5230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 50
+            Extra: 0

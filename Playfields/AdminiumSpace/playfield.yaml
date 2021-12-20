@@ -1,0 +1,79 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.8.1908, Playfield Version: 10.0.0 [2446] (Alpha EXPERIMENTAL 10)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -1
+PlayfieldLevel: 2
+IsOrbitPlayfield: False
+Music: space
+Description: AdminZone
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 3
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+# Stars: SkyboxStarsRed
+# Nebula: PrefabNebulaRed2
+Build: 2450
+Radiation: 0
+PvP: False
+UseFixed: True
+AllowBA: False
+AllowCV: False
+AllowSV: False
+AllowHV: False
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+POIs:
+   Fixed:
+   -  Type: AsteroidVoxel01Gold
+      Prefab: AsteroidVoxel01Gold
+      Name: Gold Asteroid
+      Pos: [3522.5, 727, 3356.4]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV9
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [-200, -1850, -137]
+      Rot: [0, 0, 0]
+      Faction: Public
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [6000, 3000, -6000]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDroneLaser
+         Pos: [-4573, 1073, 1557]
+         Radius: 589
+      SpaceVessel:
+      -  Name: GalorBattleCruiser
+         Faction: Galorian
+         FixedMaxSpeed: 5
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1
+            DelayBeforeSelfDestruction: 15
+            PathWayPoint:
+            - [43498, 883, -42792]
+            - [45000, 516, 40122]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 20
+            Extra: 20

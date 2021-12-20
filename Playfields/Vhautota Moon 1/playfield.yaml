@@ -1,0 +1,1345 @@
+PlayfieldType: Moon
+WorldName: 
+RealRadius: 0
+ScaledRadius: 0
+Gravity: -3.79244995
+PlanetAxis: 6.93160534
+PlanetRotAxis: 
+AtmosphereDensity: 0.0418912694
+AtmosphereO2: 0
+AtmosphereBreathable: false
+Temperature: 0
+TemperatureDay: -2147483648
+TemperatureNight: 115
+Radiation: 1.01655781
+SeaLevel: -1
+TerrainLevel: 184
+BaseLevel: 72
+DayLength: 0
+PlanetType: Snow
+PlanetSize: 2
+Moons: 0
+Emissive: false
+Water: WaterBlue
+PvP: false
+Difficulty: 2
+LegacyBiome: 
+ChunkProviderId: 0
+SunFlare: EnvironmentalEffects/SunFlareWhite3
+Nebula: 
+Stars: 
+LocalEffect: 
+SpecialEffectsLocal: 
+SpecialEffectsGlobal: 
+AtmosphereEnabled: true
+AtmosphereColor: 0.30, 0.40, 0.4
+AtmosphereParams:
+- 1
+- 2
+OrbitUsesLightColor: false
+SkyColor: 0, 0, 0
+SkyHorizonColor: 0, 0.1, 0
+LightZenithColor: 0.98, 0.90, 1
+LightHorizonColor: 1, 0.6, 0.15
+NightLightColor: 0.78, 0.78, 1
+CloudsZenithColor: 0.1, 0.1, 0.1
+CloudsHorizonColor: 1, 0.3, 0.1
+CloudsNightZenithColor: 0.054, 0.094, 0.152
+CloudsNightHorizonColor: 0.054, 0.094, 0.152
+CloudsOpacity: 0
+FogCloudIntensity: 0
+DayLightIntensity: 0.600000024
+NightLightIntensity: 0.400000006
+DayShadowStrength: 1
+NightShadowStrength: 1
+AtmosphereFog: 0
+CloudsDensity: 0
+CloudsSharpness: 1
+CloudsBrightness: 0
+WindSpeed: 0
+FogColor: 1, 1, 1
+FogIntensity: 0
+FogStartDistance: 0
+GroundFogIntensity: 0.0548166819
+GroundFogHeight: 137.28952
+Description: An icy companion, with an ocean deep between its crust and rocky core. Faint organic substances leave colourful streaks on the surface. - A memory of a moon back in the Sol system...
+Seed: 664190
+TemperatureMinMax:
+- -33
+- -16
+HumidityMinMax:
+- 0.116162457
+- 0.301964372
+LandWaterRatio: 0
+TemperatureHeightRange:
+- 0
+- 195
+TemperatureGradientRange:
+- 0.75
+- 0.100000001
+TemperatureNoiseFac: 0.5
+HumidityHeightFac:
+- 0
+- 365
+HumidityNoiseFac: 0.600000024
+TerrainHeightMapMax: 490
+GroundShapes: 
+TemperatureMasks: 
+HumidityMasks: 
+BiomeStampTries: 20
+PlayfieldLevel: 8
+PdaReferral: 
+BaseAttackCount: 1
+PfServerWeight: 0
+PlanetClass: Snow
+UseFixed: false
+UseRandom: true
+Build: 2953
+Instance: 
+IndestructibleTerrain: false
+AllowSV: true
+AllowCV: true
+AllowHV: true
+AllowBA: true
+AllowBlueprintSV: true
+AllowBlueprintCV: true
+AllowBlueprintHV: true
+AllowBlueprintBA: true
+AllowMaxCPUTierSV: 0
+AllowMaxCPUTierCV: 0
+AllowMaxCPUTierHV: 0
+AllowMaxCPUTierBA: 0
+RestrictToOrigin: 255
+Music: Anomalous
+LandClaimZone: Device
+IsOrbitPlayfield: false
+RandomPOIs: 
+RandomDroneBase: 
+RandomResources:
+- Name: SiliconResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 3
+  - 5
+  SizeMinMax:
+  - 18
+  - 23
+  DepthMinMax:
+  - 3
+  - 8
+  DistTypeCylinder:
+    MaxRadius: 10
+    YVariance: 3
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.400000006
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - Mountains
+  - PlainsEdge
+  - Plains
+  - Regolith
+  BiomesExcluded: 
+- Name: CobaltResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 2
+  - 3
+  SizeMinMax:
+  - 18
+  - 23
+  DepthMinMax:
+  - 4
+  - 9
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.699999988
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - Mountains
+  - Regolith
+  BiomesExcluded: 
+- Name: MagnesiumResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 1
+  - 2
+  SizeMinMax:
+  - 18
+  - 23
+  DepthMinMax:
+  - 5
+  - 10
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.699999988
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - Mountains
+  - Regolith
+  BiomesExcluded: 
+- Name: MagnesiumResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 3
+  - 4
+  SizeMinMax:
+  - 18
+  - 23
+  DepthMinMax:
+  - 35
+  - 45
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.200000003
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - LayeredIce
+  - IceSheet
+  - CrustedIce
+  BiomesExcluded: 
+- Name: CobaltResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 3
+  - 3
+  SizeMinMax:
+  - 18
+  - 23
+  DepthMinMax:
+  - 45
+  - 55
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.200000003
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - LayeredIce
+  - IceSheet
+  - CrustedIce
+  BiomesExcluded: 
+- Name: IronResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 5
+  - 7
+  SizeMinMax:
+  - 18
+  - 23
+  DepthMinMax:
+  - 2
+  - 5
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.300000012
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome: 
+  BiomesExcluded: 
+- Name: PromethiumResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 2
+  - 4
+  SizeMinMax:
+  - 18
+  - 23
+  DepthMinMax:
+  - 0
+  - 1
+  DistTypeCylinder:
+    MaxRadius: 13
+    YVariance: 10
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.699999988
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - SmallCrater
+  - Rifts
+  - Regolith
+  BiomesExcluded: 
+- Name: PentaxidResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 4
+  - 5
+  SizeMinMax:
+  - 18
+  - 23
+  DepthMinMax:
+  - 0
+  - 5
+  DistTypeCylinder:
+    MaxRadius: 13
+    YVariance: 10
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.600000024
+  MaxDroneCount: 2
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - SmallCrater
+  BiomesExcluded: 
+FixedResources: 
+AsteroidResources:
+- Name: SiliconResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: CobaltResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: MagnesiumResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: IronResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: PromethiumResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: PentaxidResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+Terrain: 
+MainBiome: 
+SubBiomes: 
+BiomeTextureReplacements: 
+Biome:
+- Altitude: 
+  Slope: 
+  BiomeClusterData:
+  - Name: Pole
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 10
+    - 6
+    - 0.0199999996
+    Color:
+    - 0.600000024
+    - 0.600000024
+    - 0.600000024
+    SelectionCriteria:
+    - +Lat > 0.975
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: PoleFog
+    UndergroundLayers: 
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Unknown
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - GlowTube01
+      - 0.002
+    - - CrystalsPyramidBlue
+      - 0.008
+    - - ScalyPods
+      - 0.05
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 11
+    - 11
+    - 0.200000003
+    Color:
+    - 0
+    - 1
+    - 0
+    SelectionCriteria:
+    - Height < 11
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers: 
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Mountains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.005
+    - - RockGrey02Large
+      - 0.005
+    - - RockResourceCopper
+      - 0.0001
+      - Free
+    - - RockResourceSilicon
+      - 0.0003
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 1
+    - 1
+    - 0.5
+    - 2
+    - 7
+    - 0.5
+    - 0.0500000007
+    Color:
+    - 0.699999988
+    - 0.699999988
+    - 0.699999988
+    SelectionCriteria:
+    - Height > 170
+    StampTries: 7
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapAll
+    Stamps:
+    - Mountain_4a, 0.1
+    - Mountain_4b, 0.1
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Regolith
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 1
+    - 6
+    - 0.5
+    - 6
+    - 6
+    - 1
+    - 0.25
+    Color:
+    - 0.5
+    - 0.5
+    - 1
+    SelectionCriteria:
+    - Height > 150
+    - Height < 280
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 12
+      - 2
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: PlainsEdge
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.005
+    - - RockGrey02Large
+      - 0.005
+    - - CrystalsPyramidBlue
+      - 0.00005
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 0
+    - 0
+    - 0.5
+    - 2
+    - 7
+    - 0.800000012
+    - 0.5
+    Color:
+    - 0.100000001
+    - 0.100000001
+    - 0.300000012
+    SelectionCriteria:
+    - Height < 102
+    - Height > 99
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 0
+      - 1
+    - - 12
+      - 15
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Plains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.005
+    - - RockGrey02Large
+      - 0.005
+    - - CrystalsPyramidBlue
+      - 0.00005
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 4
+    - 6
+    - -0.25
+    Color:
+    - 0.300000012
+    - 0.300000012
+    - 0.300000012
+    SelectionCriteria:
+    - Height < 102
+    - Height > 10
+    StampTries: 0
+    StampProb: 0.899999976
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps:
+    - CraterMoon_1, 1
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 11
+      - 2
+    - - 10
+      - 2
+    - - 12
+      - 15
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Rifts
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.005
+    - - RockGrey02Large
+      - 0.005
+    - - CrystalsPyramidBlue
+      - 0.0001
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 11
+    - 11
+    - 0.5
+    Color:
+    - 0.699999988
+    - 0.200000003
+    - 0.200000003
+    SelectionCriteria:
+    - Height > 600
+    StampTries: 25
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapAll
+    Stamps:
+    - RiftIce_01, 0.3
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 12
+      - 15
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: SmallCrater
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: -10
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.005
+    - - RockGrey02Large
+      - 0.005
+    - - CrystalsPyramidBlue
+      - 0.0005
+      - Free
+    - - RockResourceCopper
+      - 0.0001
+      - Free
+    - - RockResourceSilicon
+      - 0.0003
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 8
+    - 9
+    - 0.5
+    - 3
+    - 3
+    - 0.5
+    - -0.100000001
+    Color:
+    - 0.899999976
+    - 0.300000012
+    - 0.300000012
+    SelectionCriteria:
+    - Height > 600
+    StampTries: 1350
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapAll
+    Stamps:
+    - CraterMoon_1, 1
+    - CraterMoon_2, 0.20
+    - CraterMoon_3, 0.30
+    - CraterMoon_4, 0.04
+    - CraterMoon_5, 0.7
+    - CraterMoon_6, 0.04
+    - CraterMoon_7, 0.02
+    - CraterMoon_8, 0.01
+    - CraterMoon_9, 0.004
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 10
+      - 2
+    - - 12
+      - 15
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: RayCrater
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: -20
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.005
+    - - RockGrey02Large
+      - 0.005
+    - - CrystalsPyramidBlue
+      - 0.0005
+      - Free
+    - - RockResourceCopper
+      - 0.0001
+      - Free
+    - - RockResourceSilicon
+      - 0.0003
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 8
+    - 9
+    - 0.5
+    - 3
+    - 3
+    - 0.5
+    - 0.150000006
+    Color:
+    - 0.899999976
+    - 0.800000012
+    - 0.300000012
+    SelectionCriteria:
+    - Height > 600
+    StampTries: 10
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOther
+    Stamps:
+    - CraterMoon_14, 0.05
+    - CraterMoon_14b, 0.03
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 10
+      - 2
+    - - 12
+      - 15
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: LayeredIce
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.005
+    - - RockGrey02Large
+      - 0.005
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 0
+    - 5
+    - 0.899999976
+    - 6
+    - 6
+    - 1
+    - 0
+    Color:
+    - 0.400000006
+    - 0.400000006
+    - 0.400000006
+    SelectionCriteria:
+    - Height > 140
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 0
+      - 3
+    - - 12
+      - 2
+    - - 10
+      - 1
+    - - 12
+      - 2
+    - - 10
+      - 2
+    - - 11
+      - 2
+    - - 12
+      - 15
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: IceSheet
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.005
+    - - RockGrey02Large
+      - 0.005
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 0
+    - 6
+    - -0.449999988
+    Color:
+    - 0.5
+    - 0.5
+    - 0.5
+    SelectionCriteria:
+    - Height > 130
+    StampTries: 2
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapAll
+    Stamps:
+    - CraterMoon_15, 0.7
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 12
+      - 20
+    - - 10
+      - 2
+    - - 12
+      - 5
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: CrustedIce
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.005
+    - - RockGrey02Large
+      - 0.005
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 10
+    - 6
+    - -0.5
+    Color:
+    - 0.600000024
+    - 0.600000024
+    - 0.600000024
+    SelectionCriteria:
+    - Height > 90
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 10
+      - 5
+    - - 12
+      - 2
+    - - 10
+      - 2
+    - - 12
+      - 15
+    - - 15
+      - -1
+    - - 11
+      - 1
+    UndergroundLayersDefault: true
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Flats
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: 
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 11
+    - 11
+    - 0.200000003
+    Color:
+    - 0
+    - 1
+    - 0
+    SelectionCriteria: 
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers: 
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+POIs:
+  Random:
+  - GroupName: DroneBaseT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: DroneBaseSetup
+    PlanetVesselBaseSetup: 
+    Faction: Zirax
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: true
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 0
+      Max: 1
+    CountMinMax:
+    - 0
+    - 1
+    DroneProb: 1
+    TroopTransport: false
+    Drones:
+      Min: 4
+      Max: 5
+    DronesMinMax:
+    - 4
+    - 5
+    ReserveCount: 5
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: ProgenitorArtifacts
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 1
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 4
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: CrashedShip
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 1
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 4
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosAuxT1Snow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 3
+      Max: 4
+    CountMinMax:
+    - 3
+    - 4
+    DroneProb: 0.699999988
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource:
+    - PentaxidResource:1-2
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange:
+    - 80
+    - 400
+    Biome: 
+    BiomesExcluded: 
+  Fixed: 
+  FixedPlayerStart:
+  - Mode: Debug
+    SubMode: 
+    Spawn: Position
+    Pos:
+    - -596
+    - 104
+    - -1063
+    RotY: 125
+    Structure: 
+    Items: 
+    Armor: 
+    Status: 
+    PlayerArmor: 
+  - Mode: Survival
+    SubMode: 
+    Spawn: EscapePod
+    Pos: 
+    RotY: 0
+    Structure: 
+    Items: 
+    Armor: ArmorMedium
+    Status: 
+    PlayerArmor: 
+DroneBaseSetup:
+  Random:
+  - GroupName: DroneBaseSetup
+    DroneBaseSetup: 
+    Faction: 
+    DronesMinMax: 
+    ReserveCount: 0
+    DroneProb: 0
+    Difficulty: 0
+    PresetStyle: 0
+    BaseAttack: 
+    Stock:
+    - Name: DroneSmallFast01Rocket
+      Amount: 100000
+      Extra: 0
+    - Name: DroneSmallFast01Minigun
+      Amount: 200
+      Extra: 0
+    - Name: DroneLargeSlow01Minigun
+      Amount: 100000
+      Extra: 0
+    - Name: DroneSmallSlow01Cannon
+      Amount: 20000
+      Extra: 0
+    - Name: DroneSmallAttackBase
+      Amount: 100000
+      Extra: 1
+    - Name: DroneTroopsTransport
+      Amount: Infinite
+      Extra: 2
+    - Name: ZiraxMinigun
+      Amount: 50000
+      Extra: 3
+    - Name: RipperDog
+      Amount: 40000
+      Extra: 3
+    PlanetVesselBase: 
+  Fixed: 
+TroopsTransportContent: 
+DroneSpawning:
+  Random:
+  - DronesMinMax:
+    - 5
+    - 10
+    CenterX: -2500
+    Radius: 1500
+  - DronesMinMax:
+    - 5
+    - 10
+    CenterX: 2500
+    Radius: 1500
+  Fixed: 
+CreatureSpawning: 
+SpawnRateZones: 
+SpawnZones: 

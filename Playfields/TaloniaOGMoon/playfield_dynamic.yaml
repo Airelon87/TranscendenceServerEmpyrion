@@ -1,0 +1,769 @@
+---
+# # ==============================================================
+
+PlanetSize: 
+  SizeRange: [3,4,5]
+  SizeProbs: [0.40,0.55,0.05]       
+TemperatureMin: [-45, -30]
+TemperatureMax: [8,12]
+TemperatureNight: [10,25]
+PlanetAxis: [-25,25]
+HumidityMin: [0.05, 0.1]
+HumidityMax: [0.3, 0.35]
+Radiation: [3, 6]             
+LandWaterRatio: [0.02, 0.35]                   
+SeaLevel: [40, 60]     
+TerrainLevel: [140, 160]    
+BaseLevel: [0, 0]
+TerrainHeightMapMax: 490
+TemperatureHeightRange: [0, 107]
+TemperatureGradientRange: [0.52, 0]
+TemperatureNoiseFac: 0.44
+HumidityHeightFac: [0, 350]
+HumidityNoiseFac: 0.86
+
+GravityMinMax: [-7, -5]
+AtmosphereDensityMinMax: [0.7, 1.5]
+AtmosphereO2MinMax: [0.05, 0.12]
+AtmoBreathableProb: 0.2
+WaterProb: 1.0
+
+AtmosphereFogRange: [0.4, 0.6]
+GroundFogProb: 0.9
+GroundFogIntensityRange: [0.05, 0.1]
+GroundFogHeightRange: [-20, 10]
+
+PvPProb: 0
+Water: [WaterGreen]
+Music: [snow]
+# ==============================================================
+GroundShapes: 
+  - Mountain_10b_GS, 1
+
+HumidityMasks: 
+
+TemperatureMasks: 
+
+BiomeStampTries: 200
+
+Presets:
+- Name: Small
+  Density: 1
+  Snow: 0.449999988
+  spawn:
+    Min: 0
+    Max: 0.400000006
+    BushPower: 1
+    Noise: 3,0.05,2,0.5
+  scale:
+    Power: 0
+    Noise: 1,0.1,2,0.5
+  Hue: 0,0,0.001
+- Name: Medium
+  Density: 1
+  Snow: 0.449999988
+  spawn:
+    Min: 0
+    Max: 0.5
+    BushPower: 1
+    Noise: 3,0.05,2,0.5
+  scale:
+    Power: 0
+    Noise: 1,0.1,2,0.5
+  Hue: 0,0,0.001
+- Name: Large
+  Density: 1
+  Snow: 0.449999988
+  spawn:
+    Min: 0
+    Max: 0.600000024
+    BushPower: 1
+    Noise: 3,0.05,2,0.5
+  scale:
+    Power: 0
+    Noise: 1,0.1,2,0.5
+  Hue: 0,0,0.001
+- Name: Ultra
+  Density: 1
+  Snow: 0.449999988
+  spawn:
+    Min: 0
+    Max: 0.800000012
+    BushPower: 1
+    Noise: 3,0.05,2,0.5
+  scale:
+    Power: 1
+    Noise: 1,0.1,2,0.5
+  Hue: 0,0,0.001
+- Name: Total
+  Density: 1
+  Snow: 0.449999988
+  spawn:
+    Min: 0
+    Max: 1
+    BushPower: 1
+    Noise: 3,0.05,2,0.5
+  scale:
+    Power: 1
+    Noise: 1,0.1,2,0.5
+  Hue: 0,0,0.001
+- Name: SmallNormal
+  Density: 1
+  Snow: 0.100000001
+  spawn:
+    Min: 0
+    Max: 0.400000006
+    BushPower: 1
+    Noise: 1,0.1,2,0.5
+  scale:
+    Power: 1
+    Noise: 1,0.1,2,0.5
+  Hue: 0,0,0.001
+
+Biomes: 
+ 
+  - Name: DeepWater
+    AmbientSound: Water
+    IgnoreForcedBiome: true
+    Texture: [0,11,0.5, 10,10,0.5, 0.20]  
+    Temperature: 5
+    
+    SelectionCriteria: 
+    - Height < SeaLevel - 20
+    Color: [0, 0, 1]
+    
+    UndergroundLayers:
+               - [0, 2]
+               - [10, -1]
+               - [9, 1]    
+    
+    Decorations:
+                - [ SeaWeed02-04, 0.01, Small, 8.00 ]
+               # - [CoralStone01-05, 0.003, Free]
+               # - [CoralStone03-06, 0.003, Free]
+               # - [FingerSponge03-01, 0.001, Free]
+               # - [RealRock1Water, 0.001, Free]
+               # - [RealRock5Water, 0.001, Free]
+               # - [RealRock8Water, 0.001, Free]
+               # - [RealRock9Water, 0.001, Free]
+               # - [RockGrey01Large, 0.001, Free]
+               # - [RockGrey02Large, 0.001, Free]
+               # - [SkeletonWhaleFull, 0.0017, Free]
+               # # Harvestables:
+               # - [CoralBig01, 0.02, Plant]
+               # - [CoralBig08, 0.03, Plant]
+               # # Rock Resources:
+               # - [PromethiumStone, 0.001, Free]
+               # - [RockResourceCopper, 0.006, Free]
+               # - [RockResourceSilicon, 0.0008, Free]
+               # - [RockResourceGold, 0.0003, Free]
+    Grass: 
+               # - Name: GrassGreen01
+                 # Density: 0.1
+                 # Preset: GrassDense
+               # - Name: Seaweed04
+                 # Density: 0.006
+                 # Preset: GrassDense
+
+# ==============================================================
+                 
+  - Name: Water
+    AmbientSound: Water
+    IgnoreForcedBiome: true
+    Texture: [0, 10, 0.25]   
+    Temperature: 5
+    
+    SelectionCriteria: 
+    - Height < SeaLevel - 10
+    Color: [0.2, 0.2, 1]
+    
+    UndergroundLayers:
+               - [0, 4]
+               - [10, -1]
+               - [9, 1]
+    
+    Decorations:
+                - [ SeaWeed02-04Harvested, 0.01, Large, 4.00 ]
+                - [ CoralStone04-03, 0.001, Large, 3.00 ]
+    Grass:
+                - Name: Seaweed03
+                  Density: 1.00
+                  YScale: 2.00
+                  Preset: Medium
+                - Name: Seaweed04
+                  Density: 0.50
+                  YScale: 1.00
+                  Preset: Medium
+# ==============================================================                 
+  - Name: ShallowWater
+    AmbientSound: SmallLake
+    IgnoreForcedBiome: true
+    Texture: [0, 8, 0.20]   
+    Texture: [0, 10, 0.2]
+    Temperature: 5
+    
+    SelectionCriteria: 
+    - Height < SeaLevel - 3
+    - Temperature > -16
+    Color: [0.4, 0.4, 1]
+    
+    UndergroundLayers:
+               - [0, 3]
+               - [10, -1]
+               - [9, 1]
+    
+    Decorations:
+                - [ Alien_Tree_06_2, 0.001, Small, 4.00 ]
+    Grass:
+               - Name: Seaweed03
+                 Density: 0.10
+                 YScale: 1.00
+                 Preset: Large
+               - Name: Plant01a
+                 Density: 1.00
+                 YScale: 1.00
+                 Preset: Large
+# ==============================================================
+  - Name: Pole          # same as GlacierSnow biome
+    Weather: PoleFog
+    AmbientSound: ArcticIntermediatePlains
+    IgnoreForcedBiome: true
+    Texture: [7, 6, 0.5]   
+    
+    SelectionCriteria:  
+    - +Lat > 0.975
+    Color: [1, 1, 1] 
+   
+# ==============================================================
+
+  - Name: Mountains 
+    AmbientSound: Mountains
+    IgnoreForcedBiome: true
+    Texture: [3, 10, 0.6, 2, 10, 0.2, 0.2]  
+    SelectionCriteria: 
+    - Height > 200
+    Color: [0.6, 0.6, 0.6]
+    
+    UndergroundLayers:
+               - [3, 3]
+               - [10, -1]
+               - [9, 1]
+    
+    Decorations:
+                - [ _Spruce_Norway_Desktop_1_Field_Spring, 0.002, Medium, 4.00 ]
+    Grass:
+               - Name: Grass03
+                 Density: 1.00
+                 YScale: 1.00
+                 Preset: Large
+# ==============================================================
+  - Name: LowMountains
+    AmbientSound: ArcticHighPlains
+    Texture: [3,4,0.5, 2,10,0.5, 0.2]
+    IgnoreForcedBiome: true
+    
+    SelectionCriteria:  
+       - false 
+    Color: [0.4, 0.4, 0.4]     
+     
+    UndergroundLayers:
+               - [3, 4]
+               - [10, -1]
+               - [9, 1]
+     
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOwn  
+    StampTries: 60 
+    Stamps:
+
+    - Mountain_9, 0.15     # Class 3,4,5    
+    - Mountain_10b, 0.15   # Class 4,5      
+    - Mountain_11, 0.25    # Class 3,4,5   
+    - Mountain_13, 0.35    # Class 3,4,5   
+    - Mountain_14, 0.35    # Class 3,4,5       
+    - Mountain_14a, 0.9   # Class 2,3
+    - Mountain_15a, 0.9   # Class 2,3    
+    - MountainIce_01, 0.6
+    - MountainIce_01b, 0.3
+    - MountainIce_02, 0.7
+
+    Decorations:
+                - [ _Spruce_Norway_Desktop_1_Forest_Fall, 0.001, Medium, 6.00 ]
+    Grass:
+               - Name: GrassBrown04
+                 Density: 1.00
+                 YScale: 0.70
+                 Preset: Large
+               - Name: Grass08
+                 Density: 0.10
+                 YScale: 1.00
+                 Preset: Total 
+# ==============================================================                 
+  - Name: Shore
+    AmbientSound: ArcticLowPlains 
+    IgnoreForcedBiome: true  
+    Texture: [11, 10, 0.1]
+    Temperature: 4
+    
+    SelectionCriteria: 
+    - Height < SeaLevel + 3
+    - Temperature > -13
+    Color: [0.6, 0.6, 0]  
+    
+    UndergroundLayers:
+               - [0, 3]
+               - [10, -1]
+               - [9, 1]
+    
+    Decorations:
+               - [ Alien_Tree_02_1, 0.001, SmallNormal, 8.00 ]
+               - [ Alien_Tree_04_1, 0.001, SmallNormal, 6.00 ]
+               - [ Alien_Dead_trunk_02, 0.0005, Medium, 8.00 ]
+               - [ Alien_Tree_06_3, 0.001, SmallNormal, 3.00 ]
+               - [ Alien_Tree_05_1, 0.001, SmallNormal, 1.00 ]
+    Grass:
+               - Name: GrassGreen01
+                 Density: 1.00
+                 YScale: 1.00
+                 Preset: SmallNormal
+               - Name: Flower24
+                 Density: 0.10
+                 YScale: 1.00
+                 Preset: Large
+# ==============================================================
+  - Name: IceLens
+    IgnoreForcedBiome: true
+    AmbientSound: ArcticIntermediatePlains
+    Texture: [4,6,0.5, 8,10,0.6, 0.20] 
+
+    SelectionCriteria:  
+       - false 
+
+    Color: [1, 0.2, 0.5]      
+    
+    UndergroundLayers:
+               - [1, 30]
+               - [10, -1]
+               - [9, 1]
+    
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOff   
+    StampTries: 80  
+    Stamps:
+    - Cliff_1, 0.4
+    - Cliff_3, 0.4
+    - Volcanic_01a, 0.7
+    - Volcanic_01b, 0.8
+    - Volcanic_01c, 0.9
+    - RiftLava_2b, 0.5
+    - RiftLava_2, 0.5    
+
+    Decorations:
+               - [ RealRock1Water, 0.001, Medium, 8.00 ]
+               - [ RealRock5Water, 0.005, Medium, 1.00 ]
+               - [ RealRock9Water, 0.005, Medium, 1.00 ]
+    Grass:
+
+# ==============================================================
+  - Name: IceShelf
+    IgnoreForcedBiome: true
+    AmbientSound: ArcticIntermediatePlains
+    Texture: [7,6,0.65, 8,8,0.5, 0.01]  
+    
+    SelectionCriteria:   
+    - Height < 150   
+    - Temperature < -17
+    - Humidity > 0.3   
+    
+    Color: [1, 0.8, 0.8] 
+    
+    UndergroundLayers:
+               - [7, 4]
+               - [10, -1]
+               - [9, 1]    
+    
+    StampProb: 0.35
+    Stamps: 
+               - IceBergs_01, 0.9   
+               - IceSlabs_01, 0.3  
+               - RiftLava_2, 0.2
+
+    Decorations:
+               - [ CrystalIcePlate, 0.005, Medium, 16.00 ]
+               - [ AlienPlant14, 0.005, Medium, 4.00 ]
+               - [ RockFormationN, 0.001, Medium, 2.00 ]
+    Grass:
+# ==============================================================
+  - Name: Rocks
+    IgnoreForcedBiome: true
+    AmbientSound: ArcticIntermediatePlains
+    Texture: [6, 10, 0.5]      
+    
+    SelectionCriteria:          
+    - Humidity < 0.35
+    - Humidity > 0.18    
+    - Height > 60    
+    - Height < 100   
+    - Temperature < -25
+    - Temperature > -30    
+    
+    Color: [1, 0.9, 1] 
+
+    UndergroundLayers:
+               - [7, 1]
+               - [10, -1]
+               - [9, 1]
+    
+    Decorations:
+               - [ Alien_Dead_trunk_01, 0.0001, Medium, 32.00 ]
+               - [ RealRock1Dark, 0.0002, Medium, 12.00 ]
+               - [ RealRock6, 0.002, Medium, 4.00 ]
+               - [ RealRock10, 0.002, Medium, 4.00 ]
+               - [ RealRock5, 0.002, Medium, 4.00 ]
+               - [ RealRock4, 0.002, Medium, 4.00 ]
+               - [ RockFormationO, 0.02, Medium, 1.00 ]
+               - [ RockFormationJ, 0.02, Medium, 1.00 ]
+    Grass:
+# ==============================================================
+  - Name: GlacierSnow
+    IgnoreForcedBiome: true
+    AmbientSound: ArcticLowPlains
+    Texture: [7,6,0.65, 8,8,0.5, 0.01]   
+    
+    SelectionCriteria:      
+    - Height < 100   
+    - Temperature < -16
+    Color: [1, 1, 1] 
+    
+    UndergroundLayers:
+               - [7, 4]
+               - [10, -1]
+               - [9, 1]
+    
+    
+    StampProb: 0.12
+    StampForcesBiomeType: OverlapOther
+    Stamps: 
+               - MountainIce_01, 0.65
+               - MountainIce_01b, 0.15
+               - RiftLava_2, 0.1
+
+    Decorations:
+               - [ Alien_Plant_15B, 0.001, Small, 16.00 ]
+               - [ Alien_Plant_15C, 0.001, Medium, 8.00 ]
+               - [ Alien_Plant_16, 0.005, Medium, 5.00 ]
+               - [ Alien_Plant_14, 0.003, Medium, 3.00 ]
+               - [ CoralStone03-05, 0.001, Medium, 1.00 ]
+               - [ RockFormationO, 0.001, Medium, 4.00 ]
+               - [ RockFormationN, 0.001, Medium, 2.00 ]
+               - [ RockFormationJ, 0.001, Medium, 2.00 ]
+    Grass:
+               - Name: Grass15
+                 Density: 1.00
+                 YScale: 0.70
+                 Preset: Medium
+               - Name: GrassLowBrown010
+                 Density: 0.00
+                 YScale: 0.80
+                 Preset: Ultra
+# ==============================================================  
+  - Name: Hellmouth
+    AmbientSound: LavaFog
+    Texture: [9, 11, 0.5]   
+    
+    SelectionCriteria:   
+    - Humidity < 0.14
+    - Humidity > 0.13    
+    - Temperature < -35
+    - Temperature > -38    
+    
+    Color: [1, 0.1, 0.1] 
+
+    Temperature: 100
+    
+    
+    UndergroundLayers:
+               - [9, -1]
+               - [9, 1]
+    
+    
+    Decorations:  
+
+# ============================================================== 
+  - Name: GasFieldEdge
+    AmbientSound: LavaFog
+    Texture: [10, 10, 0.5]   
+    
+    SelectionCriteria:   
+    - Humidity < 0.15
+    - Humidity > 0.12    
+    - Temperature < -35
+    - Temperature > -39    
+    
+    Color: [1, 0.7, 0.1] 
+
+    Temperature: 30
+    
+    UndergroundLayers:
+               - [11, 3]
+               - [10, -1]
+               - [9, 1]
+    
+    Decorations:  
+
+
+# ==============================================================
+  - Name: Taiga
+    AmbientSound: ArcticForest
+    Texture: [1,5,0.5, 5,5,0.5, -0.6]
+
+    SelectionCriteria:
+
+    - Humidity > 0.2
+    - Humidity < 0.33
+    
+    - Temperature > 1
+    Color: [0, 0.4, 0]    
+
+    UndergroundLayers:
+#               - [5, 1]
+               - [11, 3]
+               - [10, -1]
+               - [9, 1]    
+    
+    Decorations:
+               - [ _Oak_White_Sapling_Spring, 0.005, Small, 16.00 ]
+               - [ _Oak_White_Desktop_Forest_Spring, 0.001, Small, 8.00 ]
+    Grass:
+               - Name: GrassGreen04aSnow
+                 Density: 1.00
+                 YScale: 0.90
+                 Preset: Medium
+               - Name: Flower13
+                 Density: 0.05
+                 YScale: 0.70
+                 Preset: Ultra
+# ==============================================================
+  - Name: TaigaEdge
+    AmbientSound: ArcticForest
+    Texture: [5,1,0.9, 10,10,0.5, 0.2]
+
+    SelectionCriteria:
+    - Humidity > 0.2 
+    - Humidity < 0.6
+    - Temperature > -0.5
+   
+    Color: [0, 0.55, 0] 
+
+    UndergroundLayers:
+               - [5, 1]
+               - [11, 2]
+               - [10, -1]
+               - [9, 1]
+    
+    Decorations:
+               - [ _Spruce_Norway_Desktop_1_Field_Fall, 0.005, Small, 7.00 ]
+               - [ _Spruce_Norway_Seedling_Fall, 0.001, Medium, 10.00 ]
+               - [ Alien_Plant_01_1, 0.005, Medium, 2.00 ]
+               - [ Alien_Plant_01_2, 0.005, Medium, 3.00 ]
+    Grass:
+               - Name: Flower12
+                 Density: 0.50
+                 YScale: 0.70
+                 Preset: Medium
+               - Name: Grass02
+                 Density: 1.00
+                 YScale: 0.50
+                 Preset: Total
+# ==============================================================
+  - Name: Dunes
+    AmbientSound: ArcticLowPlains
+    Texture: [4, 8, 0.6]
+
+
+    SelectionCriteria:
+    - Humidity > 0.1
+    - Humidity < 0.7
+    
+    - Temperature > -3
+    Color: [0.5, 0.8, 0.9] 
+    
+    UndergroundLayers:
+#               - [4, 1]
+               - [11, 1]
+               - [10, -1]
+               - [9, 1]    
+    
+    StampProb: 0.4  
+    StampForcesBiomeType: OverlapOff
+    Stamps: 
+
+               - IceDunes_01, 1
+               - IceSprings_01, 0.6
+               
+    Decorations:
+               - [ _Redwood_Sierra_Desktop_Forest, 0.001, Medium, 8.00 ]
+               - [ _Vine_Balloon_Desktop_2_Spring, 0.01, Small, 12.00 ]
+               - [ _Oak_Willow_Seedling_Desktop_Spring, 0.001, Small, 64.00 ]
+               - [ _Sycamore_American_Hero_Forest_Spring, 0.001, Small, 4.00 ]
+               - [ _Pine_Eastern_White_Desktop_Forest_Spring, 0.001, Medium, 8.00 ]
+               - [ ElderberryBushGreen, 0.005, Medium, 0.50 ]
+               - [ RealRock1Snow, 0.001, Medium, 4.00 ]
+    Grass:
+               - Name: GrassBrown04
+                 Density: 1.00
+                 YScale: 0.50
+                 Preset: Total
+               - Name: Flower05
+                 Density: 0.10
+                 YScale: 0.80
+                 Preset: Total
+# ==============================================================
+  - Name: Plains
+    AmbientSound: ArcticLowPlains
+    Texture: [4,6,0.5, 10,8,0.1, 0.20]   
+
+    SelectionCriteria:
+    - Humidity > 0.1
+    - Temperature > -5
+    Color: [0.8, 1, 0.5] 
+    
+    UndergroundLayers:
+               - [11, 1]
+               - [10, -1]
+               - [9, 1]
+
+    Decorations:
+               - [ _Oak_White_Desktop_Field_2_Spring, 0.001, Medium, 3.00 ]
+               - [ _Oak_White_Sapling_Spring, 0.001, Medium, 8.00 ]
+               - [ RealRock1, 0.001, Medium, 4.00 ]
+    Grass:
+               - Name: GrassGreen04
+                 Density: 1.00
+                 YScale: 1.00
+                 Preset: Medium
+               - Name: Grass25
+                 Density: 0.10
+                 YScale: 1.00
+                 Preset: Ultra
+# ==============================================================
+  - Name: TaigaSnow
+    AmbientSound: ArcticForest
+    Texture: [5,1,0.8, 10,8,0.5, 0.2]  
+    SelectionCriteria:  
+    - Height < 80
+    - Humidity > 0.20 
+    - Humidity < 0.70
+    
+    - Temperature > -9 
+    Color: [0, 0.7, 0]     
+
+    UndergroundLayers:
+               - [5, 5]
+               - [11, 2]
+               - [10, -1]
+               - [9, 1]
+
+    StampProb: 0.3
+    Stamps: 
+               - Pingo_01, 0.55
+               - IceSlabs_01, 0.15 
+
+    Decorations:
+               - [ BaldCypres, 0.001, Medium, 4.00 ]
+               - [ Alien_Tree_01_2, 0.001, Medium, 5.00 ]
+               - [ Alien_Plant_9, 0.007, Large, 4.00 ]
+               - [ _Redwood_Sierra_Sapling, 0.001, Large, 8.00 ]
+    Grass:
+               - Name: GrassGreen03b
+                 Density: 1.00
+                 YScale: 1.00
+                 Preset: Medium
+               - Name: Flower24
+                 Density: 0.10
+                 YScale: 0.60
+                 Preset: Total
+# ==============================================================
+  - Name: TaigaSnowEdge
+    AmbientSound: ArcticForest
+    Texture: [4,6,0.2, 8,8,0.5, 0.20]  
+    SelectionCriteria:  
+    - Height < 250
+    - Humidity > 0.1 
+    - Temperature > -10
+    
+    Color: [0.7, 0.9, 0.7]
+
+    UndergroundLayers:
+               - [5, 3]
+               - [11, 2]
+               - [10, -1]
+               - [9, 1]
+    
+    Decorations:
+               - [ Alien_ShroomTree_01_2, 0.001, Small, 8.00 ]
+               - [ RealRock1Water, 0.0005, Large, 5.00 ]
+               - [ RealRock5Water, 0.0005, Large, 8.00 ]
+    Grass:
+               - Name: GrassType01Brown
+                 Density: 1.00
+                 YScale: 1.00
+                 Preset: Small
+# ============================================================== 
+  - Name: Tundra
+    AmbientSound: ArcticForest
+    Texture: [6, 3, 0.5]  
+    
+    SelectionCriteria:   
+    - Temperature > -20
+    
+    Color: [0.9, 1, 0.9]     
+
+    StampProb: 0.45
+    StampForcesBiomeType: OverlapOther
+    Stamps:
+    - Volcanic_03_LO, 1
+    
+    Decorations:
+               - [ Alien_Plant_16, 0.005, Small, 4.00 ]
+               - [ Alien_Tree_01_2, 0.005, Small, 2.00 ]
+               - [ AlienPlant24, 0.005, Small, 2.00 ]
+               - [ AlienPlant17, 0.01, Small, 3.00 ]
+               - [ Alien_Plant_15A, 0.002, Small, 4.00 ]
+               - [ RockFormationO, 0.01, Medium, 1.00 ]
+               - [ RockFormationK, 0.01, Medium, 1.00 ]
+    Grass:
+               - Name: GrassBlue04
+                 Density: 1.00
+                 YScale: 1.00
+                 Preset: Small
+# ==============================================================
+# CATCH ALL
+# ============================================================== 
+  - Name: Glacier
+    AmbientSound: ArcticLowPlains
+    Texture: [7,6,0.65, 8,8,0.5, 0.01]  
+    
+    SelectionCriteria:  
+       - true
+    Color: [0.9, 0.9, 0.9] 
+    
+    UndergroundLayersDefault: True
+    UndergroundLayers:
+               - [10, -1]
+               - [9, 1]
+ 
+    Decorations:
+               - [ Alien_Plant_15C, 0.003, Medium, 3.00 ]
+               - [ RealRock1Water, 0.001, Medium, 1.00 ]
+               - [ RealRock8Water, 0.001, Medium, 1.00 ]
+               - [ RealRock9Water, 0.001, Medium, 1.00 ]
+    Grass:
+               - Name: GrassBlue04
+                 Density: 1.00
+                 YScale: 1.00
+                 Preset: Large
+               - Name: Grass15
+                 Density: 0.10
+                 YScale: 0.60
+                 Preset: Total

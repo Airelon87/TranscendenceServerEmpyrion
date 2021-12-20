@@ -1,0 +1,404 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.60.1.1731, Playfield Version: 9.0.0 [2076] (Alpha 9.0.0)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+Seed: 4309566
+PlanetSize: 2
+PlanetAxis: 10
+PlayfieldLevel: 5
+TemperatureMinMax: [-10, 35]
+TemperatureNight: -15
+HumidityMinMax: [0, 0.1]
+SeaLevel: 3
+TerrainLevel: 100
+BaseLevel: 0
+LandWaterRatio: 0.02
+TemperatureHeightRange: [0, 400]
+TemperatureGradientRange: [0, 0.55]
+TemperatureNoiseFac: 0.55000000000000004
+HumidityHeightFac: [0, 400]
+HumidityNoiseFac: 0.55000000000000004
+Gravity: -6.5
+AtmosphereDensity: 0.3
+AtmosphereO2: 0.040000000000000001
+Water: WaterGreen
+Music: moonstone
+TerrainHeightMapMax: 511
+BiomeStampTries: 25
+Biome:
+-  BiomeClusterData:
+   -  Name: Pole
+      LevelMod: None
+      Weather: PoleFog
+      IgnoreForcedBiome: True
+      Texture: [0, 0, 0.1]
+      UndergroundLayers:
+      - [1, 0]
+      - [2, 1]
+      - [11, -1]
+      - [15, 2]
+      SelectionCriteria:
+      - +Lat > 0.975
+      Color: [0, 0, 0]
+      UndergroundLayersDefault: True
+   -  Name: SubBiomeOne
+      AmbientSound: Water
+      Texture: [3, 3, 0.3]
+      SelectionCriteria:
+      - Height < SeaLevel - 1
+      Color: [0, 0, 1]
+      StampProb: 1
+      Stamps:
+      - CraterLava_2, 0.5
+      - Volcanic_03_LO, 0.4
+      - Pingo_01, 0.7
+      - IceSprings_01, 0.4
+      StampTries: 50
+      Radiation: 5
+      Temperature: 1
+      Decorations:
+      - [RealRock8Water, 0.0001]
+      - [AlienPlantPod2, 0.001]
+      - [OnionFlower, 0.002, Plant]
+      Grass:
+      -  Name: GrassGreen06Snow
+         Density: 0.01
+         Preset: GrassDense
+   -  Name: BiomeOne
+      Texture: [3, 3, 0.3]
+      SelectionCriteria:
+      - Height > SeaLevel - 1
+      - Height < 25
+      Color: [0.5, 1, 0.83]
+      Stamps:
+      - CraterMoon_1, 0.3
+      - Explosion_01, 0.2
+      - DunesDesert_01, 0.5
+      - CraterMoon_11, 0.3
+      Decorations:
+      - [Mushroom02, 0.002]
+      - [MushroomBellGreen01, 0.001]
+      - [MushroomTallGreen01, 0.001]
+      - [CattailWinter, 0.001]
+      - [PixieStalksSnow, 0.001]
+      - [GlowTube01, 0.0002]
+      - [CrystalStraight, 0.002]
+      - [RockResourceNeodymium, 0.001]
+   -  Name: BiomeTwo
+      IgnoreForcedBiome: False
+      Texture: [4, 5, 1, 5, 6, 1, 0.2]
+      SelectionCriteria:
+      - Height > 30
+      - Height < 125
+      Color: [0.75, 0.75, 0.75]
+      StampProb: 0.5
+      Stamps:
+      - CraterMoon_2, 0.2
+      - CraterMoon_5, 0.2
+      - CraterMoon_7, 0.2
+      - CraterLava_1, 0.2
+      - Valley_1, 0.1
+      StampTries: 50
+      Decorations:
+      - [CornDogBush, 0.00001]
+      - [RockGrey01Large, 0.0005]
+      - [RockGrey02Large, 0.0005]
+      - [CrystalsPyramidBlue, 0.0004]
+   -  Name: BiomeThree
+      Texture: [6, 6, 1, 7, 7, 1, 0.3]
+      SelectionCriteria:
+      - Height > 125
+      Color: [0.44, 0.5, 0.56]
+      StampProb: 0.5
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOwn
+      Stamps:
+      - RiftLava_1, 0.4
+      - Mountain_2, 0.4
+      - Mountain_5, 0.5
+      - Mountain_6, 0.4
+      - Volcanic_03, 0.5
+      - CraterMoon_13, 0.2
+      StampTries: 50
+      Radiation: 4
+      Decorations:
+      - [RealRock8Snow, 0.001]
+      - [RealRock2Dark, 0.001]
+      - [RealRock7, 0.001]
+      - [RockResourceSathium, 0.001]
+      - [RockResourcePromethium, 0.001]
+      - [CrystalsPyramidBlue, 0.001]
+   -  Name: BiomeFour
+      Texture: [8, 8, 0.3]
+      UndergroundLayers:
+      - [7, 0]
+      - [12, 1]
+      - [15, -1]
+      - [0, 2]
+      SelectionCriteria:
+      - True
+      Color: [0.69, 0.77, 0.87]
+      Decorations:
+      - [RockResourceSilicon, 0.001]
+      - [RockResourceCopper, 0.001]
+      - [RockResourceIron, 0.001]
+      - [PromethiumStone, 0.001]
+      - [RealRock10Snow, 0.001]
+      - [RealRock9, 0.001]
+      - [Boulder1, 0.0002]
+      - [Pillar1, 0.0001]
+      - [AlienPlantThorn1, 0.0001]
+Description: '"A barren space rock with a thin atmosphere"'
+PlanetType: Barren
+PlayfieldType: Moon
+AtmosphereEnabled: True
+Difficulty: 2
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: Moths
+   Biome: [SubBiomeOne]
+   Time: Always
+   MaxHeight: 20
+   FollowPlayerY: True
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Delay: 1
+   Lifetime: 2500
+-  Name: MeteorFireRain
+   Type: Weather
+   InitialDelay: 10
+   Delay: 10
+   Lifetime: 150
+AtmosphereColor: 0.96,0.96,0.96
+SkyColor: 0,0,0
+SkyHorizonColor: 0.96,0.96,0.96
+AtmosphereParams: [1, 1]
+LightZenithColor: 0.88,1,1
+LightHorizonColor: 0.88,1,1
+DayLightIntensity: 1.5
+NightLightIntensity: 1
+NightLightColor: 0,1,1
+SunFlare: EnvironmentalEffects/SunFlareWhiteMoon
+FogColor: 0.94,0.97,1
+CloudsZenithColor: 0.9,0.9,0.98
+CloudsHorizonColor: 0.96,1,0.98
+Build: 2076
+Radiation: 0
+PvP: False
+UseRandom: True
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+RandomResources:
+-  Name: PentaxidResource
+   IsScalingCount: True
+   IsImportant: True
+   CountMinMax: [5, 7]
+   SizeMinMax: [14, 20]
+   DepthMinMax: [0, 5]
+   DroneProb: 1
+   MaxDroneCount: 2
+-  Name: NeodymiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [4, 5]
+   SizeMinMax: [9, 14]
+   DepthMinMax: [1, 5]
+   DroneProb: 1
+   MaxDroneCount: 1
+-  Name: SathiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [2, 3]
+   SizeMinMax: [11, 17]
+   DepthMinMax: [0, 1]
+   DroneProb: 1
+   MaxDroneCount: 2
+-  Name: TitanResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 4]
+   SizeMinMax: [11, 17]
+   DepthMinMax: [0, 1]
+   DroneProb: 1
+   MaxDroneCount: 2
+AsteroidResources:
+-  Name: NeodymiumResource
+   Threshold: 0.59999999999999998
+   Amount: 0.5
+-  Name: PentaxidResource
+   Threshold: 0.59999999999999998
+   Amount: 0.5
+-  Name: SathiumResource
+   Threshold: 0.59999999999999998
+   Amount: 0.5
+POIs:
+   Random:
+   -  GroupName: DroneBaseT1
+      Faction: Zirax
+      LevelMod: +2
+      DroneBaseSetup: DroneBaseSetup
+      IsCommandCenter: True
+      CountMinMax: [1, 1]
+      IsImportant: True
+      DroneProb: 1
+      DronesMinMax: [3, 5]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnResource: ['SathiumResource:1']
+      SpawnResourceRange: [200, 250]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  GroupName: ZiraxSupportTrade
+      Faction: Zirax
+      LevelMod: +1
+      CountMinMax: [1, 1]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      SpawnPOINear: [DroneBaseT1]
+      SpawnPOINearDistance: 250
+      SpawnPOINearRange: [175, 250]
+      SpawnResource: ['SathiumResource:1']
+      SpawnResourceRange: [200, 250]
+      Properties:
+      -  Key: Music
+         Value: EnergyMatrix
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiblonDefenseTower
+      Faction: Ziblon
+      LevelMod: +1
+      CountMinMax: [1, 2]
+      DronesMinMax: [0, 0]
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [ZiraxSupportTrade]
+      SpawnPOINearDistance: 300
+      SpawnPOINearRange: [200, 275]
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: CrashedShip
+      LevelMod: None
+      CountMinMax: [1, 3]
+      DroneProb: 1
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: False
+      Properties:
+      -  Key: RegenAfter
+         Value: 160
+   -  GroupName: CrashedShipHyperion
+      Faction: None
+      CountMinMax: [1, 3]
+      PlaceAt: OnWater
+      DroneProb: 1
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: False
+      SpawnResource: ['PentaxidResource:1']
+      SpawnResourceRange: [250, 300]
+      Properties:
+      -  Key: RegenAfter
+         Value: 160
+      -  Key: SI
+         Value: Off
+   -  GroupName: XenuComArray
+      Faction: Xenu
+      CountMinMax: [1, 1]
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      SpawnPOINear: [ZiraxSupportTrade]
+      SpawnPOINearDistance: 300
+      SpawnPOINearRange: [175, 225]
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [1000, 400, 1000]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseT1
+      DronesMinMax: [2, 3]
+      ReserveCount: 3
+      DroneProb: 1
+      Difficulty: 5
+      PresetStyle: 2
+      Stock:
+      -  Name: DroneSmallSlow01Cannon
+         Amount: 100000
+         Extra: 0
+      -  Name: DroneSmallAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneLargeAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneTroopsTransport01
+         Amount: Infinite
+         Extra: 2
+      -  Name: TurretRobotV2
+         Amount: 100000
+         Extra: 3
+      -  Name: Mechanoid
+         Amount: 100000
+         Extra: 3
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 10]
+      CenterX: 1000
+      Radius: 1000
+   -  DronesMinMax: [5, 10]
+      CenterX: -1000
+      Radius: 1000
+SpawnZones:
+-  SpawnAt: [ZiraxSupportTrade]
+   Radius: 300
+   RadiusRandom: 50
+   RateMultiplyerCenter: 0.25
+   RateMultiplyerEdge: 0.5
+   Color: 1,1,0.39,0.28
+   Entities:
+   -  Names: [ZiraxMechanoidPatrol]
+      DelayMinMax: [1, 1]
+CreatureSpawning:
+-  Biomes: [BiomeOne, BiomeTwo, BiomeFour]
+   Entities:
+   -  Name: Telluropods
+      Period: Always
+      Amount: 9
+      DelayMinMax: [0, 0]
+      AllowInWater: true
+      Color: 0.4,0.76,0.1
+-  Biomes: [BiomeOne, BiomeTwo, BiomeFour]
+   Entities:
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 6
+      DelayMinMax: [0, 0]
+      Color: 0.42,0.56,0.14
+   -  Name: AlienAssassinGreys
+      Period: Night
+      Amount: 3
+      DelayMinMax: [0, 0]
+      Color: 0.85,0.44,0.84
+   -  Name: AlienBugs04
+      Period: Day
+      Amount: 7
+      DelayMinMax: [0, 0]
+      Color: 0.8,0.4,0.8

@@ -1,0 +1,1124 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Encalafar Orbit
+# --------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------
+# Alpha 12 Second Revision By Airelon 87
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -200
+PlayfieldLevel: 7
+IsOrbitPlayfield: True
+Music: space
+Description: Robotics Syndicate Controlled Space.
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 3
+LandClaimZone: Device
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+# Stars: SkyboxStarsGreen
+# Nebula: PrefabNebulaPurple
+Build: 2526
+Radiation: 7.2000000000000002
+PvP: False
+UseFixed: True
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+POIs:
+   Fixed:
+   -  Type: AsteroidVoxel01Erestrum
+      Prefab: AsteroidVoxel01Erestrum
+      Name: Erestrum Asteroid
+      Pos: [-6685, 3257, -4518]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Cobalt
+      Prefab: AsteroidVoxel02Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-5080, 3175, -2750]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Ice
+      Prefab: AsteroidVoxel03Ice
+      Name: Ice Asteroid
+      Pos: [-6460, 2925, -710]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [-6236, 3015, 1473]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Titan
+      Prefab: AsteroidVoxel01Titan
+      Name: Titanium Asteroid
+      Pos: [-6807, 2825, 4738]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [-432, 3127, 7650]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Promethium
+      Prefab: AsteroidVoxel02Promethium
+      Name: Promethium Asteroid
+      Pos: [2433, 2930, 6167]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [6671, 2860, 6773]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [6291, 2860, 6576]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [6007, 3197, -1893]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Gold
+      Prefab: AsteroidVoxel02Gold
+      Name: Gold Asteroid
+      Pos: [7695, 2847, -3437]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  Type: AsteroidVoxel03Titan
+      Prefab: AsteroidVoxel03Titan
+      Name: Titanium Asteroid
+      Pos: [1742, 2947, -6570]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [-3572, 3257, -6659]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Cobalt
+      Prefab: AsteroidVoxel02Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-2685, -3257, -6518]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Zascosium
+      Prefab: AsteroidVoxel02Zascosium
+      Name: Zascosium Asteroid
+      Pos: [-8080, -3175, -2750]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Titan
+      Prefab: AsteroidVoxel03Titan
+      Name: Titanium Asteroid
+      Pos: [-8460, -2925, -710]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [-8236, -3015, 1473]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Ice
+      Prefab: AsteroidVoxel01Ice
+      Name: Ice Asteroid
+      Pos: [-3807, -2825, 7738]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-432, -3127, 6650]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Promethium
+      Prefab: AsteroidVoxel02Promethium
+      Name: Promethium Asteroid
+      Pos: [2433, -2930, 6167]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [6671, -2860, 6773]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [6291, -2860, 1576]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [6007, -3197, -1893]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Erestrum
+      Prefab: AsteroidVoxel02Erestrum
+      Name: Erestrum Asteroid
+      Pos: [6695, -2847, -6437]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Titan
+      Prefab: AsteroidVoxel03Titan
+      Name: Titanium Asteroid
+      Pos: [1742, -2947, -6570]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [-1572, -3257, -6659]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Cobalt
+      Prefab: AsteroidVoxel03Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-4526, -7682, 6981]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [-7533, -6709, -237]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Zascosium
+      Prefab: AsteroidVoxel02Zascosium
+      Name: Zascosium Asteroid
+      Pos: [5362, -8227, 1436]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Pentaxid
+      Prefab: AsteroidVoxel01Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [8046, 1088, -1235]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Cobalt
+      Prefab: AsteroidVoxel02Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-1282, 2316, -8930]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Magnesium
+      Prefab: AsteroidVoxel01Magnesium
+      Name: Magnesium Asteroid
+      Pos: [-7557, -6991, -337]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Magnesium
+      Prefab: AsteroidVoxel03Magnesium
+      Name: Magnesium Asteroid
+      Pos: [731, 5795, -7952]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Sathium
+      Prefab: AsteroidVoxel02Sathium
+      Name: Sathium Asteroid
+      Pos: [7134, 133, 7719]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [-7522.5, 27, -6356.4]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [7522.5, 727, 7356.4]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [6000, 3000, -6000]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDronePlasma
+         Pos: [-3282, -281, 3098]
+         Radius: 685
+      -  Name: SpaceDroneLaser
+         Pos: [-501, 1756, 7458]
+         Radius: 595
+      -  Name: SpaceDronePlasma
+         Pos: [1630, 982, 5959]
+         Radius: 731
+      -  Name: SpaceDroneLaser
+         Pos: [4573, -1073, -1557]
+         Radius: 589
+      -  Name: SpaceDronePlasma
+         Pos: [3282, 281, -3098]
+         Radius: 685
+      -  Name: SpaceDroneLaser
+         Pos: [501, -1756, -7458]
+         Radius: 595
+      -  Name: SpaceDronePlasma
+         Pos: [-1630, -982, -5959]
+         Radius: 731
+      -  Name: SpaceDroneLaser
+         Pos: [-4573, 1073, 1557]
+         Radius: 589
+      SpaceVessel:
+      -  Name: SyndicatePatrolShip
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [13498, 883, -2792]
+            - [15000, 516, 122]
+            - [13842, -2028, 3388]
+            - [11713, 2246, 4719]
+            - [-12701, -433, 4424]
+            - [-14012, 572, 1350]
+            - [-14211, -1437, -1650]
+            - [-12447, 2282, -4490]
+            - [11055, 1790, -5230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: GalorLiteCruiser
+         Faction: Galorian
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [3498, 1083, -12790]
+            - [5000, 716, 11120]
+            - [3842, -1828, 13380]
+            - [7713, 2446, 4710]
+            - [-2701, -4233, 8420]
+            - [-14012, 772, 1350]
+            - [-14211, -1237, -1655]
+            - [-2447, 2482, -14495]
+            - [11055, 1990, -5235]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: SyndicateScout
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 30
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [8380, -253, -2837]
+            - [-1121, -280, 8744]
+            - [-3539, -1029, -8349]
+            - [607, 563, -8620]
+            - [5097, 2309, 8984]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: SyndicateScout
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 30
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [5097, 2309, 15984]
+            - [7607, 1563, -6620]
+            - [-11121, -1280, 5744]
+            - [8607, 563, -6620]
+            - [5097, 5309, 5984]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: SyndicatePatrolShip
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 23
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [5380, -253, -9837]
+            Radius: 872
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 23
+            Extra: 2
+      -  Name: SyndicatePatrolShip
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 24
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [-1121, -280, 15744]
+            Radius: 1198
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 20
+            Extra: 1
+      -  Name: SyndicatePatrolShip
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 23
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [-3539, -1029, -13349]
+            Radius: 1796
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 50
+            Extra: 2
+      -  Name: OrbitalPatrolVessel
+         Faction: Alien
+         FixedMaxSpeed: 20
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [607, 563, -16620]
+            Radius: 795
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 18
+            Extra: 1
+      -  Name: SyndicateScout
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [7423, 1731, 10376]
+            - [9354, 1834, 5872]
+            - [9842, 2028, 3388]
+            - [9097, 2309, 5984]
+            - [11197, 2309, 5984]
+            - [607, 563, 16620]
+            - [1121, 280, 15744]
+            - [2447, 2282, 14490]
+            - [11055, 1790, 15230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 40
+            Extra: 1
+      -  Name: GalorDeployerV2
+         Faction: Galorian
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-7423, -1731, 376]
+            - [13354, -1834, 5872]
+            - [13842, -2028, 3388]
+            - [9097, 2309, 5984]
+            - [9097, 2309, -3984]
+            - [10607, 563, -6620]
+            - [-11121, -280, 5744]
+            - [-12447, 2282, -4490]
+            - [11055, 1790, -5230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 40
+            Extra: 1
+      -  Name: SyndicateScout
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-7423, -11731, 376]
+            - [3354, -11834, 5872]
+            - [-2447, -12282, -4490]
+            - [1055, -11790, -5230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: SyndicateScout
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [13842, -2028, 13388]
+            - [15097, 2309, 15984]
+            - [-11121, -280, 15744]
+            - [-12447, 2282, -14490]
+            - [1055, 1790, -15230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: SyndicateScout
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [13498, 883, -2792]
+            - [15000, 516, 122]
+            - [13842, -2028, 3388]
+            - [713, 2246, 14719]
+            - [-2701, -433, 14424]
+            - [-4012, 572, 11350]
+            - [-14211, -1437, -11650]
+            - [-12447, 2282, -14490]
+            - [11055, 1790, -15230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: noxiBehemoth
+         Faction: Abyssal
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [7498, -1183, -9792]
+            - [5000, 5816, 5122]
+            - [3842, -2328, 6388]
+            - [5713, 2546, 4719]
+            - [-5701, -733, 5424]
+            - [-5012, 872, 5350]
+            - [-6211, -1737, -5650]
+            - [-8447, 2582, -8490]
+            - [9055, 2090, -5230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: noxiEradicator
+         Faction: Abyssal
+         FixedMaxSpeed: 17
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [25291, 3060, 1576]
+            - [16007, 2997, -1893]
+            - [13695, 3047, -3437]
+            - [1742, 3147, -15570]
+            - [-9572, 3557, -9659]
+            - [-9685, 3357, -9600]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: SyndicateScout
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-6856.715, 6045.503, 1920.866]
+            - [-6614.701, 5876.302, 1798.192]
+            - [-6681.171, 5727.768, 1619.807]
+            - [-7557, -7491, -337]
+            - [25406.632, 7902.65, -22070.054]
+            - [25206.632, 7902.65, -22070.054]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: SyndicateScout
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 17
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-4426, -7582, 13961]
+            - [-27433, -6509, -200]
+            - [25262, -8327, 1436]
+            - [28146, 5188, -1235]
+            - [-1182, 2216, -28930]
+            - [-757, -6871, -19337]
+            - [-4426, -7582, 3981]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0
+      -  Name: PolarisFueler
+         Faction: Polaris
+         FixedMaxSpeed: 17
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-4426, 0, 9961]
+            - [-7433, 0, -9200]
+            - [5262, 0, 9436]
+            - [8146, 0, -9235]
+            - [-9182, 0, -8930]
+            - [-9757, 0, -9337]
+            - [9631, 0, -9952]
+            - [9034, 0, 9719]
+            - [-9422.5, 0, -14356]
+            - [3422.5, 0, 9356]
+            - [-9426, 0, 9981]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 6
+            Extra: 0
+      -  Name: ZiraxFueler
+         Faction: Zirax
+         FixedMaxSpeed: 17
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-10000, 0, 10000]
+            - [-10000, 0, -10000]
+            - [-10000, 0, 10000]
+            - [-10000, 0, -10000]
+            - [-1182, 2216, -8930]
+            - [-10000, 0, 10000]
+            - [-10000, 0, -10000]
+            - [-10000, 0, 10000]
+            - [-10000, 0, -10000]
+            - [-10000, 0, 10000]
+            - [-10000, 0, -10000]
+            - [-10000, 0, 10000]
+            - [-10000, 0, -10000]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 12
+            Extra: 1
+      -  Name: SyndicatePatrolShip
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 15
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [7500, 1975, 12245]
+            Radius: 1000
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 10
+            Extra: 1
+      -  Name: BAO_OrbitalSpire
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 90
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [17500, -2200, 17270]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 15
+            Extra: 1
+      -  Name: SyndicateStation
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 5
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 60
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [-7500, 3500, -8500]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 12
+            Extra: 1
+      -  Name: SyndicateStation
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 5
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 60
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [8100, 1000, 2000]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 9
+            Extra: 0
+      -  Name: SyndicateScout
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 20
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-7249.191, -1757.396, -6871.415]
+            - [-5000, 800, 7100]
+            - [-3500, 800, 7400]
+            - [-3500, 800, 7000]
+            - [-3800, 800, 7000]
+            - [5000, 800, 7100]
+            - [3500, 800, 7400]
+            - [3500, 800, 7000]
+            - [3800, 800, 7000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 25
+            Extra: 1
+      -  Name: AlienIceDragon
+         Faction: Talon
+         FixedMaxSpeed: 19
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [7000, 0, 7000]
+            - [-7000, 0, 7000]
+            - [-7000, 0, -7000]
+            - [7000, 0, -7000]
+            - [16000, 0, 16000]
+            - [-16000, 0, 16000]
+            - [-16000, 0, -16000]
+            - [16000, 0, -16000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1
+      -  Name: AlienIceDragon
+         Faction: Talon
+         FixedMaxSpeed: 19
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [8000, 0, 8000]
+            - [-8000, 0, 8000]
+            - [-8000, 0, -8000]
+            - [8000, 0, -8000]
+            - [8000, 0, 8000]
+            - [-8000, 0, 8000]
+            - [-8000, 0, -8000]
+            - [8000, 0, -8000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1
+      -  Name: AlienIceDragon
+         Faction: Talon
+         FixedMaxSpeed: 20
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [9000, 2000, 9000]
+            - [-9000, 2000, 9000]
+            - [-9000, 2000, -9000]
+            - [9000, 2000, -9000]
+            - [9000, 2000, 9000]
+            - [-9000, 2000, 9000]
+            - [-9000, 2000, -9000]
+            - [9000, 2000, -9000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1
+      -  Name: AlienIceDragon
+         Faction: Talon
+         FixedMaxSpeed: 20
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [11000, -2000, 11000]
+            - [-11000, -2000, 11000]
+            - [-11000, -2000, -11000]
+            - [11000, -2000, -11000]
+            - [11000, -2000, 11000]
+            - [-11000, -2000, 11000]
+            - [-11000, -2000, -11000]
+            - [11000, -2000, -11000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1
+      -  Name: AlienIceDragon
+         Faction: Talon
+         FixedMaxSpeed: 21
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [13000, 2000, 13000]
+            - [-13000, 2000, 13000]
+            - [-13000, 2000, -13000]
+            - [13000, 2000, -13000]
+            - [13000, 2000, 13000]
+            - [-13000, 2000, 13000]
+            - [-13000, 2000, -13000]
+            - [13000, 2000, -13000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1
+      -  Name: AlienIceDragon
+         Faction: Talon
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [15000, 1000, 15000]
+            - [-15000, 1000, 15000]
+            - [-15000, 1000, -15000]
+            - [15000, 1000, -15000]
+            - [15000, 1000, 15000]
+            - [-15000, 1000, 15000]
+            - [-15000, 1000, -15000]
+            - [15000, 1000, -15000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1
+      -  Name: PolarisFueler
+         Faction: Polaris
+         FixedMaxSpeed: 23
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [19000, 1000, 19000]
+            - [-19000, 1000, 19000]
+            - [-19000, 1000, -19000]
+            - [19000, 1000, -19000]
+            - [19000, 1000, 19000]
+            - [-19000, 1000, 19000]
+            - [-19000, 1000, -19000]
+            - [19000, 1000, -19000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1
+      -  Name: AlienIceDragon
+         Faction: Talon
+         FixedMaxSpeed: 24
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [21000, 1000, 21000]
+            - [-21000, 1000, 21000]
+            - [-21000, 1000, -21000]
+            - [21000, 1000, -21000]
+            - [21000, 1000, 21000]
+            - [-21000, 1000, 21000]
+            - [-21000, 1000, -21000]
+            - [21000, 1000, -21000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1

@@ -1,0 +1,1065 @@
+---
+Seed: 2309566
+PlanetSize: 2
+PlanetAxis: 5
+TemperatureMinMax: [5, 40]
+TemperatureNight: -15
+HumidityMinMax: [0.1, 0.99]
+SeaLevel: 75
+TerrainLevel: 110
+BaseLevel: 0
+LandWaterRatio: 0.7
+TemperatureHeightRange: [25, 300]
+TemperatureGradientRange: [0.55, 0]
+TemperatureNoiseFac: 0.6
+HumidityHeightFac: [20, 200]
+HumidityNoiseFac: 0.25
+
+Gravity: -12.71
+Radiation: 0.0
+AtmosphereDensity: 1.0
+AtmosphereO2: 0.2
+AtmosphereBreathable: True
+GroundFogIntensity: 0.03
+GroundFogHeight: 175.8316
+AtmosphereFog: 0
+PvP: False
+PlayfieldLevel: 1
+
+Water: WaterGreen
+Music: Eden
+
+TerrainHeightMapMax: 350
+
+GroundShapes:
+   - GroundShapeOcean_01, 1
+   - GroundShapeOcean_01, 1
+   - GroundShapeOcean_01, 1
+   - GroundShapeOcean_01, 1
+
+BiomeStampTries: 50
+
+Biome:
+   - BiomeClusterData:
+         - Name: Pole
+           IgnoreForcedBiome: True
+           Weather: PoleFog
+           Texture: [5, 11, 0.2]
+           UndergroundLayersDefault: True
+           UndergroundLayers:
+               - [9, 0]
+               - [9, 2]
+               - [10, 3]
+               - [19, 2]
+               - [11, -1]
+               - [12, 2]
+           SelectionCriteria:
+               - "+Lat > 0.975"
+           Color: [1, 1, 1]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           AmbientSound: ArcticLowPlains
+           Decorations:
+           Grass:
+
+         - Name: BiomeOne
+           Texture: [0, 0, 0.01]
+           SelectionCriteria:
+               - "Height < SeaLevel - 40"
+           Color: [0.1, 0.1, 0.1]
+           StampProb: 0.45
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapOff
+           StampTries: 100
+           Stamps:
+               - IceBergs_01
+           AmbientSound: Ocean
+           LevelMod: 3
+           Decorations:
+               - [Boulder1, 0.0001, Free]
+               - [Boulder2, 0.0001, Free]
+               - [Boulder3, 0.0001, Free]
+               - [Boulder4, 0.00015, Free]
+               - [Boulder5, 0.00015, Free]
+               - [AridRock01, 0.02, Free]
+               - [AridRock02, 0.015, Free]
+               - [AridRock03, 0.02, Free]
+               - [UmbrellaTree, 0.1, Tree]
+               - [CoralStone01-05, 0.003, Free]
+               - [CoralStone03-06, 0.003, Free]
+               - [FingerSponge03-01, 0.001, Free]
+               - [AlienTentacleStage1, 0.015, Bush]
+               - [CoralBig01, 0.011, Plant]
+               - [CoralBig08, 0.0015, Plant]
+               - [SeaWeed02-04, 0.012, Plant]
+               - [Cactus1, 0.15, Tree]
+               - [EggPlant, 0.003, Plant]
+               - [CrystalStraight, 0.025, Free]
+               - [RockResourceGold, 0.002, Free]
+               - [RockResourceErestrum, 0.04, BigPlant]
+               - [RockResourceZascosium, 0.0001, Free]
+               - [RockResourceSathium, 0.002, BigPlant]
+               - [RockResourceMagnesium, 0.003, Free]
+           Grass:
+               - Name: GrassBlue02
+                 Density: 0.8
+                 Preset: GrassDense
+               - Name: Seaweed02
+                 Density: 0.9
+                 Preset: GrassDense
+               - Name: Seaweed05
+                 Density: 0.5
+                 Preset: GrassDense
+
+         - Name: BiomeTwo
+           Texture: [0, 0, 0.01]
+           SelectionCriteria:
+               - "Height > SeaLevel - 40"
+               - "Height < SeaLevel - 30"
+           Color: [0.2, 0.1, 0.1]
+           StampProb: 0.75
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapOwn
+           StampTries: 100
+           Stamps:
+               - Cliff_2, 0.7
+               - MountainPlateau_01, 0.4
+               - Hollow_01, 0.3
+               - RiftIce_01, 0.8
+           AmbientSound: Ocean
+           LevelMod: 2
+           Decorations:
+               - [ChineseBanyan, 0.3, Bush]
+               - [BigFlower, 0.001, Plant]
+               - [PromethiumStone, 0.001, Free]
+               - [CrystalsPyramidBlue, 0.001, Free]
+               - [CobraLeavesPlant, 0.001, Plant]
+               - [MushroomBellBrown01, 0.001, Plant]
+               - [ScalyPods, 0.001, Plant]
+               - [AlienPlantWorm1, 0.001, Plant]
+               - [PromethiumStone, 0.003, Plant]
+               - [RockResourceIron, 0.001, Free]
+               - [RockResourceCopper, 0.001, Bush]
+               - [RockResourceNeodymium, 0.006, Free]
+               - [RockResourceNeodymium, 0.06, BigPlant]
+               - [SkeletonDragonTorso, 0.003, Plant]
+               - [SkeletonDragonHead, 0.002, Plant]
+               - [RealRock1Water, 0.001, Free]
+               - [RealRock5Water, 0.001, Free]
+               - [RealRock8Water, 0.001, Free]
+               - [RealRock8Water, 0.005, Tree]
+               - [RealRock9Water, 0.001, Free]
+               - [RealRock9Water, 0.005, Tree]
+               - [RockGrey01Large, 0.001, Free]
+               - [RockGrey02Large, 0.001, Free]
+               - [RealRock2Dark, 0.002, Plant]
+               - [RealRock4Dark, 0.006, Plant]
+               - [RealRock8Dark, 0.006, Plant]
+               - [RealRock10Dark, 0.004, Plant]
+           Grass:
+               - Name: GrassBlue02
+                 Density: 0.8
+                 Preset: GrassDense
+               - Name: Seaweed02
+                 Density: 0.9
+                 Preset: GrassDense
+               - Name: Seaweed05
+                 Density: 0.5
+                 Preset: GrassDense
+               - Name: GrassType01Red
+                 Density: 1
+                 Preset: GrassDense
+
+         - Name: BiomeZero
+           Texture: [5, 11, 0.6, 6, 3, 1, 0.35]
+           SelectionCriteria:
+               - "Temperature < 0"
+               - "Height > SeaLevel + 5"
+           Color: [0.1, 0.2, 0.8]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           AmbientSound: ArcticLowPlains
+           LevelMod: 2
+           Decorations:
+               - [BlueSpruceWinter, 0.018, Tree]
+               - [AlaskaCedarBare, 0.017, Tree]
+               - [BushWinter01, 0.01, BigPlant]
+               - [BushWinter02, 0.01, BigPlant]
+               - [BushWinter03, 0.005, BigPlant]
+               - [RealRock1Snow, 0.001, Free]
+               - [RealRock3, 0.001, Free]
+               - [RealRock6Snow, 0.001, Free]
+               - [RealRock8, 0.001, Free]
+               - [RealRock10, 0.001, Free]
+               - [RockResourceIron, 0.001, Free]
+               - [RockResourceCopper, 0.001, Free]
+               - [RockResourceSilicon, 0.001, Free]
+               - [CattailWinter, 0.001, Tree]
+               - [CornDogBushSnow, 0.007, Free]
+               - [PixieStalksSnow, 0.007, Free]
+               - [BrainFungusSnow, 0.002, Free]
+               - [Mushroom2, 0.005, Free]
+               - [Snakeweed, 0.003]
+           Grass:
+               - Name: GrassGreen03bSnow
+                 Density: 0.5
+                 Preset: GrassDense
+               - Name: Flower04
+                 Density: 0.05
+                 Preset: GrassDense
+
+         - Name: BiomeFour
+           Texture: [7, 8, 0.5, 3, 3, 1, 0.35]
+           SelectionCriteria:
+               - "Height > SeaLevel - 30"
+               - "Height < SeaLevel - 10"
+           Color: [0.4, 0.3, 0.2]
+           StampProb: 0.25
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapAll
+           StampTries: 50
+           Stamps:
+               - Hill_1, 0.2
+               - Hill_2, 0.2
+               - Hill_3, 0.2
+               - HillsLava_1, 0.2
+               - Cliff_2, 0.3
+               - Lake_1, 0.3
+               - Hollow_01, 0.3
+           AmbientSound: Ocean
+           LevelMod: 1
+           Decorations:
+               - [AkuaPlant, 0.01, Tree]
+               - [AkuaPalm, 0.01, Tree]
+               - [UmbrellaTree, 0.08, Tree]
+               - [Cactus2, 0.08, Tree]
+               - [BallFlower03, 0.05, Tree]
+               - [AlienPlant05, 0.04, Plant]
+               - [CornDogBush, 0.1, Tree]
+               - [DesertPlant20, 0.003, Plant]
+               - [Snakeweed, 0.003, Plant]
+               - [EggPlant, 0.003, Plant]
+               - [OpuntiaCactus, 0.002, Free]
+               - [EggPlant, 0.003, Plant]
+               - [BulbShroom, 0.0001, Free]
+               - [PixieStalks, 0.0003, Free]
+           Grass:
+               - Name: GrassType01Red
+                 Density: 1
+                 Preset: GrassDense
+               - Name: Seaweed05
+                 Density: 0.05
+                 Preset: GrassDense
+               - Name: Flower06
+                 Density: 0.005
+                 Preset: GrassDense
+
+         - Name: BiomeFive
+           Texture: [7, 8, 0.5, 3, 3, 1, 0.35]
+           SelectionCriteria:
+               - "Height > SeaLevel - 10"
+               - "Height < SeaLevel - 0"
+           Color: [0.5, 0.4, 0.3]
+           StampProb: 0.25
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 50
+           Stamps:
+               - Cliff_1, 0.2
+               - Cliff_2, 0.3
+           Temperature: 5
+           AmbientSound: Ocean
+           LevelMod: +1
+           Decorations:
+               - [CoralStone01-05, 0.1, BigPlant]
+               - [CoralStone01-05, 0.1, Tree]
+               - [FingerSponge03-01, 0.01, Free]
+               - [FingerSponge03-01, 0.002, BigPlant]
+               - [DesertRock1, 0.0001, Free]
+               - [DesertRock2, 0.0001, Free]
+               - [DimpleDome, 0.05, BigPlant]
+               - [CoralBig01, 0.018, Plant]
+               - [CoralBig01, 0.03, Tree]
+               - [CoralBig08, 0.02, Plant]
+               - [Snakeweed, 0.02, Plant]
+               - [Snakeweed, 0.001, Plant]
+               - [CornDogBush, 0.002, Plant]
+               - [DimpleDome, 0.0015, Plant]
+               - [BulbShroom, 0.004, Free]
+               - [CobraLeavesPlant, 0.001, Plant]
+               - [CattailWinter, 0.001, Plant]
+               - [RockResourceSilicon, 0.01, Free]
+               - [RockResourceIron, 0.005, Plant]
+               - [RockResourceMagnesium, 0.005]
+           Grass:
+               - Name: GrassGreen01
+                 Density: 0.2
+                 Preset: GrassDense
+               - Name: GrassType01Red
+                 Density: 0.5
+                 Preset: GrassDense
+               - Name: Seaweed02
+                 Density: 0.5
+                 Preset: GrassDense
+
+         - Name: BiomeSix
+           Texture: [7, 8, 0.5, 3, 3, 1, 0.35]
+           SelectionCriteria:
+               - "Height > SeaLevel + 0"
+               - "Height < SeaLevel + 15"
+           Color: [0.1, 0.5, 1]
+           StampProb: 0.25
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 50
+           Stamps:
+               - Valley_1, 0.3
+               - Cliff_1, 0.3
+               - Hill_2, 0.3
+               - Cliff_2, 0.3
+               - Lake_1, 0.3
+               - Hollow_01, 0.3
+           Temperature: 5
+           AmbientSound: Ocean
+           LevelMod: +1
+           Decorations:
+               - [ChineseBanyan, 0.03, Bush]
+               - [Rainforest, 0.003, Free]
+               - [ElderberryBushGreen, 0.005, BigPlant]
+               - [AmericanElm, 0.0002, Free]
+               - [BushGreen02, 0.0003, Bush]
+               - [BushGreen01, 0.0002, Bush]
+               - [ElderberryBushOrange, 0.001, Free]
+               - [ElderberryBush, 0.0005, BigPlant]
+               - [Snakeweed, 0.001, Plant]
+               - [CornDogBush, 0.002, Plant]
+               - [CobraLeavesPlant, 0.001, Plant]
+               - [CattailWinter, 0.001, Plant]
+           Grass:
+               - Name: GrassGreen02
+                 Density: 0.2
+                 Preset: GrassDense
+               - Name: GrassFern
+                 Density: 0.2
+                 Preset: GrassDense
+
+         - Name: BiomeSeven
+           Texture: [11, 6, 0.5, 3, 3, 1, 0.2]
+           SelectionCriteria:
+               - "Height > 150"
+           Color: [0.7, 0.7, 1]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOff
+           StampTries: 150
+           Stamps:
+               - Mountain_14a, 0.9
+               - Mountain_15a, 0.9
+               - Mountain_10b, 0.25
+               - Mountain_11, 0.15
+               - Mountain_13, 0.35
+               - Mountain_14, 0.15
+               - Mountain_15, 0.15
+               - Volcanic_02b, 0.1
+               - Volcanic_02 , 0.4
+               - Volcanic_03, 0.4
+               - Volcanic_04, 0.4
+           Temperature: 10
+           AmbientSound: Mountains
+           LevelMod: +2
+           Decorations:
+               - [ChineseBanyan, 0.03, Bush]
+               - [OmicronPlant, 0.01, Plant]
+               - [OmicronWaterleaf, 0.01, Plant]
+               - [AkuaBush1, 0.01, Bush]
+               - [Snakeweed, 0.004, Plant]
+               - [DimpleDome, 0.0015, Plant]
+               - [ClusterShroom, 0.0015, Free]
+               - [CattailWinter, 0.004, Plant]
+               - [PixieStalks, 0.004, Free]
+               - [CornDogBush, 0.001, Plant]
+           Grass:
+               - Name: GrassType01Red
+                 Density: 1
+                 Preset: GrassDense
+               - Name: GrassBrown04
+                 Density: 0.2
+                 Preset: GrassDense
+
+         - Name: BiomeEight
+           Weather: BmFogRadiationPurple
+           Texture: [2, 9, 0.8, 11, 11, 1, 0.2]
+           UndergroundLayers:
+               - [0, 2]
+               - [12, 4]
+               - [11, -1]
+               - [10, 1]
+           SelectionCriteria:
+               - "Height < 150"
+               - "Humidity < 0.5"
+           Color: [0.9, 0.3, 0.1]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 25
+           Stamps:
+               - Hollow_01_SUB, 0.4
+               - Pools_01, 0.4
+               - Spring_01, 0.6
+               - DunesSea_01_BM2, 0.1
+               - RiftIce_01, 0.5
+           Temperature: 3
+           Radiation: 6
+           AmbientSound: BarrenFog
+           LevelMod: +3
+           Decorations:
+               - [AntlerTree, 0.001, Plant]
+               - [BallFlower01, 0.04]
+               - [BallFlower02, 0.02]
+               - [BallFlower03, 0.02]
+               - [SkeletonMammothTorso, 0.007, Free]
+               - [SkeletonDragonTorso, 0.003, Plant]
+               - [SkeletonDragonHead, 0.002, Plant]
+               - [DeadTree02b, 0.005, Plant]
+               - [Cactus1, 0.007, Plant]
+               - [LavaPlant2, 0.04, Plant]
+               - [Snakeweed, 0.001, Plant]
+               - [AlienPlantSpike1, 0.01]
+               - [RockResourcePromethium, 0.01]
+           Grass:
+               - Name: GrassBrown02d
+                 Density: 0.01
+                 Preset: GrassDense
+
+         - Name: BiomeThree
+           Texture: [6, 11, 0.6, 3, 3, 1, 0.35]
+           SelectionCriteria:
+               - "true"
+           Color: [0.3, 0.3, 0.3]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           AmbientSound: OpenPlains
+           LevelMod: -1
+           Decorations:
+               - [WhiteOak, 0.05, Tree]
+               - [RiverBirch, 0.02, Tree]
+               - [ElderberryBushGreen, 0.05, BigPlant]
+               - [BushGreen01, 0.0004, BigPlant]
+               - [BushGreen02, 0.0004, BigPlant]
+               - [RockResourceIron, 0.0001, Free]
+               - [RockResourceCopper, 0.0001, Free]
+               - [RockResourceSilicon, 0.0001, Free]
+               - [AlienPlant07, 0.003, Plant]
+               - [CobraLeavesPlant, 0.01, Plant]
+               - [CattailWinter, 0.01, Plant]
+               - [OpuntiaCactus, 0.002, Free]
+           Grass:
+               - Name: GrassGreen02
+                 Density: 0.5
+                 Preset: GrassDense
+               - Name: Flower04
+                 Density: 0.05
+                 Preset: GrassDense
+
+
+
+
+#By Airelon 87 | Transcendence Server | 12/12/2018 | BaseLineForestStatic
+
+# ==============================================================
+#Note: Biome Chart | Standardized For Server For Simplicity 
+#BiomeZero - Coldest Zone on Planet Near Pole
+#BiomeOne = Water (One Biome For All Height Sealevel - 5)
+#BiomeTwo = Shore (No Stamps, small transition area to water)
+#BiomeThree = Catchall (Simple Biome, should inherit BiomeSix Stamps)
+#BiomeFour = Hills (Closer to Shore)
+#BiomeFive = Valleys (The Middle Biome)
+#BiomeSix = Mix Stamps (Closer To Mountains)
+#BiomeSeven = Mountains (Tall Mountains and Low Plats)
+#BiomeEight = Special (Radiated)
+#================================================================
+#...
+# Playfield Characteristics Section
+
+Description: "This planet has a breathable atmosphere, supports life, and is mostly water."
+
+PlanetType: Temperate                
+PlayfieldType: Planet             #Planet, Moon, Space, Sun      
+Difficulty: 3  
+
+LandClaimZone: Device          
+
+#Effects - Biomes Are Now Biome<spellnumber> Water = BiomeOne / Catchall = BiomeThree / Mountains = BiomeSeven, Special = BiomeEight
+SpecialEffectsLocal:
+  - Name: FireFliesRed          
+    Biome: [ BiomeSeven ]            
+    Time: Night                 
+    MaxHeight: 20               
+    FollowPlayerY: True          
+  - Name: Mosquitos
+    Biome: [ BiomeSix, BiomeEight ]  
+    Time: Day
+    MaxHeight: 20
+  - Name: Pollen
+    Biome: [ BiomeOne, BiomeTwo, BiomeThree, BiomeFour ]  
+    Time: Day
+    MaxHeight: 15
+    
+SpecialEffectsGlobal:
+# Weather Clear, then clouds, then rain/snow, then harmful (Delay of 10 for secondary of type
+  - Name: Clear                  
+    Type: Weather            
+    InitialDelay: 0           
+    Delay: 2                    
+    Lifetime: 1500   
+  - Name: Wind                   
+    Type: Weather            
+    InitialDelay: 0           
+    Delay: 5                    
+    Lifetime: 1500              
+  - Name: RainMedium #Edit
+    Type: Weather
+    InitialDelay: 0   
+    Delay: 5
+    Lifetime: 1500
+  - Name: RainHeavy #Edit
+    Type: Weather
+    InitialDelay: 0   
+    Delay: 5
+    Lifetime: 1500
+  - Name: Storm #Edit
+    Type: Weather
+    InitialDelay: 5  
+    Delay: 10
+    Lifetime: 1500
+  - Name: Hail #Edit
+    Type: Weather
+    InitialDelay: 5  
+    Delay: 10
+    Lifetime: 500
+# Global Effect
+  - Name: BirdFlocksVultures          
+    Biome: [ Any ]   
+    Time: Day                      
+    InitialDelay: 1                
+    Delay: 4			        
+    Lifetime: 600	                 
+    PlyDist: 100                   
+    SpawnY: 30                     
+    Struct: True    
+
+#Section Coloration: Vibe of the Planet   
+AtmosphereEnabled: True 
+AtmosphereColor: "0.3, 0.6, 0.47"
+SkyColor: "0.25, 0.55, 0.46"
+SkyHorizonColor: "0.1, 0.84, 0.89"
+AtmosphereParams: [8, 1.5]   #Defualt is 5, 1.2 / First = 0-10 Strength / Second = 0-3 ColorWashOut
+# Light
+DayLightIntensity: 0.8
+NightLightIntensity: 0.8
+LightZenithColor: "0.82, 0.85, 0.9"
+LightHorizonColor: "0.84, 0.8, 0.17"
+NightLightColor: "0.3,0.6,0.5"
+DayShadowStrength: 1 #DO NOT CHANGE A9 HARDCODE
+NightShadowStrength: 1 #DO NOT CHANGE A9 HARDCODE
+
+SunFlare: EnvironmentalEffects/SunFlareWhite
+
+
+# AtmosphereFog: 0.4                     
+FogCloudIntensity: 0.6                 
+FogColor: "0.5, 0.05, 0.86"               
+GroundFogIntensity: 0.12                  
+GroundFogHeight: 100                     
+
+CloudsDensity: 0.2                     
+CloudsSharpness: 0.35                  
+CloudsBrightness: 0.5                
+CloudsOpacity: 0.3                   
+CloudsZenithColor: "0.5, 0.05, 0.86"     
+CloudsHorizonColor: "0.4, 0.07, 0.89"   
+
+WindSpeed: 6
+
+
+
+#Resource Section | Set All To Use DistTypeCylinder Unless Specified in Terrain.ecf
+RandomResources:
+    - Name: CopperResource                
+      BiomesExcluded: [ BiomeTwo ]  #BiomeTwo is too close to water
+      IsImportant: False              
+      IsScalingCount: False          
+      CountMinMax: [ 1, 2 ]             
+      SizeMinMax: [ 10, 14 ]             
+      DepthMinMax: [ 5, 10 ]           
+      DroneProb: 0.2                  
+      MaxDroneCount: 1                
+
+    - Name: CobaltResource                
+      BiomesExcluded: [ BiomeTwo ]  #BiomeTwo is too close to water
+      IsImportant: False              
+      IsScalingCount: False           
+      CountMinMax: [ 3, 5 ]             
+      SizeMinMax: [ 6, 12 ]             
+      DepthMinMax: [ 5, 10 ]           
+      DroneProb: 0.4                 
+      MaxDroneCount: 1                
+
+    - Name: PromethiumResource                
+      BiomesExcluded: [ BiomeTwo ]  #BiomeTwo is too close to water
+      IsImportant: False              
+      IsScalingCount: False          
+      CountMinMax: [ 3, 5 ]             
+      SizeMinMax: [ 8, 10 ]             
+      DepthMinMax: [ 5, 7 ]           
+      DroneProb: 0.4                 
+      MaxDroneCount: 2                
+
+    - Name: MagnesiumResource                
+      BiomesExcluded: [ BiomeTwo ]  #BiomeTwo is too close to water
+      IsImportant: False              
+      IsScalingCount: False          
+      CountMinMax: [ 3, 5 ]             
+      SizeMinMax: [ 8, 14 ]             
+      DepthMinMax: [ 5, 10 ]           
+      DroneProb: 0.5                  
+      MaxDroneCount: 1                
+
+AsteroidResources: 
+# IronResource , CopperResource, SiliconResource, CobaltResource, PromethiumResource
+# MagnesiumResource, NeodymiumResource, SathiumResource, PentaxidResource
+# ErestrumResource, ZascosiumResource, GoldResource
+#Depletion
+    - Name: CobaltResource
+      Threshold: 0.6
+      Amount: 0.8
+      
+    - Name: MagnesiumResource
+      Threshold: 0.6
+      Amount: 0.8
+      
+    - Name: CopperResource
+      Threshold: 0.6
+      Amount: 0.8
+      
+#Random
+    - Name: IronResource        
+      Amount: 1750              
+      InitialDelay: 1          
+      Delay: 3           
+      DespawnDelay: 6 
+      
+    - Name: PromethiumResource        
+      Amount: 1750              
+      InitialDelay: 1          
+      Delay: 3           
+      DespawnDelay: 6 
+      
+    - Name: SiliconResource        
+      Amount: 1750              
+      InitialDelay: 1          
+      Delay: 3           
+      DespawnDelay: 6
+      
+# ===================================================================================
+# POI SECTION
+# ===================================================================================
+POIs:
+    Random:
+        #First Is Server Drone Base        
+        - GroupName: ZiblaxDroneCaller
+          DroneBaseSetup: DroneBaseSetup
+          IsCommandCenter: True
+          PlaceAt: OnWater, Terrain
+          Faction: Zirax
+          NoShieldReload: True
+          CountMinMax: [ 1, 1 ]          
+          IsImportant: True
+          DroneProb: 0
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: True     
+          Properties: 
+            - Key: Music                 
+              Value: DarkSoundscape
+            - Key: SI 
+              Value: Off
+            - Key: RegenAfter
+              Value: 60
+
+        - GroupName: TS_Oscutune_Ocean
+          Faction: Polaris
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0
+          DronesMinMax: [ 1 ]
+          ReserveCount: 0
+          TroopTransport: False 
+          Properties: 
+            - Key: Music
+              Value: SunnySkies
+            - Key: RegenAfter
+              Value: 75
+
+        - GroupName: PlanetVesselBase
+          Faction: Zirax
+          IsImportant: True
+          PlanetVesselBaseSetup: PlanetVesselBaseSetup
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 6
+          TroopTransport: True
+          SpawnPOIAvoid: [TS_Oscutune_Ocean]
+          POIDistance: 700
+          Properties: 
+            - Key: RegenAfter
+              Value: 75
+              
+        - GroupName: Pier
+          Faction: Public
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0
+          DronesMinMax: [ 1 ]
+          ReserveCount: 0
+          TroopTransport: False 
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 120
+
+        - GroupName: CivilSettlement
+          Faction: Polaris
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.0 
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          SpawnPOINear: [Pier]
+          SpawnPOINearRange: [200, 600]
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+#WaterPOIs
+        - GroupName: CrashedShip
+          Faction: Public
+          PlaceAt: OnWater
+          CountMinMax: [ 3, 4 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: False
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 75
+            - Key: SI
+              Value: Off
+              
+        - GroupName: SmugglerBargeCaptured
+          Faction: Zirax
+          PlaceAt: OnWater
+          CountMinMax: [ 3, 4 ]
+          DroneProb: 0
+          DronesMinMax: [ 1 ]
+          ReserveCount: 0
+          TroopTransport: False 
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: SerduDefenceFloating02 # Mid-floating, cannons side
+          Faction: Serdu
+          IsImportant: True
+          PlaceAt: Terrain, OnWater
+          CountMinMax: [ 3, 7 ]
+          DroneProb: 0.7
+          DronesMinMax: [ 1, 2 ] 
+          ReserveCount: 2
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: TreasureWine  
+          Faction: Public
+          PlaceAt: UnderWater
+          IsImportant: True
+          CountMinMax: [ 2, 2 ]
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 1
+          TroopTransport: False
+          Properties: 
+            - Key: MapDistance
+              Value: 50
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: JunkT3_Engine
+          Faction: Public
+          PlaceAt: UnderWater
+          CountMinMax: [ 3, 5 ]
+          DroneProb: 1.0 
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: MapDistance
+              Value: 50
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: JunkT1
+          Faction: Public
+          PlaceAt: UnderWater
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.0 
+          DronesMinMax: [ 3, 4 ]
+          ReserveCount: 0
+          TroopTransport: False
+          SpawnPOINear: [TreasureWine]
+          SpawnPOINearRange: [200, 400]
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: JunkT1
+          Faction: Public
+          PlaceAt: UnderWater
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.0 
+          DronesMinMax: [ 6, 8 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: JunkT1
+          Faction: Public
+          PlaceAt: UnderWater
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.0 
+          DronesMinMax: [ 6, 8 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: Riuns
+          Faction: Public
+          PlaceAt: UnderWater
+          CountMinMax: [ 3, 5 ]
+          DroneProb: 1.0 
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: MapDistance
+              Value: 50
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120
+              
+#Next Section
+    Fixed:
+
+    FixedPlayerStart:
+        - Mode: Creative
+          SubMode: Empty
+          Armor: ArmorLight
+          Pos: [ 423, 147, 693 ]
+          RotY: 160
+
+        - Mode: Creative
+          SubMode: Normal
+          Armor: ArmorLight
+          Pos: [ 435, 52, 868 ]  
+          RotY: 30
+
+        - Mode: Debug
+          Armor: ArmorLight
+          Pos: [ 0, 147, 0 ]
+          RotY: 160
+
+        - Mode: Survival
+          Spawn: EscapePod
+          Armor: ArmorLight
+          Items: [ "Pistol, AssaultRifle, PlayerBike, SurvivalTool, ConstructorSurvival, SurvivalTent, Flashlight, OreScanner, Drill, Chainsaw, Bandages:3, AntibioticOintment:3, StomachPills:3, PowerBar:3, EnergyDrink:2, PearthingStage1, DurianRoot, CornStage1, SnakeweedStage1, RadarSuitT1, Core:1, IronIngot:250, CopperIngot:250, SiliconIngot:200, BioFuel:8, 50Caliber:100, 5.8mmBullet:100", "SurvivalTent, Flashlight, AntibioticOintment:1, Bandages:1, PowerBar:1, SurvivalTool", "SurvivalTool, SurvivalTent, Flashlight, Bandages:1, WaterBottle: 1", "#FreshStart: SurvivalTool, SurvivalTent, PlayerBike, Flashlight, Bandages:1, WaterBottle: 1" ]
+
+# ==============================================================
+# ==============================================================
+# ==============================================================
+### Drones
+DroneBaseSetup: 
+    Random:
+        - GroupName: DroneBaseSetup
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          DroneProb: 1.0
+          Difficulty: 7
+          PresetStyle: 3
+          Stock:
+
+              - Name: EnemyDroneV2Plasma
+                Amount: 400
+                Extra: 0
+
+              - Name: DroneSmallFast01Rocket
+                Amount: 100000
+                Extra: 0  
+
+              - Name: DroneSmallFast01Minigun    # Base attack drones  
+                Amount: Infinite
+                Extra: 1         
+
+              - Name: DroneSmallAttackBase       # Base attack drones  
+                Amount: Infinite
+                Extra: 1      
+
+              - Name: DroneLargeAttackBase
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneBomberAttackBase
+                Amount: Infinite
+                Extra: 1                
+
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+
+              - Name: TurretRobotV2
+                Amount: 25000
+                Extra: 3
+
+              - Name: Mechanoid
+                Amount: 25000
+                Extra: 3
+
+              - Name: ArmoredGolem
+                Amount: 15000
+                Extra: 3
+   
+          PlanetVesselBase:
+              Name: PlanetVesselBaseSetup
+              Position3D: [ 0, 102, 0]
+              BaseType: PlanetVesselBase
+              KeyId: 0
+              PlanetVessel:
+                - Name: Patrol-S-Hard
+                  Mission: PlanetPatrol
+                  FixedMaxSpeed: 5
+                  RespawnDelay: 12
+
+                  RangePatrolTask:
+                    Position3D: [ 1500, 80, 0 ]
+                    Radius: 800
+                    DistToGround: 90
+
+                  AttackCVCircleAround:
+                    DistToTarget: 210
+
+# Drones that patrol on whole planet 
+# Type determined by stock of drone base (default drone - type = 0)
+ 
+DroneSpawning:
+    Random:
+        - DronesMinMax: [ 2, 3 ]
+          CenterX: -10000
+    
+        - DronesMinMax: [ 2, 3 ]
+          CenterX: -7500
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: -5000
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: -2500
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: 0
+          
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: 2500
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: 5000
+
+        - DronesMinMax: [ 2, 3 ]
+          CenterX: 7500
+          
+        - DronesMinMax: [ 2, 3 ]
+          CenterX: 10000
+
+# ==============================================================
+# ==============================================================
+
+SpawnZones:
+   - SpawnAt: [ PlanetVesselBase ]
+     Radius: 500
+     RadiusRandom: 25
+     RateMultiplyerCenter: 1.0
+     RateMultiplyerEdge: 0.6
+     Color: "1.0, 0.2, 0.2, 1.0"
+     Entities:
+       - Names: [ZiraxMinigunPatrol, ZiraxShotgunPatrol, ZiraxCrawlerPatrol]
+         Biomes: [Any]
+         Amount: 400
+         Period: Always
+         
+CreatureSpawning:       
+
+    - Biomes: [BiomeThree, BiomeFour, BiomeFive]
+      Entities:
+        - Name: Telluropods
+          Period: Always
+          Amount: 50
+          AllowInWater: true 
+
+    - Biomes: [BiomeOne, BiomeTwo]
+      Entities:
+        - Name: Telluropods
+          Period: Always
+          Amount: 100
+          AllowInWater: true  
+          
+    - Biomes: [BiomeZero, BiomeSix, BiomeEight]
+      Entities:
+        - Name: PlantMonsters
+          Period: Night
+          Amount: 25
+        - Name: Slimes
+          Period: Always
+          Amount: 50
+          DelayMinMax: [6, 20]
+          AllowInWater: true       
+        - Name: CaveWormsGreen
+          Period: Night
+          Amount: 50
+          
+#End of Yaml          
+
+Build: 2062

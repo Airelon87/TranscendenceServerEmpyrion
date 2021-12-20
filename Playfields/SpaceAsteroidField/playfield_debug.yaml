@@ -1,0 +1,92 @@
+---
+# Space Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html 
+
+# Playfield Characteristics
+Gravity: 0.00
+AtmosphereEnabled: False
+PvP: True
+UseFixed: True
+Radiation: 9.07
+TemperatureDay: -185
+Music: Migration
+
+# Playfield difficulty (has impact on experience gains)
+Difficulty: 2
+
+PlayfieldType: Space
+
+PlanetType: Space
+
+Description: "The space around  features an asteroid belt"
+
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Stars: SkyboxStarsBlack
+Nebula: PrefabNebulaBlue
+
+### POIs
+POIs:
+    Fixed:
+        - Type: BA_Admin
+          Prefab: TSO_OmicronOrbit
+          Mode: Survival
+          Name: TSO Trading Outpost
+          Pos: [85, -17, 5]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidFieldRectangle2
+          Name: Asteroid Field
+          Pos: [0, 0, 0]
+          Rot: [0, 0, 0]
+
+        - Type: AsteroidVoxel02Magnesium
+          Prefab: AsteroidVoxel02Magnesium
+          Name: Magnesium Asteroid
+          Pos: [-4016, -636, -2769]
+          Rot: [0, 0, 0]
+
+
+    FixedPlayerStart:
+        - Mode: Debug
+          Pos: [5000, 0, -5000]
+          RotY: 0
+
+# Drones
+DroneBaseSetup:
+    Fixed:
+        - Name: MainDroneBase
+          Pos: [1504, 1918, -1544]
+          DroneOnDuty:
+            - Name: SpaceDronePlasma
+              Pos: [2297, 1022, 5486]
+              Radius: 505
+            - Name: SpaceDroneLaser
+              Pos: [3745, 545, 2491]
+              Radius: 328
+          SpaceVessel:
+            - Name: Freighter
+              FixedMaxSpeed: 23
+              Mission: Freighter
+              Freighter:
+                DelayBetweenRespawn: 467
+                PathWayPoint:
+                - [-4197, -1720, 1138]
+                - [-2607, -571, -2662]
+                - [2922, -1779, 1682]
+                - [-7505, 622, -220]
+                - [-1278, 2009, 2813]
+                - [-3990, -1943, -4401]
+                - [-1325, 1632, -115]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 4
+                  Extra: 0
+            - Name: BAO_XenuShipyard
+              FixedMaxSpeed: 20
+              Mission: Immobile
+              Immobile:
+                Position3D: [-560, -151, -1173]
+              Stock:
+                - Name: SpaceDroneLaser
+                  Amount: 16
+                  Extra: 1

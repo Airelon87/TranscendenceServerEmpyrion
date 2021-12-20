@@ -1,0 +1,228 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.95.5.2902, Playfield Version: 12.0.0 [2810] (Alpha 12.0.0)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+PlanetSize:
+   SizeRange: [2, 3]
+   SizeProbs: [0.3, 0.7]
+PlanetAxis: [-40, 20]
+PlayfieldLevelOverride: [0, 0]
+TemperatureMin: [-30, -10]
+TemperatureMax: [50, 60]
+TemperatureNight: [10, 30]
+HumidityMin: [0.1, 0.6]
+HumidityMax: [0.6, 1]
+Radiation: [0, 6]
+LandWaterRatio: [0.1, 0.3]
+BaseLevel: [0, 0]
+SeaLevel: [5, 10]
+TerrainLevel: [150, 390]
+TerrainHeightMapMax: 512
+TemperatureHeightRange: [20, 60]
+TemperatureGradientRange: [0.1, 0.6]
+TemperatureNoiseFac: 0.10000000000000001
+HumidityHeightFac: [100, 220]
+HumidityNoiseFac: 0.29999999999999999
+GravityMinMax: [-6, -12]
+AtmosphereDensityMinMax: [1.2, 2.1]
+AtmosphereO2MinMax: [0.15, 0.35]
+AtmoBreathableProb: 0.5
+AtmosphereFogRange: [0.2, 0.7]
+WaterProb: 1
+GroundFogIntensityRange: [0, 0.3]
+GroundFogHeightRange: [15, 75]
+Water: [WaterBrown, WaterGreen]
+Music: [barren, Vanguard]
+HumidityMasks:
+- Global_1, 0.5
+- Global_4_R, 0.25
+- Global_2a, 0.25
+Biomes:
+-  Name: Pole
+   Color: [0, 0, 0]
+   SelectionCriteria:
+   - +Lat > 0.975
+   Weather: PoleFog
+   Texture: [0, 0, 0]
+   UndergroundLayers:
+   - [0, 1]
+   - [13, 10]
+   - [1, -1]
+   - [4, 1]
+   UndergroundLayersDefault: True
+-  Name: Water
+   Color: [0.12, 0.56, 1]
+   SelectionCriteria:
+   - Height < SeaLevel + 1
+   Decorations:
+   - [BulbShroom, 0.001, Free]
+   - [CoralBig08, 1E-05, Free]
+   - [CoralBig01, 1E-05, Free]
+   - [AlienPlantWorm1, 0.0001]
+   Texture: [1, 1, 1]
+   Radiation: 15
+   Temperature: 50
+-  Name: HeatBasin
+   Color: [0.55, 0.27, 0.07]
+   SelectionCriteria:
+   - Height > SeaLevel + 1
+   - Height < SeaLevel + 15
+   Decorations:
+   - [RealRock1, 1E-05]
+   - [RealRock10Dark, 1E-05]
+   - [RealRock1Dark, 1E-05]
+   - [RealRock2, 1E-05]
+   - [RealRock8Dark, 1E-05]
+   - [RealRock9, 1E-05]
+   - [AlienPlantSpike1, 0.001]
+   - [AlienPlantSpike2, 0.001]
+   - [PixieStalks, 0.01]
+   - [Snakeweed, 0.0001]
+   - [OmicronPalm, 0.001]
+   - [OmicronPlant, 0.001]
+   - [CattailWinter, 0.01]
+   LevelMod: +2
+   Texture: [2, 1, 0.5]
+   Temperature: 5
+-  Name: CraterField
+   Color: [0.82, 0.71, 0.55]
+   SelectionCriteria:
+   - Height > SeaLevel + 15
+   - Humidity < 0.5
+   - Height < 200
+   Stamps:
+   - CraterMeteorite_Large, 0.2
+   - CraterLava_1, 0.2
+   - CraterLava_2, 0.2
+   - CraterLava_3_HI, 0.2
+   - CraterMoon_1, 0.1
+   - CraterMoon_1_BM, 0.1
+   Decorations:
+   - [RockResourceCobalt, 1E-05]
+   - [RockResourceCopper, 1E-05]
+   - [RockResourceErestrum, 1E-05]
+   - [RockResourceZascosium, 1E-05]
+   - [RockResourceSilicon, 1E-05]
+   - [RockResourceIron, 1E-05]
+   - [RockResourceNeodymium, 1E-05]
+   - [RockResourceMagnesium, 1E-05]
+   - [RockResourceSathium, 1E-05]
+   - [CrystalStraight, 0.0001]
+   Texture: [2, 1, 0.5, 2, 1, 0.5, 0.5]
+   StampProb: 1
+   StampTries: 125
+-  Name: Rifts
+   Color: [0.63, 0.32, 0.18]
+   SelectionCriteria:
+   - Height > SeaLevel + 15
+   - Humidity > 0.5
+   - Height > 200
+   Stamps:
+   - Rift_Fissure, 0.3
+   - Rift_Fissure_SM, 0.2
+   - RiftLava_1b_BM, 0.2
+   - RiftLava_2b_BM, 0.2
+   - RiftLava_1, 0.1
+   Decorations:
+   - [LavaPlant1, 1E-05]
+   - [PulpitFungus, 1E-05]
+   - [Mushroom2, 1E-05]
+   - [LavaPlant2, 0.0001]
+   - [AntlerTree, 1E-05]
+   - [AlienPlantMushroom1, 1E-05]
+   - [AlienPlantPod2, 0.0001]
+   - [RockResourceSilicon, 1E-05]
+   Texture: [3, 2, 0.3, 2, 3, 0.3, 0.3]
+   StampProb: 1
+-  Name: Mountains
+   Color: [0.41, 0.41, 0.41]
+   SelectionCriteria:
+   - Height > SeaLevel + 1
+   - Humidity < 0.5
+   - Height > 80
+   Stamps:
+   - MountainDesert_01, 0.1
+   - MountainEroded_01b, 0.1
+   - Volcanic_02b, 0.1
+   - Mountain_2b, 0.1
+   - Mountain_2, 0.1
+   - Mountain_3, 0.1
+   - Mountain_11_BM2, 0.1
+   - Mountain_3b, 0.3
+   Decorations:
+   - [Snakeweed, 1E-05]
+   - [LavaPlant2, 1E-05]
+   - [ClusterShroom, 1E-05]
+   - [RockFormationO, 1E-05]
+   - [PromethiumStone, 1E-05]
+   AmbientSound: Mountains
+   Texture: [3, 4, 0.2, 4, 3, 0.3, 0.2]
+   StampProb: 1
+   StampTries: 75
+-  Name: Organics
+   Color: [0.49, 0.99, 0]
+   SelectionCriteria:
+   - Height > SeaLevel + 15
+   - Temperature > 10
+   - Temperature < 35
+   Stamps:
+   - StarterGroves_2, 0.5
+   - Valley_1, 0.3
+   Grass:
+   -  Name: GrassBlue04
+      Density: 0.29999999999999999
+      YScale: 0.40000000000000002
+      Preset: GrassDense
+   -  Name: Flower05
+      Density: 0.29999999999999999
+      YScale: 0.14999999999999999
+      Preset: GrassDense
+   Decorations:
+   - [AkuaBushGreen, 0.01]
+   - [SkeletonWhaleFull, 0.0001]
+   - [RockResourceErestrum, 0.0001]
+   - [RockResourceZascosium, 1E-05]
+   - [MushroomBellBrown01, 0.0001]
+   - [Mushroom03, 0.001]
+   - [OnionFlower, 0.0001]
+   - [PixieStalks, 0.0001]
+   - [WeepingPalm1, 0.0001]
+   - [FantasyPlant1, 0.01]
+   - [FantasyPlant2, 0.01]
+   - [ConfettiMoss, 0.01]
+   - [EggPlant, 0.01]
+   - [AlienPlantTube1, 0.001]
+   - [AlienPalmTree, 0.01]
+   - [DesertPlant20, 0.001]
+   LevelMod: +3
+   SpecialBiome:
+      CountMinMax: [1, 5]
+      Avoid: Pole
+      AvoidDistance: [0.2, 0.4]
+   Texture: [5, 3, 0.2, 4, 2, 0.2, 0.2]
+   StampProb: 1
+   StampTries: 25
+   Temperature: -25
+-  Name: Barren
+   Color: [1, 0.65, 0]
+   SelectionCriteria:
+   - true
+   Stamps:
+   - Valley_1, 0.3
+   - HillsLava_1, 0.3
+   - Explosion_01, 0.2
+   - DunesDesert_01, 0.2
+   Decorations:
+   - [LavaPlant2, 1E-05]
+   - [ScalyPods, 1E-05]
+   - [RealRock4Dark, 1E-05]
+   - [DesertRock1, 1E-06]
+   - [ModRocksBrown04, 1E-05]
+   - [Mod_rocks_grey04, 1E-06]
+   - [MoundzTree, 1E-06]
+   - [RockResourceIron, 1E-06]
+   - [RockResourceCopper, 1E-05]
+   - [RockResourceSilicon, 1E-06]
+   Texture: [4, 0, 0.2]
+   StampProb: 0.69999999999999996
+   StampTries: 30

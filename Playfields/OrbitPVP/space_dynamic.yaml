@@ -1,0 +1,316 @@
+---
+# Transcendence Dynamic Orbit May 28th 2020 A12
+# Playfield Characteristics
+Gravity: 0                                    # Ignore (do not change)
+AtmosphereEnabled: False                      # Ignore (do not change)
+UseFixed: True                                # Ignore (do not change) - If set uses fixed drones. For space playfields, this is necessary   
+PvPProb: 1                                # Probability that playfield is a PvP playfield, otherwise it will be PvE
+Radiation: [7,15]                             # Overall radiation level in the space playfield. Range [0, 20] 
+TemperatureDay: [-200,-120]                   # Temperature in space playfield 
+Music: [moonstone, space, DistantWorlds, Migration]    # Background music playing in this playfield. Choose from pre-selection: 
+                                     # alien, alien2, barren, desert, desert2, lava, lava2, moonstone, snow, space, temperate, temperate2, temperate3. 
+                                     # 2473, Adrift, BarrenMoon, DarkSoundscape, DarkSoundscape2, DarkSoundscape3, DistantWorlds, Eden, Encryptor, EnergyMatrix, FirstHours, Helios, Hyperion, JungleDepth, Migration, NebularClouds, Orbiting, Reaver, Resurgence, Sanctuary, StellarGrasp, SunnySkies, Tempest, Transit, Vanguard.      
+ 
+PlayfieldType: Space                          # Ignore (do not change for space playfield)
+PlanetType: Orbit                            # Ignore (do not change for space playfield)     
+
+# Skybox:
+#     - [SunFlareWhiteSpace, SkyboxStarsCyan, PrefabNebulaBlueYellow]
+#     - [SunFlareWhite4Space, SkyboxStarsCyan, PrefabNebulaBlueYellow]
+#     - [SunFlareWhite3Space, SkyboxStarsBlue, PrefabNebulaBlueGlittery] 
+#     - [SunFlareWhiteSpace, SkyboxStarsBlack, PrefabNebulaBlue] 
+#     - [SunFlareRedSpace, SkyboxStarsPurple, PrefabNebulaOrange] 
+#     - [SunFlareWhite4Space, SkyboxStarsPurple, PrefabNebulaBluePinkPurple] 
+#     - [SunFlareWhiteSpace, SkyboxStarsRed, PrefabNebulaRed] 
+#     - [SunFlareWhite3Space, SkyboxStarsBlack, PrefabNebulaBlueOrange] 
+#     - [SunFlareRedSpace, SkyboxStarsRed, PrefabNebulaBluePinkRed] 
+#     - [SunFlareWhiteSpace, SkyboxStarsCyan, PrefabNebulaBlue2] 
+    
+
+### Resource Asteroid
+Resources:                     
+    - Name: [ AsteroidVoxel01Iron, AsteroidVoxel02Iron, AsteroidVoxel03Iron]
+      DisplayName: Iron Asteroid
+      CountMinMax: [ 1, 4 ]
+      Probability: 1    
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+ 
+    - Name: [ AsteroidVoxel01Copper, AsteroidVoxel02Copper, AsteroidVoxel03Copper]
+      DisplayName: Copper Asteroid
+      CountMinMax: [ 1, 4 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+ 
+    - Name: [ AsteroidVoxel01Silicon, AsteroidVoxel02Silicon, AsteroidVoxel03Silicon]
+      DisplayName: Silicon Asteroid
+      CountMinMax: [ 1, 4 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45           
+
+    - Name: [ AsteroidVoxel01Magnesium, AsteroidVoxel02Magnesium, AsteroidVoxel03Magnesium]
+      DisplayName: Magnesium Asteroid
+      CountMinMax: [ 2, 6 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45           
+
+    - Name: [ AsteroidVoxel01Cobalt, AsteroidVoxel02Cobalt, AsteroidVoxel03Cobalt]
+      DisplayName: Cobalt Asteroid
+      CountMinMax: [ 3, 5 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45              
+
+    - Name: [ AsteroidVoxel01Neodymium, AsteroidVoxel02Neodymium, AsteroidVoxel03Neodymium]
+      DisplayName: Neodymium Asteroid
+      CountMinMax: [ 3, 5 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45          
+
+    - Name: [ AsteroidVoxel01Promethium, AsteroidVoxel02Promethium, AsteroidVoxel03Promethium]
+      DisplayName: Promethium Asteroid
+      CountMinMax: [ 2, 8 ]
+      Probability: 1 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45           
+
+    - Name: [ AsteroidVoxel01Sathium, AsteroidVoxel02Sathium, AsteroidVoxel03Sathium]
+      DisplayName: Sathium Asteroid
+      CountMinMax: [ 1, 4 ]
+      Probability: 1 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+
+    - Name: [ AsteroidVoxel01Erestrum, AsteroidVoxel02Erestrum, AsteroidVoxel03Erestrum]
+      DisplayName: Erestrum Asteroid
+      CountMinMax: [ 5, 8 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45          
+
+    - Name: [ AsteroidVoxel01Zascosium, AsteroidVoxel02Zascosium, AsteroidVoxel03Zascosium]
+      DisplayName: Zascosium Asteroid
+      CountMinMax: [ 3, 8 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45          
+
+    - Name: [ AsteroidVoxel01Pentaxid, AsteroidVoxel02Pentaxid, AsteroidVoxel03Pentaxid]
+      DisplayName: Pentaxid Asteroid
+      CountMinMax: [ 2, 4 ]
+      Probability: 1    
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+
+    - Name: [ AsteroidVoxel01Gold, AsteroidVoxel02Gold, AsteroidVoxel03Gold]
+      DisplayName: Gold Asteroid
+      CountMinMax: [ 1, 5 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45            
+  
+    - Name: [ AsteroidVoxel01Ice, AsteroidVoxel02Ice, AsteroidVoxel03Ice]
+      DisplayName: Ice Asteroid
+      CountMinMax: [ 3, 4 ]
+      Probability: 1 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45           
+
+    - Name: [ AsteroidVoxel01Titan, AsteroidVoxel02Titan, AsteroidVoxel03Titan]
+      DisplayName: Titan Asteroid
+      CountMinMax: [ 4, 6 ]
+      Probability: 1 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45            
+
+    - Name: [ AsteroidVoxel01Aluminium, AsteroidVoxel02Aluminium, AsteroidVoxel03Aluminium]
+      DisplayName: Aluminium Asteroid
+      CountMinMax: [ 2, 4 ]
+      Probability: 1 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45           
+
+    - Name: [ AsteroidVoxel01Platin, AsteroidVoxel02Platin, AsteroidVoxel03Platin]
+      DisplayName: Platin Asteroid
+      CountMinMax: [ 2, 4 ]
+      Probability: 1  
+      Properties:     
+        - Key: RegenAfter
+          Value: 45  
+           
+### POIs
+POIs:
+    - Name: [AsteroidFieldBoxExclude, AsteroidFieldFewBoxExclude, AsteroidRingPlanet] 
+      FieldName: [AsteroidField, AsteroidFieldRectangle2]     # used if playfield is not an orbit
+      CountMinMax: [ 1, 2 ]     
+      Probability: 0.3
+      BaseField: True  
+      RandomRotation: True        # rotates the asteroid fields randomly
+
+    - Type: BA_Alien   
+      Name: [BAO_BurntOutReconVessel, BAO_CombatWreckage, BAO_JettisonedCargoPod, BAO_SeveredShip, BAO_TornThrusterArray, CV_LightCarrierWreck, SV_FA005XHunter]  
+      DisplayName: Wreckage
+      Faction: None
+      Mode: Survival
+      CountMinMax: [ 6, 8 ]     
+      Probability: 1
+      InitPower: True
+      Properties: 
+        - Key: RegenAfter
+          Value: 120       
+ 
+DroneBaseSetup:
+    - Name: MainDroneBase
+      Count: [1, 1]
+      DroneOnDuty:
+        Name: [SpaceDroneLaser, SpaceDronePlasma]
+        Count: [2, 8]
+        Radius: [300, 800]
+      SpaceVessels:
+          - Name: [Freighter]       
+            Faction: Polaris
+            Count: [2, 6]
+            FixedMaxSpeed: [15, 25]  
+            Mission: Freighter    
+            MissionDescription:
+              Name: Freighter
+              Position:
+                PosXZMinMax: [3000, 7000]
+                PosYMax: 7000                
+              DelayBetweenRespawnMinMax: [1300, 1600]
+              DelayBeforeSelfDestructionMinMax: [1500, 2400]
+              IsRespawnAfterDestruction: True
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma]
+              AmountMinMax: [3, 5]
+              ExtraMinMax: [0,0]   
+
+          - Name: [AlienIceDragon]       
+            Faction: Talon
+            Count: [1, 4]
+            FixedMaxSpeed: [10, 20]  
+            Mission: Freighter    
+            MissionDescription:
+              Name: Freighter
+              Position:
+                PosXZMinMax: [14000, 18000]
+                PosYMax: 18000                
+              DelayBetweenRespawnMinMax: [1300, 1600]
+              DelayBeforeSelfDestructionMinMax: [1500, 2400]
+              IsRespawnAfterDestruction: True
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma]
+              AmountMinMax: [2, 4]
+              ExtraMinMax: [1,2] 
+
+          - Name: [ZiblaxCruiser]       
+            Faction: Zirax
+            Count: [1, 4]
+            FixedMaxSpeed: [10, 20]  
+            Mission: Freighter    
+            MissionDescription:
+              Name: Freighter
+              Position:
+                PosXZMinMax: [4000, 8000]
+                PosYMax: 8000                
+              DelayBetweenRespawnMinMax: [1300, 1600]
+              DelayBeforeSelfDestructionMinMax: [1500, 2400]
+              IsRespawnAfterDestruction: True
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma]
+              AmountMinMax: [3, 7]
+              ExtraMinMax: [1,2] 
+
+          - Name: [VladianInterceptor, VladianDestroyer]     
+            Faction: Alien     
+            Count: [0, 4]
+            FixedMaxSpeed: [20, 40]  
+            Mission: SpacePatrol    
+            MissionDescription:
+              Name: RangePatrol
+              RadiusMinMax: [750, 1500] 
+              Position:
+                PosXZMinMax: [5000, 15000]
+                PosYMax: 15000          
+              DelayBetweenRespawnMinMax: [1300, 1600]
+              DelayBeforeSelfDestructionMinMax: [1500, 2400]
+              IsRespawnAfterDestruction: True     
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma]
+              AmountMinMax: [3, 5]
+              ExtraMinMax: [0,0]  
+
+          - Name: [SyndicateScout, SyndicatePatrolShip]     
+            Faction: Pirates   
+            Count: [1, 4]
+            FixedMaxSpeed: [20, 30]  
+            Mission: SpacePatrol    
+            MissionDescription:
+              Name: RangePatrol
+              RadiusMinMax: [1750, 3500] 
+              Position:
+                PosXZMinMax: [5000, 15000]
+                PosYMax: 15000             
+              DelayBetweenRespawnMinMax: [1300, 1600]
+              DelayBeforeSelfDestructionMinMax: [1500, 2400]
+              IsRespawnAfterDestruction: True         
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma]
+              AmountMinMax: [3, 5]
+              ExtraMinMax: [0,0]    
+
+          - Name: [OPVKriel]     
+            Faction: Kriel  
+            Count: [1, 2]
+            FixedMaxSpeed: [20, 40]  
+            Mission: SpacePatrol    
+            MissionDescription:
+              Name: RangePatrol
+              RadiusMinMax: [750, 2000] 
+              Position:
+                PosXZMinMax: [5000, 7500]
+                PosYMax: 7500             
+              DelayBetweenRespawnMinMax: [1300, 1600]
+              DelayBeforeSelfDestructionMinMax: [1500, 2400]
+              IsRespawnAfterDestruction: True       
+            StockDescription:
+              Name: [SpaceDroneKrielLaser]
+              AmountMinMax: [3, 5]
+              ExtraMinMax: [0,0]     
+
+          - Name: [BAO_XenuSupplyStation, BAO_XenuShipyard, BAO_Dion-III, BAO_Thermica-Station, BAO_XenuSupplyStation, BAO_GhostRiderShipyard, BAO_OrbitalSpire, BAO_CrusaldOrbital, BAO_PF2, BAO_RadosRepairStation] 
+            Count: [0, 2]
+            Faction: Zirax    
+            FixedMaxSpeed: [0,0]
+            Mission: Immobile
+            MissionDescription:
+              Name: Immobile
+              Position:
+                PosXZMinMax: [7000, 9500]
+                PosYMax: 9500               
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma]
+              AmountMinMax: [15, 25]
+              ExtraMinMax: [0,0]      
+            Properties: 
+              - Key: RegenAfter
+                Value: 120                       

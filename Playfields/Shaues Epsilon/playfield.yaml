@@ -1,0 +1,1381 @@
+PlayfieldType: Space
+WorldName: 
+RealRadius: 0
+ScaledRadius: 0
+Gravity: 0
+PlanetAxis: 0
+PlanetRotAxis: 
+AtmosphereDensity: 0
+AtmosphereO2: 0.100000001
+AtmosphereBreathable: false
+Temperature: 0
+TemperatureDay: -196
+TemperatureNight: 0
+Radiation: 7.19400978
+SeaLevel: 0
+TerrainLevel: 0
+BaseLevel: 0
+DayLength: 0
+PlanetType: Junkyard
+PlanetSize: 2
+Moons: 0
+Emissive: false
+Water: 
+PvP: false
+Difficulty: 1
+LegacyBiome: 
+ChunkProviderId: 0
+SunFlare: 
+Nebula: 
+Stars: 
+LocalEffect: 
+SpecialEffectsLocal: 
+SpecialEffectsGlobal: 
+AtmosphereEnabled: false
+AtmosphereColor: 0.55, 0.61, 0.65
+AtmosphereParams: 
+OrbitUsesLightColor: false
+SkyColor: 1, 1, 1
+SkyHorizonColor: 
+LightZenithColor: 1, 0.95, 0.915
+LightHorizonColor: 1, 0.6, 0
+NightLightColor: 0.671, 0.647, 0.992
+CloudsZenithColor: 0.875, 0.918, 1
+CloudsHorizonColor: 1, 0.76, 0.566
+CloudsNightZenithColor: 0.054, 0.094, 0.152
+CloudsNightHorizonColor: 0.054, 0.094, 0.152
+CloudsOpacity: 0.899999976
+FogCloudIntensity: 1
+DayLightIntensity: 0.600000024
+NightLightIntensity: 0.699999988
+DayShadowStrength: 0.649999976
+NightShadowStrength: 0.400000006
+AtmosphereFog: 0
+CloudsDensity: 0
+CloudsSharpness: 1
+CloudsBrightness: 0.600000024
+WindSpeed: 1
+FogColor: 0.8, 0.8, 0.8
+FogIntensity: 0
+FogStartDistance: 0
+GroundFogIntensity: 0
+GroundFogHeight: 0
+Description: 
+Seed: -2147483648
+TemperatureMinMax: 
+HumidityMinMax: 
+LandWaterRatio: 0
+TemperatureHeightRange: 
+TemperatureGradientRange: 
+TemperatureNoiseFac: 0
+HumidityHeightFac: 
+HumidityNoiseFac: 0
+TerrainHeightMapMax: -1
+GroundShapes: 
+TemperatureMasks: 
+HumidityMasks: 
+BiomeStampTries: 0
+PlayfieldLevel: 8
+PdaReferral: 
+BaseAttackCount: 1
+PfServerWeight: 0
+PlanetClass: Junkyard
+UseFixed: true
+UseRandom: false
+Build: 2953
+Instance: 
+IndestructibleTerrain: false
+AllowSV: true
+AllowCV: true
+AllowHV: true
+AllowBA: true
+AllowBlueprintSV: true
+AllowBlueprintCV: true
+AllowBlueprintHV: true
+AllowBlueprintBA: true
+AllowMaxCPUTierSV: 0
+AllowMaxCPUTierCV: 0
+AllowMaxCPUTierHV: 0
+AllowMaxCPUTierBA: 0
+RestrictToOrigin: 255
+Music: space
+LandClaimZone: Device
+IsOrbitPlayfield: false
+RandomPOIs: 
+RandomDroneBase: 
+RandomResources: 
+FixedResources: 
+AsteroidResources: 
+Terrain: 
+MainBiome: 
+SubBiomes: 
+BiomeTextureReplacements: 
+Biome: 
+POIs:
+  Random: 
+  Fixed:
+  - Type: AsteroidFieldRectangle2
+    Prefab: 
+    Mode: 
+    SubMode: 
+    Name: Asteroid Field
+    InitPower: false
+    LevelMod: 
+    Faction: 
+    Properties: 
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 0
+    - 0
+    - 0
+    Rot:
+    - 71
+    - -29
+    - 110
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: AsteroidVoxel02Ice
+    Prefab: AsteroidVoxel02Ice
+    Mode: 
+    SubMode: 
+    Name: Ice Asteroid
+    InitPower: false
+    LevelMod: 
+    Faction: 
+    Properties: &o0
+    - Key: RegenAfter
+      Value: 180
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -5529
+    - -1911
+    - -3891
+    Rot:
+    - 0
+    - 0
+    - 0
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: AsteroidVoxel03Ice
+    Prefab: AsteroidVoxel03Ice
+    Mode: 
+    SubMode: 
+    Name: Ice Asteroid
+    InitPower: false
+    LevelMod: 
+    Faction: 
+    Properties: *o0
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -3055
+    - 603
+    - -10061
+    Rot:
+    - 0
+    - 0
+    - 0
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: AsteroidVoxel03Ice
+    Prefab: AsteroidVoxel03Ice
+    Mode: 
+    SubMode: 
+    Name: Ice Asteroid
+    InitPower: false
+    LevelMod: 
+    Faction: 
+    Properties: *o0
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 11636
+    - -1708
+    - 17312
+    Rot:
+    - 0
+    - 0
+    - 0
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: AsteroidVoxel01Ice
+    Prefab: AsteroidVoxel01Ice
+    Mode: 
+    SubMode: 
+    Name: Ice Asteroid
+    InitPower: false
+    LevelMod: 
+    Faction: 
+    Properties: *o0
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -4465
+    - -889
+    - 8809
+    Rot:
+    - 0
+    - 0
+    - 0
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: AsteroidVoxel03Titan
+    Prefab: AsteroidVoxel03Titan
+    Mode: 
+    SubMode: 
+    Name: Titan Asteroid
+    InitPower: false
+    LevelMod: 
+    Faction: 
+    Properties:
+    - Key: RegenAfter
+      Value: 180
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 12413
+    - -1763
+    - 7543
+    Rot:
+    - 0
+    - 0
+    - 0
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_PiratesSignalRelay01
+    Mode: Survival
+    SubMode: 
+    Name: Distress Signal
+    InitPower: true
+    LevelMod: 
+    Faction: Pirates
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    - Key: Music
+      Value: Vanguard
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 2648
+    - 884
+    - -3083
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_TornThrusterArray
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: &o1
+    - Key: RegenAfter
+      Value: 120
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -3491
+    - -24
+    - 9405
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_TornThrusterArray
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 8494
+    - -1854
+    - 8549
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: SV_FA005XHunter
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -19336
+    - 1100
+    - 7828
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_BurntOutReconVessel
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -10535
+    - -71
+    - 7591
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_BurntOutReconVessel
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 5707
+    - -718
+    - -8761
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: SV_FA005XHunter
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -17196
+    - -1505
+    - 11809
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_JettisonedCargoPod
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 3157
+    - 784
+    - 5407
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: CV_LightCarrierWreck
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -9424
+    - 92
+    - 5712
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_CombatWreckage
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -6925
+    - 551
+    - 9755
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_BurntOutReconVessel
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 7333
+    - 1152
+    - 4732
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_JettisonedCargoPod
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -517
+    - -1724
+    - -13976
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_JettisonedCargoPod
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -12946
+    - -237
+    - -2148
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: SV_FA005XHunter
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 1208
+    - -415
+    - 14013
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: CV_LightCarrierWreck
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -6765
+    - -85
+    - 13226
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_JettisonedCargoPod
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 10153
+    - 868
+    - 8650
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_JettisonedCargoPod
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 4765
+    - 456
+    - -1342
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_JettisonedCargoPod
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - -10627
+    - -1566
+    - -3794
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_BurntOutReconVessel
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 10914
+    - -1380
+    - 6133
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: CV_LightCarrierWreck
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 7782
+    - 1590
+    - -8395
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  - Type: BA_Alien
+    Prefab: BAO_CombatWreckage
+    Mode: Survival
+    SubMode: 
+    Name: Wreckage
+    InitPower: true
+    LevelMod: 
+    Faction: None
+    Properties: *o1
+    NoShieldReload: false
+    IsCommandCenter: false
+    Pos:
+    - 20569
+    - -1341
+    - 3470
+    Rot: 
+    SpawnResource: 
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+  FixedPlayerStart: 
+DroneBaseSetup:
+  Random: 
+  Fixed:
+  - Name: MainDroneBase
+    Faction: 
+    Pos:
+    - -1453.03198
+    - -2321
+    - 855.157288
+    LevelMod: 
+    DroneOnDuty:
+    - Name: SpaceDroneLaser
+      Faction: Main
+      Pos:
+      - -3696.55347
+      - 356
+      - 4694.26465
+      Radius: 437
+    - Name: SpaceDroneLaser
+      Faction: Main
+      Pos:
+      - 2763.54639
+      - -2112
+      - -6766.40869
+      Radius: 520
+    - Name: SpaceDroneLaser
+      Faction: Main
+      Pos:
+      - 6847.95898
+      - 1178
+      - 2979.34399
+      Radius: 744
+    - Name: SpaceDronePlasma
+      Faction: Main
+      Pos:
+      - -7028.91406
+      - 406
+      - 1016.25031
+      Radius: 703
+    DroneSpaceFreighter: 
+    DronePlanetVessel: 
+    SpaceVessel:
+    - Name: Freighter
+      Faction: Polaris
+      FixedMaxSpeed: 28
+      Mission: Freighter
+      RangePatrol: 
+      Immobile: 
+      Freighter:
+        DelayBetweenRespawn: 582
+        DelayBeforeSelfDestruction: 223
+        IsRespawnAfterDestruction: true
+        PathWayPoint:
+        - - -1935
+          - 2515
+          - -12483
+        - - -43119
+          - -7925
+          - -34005
+        - - -10312
+          - 2218
+          - -8643
+        - - -48140
+          - -6417
+          - 23534
+        - - -29811
+          - -4252
+          - 36960
+        - - 2073
+          - -5494
+          - -56778
+        - - -7212
+          - -4767
+          - 48969
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 4
+        Extra: 0
+      Properties: 
+    - Name: Freighter
+      Faction: Polaris
+      FixedMaxSpeed: 29
+      Mission: Freighter
+      RangePatrol: 
+      Immobile: 
+      Freighter:
+        DelayBetweenRespawn: 575
+        DelayBeforeSelfDestruction: 232
+        IsRespawnAfterDestruction: true
+        PathWayPoint:
+        - - -11592
+          - 300
+          - 6256
+        - - 7473
+          - -4610
+          - -13026
+        - - 9139
+          - 7386
+          - 1381
+        - - -5974
+          - -4804
+          - 9642
+        - - -36120
+          - -4321
+          - -6595
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 4
+        Extra: 0
+      Properties: 
+    - Name: Freighter
+      Faction: Polaris
+      FixedMaxSpeed: 31
+      Mission: Freighter
+      RangePatrol: 
+      Immobile: 
+      Freighter:
+        DelayBetweenRespawn: 442
+        DelayBeforeSelfDestruction: 229
+        IsRespawnAfterDestruction: true
+        PathWayPoint:
+        - - 14457
+          - 1429
+          - 14204
+        - - 13855
+          - -4079
+          - 57168
+        - - 13842
+          - -1798
+          - 29099
+        - - -37666
+          - 1617
+          - 22549
+        - - 10541
+          - 191
+          - -3937
+        - - 7879
+          - -5921
+          - 22013
+        - - 22204
+          - 2437
+          - -15509
+        - - 21495
+          - -1755
+          - 44927
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 4
+        Extra: 0
+      Properties: 
+    - Name: Freighter
+      Faction: Zirax
+      FixedMaxSpeed: 36
+      Mission: Freighter
+      RangePatrol: 
+      Immobile: 
+      Freighter:
+        DelayBetweenRespawn: 541
+        DelayBeforeSelfDestruction: 229
+        IsRespawnAfterDestruction: true
+        PathWayPoint:
+        - - 5624
+          - -2608
+          - -5396
+        - - -31722
+          - -2327
+          - 28983
+        - - -21492
+          - 1831
+          - 20161
+        - - -1654
+          - 3406
+          - -3253
+        - - 25250
+          - 2492
+          - 11602
+        - - -6203
+          - -2472
+          - -5968
+        - - 707
+          - -3874
+          - 5093
+        - - 34278
+          - 1728
+          - -28172
+        - - -3348
+          - 2404
+          - 3198
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 3
+        Extra: 0
+      Properties: 
+    - Name: Freighter
+      Faction: Trader
+      FixedMaxSpeed: 26
+      Mission: Freighter
+      RangePatrol: 
+      Immobile: 
+      Freighter:
+        DelayBetweenRespawn: 535
+        DelayBeforeSelfDestruction: 241
+        IsRespawnAfterDestruction: true
+        PathWayPoint:
+        - - 5147
+          - -2091
+          - 14160
+        - - -33331
+          - 4957
+          - -22564
+        - - -20366
+          - 1801
+          - -11456
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 3
+        Extra: 0
+      Properties: 
+    - Name: Freighter
+      Faction: Trader
+      FixedMaxSpeed: 32
+      Mission: Freighter
+      RangePatrol: 
+      Immobile: 
+      Freighter:
+        DelayBetweenRespawn: 415
+        DelayBeforeSelfDestruction: 226
+        IsRespawnAfterDestruction: true
+        PathWayPoint:
+        - - -5672
+          - 2250
+          - 9625
+        - - -2698
+          - 1053
+          - -2663
+        - - 13227
+          - 35
+          - 21730
+        - - -62654
+          - 5
+          - -16400
+        - - -18970
+          - 149
+          - 19100
+        - - -990
+          - -2298
+          - -3326
+        - - -56888
+          - -437
+          - 2630
+        - - -417
+          - 3340
+          - 8343
+      Stock:
+      - Name: SpaceDroneLaser
+        Amount: 3
+        Extra: 0
+      Properties: 
+    - Name: Freighter
+      Faction: Kriel
+      FixedMaxSpeed: 35
+      Mission: Freighter
+      RangePatrol: 
+      Immobile: 
+      Freighter:
+        DelayBetweenRespawn: 355
+        DelayBeforeSelfDestruction: 242
+        IsRespawnAfterDestruction: true
+        PathWayPoint:
+        - - -2766
+          - -2624
+          - 348
+        - - 31724
+          - 124
+          - -22815
+        - - -7139
+          - -4504
+          - 4199
+        - - 15665
+          - 5339
+          - 7660
+        - - 11417
+          - -4131
+          - 11388
+        - - -731
+          - 504
+          - -10318
+        - - 2306
+          - -3061
+          - -1610
+        - - -23242
+          - -5801
+          - -7147
+        - - 24808
+          - -4155
+          - -9427
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 4
+        Extra: 0
+      Properties: 
+    - Name: OPVPolaris
+      Faction: Polaris
+      FixedMaxSpeed: 28
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - -4216.77441
+        - 2540.3772
+        - -3364.70801
+        Radius: 2030
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDroneLaser
+        Amount: 3
+        Extra: 0
+      Properties: 
+    - Name: OPVPolaris
+      Faction: Polaris
+      FixedMaxSpeed: 35
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - -2157.03613
+        - -3251.64771
+        - 2672.11548
+        Radius: 1096
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDroneLaser
+        Amount: 3
+        Extra: 0
+      Properties: 
+    - Name: OPVZirax
+      Faction: Zirax
+      FixedMaxSpeed: 39
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - -2443.89966
+        - -3959.38965
+        - -3647.78784
+        Radius: 1975
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 4
+        Extra: 0
+      Properties: 
+    - Name: OPVPirates
+      Faction: Pirates
+      FixedMaxSpeed: 20
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - 3519.12231
+        - -5258.16406
+        - 2272.91357
+        Radius: 2468
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 3
+        Extra: 0
+      Properties: 
+    - Name: OPVTrader
+      Faction: Trader
+      FixedMaxSpeed: 28
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - -1225.49304
+        - 4109.47998
+        - -1960.3728
+        Radius: 1154
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 4
+        Extra: 0
+      Properties: 
+    - Name: OPVTrader
+      Faction: Trader
+      FixedMaxSpeed: 41
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - -1238.76135
+        - 1821.63574
+        - -5654.19189
+        Radius: 1651
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 4
+        Extra: 0
+      Properties: 
+    - Name: OPVKriel
+      Faction: Kriel
+      FixedMaxSpeed: 36
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - -4197.10547
+        - -2001.28491
+        - 4237.44971
+        Radius: 2080
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDroneLaser
+        Amount: 3
+        Extra: 0
+      Properties: 
+    - Name: OPVLegacy
+      Faction: Void
+      FixedMaxSpeed: 37
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - -2417.9502
+        - -1657.78455
+        - 1505.3219
+        Radius: 1130
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 3
+        Extra: 0
+      Properties: 
+    - Name: OPVLegacy
+      Faction: Void
+      FixedMaxSpeed: 22
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - 350.678864
+        - -2228.80249
+        - -3379.04028
+        Radius: 2211
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 4
+        Extra: 0
+      Properties: 
+    - Name: OPVLegacy
+      Faction: Void
+      FixedMaxSpeed: 27
+      Mission: SpacePatrol
+      RangePatrol:
+        Position3D:
+        - 2132.20508
+        - -3619.25415
+        - -2511.42188
+        Radius: 1301
+        DistToGround: 0
+        RangePatrolAvoidArea: 
+        IsAllowToReturnToBaseWhenOver: false
+      Immobile: 
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 3
+        Extra: 0
+      Properties: 
+    - Name: BAO_BeaconDistress2
+      Faction: Polaris
+      FixedMaxSpeed: 20
+      Mission: Immobile
+      RangePatrol: 
+      Immobile:
+        Position3D:
+        - -9778.10156
+        - -2610.38721
+        - 5226.54541
+      Freighter: 
+      Stock:
+      - Name: SpaceDroneLaser
+        Amount: 17
+        Extra: 0
+      Properties:
+      - Key: RegenAfter
+        Value: 120
+    - Name: BAO_BeaconDistress
+      Faction: Trader
+      FixedMaxSpeed: 20
+      Mission: Immobile
+      RangePatrol: 
+      Immobile:
+        Position3D:
+        - 8873.05957
+        - 2541.78149
+        - 8512.9668
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 18
+        Extra: 0
+      Properties:
+      - Key: RegenAfter
+        Value: 120
+    - Name: BAO_PiratesSignalRelay01
+      Faction: Pirates
+      FixedMaxSpeed: 20
+      Mission: Immobile
+      RangePatrol: 
+      Immobile:
+        Position3D:
+        - -8831.71387
+        - -117.30471
+        - -4491.28369
+      Freighter: 
+      Stock:
+      - Name: SpaceDroneLaser
+        Amount: 19
+        Extra: 0
+      Properties:
+      - Key: RegenAfter
+        Value: 120
+    - Name: BAO_BeaconMilitary
+      Faction: Zirax
+      FixedMaxSpeed: 20
+      Mission: Immobile
+      RangePatrol: 
+      Immobile:
+        Position3D:
+        - -5549.81055
+        - -2535.28516
+        - 6541.43213
+      Freighter: 
+      Stock:
+      - Name: SpaceDroneLaser
+        Amount: 23
+        Extra: 0
+      Properties:
+      - Key: RegenAfter
+        Value: 120
+    - Name: BAO_KrielBeacon
+      Faction: Kriel
+      FixedMaxSpeed: 20
+      Mission: Immobile
+      RangePatrol: 
+      Immobile:
+        Position3D:
+        - -7805.03125
+        - -296.239532
+        - -19934.5293
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 19
+        Extra: 0
+      Properties:
+      - Key: RegenAfter
+        Value: 120
+    - Name: BAO_BeaconQuarantine
+      Faction: Alien
+      FixedMaxSpeed: 20
+      Mission: Immobile
+      RangePatrol: 
+      Immobile:
+        Position3D:
+        - 19276.7344
+        - -1042.052
+        - -4099.71924
+      Freighter: 
+      Stock:
+      - Name: SpaceDronePlasma
+        Amount: 16
+        Extra: 0
+      Properties:
+      - Key: RegenAfter
+        Value: 120
+    DronePlanetBase: 
+TroopsTransportContent: 
+DroneSpawning: 
+CreatureSpawning: 
+SpawnRateZones: 
+SpawnZones: 

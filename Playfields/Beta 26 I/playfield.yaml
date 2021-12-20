@@ -1,0 +1,3747 @@
+PlayfieldType: Planet
+WorldName: 
+RealRadius: 0
+ScaledRadius: 0
+Gravity: -6.39933252
+PlanetAxis: -21.6164799
+PlanetRotAxis: 
+AtmosphereDensity: 0.711750448
+AtmosphereO2: 0.0744212866
+AtmosphereBreathable: false
+Temperature: 0
+TemperatureDay: -2147483648
+TemperatureNight: 22
+Radiation: 3.95137954
+SeaLevel: 57
+TerrainLevel: 152
+BaseLevel: 0
+DayLength: 0
+PlanetType: Snow
+PlanetSize: 4
+Moons: 0
+Emissive: false
+Water: WaterGreen
+PvP: false
+Difficulty: 3
+LegacyBiome: 
+ChunkProviderId: 0
+SunFlare: EnvironmentalEffects/SunFlareWhite
+Nebula: 
+Stars: 
+LocalEffect: 
+SpecialEffectsLocal:
+- Name: FireFliesOrange
+  MaxHeight: 15
+  Time: Night
+  Biome:
+  - Taiga
+  - TaigaEdge
+  - TaigaSnow
+  Struct: false
+  FollowPlayerY: true
+SpecialEffectsGlobal:
+- Name: Clear
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 0
+  Delay: 3
+  PlyDist: 100
+  Struct: True
+  Lifetime: 1200
+  Type: Weather
+- Name: CloudsLight
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 0
+  Delay: 2
+  PlyDist: 100
+  Struct: True
+  Lifetime: 1200
+  Type: Weather
+- Name: Clouds
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 5
+  Delay: 3
+  PlyDist: 100
+  Struct: True
+  Lifetime: 1200
+  Type: Weather
+- Name: Fog
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 12
+  Delay: 5
+  PlyDist: 100
+  Struct: True
+  Lifetime: 1000
+  Type: Weather
+- Name: SnowLight
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 24
+  Delay: 5
+  PlyDist: 100
+  Struct: True
+  Lifetime: 600
+  Type: Weather
+- Name: SnowMedium
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 24
+  Delay: 12
+  PlyDist: 100
+  Struct: True
+  Lifetime: 600
+  Type: Weather
+- Name: SnowHeavy
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 24
+  Delay: 12
+  PlyDist: 100
+  Struct: True
+  Lifetime: 600
+  Type: Weather
+- Name: ColdWave
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 48
+  Delay: 24
+  PlyDist: 100
+  Struct: True
+  Lifetime: 1000
+  Type: Weather
+- Name: Hail
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 48
+  Delay: 24
+  PlyDist: 100
+  Struct: True
+  Lifetime: 600
+  Type: Weather
+AtmosphereEnabled: true
+AtmosphereColor: 0.95, 1.18, 1.6
+AtmosphereParams:
+- 0.400000006
+- 1.70000005
+OrbitUsesLightColor: false
+SkyColor: 1, 0.8, 1
+SkyHorizonColor: 1, 0.3, 0
+LightZenithColor: 0.85, 0.95, 1.15
+LightHorizonColor: 0.8, 0.45, 0.10
+NightLightColor: 0.0, 0.0, 2.0
+CloudsZenithColor: 0.70, 0.75, 1.0
+CloudsHorizonColor: 1, 0.3, 0
+CloudsNightZenithColor: 0.022, 0.020, 0.025
+CloudsNightHorizonColor: 0.022, 0.020, 0.025
+CloudsOpacity: 0.899999976
+FogCloudIntensity: 0.800000012
+DayLightIntensity: 1
+NightLightIntensity: 0.0500000007
+DayShadowStrength: 0.949999988
+NightShadowStrength: 0.5
+AtmosphereFog: 0.566229224
+CloudsDensity: 0.300000012
+CloudsSharpness: 0.200000003
+CloudsBrightness: 0.600000024
+WindSpeed: 3
+FogColor: 0.85, 0.85, 1.03
+FogIntensity: 0
+FogStartDistance: 0
+GroundFogIntensity: 0.075430952
+GroundFogHeight: -16.8057156
+Description: 
+Seed: 115527
+TemperatureMinMax:
+- -43
+- 12
+HumidityMinMax:
+- 0.0740154833
+- 0.302077651
+LandWaterRatio: 0.348932385
+TemperatureHeightRange:
+- 0
+- 107
+TemperatureGradientRange:
+- 0.519999981
+- 0
+TemperatureNoiseFac: 0.439999998
+HumidityHeightFac:
+- 0
+- 350
+HumidityNoiseFac: 0.860000014
+TerrainHeightMapMax: 490
+GroundShapes:
+- Mountain_10b_GS, 1
+TemperatureMasks: 
+HumidityMasks: 
+BiomeStampTries: 200
+PlayfieldLevel: 8
+PdaReferral: 
+BaseAttackCount: 1
+PfServerWeight: 0
+PlanetClass: Snow
+UseFixed: false
+UseRandom: true
+Build: 2953
+Instance: 
+IndestructibleTerrain: false
+AllowSV: true
+AllowCV: true
+AllowHV: true
+AllowBA: true
+AllowBlueprintSV: true
+AllowBlueprintCV: true
+AllowBlueprintHV: true
+AllowBlueprintBA: true
+AllowMaxCPUTierSV: 0
+AllowMaxCPUTierCV: 0
+AllowMaxCPUTierHV: 0
+AllowMaxCPUTierBA: 0
+RestrictToOrigin: 255
+Music: snow
+LandClaimZone: Device
+IsOrbitPlayfield: false
+RandomPOIs: 
+RandomDroneBase: 
+RandomResources:
+- Name: IronResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 2
+  - 4
+  SizeMinMax:
+  - 29
+  - 32
+  DepthMinMax:
+  - 6
+  - 15
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.200000003
+  MaxDroneCount: 2
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome: 
+  BiomesExcluded: 
+- Name: CopperResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 2
+  - 3
+  SizeMinMax:
+  - 29
+  - 32
+  DepthMinMax:
+  - 6
+  - 15
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.300000012
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome: 
+  BiomesExcluded: 
+- Name: SiliconResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 2
+  - 3
+  SizeMinMax:
+  - 29
+  - 32
+  DepthMinMax:
+  - 6
+  - 15
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.300000012
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome: 
+  BiomesExcluded: 
+- Name: CobaltResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 2
+  - 3
+  SizeMinMax:
+  - 29
+  - 32
+  DepthMinMax:
+  - 6
+  - 15
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.200000003
+  MaxDroneCount: 3
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome: 
+  BiomesExcluded: 
+- Name: NeodymiumResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 4
+  - 5
+  SizeMinMax:
+  - 29
+  - 32
+  DepthMinMax:
+  - 5
+  - 15
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.899999976
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome: 
+  BiomesExcluded: 
+- Name: TitanResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 4
+  - 5
+  SizeMinMax:
+  - 29
+  - 32
+  DepthMinMax:
+  - 5
+  - 20
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.899999976
+  MaxDroneCount: 3
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome: 
+  BiomesExcluded: 
+- Name: PromethiumResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 1
+  - 2
+  SizeMinMax:
+  - 29
+  - 32
+  DepthMinMax:
+  - 0
+  - 1
+  DistTypeCylinder:
+    MaxRadius: 13
+    YVariance: 10
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.400000006
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome: 
+  BiomesExcluded: 
+FixedResources: 
+AsteroidResources:
+- Name: IronResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: CopperResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: SiliconResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: CobaltResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: NeodymiumResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: TitanResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: PromethiumResource
+  Threshold: 0.6200000003
+  Amount: 0.6200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+Terrain: 
+MainBiome: 
+SubBiomes: 
+BiomeTextureReplacements: 
+Biome:
+- Altitude: 
+  Slope: 
+  BiomeClusterData:
+  - Name: DeepWater
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 5
+    LevelMod: 
+    AmbientSound: Water
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - CoralStone01-05
+      - 0.003
+      - Free
+    - - CoralStone03-06
+      - 0.003
+      - Free
+    - - FingerSponge03-01
+      - 0.001
+      - Free
+    - - RealRock1Water
+      - 0.001
+      - Free
+    - - RealRock5Water
+      - 0.001
+      - Free
+    - - RealRock8Water
+      - 0.001
+      - Free
+    - - RealRock9Water
+      - 0.001
+      - Free
+    - - RockGrey01Large
+      - 0.001
+      - Free
+    - - RockGrey02Large
+      - 0.001
+      - Free
+    - - SkeletonWhaleFull
+      - 0.0017
+      - Free
+    - - CoralBig01
+      - 0.02
+      - Plant
+    - - CoralBig08
+      - 0.03
+      - Plant
+    - - PromethiumStone
+      - 0.001
+      - Free
+    - - RockResourceCopper
+      - 0.006
+      - Free
+    - - RockResourceSilicon
+      - 0.0008
+      - Free
+    - - RockResourceGold
+      - 0.0003
+      - Free
+    Grass:
+    - Name: GrassGreen01
+      Density: 0.100000001
+      YScale: 0
+      Preset: GrassDense
+    - Name: Seaweed04
+      Density: 0.00600000005
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 0
+    - 11
+    - 0.5
+    - 10
+    - 10
+    - 0.5
+    - 0.200000003
+    Color:
+    - 0
+    - 0
+    - 1
+    SelectionCriteria:
+    - Height < SeaLevel - 20
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 0
+      - 2
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Water
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 5
+    LevelMod: 
+    AmbientSound: Water
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - FingerSponge03-01
+      - 0.01
+      - Free
+    - - OnionFlower
+      - 0.01
+      - BigPlant
+    - - RealRock5Water
+      - 0.001
+      - Free
+    - - RockGrey01Large
+      - 0.001
+      - Free
+    - - RockGrey02Large
+      - 0.001
+      - Free
+    - - SkeletonWhaleFull
+      - 0.0003
+      - Free
+    - - CoralBig08
+      - 0.004
+      - Plant
+    - - Hydrilla2
+      - 0.01
+      - Plant
+    - - SeaWeed02-04
+      - 0.04
+      - Plant
+    - - RockResourceCopper
+      - 0.0007
+      - Free
+    - - RockResourceSilicon
+      - 0.0004
+      - Free
+    Grass:
+    - Name: Seaweed02
+      Density: 0.200000003
+      YScale: 0
+      Preset: GrassDense
+    - Name: Seaweed04
+      Density: 0.00999999978
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 0
+    - 10
+    - 0.25
+    Color:
+    - 0.200000003
+    - 0.200000003
+    - 1
+    SelectionCriteria:
+    - Height < SeaLevel - 10
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 0
+      - 4
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: ShallowWater
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 5
+    LevelMod: 
+    AmbientSound: SmallLake
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.002
+      - Free
+    - - RockGrey02Large
+      - 0.002
+      - Free
+    - - FingerSponge03-01
+      - 0.01
+      - BigPlant
+    - - CoralBig08
+      - 0.001
+      - Plant
+    - - Snakeweed
+      - 0.003
+      - Free
+    - - RockResourceSilicon
+      - 0.0004
+      - Free
+    - - RockResourceCopper
+      - 0.0002
+      - Free
+    Grass:
+    - Name: GrassGreen01a
+      Density: 0.400000006
+      YScale: 0
+      Preset: GrassDense
+    - Name: Plant01
+      Density: 0.0299999993
+      YScale: 0
+      Preset: GrassDense
+    - Name: Plant01Brown
+      Density: 0.00499999989
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 0
+    - 10
+    - 0.200000003
+    Color:
+    - 0.400000006
+    - 0.400000006
+    - 1
+    SelectionCriteria:
+    - Height < SeaLevel - 3
+    - Temperature > -16
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 0
+      - 3
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Pole
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticIntermediatePlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 7
+    - 6
+    - 0.5
+    Color:
+    - 1
+    - 1
+    - 1
+    SelectionCriteria:
+    - +Lat > 0.975
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: PoleFog
+    UndergroundLayers: 
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Mountains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: Mountains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.0001
+      - Free
+    - - RealRock3Snow
+      - 0.0001
+      - Free
+    - - RealRock6Snow
+      - 0.0001
+      - Free
+    - - CrystalsPyramidBlue
+      - 0.0003
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 3
+    - 10
+    - 0.600000024
+    - 2
+    - 10
+    - 0.200000003
+    - 0.200000003
+    Color:
+    - 0.600000024
+    - 0.600000024
+    - 0.600000024
+    SelectionCriteria:
+    - Height > 200
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 3
+      - 3
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: LowMountains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticHighPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.0001
+      - Free
+    - - RealRock3Snow
+      - 0.0001
+      - Free
+    - - RealRock6Snow
+      - 0.0001
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 3
+    - 4
+    - 0.5
+    - 2
+    - 10
+    - 0.5
+    - 0.200000003
+    Color:
+    - 0.400000006
+    - 0.400000006
+    - 0.400000006
+    SelectionCriteria:
+    - false
+    StampTries: 60
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOwn
+    Stamps:
+    - Mountain_9, 0.15
+    - Mountain_10b, 0.15
+    - Mountain_11, 0.25
+    - Mountain_13, 0.35
+    - Mountain_14, 0.35
+    - Mountain_14a, 0.9
+    - Mountain_15a, 0.9
+    - MountainIce_01, 0.6
+    - MountainIce_01b, 0.3
+    - MountainIce_02, 0.7
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 3
+      - 4
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Shore
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 4
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.002
+      - Free
+    - - RockGrey02Large
+      - 0.002
+      - Free
+    - - RealRock8Water
+      - 0.002
+      - Tree
+    - - RealRock5Water
+      - 0.002
+      - Tree
+    - - RockResourceSilicon
+      - 0.002
+      - Free
+    - - RockResourceCopper
+      - 0.001
+      - Free
+    - - RockResourceGold
+      - 0.0001
+      - Free
+    Grass:
+    - Name: GrassGreen01a
+      Density: 0.400000006
+      YScale: 0
+      Preset: GrassDense
+    - Name: Plant01
+      Density: 0.0299999993
+      YScale: 0
+      Preset: GrassDense
+    - Name: Plant01Brown
+      Density: 0.0199999996
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 11
+    - 10
+    - 0.100000001
+    Color:
+    - 0.600000024
+    - 0.600000024
+    - 0
+    SelectionCriteria:
+    - Height < SeaLevel + 3
+    - Temperature > -13
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 0
+      - 3
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: IceLens
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticIntermediatePlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.0001
+      - Free
+    - - RealRock3Snow
+      - 0.0001
+      - Free
+    - - RealRock6Snow
+      - 0.0001
+      - Free
+    - - RealRock8Snow
+      - 0.0001
+      - Free
+    - - RealRock10Snow
+      - 0.0001
+      - Free
+    - - PromethiumStone
+      - 0.0001
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 4
+    - 6
+    - 0.5
+    - 8
+    - 10
+    - 0.600000024
+    - 0.200000003
+    Color:
+    - 1
+    - 0.200000003
+    - 0.5
+    SelectionCriteria:
+    - false
+    StampTries: 80
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOff
+    Stamps:
+    - Cliff_1, 0.4
+    - Cliff_3, 0.4
+    - Volcanic_01a, 0.7
+    - Volcanic_01b, 0.8
+    - Volcanic_01c, 0.9
+    - RiftLava_2b, 0.5
+    - RiftLava_2, 0.5
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 1
+      - 30
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: IceShelf
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticIntermediatePlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.00002
+      - Free
+    - - RealRock3Snow
+      - 0.00002
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 7
+    - 6
+    - 0.649999976
+    - 8
+    - 8
+    - 0.5
+    - 0.00999999978
+    Color:
+    - 1
+    - 0.800000012
+    - 0.800000012
+    SelectionCriteria:
+    - Height < 150
+    - Temperature < -17
+    - Humidity > 0.3
+    StampTries: 0
+    StampProb: 0.349999994
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps:
+    - IceBergs_01, 0.9
+    - IceSlabs_01, 0.3
+    - RiftLava_2, 0.2
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 7
+      - 4
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Rocks
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticIntermediatePlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.001
+      - Free
+    - - RealRock3Snow
+      - 0.001
+      - Free
+    - - RealRock6Snow
+      - 0.001
+      - Free
+    - - RealRock8Snow
+      - 0.001
+      - Free
+    - - RealRock10Snow
+      - 0.001
+      - Free
+    - - PromethiumStone
+      - 0.00005
+      - Free
+    - - RockResourceCopper
+      - 0.0001
+      - Free
+    - - RockResourceSilicon
+      - 0.0005
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 6
+    - 10
+    - 0.5
+    Color:
+    - 1
+    - 0.899999976
+    - 1
+    SelectionCriteria:
+    - Humidity < 0.35
+    - Humidity > 0.18
+    - Height > 60
+    - Height < 100
+    - Temperature < -25
+    - Temperature > -30
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 7
+      - 1
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: GlacierSnow
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.00005
+      - Free
+    - - RealRock3Snow
+      - 0.00005
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 7
+    - 6
+    - 0.649999976
+    - 8
+    - 8
+    - 0.5
+    - 0.00999999978
+    Color:
+    - 1
+    - 1
+    - 1
+    SelectionCriteria:
+    - Height < 100
+    - Temperature < -16
+    StampTries: 0
+    StampProb: 0.119999997
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapOther
+    Stamps:
+    - MountainIce_01, 0.65
+    - MountainIce_01b, 0.15
+    - RiftLava_2, 0.1
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 7
+      - 4
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Hellmouth
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 100
+    LevelMod: 
+    AmbientSound: LavaFog
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.0005
+      - Free
+    - - RealRock3Snow
+      - 0.0005
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 9
+    - 11
+    - 0.5
+    Color:
+    - 1
+    - 0.100000001
+    - 0.100000001
+    SelectionCriteria:
+    - Humidity < 0.14
+    - Humidity > 0.13
+    - Temperature < -35
+    - Temperature > -38
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 9
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: GasFieldEdge
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 30
+    LevelMod: 
+    AmbientSound: LavaFog
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.0005
+      - Free
+    - - RealRock3Snow
+      - 0.0005
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 10
+    - 10
+    - 0.5
+    Color:
+    - 1
+    - 0.699999988
+    - 0.100000001
+    SelectionCriteria:
+    - Humidity < 0.15
+    - Humidity > 0.12
+    - Temperature < -35
+    - Temperature > -39
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 11
+      - 3
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Taiga
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticForest
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - BlueSpruceWinter
+      - 0.38
+      - Tree
+    - - AlaskaCedarBare
+      - 0.07
+      - Tree
+    - - BushWinter01
+      - 0.1
+      - BigPlant
+    - - BushWinter02
+      - 0.1
+      - BigPlant
+    - - BushWinter03
+      - 0.05
+      - BigPlant
+    - - RealRock1Snow
+      - 0.001
+      - Free
+    - - RealRock3
+      - 0.001
+      - Free
+    - - RealRock6Snow
+      - 0.001
+      - Free
+    - - RealRock8
+      - 0.001
+      - Free
+    - - RealRock10
+      - 0.001
+      - Free
+    - - CornDogBushSnow
+      - 0.007
+      - Free
+    - - PixieStalksSnow
+      - 0.007
+      - Free
+    - - BrainFungusSnow
+      - 0.002
+      - Free
+    - - Mushroom2
+      - 0.005
+      - Free
+    - - Snakeweed
+      - 0.003
+    - - RockResourceIron
+      - 0.001
+      - Free
+    - - RockResourceSilicon
+      - 0.003
+      - Free
+    - - RockResourceCopper
+      - 0.0008
+      - Free
+    Grass:
+    - Name: GrassGreen03bSnow
+      Density: 0.850000024
+      YScale: 0
+      Preset: GrassDense
+    - Name: GrassGreen06
+      Density: 0.100000001
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 1
+    - 5
+    - 0.5
+    - 5
+    - 5
+    - 0.5
+    - -0.600000024
+    Color:
+    - 0
+    - 0.400000006
+    - 0
+    SelectionCriteria:
+    - Humidity > 0.2
+    - Humidity < 0.33
+    - Temperature > 1
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 11
+      - 3
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: TaigaEdge
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticForest
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - BlueSpruceWinter
+      - 0.09
+      - Tree
+    - - AlaskaCedarBare
+      - 0.01
+      - Tree
+    - - BushWinter01
+      - 0.05
+      - BigPlant
+    - - BushWinter02
+      - 0.05
+      - BigPlant
+    - - BushWinter03
+      - 0.02
+      - BigPlant
+    - - RealRock1
+      - 0.0005
+      - Free
+    - - RealRock2Snow
+      - 0.0005
+      - Free
+    - - RealRock3
+      - 0.0005
+      - Free
+    - - RealRock6Snow
+      - 0.0005
+      - Free
+    - - RealRock8Snow
+      - 0.0005
+      - Free
+    - - RealRock10Snow
+      - 0.0005
+      - Free
+    - - PixieStalksSnow
+      - 0.002
+      - Free
+    Grass:
+    - Name: GrassGreen06Snow
+      Density: 0.400000006
+      YScale: 0.899999976
+      Preset: GrassDense
+    - Name: GrassGreen06Snow
+      Density: 0.100000001
+      YScale: 1.10000002
+      Preset: GrassDense
+    - Name: GrassGreen03bSnow
+      Density: 0.200000003
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 5
+    - 1
+    - 0.899999976
+    - 10
+    - 10
+    - 0.5
+    - 0.200000003
+    Color:
+    - 0
+    - 0.550000012
+    - 0
+    SelectionCriteria:
+    - Humidity > 0.2
+    - Humidity < 0.6
+    - Temperature > -0.5
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 5
+      - 1
+    - - 11
+      - 2
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Dunes
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - BushWinter01
+      - 0.0005
+      - BigPlant
+    - - BushWinter02
+      - 0.0005
+      - BigPlant
+    - - BushWinter03
+      - 0.0015
+      - BigPlant
+    - - RealRock1Snow
+      - 0.0001
+      - Free
+    - - RealRock3Snow
+      - 0.0001
+      - Free
+    - - RealRock6Snow
+      - 0.0001
+      - Free
+    - - RealRock8Snow
+      - 0.0001
+      - Free
+    - - RealRock10Snow
+      - 0.0001
+      - Free
+    - - PixieStalksSnow
+      - 0.001
+      - Free
+    Grass:
+    - Name: GrassGreen06Snow
+      Density: 0.0500000007
+      YScale: 0.699999988
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 4
+    - 8
+    - 0.600000024
+    Color:
+    - 0.5
+    - 0.800000012
+    - 0.899999976
+    SelectionCriteria:
+    - Humidity > 0.1
+    - Humidity < 0.7
+    - Temperature > -3
+    StampTries: 0
+    StampProb: 0.400000006
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapOff
+    Stamps:
+    - IceDunes_01, 1
+    - IceSprings_01, 0.6
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 11
+      - 1
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Plains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - BushWinter01
+      - 0.01
+      - BigPlant
+    - - BushWinter02
+      - 0.02
+      - BigPlant
+    - - BushWinter03
+      - 0.03
+      - BigPlant
+    - - RealRock1Snow
+      - 0.0001
+      - Free
+    - - RealRock3Snow
+      - 0.0001
+      - Free
+    - - RealRock6Snow
+      - 0.0001
+      - Free
+    - - RealRock8Snow
+      - 0.0001
+      - Free
+    - - RealRock10Snow
+      - 0.0001
+      - Free
+    - - PixieStalksSnow
+      - 0.004
+      - Free
+    Grass:
+    - Name: GrassGreen06Snow
+      Density: 0.0399999991
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 4
+    - 6
+    - 0.5
+    - 10
+    - 8
+    - 0.100000001
+    - 0.200000003
+    Color:
+    - 0.800000012
+    - 1
+    - 0.5
+    SelectionCriteria:
+    - Humidity > 0.1
+    - Temperature > -5
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 11
+      - 1
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: TaigaSnow
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticForest
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - BlueSpruceWinter
+      - 0.25
+      - Tree
+    - - AlaskaCedarBare
+      - 0.15
+      - Tree
+    - - BushWinter01
+      - 0.1
+      - BigPlant
+    - - BushWinter02
+      - 0.1
+      - BigPlant
+    - - BushWinter03
+      - 0.05
+      - BigPlant
+    - - RealRock1Snow
+      - 0.001
+      - Free
+    - - RealRock3Snow
+      - 0.001
+      - Free
+    - - RealRock6Snow
+      - 0.001
+      - Free
+    - - RealRock8Snow
+      - 0.001
+      - Free
+    - - RealRock10Snow
+      - 0.001
+      - Free
+    - - CornDogBushSnow
+      - 0.007
+      - Free
+    - - PixieStalksSnow
+      - 0.007
+      - Free
+    - - BrainFungusSnow
+      - 0.005
+      - Free
+    - - Snakeweed
+      - 0.003
+      - Free
+    Grass:
+    - Name: GrassGreen06Snow
+      Density: 0.200000003
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 5
+    - 1
+    - 0.800000012
+    - 10
+    - 8
+    - 0.5
+    - 0.200000003
+    Color:
+    - 0
+    - 0.699999988
+    - 0
+    SelectionCriteria:
+    - Height < 80
+    - Humidity > 0.20
+    - Humidity < 0.70
+    - Temperature > -9
+    StampTries: 0
+    StampProb: 0.300000012
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps:
+    - Pingo_01, 0.55
+    - IceSlabs_01, 0.15
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 5
+      - 5
+    - - 11
+      - 2
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: TaigaSnowEdge
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticForest
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - BlueSpruceWinter
+      - 0.08
+      - Tree
+    - - AlaskaCedarBare
+      - 0.05
+      - Tree
+    - - BushWinter01
+      - 0.05
+      - BigPlant
+    - - BushWinter02
+      - 0.05
+      - BigPlant
+    - - BushWinter03
+      - 0.02
+      - BigPlant
+    - - RealRock1Snow
+      - 0.0005
+      - Free
+    - - RealRock2Snow
+      - 0.0005
+      - Free
+    - - RealRock3Snow
+      - 0.0005
+      - Free
+    - - RealRock6Snow
+      - 0.0002
+      - Free
+    - - RealRock8Snow
+      - 0.0002
+      - Free
+    - - RealRock10Snow
+      - 0.0002
+      - Free
+    - - PixieStalksSnow
+      - 0.002
+      - Free
+    - - Snakeweed
+      - 0.003
+      - Free
+    Grass:
+    - Name: GrassGreen06Snow
+      Density: 0.100000001
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 4
+    - 6
+    - 0.200000003
+    - 8
+    - 8
+    - 0.5
+    - 0.200000003
+    Color:
+    - 0.699999988
+    - 0.899999976
+    - 0.699999988
+    SelectionCriteria:
+    - Height < 250
+    - Humidity > 0.1
+    - Temperature > -10
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 5
+      - 3
+    - - 11
+      - 2
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Tundra
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticForest
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.0001
+      - Free
+    - - RealRock3Snow
+      - 0.0001
+      - Free
+    - - RealRock6Snow
+      - 0.00005
+      - Free
+    - - RealRock8Snow
+      - 0.00005
+      - Free
+    - - RealRock10Snow
+      - 0.00005
+      - Free
+    Grass:
+    - Name: GrassGreen06Snow
+      Density: 0.0500000007
+      YScale: 0
+      Preset: GrassDense
+    SpecialBiome: 
+    Texture:
+    - 6
+    - 3
+    - 0.5
+    Color:
+    - 0.899999976
+    - 1
+    - 0.899999976
+    SelectionCriteria:
+    - Temperature > -20
+    StampTries: 0
+    StampProb: 0.449999988
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapOther
+    Stamps:
+    - Volcanic_03_LO, 1
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers: 
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Glacier
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Snow
+      - 0.00005
+      - Free
+    - - RealRock3Snow
+      - 0.00005
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 7
+    - 6
+    - 0.649999976
+    - 8
+    - 8
+    - 0.5
+    - 0.00999999978
+    Color:
+    - 0.899999976
+    - 0.899999976
+    - 0.899999976
+    SelectionCriteria:
+    - true
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 10
+      - -1
+    - - 9
+      - 1
+    UndergroundLayersDefault: true
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+POIs:
+  Random:
+  - GroupName: DroneBaseT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: DroneBaseSetup
+    PlanetVesselBaseSetup: 
+    Faction: Zirax
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: true
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: false
+    Drones:
+      Min: 3
+      Max: 5
+    DronesMinMax:
+    - 3
+    - 5
+    ReserveCount: 5
+    Properties:
+    - Key: Music
+      Value: moonstone
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: PiratesAmbush
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Pirates
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 0
+      Max: 3
+    CountMinMax:
+    - 0
+    - 3
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: PiratesAuxSnow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Pirates
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: TraderMain
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Trader
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 0
+      Max: 1
+    CountMinMax:
+    - 0
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: AlteredPhase
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: TraderSettlementSnow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Trader
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 3
+      Max: 5
+    CountMinMax:
+    - 3
+    - 5
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: AlteredPhase
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: TraderDefenseHQ
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Trader
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 3
+    CountMinMax:
+    - 1
+    - 3
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: AlteredPhase
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - TraderMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: TraderDefenseB
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Trader
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: AlteredPhase
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - TraderSettlementSnow
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: CivilSettlementSnow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: false
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 4
+    CountMinMax:
+    - 2
+    - 4
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: KrielMain
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Kriel
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: AlteredPhase
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: KrielDefenseT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Kriel
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 4
+    CountMinMax:
+    - 1
+    - 4
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: AlteredPhase
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: TS_Planet
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: SunnySkies
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - DroneBaseT1
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 2000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: PolarisSettlementSnow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 3
+      Max: 4
+    CountMinMax:
+    - 3
+    - 4
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - TS_Planet
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: PolarisDefenceSnow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 3
+      Max: 4
+    CountMinMax:
+    - 3
+    - 4
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - TS_Planet
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 300
+    - 400
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosMainSnow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 3
+      Max: 4
+    DronesMinMax:
+    - 3
+    - 4
+    ReserveCount: 4
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - TS_Planet
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 2000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosAuxT1Snow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 0.800000012
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 3
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RadosMainSnow
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosDefenseT1Snow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 4
+      Max: 5
+    CountMinMax:
+    - 4
+    - 5
+    DroneProb: 0.800000012
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 3
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RadosMainSnow
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 200
+    - 350
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosAuxT1Snow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 1
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 3
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - DroneBaseT1
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 350
+    - 600
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosMissileBaseSnow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 3
+      Max: 5
+    DronesMinMax:
+    - 3
+    - 5
+    ReserveCount: 3
+    Properties:
+    - Key: Music
+      Value: lava
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - TS_Planet
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 2000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosMiscSnow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 3
+    Properties:
+    - Key: Music
+      Value: lava
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - TS_Planet
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 2000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: Ruins
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 0.5
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 3
+    DronesMinMax:
+    - 1
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RadosMissileBaseSnow
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 150
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: PolarisSettlementSnow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0.800000012
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 3
+    DronesMinMax:
+    - 1
+    - 3
+    ReserveCount: 3
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosAuxT2Snow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 0.800000012
+    TroopTransport: true
+    Drones:
+      Min: 4
+      Max: 6
+    DronesMinMax:
+    - 4
+    - 6
+    ReserveCount: 3
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - TS_Planet
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 1000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosDefenseT2Snow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 0
+      Max: 2
+    CountMinMax:
+    - 0
+    - 2
+    DroneProb: 0.800000012
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 3
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - TS_Planet
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 1000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosDefenseT3Snow
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 0
+      Max: 2
+    CountMinMax:
+    - 0
+    - 2
+    DroneProb: 0.800000012
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 1
+    DronesMinMax:
+    - 1
+    - 1
+    ReserveCount: 3
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - TS_Planet
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 1000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: CrashedShip
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 0.800000012
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 4
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: ResourceAll
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: AbandonedPOI
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Alien
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 2
+      Max: 3
+    DronesMinMax:
+    - 2
+    - 3
+    ReserveCount: 3
+    Properties:
+    - Key: Music
+      Value: lava
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: Wreckage
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 3
+    CountMinMax:
+    - 1
+    - 3
+    DroneProb: 0.5
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 3
+    DronesMinMax:
+    - 1
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: Ruins
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 0.5
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 3
+    DronesMinMax:
+    - 1
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  Fixed: 
+  FixedPlayerStart:
+  - Mode: Debug
+    SubMode: 
+    Spawn: Position
+    Pos:
+    - 200
+    - 80
+    - 0
+    RotY: 125
+    Structure: 
+    Items: 
+    Armor: 
+    Status: 
+    PlayerArmor: 
+  - Mode: Survival
+    SubMode: 
+    Spawn: EscapePod
+    Pos: 
+    RotY: 0
+    Structure: 
+    Items: 
+    Armor: ArmorMedium
+    Status: 
+    PlayerArmor: 
+DroneBaseSetup:
+  Random:
+  - GroupName: DroneBaseSetup
+    DroneBaseSetup: 
+    Faction: 
+    DronesMinMax: 
+    ReserveCount: 0
+    DroneProb: 0
+    Difficulty: 6
+    PresetStyle: 3
+    BaseAttack: 
+    Stock:
+    - Name: DroneSmallFast01Rocket
+      Amount: 20000
+      Extra: 0
+    - Name: DroneSmallFast01Plasma
+      Amount: 20000
+      Extra: 0
+    - Name: EnemyDroneV2Minigun
+      Amount: 100000
+      Extra: 0
+    - Name: DroneLargeAttackBase
+      Amount: Infinite
+      Extra: 1
+    - Name: EnemyDroneV2Plasma
+      Amount: Infinite
+      Extra: 1
+    - Name: DroneBomberAttackBase
+      Amount: Infinite
+      Extra: 1
+    - Name: DroneTroopsTransport01
+      Amount: Infinite
+      Extra: 2
+    - Name: ZiraxMinigun
+      Amount: 50000
+      Extra: 3
+    - Name: RipperDog
+      Amount: 40000
+      Extra: 3
+    PlanetVesselBase:
+      Name: PlanetVesselBaseSetup
+      Faction: 
+      Position3D:
+      - 0
+      - 102
+      - 0
+      BaseType: PlanetVesselBase
+      KeyId: 0
+      PlanetVessel:
+      - Name: Patrol-XS-Medium
+        Faction: 
+        Mission: PlanetPatrol
+        FixedMaxSpeed: 5
+        RangePatrolCenter: 
+        RangePatrolRadius: 0
+        RangePatrolAltitude: 0
+        RangePatrolAvoidArea: 
+        RespawnDelay: 18
+        InitialDelay: 72
+        UseMainDroneBaseAsBase: false
+        AttackDistToGround: 
+        RangePatrolTask:
+          Position3D:
+          - 1000
+          - 80
+          - 0
+          Radius: 500
+          DistToGround: 80
+          RangePatrolAvoidArea: 
+          IsAllowToReturnToBaseWhenOver: false
+        AttackCVCircleAround:
+          DistToTarget: 200
+        Stock: 
+        Properties: 
+  Fixed: 
+TroopsTransportContent: 
+DroneSpawning:
+  Random:
+  - DronesMinMax:
+    - 5
+    - 10
+    CenterX: -5000
+    Radius: 3000
+  - DronesMinMax:
+    - 5
+    - 10
+    CenterX: -5000
+    Radius: 3000
+  Fixed: 
+CreatureSpawning:
+- Biome: 
+  Biomes:
+  - Shore
+  Entities:
+  - Name: SlimesWhite
+    Amount: 10
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 10
+    - 12
+    Period: Always
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+- Biome: 
+  Biomes:
+  - Taiga
+  - TaigaEdge
+  - TaigaSnow
+  - TaigaSnowEdge
+  Entities:
+  - Name: SlimesWhite
+    Amount: 8
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 10
+    - 12
+    Period: Day
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+  - Name: Oviraptors
+    Amount: 15
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 10
+    - 12
+    Period: Always
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+  - Name: CaveWormWhiteHerd
+    Amount: 6
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 20
+    - 24
+    Period: Always
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+  - Name: GolemsIce
+    Amount: 6
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 20
+    - 24
+    Period: Night
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+  - Name: Spiders01
+    Amount: 10
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 20
+    - 24
+    Period: Night
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+- Biome: 
+  Biomes:
+  - Dunes
+  - Plains
+  - IceShelf
+  - Tundra
+  - GlacierSnow
+  - Rocks
+  Entities:
+  - Name: Oviraptors
+    Amount: 10
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 10
+    - 12
+    Period: Always
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+  - Name: CaveWormWhiteHerd
+    Amount: 6
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 20
+    - 24
+    Period: Day
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+  - Name: GolemsIce
+    Amount: 8
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 20
+    - 24
+    Period: Night
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+- Biome: 
+  Biomes:
+  - LowMountains
+  Entities:
+  - Name: GolemsIce
+    Amount: 4
+    Color: 1.0, 1.0, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 20
+    - 24
+    Period: Always
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+SpawnRateZones:
+- SpawnAt:
+  - TS_Planet
+  AffectedGroups: 
+  Radius: 1000
+  RadiusRandom: 50
+  RateMultiplyerCenter: 0
+  RateMultiplyerEdge: 0.699999988
+  AffectEnemies: true
+  AffectFriendly: false
+  Color: 0.0, 1.0, 0.0, 0.7
+SpawnZones:
+- SpawnAt:
+  - Wreckage
+  - AbandonedPOI
+  - CrashedShip
+  BiomesExcluded:
+  - LowMountains
+  - Mountains
+  Radius: 500
+  RadiusRandom: 50
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: true
+  Color: 1.0, 0.6, 0.2, 0.7
+  Entities:
+  - Names:
+    - CaveWormsWhite
+    Biomes:
+    - Any
+    Amount: 200
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - NeodymiumResource
+  - TitanResource
+  BiomesExcluded:
+  - LowMountains
+  - Mountains
+  Radius: 500
+  RadiusRandom: 50
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.600000024
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.6, 0.2, 0.7
+  Entities:
+  - Names:
+    - GolemsIce
+    Biomes:
+    - Any
+    Amount: 200
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - DroneBaseT1
+  - RadosMainSnow
+  - RadosAuxT2Snow
+  - RadosMissileBaseSnow
+  BiomesExcluded:
+  - LowMountains
+  - Mountains
+  Radius: 800
+  RadiusRandom: 100
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.600000024
+  SpawnOnlyIfPoiIsAlien: true
+  Color: 1.0, 0.6, 0.2, 0.7
+  Entities:
+  - Names:
+    - ZiraxMinigunPatrol
+    - ZiraxRocketPatrol
+    - ZiraxShotgunPatrol
+    - ZiraxMechanoidPatrol
+    - ZiraxRipperDogPatrol
+    Biomes:
+    - Any
+    Amount: 250
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always

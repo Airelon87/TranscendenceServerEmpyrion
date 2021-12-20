@@ -1,0 +1,539 @@
+---
+# Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
+
+
+PvP: False
+
+Description: "[c][e0e020]NOTE:[-][/c]   [c]Galor Controlled Moon.[-][/c] \n\nA world in its youth: The atmosphere has cooled enough for it to rain. Last bits of the planetary neighbourhood crash in the surface, and violent jetstreams produce hail.\nBut in all this chaos, first life develops in the tide pools - filling the water with the colour of early photosynthesis."
+
+PlanetType: MoonNascent
+PlayfieldType: Moon
+Difficulty: 5
+
+# Special Effects 
+SpecialEffectsLocal:
+  - Name: Pollen
+    Biome: [ Sediment, Biofilm, LargeCrater ]
+    Time: Day
+    MaxHeight: 150
+  - Name: FireFliesGreen
+    Biome: [ Biofilm, Water, ShallowWater, Shore, LargeCrater ]
+    Time: Night
+    MaxHeight: 70
+
+SpecialEffectsGlobal:     # Turbulent atmosphere; rapid weather changes
+# Weather
+    # Standard bad weather
+  - Name: RainMedium
+    Type: Weather
+    InitialDelay: 0
+    Delay: 2
+    Lifetime: 600
+  - Name: RainHeavy
+    Type: Weather
+    InitialDelay: 0
+    Delay: 10
+    Lifetime: 300
+  - Name: Storm
+    Type: Weather
+    InitialDelay: 0
+    Delay: 10
+    Lifetime: 300
+  - Name: CloudsDark
+    Type: Weather
+    InitialDelay: 5
+    Delay: 10
+    Lifetime: 1000
+    # Worse weather
+  - Name: SnowHeavy
+    Type: Weather
+    InitialDelay: 15
+    Delay: 25
+    Lifetime: 300
+  - Name: Hail
+    Type: Weather
+    InitialDelay: 15
+    Delay: 25
+    Lifetime: 300
+  - Name: FireRain
+    Type: Weather
+    InitialDelay: 3
+    Delay: 25
+    Lifetime: 300
+  - Name: AcidRainHeavy
+    Type: Weather
+    InitialDelay: 15
+    Delay: 35
+    Lifetime: 300
+    # Rare
+  - Name: CloudsLight
+    Type: Weather
+    InitialDelay: 5
+    Delay: 25
+    Lifetime: 800
+  - Name: Clear
+    Type: Weather
+    InitialDelay: 30
+    Delay: 30
+    Lifetime: 600
+
+
+# Global Effects     # no animals on this planet except imported monsters
+
+
+# Atmosphere & Sky
+AtmosphereEnabled: True
+AtmosphereColor: "0.6, 0.7, 0.8"   
+SkyColor: "0.90, 0.3, 0.3"
+SkyHorizonColor: "1, 0.2, 0"
+AtmosphereParams: [3, 1.5]     
+
+# Light
+DayLightIntensity: 1.4
+NightLightIntensity: 0.7
+
+LightZenithColor: "1, 0.6, 0.6"
+LightHorizonColor: "1, 0.5, 0.2"
+NightLightColor: "0.77, 0.78, 0.9"
+
+DayShadowStrength: 1
+NightShadowStrength: 1
+
+# Sun
+SunFlare: EnvironmentalEffects/SunFlareBlue
+
+# Fog
+# AtmosphereFog: 0.35
+FogColor: "0.5, 0.8, 0.7"
+FogCloudIntensity: 0.8
+# GroundFogIntensity: 0.05
+# GroundFogHeight: 60
+
+# Clouds & Wind
+CloudsDensity: 0.1
+CloudsSharpness: 0.05
+CloudsOpacity: 0.7
+
+CloudsBrightness: 0.7
+CloudsZenithColor: "1.0, 0.5, 0.6"
+CloudsHorizonColor: "1, 0.3, 0.1"
+
+WindSpeed: 15
+
+
+# ==============================================================
+
+### Resource Deposits
+RandomResources:
+
+
+    - Name: CobaltResource    # poor
+      Biome: [ Regolith, RegolithEdge, SandDrift, Dunes, Plateau, Rifts, LargeCrater ]
+      IsImportant: True
+      CountMinMax: [ 2, 2 ]
+      IsScalingCount: True
+      SizeMinMax: [ 2, 40 ]
+      DepthMinMax: [ 15, 40 ] 
+      DroneProb: 0.3
+      MaxDroneCount: 2
+
+    - Name: CopperResource     # extremely poor
+      Biome: [ Rocks, LowMountains, LowMountains_1, Mountains, Moss, HighMountains ]
+      CountMinMax: [ 1, 3 ]
+      IsScalingCount: True
+      SizeMinMax: [ 2, 30 ]
+      DepthMinMax: [ 6, 15 ] 
+      DroneProb: 0.1
+      MaxDroneCount: 1
+
+    - Name: SiliconResource    # rich
+      Biome: [ SandDrift, Dunes, Plateau, RegolithEdge, Regolith ]
+      CountMinMax: [ 4, 5 ]
+      IsScalingCount: True
+      SizeMinMax: [ 8, 40 ]
+      DepthMinMax: [ 6, 15 ] 
+      DroneProb: 0.3
+      MaxDroneCount: 2
+
+    - Name: ErestrumResource   # Mostly claimed by POI
+      Biome: [ SandDrift, Dunes, LargeCrater, LowMountains, LowMountains_1 ]
+      IsScalingCount: True
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 4, 60 ]
+      DepthMinMax: [ 6, 15 ]
+      DroneProb: 0.7
+      MaxDroneCount: 7
+
+
+    - Name: ZascosiumResource   # Mostly claimed by POI
+      Biome: [ Sediment, Biofilm ]
+      IsScalingCount: True
+      CountMinMax: [ 2, 2 ]
+      SizeMinMax: [ 2, 50 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.7
+      MaxDroneCount: 7
+
+
+    - Name: PentaxidResource    
+      Biome: [ Sediment, Biofilm ]
+      IsScalingCount: True
+      CountMinMax: [ 2, 2 ]
+      SizeMinMax: [ 2, 50 ]
+      DroneProb: 0.7
+      MaxDroneCount: 7
+      DepthMinMax: [ 0, 10 ]
+      # DistTypeCylinder:
+        # MaxRadius: 13
+        # YVariance: 10
+      
+    - Name: PromethiumResource
+      Biome: [ LargeCrater, Rocks, LowMountains, LowMountains_1, Moss, Mountains, HighMountains ]
+      CountMinMax: [ 2, 3 ]
+      IsScalingCount: True
+      SizeMinMax: [ 10, 50 ]
+      DroneProb: 0.8
+      MaxDroneCount: 7
+      DepthMinMax: [ 0, 1 ]
+      # DistTypeCylinder:
+        # MaxRadius: 13
+        # YVariance: 10
+
+
+
+
+### Resource Asteroids
+AsteroidResources:
+
+     - Name: SiliconResource
+       Threshold: 0.5
+       Amount: 0.2
+
+     - Name: CobaltResource
+       Threshold: 0.2
+       Amount: 0.2
+
+     - Name: PromethiumResource
+       Threshold: 0.2
+       Amount: 0.2
+       
+     - Name: ErestrumResource
+       Threshold: 0.2
+       Amount: 0.15
+
+### POIs
+POIs:
+    Random:
+
+# Zirax drone base & perimeter defenses ====
+        - GroupName: DroneComputeUnit                # CommandCenter
+          Faction: Galorian  
+          NoShieldReload: True
+          IsCommandCenter: True
+          Biome: [ LowMountains, LowMountains_1, Moss, Mountains, HighMountains ]
+          DroneBaseSetup: DroneBaseSetup
+          IsImportant: True
+          CountMinMax: [ 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 5
+          SpawnResource: ["ErestrumResource:0-1","ZascosiumResource:0-1"]
+          SpawnResourceRange: [150,400]
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+
+        - GroupName: GalorMoonSat
+          Faction: Galorian  
+          NoShieldReload: True
+          CountMinMax: [ 2, 2 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: True
+          SpawnPOINear: [DroneComputeUnit]
+          SpawnPOINearRange: [200, 300]
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+
+# Robotics Syndicate Favorite POI
+        - GroupName: AlienRobotics
+          Faction: RoboticsSyndicate
+          NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          Properties:  
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 160 
+            - Key: PersonalContainer
+              Value: Robotics:10, TurretCVRanger, WarbotNanotubes:3
+
+        - GroupName: RoboticsFrigate 
+          Faction: RoboticsSyndicate    
+          NoShieldReload: True
+          CountMinMax: [ 1, 2 ]
+          DroneProb: 0.1
+          DronesMinMax: [ 0, 1 ]
+          ReserveCount: 0
+          TroopTransport: False        
+          SpawnPOINear: [DroneComputeUnit]
+          SpawnPOINearRange: [200, 700]
+          Properties:  
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 160 
+            - Key: PersonalContainer
+              Value: Robotics:1, Nanites:75, RangerRocketCV:50
+
+        - GroupName: PlanetVesselBase 
+          Faction: Galorian  
+          NoShieldReload: True
+          IsImportant: True
+          BiomesExcluded: [ Plains, Rocks, HighMountains ]
+          PlanetVesselBaseSetup: PlanetVesselBaseSetup
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 3
+          TroopTransport: True
+          POIDistance: 1500
+          Properties: 
+            - Key: RegenAfter
+              Value: 360
+
+        - GroupName: GalorMoonSat
+          Faction: Rados  
+          NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0.9
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: True
+          SpawnPOINear: [PlanetVesselBase]
+          SpawnPOINearRange: [300, 300]
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 240
+
+        - GroupName: GalorTelecom
+          Faction: Galorian  
+          NoShieldReload: True
+          CountMinMax: [ 1, 2 ]
+          DroneProb: 0.7
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 2
+          TroopTransport: False
+          SpawnPOINear: [PlanetVesselBase]
+          SpawnPOINearRange: [350, 400]
+          Properties: 
+            - Key: RegenAfter
+              Value: 240
+
+        - GroupName: GalorMoonSat        # Evacuated Base
+          Faction: Galorian  
+          NoShieldReload: True
+          # PlanetVesselBaseSetup: PlanetLensSetup
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          BiomesExcluded: [ Plains, SandDrift ]
+          IsScalingCount: False
+          SpawnResource: ["ErestrumResource:1-1"]
+          SpawnResourceRange: [40,60]
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 90
+
+#Progenitor
+
+        - GroupName: ProgenitorArtifacts      
+          Faction: None     
+          CountMinMax: [ 1, 1 ]
+          IsScalingCount: True 
+          DroneProb: 1.0
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 4
+          TroopTransport: False
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 720
+
+    FixedPlayerStart:
+        - Mode: Creative
+          SubMode: Empty
+          Armor: ArmorLight
+          Pos: [ 0, 147, 0 ]
+          RotY: 160
+
+        - Mode: Creative
+          SubMode: Normal
+          Armor: ArmorLight
+          Pos: [ 0, 52, 0 ]
+          RotY: 30
+
+        - Mode: Debug
+          Pos: [ 0, 147, 0 ]
+          RotY: 160
+
+        - Mode: Survival
+          Spawn: EscapePod
+          Armor: ArmorLight
+          Items: [ "SurvivalTent, Flashlight, AntibioticOintment:2, Bandages:2, StomachPills:2, PowerBar:2, EnergyDrink:1", "SurvivalTent, Flashlight, AntibioticOintment:1, Bandages:1, PowerBar:1", "SurvivalTent, Flashlight, Bandages:1", "#FreshStart: SurvivalTent, Flashlight, Bandages:1, WaterBottle: 1" ]
+
+# ==============================================================
+### Drones
+DroneBaseSetup: 
+    Random:
+        - GroupName: DroneBaseSetup
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 7
+          DroneProb: 1.0
+          Difficulty: 5
+          PresetStyle: 2
+
+          Stock:
+              - Name: DroneSmallFast01Minigun
+                Amount: 30000
+                Extra: 0
+
+              - Name: DroneSmallFast01Minigun
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneSmallFast01Rocket
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+
+              - Name: SoldierAlienAssaultRifle
+                Amount: Infinite
+                Extra: 3
+
+              - Name: AssaultCyborg
+                Amount: Infinite
+                Extra: 3
+
+          PlanetVesselBase:
+              Name: PlanetVesselBaseSetup
+              Position3D: [ 0, 200, 0]
+              BaseType: PlanetVesselBase
+              KeyId: 1 
+              PlanetVessel:
+                - Name: GalorGaurd       # High altitude base-teleportation system
+                  Faction: Galorian
+                  Mission: PlanetPatrol
+                  FixedMaxSpeed: 8
+                  RespawnDelay: 12
+
+                  RangePatrolTask:
+                    Position3D: [ -1500, 200, 0 ]
+                    Radius: 800
+                    DistToGround: 400
+
+                  AttackCVCircleAround:
+                    DistToTarget: 210  
+
+
+
+# Drones that patrol on whole moon 
+DroneSpawning:
+    Random:
+        - DronesMinMax: [ 2, 4 ]     # Terrain survey drones
+          CenterX: -5000
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: -2500
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: -2000
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: -1500
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: -1000
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: -500
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: 500
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: 1000
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: 1500
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: 2000
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: 2500
+
+        - DronesMinMax: [ 2, 4 ]
+          CenterX: 5000
+
+
+
+# ==============================================================    # Most of POI defence is done by spawned ZiraxRocketPatrols
+
+SpawnRateZones:
+
+
+SpawnZones:
+
+   - SpawnAt: [ DroneComputeUnit ]
+     BiomesExcluded: [ HighMountains ]
+     Radius: 300
+     RadiusRandom: 50
+     RateMultiplyerCenter: 0.6
+     RateMultiplyerEdge: 0
+     Color: "1.0, 1.0, 1.0, 1.0" 
+     SpawnOnlyIfPoiIsAlien: true
+     Entities:
+       - Names: [SoldierAlienInfected]
+         Biomes: [Any]
+         Amount: 100
+         Period: Always
+         DelayMinMax: [-1, -1]
+
+
+
+### Creatures - Only imported lifeforms here.
+CreatureSpawning:
+
+    - Biomes: [Any]
+      Entities:
+        - Name: AlienAssassinGreysInfected   # Remnants of Legacy
+          Period: Always
+          Amount: 8
+          DelayMinMax: [10, 16]
+        - Name: GolemsDesert       # Terrain survey - might fight the above
+          Period: Always
+          Amount: 8
+          DelayMinMax: [20, 24]
+
+
+    - Biomes: [Rifts]              # Pentaxid resource claim
+      Entities:
+        - Name: AlienBugs01
+          Period: Always
+          Amount: 100
+          DelayMinMax: [20, 24]
+        - Name: HexapodInfected
+          Period: Always
+          Amount: 100
+          DelayMinMax: [20, 24]

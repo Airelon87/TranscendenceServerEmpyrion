@@ -1,0 +1,559 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.8.1908, Playfield Version: 10.0.0 [2446] (Alpha EXPERIMENTAL 10)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+Seed: 2309566
+PlanetSize: 3
+PlanetAxis: -15
+PlayfieldLevel: 5
+TemperatureMinMax: [40, 48]
+TemperatureNight: 37
+HumidityMinMax: [0.1, 0.99]
+SeaLevel: 10
+TerrainLevel: 140
+BaseLevel: 0
+LandWaterRatio: 0.75
+TemperatureHeightRange: [60, 400]
+TemperatureGradientRange: [0.85, 0.5]
+TemperatureNoiseFac: 0.69999999999999996
+HumidityHeightFac: [0, 300]
+HumidityNoiseFac: 0.65000000000000002
+Gravity: -13
+AtmosphereDensity: 0.69999999999999996
+AtmosphereBreathable: True
+AtmosphereO2: 0.19
+Water: RockLava03
+Music: Encryptor
+TerrainHeightMapMax: 499
+BiomeStampTries: 75
+Biome:
+-  BiomeClusterData:
+   -  Name: Pole
+      Weather: PoleFog
+      AmbientSound: ArcticLowPlains
+      IgnoreForcedBiome: True
+      Texture: [0, 0, 0.2]
+      UndergroundLayers:
+      - [9, 0]
+      - [12, 1]
+      - [19, 2]
+      - [11, 10]
+      - [13, 1]
+      - [9, 2]
+      - [10, 3]
+      - [11, -1]
+      - [12, 2]
+      SelectionCriteria:
+      - +Lat > 0.975
+      Color: [1, 1, 1]
+      StampProb: 1
+      StampForcesBiome: False
+      StampForcesBiomeType: OverlapAll
+      UndergroundLayersDefault: True
+   -  Name: SubBiomeOne
+      AmbientSound: LavaPlains
+      Texture: [1, 2, 0.4]
+      SelectionCriteria:
+      - +Long < 0.95
+      - +Long > 0.475
+      - Height < SeaLevel - 15
+      Color: [0.1, 0.1, 0.1]
+      Decorations:
+      - [RockResourceNeodymium, 0.0006, BigPlant]
+      - [CrystalStraight, 0.0008, Free]
+      - [RockResourceCobalt, 0.0001, Free]
+      - [RockResourcePromethium, 0.0001, Free]
+      - [RockResourceGold, 0.0001, Free]
+      - [PromethiumStone, 0.0005]
+   -  Name: SubBiomeTwo
+      AmbientSound: LavaPlains
+      Texture: [2, 3, 0.4]
+      SelectionCriteria:
+      - +Long < 0.95
+      - +Long > 0.475
+      - Height < SeaLevel - 5
+      - Height > SeaLevel - 15
+      Color: [0.1, 0.1, 0.1]
+      Decorations:
+      - [RockResourceMagnesium, 0.0001, Free]
+   -  Name: SubBiomeThree
+      AmbientSound: LavaPlains
+      Texture: [3, 4, 0.4]
+      SelectionCriteria:
+      - +Long < 0.95
+      - +Long > 0.475
+      - Height < SeaLevel
+      - Height > SeaLevel - 5
+      Color: [0.1, 0.1, 0.1]
+      Decorations:
+      - [RockResourceIron, 0.0001, Free]
+   -  Name: SubBiomeOneB
+      AmbientSound: LavaPlains
+      Texture: [1, 2, 0.46]
+      SelectionCriteria:
+      - +Long < 0.475
+      - +Long > 0.05
+      - Height < SeaLevel - 15
+      Color: [0.1, 0.1, 0.1]
+      Decorations:
+      - [RockResourceGold, 0.0001, Free]
+   -  Name: SubBiomeTwoB
+      AmbientSound: LavaPlains
+      Texture: [2, 3, 0.4]
+      SelectionCriteria:
+      - +Long < 0.475
+      - +Long > 0.05
+      - Height < SeaLevel - 5
+      - Height > SeaLevel - 15
+      Color: [0.1, 0.1, 0.1]
+      Decorations:
+      - [RockResourceMagnesium, 0.0001, Free]
+   -  Name: SubBiomeThreeB
+      AmbientSound: LavaPlains
+      Texture: [3, 4, 0.4]
+      SelectionCriteria:
+      - +Long < 0.475
+      - +Long > 0.05
+      - Height < SeaLevel
+      - Height > SeaLevel - 5
+      Color: [0.1, 0.1, 0.1]
+      Decorations:
+      - [RockResourceIron, 0.0001, Free]
+      - [RockResourceSilicon, 0.0001, Free]
+      - [RockResourceCopper, 0.0001, Free]
+   -  Name: BiomeZero
+      LevelMod: +4
+      AmbientSound: ArcticLowPlains
+      Texture: [3, 3, 0.2]
+      SelectionCriteria:
+      - +Lat < 0.975
+      - +Lat > 0.875
+      Color: [0.1, 0.2, 0.8]
+      Stamps:
+      - CraterMoon_4, 0.3
+      - CraterMoon_6, 0.3
+      Decorations:
+      - [CrystalStraight, 0.00015, Free]
+      - [PromethiumStone, 0.0003, Free]
+      - [PromethiumResource, 0.0005, Free]
+      - [BrainFungusSnow, 0.002, Free]
+   -  Name: BiomeOne
+      AmbientSound: LavaPlains
+      Texture: [4, 4, 0.2]
+      SelectionCriteria:
+      - +Long < 0.95
+      - +Long > 0.475
+      - Humidity > 0.8
+      Color: [0.1, 0.1, 0.1]
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOff
+      Stamps:
+      - RiftLava_2, 0.1
+      - RiftLava_1, 0.1
+      - RiftLava_2b, 0.1
+      - RiftLava_1b, 0.1
+      - CraterLava_1, 0.1
+      - CraterLava_2, 0.1
+      - Cliff_3, 0.2
+      StampTries: 50
+      Decorations:
+      - [AlienWillow, 0.0005, Plant]
+      - [RealRock8Dark, 6E-05, Plant]
+      - [RealRock10Dark, 4E-05, Plant]
+      - [LeafPlant, 2E-05, Plant]
+      - [InsanityPepper, 0.0001, Free]
+      - [AlienPlant05, 0.0005, 0.00002]
+      - [CobraLeavesPlant, 0.0002, Free]
+      - [CornDogBush, 0.0001, Tree]
+      - [DesertPlant20, 0.0003, Plant]
+      - [Snakeweed, 0.0003, Plant]
+      - [EggPlant, 0.0003, Plant]
+      - [BulbShroom, 0.0001, Free]
+      - [PixieStalks, 0.0003, Free]
+      Grass:
+      -  Name: GrassBrown02d
+         Density: 0.0050000000000000001
+         Preset: GrassDense
+   -  Name: BiomeTwo
+      AmbientSound: ArcticLowPlains
+      Texture: [4, 4, 0.2]
+      SelectionCriteria:
+      - +Long < 0.95
+      - +Long > 0.475
+      - Humidity < 0.8
+      - Humidity > 0.4
+      Color: [0.2, 0.1, 0.1]
+      Decorations:
+      - [AlienWillow, 0.0005, Plant]
+      - [InsanityPepper, 0.0001, Free]
+      - [AlienPlant05, 0.0005, 0.00002]
+      - [CornDogBush, 0.0001, Tree]
+      - [Snakeweed, 0.0003, Plant]
+      - [RealRock8Dark, 6E-05, Plant]
+      - [RealRock10Dark, 4E-05, Plant]
+      - [PixieStalks, 0.0003, Free]
+      - [BallFlower03, 0.005, Plant]
+      - [MushroomTallBlue02, 0.01, Free]
+      - [Snakeweed, 0.003, Plant]
+      Grass:
+      -  Name: GrassType01Red
+         Density: 0.14999999999999999
+         Preset: GrassDense
+   -  Name: BiomeThree
+      LevelMod: +1
+      AmbientSound: ArcticLowPlains
+      Texture: [4, 4, 0.2]
+      SelectionCriteria:
+      - +Long < 0.95
+      - +Long > 0.475
+      - Humidity < 0.4
+      - Humidity > 0
+      Color: [0.4, 0.3, 0.2]
+      Stamps:
+      - Mountain_10b, 0.5
+      - Mountain_9, 0.5
+      - Mountain_11, 0.2
+      - Mountain_13, 0.3
+      - Mountain_14, 0.6
+      - Mountain_15, 0.9
+      - MountainPlateau_01, 0.1
+      - MountainPlateau_02, 0.2
+      Decorations:
+      - [AlienWillow, 0.0005, Plant]
+      - [CrystalStraight, 0.00015, Free]
+      - [AlienPlantReef2, 0.001, Free]
+      - [AlienPlantPod2, 0.001, Free]
+   -  Name: BiomeFour
+      LevelMod: +3
+      AmbientSound: DesertCricket
+      Texture: [4, 4, 0.2]
+      SelectionCriteria:
+      - +Long < 0.475
+      - +Long > 0.05
+      - Humidity > 0.8
+      Color: [0.5, 0.4, 0.3]
+      Stamps:
+      - DunesDesert_01, 0.8
+      - Erosion_1, 0.4
+      - Erosion_1b, 0.4
+      - Erosion_2, 0.2
+      - MountainPlateau_05, 0.2
+      - MountainPlateau_06, 0.4
+      - Cliff_1, 0.2
+      - Cliff_2, 0.3
+      Temperature: 12
+      Decorations:
+      - [AntlerTree, 0.001, Plant]
+      - [AlienPlantReef2, 0.001, Free]
+   -  Name: BiomeFive
+      LevelMod: +5
+      AmbientSound: DesertCricket
+      Texture: [4, 4, 0.2]
+      SelectionCriteria:
+      - +Long < 0.475
+      - +Long > 0.05
+      - Humidity < 0.8
+      - Humidity > 0.4
+      Color: [0.7, 0.6, 0.5]
+      Stamps:
+      - DunesDesert_01_1, 0.2
+      - HillsLava_1, 0.2
+      - Cliff_2, 0.3
+      - Hollow_01, 0.3
+      Temperature: 12
+      Decorations:
+      - [AlienWillow, 0.0005, Plant]
+      - [AntlerTree, 0.001, Plant]
+      - [LavaPlant2, 0.004, Plant]
+      - [RealRock4Dark, 0.0001]
+      - [RealRock3Dark, 0.0001]
+      - [RealRock1Dark, 0.0001]
+      - [AlienPlantSpike1, 0.001]
+      - [AlienPlantReef2, 0.001, Free]
+      - [AlienPlantPod2, 0.001, Free]
+      - [RockResourcePromethium, 0.0001]
+   -  Name: BiomeSix
+      LevelMod: +2
+      AmbientSound: OpenPlains
+      Texture: [4, 4, 0.2]
+      SelectionCriteria:
+      - +Long < 0.475
+      - +Long > 0.05
+      - Humidity < 0.4
+      - Humidity > 0
+      Color: [0.7, 0.7, 0.7]
+      Stamps:
+      - Mountain_10b, 0.2
+      - Mountain_9, 0.3
+      - Mountain_11, 0.2
+      - Mountain_13, 0.3
+      - Mountain_14, 0.3
+      - Mountain_2b, 0.4
+      - Mountain_3, 0.3
+      - MountainEroded_01_BM, 0.3
+      - MountainSharp_01, 0.5
+      Temperature: 12
+      Decorations:
+      - [CrystalStraight, 0.00015, Free]
+      - [DesertRock1, 0.0002, Free]
+      - [DesertRock2, 0.0002, Free]
+      - [Snakeweed, 0.003]
+      - [RockResourceIron, 0.0005, Free]
+      - [RockResourceSilicon, 0.0003, Free]
+      - [RockResourcePromethium, 0.0001, Free]
+   -  Name: WasteLands
+      LevelMod: +7
+      AmbientSound: OpenPlains
+      Texture: [4, 4, 0.2, 8, 8, 1, 0.35]
+      SelectionCriteria:
+      - true
+      Color: [0.3, 0.3, 0.3]
+      StampProb: 1
+      StampForcesBiome: False
+      StampForcesBiomeType: OverlapAll
+      Radiation: 25
+      Temperature: 155
+      Decorations:
+      - [ConfettiMoss, 0.01, Plant]
+      - [RealRock1Dark, 0.0003, Free]
+      - [RealRock2Dark, 0.0001, Free]
+      - [RealRock4Dark, 0.0003, Free]
+      - [RealRock8Dark, 0.0003, Free]
+      - [RealRock10Dark, 0.0002, Free]
+      - [RockResourceErestrum, 1E-05, Free]
+      - [RockResourceZascosium, 1E-05, Free]
+      Grass:
+      -  Name: GrassBrown04
+         Density: 0.012
+         Preset: GrassDense
+Description: >+
+   Instance World
+
+PlanetType: Lava
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 4
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: Grime
+   Biome: [BiomeOne, BiomeTwo, BiomeThree, SubBiomeOne, SubBiomeTwo, SubBiomeThree]
+   Time: Day
+   MaxHeight: 20
+-  Name: FireFliesRed
+   Biome: [SubBiomeOne, SubBiomeTwo, SubBiomeThree]
+   Time: Night
+   MaxHeight: 20
+   FollowPlayerY: True
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Delay: 2
+   Lifetime: 1800
+-  Name: CloudsLight
+   Type: Weather
+   Delay: 5
+   Lifetime: 1200
+-  Name: ThunderAndLightningPurple
+   Time: Always
+   InitialDelay: 3
+   Delay: 3
+   PlyDist: 170
+   Struct: Avoid
+   Lifetime: 1000
+   SpawnY: 400
+AtmosphereColor: 0.93, 0.65, 0.05
+SkyColor: 0.93, 0.65, 0.15
+SkyHorizonColor: 1, 0.5, 0.1
+AtmosphereParams: [3, 1.5]
+LightZenithColor: 1, 0.8, 0.9
+LightHorizonColor: 0.6, 0.2, 0.2
+DayLightIntensity: 1.8
+NightLightIntensity: 1.3999999999999999
+NightLightColor: 0.6,0.6,0.9
+SunFlare: EnvironmentalEffects/SunFlareRed
+FogColor: 0.6, 1, 0.3
+FogCloudIntensity: 0.59999999999999998
+GroundFogIntensity: 0.11
+CloudsDensity: 0.20000000000000001
+CloudsSharpness: 0.40000000000000002
+CloudsBrightness: 0.29999999999999999
+CloudsOpacity: 0.29999999999999999
+CloudsZenithColor: 0.6,1,0.1
+CloudsHorizonColor: 0, 1, 1
+CloudsNightZenithColor: 1,0,0
+CloudsNightHorizonColor: 1,0.27,0
+WindSpeed: 5
+Build: 2526
+Radiation: 4
+PvP: True
+AllowBA: False
+AllowCV: False
+AllowSV: False
+AllowHV: False
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+Instance:
+   Time: 480
+   MaxPlayers: 3
+   PortalOpen: 240
+   Cooldown: 120
+   DropInventory: True
+IndestructibleTerrain: True
+RandomResources:
+-  Name: PromethiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [5, 7]
+   SizeMinMax: [10, 14]
+   DepthMinMax: [5, 10]
+   DroneProb: 0.20000000000000001
+   MaxDroneCount: 1
+POIs:
+   Random:
+   -  GroupName: ZiblaxDroneCaller
+      Faction: Zirax
+      DroneBaseSetup: DroneBaseSetup
+      IsCommandCenter: True
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: OnWater, Terrain
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: True
+      Properties:
+      -  Key: Music
+         Value: DarkSoundscape
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 60
+   -  GroupName: AncientVault
+      Faction: Alien
+      LevelMod: +2
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: OnWater
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: PersonalContainer
+         Value: AncientRelics:5, Robotics:5, RawDiamond, MoneyCard:500, AutoMiningDeviceT3
+      -  Key: Music
+         Value: EvilWhispering
+   Fixed:
+   -  Type: BA_Player
+      Prefab: BA_Outpost-AkuaV2
+      Mode: Creative
+      SubMode: Normal
+      Name: Outpost Akua
+      Pos: [-1143, 28.9, 1482.5]
+      Rot: [0, -85, 0]
+      InitPower: True
+   -  Type: SV_Player
+      Prefab: SV_Talon
+      Mode: Creative
+      SubMode: Normal
+      Name: Talon MKI
+      Pos: [-1119, 44.4, 1482.2]
+      Rot: [0, -176, 0]
+   FixedPlayerStart:
+   -  Mode: Creative
+      SubMode: Empty
+      Pos: [-1177, 37.6, 1452.6]
+      RotY: 105
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorLight
+   -  Mode: Creative
+      SubMode: Normal
+      Pos: [-1114.4, 44.9, 1476]
+      RotY: -56
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorLight
+   -  Mode: Debug
+      Pos: [0, 147, 0]
+      RotY: 160
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+   -  Mode: Survival
+      Spawn: EscapePod
+      Pos: [-350, 0]
+      Items: ['SurvivalTool, PowerBar:2, Medikit04:3, Bandages:2, Flashlight, AntibioticOintment:2, SurvivalTent, MobileAirCon', 'SurvivalTool, PowerBar, Medikit04:2, Bandages, Flashlight, AntibioticOintment, SurvivalTent, MobileAirCon', 'SurvivalTool, PowerBar, Medikit04, Flashlight, SurvivalTent', '#FreshStart: SurvivalTool, Medikit04, Flashlight, SurvivalTent']
+      Status: ['Food:400, Health: 400', 'Food:250, Health: 250', 'Food:150, Health: 150', '#FreshStart:Food:500, Health: 250']
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseSetup
+      DronesMinMax: [0, 0]
+      Difficulty: 7
+      PresetStyle: 2
+      Stock:
+      -  Name: DroneSmallFast01Plasma
+         Amount: 100000
+         Extra: 0
+      -  Name: DroneSmallAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneTroopsTransport
+         Amount: Infinite
+         Extra: 2
+      -  Name: Mechanoid
+         Amount: 50000
+         Extra: 3
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 5]
+      CenterX: -5000
+   -  DronesMinMax: [5, 5]
+      CenterX: 5000
+CreatureSpawning:
+-  Biomes: [BiomeOne, BiomeTwo, BiomeThree]
+   Entities:
+   -  Name: Creepys
+      Period: Day
+      Amount: 15
+      DelayMinMax: [0, 0]
+   -  Name: AlienAssassinReds
+      Period: Night
+      Amount: 20
+      DelayMinMax: [0, 0]
+-  Biomes: [BiomeFour, BiomeFive, BiomeSix]
+   Entities:
+   -  Name: Creepys
+      Period: Always
+      Amount: 15
+      DelayMinMax: [0, 0]
+   -  Name: Overseers
+      Period: Always
+      Amount: 25
+      DelayMinMax: [0, 0]
+   -  Name: Spiders03
+      Period: Night
+      Amount: 12
+      DelayMinMax: [0, 0]
+-  Biomes: [WasteLands]
+   Entities:
+   -  Name: TotalHorrors
+      Period: Night
+      Amount: 25
+      DelayMinMax: [0, 0]
+   -  Name: Creepys
+      Period: Always
+      Amount: 8
+      DelayMinMax: [0, 0]
+   -  Name: AlienAssassinReds
+      Period: Night
+      Amount: 20
+      DelayMinMax: [0, 0]
+-  Biomes: [BiomeZero]
+   Entities:
+   -  Name: CaveWormWhiteHerd
+      Period: Always
+      Amount: 10
+      DelayMinMax: [0, 0]

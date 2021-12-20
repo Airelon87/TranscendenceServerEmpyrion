@@ -1,0 +1,5687 @@
+PlayfieldType: Planet
+WorldName: Awon
+RealRadius: 0
+ScaledRadius: 0
+Gravity: -40.2923431
+PlanetAxis: -1.58869123
+PlanetRotAxis: 
+AtmosphereDensity: 1.77825248
+AtmosphereO2: 0.0060265027
+AtmosphereBreathable: false
+Temperature: 0
+TemperatureDay: -2147483648
+TemperatureNight: 57
+Radiation: 6.38169336
+SeaLevel: 20
+TerrainLevel: 220
+BaseLevel: 120
+DayLength: 0
+PlanetType: Lava
+PlanetSize: 4
+Moons: 0
+Emissive: true
+Water: RockLava03
+PvP: true
+Difficulty: 4
+LegacyBiome: 
+ChunkProviderId: 0
+SunFlare: EnvironmentalEffects/SunFlareYellow
+Nebula: PrefabNebulaBlue
+Stars: SkyboxStarsBlack
+LocalEffect: 
+SpecialEffectsLocal:
+- Name: Grime
+  MaxHeight: 20
+  Time: Always
+  Biome: 
+  Struct: false
+  FollowPlayerY: true
+SpecialEffectsGlobal:
+- Name: MeteorFireRain
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 0
+  Delay: 5
+  PlyDist: 100
+  Struct: True
+  Lifetime: 330
+  Type: Weather
+- Name: Clouds
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 1
+  Delay: 5
+  PlyDist: 100
+  Struct: True
+  Lifetime: 500
+  Type: Weather
+- Name: CloudsLight
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 1
+  Delay: 5
+  PlyDist: 100
+  Struct: True
+  Lifetime: 600
+  Type: Weather
+- Name: CloudsMedium
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 2
+  Delay: 5
+  PlyDist: 100
+  Struct: True
+  Lifetime: 600
+  Type: Weather
+- Name: CloudsDark
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 2
+  Delay: 5
+  PlyDist: 100
+  Struct: True
+  Lifetime: 500
+  Type: Weather
+- Name: FireRain
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 5
+  Delay: 5
+  PlyDist: 100
+  Struct: True
+  Lifetime: 330
+  Type: Weather
+- Name: Storm
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 35
+  Delay: 30
+  PlyDist: 100
+  Struct: True
+  Lifetime: 400
+  Type: Weather
+- Name: Fog
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 48
+  Delay: 20
+  PlyDist: 100
+  Struct: True
+  Lifetime: 400
+  Type: Weather
+- Name: Hail
+  SpawnY: 50
+  Time: Always
+  Biome: 
+  InitialDelay: 35
+  Delay: 10
+  PlyDist: 100
+  Struct: True
+  Lifetime: 340
+  Type: Weather
+- Name: MeteorShower
+  SpawnY: 100
+  Time: Always
+  Biome: 
+  InitialDelay: 0
+  Delay: 0
+  PlyDist: 60
+  Struct: Avoid
+  Lifetime: 60
+  Type: Effect
+- Name: MeteorShower
+  SpawnY: 100
+  Time: Always
+  Biome: 
+  InitialDelay: 0
+  Delay: 0
+  PlyDist: 70
+  Struct: Avoid
+  Lifetime: 60
+  Type: Effect
+- Name: MeteorShower
+  SpawnY: 100
+  Time: Always
+  Biome: 
+  InitialDelay: 0
+  Delay: 0
+  PlyDist: 80
+  Struct: Avoid
+  Lifetime: 60
+  Type: Effect
+- Name: MeteorShower
+  SpawnY: 100
+  Time: Always
+  Biome: 
+  InitialDelay: 0
+  Delay: 0
+  PlyDist: 900
+  Struct: Avoid
+  Lifetime: 60
+  Type: Effect
+- Name: ThunderAndLightningPurple
+  SpawnY: 500
+  Time: Always
+  Biome: 
+  InitialDelay: 0
+  Delay: 0
+  PlyDist: 100
+  Struct: Avoid
+  Lifetime: 350
+  Type: Effect
+- Name: ThunderAndLightningWhite
+  SpawnY: 500
+  Time: Always
+  Biome: 
+  InitialDelay: 0
+  Delay: 1
+  PlyDist: 100
+  Struct: Avoid
+  Lifetime: 300
+  Type: Effect
+AtmosphereEnabled: true
+AtmosphereColor: 0.6, 0.4, 0.05
+AtmosphereParams:
+- 1
+- 1.60000002
+OrbitUsesLightColor: false
+SkyColor: 0.50, 0.25, 0.05
+SkyHorizonColor: 0.5, 0.03, 0.05
+LightZenithColor: 0.9, 0.7, 0.5
+LightHorizonColor: 1, 0.5, 0
+NightLightColor: 0.5, 0.8, 0.8
+CloudsZenithColor: 0.7, 0.3, 0.1
+CloudsHorizonColor: 0.2, 0.0, 0.0
+CloudsNightZenithColor: 0.048, 0.025, 0.015
+CloudsNightHorizonColor: 0.048, 0.025, 0.015
+CloudsOpacity: 0.699999988
+FogCloudIntensity: 0.800000012
+DayLightIntensity: 0.800000012
+NightLightIntensity: 0.699999988
+DayShadowStrength: 0.949999988
+NightShadowStrength: 0.5
+AtmosphereFog: 0
+CloudsDensity: 1
+CloudsSharpness: 0.200000003
+CloudsBrightness: 0.300000012
+WindSpeed: 50
+FogColor: 0.4, 0.50, 0.4
+FogIntensity: 0
+FogStartDistance: 0
+GroundFogIntensity: 0
+GroundFogHeight: 0
+Description: "[c][e0e020]WARNING:[-][/c]   [c][b]High gravity[/b]. Hostile.[-][/c] \n[c][808080][i]Don't get stranded down there.[-][/i][-][/c] \n \nA planet at the crossroads, shrouded in a thick cocktail of atmosphere: \n \nWill it become a boiling, or a frozen world? \n \nOr something [i]just[-][/i] in between? \n \nWill all the gases stay up in the sky, or condensate, to rain down? \n \nWill there be water? \n \nAnd how long will last, after all? \nWill it stay as oceans and lakes, or drift into space? \n \n \nEven if this planet grows too hostile for life... that won't discourage the visitors. \n \nThis is a young world. \nExpect rich ore deposits, a harsh climate, \nand laser shots from nowhere."
+Seed: 184361
+TemperatureMinMax:
+- 40
+- 100
+HumidityMinMax:
+- 0.0500000007
+- 0.349999994
+LandWaterRatio: 0.0799999982
+TemperatureHeightRange:
+- 14
+- 160
+TemperatureGradientRange:
+- 0.75
+- 0.100000001
+TemperatureNoiseFac: 0.49000001
+HumidityHeightFac:
+- 20
+- 325
+HumidityNoiseFac: 0.540000021
+TerrainHeightMapMax: 490
+GroundShapes: 
+TemperatureMasks: 
+HumidityMasks: 
+BiomeStampTries: 180
+PlayfieldLevel: 0
+PdaReferral: 
+BaseAttackCount: 1
+PfServerWeight: 0
+PlanetClass: Lava
+UseFixed: false
+UseRandom: true
+Build: 2921
+Instance: 
+IndestructibleTerrain: false
+AllowSV: true
+AllowCV: true
+AllowHV: true
+AllowBA: true
+AllowBlueprintSV: true
+AllowBlueprintCV: true
+AllowBlueprintHV: true
+AllowBlueprintBA: true
+AllowMaxCPUTierSV: 0
+AllowMaxCPUTierCV: 0
+AllowMaxCPUTierHV: 0
+AllowMaxCPUTierBA: 0
+RestrictToOrigin: 255
+Music: AlteredPhase
+LandClaimZone: Device
+IsOrbitPlayfield: false
+RandomPOIs: 
+RandomDroneBase: 
+RandomResources:
+- Name: IronResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 4
+  - 4
+  SizeMinMax:
+  - 8
+  - 16
+  DepthMinMax:
+  - 5
+  - 15
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.200000003
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - LavaPlains
+  - LowMountains
+  - LowMountains_1
+  - Mountains
+  - HighMountains
+  BiomesExcluded: 
+- Name: CopperResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 2
+  - 3
+  SizeMinMax:
+  - 6
+  - 16
+  DepthMinMax:
+  - 5
+  - 15
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.5
+  MaxDroneCount: 3
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - LowMountains
+  - LowMountains_1
+  - Mountains
+  - HighMountains
+  BiomesExcluded: 
+- Name: SathiumResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 1
+  - 2
+  SizeMinMax:
+  - 7
+  - 11
+  DepthMinMax:
+  - 3
+  - 15
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.699999988
+  MaxDroneCount: 2
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - LavaPlains
+  - CrystallizedRocks
+  - Cliffs
+  BiomesExcluded: 
+- Name: GoldResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 1
+  - 1
+  SizeMinMax:
+  - 3
+  - 4
+  DepthMinMax:
+  - 10
+  - 25
+  DistTypeCylinder:
+    MaxRadius: 13
+    YVariance: 10
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 1
+  MaxDroneCount: 3
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - LavaFolds
+  - CrystallizedRocks
+  BiomesExcluded: 
+- Name: PentaxidResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 4
+  - 4
+  SizeMinMax:
+  - 4
+  - 4
+  DepthMinMax:
+  - 0
+  - 5
+  DistTypeCylinder:
+    MaxRadius: 13
+    YVariance: 10
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 1
+  MaxDroneCount: 4
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - Hotspot
+  - Rifts_1
+  - LavaPlains
+  - CrystallizedRocks
+  - Canyon
+  - Abyss
+  - LavaEdge
+  BiomesExcluded: 
+- Name: ErestrumResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 3
+  - 4
+  SizeMinMax:
+  - 6
+  - 11
+  DepthMinMax:
+  - 3
+  - 7
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 1
+  MaxDroneCount: 4
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - LavaPlains
+  - CrystallizedRocks
+  BiomesExcluded: 
+- Name: PromethiumResource
+  IsImportant: false
+  IsScalingCount: false
+  CountMinMax:
+  - 3
+  - 3
+  SizeMinMax:
+  - 7
+  - 11
+  DepthMinMax:
+  - 0
+  - 5
+  DistTypeCylinder:
+    MaxRadius: 8
+    YVariance: 15
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0
+  MaxDroneCount: 1
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - LavaFolds
+  - Rifts_1
+  - Hotspot
+  - Rifts
+  - CrystallizedRocks
+  - Bubble
+  - Cliffs
+  - Canyon
+  - Abyss
+  BiomesExcluded: 
+- Name: PromethiumResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 3
+  - 3
+  SizeMinMax:
+  - 4
+  - 7
+  DepthMinMax:
+  - 3
+  - 15
+  DistTypeCylinder:
+    MaxRadius: 8
+    YVariance: 15
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 0.800000012
+  MaxDroneCount: 3
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - LavaFolds
+  - Rifts_1
+  - Hotspot
+  - Rifts
+  - CrystallizedRocks
+  - Bubble
+  - Cliffs
+  - Canyon
+  - Abyss
+  BiomesExcluded: 
+- Name: ZascosiumResource
+  IsImportant: false
+  IsScalingCount: false
+  CountMinMax:
+  - 3
+  - 3
+  SizeMinMax:
+  - 7
+  - 8
+  DepthMinMax:
+  - 3
+  - 7
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 1
+  MaxDroneCount: 4
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - Hotspot
+  - Rifts_1
+  - CrystallizedRocks
+  - Cliffs
+  - Canyon
+  - Abyss
+  BiomesExcluded: 
+- Name: ZascosiumResource
+  IsImportant: false
+  IsScalingCount: true
+  CountMinMax:
+  - 3
+  - 3
+  SizeMinMax:
+  - 4
+  - 5
+  DepthMinMax:
+  - 15
+  - 30
+  DistTypeCylinder: 
+  DistTypeHelix: 
+  DistTypeWorm: 
+  DroneProb: 1
+  MaxDroneCount: 5
+  LevelMod: 
+  Faction: 
+  PlaceAt: Default
+  Biome:
+  - Hotspot
+  - Rifts_1
+  - Cliffs
+  - CrystallizedRocks
+  - Canyon
+  - Abyss
+  BiomesExcluded: 
+FixedResources: 
+AsteroidResources:
+- Name: IronResource
+  Threshold: 0.200000003
+  Amount: 0.300000012
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: CopperResource
+  Threshold: 0.200000003
+  Amount: 0.300000012
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: PromethiumResource
+  Threshold: 0.200000003
+  Amount: 0.300000012
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: SathiumResource
+  Threshold: 0.100000001
+  Amount: 0.200000003
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: ErestrumResource
+  Threshold: 0.200000003
+  Amount: 0.300000012
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+- Name: ZascosiumResource
+  Threshold: 0.200000003
+  Amount: 0.300000012
+  InitialDelay: -1
+  Delay: -1
+  DespawnDelay: 0
+Terrain: 
+MainBiome: 
+SubBiomes: 
+BiomeTextureReplacements: 
+Biome:
+- Altitude: 
+  Slope: 
+  BiomeClusterData:
+  - Name: Pole
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 11
+    - 11
+    - 0.200000003
+    Color:
+    - 0.200000003
+    - 0.400000006
+    - 0.200000003
+    SelectionCriteria:
+    - +Lat > 0.975
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers: 
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: ColdPlains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 8
+    - 11
+    - 0
+    Color:
+    - 0.100000001
+    - 0.300000012
+    - 0.699999988
+    SelectionCriteria:
+    - +Lat > 0.95
+    - Height < 190
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 0
+      - 50
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: LavaLake
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 400
+    LevelMod: 
+    AmbientSound: Lava
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 10
+    - 10
+    - -0.200000003
+    Color:
+    - 1
+    - 0
+    - 0
+    SelectionCriteria:
+    - Height < SeaLevel
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 15
+      - 1
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: LavaEdge
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 200
+    LevelMod: 
+    AmbientSound: Lava
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 0
+    - 10
+    - -0.200000003
+    Color:
+    - 1
+    - 0.699999988
+    - 0.300000012
+    SelectionCriteria:
+    - Height < SeaLevel + 15
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 0
+      - 3
+    - - 14
+      - 7
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Abyss
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 90
+    LevelMod: 
+    AmbientSound: LavaFog
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockResourceErestrum
+      - 0.01
+      - Tree
+    - - PromethiumStone
+      - 0.02
+      - Free
+    - - CrystalsPyramidBlue
+      - 0.02
+      - Free
+    - - CrystalsPyramidOrange
+      - 0.01
+      - Free
+    - - CrystalsPyramidOrange
+      - 0.04
+      - Tree
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 3
+    - 2
+    - -0.200000003
+    Color:
+    - 0.100000001
+    - 0.100000001
+    - 0.100000001
+    SelectionCriteria:
+    - Height < 80
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 3
+      - 20
+    - - 14
+      - 20
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Canyon
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 50
+    LevelMod: 
+    AmbientSound: LavaFog
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - CrystalsPyramidBlue
+      - 0.001
+      - Free
+    - - CrystalsPyramidOrange
+      - 0.001
+      - Free
+    - - CrystalsPyramidOrange
+      - 0.01
+      - Tree
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 3
+    - 2
+    - -0.200000003
+    Color:
+    - 0.180000007
+    - 0.180000007
+    - 0.180000007
+    SelectionCriteria:
+    - Height < 100
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 3
+      - 60
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Rifts_1
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 40
+    LevelMod: 
+    AmbientSound: LavaPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.007
+    - - RockGrey02Large
+      - 0.007
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 11
+    - 11
+    - 1
+    - 0
+    - 3
+    - 0.5
+    - 0.200000003
+    Color:
+    - 0.300000012
+    - 0.100000001
+    - 0.899999976
+    SelectionCriteria:
+    - false
+    StampTries: 10
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOff
+    Stamps:
+    - RiftContinent_01, 1
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 11
+      - 30
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Cliffs
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.007
+    - - RockGrey02Large
+      - 0.007
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 8
+    - 5
+    - 0.5
+    - 11
+    - 11
+    - 0.400000006
+    - 0.200000003
+    Color:
+    - 0.800000012
+    - 0.200000003
+    - 0.300000012
+    SelectionCriteria:
+    - false
+    StampTries: 20
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOff
+    Stamps:
+    - ErosionIce_01, 0.5
+    - ErosionIce_02, 0.5
+    - ErosionIce_03, 0.5
+    - CraterMoon_15, 1
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 11
+      - 30
+    - - 9
+      - 2
+    - - 11
+      - 60
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Rifts
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 30
+    LevelMod: 
+    AmbientSound: LavaFog
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 3
+    - 3
+    - 1
+    - 0
+    - 9
+    - 0.200000003
+    - 0.100000001
+    Color:
+    - 0.5
+    - 0.300000012
+    - 1
+    SelectionCriteria:
+    - false
+    StampTries: 80
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOther
+    Stamps:
+    - RiftLava_2, 0.4
+    - RiftLava_1, 0.8
+    - RiftLava_2b, 0.5
+    - RiftLava_1b, 0.5
+    - CraterLava_1, 0.15
+    - CraterLava_2, 0.08
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 2
+      - 60
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: HighMountains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: Mountains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock1Dark
+      - 0.002
+    - - RealRock2Dark
+      - 0.0005
+    - - RealRock3Dark
+      - 0.003
+    - - RealRock4Dark
+      - 0.003
+    - - RealRock8Dark
+      - 0.003
+    - - RealRock10Dark
+      - 0.003
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 7
+    - 8
+    - 0.899999976
+    - 8
+    - 7
+    - 0.899999976
+    - 0.100000001
+    Color:
+    - 1
+    - 1
+    - 1
+    SelectionCriteria:
+    - Height > 380
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 8
+      - 10
+    - - 9
+      - 150
+    - - 11
+      - 100
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Mountains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: Mountains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.007
+    - - RockGrey02Large
+      - 0.007
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 8
+    - 11
+    - 0.300000012
+    Color:
+    - 0.800000012
+    - 0.5
+    - 0.5
+    SelectionCriteria:
+    - Height > 250
+    StampTries: 0
+    StampProb: 0.300000012
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapOther
+    Stamps:
+    - Mountain_10_sp, 1, S,3,T,6
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 8
+      - 6
+    - - 9
+      - 80
+    - - 11
+      - 60
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: LowMountains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.007
+    - - RockGrey02Large
+      - 0.007
+    - - RealRock4Dark
+      - 0.009
+    - - RockResourceNeodymium
+      - 0.0025
+      - Free
+    - - RockResourceZascosium
+      - 0.01
+      - Tree
+    - - RockResourceIron
+      - 0.001
+      - Free
+    - - RockResourceIron
+      - 0.001
+      - BigPlant
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 5
+    - 4
+    - 0.5
+    - 11
+    - 11
+    - 0.5
+    - 0.200000003
+    Color:
+    - 0.600000024
+    - 0.400000006
+    - 0.400000006
+    SelectionCriteria:
+    - Height > 230
+    StampTries: 100
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOwn
+    Stamps:
+    - MountainPlateau_01_sp, 1, S,3,T,6
+    - MountainPlateau_04_sp, 1, S,3,T,6
+    - MountainPlateau_01_sp, 1, S,1,3,T
+    - MountainPlateau_04_sp, 1, S,1,3,T
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 9
+      - 60
+    - - 11
+      - 60
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: LowMountains_1
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 0
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.007
+    - - RockGrey02Large
+      - 0.007
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 5
+    - 4
+    - 0.5
+    - 11
+    - 11
+    - 0.5
+    - 0.200000003
+    Color:
+    - 0.600000024
+    - 0.349999994
+    - 0.449999988
+    SelectionCriteria:
+    - false
+    StampTries: 2000
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOff
+    Stamps:
+    - MountainPlateau_01_sp, 1, S,3,T,6
+    - MountainPlateau_01_sp, 1, S,1,3,T
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 9
+      - 60
+    - - 11
+      - 60
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: LavaPlains
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 20
+    LevelMod: 
+    AmbientSound: LavaFog
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - GasEmitter1
+      - 0.015
+    - - RealRock1Dark
+      - 0.03
+    - - RealRock2Dark
+      - 0.01
+    - - RealRock3Dark
+      - 0.03
+    - - RealRock4Dark
+      - 0.03
+    - - RealRock8Dark
+      - 0.03
+    - - RealRock10Dark
+      - 0.05
+    - - CrystalsPyramidOrange
+      - 0.0001
+      - Free
+    - - CrystalsPyramidOrange
+      - 0.001
+      - Tree
+    - - RockResourceZascosium
+      - 0.01
+      - BigPlant
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 3
+    - 3
+    - 1
+    - 2
+    - 0
+    - 0.800000012
+    - -0.200000003
+    Color:
+    - 0.180000007
+    - 0.370000005
+    - 0.319999993
+    SelectionCriteria:
+    - Height < 140
+    - Height > 135
+    StampTries: 0
+    StampProb: 0.150000006
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapOther
+    Stamps:
+    - MountainPlateau_07_sp, 1, 10,1,0,3
+    - MountainPlateau_08_sp, 0.5, 10,1,0,3
+    - MountainPlateau_07_sp, 1, S,T,10,0
+    - MountainPlateau_08_sp, 0.5, 0,T,8,3
+    - MountainEroded_01a_sp, 0.05, 0,10,8,2
+    - MountainEroded_01b_sp, 0.1, 8,0,10,2
+    - MountainEroded_01b_sp, 0.1, 9,0,3,2
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 15
+      - 1
+    - - 14
+      - 10
+    - - 10
+      - 1
+    - - 15
+      - 3
+    - - 14
+      - 1
+    - - 15
+      - 1
+    - - 14
+      - 30
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Bubble
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 20
+    LevelMod: 
+    AmbientSound: BarrenOpenPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - GasEmitter1
+      - 0.002
+      - Free
+    - - PromethiumStone
+      - 0.001
+      - Free
+    - - RockResourceCobalt
+      - 0.01
+      - BigPlant
+    - - RockResourceZascosium
+      - 0.01
+      - BigPlant
+    - - CrystalsPyramidBlue
+      - 0.001
+      - Free
+    - - CrystalsPyramidOrange
+      - 0.008
+      - Free
+    - - CrystalsPyramidOrange
+      - 0.015
+      - Tree
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 2
+    - 3
+    - 0.300000012
+    Color:
+    - 0.800000012
+    - 0.400000006
+    - 0
+    SelectionCriteria:
+    - false
+    StampTries: 1900
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapOff
+    Stamps:
+    - CraterMoon_01, 0.9
+    - CraterMoon_02, 0.7
+    - CraterMoon_03, 0.5
+    - CraterMoon_1, 0.2
+    - CraterMoon_2, 0.1
+    - CraterMoon_3, 0.07
+    IgnoreForcedBiome: true
+    Weather: 
+    UndergroundLayers:
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: CrystallizedRocks
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 30
+    LevelMod: 
+    AmbientSound: LavaFog
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - AridRock01
+      - 0.02
+    - - AridRock02
+      - 0.015
+    - - AridRock03
+      - 0.02
+    - - GasEmitter1
+      - 0.015
+    - - RealRock1Dark
+      - 0.03
+    - - RealRock2Dark
+      - 0.01
+    - - RealRock3Dark
+      - 0.03
+    - - RealRock4Dark
+      - 0.03
+    - - RealRock8Dark
+      - 0.03
+    - - RealRock10Dark
+      - 0.05
+    - - RockGrey01Large
+      - 0.007
+    - - RockGrey02Large
+      - 0.007
+    - - CrystalsPyramidOrange
+      - 0.001
+      - Free
+    - - CrystalsPyramidOrange
+      - 0.08
+      - Tree
+    - - RockResourceErestrum
+      - 0.005
+      - BigPlant
+    - - RockResourceNeodymium
+      - 0.005
+      - BigPlant
+    - - RockResourceCobalt
+      - 0.005
+      - Plant
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 1
+    - 2
+    - 0.100000001
+    Color:
+    - 0.0500000007
+    - 0.25
+    - 0.0500000007
+    SelectionCriteria:
+    - Height < 120
+    - Height > 100
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 14
+      - 1
+    - - 8
+      - 50
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: LavaFolds
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 20
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RockGrey01Large
+      - 0.007
+    - - RockGrey02Large
+      - 0.007
+    - - RockResourceSilicon
+      - 0.0005
+      - Free
+    - - RockResourceSilicon
+      - 0.001
+      - Tree
+    - - RockResourceIron
+      - 0.0001
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 3
+    - 2
+    - -0.200000003
+    Color:
+    - 0.100000001
+    - 0.310000002
+    - 0.310000002
+    SelectionCriteria:
+    - Height < 140
+    StampTries: 0
+    StampProb: 0.150000006
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapOther
+    Stamps:
+    - MountainPlateau_07_sp, 1.0, 11,5,3,6
+    - MountainPlateau_08_sp, 0.5, 11,5,3,6
+    - MountainPlateau_07_sp, 1.0, S,T,9,8
+    - MountainPlateau_08_sp, 0.5, S,T,9,8
+    - MountainPlateau_07_sp, 1.0, S,T,1,8
+    - MountainPlateau_08_sp, 0.5, S,T,2,8
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 8
+      - 70
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Hotspot
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 90
+    LevelMod: 
+    AmbientSound: BarrenOpenPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations: 
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 11
+    - 11
+    - 1
+    - 0
+    - 10
+    - 0.75
+    - 0.200000003
+    Color:
+    - 0.600000024
+    - 0.600000024
+    - 0
+    SelectionCriteria:
+    - false
+    StampTries: 100
+    StampProb: 1
+    StampForcesBiome: true
+    StampForcesBiomeType: OverlapAll
+    Stamps:
+    - CraterMoon_1, 0.9
+    - CraterMoon_3, 0.4
+    - CraterLava_3, 0.05
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: Sand
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 10
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock4Dark
+      - 0.005
+    - - RealRock3Dark
+      - 0.005
+    - - RealRock1Dark
+      - 0.005
+    - - RockGrey01Large
+      - 0.014
+    - - RockGrey01Large
+      - 0.03
+      - Free
+    - - RockGrey01Large
+      - 0.014
+      - Plant
+    - - RockGrey01Large
+      - 0.014
+      - Tree
+    - - RockGrey02Large
+      - 0.006
+    - - RockResourceCobalt
+      - 0.001
+      - Free
+    - - RockResourceSilicon
+      - 0.001
+      - Free
+    - - RockResourceSilicon
+      - 0.01
+      - Tree
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 5
+    - 11
+    - -0.100000001
+    Color:
+    - 0.449999988
+    - 0.479999989
+    - 0.449999988
+    SelectionCriteria:
+    - Humidity < 0.10
+    - Temperature > 42
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 5
+      - 2
+    - - 11
+      - 100
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: false
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+  - Name: BarrenRocks
+    Id: 0
+    Splat1: 
+    Splat2: 
+    Radiation: 0
+    Temperature: 10
+    LevelMod: 
+    AmbientSound: ArcticLowPlains
+    ClusterSize: 0
+    NbOfClusters: 0
+    DecorationItem: 
+    GrassItem: 
+    Decorations:
+    - - RealRock4Dark
+      - 0.015
+    - - RealRock3Dark
+      - 0.015
+    - - RealRock1Dark
+      - 0.015
+    - - RealRock10Dark
+      - 0.015
+    - - RockGrey01Large
+      - 0.03
+      - Free
+    - - RockGrey01Large
+      - 0.014
+      - Plant
+    - - RockGrey02Large
+      - 0.014
+      - Free
+    - - RockGrey01Large
+      - 0.07
+      - BigPlant
+    - - RockGrey02Large
+      - 0.07
+      - BigPlant
+    - - RockResourceSilicon
+      - 0.003
+      - Free
+    - - RockResourceSilicon
+      - 0.003
+      - BigPlant
+    - - RockResourceIron
+      - 0.003
+      - Free
+    - - RockResourceCopper
+      - 0.001
+      - Free
+    - - RockResourceNeodymium
+      - 0.0005
+      - Free
+    Grass: 
+    SpecialBiome: 
+    Texture:
+    - 4
+    - 6
+    - 0.550000012
+    - 11
+    - 11
+    - 0.800000012
+    - 0
+    Color:
+    - 0.349999994
+    - 0.379999995
+    - 0.430000007
+    SelectionCriteria:
+    - true
+    StampTries: 0
+    StampProb: 1
+    StampForcesBiome: false
+    StampForcesBiomeType: OverlapAll
+    Stamps: 
+    IgnoreForcedBiome: false
+    Weather: 
+    UndergroundLayers:
+    - - 11
+      - 80
+    - - 14
+      - 10
+    - - 15
+      - -1
+    - - 10
+      - 1
+    UndergroundLayersDefault: true
+    StampsForceBiome: false
+    PoleBiome: false
+    FixedPosition: 
+POIs:
+  Random:
+  - GroupName: PolarisLavaMining
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0.200000003
+    TroopTransport: true
+    Drones:
+      Min: 0
+      Max: 1
+    DronesMinMax:
+    - 0
+    - 1
+    ReserveCount: 3
+    Properties:
+    - Key: Music
+      Value: lava
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - TOP
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 500
+    - 1500
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: PolarisLavaMiningAux
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0.200000003
+    TroopTransport: true
+    Drones:
+      Min: 0
+      Max: 1
+    DronesMinMax:
+    - 0
+    - 1
+    ReserveCount: 3
+    Properties:
+    - Key: Music
+      Value: lava
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PolarisLavaMining
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 500
+    - 800
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: DroneBaseT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: DroneBaseSetup
+    PlanetVesselBaseSetup: 
+    Faction: Zirax
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: true
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 3
+      Max: 5
+    DronesMinMax:
+    - 3
+    - 5
+    ReserveCount: 5
+    Properties:
+    - Key: HudDistance
+      Value: 700
+    - Key: Music
+      Value: moonstone
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource:
+    - ZascosiumResource:1-1
+    - CopperResource:0-1
+    - PentaxidResource:3-3
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange:
+    - 80
+    - 350
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: PolarisLogisticsMain
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - DroneBaseT1
+    SpawnResource:
+    - CopperResource:1-1
+    - PentaxidResource:0-1
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 3000
+    SpawnPOIAvoidDistance: 3000
+    ResourceDistance: 0
+    SpawnResourceRange:
+    - 150
+    - 300
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosBunker
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 2
+      Max: 4
+    DronesMinMax:
+    - 2
+    - 4
+    ReserveCount: 5
+    Properties:
+    - Key: Music
+      Value: Encryptor
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - PolarisLogisticsMain
+    SpawnResource:
+    - SathiumResource:1-2
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 3000
+    SpawnPOIAvoidDistance: 3000
+    ResourceDistance: 0
+    SpawnResourceRange:
+    - 80
+    - 100
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosMain
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 2
+      Max: 3
+    DronesMinMax:
+    - 2
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - PolarisLogisticsMain
+    SpawnResource:
+    - PromethiumResource:1-2
+    - ZascosiumResource:0-1
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 3000
+    SpawnPOIAvoidDistance: 3000
+    ResourceDistance: 0
+    SpawnResourceRange:
+    - 80
+    - 100
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: DroneBaseT3
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: DroneBaseSetup
+    PlanetVesselBaseSetup: 
+    Faction: Zirax
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 4
+      Max: 6
+    DronesMinMax:
+    - 4
+    - 6
+    ReserveCount: 4
+    Properties:
+    - Key: Music
+      Value: Encryptor
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - DroneBaseT1
+    - RadosMain
+    - RadosBunker
+    - PolarisLogisticsMain
+    SpawnResource:
+    - ZascosiumResource:1-1
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 2000
+    SpawnPOIAvoidDistance: 2000
+    ResourceDistance: 0
+    SpawnResourceRange:
+    - 100
+    - 200
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: PlanetVesselBase
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Zirax
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 4
+      Max: 6
+    DronesMinMax:
+    - 4
+    - 6
+    ReserveCount: 3
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - PolarisLogisticsMain
+    - DroneBaseT1
+    - DroneBaseT3
+    SpawnResource:
+    - PentaxidResource:0-1
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 3000
+    SpawnPOIAvoidDistance: 3000
+    ResourceDistance: 0
+    SpawnResourceRange:
+    - 80
+    - 100
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: SerduTierI
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Serdu
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: false
+    Drones:
+      Min: 2
+      Max: 2
+    DronesMinMax:
+    - 2
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: Music
+      Value: EvilWhispering
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - DroneBaseT1
+    - PlanetVesselBase
+    - RadosMain
+    - RadosBunker
+    - DroneBaseT3
+    - PolarisLogisticsMain
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 3000
+    SpawnPOIAvoidDistance: 3000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LavaPlains
+    BiomesExcluded: 
+  - GroupName: RuinsTribalTower
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 1
+    DronesMinMax:
+    - 1
+    - 1
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - DroneBaseT1
+    - PlanetVesselBase
+    - RadosMain
+    - RadosBunker
+    - DroneBaseT3
+    - PolarisLogisticsMain
+    SpawnResource:
+    - PentaxidResource:0-1
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 3000
+    SpawnPOIAvoidDistance: 3000
+    ResourceDistance: 0
+    SpawnResourceRange:
+    - 80
+    - 100
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: KrielMain
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Kriel
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: AlteredPhase
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: KrielDefenseT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Kriel
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 4
+    CountMinMax:
+    - 1
+    - 4
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: AlteredPhase
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: PiratesAux
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Pirates
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 0
+      Max: 3
+    CountMinMax:
+    - 0
+    - 3
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: XenuRadarTurretRocket
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Xenu
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 3
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - DroneBaseT1
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 150
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosAuxT2
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0.899999976
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - DroneBaseT1
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosDefenceT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 3
+      Max: 3
+    CountMinMax:
+    - 3
+    - 3
+    DroneProb: 0.699999988
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - DroneBaseT1
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 400
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosAuxT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 3
+      Max: 3
+    DronesMinMax:
+    - 3
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RadosMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosDefenceT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 4
+    CountMinMax:
+    - 2
+    - 4
+    DroneProb: 0.699999988
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RadosMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 250
+    - 400
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosMain
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 2
+      Max: 3
+    DronesMinMax:
+    - 2
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RadosBunker
+    SpawnPOIAvoid: 
+    SpawnResource:
+    - ZascosiumResource:0-1
+    - ErestrumResource:0-1
+    - PromethiumResource:0-1
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 200
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange:
+    - 80
+    - 350
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosAuxT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 3
+    DronesMinMax:
+    - 1
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RadosBunker
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 150
+    - 400
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosDefenceT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0.699999988
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RadosBunker
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 300
+    - 550
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: JunkT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RadosBunker
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 300
+    - 650
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosAuxT2
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 3
+    DronesMinMax:
+    - 1
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PlanetVesselBase
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosDefenceT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 4
+    CountMinMax:
+    - 2
+    - 4
+    DroneProb: 0.699999988
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PlanetVesselBase
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 250
+    - 400
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: CrashedShip
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 0
+      Max: 1
+    CountMinMax:
+    - 0
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 2
+      Max: 3
+    DronesMinMax:
+    - 2
+    - 3
+    ReserveCount: 3
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: HudDistance
+      Value: 200
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PlanetVesselBase
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 500
+    - 700
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: XenuComArray
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Xenu
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - DroneBaseT3
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 180
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: XenuAuxT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Xenu
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - DroneBaseT3
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 200
+    - 350
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: XenuRadarTurret
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Xenu
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0.699999988
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - DroneBaseT3
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 250
+    - 400
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: CrashedShip
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0.800000012
+    TroopTransport: false
+    Drones:
+      Min: 2
+      Max: 2
+    DronesMinMax:
+    - 2
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - DroneBaseT3
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 150
+    - 400
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: TS_Metal_Waypoint
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PolarisLogisticsMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 200
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: PolarisLogisticsAux
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PolarisLogisticsMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: MiningStationAux
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PolarisLogisticsMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: PolarisIndustrialAux
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PolarisLogisticsMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 250
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: PolarisDefence
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 3
+      Max: 3
+    CountMinMax:
+    - 3
+    - 3
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PolarisLogisticsMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 300
+    - 400
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: Wreckage
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PolarisLogisticsMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 200
+    - 500
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: JunkT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - PolarisLogisticsMain
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 200
+    - 500
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: PolarisLavaMining
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0.600000024
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 3
+    Properties:
+    - Key: Music
+      Value: lava
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - TOP
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 500
+    - 3500
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: PolarisLavaMiningAux
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Polaris
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0.600000024
+    TroopTransport: true
+    Drones:
+      Min: 0
+      Max: 1
+    DronesMinMax:
+    - 0
+    - 1
+    ReserveCount: 3
+    Properties:
+    - Key: Music
+      Value: lava
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - TOP
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 500
+    - 3500
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: GhystAuxT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Zirax
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: false
+    Drones:
+      Min: 5
+      Max: 6
+    DronesMinMax:
+    - 5
+    - 6
+    ReserveCount: 2
+    Properties:
+    - Key: Music
+      Value: DarkSoundscape2
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - RuinsTribalTower
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 150
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: EggsLarge
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - SerduTierI
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 150
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: Eggs
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 3
+      Max: 4
+    CountMinMax:
+    - 3
+    - 4
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - SerduTierI
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 100
+    - 150
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: NullPOI
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: 
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 5
+      Max: 5
+    CountMinMax:
+    - 5
+    - 5
+    DroneProb: 0.300000012
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - PolarisLogisticsMain
+    - NullPOI
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 1000
+    SpawnPOIAvoidDistance: 1000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - BarrenRocks
+    - Sand
+    - LavaPlains
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosAuxT2
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 2
+      Max: 2
+    CountMinMax:
+    - 2
+    - 2
+    DroneProb: 0.300000012
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - NullPOI
+    SpawnPOIAvoid:
+    - RadosAuxT1
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 200
+    - 500
+    SpawnPOIAvoidDistance: 1000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded:
+    - Plains
+  - GroupName: RadosDefenceT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 2
+      Max: 4
+    CountMinMax:
+    - 2
+    - 4
+    DroneProb: 0.699999988
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear:
+    - NullPOI
+    SpawnPOIAvoid:
+    - RadosDefenceT1
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 200
+    - 500
+    SpawnPOIAvoidDistance: 800
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded: 
+  - GroupName: RadosAuxT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - RadosAuxT1
+    - SerduTierI
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 800
+    SpawnPOIAvoidDistance: 800
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - Sand
+    - BarrenRocks
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosSurvey
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 3
+    CountMinMax:
+    - 1
+    - 3
+    DroneProb: 0.5
+    TroopTransport: true
+    Drones:
+      Min: 1
+      Max: 2
+    DronesMinMax:
+    - 1
+    - 2
+    ReserveCount: 3
+    Properties:
+    - Key: HudDistance
+      Value: 100
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - Sand
+    - BarrenRocks
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: RadosDefenceT1
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Rados
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: true
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 7
+      Max: 7
+    CountMinMax:
+    - 7
+    - 7
+    DroneProb: 0.800000012
+    TroopTransport: false
+    Drones:
+      Min: 2
+      Max: 3
+    DronesMinMax:
+    - 2
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - RadosDefenceT1
+    - SerduTierI
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 500
+    SpawnPOIAvoidDistance: 500
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - Sand
+    - BarrenRocks
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: Eggs
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 2
+      Max: 4
+    CountMinMax:
+    - 2
+    - 4
+    DroneProb: 0
+    TroopTransport: false
+    Drones:
+      Min: 0
+      Max: 0
+    DronesMinMax:
+    - 0
+    - 0
+    ReserveCount: 0
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - RadosAuxT1
+    - RadosBunker
+    - DroneBaseT1
+    - PolarisLogisticsMain
+    - PolarisIndustrialAux
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 400
+    SpawnPOIAvoidDistance: 400
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: Wreckage
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 2
+      Max: 4
+    CountMinMax:
+    - 2
+    - 4
+    DroneProb: 0.5
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 3
+    DronesMinMax:
+    - 1
+    - 3
+    ReserveCount: 2
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - Sand
+    - LavaFolds
+    - BarrenRocks
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: CrashedShip
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 1
+    TroopTransport: false
+    Drones:
+      Min: 2
+      Max: 3
+    DronesMinMax:
+    - 2
+    - 3
+    ReserveCount: 4
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - LavaPlains
+    - Bubble
+    - Rifts
+    - Rifts_1
+    - CrystallizedRocks
+    - Hotspot
+    - Canyon
+    - Abyss
+    BiomesExcluded: 
+  - GroupName: Ruins
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 2
+      Max: 3
+    CountMinMax:
+    - 2
+    - 3
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - Sand
+    - BarrenRocks
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: JunkT3_Engine
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: None
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - Rifts
+    - Rifts_1
+    - CrystallizedRocks
+    - Canyon
+    - Abyss
+    - LavaEdge
+    BiomesExcluded: 
+  - GroupName: Artifacts
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Alien
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: true
+    Count:
+      Min: 1
+      Max: 1
+    CountMinMax:
+    - 1
+    - 1
+    DroneProb: 0
+    TroopTransport: false
+    Drones: 
+    DronesMinMax: 
+    ReserveCount: 0
+    Properties:
+    - Key: Music
+      Value: EvilWhispering
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome: 
+    BiomesExcluded:
+    - ColdPlains
+  - GroupName: AbandonedPOI
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: Alien
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: false
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 1
+    TroopTransport: true
+    Drones:
+      Min: 2
+      Max: 3
+    DronesMinMax:
+    - 2
+    - 3
+    ReserveCount: 3
+    Properties:
+    - Key: Music
+      Value: lava
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid: 
+    SpawnResource: 
+    PlaceAt: Default
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange: 
+    SpawnPOIAvoidDistance: 0
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - Rifts_1
+    - Sand
+    - LavaFolds
+    - BarrenRocks
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    BiomesExcluded: 
+  - GroupName: ArtifactsFloating
+    UseEachGroupPoiOnlyOnce: false
+    DroneBaseSetup: 
+    PlanetVesselBaseSetup: 
+    Faction: 
+    Territory: true
+    AvoidFactionTerritory: false
+    NoShieldReload: false
+    IsCommandCenter: false
+    Type: 
+    IsImportant: true
+    AuxiliaryPOIs: 
+    IsAuxPOI: false
+    IsScalingCount: false
+    Count:
+      Min: 1
+      Max: 2
+    CountMinMax:
+    - 1
+    - 2
+    DroneProb: 0
+    TroopTransport: false
+    Drones:
+      Min: 1
+      Max: 1
+    DronesMinMax:
+    - 1
+    - 1
+    ReserveCount: 1
+    Properties:
+    - Key: MapMarker
+      Value: Neutral
+    - Key: Music
+      Value: EvilWhispering
+    - Key: SI
+      Value: Off
+    - Key: RegenAfter
+      Value: 120
+    InitPower: false
+    LevelMod: 
+    PlayerStart: false
+    SpawnPOINear: 
+    SpawnPOIAvoid:
+    - ArtifactsFloating
+    SpawnResource: 
+    PlaceAt: Terrain, OnWater
+    SpaceDefenseOverrideDefaults: false
+    SpaceDefenseProbability: 0
+    SpaceDefensePrice: 
+    SpaceDefensePriceMinMax: 
+    POIDistance: 0
+    SpawnPOINearDistance: 0
+    SpawnPOINearRange:
+    - 80
+    - 4000
+    SpawnPOIAvoidDistance: 4000
+    ResourceDistance: 0
+    SpawnResourceRange: 
+    Biome:
+    - Rifts_1
+    - Rifts
+    - Hotspot
+    - Canyon
+    - Abyss
+    - LavaEdge
+    - LavaLake
+    BiomesExcluded: 
+  Fixed: 
+  FixedPlayerStart:
+  - Mode: Debug
+    SubMode: 
+    Spawn: Position
+    Pos:
+    - 0
+    - 120
+    - 0
+    RotY: 0
+    Structure: 
+    Items: 
+    Armor: ArmorLight
+    Status: 
+    PlayerArmor: 
+  - Mode: Survival
+    SubMode: 
+    Spawn: EscapePod
+    Pos: 
+    RotY: 0
+    Structure: 
+    Items: 
+    Armor: ArmorMedium
+    Status: 
+    PlayerArmor: 
+DroneBaseSetup:
+  Random:
+  - GroupName: DroneBaseSetup
+    DroneBaseSetup: 
+    Faction: 
+    DronesMinMax: 
+    ReserveCount: 0
+    DroneProb: 0
+    Difficulty: 7
+    PresetStyle: 3
+    BaseAttack: 
+    Stock:
+    - Name: DroneSmallFast01Plasma
+      Amount: 500
+      Extra: 0
+    - Name: DroneSmallFast01Rocket
+      Amount: 300
+      Extra: 0
+    - Name: EnemyDroneV2Plasma
+      Amount: 100
+      Extra: 0
+    - Name: DroneLargeSlow02Cannon
+      Amount: 100
+      Extra: 0
+    - Name: DroneBomberAttackBase
+      Amount: Infinite
+      Extra: 1
+    - Name: DroneSmallFast01Plasma
+      Amount: Infinite
+      Extra: 1
+    - Name: EnemyDroneV2Plasma
+      Amount: Infinite
+      Extra: 1
+    - Name: DroneTroopsTransport
+      Amount: Infinite
+      Extra: 2
+    - Name: ZiraxRocket
+      Amount: 500
+      Extra: 3
+    - Name: TurretRobotV2
+      Amount: 250
+      Extra: 3
+    - Name: Mechanoid
+      Amount: 250
+      Extra: 3
+    - Name: ArmoredGolem
+      Amount: 100
+      Extra: 3
+    PlanetVesselBase:
+      Name: PlanetVesselBaseSetup
+      Faction: Rados
+      Position3D:
+      - 0
+      - 102
+      - 0
+      BaseType: PlanetVesselBase
+      KeyId: 0
+      PlanetVessel:
+      - Name: Patrol-Rados-S-Easy-HG
+        Faction: Rados
+        Mission: PlanetPatrol
+        FixedMaxSpeed: 45
+        RangePatrolCenter: 
+        RangePatrolRadius: 0
+        RangePatrolAltitude: 0
+        RangePatrolAvoidArea: 
+        RespawnDelay: 12
+        InitialDelay: 0
+        UseMainDroneBaseAsBase: false
+        AttackDistToGround: 
+        RangePatrolTask:
+          Position3D:
+          - 16000
+          - 80
+          - 0
+          Radius: 1000
+          DistToGround: 100
+          RangePatrolAvoidArea: 
+          IsAllowToReturnToBaseWhenOver: false
+        AttackCVCircleAround:
+          DistToTarget: 220
+        Stock: 
+        Properties: 
+  Fixed: 
+TroopsTransportContent: 
+DroneSpawning:
+  Random:
+  - DronesMinMax:
+    - 4
+    - 6
+    CenterX: -7500
+    Radius: 8000
+  - DronesMinMax:
+    - 3
+    - 5
+    CenterX: -7500
+    Radius: 4000
+  - DronesMinMax:
+    - 4
+    - 6
+    CenterX: -5000
+    Radius: 8000
+  - DronesMinMax:
+    - 3
+    - 5
+    CenterX: -5000
+    Radius: 4000
+  - DronesMinMax:
+    - 4
+    - 6
+    CenterX: -2500
+    Radius: 8000
+  - DronesMinMax:
+    - 3
+    - 5
+    CenterX: -2500
+    Radius: 4000
+  - DronesMinMax:
+    - 4
+    - 6
+    CenterX: 0
+    Radius: 8000
+  - DronesMinMax:
+    - 3
+    - 5
+    CenterX: 0
+    Radius: 4000
+  - DronesMinMax:
+    - 4
+    - 6
+    CenterX: 2500
+    Radius: 8000
+  - DronesMinMax:
+    - 3
+    - 5
+    CenterX: 2500
+    Radius: 4000
+  - DronesMinMax:
+    - 4
+    - 6
+    CenterX: 5000
+    Radius: 8000
+  - DronesMinMax:
+    - 3
+    - 5
+    CenterX: 5000
+    Radius: 4000
+  - DronesMinMax:
+    - 4
+    - 6
+    CenterX: 7500
+    Radius: 8000
+  - DronesMinMax:
+    - 3
+    - 5
+    CenterX: 7500
+    Radius: 4000
+  Fixed: 
+CreatureSpawning:
+- Biome: 
+  Biomes:
+  - Sand
+  - BarrenRocks
+  - LavaPlains
+  - LavaFolds
+  - CrystallizedRocks
+  - Hotspot
+  Entities:
+  - Name: ZiraxMechanoidPatrol
+    Amount: 25
+    Color: 1.0, 0.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - -1
+    - -1
+    Period: Always
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+- Biome: 
+  Biomes:
+  - Rifts_1
+  - LavaPlains
+  - CrystallizedRocks
+  - Bubble
+  - Canyon
+  - Abyss
+  - Cliffs
+  Entities:
+  - Name: TotalHorrors
+    Amount: 25
+    Color: 1.0, 1.0, 1.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 20
+    - 24
+    Period: Always
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+  - Name: AlienAssassinReds
+    Amount: 25
+    Color: 1.0, 0.5, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 20
+    - 24
+    Period: Always
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+- Biome: 
+  Biomes:
+  - Canyon
+  - Abyss
+  Entities:
+  - Name: AlienBugs02
+    Amount: 15
+    Color: 1.0, 0.0, 1.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - 25
+    - 48
+    Period: Always
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+- Biome: 
+  Biomes:
+  - LowMountains
+  - LowMountains_1
+  - Mountains
+  Entities:
+  - Name: AlienBugs03
+    Amount: 15
+    Color: 0.5, 1.0, 0.0
+    Biomes: 
+    AllowInWater: false
+    DelayMinMax:
+    - -1
+    - -1
+    Period: Day
+    Delay: -1
+    RestrictY: 
+    RestrictYMinMax: 
+SpawnRateZones: 
+SpawnZones:
+- SpawnAt:
+  - CrashedShip
+  - GhystAuxT1
+  - RuinsTribalTower
+  BiomesExcluded:
+  - HighMountains
+  Radius: 100
+  RadiusRandom: 0
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.2, 0.2, 1.0
+  Entities:
+  - Names:
+    - ZiraxMechanoidPatrol
+    Biomes:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    Amount: 400
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - CrashedShip
+  - GhystAuxT1
+  BiomesExcluded:
+  - HighMountains
+  Radius: 500
+  RadiusRandom: 50
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.2, 0.2, 1.0
+  Entities:
+  - Names:
+    - ZiraxMechanoidPatrol
+    Biomes:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    Amount: 20
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - CrashedShip
+  - Artifacts
+  - AbandonedPOI
+  - Wreckage
+  - JunkT3_Engine
+  BiomesExcluded:
+  - HighMountains
+  Radius: 100
+  RadiusRandom: 50
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.5, 0.0, 1.0
+  Entities:
+  - Names:
+    - AlienAssassinReds
+    Biomes:
+    - CrystallizedRocks
+    - LavaPlains
+    - BarrenRocks
+    - Rifts
+    - Rifts_1
+    - Canyon
+    - Abyss
+    Amount: 1000
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - CrashedShip
+  - Artifacts
+  - AbandonedPOI
+  - Wreckage
+  - JunkT3_Engine
+  BiomesExcluded:
+  - HighMountains
+  Radius: 100
+  RadiusRandom: 50
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 1.0, 1.0, 0.8
+  Entities:
+  - Names:
+    - TotalHorrors
+    Biomes:
+    - CrystallizedRocks
+    - LavaPlains
+    - BarrenRocks
+    - Rifts
+    - Rifts_1
+    - Canyon
+    - Abyss
+    Amount: 200
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - CrashedShip
+  - Artifacts
+  - AbandonedPOI
+  - Wreckage
+  - JunkT3_Engine
+  BiomesExcluded:
+  - HighMountains
+  Radius: 100
+  RadiusRandom: 50
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.0, 1.0, 0.8
+  Entities:
+  - Names:
+    - AlienBugs02
+    Biomes:
+    - CrystallizedRocks
+    - LavaPlains
+    - BarrenRocks
+    - Rifts
+    - Rifts_1
+    - Canyon
+    - Abyss
+    Amount: 100
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - CrashedShip
+  - Artifacts
+  - AbandonedPOI
+  - Wreckage
+  - JunkT3_Engine
+  BiomesExcluded:
+  - HighMountains
+  Radius: 500
+  RadiusRandom: 80
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.5, 0.0, 1.0
+  Entities:
+  - Names:
+    - AlienAssassinReds
+    Biomes:
+    - CrystallizedRocks
+    - LavaPlains
+    - BarrenRocks
+    - Rifts
+    - Rifts_1
+    - Canyon
+    - Abyss
+    Amount: 200
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - ZascosiumResource
+  - ErestrumResource
+  - GoldResource
+  - PentaxidResource
+  - PromethiumResource
+  BiomesExcluded:
+  - HighMountains
+  Radius: 400
+  RadiusRandom: 25
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.5, 0.0, 1.0
+  Entities:
+  - Names:
+    - AlienAssassinReds
+    Biomes:
+    - Sand
+    - BarrenRocks
+    - LavaFolds
+    - CrystallizedRocks
+    - LavaPlains
+    - Hotspot
+    - Rifts
+    - Rifts_1
+    - Canyon
+    - Abyss
+    Amount: 500
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - ZascosiumResource
+  - PentaxidResource
+  BiomesExcluded:
+  - HighMountains
+  Radius: 100
+  RadiusRandom: 0
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.0, 1.0, 1.0
+  Entities:
+  - Names:
+    - AlienBugs02
+    Biomes:
+    - Hotspot
+    - CrystallizedRocks
+    - LavaFolds
+    - LavaPlains
+    - BarrenRocks
+    - Rifts
+    - Rifts_1
+    - Canyon
+    - Abyss
+    Amount: 300
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - ZascosiumResource
+  - ErestrumResource
+  - PentaxidResource
+  BiomesExcluded:
+  - HighMountains
+  Radius: 100
+  RadiusRandom: 0
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 1.0, 1.0, 1.0
+  Entities:
+  - Names:
+    - TotalHorrors
+    Biomes:
+    - Hotspot
+    - CrystallizedRocks
+    - LavaFolds
+    - LavaPlains
+    - BarrenRocks
+    - Rifts
+    - Rifts_1
+    - Canyon
+    - Abyss
+    Amount: 800
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - ZascosiumResource
+  - ErestrumResource
+  - PentaxidResource
+  BiomesExcluded:
+  - HighMountains
+  Radius: 100
+  RadiusRandom: 0
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.5, 0.0, 1.0
+  Entities:
+  - Names:
+    - AlienAssassinReds
+    Biomes:
+    - Sand
+    - BarrenRocks
+    - LavaFolds
+    - CrystallizedRocks
+    - LavaPlains
+    - Hotspot
+    - Rifts
+    - Rifts_1
+    - Canyon
+    - Abyss
+    Amount: 3000
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - 20
+    - 24
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - DroneBaseT1
+  - RadosMain
+  - RadosAuxT1
+  BiomesExcluded:
+  - HighMountains
+  Radius: 2000
+  RadiusRandom: 0
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 1
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.0, 0.0, 1.0
+  Entities:
+  - Names:
+    - ZiraxMechanoidPatrol
+    Biomes:
+    - Sand
+    - BarrenRocks
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    Amount: 8
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - DroneBaseT1
+  - RadosBunker
+  - PlanetVesselBase
+  - DroneBaseT3
+  BiomesExcluded:
+  - HighMountains
+  Radius: 1000
+  RadiusRandom: 100
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.200000003
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.0, 0.0, 1.0
+  Entities:
+  - Names:
+    - ZiraxMinigunPatrol
+    - ZiraxRocketPatrol
+    - ZiraxShotgunPatrol
+    - ZiraxMechanoidPatrol
+    Biomes:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    Amount: 250
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - DroneBaseT1
+  - RadosBunker
+  - PlanetVesselBase
+  - DroneBaseT3
+  BiomesExcluded:
+  - HighMountains
+  Radius: 100
+  RadiusRandom: 100
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.200000003
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.0, 0.0, 1.0
+  Entities:
+  - Names:
+    - ZiraxMinigunPatrol
+    - ZiraxRocketPatrol
+    - ZiraxShotgunPatrol
+    - ZiraxMechanoidPatrol
+    Biomes:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    Amount: 500
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - SerduTierI
+  BiomesExcluded: 
+  Radius: 150
+  RadiusRandom: 0
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.0, 0.0, 1.0
+  Entities:
+  - Names:
+    - ZiraxMinigunPatrol
+    - ZiraxRocketPatrol
+    Biomes:
+    - Any
+    Amount: 2000
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - EggsLarge
+  BiomesExcluded: 
+  Radius: 200
+  RadiusRandom: 0
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 1
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 1.0, 0.0, 1.0, 1.0
+  Entities:
+  - Names:
+    - AlienBugs02
+    Biomes:
+    - Any
+    Amount: 200
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always
+- SpawnAt:
+  - Eggs
+  BiomesExcluded:
+  - HighMountains
+  Radius: 300
+  RadiusRandom: 0
+  RateMultiplyerCenter: 1
+  RateMultiplyerEdge: 0.5
+  SpawnOnlyIfPoiIsAlien: false
+  Color: 0.5, 1.0, 0.0, 1.0
+  Entities:
+  - Names:
+    - AlienBugs03
+    Biomes:
+    - LowMountains
+    - LowMountains_1
+    - Mountains
+    Amount: 400
+    Color: 0.2, 1.0, 0.2, 0.5
+    DelayMinMax:
+    - -1
+    - -1
+    AllowInWater: false
+    Period: Always

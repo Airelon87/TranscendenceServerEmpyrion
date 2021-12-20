@@ -1,0 +1,542 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.5.1874, Playfield Version: 10.0.0 [2446] (Alpha EXPERIMENTAL 10)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -95
+PlayfieldLevel: 5
+IsOrbitPlayfield: True
+Music: moonstone
+Description: Talon Controlled Space, The Zirax and Polaris have been known to trespass in the area.
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 2
+LandClaimZone: Device
+SunFlare: EnvironmentalEffects/PrefabNebulaBlueYellow
+# Stars: SkyboxStarsRed
+# Nebula: PrefabNebulaRed
+Build: 2099
+Radiation: 1.7
+PvP: False
+UseFixed: True
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+POIs:
+   Fixed:
+   -  Type: AsteroidFieldBoxExclude
+      Name: Asteroid Field
+      Pos: [0, 0, 0]
+      Rot: [-81, -143, 135]
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-994, 4960, 3969]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-4305, -2058, 3382]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-994, 4960, 3969]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-4305, -2058, 3382]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-994, -4960, 3969]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-4305, 2058, 3382]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [-994, 4960, -3969]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-4305, -2058, -3382]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel03Neodymium
+      Prefab: AsteroidVoxel03Neodymium
+      Name: Neodymium Asteroid
+      Pos: [-4459, -421, 8619]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [-5459, 421, 8619]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel03Silicon
+      Prefab: AsteroidVoxel03Silicon
+      Name: Silicon Asteroid
+      Pos: [-5725, -3735, -6986]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Sathium
+      Prefab: AsteroidVoxel02Sathium
+      Name: Sathium Asteroid
+      Pos: [-5925, -1735, -7286]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel03Promethium
+      Prefab: AsteroidVoxel03Promethium
+      Name: Promethium Asteroid
+      Pos: [-5592, 2975, -7367]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [-5892, 2275, -7767]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Zascosium
+      Prefab: AsteroidVoxel02Zascosium
+      Name: Zascosium Asteroid
+      Pos: [-7355, 3175, -5080]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [-7855, 3175, -5480]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel03Zascosium
+      Prefab: AsteroidVoxel03Zascosium
+      Name: Zascosium Asteroid
+      Pos: [7396, 2741, -5308]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Sathium
+      Prefab: AsteroidVoxel02Sathium
+      Name: Sathium Asteroid
+      Pos: [7855, 3175, 5480]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Zascosium
+      Prefab: AsteroidVoxel02Zascosium
+      Name: Zascosium Asteroid
+      Pos: [-776, 1042, -8982]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [7855, 3175, -5480]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [3358, -5072, -7437]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [8855, -1175, 6480]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+   -  Type: BA_Alien
+      Prefab: TalonSpaceVillage
+      Mode: Survival
+      Name: TalonSpaceVillage
+      Pos: [-6944, -1006, -7137]
+      Rot: [0, 0, 0]
+      Faction: Talon
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: NebularClouds
+      -  Key: RegenAfter
+         Value: 120
+      -  Key: StationInterface
+         Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1,IfNeutral:0.2,IfHonored:-0.20"
+   -  Type: BA_Alien
+      Prefab: TalonSpaceVillage
+      Mode: Survival
+      Name: TalonSpaceVillage
+      Pos: [7944, 500, 4137]
+      Rot: [0, 0, 0]
+      Faction: Talon
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: NebularClouds
+      -  Key: RegenAfter
+         Value: 120
+      -  Key: StationInterface
+         Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1,IfNeutral:0.2,IfHonored:-0.20"
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [7191.875, 3504.522, 5759.554]
+      DroneOnDuty:
+      -  Name: SpaceDroneLaser
+         Pos: [3473.703, 1450.417, -7973.273]
+         Radius: 530
+      -  Name: SpaceDroneLaser
+         Pos: [7713.643, 1189.904, 6859.815]
+         Radius: 775
+      SpaceVessel:
+      -  Name: TalonShipSpace
+         Faction: Talon
+         FixedMaxSpeed: 16
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-5860, -1611, 1191]
+            - [-3744, 3093, -4234]
+            - [1695, 6791, -5062]
+            - [4686, 4678, -952]
+            - [3574, 5288, 4042]
+            - [-1801, 785, 5379]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 4
+            Extra: 1
+      -  Name: TalonShipSpace
+         Faction: Talon
+         FixedMaxSpeed: 16
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-4032, 2440, -4028]
+            - [-5378, 6184, 2]
+            - [-3800, -315, 3803]
+            - [2, -861, 4756]
+            - [3213, 7009, 3210]
+            - [3906, -5397, -1]
+            - [2489, -7217, -2491]
+            - [-1, 2685, -3534]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 3
+            Extra: 1
+      -  Name: TalonShipSpace
+         Faction: Talon
+         FixedMaxSpeed: 16
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [3597, -458, 3671]
+            - [5013, -494, 489]
+            - [4634, -3120, -3175]
+            - [1316, -699, -4723]
+            - [-2203, 3434, -4852]
+            - [-4114, -6951, -1969]
+            - [-4666, 4554, 1199]
+            - [-2613, 3414, 3652]
+            - [341, 3348, 4422]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 4
+            Extra: 1
+      -  Name: FungalShipSpace
+         Faction: Talon
+         FixedMaxSpeed: 10
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-6580, -909, 6871]
+            - [-8927, 2533, 193]
+            - [-6085, 5150, -5827]
+            - [-158, -7907, -7309]
+            - [4562, -9088, -4764]
+            - [6423, -8285, -139]
+            - [4061, 5464, 3889]
+            - [137, -4846, 6350]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 40
+            Extra: 1
+      -  Name: ZiblaxCruiser
+         Faction: Zirax
+         FixedMaxSpeed: 34
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [7478, 7810, -2932]
+            - [9980, 9840, 3356]
+            - [4731, 4915, 7748]
+            - [-1391, -9446, 9211]
+            - [-6338, 6742, 5590]
+            - [-8854, 8816, 218]
+            - [-7910, 1378, -6312]
+            - [-1973, -8920, -9777]
+            - [4317, 3921, -7922]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 3
+            Extra: 1
+      -  Name: ZiblaxCruiser
+         Faction: Zirax
+         FixedMaxSpeed: 23
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [7592, -2821, -4939]
+            - [8066, -3057, 983]
+            - [6364, -8196, 6813]
+            - [538, 3046, 10118]
+            - [-6670, -8335, 8867]
+            - [-10925, 4450, 2531]
+            - [-11471, -5376, -5832]
+            - [-4871, 1707, -11449]
+            - [3746, 5006, -12292]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 4
+            Extra: 1
+      -  Name: FungalShipSpace
+         Faction: Talon
+         FixedMaxSpeed: 23
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [7000, -821, 7000]
+            - [-7000, -821, 7000]
+            - [-7000, -821, -7000]
+            - [7000, -821, -7000]
+            - [7000, 821, 7000]
+            - [-7000, 821, 7000]
+            - [-7000, 821, -7000]
+            - [7000, 821, -7000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 8
+            Extra: 1
+      -  Name: FungalShipSpace
+         Faction: Talon
+         FixedMaxSpeed: 20
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [7000, -1121, 7000]
+            - [-7000, -1121, 7000]
+            - [-7000, -1121, -7000]
+            - [7000, -1121, -7000]
+            - [7000, 421, 7000]
+            - [-7000, 421, 7000]
+            - [-7000, 421, -7000]
+            - [7000, 421, -7000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 8
+            Extra: 1
+      -  Name: ZiblaxCarrier
+         Faction: Zirax
+         FixedMaxSpeed: 39
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [-5735.036, -469.9689, -8506.97]
+            Radius: 1446
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 50
+            Extra: 1
+      -  Name: ZiblaxCarrier
+         Faction: Zirax
+         FixedMaxSpeed: 39
+         Mission: SpacePatrol
+         Properties:
+         -  Key: RegenAfter
+            Value: 60
+         RangePatrol:
+            Position3D: [5735.036, -469.9689, 8506.97]
+            Radius: 1446
+         Immobile: {}
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 50
+            Extra: 1
+      -  Name: ZiblaxCarrier
+         Faction: Zirax
+         FixedMaxSpeed: 39
+         Mission: SpacePatrol
+         Properties:
+         -  Key: RegenAfter
+            Value: 60
+         RangePatrol:
+            Position3D: [5735.036, 469.9689, -8506.97]
+            Radius: 1446
+         Immobile: {}
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 50
+            Extra: 1
+      -  Name: FungalShipSpace
+         Faction: Talon
+         FixedMaxSpeed: 39
+         Mission: SpacePatrol
+         Properties:
+         -  Key: RegenAfter
+            Value: 60
+         RangePatrol:
+            Position3D: [-5735.036, 469.9689, 8506.97]
+            Radius: 1446
+         Immobile: {}
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 50
+            Extra: 1
+      -  Name: FungalShipSpace
+         Faction: Talon
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-6856.715, 6045.503, 1920.866]
+            - [-6614.701, 5876.302, 1798.192]
+            - [-6681.171, 5727.768, 1619.807]
+            - [-7557, -7491, -337]
+            - [25406.632, 7902.65, -22070.054]
+            - [25206.632, 7902.65, -22070.054]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 3
+            Extra: 1
+      -  Name: EdenT3
+         Faction: Polaris
+         FixedMaxSpeed: 10
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [5000, 1400, 4100]
+            - [3500, 1400, 4400]
+            - [3500, 1400, 5000]
+            - [3800, 1400, 6000]
+            - [-5000, 1400, 4100]
+            - [-3500, 1400, 4400]
+            - [-3500, 1400, 5000]
+            - [-3800, 1400, 6000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 25
+            Extra: 1
+      -  Name: Freighter
+         Faction: Polaris
+         FixedMaxSpeed: 20
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-7249.191, -1757.396, -6871.415]
+            - [-5000, 800, 4100]
+            - [-3500, 800, 4400]
+            - [-3500, 800, 5000]
+            - [-3800, 800, 6000]
+            - [5000, 800, 4100]
+            - [3500, 800, 4400]
+            - [3500, 800, 5000]
+            - [3800, 800, 6000]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 25
+            Extra: 1

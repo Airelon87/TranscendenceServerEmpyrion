@@ -1,0 +1,1340 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.8.1908, Playfield Version: 10.0.0 [2446] (FOR Alpha EXPERIMENTAL 11)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -290
+PlayfieldLevel: 2
+IsOrbitPlayfield: False
+Music: space
+Description: An asteroid field in deep Space
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 4
+LandClaimZone: Device
+SunFlare: EnvironmentalEffects/SunFlareRedSpace
+# Stars: SkyboxStarsBlack
+# Nebula: PrefabNebulaBluePinkPurple
+Build: 2450
+Radiation: 10.2
+PvP: False
+UseFixed: True
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+POIs:
+   Fixed:
+   -  Type: AsteroidField
+      Name: Asteroid Field
+      Pos: [0, -300, 0]
+      Rot: [45, -30, -66]
+   -  Type: AsteroidField
+      Name: Asteroid Field
+      Pos: [0, 300, 0]
+      Rot: [-45, 30, 66]
+   -  Type: BA_Alien
+      Prefab: ZiblaxDeepSpaceOne
+      Mode: Survival
+      Name: ZiblaxDeepSpaceOne
+      Pos: [200, 0, 150]
+      Rot: [0, 0, 0]
+      Faction: Zirax
+      InitPower: True
+      NoShieldReload: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV9
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [-200, 0, -137]
+      Rot: [45, 0, 45]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 80
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Iron
+      Prefab: AsteroidVoxel03Iron
+      Name: Iron Asteroid
+      Pos: [-6460, -76, -710]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [-6460, -276, -740]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Iron
+      Prefab: AsteroidVoxel02Iron
+      Name: Iron Asteroid
+      Pos: [-4236, 15, 1473]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Copper
+      Prefab: AsteroidVoxel02Copper
+      Name: Copper Asteroid
+      Pos: [-3807, -174, 4738]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Cobalt
+      Prefab: AsteroidVoxel03Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-432, 127, 5650]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Neodymium
+      Prefab: AsteroidVoxel03Neodymium
+      Name: Neodymium Asteroid
+      Pos: [2433, -70, 6167]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [4671, -140, 4773]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [5291, -140, 1576]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Magnesium
+      Prefab: AsteroidVoxel03Magnesium
+      Name: Magnesium Asteroid
+      Pos: [6007, 197, -1893]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Iron
+      Prefab: AsteroidVoxel01Iron
+      Name: Iron Asteroid
+      Pos: [3695, -163, -3437]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Magnesium
+      Prefab: AsteroidVoxel01Magnesium
+      Name: Magnesium Asteroid
+      Pos: [-1572, 257, -6659]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Pentaxid
+      Prefab: AsteroidVoxel01Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [1742, -53, -5570]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Silicon
+      Prefab: AsteroidVoxel01Silicon
+      Name: Silicon Asteroid
+      Pos: [5108, -2026, -1972]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Silicon
+      Prefab: AsteroidVoxel01Silicon
+      Name: Silicon Asteroid
+      Pos: [-5017, -1509, -2400]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [2910, 4586, 1512]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Promethium
+      Prefab: AsteroidVoxel03Promethium
+      Name: Promethium Asteroid
+      Pos: [3132, 2517, 3726]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Ice
+      Prefab: AsteroidVoxel03Ice
+      Name: Ice Asteroid
+      Pos: [-2060, -1909, -4842]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [1602, -1568, -5182]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Iron
+      Prefab: AsteroidVoxel02Iron
+      Name: Iron Asteroid
+      Pos: [-3938, -4517, 40]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Iron
+      Prefab: AsteroidVoxel03Iron
+      Name: Iron Asteroid
+      Pos: [-3345, -2367, 4042]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Silicon
+      Prefab: AsteroidVoxel02Silicon
+      Name: Silicon Asteroid
+      Pos: [1578, -1676, 5473]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Silicon
+      Prefab: AsteroidVoxel03Silicon
+      Name: Silicon Asteroid
+      Pos: [2370, 4659, -2480]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Copper
+      Prefab: AsteroidVoxel03Copper
+      Name: Copper Asteroid
+      Pos: [-3634, -4921, 293]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Ice
+      Prefab: AsteroidVoxel03Ice
+      Name: Ice Asteroid
+      Pos: [2772, -910, 4279]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Promethium
+      Prefab: AsteroidVoxel02Promethium
+      Name: Promethium Asteroid
+      Pos: [-3322, -2950, -2946]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Magnesium
+      Prefab: AsteroidVoxel01Magnesium
+      Name: Magnesium Asteroid
+      Pos: [-300, -900, -300]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-1000, -700, -1000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-2000, -700, -2000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Iron
+      Prefab: AsteroidVoxel03Iron
+      Name: Iron Asteroid
+      Pos: [-3000, -700, 0]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Iron
+      Prefab: AsteroidVoxel03Iron
+      Name: Iron Asteroid
+      Pos: [-3050, -750, 250]
+      Rot: [0, 90, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [-4000, -500, -4000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Neodymium
+      Prefab: AsteroidVoxel02Neodymium
+      Name: Neodymium Asteroid
+      Pos: [-5000, 500, -5000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-6000, -500, 0]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Neodymium
+      Prefab: AsteroidVoxel03Neodymium
+      Name: Neodymium Asteroid
+      Pos: [-7000, 500, -7000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [-7500, -750, -7500]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [-8000, 500, 0]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Ice
+      Prefab: AsteroidVoxel03Ice
+      Name: Ice Asteroid
+      Pos: [-9000, -500, -9000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Iron
+      Prefab: AsteroidVoxel01Iron
+      Name: Iron Asteroid
+      Pos: [-10000, 500, -10000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Titan
+      Prefab: AsteroidVoxel01Titan
+      Name: Titanium Asteroid
+      Pos: [-10100, 590, -10100]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Magnesium
+      Prefab: AsteroidVoxel01Magnesium
+      Name: Magnesium Asteroid
+      Pos: [-11000, -500, -11000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Iron
+      Prefab: AsteroidVoxel01Iron
+      Name: Iron Asteroid
+      Pos: [-12000, 500, -12000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Silicon
+      Prefab: AsteroidVoxel01Silicon
+      Name: Silicon Asteroid
+      Pos: [-13000, -500, -13000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-14000, 500, -14000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Iron
+      Prefab: AsteroidVoxel01Iron
+      Name: Iron Asteroid
+      Pos: [-300, 1400, 300]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-1000, 1200, 1000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-2000, -1500, 0]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Titan
+      Prefab: AsteroidVoxel03Titan
+      Name: Titanium Asteroid
+      Pos: [-3000, 1500, 3000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Iron
+      Prefab: AsteroidVoxel02Iron
+      Name: Iron Asteroid
+      Pos: [-4000, -1500, 4000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Neodymium
+      Prefab: AsteroidVoxel02Neodymium
+      Name: Neodymium Asteroid
+      Pos: [-5000, 1500, 0]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [-6000, -500, 6000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Cobalt
+      Prefab: AsteroidVoxel03Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-7000, 500, 7000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Copper
+      Prefab: AsteroidVoxel01Copper
+      Name: Copper Asteroid
+      Pos: [-7500, -900, 0]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [-8000, 500, 8000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Copper
+      Prefab: AsteroidVoxel03Copper
+      Name: Copper Asteroid
+      Pos: [-9000, -500, 9000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [-10000, 500, 10000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Magnesium
+      Prefab: AsteroidVoxel01Magnesium
+      Name: Magnesium Asteroid
+      Pos: [-11000, -500, 0]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Copper
+      Prefab: AsteroidVoxel01Copper
+      Name: Copper Asteroid
+      Pos: [-12000, 500, 12000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Silicon
+      Prefab: AsteroidVoxel01Silicon
+      Name: Silicon Asteroid
+      Pos: [-13000, -500, 13000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-14000, 500, 14000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Zascosium
+      Prefab: AsteroidVoxel01Zascosium
+      Name: Zascosium Asteroid
+      Pos: [300, 1000, 1300]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [1000, -900, 400]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [2800, -800, 2800]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Iron
+      Prefab: AsteroidVoxel03Iron
+      Name: Iron Asteroid
+      Pos: [3000, -750, 800]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [4000, -500, 4000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Neodymium
+      Prefab: AsteroidVoxel02Neodymium
+      Name: Neodymium Asteroid
+      Pos: [5700, 500, 5700]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [6000, -500, 6000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Neodymium
+      Prefab: AsteroidVoxel03Neodymium
+      Name: Neodymium Asteroid
+      Pos: [0, 500, 7000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Titan
+      Prefab: AsteroidVoxel01Titan
+      Name: Titanium Asteroid
+      Pos: [7500, 750, 7500]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [8000, 500, 8000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Iron
+      Prefab: AsteroidVoxel03Iron
+      Name: Iron Asteroid
+      Pos: [0, -500, 9000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Ice
+      Prefab: AsteroidVoxel01Ice
+      Name: Ice Asteroid
+      Pos: [10000, 500, 10000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Magnesium
+      Prefab: AsteroidVoxel01Magnesium
+      Name: Magnesium Asteroid
+      Pos: [0, -500, 11000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Erestrum
+      Prefab: AsteroidVoxel01Erestrum
+      Name: Erestrum Asteroid
+      Pos: [0, 500, 12000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Silicon
+      Prefab: AsteroidVoxel01Silicon
+      Name: Silicon Asteroid
+      Pos: [13000, -500, 13000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [14000, 500, 14000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Zascosium
+      Prefab: AsteroidVoxel01Zascosium
+      Name: Zascosium Asteroid
+      Pos: [1900, 750, -300]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [1000, 750, -1400]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [500, 1100, -2350]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Erestrum
+      Prefab: AsteroidVoxel01Erestrum
+      Name: Erestrum Asteroid
+      Pos: [3200, -1000, -3300]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [4700, -500, -4000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel02Neodymium
+      Prefab: AsteroidVoxel02Neodymium
+      Name: Neodymium Asteroid
+      Pos: [5500, 500, -5000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [6000, -500, -6000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Neodymium
+      Prefab: AsteroidVoxel03Neodymium
+      Name: Neodymium Asteroid
+      Pos: [7000, 500, -7000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [0, 750, -7500]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Erestrum
+      Prefab: AsteroidVoxel01Erestrum
+      Name: Erestrum Asteroid
+      Pos: [8000, 500, -8000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel03Cobalt
+      Prefab: AsteroidVoxel03Cobalt
+      Name: Cobalt Asteroid
+      Pos: [9000, -500, -9000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Titan
+      Prefab: AsteroidVoxel01Titan
+      Name: Titanium Asteroid
+      Pos: [0, 500, -10000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Magnesium
+      Prefab: AsteroidVoxel01Magnesium
+      Name: Magnesium Asteroid
+      Pos: [11000, -500, -11000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Erestrum
+      Prefab: AsteroidVoxel01Erestrum
+      Name: Erestrum Asteroid
+      Pos: [12000, 500, -12000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Silicon
+      Prefab: AsteroidVoxel01Silicon
+      Name: Silicon Asteroid
+      Pos: [0, -500, -13000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   -  Type: AsteroidVoxel01Titan
+      Prefab: AsteroidVoxel01Titan
+      Name: Titanium Asteroid
+      Pos: [14000, 500, -14000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      #-  Key: MapDistance
+      #   Value: 4500
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [6000, 3000, -6000]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDroneLaser
+         Pos: [-4573, 1073, 1557]
+         Radius: 589
+      SpaceVessel:
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 5
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1
+            DelayBeforeSelfDestruction: 15
+            PathWayPoint:
+            - [43498, 883, -42792]
+            - [45000, -516, 40122]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 5
+            Extra: 2
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 5
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            PathWayPoint:
+            - [-33498, 483, -32792]
+            - [35000, -216, 30122]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 5
+            Extra: 2
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 5
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            PathWayPoint:
+            - [3498, 83, 2792]
+            - [25000, 516, -20122]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 5
+            Extra: 2
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 5
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            PathWayPoint:
+            - [-13498, -883, 12792]
+            - [25000, -16, -20122]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 5
+            Extra: 2
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 5
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1000
+            DelayBeforeSelfDestruction: 1500
+            PathWayPoint:
+            - [-33498, 383, 22792]
+            - [25000, 316, -20122]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 5
+            Extra: 2
+      -  Name: BAO_OrbitalSpire
+         Faction: Alien
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile:
+            Position3D: [7421, 0, 8107]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 0
+            Extra: 0
+      -  Name: AlienMegaStation
+         Faction: Alien
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         -  Key: Music
+            Value: ExtraktTechno
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [7449.191, -157.396, 7271.415]
+         Freighter:
+            DelayBetweenRespawn: 20
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 200
+            Extra: 100
+      -  Name: ZiblaxSpacePost
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         -  Key: Music
+            Value: ExtraktTechno
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [7449.191, -1757.396, 7271.415]
+         Freighter:
+            DelayBetweenRespawn: 10
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 23
+            Extra: 1
+      -  Name: ZiblaxSpacePost
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         -  Key: Music
+            Value: ExtraktTechno
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [-7449.191, 2157.396, 7271.415]
+         Freighter:
+            DelayBetweenRespawn: 10
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 23
+            Extra: 1
+      -  Name: ZiblaxSpacePost
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         -  Key: Music
+            Value: ExtraktTechno
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [-7449.191, 2157.396, -7271.415]
+         Freighter:
+            DelayBetweenRespawn: 10
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 23
+            Extra: 1
+      -  Name: ZiblaxSpacePost
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         -  Key: Music
+            Value: ExtraktTechno
+         RangePatrol:
+            Position3D: [0, 0, 0]
+            DistToGround: 25
+         Immobile:
+            Position3D: [-7449.191, -2157.396, 7271.415]
+         Freighter:
+            DelayBetweenRespawn: 10
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 23
+            Extra: 1
+      -  Name: ZiraxSpaceSat
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile:
+            Position3D: [7049.191, -2057.396, 7071.415]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 0
+            Extra: 0
+      -  Name: ZiraxSpaceSat
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile:
+            Position3D: [-7049.191, 2057.396, 7071.415]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 0
+            Extra: 0
+      -  Name: ZiraxSpaceSat
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile:
+            Position3D: [-7049.191, 2057.396, -7071.415]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 0
+            Extra: 0
+      -  Name: ZiraxSpaceSat
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 110
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile:
+            Position3D: [-7049.191, -2057.396, 7071.415]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 0
+            Extra: 0
+      -  Name: ZiraxSpaceSat
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 120
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile:
+            Position3D: [3500, 1491, 4400]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 0
+            Extra: 0
+      -  Name: ZiraxSpaceSat
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 120
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile:
+            Position3D: [3500, 691, 4400]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 0
+            Extra: 0
+      -  Name: ZiblaxCarrier
+         Faction: Zirax
+         FixedMaxSpeed: 5
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [-100, -46, -285]
+            Radius: 1750
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 50
+            Extra: 10
+      -  Name: ZiraxFueler
+         Faction: Zirax
+         FixedMaxSpeed: 7
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [100, 46, 285]
+            Radius: 1250
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 5
+            Extra: 1
+      -  Name: AlienFighterShip
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [629, -2911, -299]
+            Radius: 530
+      -  Name: AlienFighterShip
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [35, -2902, 524]
+            Radius: 630
+      -  Name: AlienFighterShip
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [5, -2919, 556]
+            Radius: 330
+      -  Name: AlienFighterShip
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [287, -2873, -1004]
+            Radius: 730

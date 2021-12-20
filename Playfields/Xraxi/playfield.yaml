@@ -1,0 +1,685 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.8.1908, Playfield Version: 10.0.0 [2446] (Alpha EXPERIMENTAL 10)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+Seed: 497497
+PlanetSize: 4
+PlanetAxis: 10
+PlayfieldLevel: 8
+TemperatureMinMax: [-40, -21]
+TemperatureNight: 10
+HumidityMinMax: [0.1, 0.35]
+SeaLevel: 37
+TerrainLevel: 295
+BaseLevel: 24
+LandWaterRatio: 0.39876020000000001
+TemperatureHeightRange: [85, 420]
+TemperatureGradientRange: [0.1811539, 0.1811539]
+TemperatureNoiseFac: 0.5
+HumidityHeightFac: [0, 365]
+HumidityNoiseFac: 0.59999999999999998
+Gravity: -9
+AtmosphereDensity: 0.29999999999999999
+AtmosphereBreathable: True
+AtmosphereO2: 0.23000000000000001
+Water: WaterGreen
+Music: Reaver
+TerrainHeightMapMax: 456
+BiomeStampTries: 25
+GroundShapes:
+- GroundShape_3, 0.5
+Biome:
+-  BiomeClusterData:
+   -  Name: Pole
+      Weather: PoleFog
+      IgnoreForcedBiome: True
+      Texture: [0, 0, 0.02]
+      SelectionCriteria:
+      - +Lat > 0.975
+      Color: [0.6, 0.6, 0.6]
+      StampProb: 1
+   -  Name: Lake
+      IgnoreForcedBiome: True
+      Texture: [11, 11, 0.2]
+      UndergroundLayers:
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height < SeaLevel
+      Color: [0, 1, 0]
+      StampProb: 1
+      Decorations:
+      - [EggPlant, 0.0001]
+      - [Snakeweed, 0.001, Plant]
+      - [RockResourceMagnesium, 0.0004, Free]
+      - [DimpleDome, 0.00018, Plant]
+      - [CoralStone01-03, 0.0003, Free]
+      - [CoralStone01-05, 0.00025, Free]
+      - [CrystalsPyramidBlue, 0.0005, Free]
+      - [GlowTube01, 0.00064, Plant]
+      - [PromethiumStone, 0.00065, Free]
+      - [CrystalStraight, 1E-05, Free]
+      - [SkeletonWhaleFull, 0.00017, Free]
+      - [RealRock1Water, 1E-06, Free]
+      - [RealRock5Water, 1E-06, Free]
+      - [RealRock8Water, 1E-06, Free]
+      - [RealRock9Water, 1E-06, Free]
+      Grass:
+      -  Name: Seaweed04
+         Density: 0.0060000000000000001
+         Preset: GrassDense
+   -  Name: Mountains
+      IgnoreForcedBiome: True
+      Texture: [1, 6, 0.5, 2, 7, 0.8, 0.15]
+      UndergroundLayers:
+      - [1, 3]
+      - [10, 50]
+      - [9, 10]
+      - [11, 20]
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height > 170
+      Color: [0.7, 0.7, 0.7]
+      StampProb: 1
+      StampForcesBiome: True
+      Stamps:
+      - Mountain_4a, 0.9
+      - Mountain_4b, 0.1
+      StampTries: 50
+      Temperature: 70
+      Decorations:
+      - [CornDogBush, 0.0001]
+      - [GasEmitter2, 1E-05]
+      - [CrystalStraight, 0.0001, Free]
+   -  Name: MareEdge
+      Texture: [0, 0, 0.5, 2, 7, 0.8, 0.5]
+      UndergroundLayers:
+      - [4, 3]
+      - [9, 2]
+      - [10, 10]
+      - [9, 10]
+      - [11, 10]
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height < 102
+      - Height > 99
+      Color: [0.1, 0.1, 0.3]
+      StampProb: 1
+      Decorations:
+      - [GasEmitter2, 1E-06]
+      - [CrystalStraight, 0.0001, Free]
+   -  Name: Mare
+      AmbientSound: SmallLake
+      Texture: [4, 5, 0.5, 2, 7, 0.5, 0.5]
+      UndergroundLayers:
+      - [4, 3]
+      - [9, 2]
+      - [10, 10]
+      - [9, 10]
+      - [11, 10]
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height < 102
+      - Height > 10
+      Color: [0.3, 0.3, 0.3]
+      StampProb: 0.90000000000000002
+      Stamps:
+      - DunesSea_01b, 0.4
+      - IceBergs_01, 0.6
+      Decorations:
+      - [GasEmitter2, 1E-06]
+      - [AlienPlant20, 0.003, Plant]
+      - [PixieStalksSnow, 0.004]
+      - [PromethiumStone, 0.003, Plant]
+      - [RealRock1Dark, 0.0006, Free]
+      - [RealRock2Dark, 0.0002, Free]
+      - [RealRock4Dark, 0.0006, Free]
+      - [RealRock8Dark, 0.0006, Free]
+      - [RealRock10Dark, 0.0004, Free]
+      - [AlienTentacleStage2, 0.001, Plant]
+   -  Name: LargeCrater
+      AmbientSound: ArcticLowPlains
+      Texture: [8, 9, 0.5, 3, 7, 0.5, 0.001]
+      UndergroundLayers:
+      - [9, 10]
+      - [11, 30]
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height > 600
+      Color: [0.7, 0.2, 0.2]
+      StampProb: 1
+      StampForcesBiome: True
+      Stamps:
+      - DunesSea_01b
+      - CraterMoon_12, 0.019
+      - CraterMoon_13, 0.011
+      StampTries: 56
+      Temperature: 30
+      Decorations:
+      - [GasEmitter2, 1E-06]
+      - [CrystalStraight, 0.0001, Free]
+      - [RockGrey01Large, 0.0004]
+      - [RockGrey02Large, 0.0004]
+      - [RockResourceSilicon, 0.0001, Free]
+      - [RockResourceCobalt, 0.0001, Free]
+      - [RockResourceIron, 0.0002, Free]
+   -  Name: RayCrater
+      Texture: [8, 9, 0.5, 3, 7, 0.5, 0.001]
+      UndergroundLayers:
+      - [9, 10]
+      - [11, 30]
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height > 600
+      Color: [0.7, 0.7, 0.2]
+      StampProb: 1
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOther
+      Stamps:
+      - CraterMoon_14, 0.025
+      - CraterMoon_14b, 0.007
+      StampTries: 19
+      Temperature: 20
+   -  Name: SmallCrater
+      AmbientSound: ArcticLowPlains
+      Texture: [8, 9, 0.5, 3, 3, 0.5, 0.001]
+      UndergroundLayers:
+      - [9, 10]
+      - [11, 30]
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height > 600
+      Color: [0.9, 0.3, 0.3]
+      StampProb: 1
+      StampForcesBiome: True
+      Stamps:
+      - CraterMoon_7, 0.02
+      - CraterMoon_8, 0.015
+      - CraterMoon_9, 0.008
+      - CraterMoon_10, 0.003
+      StampTries: 2200
+      Temperature: 15
+      Decorations:
+      - [AlienPlant11, 0.01, Free]
+      - [MushroomBellBrown01, 0.01, Bush]
+      - [GasEmitter2, 0.001]
+      - [CornDogBushSnow, 1E-05, Free]
+      - [RockResourceSilicon, 0.001, Free]
+      - [RockResourceCopper, 0.0001, Free]
+      - [RockResourceIron, 0.0001, Free]
+   -  Name: LowMountains
+      Texture: [1, 6, 0.5, 7, 7, 1, 0.25]
+      UndergroundLayers:
+      - [1, 3]
+      - [10, 20]
+      - [9, 10]
+      - [11, 30]
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height > 150
+      - Height < 280
+      Color: [0.5, 0.5, 1]
+      StampProb: 1
+      Decorations:
+      - [RockResourceNeodymium, 0.0001, Free]
+      - [RockResourceSathium, 0.0001, Free]
+   -  Name: RegolithEdge
+      Texture: [0, 5, 0.9, 3, 3, 1, 0.2]
+      UndergroundLayers:
+      - [0, 3]
+      - [10, 20]
+      - [9, 10]
+      - [11, 30]
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height > 140
+      Color: [0.4, 0.4, 0.4]
+      StampProb: 1
+      Decorations:
+      - [CoralStone04-03, 0.003, BigPlant]
+      - [DesertRock1, 0.0001, Free]
+      - [DesertRock2, 0.0001, Free]
+      - [Boulder1, 0.0001, Free]
+      - [Boulder2, 0.0001, Free]
+      - [ModRocksBrown02, 0.0001, Free]
+      - [ModRocksBrown04, 0.0001, Free]
+      - [GasEmitter2, 1E-06]
+      - [CrystalStraight, 0.0001, Free]
+      - [RockResourceSilicon, 0.001, Free]
+      - [RockResourceCopper, 0.0003, Free]
+      - [RockResourceIron, 0.0001, Free]
+   -  Name: Regolith
+      Texture: [0, 7, 0.2]
+      SelectionCriteria:
+      - Height > 130
+      Color: [0.5, 0.5, 0.5]
+      StampProb: 1
+      StampForcesBiome: True
+      Stamps:
+      - CraterMoon_10
+      StampTries: 2
+      Decorations:
+      - [Snakeweed, 0.003, Bush]
+      - [RockResourceMagnesium, 0.01]
+      - [RockResourceSilicon, 0.001, Free]
+      - [RockResourceCopper, 0.0003, Free]
+      - [RockResourceIron, 0.0001, Free]
+   -  Name: Desolation
+      Texture: [10, 5, 0.5, 2, 7, 0.5, 0.02]
+      UndergroundLayers:
+      - [10, 3]
+      - [9, 2]
+      - [10, 20]
+      - [9, 10]
+      - [11, 30]
+      - [15, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - Height > 90
+      Color: [0.6, 0.6, 0.6]
+      StampProb: 1
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOther
+      Stamps:
+      - CraterMoon_13
+      StampTries: 6
+      Temperature: 30
+      Decorations:
+      - [AlienDesertPlant, 0.02, BigPlant]
+      - [DesertPlant20, 0.001, Plant]
+      - [LeafPlant, 0.02, Plant]
+      - [BigFlower, 0.01, Plant]
+      - [AlienBush01, 0.02, BigPlant]
+      - [BushGreen01, 0.005, Plant]
+      - [BushGreen02, 0.005, Plant]
+      - [AlienPlant07, 0.001, Plant]
+      - [AlienPlant14, 0.001, Plant]
+      - [DeadTree01, 0.0002, Free]
+      - [AridRockBrown01, 0.0003, Free]
+      - [AridRockBrown03, 0.0003, Free]
+      - [AlienPlantWorm1, 0.002, Free]
+      - [CobraLeavesPlant, 0.002, Free]
+      - [MushroomBellBrown01, 0.0001, Free]
+      - [PixieStalks, 0.001, Free]
+      - [InsanityPepper, 0.001, Free]
+      - [GasEmitter2, 0.01]
+      UndergroundLayersDefault: True
+   -  Name: Flats
+      Texture: [0, 0, 0.2]
+      Color: [0, 1, 0]
+      StampProb: 1
+Description: 'A young alien world suffering from a bath of radiation from its neighboring stellar bodies. '
+PlanetType: Alien
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 3
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: FireFliesRed
+   Biome: [Any]
+   Time: Night
+   MaxHeight: 20
+   FollowPlayerY: True
+SpecialEffectsGlobal:
+-  Name: FogRadiationGreen
+   Type: Weather
+   Delay: 5
+   Lifetime: 1500
+-  Name: Clear
+   Type: Weather
+   Delay: 2
+   Lifetime: 1500
+-  Name: ThunderAndLightningRed
+   Biome: [Any]
+   Time: Day
+   InitialDelay: 1
+   Delay: 4
+   PlyDist: 100
+   Struct: True
+   Lifetime: 600
+   SpawnY: 30
+-  Name: ThunderAndLightning
+   Biome: [Any]
+   Time: Day
+   InitialDelay: 1
+   Delay: 4
+   PlyDist: 100
+   Struct: True
+   Lifetime: 600
+   SpawnY: 30
+AtmosphereColor: 0,0,0
+SkyColor: 0.44,0.5,0.56
+SkyHorizonColor: 0.4,0.8,0.67
+AtmosphereParams: [1, 1.6]
+LightZenithColor: 0.44,0.5,0.56
+LightHorizonColor: 0,0,0
+DayLightIntensity: 0.80000000000000004
+NightLightIntensity: 0.59999999999999998
+NightLightColor: 0.39,0.58,0.93
+SunFlare: EnvironmentalEffects/SunFlareWhite2
+AtmosphereFog: 0.10000000000000001
+FogColor: 0.94,0.97,1
+FogCloudIntensity: 0.10000000000000001
+FogIntensity: 0.10000000000000001
+FogStartDistance: 100
+GroundFogIntensity: 0.024236150000000001
+GroundFogHeight: 77.080460000000002
+CloudsDensity: 0.10000000000000001
+CloudsSharpness: 0.10000000000000001
+CloudsBrightness: 0.10000000000000001
+CloudsOpacity: 0.10000000000000001
+CloudsZenithColor: 0,0,0
+CloudsHorizonColor: 0.5,0.5,0.5
+CloudsNightZenithColor: 0,0,0
+CloudsNightHorizonColor: 0.5,0.5,0.5
+WindSpeed: 1
+Build: 2086
+Radiation: 54.299999999999997
+PvP: False
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+RandomResources:
+-  Name: CobaltResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [2, 3]
+   SizeMinMax: [24, 45]
+   DepthMinMax: [5, 10]
+   DroneProb: 0.5
+   MaxDroneCount: 2
+-  Name: MagnesiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [2, 3]
+   SizeMinMax: [14, 25]
+   DepthMinMax: [5, 10]
+   DroneProb: 1
+   MaxDroneCount: 2
+-  Name: PromethiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 4]
+   SizeMinMax: [24, 35]
+   DepthMinMax: [5, 10]
+   DroneProb: 1
+   MaxDroneCount: 1
+AsteroidResources:
+-  Name: CobaltResource
+   Threshold: 0.59999999999999998
+   Amount: 0.80000000000000004
+-  Name: MagnesiumResource
+   Threshold: 0.59999999999999998
+   Amount: 0.80000000000000004
+-  Name: PromethiumResource
+   Threshold: 0.59999999999999998
+   Amount: 0.80000000000000004
+-  Name: NeodymiumResource
+   Amount: 24000
+   InitialDelay: 1
+   Delay: 1
+   DespawnDelay: 48
+POIs:
+   Random:
+   -  GroupName: ZiblaxDroneCaller
+      Faction: Xenu
+      NoShieldReload: True  
+      DroneBaseSetup: DroneBaseSetup
+      IsCommandCenter: True
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: OnWater, Terrain
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: True
+      Properties:
+      -  Key: Music
+         Value: DarkSoundscape
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 60
+   -  GroupName: PlanetVesselBase
+      Faction: Xenu
+      PlanetVesselBaseSetup: PlanetVesselBaseSetup
+      CountMinMax: [2, 3]
+      IsImportant: True
+      DroneProb: 1
+      DronesMinMax: [2, 3]
+      ReserveCount: 3
+      TroopTransport: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: AbandonedMine
+      Faction: Alien
+      CountMinMax: [2, 3]
+      IsImportant: True
+      DroneProb: 1
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: lava
+      -  Key: RegenAfter
+         Value: 160
+   -  GroupName: ZiraxSky
+      Faction: Zirax
+      NoShieldReload: True  
+      CountMinMax: [1, 1]
+      PlaceAt: OnWater
+      DroneProb: 1
+      DronesMinMax: [2, 4]
+      ReserveCount: 4
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: lava
+      -  Key: RegenAfter
+         Value: 160
+      -  Key: SI
+         Value: Off
+   -  GroupName: ZiblonDefenseTower
+      Faction: Ziblon
+      NoShieldReload: True  
+      CountMinMax: [2, 3]
+      DroneProb: 1
+      DronesMinMax: [2, 4]
+      ReserveCount: 4
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: lava
+      -  Key: RegenAfter
+         Value: 160
+   -  GroupName: CrashedShip
+      Faction: None
+      CountMinMax: [2, 3]
+      IsScalingCount: True
+      PlaceAt: UnderWater
+      DroneProb: 0.20000000000000001
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: False
+      Properties:
+      -  Key: MapMarker
+         Value: Neutral
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 160
+   -  GroupName: ZiraxCiv
+      Faction: Zirax
+      NoShieldReload: True  
+      CountMinMax: [3, 4]
+      IsScalingCount: True
+      DroneProb: 0.20000000000000001
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: False
+      Properties:
+      -  Key: RegenAfter
+         Value: 160
+   FixedPlayerStart:
+   -  Mode: Creative
+      SubMode: Empty
+      Pos: [-2559.7, 36.4, 2538]
+      RotY: -155
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorLight
+   -  Mode: Creative
+      SubMode: Normal
+      Pos: [-2520.7, 52, 2487.6]
+      RotY: -130
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorLight
+   -  Mode: Debug
+      Pos: [-596, 104, -1063]
+      RotY: 125
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseSetup
+      DronesMinMax: [0, 0]
+      Difficulty: 7
+      PresetStyle: 1
+      Stock:
+      -  Name: DroneSmallFast01Minigun
+         Amount: 90000
+         Extra: 0
+      -  Name: DroneLargeSlow01Minigun
+         Amount: 90000
+         Extra: 0
+      -  Name: DroneSmallSlow01Cannon
+         Amount: 90000
+         Extra: 0
+      -  Name: DroneLargeAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneSmallAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneTroopsTransport
+         Amount: Infinite
+         Extra: 2
+      -  Name: ZiraxMinigun
+         Amount: 50000
+         Extra: 3
+      -  Name: ArmoredGolem
+         Amount: 50000
+         Extra: 3
+      PlanetVesselBase:
+         Name: PlanetVesselBaseSetup
+         Faction: Xenu
+         Position3D: [0, 142, 0]
+         BaseType: PlanetVesselBase
+         KeyId: 0
+         PlanetVessel:
+         -  Name: PVF_XenuOPVGround
+            Faction: Xenu
+            Mission: PlanetPatrol
+            FixedMaxSpeed: 13
+            RespawnDelay: 1
+            RangePatrolTask:
+               Position3D: [1500, 80, 0]
+               Radius: 1200
+               DistToGround: 180
+            AttackCVCircleAround:
+               DistToTarget: 349
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 10]
+      CenterX: -2500
+      Radius: 1500
+   -  DronesMinMax: [5, 10]
+      CenterX: 2500
+      Radius: 1500
+SpawnZones:
+-  SpawnAt: [CobaltResource, PromethiumResource]
+   BiomesExcluded: [LowMountains, Mountains]
+   Radius: 500
+   RadiusRandom: 50
+   RateMultiplyerCenter: 1
+   RateMultiplyerEdge: 0.5
+   Color: 1.0, 1.0, 1.0, 1.0
+   Entities:
+   -  Names: [AlienBugs03]
+      Biomes: [Any]
+      Amount: 200
+      Period: Always
+      DelayMinMax: [-1, -1]
+-  SpawnAt: [ZiraxCiv]
+   BiomesExcluded: [LowMountains, Mountains]
+   Radius: 500
+   RadiusRandom: 50
+   RateMultiplyerCenter: 1
+   RateMultiplyerEdge: 0.5
+   Color: 1.0, 1.0, 1.0, 1.0
+   Entities:
+   -  Names: [ZiraxMinigunPatrol]
+      Biomes: [Any]
+      Amount: 200
+      Period: Always
+      DelayMinMax: [-1, -1]
+CreatureSpawning:
+-  Biomes: [Mare, MareEdge, Desolation]
+   Entities:
+   -  Name: Telluropods
+      Period: Always
+      Amount: 50
+      DelayMinMax: [10, 20]
+      Color: 1.0, 1.0, 1.0
+      AllowInWater: True
+   -  Name: Pangolins
+      Period: Always
+      Amount: 65
+      DelayMinMax: [0, 0]
+   -  Name: Creepys
+      Period: Always
+      Amount: 35
+      DelayMinMax: [0, 0]
+      AllowInWater: True
+-  Biomes: [LargeCrater, RayCrater, SmallCrater]
+   Entities:
+   -  Name: GolemsDesert
+      Period: Always
+      Amount: 100
+      DelayMinMax: [10, 12]
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 100
+      DelayMinMax: [10, 12]
+   -  Name: Otyughs
+      Period: Night
+      Amount: 100
+      DelayMinMax: [20, 24]
+   -  Name: Pangolins
+      Period: Always
+      Amount: 65
+      DelayMinMax: [0, 0]
+-  Biomes: [Flats, Regolith, RegolithEdge, LowMountains, Mountains]
+   Entities:
+   -  Name: Otyughs
+      Period: Always
+      Amount: 200
+      DelayMinMax: [0, 0]

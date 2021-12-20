@@ -1,0 +1,183 @@
+Description: 'A desolate large space rock '
+PlanetClass: Moon
+PlanetType: Moon
+PlayfieldType: Moon
+AtmosphereEnabled: True
+Difficulty: 2
+LandClaimZone: Device
+AtmosphereColor: 0.88,1,1
+SkyColor: 0,0.81,0.82
+SkyHorizonColor: 0.39,0.58,0.93
+AtmosphereParams: [1, 1.6]
+LightZenithColor: 0.94,1,1
+LightHorizonColor: 0.96,0.96,0.96
+OrbitUsesLightColor: True
+DayLightIntensity: 0.80000000000000004
+NightLightIntensity: 0.59999999999999998
+NightLightColor: 0.53,0.81,0.92
+SunFlare: EnvironmentalEffects/SunFlareWhiteMoon
+AtmosphereFog: 0.10000000000000001
+FogCloudIntensity: 0.10000000000000001
+CloudsDensity: 0.10000000000000001
+CloudsSharpness: 0.10000000000000001
+CloudsBrightness: 0.20000000000000001
+CloudsOpacity: 0.90000000000000002
+CloudsZenithColor: 0.94,0.97,1
+CloudsHorizonColor: 0.94,0.97,1
+CloudsNightZenithColor: 0.94,0.97,1
+CloudsNightHorizonColor: 0.94,0.97,1
+WindSpeed: 2
+PvP: False
+BaseAttackCount: 0
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+RandomResources:
+-  Name: PentaxidResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [10, 12]
+   SizeMinMax: [25, 50]
+   DepthMinMax: [2, 7]
+   DroneProb: 1
+   MaxDroneCount: 3
+AsteroidResources:
+-  Name: IronResource
+   Amount: 3000
+   InitialDelay: 1
+   Delay: 3
+   DespawnDelay: 24
+-  Name: CopperResource
+   Amount: 3000
+   InitialDelay: 2
+   Delay: 4
+   DespawnDelay: 24
+-  Name: SiliconResource
+   Amount: 5000
+   InitialDelay: 4
+   Delay: 4
+   DespawnDelay: 24
+-  Name: CobaltResource
+   Amount: 2500
+   InitialDelay: 1
+   Delay: 5
+   DespawnDelay: 24
+-  Name: PromethiumResource
+   Amount: 15000
+   InitialDelay: 2
+   Delay: 6
+   DespawnDelay: 12
+-  Name: NeodymiumResource
+   Amount: 10000
+   InitialDelay: 5
+   Delay: 7
+   DespawnDelay: 12
+-  Name: SathiumResource
+   Amount: 6000
+   InitialDelay: 6
+   Delay: 8
+   DespawnDelay: 12
+POIs:
+   Random:
+   -  GroupName: DroneComputeUnit
+      Faction: Pirates
+      LevelMod: +1
+      DroneBaseSetup: DroneBaseSetup
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      IsCommandCenter: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: SI
+         Value: Off
+   -  GroupName: RoboticsFrigateSnow
+      Faction: RoboticsSyndicate
+      LevelMod: +1
+      CountMinMax: [2, 6]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: EnergyMatrix
+   -  GroupName: Brexxis_Promethium-Refinery
+      Faction: Alien
+      CountMinMax: [1, 2]
+      PlaceAt: Terrain
+      DroneProb: 0
+      DronesMinMax: [1, 1]
+      ReserveCount: 0
+      NoShieldReload: True
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: Praxis
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseSetup
+      DronesMinMax: [2, 3]
+      ReserveCount: 3
+      DroneProb: 1
+      Difficulty: 5
+      PresetStyle: 2
+      Stock:
+      -  Name: DroneSmallFast01Plasma
+         Amount: 100000
+         Extra: 0
+      -  Name: DroneLargeSlow01Plasma
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneTroopsTransport
+         Amount: 100000
+         Extra: 2
+      -  Name: TurretRobotV2
+         Amount: 100000
+         Extra: 3
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 10]
+      CenterX: -1000
+      Radius: 1000
+   -  DronesMinMax: [5, 10]
+      CenterX: 1000
+      Radius: 1000
+CreatureSpawning:
+-  Biomes: [MoonScape, MoonCraters]
+   Entities:
+   -  Name: CaveWormsWhite
+      Period: Night
+      Amount: 25
+      Color: "1,1,0"
+   -  Name: SlimesWhite
+      Period: Always
+      Amount: 70
+   -  Name: GolemsIce
+      Period: Always
+      Amount: 70

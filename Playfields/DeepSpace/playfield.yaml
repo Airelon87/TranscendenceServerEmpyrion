@@ -1,0 +1,275 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.92.2.2471, Playfield Version: 10.6.0 [2697] (Alpha EXPERIMENTAL 10.6.0)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+# Modified by Airelon87 for A11 November 17th, 2019
+#
+TemperatureDay: -124
+PlayfieldLevel: 10
+Music: ColdDivide
+Description: This area of deep space is host to the famous Star Kor Diners and a Rogue Dwarf World
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 2
+LandClaimZone: Device
+OrbitUsesLightColor: False
+SunFlare: EnvironmentalEffects/SunFlareRedSpace
+# Stars: SkyboxStarsCyan
+# Nebula: PrefabNebulaBlueYellow
+Build: 2636
+Radiation: 12.4
+PvP: False
+UseFixed: True
+AllowBA: False
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: False
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+POIs:
+   Fixed:
+   -  Type: AsteroidFieldFewBoxExclude
+      Name: Asteroid Field
+      Rot: [3, -94, 45]
+   -  Type: BA_Admin
+      Prefab: StarKorsDiner
+      Mode: Survival
+      Name: StarKorsDiner
+      Faction: Admin
+      Pos: [0, 0, 0]
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: NebularClouds
+      -  Key: StationInterface
+         Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1"
+#Custom Deep Space Prefabs
+   -  Type: BA_Alien
+      Prefab: DeepSpaceAsteroid
+      Mode: Survival
+      Name: DeepSpaceAsteroid
+      Faction: None
+      Pos: [450, -130, 600]
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  Type: BA_Alien
+      Prefab: RogueDwarfPlanet
+      Mode: Survival
+      Name: RogueDwarfPlanet
+      Faction: Alien
+      Pos: [1450, 430, 900]
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 240
+#Defualt POIs
+   -  Type: BA_Alien
+      Prefab: BAO_DerelictMiningShip
+      Mode: Survival
+      Name: Derelict Ship
+      Pos: [4698.121, -355.0489, -2898.563]
+      Faction: Alien
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+      -  Key: Music
+         Value: EvilWhispering
+   -  Type: BA_Alien
+      Prefab: BAO_DestroyedOrbitalDefence
+      Mode: Survival
+      Name: Control Station
+      Pos: [-2399.885, 5340.385, -1792.624]
+      Faction: Polaris
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+      -  Key: Music
+         Value: EvilWhispering
+   -  Type: BA_Alien
+      Prefab: BAO_Minefield
+      Mode: Survival
+      Name: Minefield
+      Pos: [-2273.305, 5097.62, -1781.734]
+      Rot: [241, 30, 165]
+      Faction: Polaris
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  Type: SV_Player
+      Prefab: SV_Destroyed_withWarp
+      Mode: Survival
+      Name: Destroyed Small Vessel
+      Pos: [-2118.428, 5113.485, -1713.893]
+      Rot: [8, 88, 157]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  Type: CV_Alien
+      Prefab: CV_DestroyedRear
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-2730.786, 5432.005, -1835.358]
+      Rot: [336, 124, 34]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  Type: CV_Alien
+      Prefab: CV_DestroyedFront
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-2379.123, 5491.991, -1678.319]
+      Rot: [359, 336, 222]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  Type: CV_Alien
+      Prefab: CV_DestroyedFront
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-2537.054, 5319.93, -1962.115]
+      Rot: [334, 167, 347]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  Type: CV_Alien
+      Prefab: CV_DestroyedRear
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-2436.453, 5531.5, -1647.067]
+      Rot: [297, 318, 279]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  Type: BA_Alien
+      Prefab: BAO_PlanetRemnant
+      Mode: Survival
+      Name: Planetary Remnant
+      Pos: [-3190.256, -5167.591, 1536.318]
+      Faction: Alien
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+      -  Key: Music
+         Value: DarkSoundscape
+   -  Type: BA_Alien
+      Prefab: BAO_PiratesHideout
+      Mode: Survival
+      Name: Asteroid Station
+      Pos: [-4008.251, 97.67922, -2958.152]
+      Faction: Polaris
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+      -  Key: Music
+         Value: DarkSoundscape3
+   -  Type: BA_Alien
+      Prefab: BAO_PolarisAsteroidMining
+      Mode: Survival
+      Name: Mining Facility
+      Pos: [2948.384, -4005.553, -2191.828]
+      Faction: Polaris
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+      -  Key: Music
+         Value: Vanguard
+   -  Type: AsteroidVoxel01Iron
+      Prefab: AsteroidVoxel01Iron
+      Name: Iron Asteroid
+      Pos: [-529, -4819, -4283]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Iron
+      Prefab: AsteroidVoxel01Iron
+      Name: Iron Asteroid
+      Pos: [3125, 1741, 4037]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Silicon
+      Prefab: AsteroidVoxel02Silicon
+      Name: Silicon Asteroid
+      Pos: [-3987, -3926, -2342]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Copper
+      Prefab: AsteroidVoxel02Copper
+      Name: Copper Asteroid
+      Pos: [-2324, 4005, -3014]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Copper
+      Prefab: AsteroidVoxel03Copper
+      Name: Copper Asteroid
+      Pos: [3744, -1730, -4288]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Cobalt
+      Prefab: AsteroidVoxel02Cobalt
+      Name: Cobalt Asteroid
+      Pos: [4001, 4479, 564]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Cobalt
+      Prefab: AsteroidVoxel01Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-2109, 3585, 3432]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Promethium
+      Prefab: AsteroidVoxel02Promethium
+      Name: Promethium Asteroid
+      Pos: [-3937, -3027, -2603]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-10517.45, -1596.375, -3575.554]
+      DroneOnDuty:
+      -  Name: SpaceDronePlasma
+         Pos: [-8611.972, -2235.876, -7805.599]
+         Radius: 365
+      -  Name: SpaceDronePlasma
+         Pos: [-6593.112, 3364.336, -9518.689]
+         Radius: 533
+      -  Name: SpaceDronePlasma
+         Pos: [8738.474, 2860.554, -6462.581]
+         Radius: 619
+      SpaceVessel:
+      -  Name: BAO_XenuShipyard
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: Immobile
+         Properties:
+         -  Key: RegenAfter
+            Value: 90
+         Immobile:
+            Position3D: [3627.344, -4537.335, -2717.219]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 17
+            Extra: 1

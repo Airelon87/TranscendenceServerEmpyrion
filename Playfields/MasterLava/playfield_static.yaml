@@ -1,0 +1,199 @@
+Description: An inhospitable rocky world without liquid water
+PlanetType: Lava
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 3
+LandClaimZone: Device
+SpecialEffectsGlobal:
+-  Name: ThunderAndLightningPurple
+   Biome: [Any]
+   Time: Always
+   PlyDist: 75
+   Struct: Avoid
+   Lifetime: 600
+   SpawnY: 50
+-  Name: ThunderAndLightningRed
+   Biome: [Any]
+   Time: Always
+   PlyDist: 100
+   Struct: Avoid
+   Lifetime: 600
+   SpawnY: 70
+-  Name: MeteorShower
+   Biome: [Lava, HeatBasin, CraterField]
+   Time: Always
+   PlyDist: 50
+   Struct: Avoid
+   Lifetime: 1000
+   SpawnY: 30
+-  Name: Clear
+   Type: Weather
+   Lifetime: 1500
+-  Name: FogRadiationPurple
+   Type: Weather
+   Delay: 12
+   Lifetime: 400
+-  Name: CloudsDark
+   Type: Weather
+   Delay: 8
+   Lifetime: 400
+AtmosphereColor: 1,0.65,0
+SkyColor: 1,0.98,0.8
+SkyHorizonColor: 0.87,0.72,0.53
+AtmosphereParams: [1, 1.6]
+LightZenithColor: 0.87,0.63,0.87
+LightHorizonColor: 0.65,0.16,0.16
+DayLightIntensity: 0.80000000000000004
+NightLightIntensity: 0.5
+NightLightColor: 0.87,0.72,0.53
+SunFlare: EnvironmentalEffects/SunFlareYellow2
+AtmosphereFog: 0.90000000000000002
+FogCloudIntensity: 0.90000000000000002
+GroundFogIntensity: 0.02
+GroundFogHeight: 35
+CloudsDensity: 1
+CloudsSharpness: 1
+CloudsBrightness: 0.29999999999999999
+CloudsOpacity: 0.20000000000000001
+CloudsZenithColor: 1,1,0
+CloudsHorizonColor: 1,0.87,0.68
+CloudsNightZenithColor: 1,0.41,0.71
+CloudsNightHorizonColor: 1,0.27,0
+WindSpeed: 6
+PvP: False
+BaseAttackCount: 0
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+RandomResources:
+-  Name: IronResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [10, 12]
+   SizeMinMax: [4, 30]
+   DepthMinMax: [0, 1]
+   DroneProb: 0.10000000000000001
+   MaxDroneCount: 1
+POIs:
+   Random:
+   -  GroupName: DroneComputeUnit
+      Faction: Zirax
+      DroneBaseSetup: DroneBaseSetup
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [2, 4]
+      ReserveCount: 2
+      NoShieldReload: True
+      IsCommandCenter: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 60
+   -  GroupName: ZiraxTurret
+      Faction: Zirax
+      CountMinMax: [2, 5]
+      PlaceAt: Terrain
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: ZiraxHoverTank
+      Faction: Zirax
+      CountMinMax: [1, 30]
+      PlaceAt: Terrain
+      DroneProb: 0.5
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 120
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseSetup
+      DronesMinMax: [2, 3]
+      ReserveCount: 3
+      DroneProb: 1
+      Difficulty: 5
+      PresetStyle: 2
+      Stock:
+      -  Name: DroneSmallFast01Rocket
+         Amount: 100000
+         Extra: 0
+      -  Name: EnemyDroneV2Plasma
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneTroopsTransport
+         Amount: 100000
+         Extra: 2
+      -  Name: ZiraxMinigun
+         Amount: 10000
+         Extra: 3
+      -  Name: Mechanoid
+         Amount: 100000
+         Extra: 3
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 10]
+      CenterX: -1500
+      Radius: 2000
+   -  DronesMinMax: [5, 10]
+      CenterX: 1500
+      Radius: 2000
+CreatureSpawning:
+-  Biomes: [HeatBasin, Barren, CraterField]
+   Entities:
+   -  Name: AlienAssassinReds
+      Period: Always
+      Amount: 100
+      Color: "1,0,1"
+   -  Name: AlienBugs02
+      Period: Night
+      Amount: 50
+      Color: "1,0.41,0.71"
+   -  Name: Overseers
+      Period: Day
+      Amount: 50
+      Color: "0.94,0.5,0.5"
+-  Biomes: [Rifts, Mountains]
+   Entities:
+   -  Name: AlienBugs04
+      Period: Always
+      Amount: 75
+   -  Name: Spiders02
+      Period: Always
+      Amount: 75
+-  Biomes: [Organics]
+   Entities:
+   -  Name: LizardMuleHerd
+      Period: Day
+      Amount: 50
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 30
+   -  Name: Crawlers
+      Period: Night
+      Amount: 30
+   -  Name: Pangolins
+      Period: Night
+      Amount: 60

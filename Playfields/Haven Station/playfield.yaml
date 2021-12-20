@@ -1,0 +1,677 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.5.1874, Playfield Version: 10.0.0 [2446] (Alpha EXPERIMENTAL 10)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -100
+PlayfieldLevel: 1
+Music: space
+Description: Haven Station provides ammentities and transportation to the planets.
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 2
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+# Stars: SkyboxStarsGreen
+# Nebula: PrefabNebulaBlueGlittery
+Build: 2449
+Radiation: 1
+PvP: False
+UseFixed: True
+AllowBA: False
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: False
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+POIs:
+   Fixed:
+   -  Type: BA_Admin
+      Prefab: Haven
+      Mode: Survival
+      Name: Haven
+      Pos: [-100, -1000, 0]
+      Rot: [0, 0, 0]
+      Faction: Admin
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: NebularClouds
+      -  Key: StationInterface
+         Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1"
+   -  Type: AsteroidFieldRectangle2
+      Name: Asteroid Field
+      Pos: [0, -2000, 0]
+      Rot: [0, 0, 0]
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [-2685, 3257, -4518]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [-5080, 3175, -2750]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [-6460, 2925, -710]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Titan
+      Prefab: AsteroidVoxel03Titan
+      Name: Titanium Asteroid
+      Pos: [-4236, 3015, 1473]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [-3807, 2825, 4738]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-432, 3127, 5650]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Promethium
+      Prefab: AsteroidVoxel02Promethium
+      Name: Promethium Asteroid
+      Pos: [2433, 2930, 6167]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [4671, 2860, 4773]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [5291, 2860, 1576]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [6007, 3197, -1893]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [3695, 2847, -3437]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [1742, 2947, -5570]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Titan
+      Prefab: AsteroidVoxel03Titan
+      Name: Titanium Asteroid
+      Pos: [-1572, 3257, -6659]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [-2685, -3257, -4518]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [-5080, -3175, -2750]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [-6460, -2925, -710]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Ice
+      Prefab: AsteroidVoxel03Ice
+      Name: Ice Asteroid
+      Pos: [-4236, -3015, 1473]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Titan
+      Prefab: AsteroidVoxel01Titan
+      Name: Titanium Asteroid
+      Pos: [-3807, -2825, 4738]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-432, -3127, 5650]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Promethium
+      Prefab: AsteroidVoxel02Promethium
+      Name: Promethium Asteroid
+      Pos: [2433, -2930, 6167]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [4671, -2860, 4773]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [5291, -2860, 1576]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [6007, -3197, -1893]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Sathium
+      Prefab: AsteroidVoxel02Sathium
+      Name: Sathium Asteroid
+      Pos: [3695, -2847, -3437]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Titan
+      Prefab: AsteroidVoxel03Titan
+      Name: Titanium Asteroid
+      Pos: [1742, -2947, -5570]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [-1572, -3257, -6659]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Pentaxid
+      Prefab: AsteroidVoxel01Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [4522.5, 727, 4356.4]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [746, 2, -13659]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Titan
+      Prefab: AsteroidVoxel02Titan
+      Name: Titanium Asteroid
+      Pos: [-8330, 2, -11596]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Sathium
+      Prefab: AsteroidVoxel03Sathium
+      Name: Sathium Asteroid
+      Pos: [12372, 238, -7384]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Ice
+      Prefab: AsteroidVoxel03Ice
+      Name: Ice Asteroid
+      Pos: [-14281, 212, 2223]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Titan
+      Prefab: AsteroidVoxel01Titan
+      Name: Titanium Asteroid
+      Pos: [-5366, -135, 12987]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-9780, 453, -9951]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Promethium
+      Prefab: AsteroidVoxel02Promethium
+      Name: Promethium Asteroid
+      Pos: [-9134, 133, 7719]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-9134, 533, 7719]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [-9134, 1533, 7719]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-9134, 1133, 7719]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: BA_Alien
+      Prefab: BAO_DerelictMiningShip
+      Mode: Survival
+      Name: Derelict Ship
+      Pos: [6206.632, 7902.65, 2070.054]
+      Rot: [0, 0, 0]
+      Faction: Polaris
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  Type: BA_Alien
+      Prefab: BAO_Minefield
+      Mode: Survival
+      Name: Minefield
+      Pos: [-2268.957, -3849.409, 4083.443]
+      Rot: [157, 88, 97]
+      Faction: Polaris
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 75
+   -  Type: CV_Alien
+      Prefab: CV_Destroyed2
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-6856.715, 6245.503, 1920.866]
+      Rot: [96, 103, 82]
+      Faction: Public
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: CV_Alien
+      Prefab: CV_Destroyed3
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-6614.701, 6176.302, 1798.192]
+      Rot: [141, 247, 171]
+      Faction: Public
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: CV_Alien
+      Prefab: CV_DestroyedRear
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-6698.84, 6421.247, 1734.873]
+      Rot: [265, 333, 77]
+      Faction: Public
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: CV_Alien
+      Prefab: CV_DestroyedFront
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-6460.746, 6368.008, 1875.273]
+      Rot: [284, 182, 318]
+      Faction: Public
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: CV_Alien
+      Prefab: CV_DestroyedFront
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-6681.171, 6227.768, 1619.807]
+      Rot: [249, 297, 37]
+      Faction: Public
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: CV_Alien
+      Prefab: BA_CrashedCV_3
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-6663.604, 6204.092, 1739.112]
+      Rot: [36, 231, 332]
+      Faction: Public
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: CV_Alien
+      Prefab: BA_CrashedCV_2
+      Mode: Survival
+      Name: Destroyed Vessel
+      Pos: [-7029.529, 6002.229, 2050.09]
+      Rot: [348, 100, 142]
+      Faction: Public
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel02Silicon
+      Prefab: AsteroidVoxel02Silicon
+      Name: Silicon Asteroid
+      Pos: [-4526, -7682, 3981]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Sathium
+      Prefab: AsteroidVoxel02Sathium
+      Name: Sathium Asteroid
+      Pos: [-7533, -6709, -237]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Copper
+      Prefab: AsteroidVoxel02Copper
+      Name: Copper Asteroid
+      Pos: [5362, -8227, 1436]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Pentaxid
+      Prefab: AsteroidVoxel01Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [8046, 5088, -1235]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Cobalt
+      Prefab: AsteroidVoxel02Cobalt
+      Name: Cobalt Asteroid
+      Pos: [-1282, 2316, -8930]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Sathium
+      Prefab: AsteroidVoxel01Sathium
+      Name: Sathium Asteroid
+      Pos: [-7557, -6991, -337]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel03Titan
+      Prefab: AsteroidVoxel03Titan
+      Name: Titanium Asteroid
+      Pos: [731, 5795, -7952]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel02Ice
+      Prefab: AsteroidVoxel02Ice
+      Name: Ice Asteroid
+      Pos: [3134, 133, 4719]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [-4522.5, 27, -4356.4]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [3522.5, 727, 3356.4]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [0, 500, 0]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+   -  Mode: Survival
+      Spawn: Structure
+      Structure: Haven
+      Items: ['SurvivalTool, ConstructorSurvival, AssaultRifle, 5.8mmBullet:200, EVABoost, PowerBar:2, Medikit04:2, Bandages:2, AntibioticOintment:2, MobileAirCon, OxygenGeneratorSmall, BioFuel:5, OxygenBottleSmall:3, TransportationBoost:2', 'SurvivalTool, ConstructorSurvival, AssaultRifle, 5.8mmBullet:200, EVABoost, EnergyCell:2, PowerBar, Medikit04:2, Bandages, AntibioticOintment, MobileAirCon, OxygenGeneratorSmall, BioFuel:2, OxygenBottleSmall:3, TransportationBoost:2', 'SurvivalTool, ConstructorSurvival, IronIngot:5, CopperIngot:5, SiliconIngot:5, GoldCoins:50, EVABoost, EnergyCell:5, PowerBar, Medikit04, OxygenBottleSmall:5, TransportationBoost:2', '#FreshStart: SurvivalTool, Medikit04, OxygenBottleSmall:3, IronIngot:5, CopperIngot:5, SiliconIngot:5']
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:350, Health: 350', '#FreshStart:Food:500, Health: 250']
+      Armor: ArmorLight
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDronePlasma
+         Pos: [-13282, -281, 3098]
+         Radius: 685
+      SpaceVessel:
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 10
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [5000, 1400, 4100]
+            - [3500, 1400, 4400]
+            - [3500, 1400, 5000]
+            - [3800, 1400, 6000]
+            - [-5000, 1400, 4100]
+            - [-3500, 1400, 4400]
+            - [-3500, 1400, 5000]
+            - [-3800, 1400, 6000]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 4
+            Extra: 0
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 10
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-5000, 800, 4100]
+            - [-3500, 800, 4400]
+            - [-3500, 800, 5000]
+            - [-3800, 800, 6000]
+            - [5000, 800, 4100]
+            - [3500, 800, 4400]
+            - [3500, 800, 5000]
+            - [3800, 800, 6000]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 4
+            Extra: 0
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 8
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [5300, 1000, 4175]
+            - [3100, 1000, 4275]
+            - [3400, 1000, 5075]
+            - [3700, 1000, 6075]
+            - [5300, 800, -4175]
+            - [3100, 800, -4475]
+            - [3300, 800, -5075]
+            - [3400, 800, -6075]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 4
+            Extra: 0
+      -  Name: PolarisFueler
+         Faction: Polaris
+         FixedMaxSpeed: 15
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [-2685, 3057, -4518]
+            - [-5080, 2975, -2750]
+            - [-6460, 2725, -710]
+            - [-4236, 2815, 1473]
+            - [-3807, 2625, 4738]
+            - [-432, 2927, 5650]
+            - [2433, 2730, 6167]
+            - [4671, 2660, 4773]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 12
+            Extra: 0
+      -  Name: PolarisScienceVessel
+         Faction: Polaris
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         Properties:
+         -  Key: RegenAfter
+            Value: 45
+         RangePatrol:
+            Position3D: [-6128.742, -7945.16, -173.4829]
+            Radius: 882
+         Immobile: {}
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 15
+            Extra: 1
+      -  Name: SyndicateSpaceTron
+         Faction: RoboticsSyndicate
+         FixedMaxSpeed: 15
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [15300, 1000, 4175]
+            - [13100, 1000, 4275]
+            - [13400, 1000, 5075]
+            - [13700, 1000, 6075]
+            - [15300, 800, -4175]
+            - [13100, 800, -4475]
+            - [13300, 800, -5075]
+            - [13400, 800, -6075]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 4
+            Extra: 0

@@ -1,0 +1,539 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.8.1908, Playfield Version: 10.0.0 [2446] (Alpha EXPERIMENTAL 10)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+Seed: 4659032
+PlanetSize: 2
+PlanetAxis: -25
+PlayfieldLevel: 1
+TemperatureMinMax: [-10, 19]
+TemperatureNight: -15
+HumidityMinMax: [0, 0.1]
+SeaLevel: 4
+TerrainLevel: 135
+BaseLevel: 0
+LandWaterRatio: 0.13
+TemperatureHeightRange: [0, 400]
+TemperatureGradientRange: [0, 0.55]
+TemperatureNoiseFac: 0.55000000000000004
+HumidityHeightFac: [0, 400]
+HumidityNoiseFac: 0.55000000000000004
+Gravity: -5.5
+AtmosphereDensity: 0.050000000000000003
+AtmosphereO2: 0.39000000000000001
+Water: WaterBlue
+Music: moonstone
+TerrainHeightMapMax: 400
+BiomeStampTries: 50
+Biome:
+-  BiomeClusterData:
+   -  Name: Pole
+      LevelMod: None
+      Weather: PoleFog
+      IgnoreForcedBiome: True
+      Texture: [0, 0, 0.1]
+      UndergroundLayers:
+      - [1, 0]
+      - [2, 1]
+      - [11, -1]
+      - [15, 2]
+      SelectionCriteria:
+      - +Lat > 0.975
+      Color: [0, 0, 0]
+      UndergroundLayersDefault: True
+   -  Name: SubBiomeOne
+      AmbientSound: Water
+      Texture: [3, 3, 0.3]
+      SelectionCriteria:
+      - Height < SeaLevel - 1
+      Color: [0, 0, 1]
+      StampProb: 1
+      Stamps:
+      - CraterLava_2, 0.5
+      - Volcanic_03_LO, 0.4
+      - Pingo_01, 0.7
+      - IceSprings_01, 0.4
+      StampTries: 50
+      Temperature: 1
+      Decorations:
+      - [RealRock8Water, 0.0001]
+      - [AlienPlantPod2, 0.004]
+      - [OnionFlower, 0.003, Plant]
+      - [AlienPlantReef2, 0.003, Plant]
+      - [BulbShroom, 0.0035, Plant]
+      - [RockResourceSilicon, 0.0001, Free]
+      - [RockResourceCopper, 0.0001, Free]
+      - [RockResourceIron, 0.0001, Free]
+      - [RockResourcePromethium, 0.001, Free]
+      Grass:
+      -  Name: GrassGreen06Snow
+         Density: 0.01
+         YScale: 0.10000000000000001
+         Preset: GrassPatches
+   -  Name: BiomeOne
+      AmbientSound: SmallLake
+      Texture: [3, 3, 0.3]
+      SelectionCriteria:
+      - Height > SeaLevel - 1
+      - Height < 25
+      Color: [0.5, 1, 0.83]
+      Stamps:
+      - CraterMoon_1, 0.3
+      - Explosion_01, 0.2
+      - DunesDesert_01, 0.5
+      - CraterMoon_11, 0.3
+      Decorations:
+      - [ConfettiMoss, 0.0008, Free]
+      - [MushroomBellGreen01, 0.002]
+      - [MushroomTallGreen01, 0.002]
+      - [CattailWinter, 0.004, Plant]
+      - [PixieStalksSnow, 0.004, Plant]
+      - [GlowTube01, 0.0002, Free]
+      - [CrystalStraight, 0.002, Plant]
+      - [RockResourceNeodymium, 0.001, Free]
+      - [DimpleDome, 0.0015, Plant]
+      - [GasEmitter1, 1E-05]
+      - [GasEmitter2, 1E-05, Free]
+      - [SkeletonWhalePart, 0.0001, Free]
+      - [SkeletonMammothTorso, 1E-05, Free]
+      - [SkeletonDragonTorso, 1E-05, Free]
+      - [Snakeweed, 0.0015, Free]
+      - [ClusterShroom, 0.0003, Free]
+      Grass:
+      -  Name: Reeds01
+         Density: 0.021000000000000001
+         YScale: 0.14000000000000001
+         Preset: GrassDense
+   -  Name: BiomeTwo
+      IgnoreForcedBiome: False
+      Texture: [4, 5, 1, 5, 6, 1, 0.2]
+      SelectionCriteria:
+      - Height > 30
+      - Height < 125
+      Color: [0.75, 0.75, 0.75]
+      StampProb: 0.5
+      Stamps:
+      - CraterMoon_2, 0.2
+      - CraterMoon_5, 0.2
+      - CraterMoon_7, 0.2
+      - CraterLava_1, 0.2
+      - Valley_1, 0.1
+      StampTries: 50
+      Decorations:
+      - [CornDogBush, 1E-05, BigPlant]
+      - [RockGrey01Large, 0.0005]
+      - [RockGrey02Large, 0.0005]
+      - [CrystalsPyramidBlue, 0.0004]
+      - [LeafPlant, 0.001, BigPlant]
+      - [AlienPlantThorn1, 0.0001]
+      - [ConfettiMoss, 0.0002, Free]
+      - [ClusterShroom, 0.0003, Free]
+   -  Name: BiomeThree
+      Texture: [6, 6, 1, 7, 7, 1, 0.3]
+      SelectionCriteria:
+      - Height > 135
+      Color: [0.44, 0.5, 0.56]
+      StampProb: 0.5
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOwn
+      Stamps:
+      - RiftLava_1, 0.2
+      - Mountain_2, 0.4
+      - Mountain_5, 0.5
+      - Mountain_6, 0.4
+      - Volcanic_03, 0.5
+      - CraterMoon_13, 0.2
+      StampTries: 50
+      Decorations:
+      - [RealRock8Snow, 0.001]
+      - [RealRock2Dark, 0.001]
+      - [RealRock7, 0.001]
+      - [RockResourceSathium, 0.001]
+      - [RockResourcePromethium, 0.001]
+      - [CrystalsPyramidBlue, 0.001]
+      - [CobraLeavesPlant, 0.0003]
+      - [ConfettiMoss, 0.0001, Free]
+      - [CattailWinter, 0.001, Plant]
+      - [PixieStalksSnow, 0.001, Plant]
+   -  Name: BiomeFour
+      Texture: [8, 8, 0.3]
+      UndergroundLayers:
+      - [7, 0]
+      - [12, 1]
+      - [15, -1]
+      - [0, 2]
+      SelectionCriteria:
+      - True
+      Color: [0.69, 0.77, 0.87]
+      Decorations:
+      - [RockResourceSilicon, 0.001]
+      - [RockResourceCopper, 0.001]
+      - [RockResourceIron, 0.001]
+      - [PromethiumStone, 0.001]
+      - [RealRock10Snow, 0.001]
+      - [RealRock9, 0.0001]
+      - [RealRock7, 0.0002]
+      - [SkeletonWhaleFull, 0.0001]
+      - [AlienPlantThorn1, 0.0001]
+      - [ClusterShroom, 1E-05]
+      - [ConfettiMoss, 0.0001, Free]
+      - [CattailWinter, 0.0004, Plant]
+      - [PixieStalksSnow, 0.0004, Plant]
+Description: '"This Instance is only for the LunarFare Mission in the PDA. Bases and CVs are prohibited."'
+PlanetType: Barren
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 2
+BaseAttackCount: 0
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: Moths
+   Biome: [SubBiomeOne]
+   Time: Always
+   MaxHeight: 20
+   FollowPlayerY: True
+-  Name: DustDevil
+   Biome: [BiomeTwo, BiomeThree]
+   Time: Always
+   MaxHeight: 255
+-  Name: FireFliesGreenFew
+   Biome: [BiomeTwo]
+   Time: Always
+   MaxHeight: 255
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Delay: 1
+   Lifetime: 2500
+-  Name: SnowLight
+   Type: Weather
+   InitialDelay: 5
+   Delay: 20
+   Lifetime: 700
+-  Name: ThunderAndLightningPurple
+   Biome: [Any]
+   Time: Always
+   PlyDist: 100
+   Struct: Avoid
+   Lifetime: 600
+   SpawnY: 30
+AtmosphereColor: 0.96,0.96,0.96
+SkyColor: 0,0,0.55
+SkyHorizonColor: 0.96,0.96,0.96
+AtmosphereParams: [2, 3]
+LightZenithColor: 0.88,1,1
+LightHorizonColor: 0.88,1,1
+DayLightIntensity: 1.3999999999999999
+NightLightIntensity: 1.7
+NightLightColor: 0.5,1,0.83
+SunFlare: EnvironmentalEffects/SunFlareWhiteMoon
+FogColor: 0.94,0.97,1
+CloudsZenithColor: 0.68,0.85,0.9
+CloudsHorizonColor: 0.9,0.9,0.98
+CloudsNightZenithColor: 0.96,0.96,0.96
+Build: 2450
+Radiation: 6
+PvP: False
+AllowBA: False
+AllowCV: False
+AllowSV: False
+AllowHV: True
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: True
+Instance:
+   Time: 120
+   MaxPlayers: 2
+   PortalOpen: 120
+   Cooldown: 60
+   AllowBlueprints: True
+RandomResources:
+-  Name: PentaxidResource
+   IsScalingCount: False
+   IsImportant: True
+   CountMinMax: [1, 1]
+   SizeMinMax: [4, 6]
+   DepthMinMax: [0, 5]
+   DroneProb: 1
+   MaxDroneCount: 2
+AsteroidResources:
+-  Name: PentaxidResource
+   Threshold: 0.2
+   Amount: 0.4
+POIs:
+   Random:
+   -  GroupName: LunaFarePortal
+      Faction: Admin
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: Terrain
+      DronesMinMax: [0, 1]
+      ReserveCount: 0
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: Anomalous
+   -  GroupName: ZiblaxDroneSat
+      Faction: Zirax
+      NoShieldReload: True
+      DroneBaseSetup: DroneBaseSetup
+      IsCommandCenter: True
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 30
+      -  Key: SI
+         Value: Off
+   -  GroupName: ZiblaxLunarPost
+      Faction: Zirax
+      CountMinMax: [1, 2]
+      IsImportant: True
+      DronesMinMax: [1, 1]
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: Music
+         Value: EnergyMatrix
+      -  Key: RegenAfter
+         Value: 20
+   -  GroupName: ZiblaxComAux
+      Faction: Zirax
+      CountMinMax: [1, 2]
+      IsImportant: True
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [ZiblaxLunarPost]
+      SpawnPOINearDistance: 600
+      SpawnPOINearRange: [250, 600]
+      Properties:
+      -  Key: Music
+         Value: EvilWhispering
+   -  GroupName: CreepyDenSmall
+      Faction: Alien
+      CountMinMax: [3, 6]
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 25
+      -  Key: Music
+         Value: EvilWhispering
+   -  GroupName: ZiblaxDroneSat
+      Faction: Zirax
+      CountMinMax: [1, 1]
+      PlaceAt: Terrain
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 30
+      -  Key: Music
+         Value: EnergyMatrix
+   -  GroupName: ZiblaxLunarPost
+      Faction: Zirax
+      CountMinMax: [2, 4]
+      DroneProb: 0.10000000000000001
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 25
+   -  GroupName: LunaFareColony
+      Faction: Admin
+      AvoidFactionTerritory: True
+      CountMinMax: [1, 1]
+      PlaceAt: Terrain, OnWater
+      DronesMinMax: [0, 1]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: Vanguard
+      -  Key: RegenAfter
+         Value: 30
+   -  GroupName: CreepyDenSmall
+      Faction: Alien
+      CountMinMax: [1, 1]
+      SpawnPOINear: [LunaFarePortal]
+      SpawnPOINearDistance: 700
+      SpawnPOINearRange: [250, 700]
+      DronesMinMax: [0, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 20
+   -  GroupName: CreepyDenSmall
+      Faction: Alien
+      CountMinMax: [3, 7]
+      DronesMinMax: [0, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 20
+   -  GroupName: ZiraxHoverTank
+      Faction: Zirax
+      NoShieldReload: True
+      Territory: False
+      CountMinMax: [1, 1]
+      PlaceAt: OnWater
+      DronesMinMax: [0, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: Music
+         Value: EnergyMatrix
+   -  GroupName: ZiblaxSentryPost
+      Faction: Zirax
+      CountMinMax: [1, 1]
+      DronesMinMax: [0, 0]
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  GroupName: HoverSeed
+      Faction: Public
+      Type: HV_Player
+      Territory: False
+      CountMinMax: [2, 2]
+      SpawnPOINear: [LunaFarePortal]
+      SpawnPOINearDistance: 100
+      SpawnPOINearRange: [30, 100]
+      DronesMinMax: [0, 0]
+      TroopTransport: False
+      InitPower: True
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [1000, 400, 1000]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseSetup
+      DronesMinMax: [1, 1]
+      DroneProb: 1
+      Difficulty: 5
+      Stock:
+      -  Name: DroneSmallSlow01Cannon
+         Amount: 99000
+         Extra: 0
+      -  Name: DroneSmallAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneTroopsTransport01
+         Amount: Infinite
+         Extra: 2
+      -  Name: TurretRobotV2
+         Amount: 100000
+         Extra: 3
+      -  Name: ZiraxMinigun
+         Amount: 100000
+         Extra: 3
+      PlanetVesselBase:
+         Name: PlanetVesselBaseSetup
+         Faction: Zirax
+         Position3D: [0, 102, 0]
+         BaseType: PlanetVesselBase
+         KeyId: 0
+         PlanetVessel:
+         -  Name: ZiblaxLunaScout
+            Faction: Zirax
+            Mission: PlanetPatrol
+            FixedMaxSpeed: 12
+            RespawnDelay: 2
+            InitialDelay: 1
+            RangePatrolTask:
+               Position3D: [16000, 80, 0]
+               Radius: 3000
+               DistToGround: 25
+            AttackCVCircleAround:
+               DistToTarget: 100
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [2, 4]
+      CenterX: 3000
+      Radius: 500
+   -  DronesMinMax: [2, 4]
+      CenterX: -3000
+      Radius: 500
+SpawnRateZones:
+-  SpawnAt: [LunaFare]
+   Radius: 250
+   RadiusRandom: 25
+   AffectEnemies: True
+   Color: 1,0.5,1,0.83
+CreatureSpawning:
+-  Biomes: [SubBiomeOne]
+   Entities:
+   -  Name: Telluropods
+      Period: Always
+      Amount: 20
+      DelayMinMax: [0, 0]
+      Color: 0.4,0.76,0.1
+      AllowInWater: True
+   -  Name: Slimes
+      Period: Always
+      Amount: 20
+      DelayMinMax: [0, 0]
+      AllowInWater: True
+-  Biomes: [BiomeOne, BiomeTwo]
+   Entities:
+   -  Name: Slimes
+      Period: Always
+      Amount: 90
+      DelayMinMax: [0, 0]
+-  Biomes: [BiomeThree, BiomeFour]
+   Entities:
+   -  Name: Slimes
+      Period: Always
+      Amount: 50
+      DelayMinMax: [0, 0]
+   -  Name: AlienBugs01
+      Period: Night
+      Amount: 25
+      DelayMinMax: [0, 0]
+      Color: 0.42,0.56,0.14
+   -  Name: AlienAssassinGreys
+      Period: Night
+      Amount: 10
+      DelayMinMax: [0, 0]
+      Color: 0.85,0.44,0.84
+   -  Name: GolemsIce
+      Period: Day
+      Amount: 20
+      DelayMinMax: [0, 0]
+      Color: 0.8,0.4,0.8
+
+Build: 2939

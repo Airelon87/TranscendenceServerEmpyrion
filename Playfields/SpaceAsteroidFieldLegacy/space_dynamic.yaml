@@ -1,0 +1,252 @@
+# Playfield Characteristics
+Gravity: 0                         
+AtmosphereEnabled: False    
+Difficulty: 8
+PvPProb: 1
+UseFixed: True                       
+Radiation: [5,10]                    
+TemperatureDay: [-200,-100]    
+Music: [moonstone, space, DistantWorlds, Cypher, Diaspora]          
+ 
+PlayfieldType: Space  
+PlanetType: LegacyNexusworldSector            
+
+### Resource Asteroid
+Resources:                     
+    - Name: [ AsteroidVoxel01Iron, AsteroidVoxel02Iron, AsteroidVoxel03Iron]
+      DisplayName: Iron Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.5    
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+ 
+    - Name: [ AsteroidVoxel01Copper, AsteroidVoxel02Copper, AsteroidVoxel03Copper]
+      DisplayName: Copper Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.4  
+      Properties:     
+        - Key: RegenAfter
+          Value: 45        
+ 
+    - Name: [ AsteroidVoxel01Silicon, AsteroidVoxel02Silicon, AsteroidVoxel03Silicon]
+      DisplayName: Silicon Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.5 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45        
+
+    - Name: [ AsteroidVoxel01Magnesium, AsteroidVoxel02Magnesium, AsteroidVoxel03Magnesium]
+      DisplayName: Magnesium Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.3 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+
+    - Name: [ AsteroidVoxel01Cobalt, AsteroidVoxel02Cobalt, AsteroidVoxel03Cobalt]
+      DisplayName: Cobalt Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.4  
+      Properties:     
+        - Key: RegenAfter
+          Value: 45             
+
+    - Name: [ AsteroidVoxel01Neodymium, AsteroidVoxel02Neodymium, AsteroidVoxel03Neodymium]
+      DisplayName: Neodymium Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.3 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45          
+
+    - Name: [ AsteroidVoxel01Promethium, AsteroidVoxel02Promethium, AsteroidVoxel03Promethium]
+      DisplayName: Promethium Asteroid
+      CountMinMax: [ 3, 6 ]
+      Probability: 1  
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+
+    - Name: [ AsteroidVoxel01Sathium, AsteroidVoxel02Sathium, AsteroidVoxel03Sathium]
+      DisplayName: Sathium Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.3 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+
+    - Name: [ AsteroidVoxel01Erestrum, AsteroidVoxel02Erestrum, AsteroidVoxel03Erestrum]
+      DisplayName: Erestrum Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.3  
+      Properties:     
+        - Key: RegenAfter
+          Value: 45        
+
+    - Name: [ AsteroidVoxel01Zascosium, AsteroidVoxel02Zascosium, AsteroidVoxel03Zascosium]
+      DisplayName: Zascosium Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.2  
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+
+    - Name: [ AsteroidVoxel01Pentaxid, AsteroidVoxel02Pentaxid, AsteroidVoxel03Pentaxid]
+      DisplayName: Pentaxid Asteroid
+      CountMinMax: [ 1, 5 ]
+      Probability: 1     
+      Properties:     
+        - Key: RegenAfter
+          Value: 45         
+
+    - Name: [ AsteroidVoxel01Gold, AsteroidVoxel02Gold, AsteroidVoxel03Gold]
+      DisplayName: Gold Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.1 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45           
+  
+    - Name: [ AsteroidVoxel01Ice, AsteroidVoxel02Ice, AsteroidVoxel03Ice]
+      DisplayName: Ice Asteroid
+      CountMinMax: [ 2, 30 ]
+      Probability: 0.5 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45               
+
+    - Name: [ AsteroidVoxel01Titan, AsteroidVoxel02Titan, AsteroidVoxel03Titan]
+      DisplayName: Titan Asteroid
+      CountMinMax: [ 1, 10 ]
+      Probability: 0.3 
+      Properties:     
+        - Key: RegenAfter
+          Value: 45      
+
+    - Name: [ AsteroidVoxel01Aluminium, AsteroidVoxel02Aluminium, AsteroidVoxel03Aluminium]
+      DisplayName: Aluminium Asteroid
+      CountMinMax: [ 1, 3 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45           
+
+    - Name: [ AsteroidVoxel01Platin, AsteroidVoxel02Platin, AsteroidVoxel03Platin]
+      DisplayName: Platin Asteroid
+      CountMinMax: [ 1, 2 ]
+      Probability: 1
+      Properties:     
+        - Key: RegenAfter
+          Value: 45      
+           
+### POIs
+POIs:
+    - Name: [AsteroidFieldBoxExclude, AsteroidFieldFewBoxExclude, AsteroidFieldRing] 
+      FieldName: [AsteroidField, AsteroidFieldRectangle2]   # used if playfield is not an orbit
+      CountMinMax: [ 1, 1 ]     
+      Probability: 1
+      BaseField: True 
+      RandomRotation: True
+
+    - Type: BA_Alien   
+      Name: [TraderlingStation]  
+      DisplayName: TraderlingStation
+      Faction: Trader
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]     
+      Probability: 0.3
+      InitPower: True
+      Properties: 
+        - Key: RegenAfter
+          Value: 90  
+        - Key: StationInterface
+          Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1,IfNeutral:0.2,IfHonored:-0.20"
+        - Key: Music
+          Value: NebularClouds
+
+    - Type: BA_Alien   
+      Name: [BAO_LegacyMatterConverter]  
+      DisplayName: Matter Converter
+      Faction: TheLegacy
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]     
+      Probability: 0.5
+      InitPower: True
+      Properties: 
+        - Key: RegenAfter
+          Value: 360  
+        - Key: Music
+          Value: Encryptor   
+
+    - Type: BA_Alien   
+      Name: [BAO_AbyssalAmbassador]  
+      DisplayName: Science Vessel
+      Faction: Civilian
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]     
+      Probability: 0.5
+      InitPower: True
+      Properties: 
+        - Key: RegenAfter
+          Value: 720  
+        - Key: Music
+          Value: Vanguard  
+        - Key: StationInterface
+          Value: "Fuel:1.1,O2:1.1,Warp:1.1,Ammo:1,Repair:2,Shield:2,IfNeutral:0,IfFriendly:-0.1,IfHonored:-0.20"
+
+DroneBaseSetup:                                                # Note: not ALL possible settings are used in that config. Check +ExampleSpace folder > space_dynamic.yaml
+      - FreeDrones:                                             #FreeDrones = only relevant for NPC Factions that have a galactic territory: Zirax, Polaris, Trader, Kriel, Pirates, Legacy. Will not spawn in non-territory!
+          - Name: [SpaceDroneLegacyLaser]
+            Faction: TheLegacy                               
+            CanNotBeControlledByMasterAI: False          
+            Count: [16, 32]                          #Drone Swarm!
+            Radius: [500, 32000]
+            Properties:
+              - Key: AIManMaxPursuitRange 
+                Value: 2500
+      - SpaceVessels:
+          - Name: [OPVLegacy]                  
+            Faction: TheLegacy
+            CountMinMax: [6, 12]   
+            Probability: 1        
+            CanNotBeControlledByMasterAI: False 
+            FixedMaxSpeed: [10, 30] 
+            Mission: SpacePatrol   
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [300, 600]  
+              DelayBeforeSelfDestructionMinMax: [200, 250]  
+              IsRespawnAfterDestruction: True               
+              RadiusMinMax: [250, 20000]        			  
+            StockDescription:
+              Name: [SpaceDroneLegacyLaser] 
+              AmountMinMax: [2, 8]  
+              Type: FighterDrone  
+            Properties:                        # OPV = default behavior is to patrol POIs of the own faction. Drones shall patrol Resources.
+              - Key: SelfDestructionWithNoCore # Military ships = self destruct!
+                Value: True                        
+              - Key: AIManMaxPursuitRange 
+                Value: 4000
+          - Name: [OPVWarlord]     
+            Faction: Warlord
+            CountMinMax: [2, 6]   
+            Probability: 1        # Prob = 1 because SpaceOrbit is ALWAYS around a planet AND if the faction owns that territory, there should ALWAYS be at least 1 guarding patrol vessel!
+            CanNotBeControlledByMasterAI: False 
+            FixedMaxSpeed: [20, 50] 
+            Mission: SpacePatrol   
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [300, 600]  
+              DelayBeforeSelfDestructionMinMax: [200, 250]  
+              IsRespawnAfterDestruction: True               
+              RadiusMinMax: [5750, 30000]
+           #   POINameAsPositionRef: [BAO_BurntOutReconVessel, BAO_CombatWreckage, BAO_JettisonedCargoPod, BAO_SeveredShip, BAO_TornThrusterArray, CV_LightCarrierWreck, SV_FA005XHunter]
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma, SpaceDronePolarisLaser, SpaceDroneTraderLaser, SpaceDroneBattered01, SpaceDroneBattered02]    #Can use drones from any faction except Kriel and Legacy
+              AmountMinMax: [2, 4]  
+              Type: FighterDrone  
+            Properties:                        # OPV = default behavior is to patrol POIs of the own faction. Drones shall patrol Resources.
+              - Key: SelfDestructionWithNoCore # Military ships = self destruct!
+                Value: True                        
+              - Key: AIManMaxPursuitRange 
+                Value: 4000

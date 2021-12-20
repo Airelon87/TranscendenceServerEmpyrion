@@ -1,0 +1,398 @@
+Description: An outer systems rocky world
+PlanetType: Planet
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 3
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: FireFliesGreen
+   Biome: [TemperateWet]
+   Time: Always
+   MaxHeight: 255
+-  Name: SnowLight
+   Biome: [BarrenSnow]
+   Time: Always
+   MaxHeight: 255
+-  Name: DustDevil
+   Biome: [Desert]
+   Time: Always
+   MaxHeight: 255
+-  Name: Dragonflies
+   Biome: [Shore]
+   Time: Always
+   MaxHeight: 255
+-  Name: Pollen
+   Biome: [TemperateForest]
+   Time: Always
+   MaxHeight: 255
+-  Name: TarantulaHawksFew
+   Biome: [TemperateCold]
+   Time: Always
+   MaxHeight: 255
+-  Name: Butterflies
+   Biome: [TemperateDry]
+   Time: Always
+   MaxHeight: 255
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Lifetime: 800
+-  Name: CloudsMedium
+   Type: Weather
+   Delay: 2
+   Lifetime: 300
+-  Name: RainMedium
+   Type: Weather
+   Delay: 4
+   Lifetime: 600
+-  Name: BirdFlockBats
+   Biome: [TemperateCold, TemperateWet]
+   Time: Always
+   PlyDist: 100
+   Struct: Avoid
+   Lifetime: 600
+   SpawnY: 30
+-  Name: ThunderAndLightningRed
+   Biome: [BarrenSnow, DeepWater]
+   Time: Always
+   PlyDist: 100
+   Struct: Avoid
+   Lifetime: 600
+   SpawnY: 30
+-  Name: MeteorShower
+   Biome: [Desert]
+   Time: Always
+   PlyDist: 100
+   Struct: Avoid
+   Lifetime: 600
+   SpawnY: 30
+AtmosphereColor: 0.12,0.56,1
+SkyColor: 0.39,0.58,0.93
+SkyHorizonColor: 1,0.89,0.88
+AtmosphereParams: [1, 1.6]
+LightZenithColor: 0.94,0.97,1
+LightHorizonColor: 0.94,0.5,0.5
+DayLightIntensity: 1
+NightLightIntensity: 0.80000000000000004
+NightLightColor: 0,1,1
+SunFlare: EnvironmentalEffects/SunFlareBlue
+AtmosphereFog: 0.20000000000000001
+FogCloudIntensity: 0.29999999999999999
+GroundFogIntensity: 0.01
+GroundFogHeight: 30
+CloudsDensity: 0.40000000000000002
+CloudsSharpness: 0.59999999999999998
+CloudsBrightness: 0.80000000000000004
+CloudsOpacity: 0.69999999999999996
+CloudsZenithColor: 0.9,0.9,0.98
+CloudsHorizonColor: 0.53,0.81,0.92
+CloudsNightZenithColor: 0.78,0.08,0.52
+CloudsNightHorizonColor: 1,0.27,0
+WindSpeed: 4
+PvP: False
+BaseAttackCount: 1
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+RandomResources:
+-  Name: IronResource
+   Biome: [TemperateForest, TemperateWet, TemperateDry, TemperateCold]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [5, 6]
+   SizeMinMax: [15, 40]
+   DepthMinMax: [1, 3]
+   DroneProb: 1
+   MaxDroneCount: 2
+-  Name: CopperResource
+   Biome: [Desert, TemperateDry, TemperateCold]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [5, 6]
+   SizeMinMax: [15, 30]
+   DepthMinMax: [1, 4]
+   DroneProb: 1
+   MaxDroneCount: 1
+-  Name: SiliconResource
+   Biome: [Desert, TemperateWet, TemperateForest]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [5, 6]
+   SizeMinMax: [20, 30]
+   DepthMinMax: [2, 3]
+   DroneProb: 0.5
+   MaxDroneCount: 2
+-  Name: PromethiumResource
+   Biome: [TemperateCold, BarrenSnow, TemperateDry]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [5, 6]
+   SizeMinMax: [25, 45]
+   DepthMinMax: [2, 5]
+   DroneProb: 0.40000000000000002
+   MaxDroneCount: 2
+-  Name: CobaltResource
+   Biome: [Desert, TemperateWet, TemperateCold]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 5]
+   SizeMinMax: [30, 50]
+   DepthMinMax: [4, 9]
+   DroneProb: 0.69999999999999996
+   MaxDroneCount: 2
+-  Name: PentaxidResource
+   Biome: [BarrenSnow, TemperateDry, Desert, TemperateCold]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 6]
+   SizeMinMax: [30, 45]
+   DepthMinMax: [2, 6]
+   DroneProb: 0.80000000000000004
+   MaxDroneCount: 3
+AsteroidResources:
+-  Name: IronResource
+   Amount: 5000
+   InitialDelay: 0
+   Delay: 6
+   DespawnDelay: 24
+-  Name: CobaltResource
+   Amount: 5000
+   InitialDelay: 0
+   Delay: 6
+   DespawnDelay: 24
+-  Name: CopperResource
+   Amount: 5000
+   InitialDelay: 0
+   Delay: 6
+   DespawnDelay: 24
+-  Name: SiliconResource
+   Amount: 3000
+   InitialDelay: 0
+   Delay: 6
+   DespawnDelay: 24
+-  Name: PromethiumResource
+   Amount: 4000
+   InitialDelay: 0
+   Delay: 6
+   DespawnDelay: 24
+-  Name: PentaxidResource
+   Amount: 250
+   InitialDelay: 0
+   Delay: 3
+   DespawnDelay: 12
+-  Name: SathiumResource
+   Amount: 1250
+   InitialDelay: 0
+   Delay: 9
+   DespawnDelay: 24
+-  Name: NeodymiumResource
+   Amount: 3000
+   InitialDelay: 0
+   Delay: 9
+   DespawnDelay: 36
+-  Name: ErestrumResource
+   Amount: 1000
+   InitialDelay: 0
+   Delay: 12
+   DespawnDelay: 48
+-  Name: ZascosiumResource
+   Amount: 1500
+   InitialDelay: 0
+   Delay: 16
+   DespawnDelay: 48
+POIs:
+   Random:
+   -  GroupName: DroneComputeUnit
+      Faction: Alien
+      DroneBaseSetup: DroneBaseSetup
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: Terrain, OnWater
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      IsCommandCenter: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      -  Key: SI
+         Value: Off
+   -  GroupName: MasterSnowEasy
+      Faction: Alien
+      CountMinMax: [1, 4]
+      IsImportant: True
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  GroupName: MasterSnowMedium
+      Faction: Alien
+      CountMinMax: [1, 4]
+      IsImportant: True
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      NoShieldReload: True
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseSetup
+      DronesMinMax: [2, 3]
+      ReserveCount: 3
+      DroneProb: 1
+      Difficulty: 6
+      PresetStyle: 1
+      Stock:
+      -  Name: DroneBomberAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneSmallAttackBase
+         Amount: Infinite
+         Extra: 0
+      -  Name: DroneSmallFast01Minigun
+         Amount: 100000
+         Extra: 0
+      -  Name: DroneSmallSlow01Cannon
+         Amount: 100000
+         Extra: 1
+      -  Name: DroneTroopsTransport
+         Amount: 100000
+         Extra: 2
+      -  Name: Mechanoid
+         Amount: 100000
+         Extra: 3
+      -  Name: TurretRobotV2
+         Amount: 75000
+         Extra: 3
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [10, 15]
+      CenterX: -2000
+      Radius: 1500
+   -  DronesMinMax: [10, 15]
+      CenterX: 2000
+      Radius: 1500
+CreatureSpawning:
+-  Biomes: [Debug]
+   Entities:
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 50
+-  Biomes: [DeepWater, Water]
+   Entities:
+   -  Name: Telluropods
+      Period: Always
+      Amount: 50
+      AllowInWater: True
+-  Biomes: [Shore]
+   Entities:
+   -  Name: AlienBugs01
+      Period: Day
+      Amount: 25
+   -  Name: Creepys
+      Period: Always
+      Amount: 45
+-  Biomes: [Desert]
+   Entities:
+   -  Name: Spiders02
+      Period: Always
+      Amount: 50
+   -  Name: GolemsDesert
+      Period: Night
+      Amount: 20
+   -  Name: Otyughs
+      Period: Night
+      Amount: 20
+   -  Name: WormDesertHerd
+      Period: Day
+      Amount: 35
+   -  Name: Hexapods
+      Period: Always
+      Amount: 14
+-  Biomes: [TemperateDry]
+   Entities:
+   -  Name: GolemsDesert
+      Period: Night
+      Amount: 25
+   -  Name: LizardMuleHerd
+      Period: Day
+      Amount: 75
+   -  Name: RaptorHerd
+      Period: Always
+      Amount: 25
+-  Biomes: [TemperateForest]
+   Entities:
+   -  Name: Parasaurs
+      Period: Day
+      Amount: 35
+   -  Name: Pangolins
+      Period: Night
+      Amount: 12
+   -  Name: Spiders01
+      Period: Always
+      Amount: 20
+   -  Name: Triceratopses
+      Period: Day
+      Amount: 10
+-  Biomes: [TemperateWet]
+   Entities:
+   -  Name: Spiders03
+      Period: Night
+      Amount: 15
+   -  Name: AlienAssassinGreys
+      Period: Night
+      Amount: 25
+   -  Name: AlienBugs03
+      Period: Day
+      Amount: 25
+   -  Name: AlienBugs04
+      Period: Always
+      Amount: 15
+   -  Name: GolemsSwamp
+      Period: Night
+      Amount: 15
+   -  Name: Crawlers
+      Period: Day
+      Amount: 20
+-  Biomes: [TemperateCold]
+   Entities:
+   -  Name: Oviraptors
+      Period: Always
+      Amount: 75
+   -  Name: SlimesWhite
+      Period: Always
+      Amount: 45
+   -  Name: RaptorsNight
+      Period: Night
+      Amount: 30
+   -  Name: Spinosauruses
+      Period: Day
+      Amount: 15
+-  Biomes: [BarrenSnow, Permafrost]
+   Entities:
+   -  Name: GolemsIce
+      Period: Night
+      Amount: 50
+   -  Name: CaveWormsWhite
+      Period: Always
+      Amount: 50
+   -  Name: TotalHorrors
+      Period: Night
+      Amount: 5

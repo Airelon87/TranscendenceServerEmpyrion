@@ -1,0 +1,303 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.64.0.2054, Playfield Version: 10.5.0 [2625] (Alpha EXPERIMENTAL 10.5.0)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -15
+PlayfieldLevel: 2
+Music: space
+Description: An area of space reserved for events
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 2
+LandClaimZone: Device
+SunFlare: EnvironmentalEffects/SunFlareWhite3Space
+# Stars: SkyboxStarsGreen
+# Nebula: PrefabNebulaBlue2
+Build: 2759
+PvP: False
+UseFixed: True
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+POIs:
+   Fixed: #TempestariaCruiser 340, -20, 240
+   # -  Type: CV_Player
+   #    Prefab: TempestariaCruiser
+   #    Name: TempestCruiser
+   #    Pos: [340, -20, 240]
+   #    Rot: [0, 0, 0]
+   #    Faction: Public
+   #    InitPower: True
+   -  Type: BA_Admin
+      Prefab: EventCenter
+      Name: EventCenter
+      Pos: [250, -30, 250]
+      Rot: [0, 0, 0]
+      Faction: Admin
+      InitPower: True
+   -  Type: BA_Player
+      Prefab: SVBuildDryDock
+      Name: PlayerOneDryDock
+      Pos: [100, 0, 100]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+      Properties: 
+      -  Key: PersonalContainer
+         Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+   -  Type: BA_Player
+      Prefab: SVBuildDryDock
+      Name: PlayerTwoDryDock
+      Pos: [150, 0, 100]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+      Properties: 
+      -  Key: PersonalContainer
+         Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+   -  Type: BA_Player
+      Prefab: SVBuildDryDock
+      Name: PlayerThreeDryDock
+      Pos: [200, 0, 100]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+      Properties: 
+      -  Key: PersonalContainer
+         Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+   -  Type: BA_Player
+      Prefab: SVBuildDryDock
+      Name: PlayerFourDryDock
+      Pos: [250, 0, 100]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+      Properties: 
+      -  Key: PersonalContainer
+         Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+   -  Type: BA_Player
+      Prefab: SVBuildDryDock
+      Name: PlayerFiveDryDock
+      Pos: [300, 0, 100]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+      Properties: 
+      -  Key: PersonalContainer
+         Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+   -  Type: BA_Player
+      Prefab: SVBuildDryDock
+      Name: PlayerSixDryDock
+      Pos: [350, 0, 100]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+      Properties: 
+      -  Key: PersonalContainer
+         Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+   -  Type: BA_Player
+      Prefab: SVBuildDryDock
+      Name: PlayerSevenDryDock
+      Pos: [400, 0, 100]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+      Properties: 
+      -  Key: PersonalContainer
+         Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+   -  Type: BA_Player
+      Prefab: SVBuildDryDock
+      Name: PlayerEightDryDock
+      Pos: [450, 0, 100]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+      Properties: 
+      -  Key: PersonalContainer
+         Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+   -  Type: BA_Player
+      Prefab: SVBuildDryDock
+      Name: PlayerNineDryDock
+      Pos: [500, 0, 100]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+      Properties: 
+      -  Key: PersonalContainer
+         Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+#Asteroids
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-5080, 175, -2750]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel01Pentaxid
+      Prefab: AsteroidVoxel01Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [1742, -53, -5570]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel03Promethium
+      Prefab: AsteroidVoxel03Promethium
+      Name: Promethium Asteroid
+      Pos: [3132, 2517, 3726]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel03Promethium
+      Prefab: AsteroidVoxel03Promethium
+      Name: Promethium Asteroid
+      Pos: [-2060, -1909, -4842]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [1602, -1568, -5182]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel02Promethium
+      Prefab: AsteroidVoxel02Promethium
+      Name: Promethium Asteroid
+      Pos: [-3322, -2950, -2946]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-1000, -700, -1000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-2000, -700, -2000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-1000, 1200, 1000]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [-2000, -1500, 0]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [1000, -900, 400]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [2800, -800, 2800]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [1000, 750, -1400]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   -  Type: AsteroidVoxel02Pentaxid
+      Prefab: AsteroidVoxel02Pentaxid
+      Name: Pentaxid Asteroid
+      Pos: [500, 1100, -2350]
+      Rot: [0, 0, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+      -  Key: MapDistance
+         Value: 3000
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [6000, 3000, -6000]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDronePlasma
+         Pos: [-14573, 1073, 21557]
+         Radius: 589
+      SpaceVessel:
+      -  Name: PolarisScienceVessel
+         Faction: Admin
+         FixedMaxSpeed: 5
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1
+            DelayBeforeSelfDestruction: 15
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [23498, 883, -22792]
+            - [25000, 1516, 20122]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 1
+            Extra: 1

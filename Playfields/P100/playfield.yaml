@@ -1,0 +1,1043 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.8.1908, Playfield Version: 10.0.0 [2446] (Alpha EXPERIMENTAL 10)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+Seed: 412412
+PlanetSize: 3
+PlanetAxis: 5
+PlayfieldLevel: 8
+TemperatureMinMax: [0, 32]
+TemperatureNight: -10
+HumidityMinMax: [0, 0]
+SeaLevel: 29
+TerrainLevel: 135
+BaseLevel: 1
+LandWaterRatio: 0.23000000000000001
+TemperatureHeightRange: [32, 450]
+TemperatureGradientRange: [0, 0.5]
+TemperatureNoiseFac: 0.29999999999999999
+HumidityHeightFac: [0, 400]
+HumidityNoiseFac: 0.10000000000000001
+Gravity: -10.1
+AtmosphereDensity: 1.1000000000000001
+AtmosphereO2: 0.38
+Water: RockLava03
+Music: ExtraktTechno
+TerrainHeightMapMax: 500
+BiomeStampTries: 500
+Biome:
+-  BiomeClusterData:
+   -  Name: Pole
+      Weather: PoleFog
+      Texture: [2, 2, 0.5]
+      UndergroundLayers:
+      - [10, 1]
+      - [11, -1]
+      - [15, 1]
+      SelectionCriteria:
+      - +Lat > 0.975
+      Color: [0, 0, 0]
+      UndergroundLayersDefault: True
+   -  Name: BiomeOne
+      Texture: [8, 8, 0.5]
+      SelectionCriteria:
+      - Height < SeaLevel - 1
+      Color: [0, 0, 0]
+      StampProb: 1
+      Stamps:
+      - Cliff_1, 0.4
+      - RiftLava_1, 0.2
+      StampTries: 25
+      Radiation: 2
+      Temperature: 15
+      Decorations:
+      - [RockResourceGold, 0.005]
+   -  Name: BiomeTwo
+      Texture: [11, 10, 0.2]
+      SelectionCriteria:
+      - Height > SeaLevel - 1
+      - Height < SeaLevel + 1
+      Color: [1, 1, 0]
+      StampProb: 1
+      Radiation: 1
+      Temperature: 4
+      Decorations:
+      - [MoundzTree, 0.005, Plant]
+      - [LavaPlant2, 0.005, Plant]
+      - [LeafPlant, 0.011, Plant]
+      - [GasEmitter1, 0.004, Plant]
+   -  Name: BiomeThree
+      LevelMod: -3
+      AmbientSound: ArcticLowPlains
+      Texture: [5, 6, 0.6]
+      SelectionCriteria:
+      - Height > SeaLevel + 1
+      - Height < 60
+      Color: [0.68, 1, 0.18]
+      StampProb: 1
+      Stamps:
+      - DunesDesert_01, 0.3
+      - GroundShape_4_ADD, 0.4
+      - CraterLava_1, 0.1
+      StampTries: 75
+      Decorations:
+      - [RockResourceZascosium, 0.001, Free]
+      - [RockResourceErestrum, 0.002, Free]
+      - [RealRock1, 0.001, Plant]
+      - [RealRock2, 0.001, Plant]
+      - [RealRock6, 0.001, Plant]
+      - [ScalyPods, 0.001, Plant]
+      - [Snakeweed, 0.007, Plant]
+      - [CobraLeavesPlant, 0.003, Plant]
+      Grass:
+      -  Name: Flower01
+         Density: 0.10000000000000001
+         YScale: 0.12
+         Preset: GrassPatches2b
+   -  Name: BiomeFour
+      LevelMod: +1
+      Texture: [5, 6, 0.5, 6, 7, 0.2, 0.4]
+      SelectionCriteria:
+      - Height > 60
+      - Height < 150
+      Color: [0.18, 0.55, 0.34]
+      StampProb: 1
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOther
+      Stamps:
+      - Hill_1, 0.3
+      - Hill_2, 0.4
+      - Cliff_1, 0.4
+      - Valley_2, 0.2
+      StampTries: 100
+      Decorations:
+      - [BrainFungus, 0.001, Tree]
+      - [PixieStalks, 0.003, Tree]
+      - [OmicronPlant, 0.001, Plant]
+      - [AlienPlantSpike1, 0.001, Plant]
+      - [AlienPlantPod2, 0.004, Plant]
+      - [MushroomBellBrown01, 0.001, Plant]
+      - [AlienPalmTree, 0.002, Free]
+      - [SucculentTree, 0.001, Plant]
+      Grass:
+      -  Name: GrassBrown02c
+         Density: 0.20000000000000001
+         YScale: 0.10000000000000001
+         Preset: GrassDense
+   -  Name: BiomeFive
+      LevelMod: -2
+      AmbientSound: Mountains
+      Texture: [9, 11, 0.7]
+      SelectionCriteria:
+      - Height > 150
+      - Height < 225
+      Color: [1, 0.63, 0.48]
+      StampProb: 1
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOwn
+      Stamps:
+      - Valley_2, 0.25
+      - HillsLava_1, 0.25
+      StampTries: 120
+      Decorations:
+      - [MushroomTallGreen01, 0.001, Free]
+      - [Pillar1, 0.001, Plant]
+      - [Pillar2, 0.001, Plant]
+      - [EggPlant, 0.001, Plant]
+      - [CthulhuTree01, 0.001, Plant]
+      - [PixieStalks, 0.001, Plant]
+      - [Cactus1, 0.001, Plant]
+      - [Cactus2, 0.001, Plant]
+      - [AlienPlantReef1, 0.003, Plant]
+      Grass:
+      -  Name: Flower02
+         Density: 0.20000000000000001
+         YScale: 0.10000000000000001
+         Preset: GrassDense
+      -  Name: GrassBrown02c
+         Density: 0.10000000000000001
+         YScale: 0.14999999999999999
+         Preset: GrassDense3
+   -  Name: BiomeSix
+      LevelMod: +1
+      AmbientSound: Mountains
+      Texture: [6, 2, 0.5]
+      SelectionCriteria:
+      - Height > 225
+      - Height < 280
+      Color: [0, 0, 0]
+      StampProb: 1
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOff
+      Stamps:
+      - MountainPlateau_05, 0.3
+      - MountainPlateau_06_LO, 0.3
+      - MountainPlateau_03, 0.3
+      - Valley_3, 0.1
+      StampTries: 150
+      Decorations:
+      - [RealRock1, 0.001, Free]
+      - [RealRock10Dark, 0.001, Free]
+      - [SkeletonMammothHead, 0.001, Free]
+      - [SkeletonDragonTorso, 0.001, Free]
+      - [Snakeweed, 0.005, Free]
+      - [WeepingPalm3, 0.002, Plant]
+      - [MushroomTallGreen01, 0.002, Tree]
+      - [InsanityPepper, 0.002, Tree]
+      - [ElderberryBushOrange, 0.001, Tree]
+      - [AlienPlantReef2, 0.01, Tree]
+      Grass:
+      -  Name: GrassType03Red
+         Density: 0.29999999999999999
+         YScale: 0.14999999999999999
+         Preset: GrassDense
+      -  Name: Plant01Blue
+         Density: 0.29999999999999999
+         YScale: 0.17999999999999999
+         Preset: GrassDense
+   -  Name: BiomeSeven
+      LevelMod: +3
+      AmbientSound: Mountains
+      Texture: [6, 1, 0.5, 2, 1, 0.5, 0.5]
+      SelectionCriteria:
+      - Height > 280
+      Color: [0.5, 0.5, 0.5]
+      StampProb: 1
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOff
+      Stamps:
+      - Volcanic_01a, 0.2
+      - Volcano_1, 0.2
+      - Volcano_3, 0.4
+      - MountainDesert_01, 0.4
+      - Mountain_9, 0.3
+      StampTries: 200
+      Decorations:
+      - [ScalyPods, 0.001, Free]
+      - [PromethiumStone, 0.001, Free]
+      - [GlowTube01, 0.001, Free]
+      - [MushroomTallBlue02, 0.001, Free]
+      - [CrystalStraight, 0.001, Free]
+      - [ClusterShroom, 0.001, Free]
+      - [BallFlower03, 0.001, Plant]
+      - [RockResourceCobalt, 0.001, Plant]
+      - [RockResourceCopper, 0.001, Plant]
+      - [RockResourceSilicon, 0.001, Plant]
+   -  Name: BiomeEight
+      LevelMod: -1
+      AmbientSound: OpenPlains
+      Texture: [1, 10, 0.5]
+      SelectionCriteria:
+      - True
+      Color: [0, 0, 0]
+      StampProb: 1
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapAll
+      Stamps:
+      - CraterLava_1, 0.25
+      - CraterLava_3_HI, 0.25
+      - PlainsLava_1b, 0.25
+      - Cliff_2, 0.25
+      Decorations:
+      - [CthulhuTree01, 0.001, Plant]
+      - [GrinShroom, 0.002, Plant]
+      - [CoralStone04-03, 0.004, Free]
+      - [GasEmitter2, 0.001, Free]
+      - [GasEmitter2, 0.001, Free]
+      - [AntlerTree, 0.002, Plant]
+      Grass:
+      -  Name: GrassType03Red
+         Density: 0.40000000000000002
+         YScale: 0.29999999999999999
+         Preset: GrassDense
+Description: '"Difficulty HARD High Enemy Presence Detected By Sensors"'
+PlanetClass: Planet
+PlanetType: Lava
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 5
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: Grime
+   Biome: [BiomeOne]
+   Time: Always
+   MaxHeight: 255
+-  Name: DustDevil
+   Biome: [BiomeThree, BiomeFour]
+   Time: Day
+   MaxHeight: 255
+-  Name: WindLines
+   Biome: [BiomeFive, BiomeSix]
+   Time: Always
+   MaxHeight: 255
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Delay: 2
+   Lifetime: 1000
+-  Name: CloudsDark
+   Type: Weather
+   Delay: 16
+   Lifetime: 450
+-  Name: AcidRainHeavy
+   Type: Weather
+   InitialDelay: 4
+   Delay: 8
+   Lifetime: 400
+-  Name: HeatWave
+   Type: Weather
+   InitialDelay: 9
+   Delay: 12
+   Lifetime: 500
+-  Name: ThunderAndLightningRed
+   Biome: [Any]
+   Time: Always
+   PlyDist: 100
+   Struct: Avoid
+   Lifetime: 600
+   SpawnY: 60
+-  Name: BirdFlockBats
+   Biome: [Any]
+   Time: Always
+   PlyDist: 100
+   Struct: Avoid
+   Lifetime: 600
+   SpawnY: 45
+AtmosphereColor: 0.58,0.44,0.86
+SkyColor: 0.82,0.71,0.55
+SkyHorizonColor: 0.49,0.99,0
+AtmosphereParams: [4, 2]
+LightZenithColor: 0.94,1,1
+LightHorizonColor: 0.96,0.96,0.86
+DayLightIntensity: 1.3999999999999999
+NightLightIntensity: 1
+NightLightColor: 0.42,0.35,0.8
+SunFlare: EnvironmentalEffects/SunFlareWhite4Space
+AtmosphereFog: 0.29999999999999999
+FogColor: 0.98,0.92,0.84
+FogCloudIntensity: 0.20000000000000001
+FogIntensity: 0.10000000000000001
+FogStartDistance: 500
+GroundFogIntensity: 0.10000000000000001
+GroundFogHeight: 38
+CloudsDensity: 0.40000000000000002
+CloudsSharpness: 0.5
+CloudsBrightness: 0.20000000000000001
+CloudsOpacity: 0.69999999999999996
+CloudsZenithColor: 0.5,0.5,0.5
+CloudsHorizonColor: 0,0.5,0
+CloudsNightZenithColor: 0.41,0.41,0.41
+CloudsNightHorizonColor: 0.6,0.8,0.2
+WindSpeed: 4
+Build: 2446
+Radiation: 5
+PvP: False
+UseRandom: True
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+RandomResources:
+-  Name: ErestrumResource
+   IsScalingCount: False
+   IsImportant: True
+   CountMinMax: [7, 8]
+   SizeMinMax: [10, 20]
+   DepthMinMax: [0, 5]
+   DroneProb: 1
+   MaxDroneCount: 2
+-  Name: ZascosiumResource
+   IsScalingCount: False
+   IsImportant: True
+   CountMinMax: [8, 12]
+   SizeMinMax: [10, 20]
+   DepthMinMax: [0, 4]
+   DroneProb: 1
+   MaxDroneCount: 2
+-  Name: PromethiumResource
+   IsScalingCount: False
+   IsImportant: False
+   CountMinMax: [2, 3]
+   SizeMinMax: [9, 18]
+   DepthMinMax: [1, 7]
+   DroneProb: 1
+   MaxDroneCount: 1
+-  Name: GoldResource
+   IsScalingCount: False
+   IsImportant: False
+   CountMinMax: [4, 5]
+   SizeMinMax: [5, 8]
+   DepthMinMax: [1, 7]
+   DroneProb: 1
+   MaxDroneCount: 1
+AsteroidResources:
+-  Name: ErestrumResource
+   Amount: 1500
+   InitialDelay: 0
+   Delay: 8
+   DespawnDelay: 12
+-  Name: ZascosiumResource
+   Amount: 1500
+   InitialDelay: 0
+   Delay: 8
+   DespawnDelay: 12
+-  Name: GoldResource
+   Threshold: 0.69999999999999996
+   Amount: 0.80000000000000004
+-  Name: PromethiumResource
+   Threshold: 0.69999999999999996
+   Amount: 0.80000000000000004
+POIs:
+   Random:
+   -  GroupName: ZiblaxCity
+      Faction: Zirax
+      NoShieldReload: True
+      LevelMod: -5
+      DroneBaseSetup: DroneBaseSetup
+      IsCommandCenter: True
+      CountMinMax: [1, 1]
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [1, 4]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: Praxis
+   -  GroupName: ZiraxTurret
+      Faction: Zirax
+      Territory: False
+      LevelMod: +2
+      CountMinMax: [4, 5]
+      DronesMinMax: [0, 0]
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [ZiblaxCity]
+      SpawnPOINearDistance: 300
+      SpawnPOINearRange: [200, 250]
+      Properties:
+      -  Key: RegenAfter
+         Value: 75
+   -  GroupName: ZiraxHoverTank
+      Faction: Zirax
+      NoShieldReload: True
+      LevelMod: -5
+      CountMinMax: [3, 4]
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      SpawnPOINear: [ZiraxTurret]
+      SpawnPOINearDistance: 250
+      SpawnPOINearRange: [50, 150]
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 45
+   -  GroupName: ZiraxSupportTown
+      Faction: Zirax
+      LevelMod: -3
+      CountMinMax: [2, 2]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [ZiraxHoverTank]
+      SpawnPOINearDistance: 250
+      SpawnPOINearRange: [100, 250]
+      Properties:
+      -  Key: RegenAfter
+         Value: 75
+   -  GroupName: ZiraxSupportDepot
+      Faction: Zirax
+      LevelMod: -6
+      CountMinMax: [2, 2]
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [ZiraxSupportTown]
+      SpawnPOINearDistance: 150
+      SpawnPOINearRange: [75, 150]
+      Properties:
+      -  Key: RegenAfter
+         Value: 75
+   -  GroupName: UnknownCavern
+      Faction: Alien
+      Territory: False
+      LevelMod: -5
+      CountMinMax: [1, 1]
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+      -  Key: SI
+         Value: Off
+      -  Key: PersonalContainer
+         Value: GoldCoins:25, RocketLauncherEpic, ArmorHeavyEpic, EmergencyRations:3
+   -  GroupName: UnknownCavernSmall
+      Faction: Alien
+      Territory: False
+      LevelMod: -5
+      CountMinMax: [2, 3]
+      PlaceAt: Terrain
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [UnknownCavern]
+      SpawnPOINearDistance: 200
+      SpawnPOINearRange: [90, 200]
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 90
+   -  GroupName: DroneBaseT3
+      Faction: Polaris
+      NoShieldReload: True
+      LevelMod: -2
+      DroneBaseSetup: DroneBaseSetup
+      IsCommandCenter: True
+      CountMinMax: [1, 1]
+      DroneProb: 1
+      DronesMinMax: [1, 3]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      SpawnPOIAvoid: [ZiblaxCity]
+      SpawnPOIAvoidDistance: 1250
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+      -  Key: Music
+         Value: Resurgence
+   -  GroupName: PolarisMiningMain
+      Faction: Polaris
+      LevelMod: -5
+      CountMinMax: [1, 2]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [DroneBaseT3]
+      SpawnPOINearDistance: 250
+      SpawnPOINearRange: [90, 250]
+      Properties:
+      -  Key: RegenAfter
+         Value: 120
+   -  GroupName: PolarisDefence
+      Faction: Polaris
+      LevelMod: -5
+      CountMinMax: [3, 4]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [PolarisMiningMain]
+      SpawnPOINearDistance: 150
+      SpawnPOINearRange: [80, 150]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  GroupName: PolarisIndustrialMain
+      Faction: Polaris
+      CountMinMax: [1, 2]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      SpawnPOINear: [PolarisDefence]
+      SpawnPOINearDistance: 200
+      SpawnPOINearRange: [60, 200]
+      Properties:
+      -  Key: RegenAfter
+         Value: 75
+   -  GroupName: VladeRaid
+      Faction: Vladian
+      Territory: False
+      LevelMod: -4
+      CountMinMax: [1, 1]
+      PlaceAt: OnWater
+      DroneProb: 1
+      DronesMinMax: [1, 3]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      SpawnPOIAvoid: [ZiblaxCity, DroneBaseT3]
+      SpawnPOIAvoidDistance: 800
+      Properties:
+      -  Key: RegenAfter
+         Value: 160
+      -  Key: SI
+         Value: Off
+      -  Key: Music
+         Value: Magnitude
+   -  GroupName: RadosMain
+      Faction: Rados
+      LevelMod: -3
+      CountMinMax: [2, 3]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 75
+   -  GroupName: RadosAuxT1
+      Faction: Rados
+      LevelMod: -5
+      CountMinMax: [2, 2]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [RadosMain]
+      SpawnPOINearDistance: 200
+      SpawnPOINearRange: [100, 200]
+      Properties:
+      -  Key: RegenAfter
+         Value: 75
+   -  GroupName: RadosDefenceT1
+      Faction: Rados
+      Territory: False
+      LevelMod: -5
+      CountMinMax: [3, 4]
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      SpawnPOINear: [RadosAuxT1]
+      SpawnPOINearDistance: 250
+      SpawnPOINearRange: [75, 200]
+      Properties:
+      -  Key: RegenAfter
+         Value: 75
+   -  GroupName: ZiraxCiv
+      Faction: Zirax
+      LevelMod: -5
+      CountMinMax: [1, 1]
+      DroneProb: 1
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 75
+      -  Key: Music
+         Value: Praxis
+   -  GroupName: ZiraxDefenseTower
+      Faction: Zirax
+      LevelMod: -6
+      CountMinMax: [2, 2]
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [ZiraxCiv]
+      SpawnPOINearDistance: 150
+      SpawnPOINearRange: [75, 150]
+      Properties:
+      -  Key: RegenAfter
+         Value: 45
+   -  GroupName: AlienLavaColony
+      Faction: Kriel
+      Territory: False
+      LevelMod: -4
+      CountMinMax: [3, 4]
+      PlaceAt: OnWater
+      DroneProb: 1
+      DronesMinMax: [1, 3]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 120
+      -  Key: Music
+         Value: lava
+   -  GroupName: RadarArray
+      Faction: Polaris
+      LevelMod: -5
+      CountMinMax: [1, 1]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  GroupName: CivilSettlement
+      Faction: Polaris
+      LevelMod: -6
+      CountMinMax: [1, 2]
+      DroneProb: 0.10000000000000001
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      SpawnPOINear: [RadarArray]
+      SpawnPOINearDistance: 200
+      SpawnPOINearRange: [100, 200]
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  GroupName: PolarisDefence
+      Faction: Polaris
+      Territory: False
+      LevelMod: -4
+      CountMinMax: [2, 3]
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [RadarArray]
+      SpawnPOINearDistance: 75
+      SpawnPOINearRange: [30, 75]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  GroupName: ZiblonHard
+      Faction: Zirax
+      LevelMod: -3
+      CountMinMax: [1, 1]
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  GroupName: ZiblonMedium
+      Faction: Zirax
+      LevelMod: -3
+      CountMinMax: [1, 1]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [ZiblonHard]
+      SpawnPOINearDistance: 200
+      SpawnPOINearRange: [75, 150]
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  GroupName: ZiraxMiningTower
+      Faction: Zirax
+      LevelMod: -3
+      CountMinMax: [1, 1]
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [ZiblonMedium]
+      SpawnPOINearDistance: 125
+      SpawnPOINearRange: [50, 125]
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  GroupName: XenuComArray
+      Faction: Xenu
+      LevelMod: -3
+      CountMinMax: [1, 1]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [ZiraxMiningTower]
+      SpawnPOINearDistance: 125
+      SpawnPOINearRange: [50, 125]
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  GroupName: ZiblonCiv
+      Faction: Zirax
+      LevelMod: -6
+      CountMinMax: [1, 2]
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      SpawnPOINear: [XenuComArray]
+      SpawnPOINearDistance: 150
+      SpawnPOINearRange: [60, 120]
+      Properties:
+      -  Key: RegenAfter
+         Value: 90
+   -  GroupName: TalonCloudVillage
+      Faction: Talon
+      LevelMod: -2
+      CountMinMax: [1, 1]
+      IsImportant: True
+      PlaceAt: Terrain, OnWater
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 75
+      -  Key: Music
+         Value: Eden
+   -  GroupName: TalonSkyBoat
+      Faction: Talon
+      LevelMod: -5
+      CountMinMax: [2, 3]
+      PlaceAt: Terrain, OnWater
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [TalonCloudVillage]
+      SpawnPOINearDistance: 150
+      SpawnPOINearRange: [25, 150]
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 60
+   -  GroupName: TalonSkyIsleTurret
+      Faction: Talon
+      Territory: False
+      LevelMod: -6
+      CountMinMax: [3, 5]
+      PlaceAt: Terrain, OnWater
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      SpawnPOINear: [TalonCloudVillage]
+      SpawnPOINearDistance: 250
+      SpawnPOINearRange: [25, 250]
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 60
+   -  GroupName: ZiraxHoverTank
+      Faction: Zirax
+      Territory: False
+      LevelMod: -5
+      CountMinMax: [1, 10]
+      PlaceAt: Terrain, OnWater
+      DroneProb: 1
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 45
+   -  GroupName: Eggs
+      Faction: Alien
+      Territory: False
+      LevelMod: -2
+      CountMinMax: [2, 12]
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      Properties:
+      -  Key: RegenAfter
+         Value: 25
+DroneBaseSetup:
+   Random:
+   -  GroupName: DroneBaseSetup
+      DronesMinMax: [2, 3]
+      ReserveCount: 3
+      DroneProb: 1
+      Difficulty: 7
+      PresetStyle: 4
+      Stock:
+      -  Name: DroneBomberAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneLargeAttackBase
+         Amount: Infinite
+         Extra: 1
+      -  Name: DroneTroopsTransport
+         Amount: Infinite
+         Extra: 2
+      -  Name: DroneLargeSlow01Minigun
+         Amount: 99000
+         Extra: 0
+      -  Name: DroneLargeSlow02Cannon
+         Amount: 99000
+         Extra: 0
+      -  Name: DroneSmallFast01Rocket
+         Amount: 99000
+         Extra: 0
+      -  Name: ZiraxRocket
+         Amount: 75000
+         Extra: 3
+      -  Name: TurretRobotV2
+         Amount: 50000
+         Extra: 3
+      -  Name: RipperDog
+         Amount: 50000
+         Extra: 3
+      -  Name: ZiraxSniper
+         Amount: 25000
+         Extra: 3
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 10]
+      CenterX: 1000
+      Radius: 1000
+   -  DronesMinMax: [5, 10]
+      CenterX: -1000
+      Radius: 1000
+   -  DronesMinMax: [5, 10]
+      CenterX: -5000
+      Radius: 3000
+   -  DronesMinMax: [5, 10]
+      CenterX: -5000
+      Radius: 3000
+SpawnZones:
+-  SpawnAt: [ErestrumResource, ZascosiumResource, GoldResource, CivilSettlement, VladeRaid]
+   Radius: 150
+   RadiusRandom: 250
+   RateMultiplyerCenter: 0.5
+   RateMultiplyerEdge: 0.20000000000000001
+   Color: 1,1,0.08,0.58
+   Entities:
+   -  Names: [AlienAssassinGreys, AlienAssassinReds, Slimes, Spiders01]
+      Amount: 2000
+      Period: Always
+      DelayMinMax: [0, 0]
+-  SpawnAt: [PolarisMiningMain]
+   Radius: 150
+   RadiusRandom: 50
+   RateMultiplyerCenter: 0.5
+   RateMultiplyerEdge: 0.69999999999999996
+   Color: 1,1,0,0
+   Entities:
+   -  Names: [TotalHorrors]
+      Amount: 2000
+      Period: Always
+      DelayMinMax: [0, 0]
+-  SpawnAt: [Eggs]
+   Entities:
+   -  Names: [Hexapods, Creepys]
+      Amount: 2000
+      Period: Always
+      DelayMinMax: [0, 0]
+CreatureSpawning:
+-  Biomes: [BiomeTwo, BiomeThree]
+   Entities:
+   -  Name: Pangolins
+      Period: Always
+      Amount: 60
+      DelayMinMax: [0, 0]
+   -  Name: AlienBugs02
+      Period: Always
+      Amount: 45
+      DelayMinMax: [0, 0]
+   -  Name: Slimes
+      Period: Night
+      Amount: 35
+      DelayMinMax: [0, 0]
+   -  Name: Otyughs
+      Period: Always
+      Amount: 40
+      DelayMinMax: [0, 0]
+   -  Name: RaptorsNight
+      Period: Always
+      Amount: 50
+      DelayMinMax: [0, 0]
+   -  Name: Hexapods
+      Period: Always
+      Amount: 45
+      DelayMinMax: [0, 0]
+-  Biomes: [BiomeFour, BiomeFive]
+   Entities:
+   -  Name: Pangolins
+      Period: Always
+      Amount: 20
+      DelayMinMax: [0, 0]
+   -  Name: RaptorHerd
+      Period: Always
+      Amount: 20
+      DelayMinMax: [0, 0]
+   -  Name: Spiders02
+      Period: Always
+      Amount: 45
+      DelayMinMax: [0, 0]
+   -  Name: WormsDesert
+      Period: Always
+      Amount: 20
+      DelayMinMax: [0, 0]
+   -  Name: GolemsSwamp
+      Period: Always
+      Amount: 20
+      DelayMinMax: [0, 0]
+   -  Name: Overseers
+      Period: Always
+      Amount: 18
+      DelayMinMax: [0, 0]
+   -  Name: Triceratopses
+      Period: Day
+      Amount: 45
+      DelayMinMax: [0, 0]
+   -  Name: Crawlers
+      Period: Night
+      Amount: 50
+      DelayMinMax: [0, 0]
+-  Biomes: [BiomeSix, BiomeSeven, BiomeEight]
+   Entities:
+   -  Name: Spiders01
+      Period: Always
+      Amount: 90
+      DelayMinMax: [0, 0]
+   -  Name: Spiders02
+      Period: Always
+      Amount: 100
+      DelayMinMax: [0, 0]
+   -  Name: Spiders03
+      Period: Always
+      Amount: 80
+      DelayMinMax: [0, 0]
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 45
+      DelayMinMax: [0, 0]
+   -  Name: Spinosauruses
+      Period: Always
+      Amount: 45
+      DelayMinMax: [0, 0]
+   -  Name: GolemsDesert
+      Period: Always
+      Amount: 15
+      DelayMinMax: [0, 0]

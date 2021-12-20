@@ -1,0 +1,1365 @@
+---
+#Extreme Playfield / StrangeWorlds Talonia
+#Updated 8 June 2020 for A12
+#By Airelon87 For Transcendence Server
+Seed: 8675309
+PlanetSize: 4
+PlanetAxis: -25
+TemperatureMinMax: [23, 29]
+TemperatureNight: 19
+HumidityMinMax: [0.1, 0.99]
+SeaLevel: 45
+TerrainLevel: 140
+BaseLevel: 0
+LandWaterRatio: 0.55
+TemperatureHeightRange: [60, 400]
+TemperatureGradientRange: [0.85, 0.5]
+TemperatureNoiseFac: 0.7
+HumidityHeightFac: [0, 300]
+HumidityNoiseFac: 0.65
+
+Gravity: -7
+Radiation: 0
+AtmosphereDensity: 0.6
+AtmosphereO2: 0.29
+AtmosphereBreathable: True
+GroundFogIntensity: 0.11
+GroundFogHeight: 0
+AtmosphereFog: 0
+PvP: False
+PlayfieldLevel: 3
+
+Water: WaterBlue
+Music: Hyperion
+
+TerrainHeightMapMax: 499
+
+BiomeStampTries: 75
+
+Biome:
+   - BiomeClusterData:
+         - Name: Pole
+           IgnoreForcedBiome: True
+           Weather: PoleFog
+           Texture: [0, 0, 0.2]
+           UndergroundLayersDefault: True
+           UndergroundLayers:
+               - [9, 0]
+               - [12, 1]
+               - [11, 10]
+               - [13, 1]
+               - [9, 2]
+               - [10, 3]
+               - [19, 2]
+               - [11, -1]
+               - [12, 2]
+           SelectionCriteria:
+               - "+Lat > 0.975"
+           Color: [1, 1, 1]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           AmbientSound: ArcticLowPlains
+           Decorations:
+           Grass:
+#SubBiomes Are For Water / B is for desert half
+
+         - Name: SubBiomeOne
+           Texture: [1, 2, 0.4]
+           SelectionCriteria:
+               - "+Long < 0.95"
+               - "+Long > 0.475"
+               - Height < SeaLevel - 15
+           Color: [0.1, 0.1, 0.1]
+           AmbientSound: Ocean
+           Decorations:
+               - [RockResourceNeodymium, 0.0006, BigPlant]
+               - [SkeletonDragonTorso, 0.00003, Plant]
+               - [SkeletonDragonHead, 0.00002, Plant]
+               - [Hydrilla2, 0.001, Plant]
+               - [SeaWeed02-04, 0.004, Plant]
+               - [CoralBig08, 0.004, Plant]
+               - [CrystalStraight, 0.0008, Free]
+               - [RockResourceCobalt, 0.0001, Free] 
+               - [RockResourcePromethium, 0.0001, Free]  
+               - [RockResourceGold, 0.0001, Free]
+               - [PromethiumStone, 0.0005]
+           Grass:
+               - Name: GrassBlue02
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: Seaweed02
+                 Density: 0.1
+                 Preset: GrassDense
+               - Name: Seaweed05
+                 Density: 0.1
+                 Preset: GrassDense
+               
+         - Name: SubBiomeTwo
+           Texture: [2, 3, 0.4]
+           SelectionCriteria:
+               - "+Long < 0.95"
+               - "+Long > 0.475"
+               - Height < SeaLevel - 5
+               - Height > SeaLevel - 15
+           Color: [0.1, 0.1, 0.1]
+           AmbientSound: Ocean
+           Decorations:
+               - [RockResourceMagnesium, 0.0001, Free]
+               - [GlowTube01, 0.0001, Free]
+               - [CoralBig01, 0.011, Plant]
+               - [CoralBig08, 0.0015, Plant]
+               - [SeaWeed02-04, 0.012, Plant]
+           Grass:
+               - Name: GrassBlue02
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: Seaweed02
+                 Density: 0.1
+                 Preset: GrassDense
+               - Name: Seaweed05
+                 Density: 0.1
+                 Preset: GrassDense
+               
+         - Name: SubBiomeThree
+           Texture: [3, 4, 0.4]
+           SelectionCriteria:
+               - "+Long < 0.95"
+               - "+Long > 0.475"
+               - Height < SeaLevel
+               - Height > SeaLevel - 5
+           Color: [0.1, 0.1, 0.1]
+           AmbientSound: Ocean
+           Decorations:
+               - [RockResourceIron, 0.0001, Free] 
+               - [RockResourceSilicon, 0.0001, Free]            
+               - [RockResourceCopper, 0.0001, Free]               
+               - [CobraLeavesPlant, 0.001, Free] 
+               - [CattailWinter, 0.001, Plant]
+               - [Snakeweed, 0.001, Plant]
+               - [OmicronWaterleaf, 0.01, Plant]
+           Grass:
+               - Name: GrassType01Red
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: GrassBlue02
+                 Density: 0.15
+                 Preset: GrassDense
+
+#OtherHalfWater
+         - Name: SubBiomeOneB
+           Texture: [1, 2, 0.46]
+           SelectionCriteria:
+               - "+Long < 0.475"
+               - "+Long > 0.05"
+               - Height < SeaLevel - 15
+           Color: [0.1, 0.1, 0.1]
+           AmbientSound: Ocean
+           Decorations:
+               - [RockResourceNeodymium, 0.0006, BigPlant]
+               - [SkeletonDragonTorso, 0.00003, Plant]
+               - [SkeletonDragonHead, 0.00002, Plant]
+               - [Hydrilla2, 0.001, Plant]
+               - [SeaWeed02-04, 0.004, Plant]
+               - [CoralBig08, 0.004, Plant]
+               - [CrystalStraight, 0.0008, Free]
+               - [RockResourceCobalt, 0.0001, Free] 
+               - [RockResourcePromethium, 0.0001, Free]  
+               - [RockResourceGold, 0.0001, Free]
+               - [PromethiumStone, 0.0005]
+           Grass:
+               - Name: GrassBlue02
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: Seaweed02
+                 Density: 0.1
+                 Preset: GrassDense
+               - Name: Seaweed05
+                 Density: 0.1
+                 Preset: GrassDense
+               
+         - Name: SubBiomeTwoB
+           Texture: [2, 3, 0.4]
+           SelectionCriteria:
+               - "+Long < 0.475"
+               - "+Long > 0.05"
+               - Height < SeaLevel - 5
+               - Height > SeaLevel - 15
+           Color: [0.1, 0.1, 0.1]
+           AmbientSound: Ocean
+           Decorations:
+               - [RockResourceMagnesium, 0.0001, Free]
+               - [GlowTube01, 0.0001, Free]
+               - [CoralBig01, 0.011, Plant]
+               - [CoralBig08, 0.0015, Plant]
+               - [SeaWeed02-04, 0.012, Plant]
+           Grass:
+               - Name: GrassBlue02
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: Seaweed02
+                 Density: 0.1
+                 Preset: GrassDense
+               - Name: Seaweed05
+                 Density: 0.1
+                 Preset: GrassDense
+
+         - Name: SubBiomeThreeB
+           Texture: [3, 4, 0.4]
+           SelectionCriteria:
+               - "+Long < 0.475"
+               - "+Long > 0.05"
+               - Height < SeaLevel
+               - Height > SeaLevel - 5
+           Color: [0.1, 0.1, 0.1]
+           AmbientSound: Ocean
+           Decorations:
+               - [RockResourceIron, 0.0001, Free] 
+               - [RockResourceSilicon, 0.0001, Free]            
+               - [RockResourceCopper, 0.0001, Free]               
+               - [CobraLeavesPlant, 0.001, Free] 
+               - [CattailWinter, 0.001, Plant]
+               - [Snakeweed, 0.001, Plant]
+               - [OmicronWaterleaf, 0.01, Plant]
+           Grass:
+               - Name: GrassType01Red
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: GrassBlue02
+                 Density: 0.15
+                 Preset: GrassDense
+#Near Pole Biome
+
+         - Name: BiomeZero
+           Texture: [3, 3, 0.2]
+           SelectionCriteria:
+               - "+Lat < 0.975"
+               - "+Lat > 0.875"
+           Color: [0.1, 0.2, 0.8]
+           AmbientSound: ArcticLowPlains
+           Temperature: 0
+           LevelMod: +4
+           Stamps:
+               - CraterMoon_4, 0.3
+               - CraterMoon_6, 0.3
+           Decorations:
+               - [BlueSpruceWinter, 0.0018, Tree]
+               - [AlaskaCedarBare, 0.0017, Tree]
+               - [BushWinter01, 0.001, BigPlant]
+               - [BushWinter02, 0.001, BigPlant]
+               - [CrystalStraight, 0.00015, Free]
+               - [PromethiumStone, 0.0003, Free]
+               - [PromethiumResource, 0.0005, Free]
+               - [CornDogBushSnow, 0.007, Free]
+               - [PixieStalksSnow, 0.007, Free]
+               - [BrainFungusSnow, 0.002, Free]
+           Grass:
+               - Name: GrassGreen03bSnow
+                 Density: 0.5
+                 Preset: GrassDense
+               - Name: Flower04
+                 Density: 0.05
+                 Preset: GrassDense
+
+#Planet 1/2 1                
+         - Name: BiomeOne
+           Texture: [1, 1, 0.2]
+           SelectionCriteria:
+               - "+Long < 0.95"
+               - "+Long > 0.475"
+               - Humidity > 0.8
+           Color: [0.1, 0.1, 0.1]
+           AmbientSound: TropicalForest
+           StampForcesBiome: true                
+           StampTries: 50  
+           StampForcesBiomeType: OverlapOff
+           Stamps:
+               - HillsLava_1, 0.3
+               - Hill_1, 0.2
+               - Hill_2, 0.2
+               - Hill_3, 0.2
+           Decorations:
+               - [ElderberryBushBlue, 0.0001]
+               - [FantasyPlant2, 0.01]
+               - [BigFlower, 0.03]
+               - [MushroomBigSky, 0.03]
+               - [AlienPlant20, 0.004]
+               - [AlienBush01, 0.07]
+               - [AmericanElm, 0.002, Tree]
+               - [AlienTreeBlue, 0.001, Free]
+               - [AlienTreeBlue02, 0.001, Tree]
+               - [ElderberryBush, 0.0005, Tree]
+               - [BushGreen02, 0.0003, Tree]
+               - [BushGreen01, 0.0002, Tree]
+               - [OmicronPalmGreen, 0.05, Tree]
+               - [MushroomBellBrown01, 0.12, Tree]
+               - [DesertPlant20, 0.003, Plant]
+               - [Snakeweed, 0.003, Plant]
+               - [EggPlant, 0.005, Plant]
+               - [AlienPlantWorm1, 0.002, Free]
+               - [EggPlant, 0.003, Plant]
+               - [BulbShroom, 0.0001, Free]
+               - [PixieStalks, 0.0003, Free]
+           Grass:
+               - Name: GrassType01Red
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: GrassBlue02
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: Flower04
+                 Density: 0.01
+                 Preset: GrassDense
+
+         - Name: BiomeTwo
+           Texture: [2, 2, 0.2]
+           SelectionCriteria:
+               - "+Long < 0.95"
+               - "+Long > 0.475"
+               - Humidity < 0.8
+               - Humidity > 0.4
+           Color: [0.2, 0.1, 0.1]
+           AmbientSound: TropicalForest
+           Decorations:
+               - [WhiteOak, 0.2, Tree]
+               - [BaldCypres, 0.05, Tree]
+               - [Rainforest, 0.02, Tree]
+               - [RiverBirch, 0.03, Tree]
+               - [BallFlower03, 0.005, Plant]
+               - [MushroomTallBlue02, 0.01, Free]
+               - [Snakeweed, 0.003, Plant]
+               - [EggPlant, 0.005, Plant]
+               - [AlienPlantWorm1, 0.002, Free]
+               - [EggPlant, 0.003, Plant]
+               - [BulbShroom, 0.0001, Free]
+               - [PixieStalks, 0.0003, Free]
+               - [BushGreen01, 0.0004, BigPlant]
+               - [BushGreen02, 0.0004, BigPlant]
+           Grass:
+               - Name: GrassType01Red
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: GrassBlue02
+                 Density: 0.15
+                 Preset: GrassDense
+               - Name: Flower04
+                 Density: 0.01
+                 Preset: GrassDense
+
+         - Name: BiomeThree
+           Texture: [3, 3, 0.2]
+           SelectionCriteria:
+               - "+Long < 0.95"
+               - "+Long > 0.475"
+               - Humidity < 0.4
+               - Humidity > 0
+           Color: [0.4, 0.3, 0.2]
+           AmbientSound: ArcticLowPlains
+           LevelMod: +1           
+           Stamps:
+               - Mountain_10b, 0.5
+               - Mountain_9, 0.5
+               - Mountain_11, 0.2
+               - Mountain_13, 0.3
+               - Mountain_14, 0.6
+               - Mountain_15, 0.9
+               - MountainPlateau_01, 0.1
+               - MountainPlateau_02, 0.2
+           Decorations:
+               - [MushroomBellGreen01, 0.005, BigPlant]
+               - [MushroomTallGreen01, 0.005, Plant]
+               - [BigFlower, 0.0003, Free]
+               - [AlienPlant11Blue, 0.005, Plant]
+               - [CrystalStraight, 0.00015, Free]
+               - [AlienPlantReef2, 0.001, Free] 
+               - [AlienPlantPod2, 0.001, Free] 
+
+#Planet 1/2 2
+         - Name: BiomeFour
+           Texture: [4, 4, 0.2]
+           SelectionCriteria:
+               - "+Long < 0.475"
+               - "+Long > 0.05"
+               - Humidity > 0.8
+           Color: [0.5, 0.4, 0.3]
+           Temperature: 12
+           AmbientSound: DesertCricket
+           LevelMod: +3
+           Stamps:
+               - DunesDesert_01, 0.8
+               - Erosion_1, 0.4
+               - Erosion_1b, 0.4
+               - Erosion_2, 0.2
+               - MountainPlateau_05, 0.2
+               - MountainPlateau_06, 0.4
+               - Cliff_1, 0.2
+               - Cliff_2, 0.3
+           Decorations:
+               - [AntlerTree, 0.001, Plant]
+               - [WeepingPalm1, 0.0005, Tree]
+               - [WeepingPalm3, 0.0005, Tree]
+               - [Cactus1, 0.0001, Tree]
+               - [Cactus2, 0.0001, Tree]
+               - [DeadTree02b, 0.005, Plant]
+               - [CattailWinter, 0.001, Plant]
+               - [OpuntiaCactus, 0.002, Plant]
+               - [AlienPlantReef2, 0.001, Free]               
+
+         - Name: BiomeFive
+           Texture: [5, 5, 0.2]
+           SelectionCriteria:
+               - "+Long < 0.475"
+               - "+Long > 0.05"
+               - Humidity < 0.8
+               - Humidity > 0.4
+           Color: [0.7, 0.6, 0.5]
+           Temperature: 12
+           AmbientSound: DesertCricket
+           LevelMod: +5
+           Stamps:
+               - DunesDesert_01_1, 0.2
+               - HillsLava_1, 0.2
+               - Cliff_2, 0.3
+               - Hollow_01, 0.3
+           Decorations:
+               - [AntlerTree, 0.001, Plant]
+               - [Cactus2, 0.004, Free]
+               - [DeadTree02b, 0.005, Plant]
+               - [Cactus1, 0.007, Plant]
+               - [LavaPlant2, 0.004, Plant]
+               - [Snakeweed, 0.001, Plant]
+               - [AlienPlantSpike1, 0.001]
+               - [AlienPlantReef2, 0.001, Free] 
+               - [AlienPlantPod2, 0.001, Free] 
+               - [RockResourcePromethium, 0.0001]
+
+         - Name: BiomeSix
+           Texture: [6, 6, 0.2]
+           SelectionCriteria:
+               - "+Long < 0.475"
+               - "+Long > 0.05"
+               - Humidity < 0.4
+               - Humidity > 0
+           Color: [0.7, 0.7, 0.7]
+           Temperature: 12
+           AmbientSound: OpenPlains
+           LevelMod: +2
+           Stamps:
+               - Mountain_10b, 0.2
+               - Mountain_9, 0.3
+               - Mountain_11, 0.2
+               - Mountain_13, 0.3
+               - Mountain_14, 0.3
+               - Mountain_2b, 0.4
+               - Mountain_3, 0.3
+               - MountainEroded_01_BM, 0.3
+               - MountainSharp_01, 0.5
+           Decorations:
+               - [CrystalStraight, 0.00015, Free]
+               - [DesertRock1, 0.0002, Free]
+               - [DesertRock2, 0.0002, Free]
+               - [RockGrey01Large, 0.0002]
+               - [RockGrey02Large, 0.0002]
+               - [Snakeweed, 0.003]
+               - [RockResourceIron, 0.0005, Free]
+               - [RockResourceSilicon, 0.0003, Free]
+               - [CattailWinter, 0.0001, Plant]
+               - [RockResourcePromethium, 0.0001, Free]
+
+         - Name: WasteLands
+           Texture: [7, 11, 0.6, 8, 8, 1, 0.35]
+           SelectionCriteria:
+               - "true"
+           Color: [0.3, 0.3, 0.3]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: 55
+           Radiation: 25
+           AmbientSound: OpenPlains
+           LevelMod: +7
+           Decorations:
+               - [DimpleDomeSnow, 0.0001]
+               - [ConfettiMoss, 0.01, Plant]
+               - [RealRock1Dark, 0.0003, Free]
+               - [RealRock2Dark, 0.0001, Free]
+               - [RealRock4Dark, 0.0003, Free]
+               - [RealRock8Dark, 0.0003, Free]
+               - [RealRock10Dark, 0.0002, Free]
+               - [SkeletonDragonTorso, 0.0003, Plant]
+               - [SkeletonDragonHead, 0.0002, Plant]
+               - [RockResourceErestrum, 0.00001, Free]
+               - [RockResourceZascosium, 0.00001, Free]
+           Grass:
+               - Name: GrassBrown04
+                 Density: 0.012
+                 Preset: GrassDense       
+
+#By Airelon 87 | Transcendence Server | 12/21/2018 | StrangeWorlds Template
+#================================================================
+#...
+# Playfield Characteristics Section
+
+Description: "This world is dominated by several tribes of the Talon."
+
+PlanetType: Temperate               
+PlayfieldType: Planet             #Planet, Moon, Space, Sun      
+Difficulty: 3  
+
+LandClaimZone: Device          
+
+#Effects 
+SpecialEffectsLocal:  
+  - Name: Mosquitos
+    Biome: [ BiomeOne, BiomeTwo, BiomeThree, SubBiomeOne, SubBiomeTwo, SubBiomeThree ]
+    Time: Day
+    MaxHeight: 20
+  - Name: Mosquitos
+    Biome: [ SubBiomeOneB, SubBiomeTwoB, SubBiomeThreeB, SubBiomeOne, SubBiomeTwo, SubBiomeThree ]
+    Time: Day
+    MaxHeight: 15  
+  - Name: DustDevil
+    Biome: [ BiomeFive, BiomeSix, BiomeFour, SubBiomeOneB, SubBiomeTwoB, SubBiomeThreeB ]
+    Time: Day
+    MaxHeight: 15
+  - Name: ButterfliesBlue
+    Biome: [ BiomeOne, BiomeTwo, BiomeThree ]
+    Time: Day
+    MaxHeight: 15 
+  - Name: FireFliesRed          
+    Biome: [ SubBiomeOne, SubBiomeTwo, SubBiomeThree ]            
+    Time: Night                 
+    MaxHeight: 20               
+    FollowPlayerY: True          
+  - Name: DandelionsFew
+    Biome: [ BiomeThree, BiomeFour, BiomeFive ]
+    Time: Day
+    MaxHeight: 15
+  - Name: SnowLight
+    Biome: [ BiomeZero, WasteLands ]
+    Time: Always
+    MaxHeight: 125
+    
+SpecialEffectsGlobal: 
+  - Name: Clear                  
+    Type: Weather            
+    InitialDelay: 0           
+    Delay: 0                    
+    Lifetime: 2000 
+  - Name: CloudsLight                   
+    Type: Weather            
+    InitialDelay: 5          
+    Delay: 8                  
+    Lifetime: 250             
+  - Name: RainHeavy
+    Type: Weather
+    InitialDelay: 6  
+    Delay: 10
+    Lifetime: 300
+# Global Effect
+  - Name: BirdFlocksCrows          
+    Biome: [ BiomeOne, BiomeTwo, BiomeThree, BiomeFour, BiomeFive, BiomeSix ]   
+    Time: Day                      
+    InitialDelay: 1                
+    Delay: 4			        
+    Lifetime: 600	                 
+    PlyDist: 100                   
+    SpawnY: 30                     
+    Struct: True   
+  - Name: MeteorShower
+    Time: Day
+    InitialDelay: 1
+    Delay: 1
+    Lifetime: 2000
+    PlyDist: 200
+    SpawnY: 100
+    Struct: Avoid
+    #Multiple Entries For Extreme Effect & Occurence
+  - Name: ThunderAndLightningPurple
+    Time: Always
+    InitialDelay: 1.5   
+    Delay: 4
+    Lifetime: 300     
+    PlyDist: 100
+    SpawnY: 600
+    Struct: Avoid  
+  - Name: ThunderAndLightningPurple
+    Time: Always
+    InitialDelay: 1   
+    Delay: 2
+    Lifetime: 900     
+    PlyDist: 150
+    SpawnY: 200
+    Struct: Avoid  
+  - Name: ThunderAndLightningPurple
+    Time: Always
+    InitialDelay: 3   
+    Delay: 3
+    Lifetime: 1000     
+    PlyDist: 170
+    SpawnY: 400
+    Struct: Avoid  
+
+#Section Coloration: Vibe of the Planet   
+AtmosphereEnabled: True 
+AtmosphereParams: [3, 1.5] 
+AtmosphereColor: "0.19, 0.26, 0.35"
+OrbitUsesLightColor: true
+SkyColor: "0.6,1,0.1"
+SkyHorizonColor: "1, 0.5, 0"  
+# Light
+DayLightIntensity: 1.8
+NightLightIntensity: 1.4
+LightZenithColor: "1, 0.9, 0.9"
+LightHorizonColor: "0.7, 0.2, 0.2"
+NightLightColor: "0.7,0.6,0.9"
+DayShadowStrength: 1 #DO NOT CHANGE A9 HARDCODE
+NightShadowStrength: 1 #DO NOT CHANGE A9 HARDCODE
+
+SunFlare: EnvironmentalEffects/SunFlarePurple
+
+
+# AtmosphereFog: 0.4                     
+FogCloudIntensity: 0.3                 
+FogColor: "0.6, 1, 0.3"               
+# GroundFogIntensity: 0                  
+# GroundFogHeight: 0                     
+
+CloudsDensity: 0.2                  
+CloudsSharpness: 0.4                  
+CloudsBrightness: 0.3                
+CloudsOpacity: 0.3                  
+CloudsZenithColor: "0.6,1,0.1"     
+CloudsHorizonColor: "0, 1, 1"   
+
+WindSpeed: 5
+
+
+
+#Resource Section | Set All To Use DistTypeCylinder Unless Specified in Terrain.ecf
+RandomResources:
+    - Name: IronResource   
+      BiomesExcluded: [ BiomeFour, BiomeFive, BiomeSix ]    
+      IsImportant: False              
+      IsScalingCount: True               
+      CountMinMax: [ 2, 3 ]             
+      SizeMinMax: [ 7, 9 ]             
+      DepthMinMax: [ 5, 10 ]           
+      DroneProb: 1                  
+      MaxDroneCount: 1                 
+
+    - Name: CopperResource     
+      BiomesExcluded: [ BiomeFour, BiomeFive, BiomeSix ]      
+      IsImportant: False              
+      IsScalingCount: True            
+      CountMinMax: [ 2, 3 ]             
+      SizeMinMax: [ 10, 14 ]             
+      DepthMinMax: [ 5, 10 ]           
+      DroneProb: 1                  
+      MaxDroneCount: 1                
+
+    - Name: SiliconResource           
+      BiomesExcluded: [ BiomeFour, BiomeFive, BiomeSix ]      
+      IsImportant: False              
+      IsScalingCount: True              
+      CountMinMax: [ 2, 3 ]            
+      SizeMinMax: [ 10, 14 ]             
+      DepthMinMax: [ 5, 10 ]           
+      DroneProb: 0.2                  
+      MaxDroneCount: 1                
+
+    - Name: PentaxidResource                
+      IsImportant: False              
+      IsScalingCount: False             
+      CountMinMax: [ 2, 3 ]             
+      SizeMinMax: [ 8, 14 ]             
+      DepthMinMax: [ 5, 10 ]           
+      DroneProb: 0.5                  
+      MaxDroneCount: 1                
+
+    - Name: ErestrumResource  
+      BiomesExcluded: [ BiomeOne, BiomeTwo, BiomeThree ]    
+      IsImportant: False              
+      IsScalingCount: False         
+      CountMinMax: [ 1, 1 ]             
+      SizeMinMax: [ 6, 10 ]             
+      DepthMinMax: [ 5, 10 ]           
+      DroneProb: 1                  
+      MaxDroneCount: 2                
+
+    - Name: ZascosiumResource 
+      BiomesExcluded: [ BiomeOne, BiomeTwo, BiomeThree ]    
+      IsImportant: True              
+      IsScalingCount: False         
+      CountMinMax: [ 2, 3 ]               
+      SizeMinMax: [ 7, 10 ]             
+      DepthMinMax: [ 8, 15 ]           
+      DroneProb: 1                  
+      MaxDroneCount: 3                
+
+AsteroidResources: 
+# IronResource , CopperResource, SiliconResource, CobaltResource, PromethiumResource
+# MagnesiumResource, NeodymiumResource, SathiumResource, PentaxidResource
+# ErestrumResource, ZascosiumResource, GoldResource
+#Depletion
+      
+    - Name: IronResource
+      Threshold: 0.6
+      Amount: 0.5
+      
+    - Name: CopperResource
+      Threshold: 0.6
+      Amount: 0.5
+      
+    - Name: SiliconResource
+      Threshold: 0.6
+      Amount: 0.5
+      
+    - Name: ErestrumResource
+      Threshold: 0.6
+      Amount: 0.2
+      
+#Random
+    - Name: NeodymiumResource        
+      Amount: 4750              
+      InitialDelay: 1          
+      Delay: 5           
+      DespawnDelay: 9 
+      
+    - Name: SathiumResource        
+      Amount: 4750              
+      InitialDelay: 1          
+      Delay: 5           
+      DespawnDelay: 9 
+      
+    - Name: ZascosiumResource        
+      Amount: 750              
+      InitialDelay: 1          
+      Delay: 12           
+      DespawnDelay: 12
+
+# ===================================================================================
+# POI SECTION
+# ===================================================================================
+POIs:
+    Random:
+        - GroupName: TalonDreadCraft
+          DroneBaseSetup: DroneBaseSetup
+          IsCommandCenter: True
+          Faction: Talon
+          NoShieldReload: False
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 1, 1 ]          
+          IsImportant: True
+          DroneProb: 1
+          DronesMinMax: [ 4, 6 ]
+          ReserveCount: 0
+          TroopTransport: False     
+          Properties: 
+            - Key: RegenAfter
+              Value: 60 
+            - Key: SI
+              Value: Off
+
+        - GroupName: PlanetVesselBase
+          PlanetVesselBaseSetup: PlanetVesselBaseSetup   
+          Faction: Talon     
+          CountMinMax: [ 1, 1 ]      
+          DroneProb: 1           
+          DronesMinMax: [ 2, 3 ]             
+          ReserveCount: 3            
+          Properties: 
+            - Key: RegenAfter
+              Value: 60  
+
+#First 1/2 Biome POIs
+        #TalonSky POIs Grouped Together
+        - GroupName: TalonSkyTown 
+          Faction: Talon   
+          NoShieldReload: True          
+          Biome: [ SubBiomeOne, SubBiomeTwo, SubBiomeThree, BiomeOne, BiomeTwo, BiomeThree ]
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 1, 1 ]
+          IsImportant: True 
+          LevelMod: +4
+          DroneProb: 1
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 1
+          TroopTransport: False
+          Properties: 
+            - Key: PersonalContainer
+              Value: "Credits: 15000"
+            - Key: Music
+              Value: FirstHours
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120 
+
+        - GroupName: TalonSkyIsleTurret
+          Faction: Talon
+          NoShieldReload: True          
+          Biome: [ SubBiomeOne, SubBiomeTwo, SubBiomeThree, BiomeOne, BiomeTwo, BiomeThree ]
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 3, 4 ]
+          DroneProb: 1
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: False
+          SpawnPOINear: [TalonSkyTown]
+          SpawnPOINearDistance: 100
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120                 
+              
+        - GroupName: TalonSkyIsleDeco
+          Faction: Talon    
+          NoShieldReload: True  
+          Biome: [ SubBiomeOne, SubBiomeTwo, SubBiomeThree, BiomeOne, BiomeTwo, BiomeThree ]
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 3, 4 ]
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          SpawnPOINear: [TalonSkyTown]
+          SpawnPOINearDistance: 325
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120   
+ 
+        - GroupName: TalonSkyBoat
+          Faction: Talon    
+          NoShieldReload: True  
+          Biome: [ SubBiomeOne, SubBiomeTwo, SubBiomeThree, BiomeOne, BiomeTwo, BiomeThree ]
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 1, 2 ]
+          DroneProb: 1
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: False
+          SpawnPOINear: [TalonSkyTown]
+          SpawnPOINearDistance: 475
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120                  
+
+#Lost City POIs            
+        - GroupName: TalonLostCity
+          DroneBaseSetup: DroneBaseSetup
+          IsCommandCenter: True
+          Faction: Talon    
+          NoShieldReload: True  
+          Biome: [ BiomeFour, BiomeFive, BiomeSix ]
+          LevelMod: +4
+          CountMinMax: [ 1, 1 ]
+          IsScalingCount: False 
+          DroneProb: 1
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 4
+          TroopTransport: True
+          Properties:
+            - Key: Music
+              Value: JungleDepths          
+            - Key: PersonalContainer
+              Value: RawDiamond, Medikit04:5, Medikit01:2, Bandages:2
+            - Key: RegenAfter
+              Value: 140  
+            - Key: StationInterface
+              Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Shield:1,IfNeutral:0.1,IfHonored:-0.3"
+              
+        - GroupName: SphinxA9
+          Faction: Talon    
+          NoShieldReload: True  
+          Biome: [ BiomeFour, BiomeFive, BiomeSix ]
+          CountMinMax: [ 2, 3 ]
+          IsScalingCount: True 
+          DroneProb: 1
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: True
+          Properties: 
+            - Key: Music
+              Value: JungleDepths
+            - Key: RegenAfter
+              Value: 120  
+              
+        - GroupName: TalonSpaceProgram
+          Faction: Talon    
+          NoShieldReload: True  
+          Biome: [ BiomeFour, BiomeFive, BiomeSix ]
+          CountMinMax: [ 2, 3 ]
+          DroneProb: 1
+          DronesMinMax: [ 4, 5 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: Music
+              Value: JungleDepths
+            - Key: StationInterface
+              Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Shield:1,IfNeutral:0.1,IfHonored:-0.3"
+            - Key: RegenAfter
+              Value: 120                
+              
+        - GroupName: TalonSkyBoat
+          Faction: Talon    
+          NoShieldReload: True  
+          Biome: [ SubBiomeOneB, SubBiomeTwoB, SubBiomeThreeB, BiomeFour, BiomeFive, BiomeSix ]
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 1, 2 ]
+          DroneProb: 1
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: False
+          SpawnPOINear: [TalonLostCity]
+          SpawnPOINearDistance: 550
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120  
+              
+        - GroupName: TalonCloudVillage
+          Faction: Talon    
+          NoShieldReload: True  
+          Biome: [ BiomeFour, BiomeFive, BiomeSix ]
+          LevelMod: +4
+          CountMinMax: [ 1, 1 ]
+          IsScalingCount: False 
+          DroneProb: 1
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 4
+          TroopTransport: True
+          Properties:
+            - Key: Music
+              Value: JungleDepths          
+            - Key: RegenAfter
+              Value: 120 
+              
+        - GroupName: TalonGroundTurret
+          Faction: Talon    
+          NoShieldReload: True  
+          CountMinMax: [ 3, 5 ]
+          DroneProb: 1
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: True
+          SpawnResource: ["ErestrumResource:1"]
+          SpawnResourceRange: [100,200]
+          Properties: 
+            - Key: RegenAfter
+              Value: 120 
+
+        #Random
+        - GroupName: TalonSkyIsleTurret
+          Faction: Talon    
+          NoShieldReload: True  
+          Biome: [ SubBiomeOne, SubBiomeTwo, SubBiomeThree, BiomeOne, BiomeTwo, BiomeThree ]
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 7, 10 ]
+          IsScalingCount: True 
+          DroneProb: 1
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: False
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120    
+              
+        - GroupName: TalonIsleLarge
+          Faction: Talon    
+          NoShieldReload: True  
+          PlaceAt: OnWater
+          CountMinMax: [ 2, 4 ]
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120                
+              
+        - GroupName: TalonSkyIsleDeco
+          Faction: Talon    
+          NoShieldReload: True  
+          Biome: [ SubBiomeOne, SubBiomeTwo, SubBiomeThree, BiomeOne, BiomeTwo, BiomeThree ]
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 9, 12 ]
+          IsScalingCount: True 
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120  
+              
+        - GroupName: TalonSkyIsleDeco
+          Faction: Talon  
+          NoShieldReload: True            
+          PlaceAt: OnWater, Terrain
+          CountMinMax: [ 9, 15 ]
+          IsScalingCount: True 
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 120 
+              
+        - GroupName: ObeliskA9
+          Faction: Talon    
+          Biome: [ BiomeFour, BiomeFive, BiomeSix, WasteLands ]
+          CountMinMax: [ 4, 6 ]
+          IsScalingCount: True 
+          DroneProb: 1
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 0
+          TroopTransport: False
+          Properties: 
+            - Key: RegenAfter
+              Value: 120              
+              
+        - GroupName: TribalVillage
+          Faction: Talon
+          BiomesExcluded: [ WasteLands ] 
+          IsScalingCount: True
+          CountMinMax: [ 8, 15 ]
+          DroneProb: 0.5 
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 1
+          TroopTransport: True
+          SpawnResource: ["CopperResource:0-1"]
+          SpawnResourceRange: [150,400]
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: TribalBazar
+          Faction: Talon
+          IsScalingCount: True
+          CountMinMax: [ 8, 12 ]
+          DroneProb: 0.5 
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 1
+          TroopTransport: True
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: VillageStilt
+          Faction: Talon
+          PlaceAt: OnWater
+          IsScalingCount: True
+          CountMinMax: [ 10, 15 ]
+          DroneProb: 0.5 
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 1
+          TroopTransport: True
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: VillageStiltHut 
+          Faction: Talon
+          BiomesExcluded: [ WasteLands ] 
+          PlaceAt: OnWater
+          CountMinMax: [ 4, 8 ]
+          DroneProb: 0.3
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 1
+          TroopTransport: False 
+          SpawnPOINear: [VillageStilt]
+          SpawnPOINearRange: [100, 500]
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: TribalField
+          Faction: Talon        
+          BiomesExcluded: [ WasteLands ] 
+          CountMinMax: [ 10, 15 ]
+          IsImportant: True
+          DroneProb: 0
+          DronesMinMax: [ 0 ]
+          ReserveCount: 0
+          TroopTransport: False    
+          Properties: 
+            - Key: MapDistance
+              Value: 0   
+            - Key: RegenAfter
+              Value: 120 
+              
+        # Removed due to limitation with EAH POI Wipe All Command      
+        # - GroupName: TalonIslePlayer
+        #   Faction: None  
+        #   Territory: False            
+        #   PlaceAt: OnWater, Terrain
+        #   CountMinMax: [ 10, 30 ]
+        #   IsScalingCount: True 
+        #   DroneProb: 0
+        #   DronesMinMax: [ 0, 0 ]
+        #   ReserveCount: 0
+        #   TroopTransport: False
+        #   Properties: 
+        #     - Key: SI
+        #       Value: Off                
+              
+#END OF POI SECTION =============================================================
+
+    Fixed:
+        - Type: BA_Player
+          Prefab: BA_Outpost-AkuaV2    
+          Mode: Creative             
+          SubMode: Normal             
+          Name: Outpost Akua          
+          Pos: [ -1143, 28.9, 1482.5 ] 
+          Rot: [ 0, -85, 0 ]          
+          InitPower: True
+
+        - Type: SV_Player
+          Prefab: SV_Talon
+          Mode: Creative
+          SubMode: Normal
+          Name: Talon MKI     
+          Pos: [ -1119, 44.4, 1482.2 ] 
+          Rot: [ 0, -176, 0 ]  
+          
+    FixedPlayerStart:
+        - Mode: Creative             
+          SubMode: Empty             
+          Armor: ArmorLight
+          Pos: [ -1177, 37.6, 1452.6 ]  
+          RotY: 105   
+
+        - Mode: Creative             
+          SubMode: Normal            
+          Armor: ArmorLight   
+          Pos: [-1114.4, 44.9, 1476 ]  
+          RotY: -56   
+
+        - Mode: Debug
+          Pos: [ 0, 147, 0 ]
+          RotY: 160
+
+        - Mode: Survival
+          Spawn: EscapePod        
+          Pos: [ -350, 0 ]      # fixed x,z position of escape pod start      
+          # Spawn: Structure
+          # Armor: ArmorMedium
+          # PlayerArmor: ["ArmorMedium, ArmorLight, None, #FreshStart:ArmorHeavy"]     
+          Status: [ "Food: 400, Health: 400", "Food: 250, Health: 250", "Food: 150, Health: 150", "#FreshStart:Food: 250, Health: 250" ]      # NEW
+          Items: [ "SurvivalTool, PowerBar:2, Medikit04:3, Bandages:2, Flashlight, AntibioticOintment:2, SurvivalTent, MobileAirCon", "SurvivalTool, PowerBar:1, Medikit04:2, Bandages:1, Flashlight, AntibioticOintment:1, SurvivalTent, MobileAirCon", "SurvivalTool, PowerBar:1, Medikit04:1, Flashlight, SurvivalTent", "#FreshStart: SurvivalTool, Medikit04:1, Flashlight, SurvivalTent" ]
+
+        # - Mode: Survival
+          # Spawn: Structure
+          # Structure: "TestBaseAttackT6"
+          # Armor: ArmorMedium
+          # Items: [ "Minigun, 8.3mmBullet:500, Medikit04:2, Sniper2, 12.7mmBullet:100, PulseRifleT2, 5.8mmBullet:250", "Minigun, 8.3mmBullet:500, Medikit04:2, Sniper2, 12.7mmBullet:100, PulseRifleT2, 5.8mmBullet:250", "Minigun, 8.3mmBullet:500, Medikit04:2, Sniper2, 12.7mmBullet:100, PulseRifleT2, 5.8mmBullet:250", "#FreshStart: SurvivalTool, Medikit04:1, Flashlight, SurvivalTent" ]
+# ==============================================================
+# ==============================================================
+### Drones
+DroneBaseSetup: 
+    Random:
+        - GroupName: DroneBaseSetup
+          Difficulty: 7
+          PresetStyle: 1
+          Stock:
+
+              - Name: DroneSmallFast01Plasma
+                Amount: 100000
+                Extra: 0
+                
+              - Name: DroneBomberBaseAttack
+                Amount: Infinite
+                Extra: 1
+
+              - Name: EnemyDroneV2Plasma
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneSmallAttackBase
+                Amount: Infinite
+                Extra: 1
+                
+              - Name: DroneBomberBaseAttack
+                Amount: Infinite
+                Extra: 1
+
+              - Name: EnemyDroneV2Plasma
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneSmallAttackBase
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+                
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+
+              - Name: TalonGuardian #Edit
+                Amount: 50000
+                Extra: 3 
+                
+              - Name: Crawlers #Edit
+                Amount: 50000
+                Extra: 3
+                
+              - Name: Spiders01 #Edit
+                Amount: 50000
+                Extra: 3
+
+#PlanetVesselBase Section
+          PlanetVesselBase:
+              Name: PlanetVesselBaseSetup
+              Position3D: [ 0, 102, 0]
+              BaseType: PlanetVesselBase
+              KeyId: 0
+              PlanetVessel:
+                - Name: FungalShip
+                  Faction: Talon
+                  Mission: PlanetPatrol
+                  FixedMaxSpeed: 10
+                  RespawnDelay: 12
+
+                  RangePatrolTask:
+                    Position3D: [ 1500, 80, 0 ]
+                    Radius: 1200
+                    DistToGround: 150
+
+                  AttackCVCircleAround:
+                    DistToTarget: 100
+
+# Drones that patrol on whole planet 
+# Type determined by stock of drone base (default drone - type = 0)
+DroneSpawning:    
+    Random:
+        - DronesMinMax: [ 5, 5 ]
+          CenterX: -5000
+
+        - DronesMinMax: [ 5, 5 ]
+          CenterX: 5000
+
+# ==============================================================
+#SpawnZone Section
+# ==============================================================      
+SpawnZones:
+   - SpawnAt: [GoldResource, ErestrumResource, ZascosiumResource]           
+     Radius: 500
+     RadiusRandom: 25
+     RateMultiplyerCenter: 1.0
+     RateMultiplyerEdge: 0.3
+     Color: "1.0, 1.0, 1.0, 1.0"
+     SpawnOnlyIfPoiIsAlien: false
+     Entities:
+       - Names: [AlienBugs03]
+         Biomes: [Any]
+         Amount: 300
+         Period: Always
+         DelayMinMax: [-1, -1]
+         
+   - SpawnAt: [TalonLostCity, TalonSpaceProgram, TribalBazar, TribalField, TribalVillage]           
+     Radius: 500
+     RadiusRandom: 25
+     RateMultiplyerCenter: 1.0
+     RateMultiplyerEdge: 0.3
+     Color: "1.0, 1.0, 1.0, 1.0"
+     SpawnOnlyIfPoiIsAlien: false
+     Entities:
+       - Names: [TalonGuardianHerd, Hexapods, Crawlers]
+         Biomes: [Any]
+         Amount: 300
+         Period: Always
+         DelayMinMax: [-1, -1]
+
+### Creatures | Starts With BiomeOne, Then Special (BiomeEight), Then Counts Down To BiomeTwo, BiomeZero = NearPole/Cold
+CreatureSpawning:
+    - Biomes: [SubBiomeOne. SubBiomeOneB, SubBiomeTwo, SubBiomeTwoB, SubBiomeThree, SubBiomeThreeB]
+      Entities:
+        - Name: Telluropods
+          Period: Always
+          Amount: 50
+          DelayMinMax: [8, 10] 
+          AllowInWater: true 
+    - Biomes: [BiomeOne, BiomeTwo, BiomeThree]
+      Entities:
+        - Name: TalonGuardianHerd
+          Period: Always
+          Amount: 36
+        - Name: LizardMuleHerd
+          Period: Always
+          Amount: 36
+        - Name: PlantMonsters
+          Period: Night
+          Amount: 12
+        - Name: RaptorsNight
+          Period: Night
+          Amount: 10
+        - Name: Triceratopses
+          Period: Day
+          Amount: 15
+    - Biomes: [BiomeFour, BiomeFive, BiomeSix]
+      Entities:
+        - Name: CaveWormsGrey
+          Period: Always
+          Amount: 25
+        - Name: Hexapods
+          Period: Always
+          Amount: 20
+        - Name: Spiders01
+          Period: Day
+          Amount: 20
+        - Name: Spiders03
+          Period: Night
+          Amount: 20
+    - Biomes: [WasteLands]
+      Entities:
+        - Name: TotalHorrors
+          Period: Night
+          Amount: 15
+        - Name: AlienBugs03
+          Period: Always
+          Amount: 24
+    - Biomes: [BiomeZero]
+      Entities:
+        - Name: CaveWormWhiteHerd
+          Period: Always
+          Amount: 20
+        - Name: SlimesWhite
+          Period: Always
+          Amount: 24
+        - Name: Oviraptors
+          Period: Always
+          Amount: 20
+
+#End of Yaml          
+
+Build: 2099

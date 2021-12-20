@@ -1,0 +1,76 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.61.8.1908, Playfield Version: 10.0.0 [2446] (Alpha EXPERIMENTAL 10)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -200
+PlayfieldLevel: 6
+IsOrbitPlayfield: True
+Music: space
+Description: Instance Orbit
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 3
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+# Stars: SkyboxStarsRed
+# Nebula: PrefabNebulaRed2
+Build: 2450
+Radiation: 9.1999999999999993
+PvP: False
+UseFixed: True
+AllowBA: False
+AllowCV: False
+AllowSV: False
+AllowHV: False
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+POIs:
+   Fixed:
+   -  Type: AsteroidVoxel01Neodymium
+      Prefab: AsteroidVoxel01Neodymium
+      Name: Neodymium Asteroid
+      Pos: [3522.5, 727, 3356.4]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [6000, 3000, -6000]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDroneLaser
+         Pos: [-4573, 1073, 1557]
+         Radius: 589
+      SpaceVessel:
+      -  Name: GalorBattleCruiser
+         Faction: Galorian
+         FixedMaxSpeed: 22
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1
+            DelayBeforeSelfDestruction: 15
+            PathWayPoint:
+            - [3498, 883, -2792]
+            - [5000, 516, 122]
+            - [3842, -2028, 3388]
+            - [713, 2246, 4719]
+            - [-2701, -433, 4424]
+            - [-4012, 572, 1350]
+            - [-4211, -1437, -1650]
+            - [-2447, 2282, -4490]
+            - [1055, 1790, -5230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 0
+            Extra: 0

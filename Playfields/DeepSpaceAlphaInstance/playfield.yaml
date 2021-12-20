@@ -1,0 +1,101 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v1.64.0.2054, Playfield Version: 10.5.0 [2625] (Alpha EXPERIMENTAL 10.5.0)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: -70
+PlayfieldLevel: 10
+IsOrbitPlayfield: False
+Music: ColdDivide
+Description: Haven Command needs you to take down the defenses of the city within the RogueDwarfPlanet
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 5
+LandClaimZone: Device
+SunFlare: EnvironmentalEffects/SunFlareRedSpace
+# Stars: SkyboxStarsPurple
+# Nebula: PrefabNebulaRed2
+Build: 2723
+Radiation: 9.3300000000000001
+PvP: True
+UseFixed: True
+AllowBA: False
+AllowCV: False
+AllowSV: True
+AllowHV: False
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+Instance:
+   Time: 240
+   MaxPlayers: 3
+   PortalOpen: 300
+POIs:
+   Fixed:
+   -  Type: BA_Alien
+      Prefab: DeepSpaceAlphaInstance
+      Mode: Survival
+      Name: RogueDwarfPlanet
+      Pos: [0, -3000, 0]
+      Rot: [0, 0, 0]
+      Faction: Alien
+      InitPower: True
+      NoShieldReload: True
+      Properties:
+      -  Key: Music
+         Value: Anomalous
+      -  Key: PersonalContainer
+         Value: PentaxidCrystal:15, RawDiamond, Robotics:3, MoneyCard:1500, FusionCell:2, OxygenBottleLarge:2, TransportationBoost
+   -  Type: SV_Player
+      Prefab: AsteroidEscapePod
+      Mode: Survival
+      Name: EscapePod
+      Pos: [-32, -2870, 31]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: SV_Player
+      Prefab: AsteroidEscapePod
+      Mode: Survival
+      Name: EscapePod
+      Pos: [-32, -2870, 38]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV5
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [200, -2850, -337]
+      Rot: [0, 0, 0]
+      Faction: None
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDronePlasma
+         Pos: [500, 2500, 750]
+         Radius: 500
+      SpaceVessel:
+      -  Name: AsteroidSecurityDrone
+         Faction: Alien
+         FixedMaxSpeed: 5
+         Mission: Immobile
+         Immobile:
+            Position3D: [264, -2997, -481]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1
+      -  Name: AsteroidSecurityDrone
+         Faction: Alien
+         FixedMaxSpeed: 5
+         Mission: Immobile
+         Immobile:
+            Position3D: [161, -2961, 587]
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 1
+            Extra: 1

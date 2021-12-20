@@ -1,0 +1,751 @@
+---
+# --------------------------------------------------------------------------------------------------------------------------
+# By: Airelon87; For Transcendence Server - Vladishi
+# --------------------------------------------------------------------------------------------------------------------------
+#
+Seed: 497
+PlanetSize: 2
+PlanetAxis: 10
+TemperatureMinMax: [-40, -21]
+TemperatureNight: 10
+HumidityMinMax: [0.1, 0.35]
+SeaLevel: 37
+TerrainLevel: 195
+BaseLevel: 24
+LandWaterRatio: 0.3987602
+TemperatureHeightRange: [85, 420]
+TemperatureGradientRange: [0.1811539, 0.1811539]
+TemperatureNoiseFac: 0.5
+HumidityHeightFac: [0, 365]
+HumidityNoiseFac: 0.6
+
+Gravity: -6.00
+Radiation: 4.8
+AtmosphereDensity: 0.3
+AtmosphereO2: 0.02
+AtmosphereBreathable: False
+GroundFogIntensity: 0.02423615
+GroundFogHeight: 77.08046
+AtmosphereFog: 0.1
+PvP: False
+PlayfieldLevel: 8
+
+Water: WaterBlue
+Music: Reaver
+
+TerrainHeightMapMax: 456
+
+GroundShapes:
+   - GroundShape_3, 0.5
+
+BiomeStampTries: 25
+
+Biome:
+   - BiomeClusterData:
+         - Name: Pole
+           IgnoreForcedBiome: True
+           Weather: PoleFog
+           Texture: [0, 0, 0.02]
+           SelectionCriteria:
+               - "+Lat > 0.975"
+           Color: [0.6, 0.6, 0.6]
+           StampProb: 1
+           Stamps:
+           Decorations:
+           Grass:
+
+         - Name: Lake
+           IgnoreForcedBiome: True
+           Texture: [11, 11, 0.2]
+           UndergroundLayers:
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height < SeaLevel"
+           Color: [0, 1, 0]
+           StampProb: 1
+           Stamps:
+           Decorations:
+               - [EggPlant, 0.0001]
+               - [Snakeweed, 0.001, Plant]
+               - [RockResourceMagnesium, 0.0004, Free]
+               - [DimpleDome, 0.00018, Plant]
+               - [CoralStone01-03, 0.0003, Free]
+               - [CoralStone01-05, 0.00025, Free]
+               - [CrystalsPyramidBlue, 0.0005, Free]
+               - [GlowTube01, 0.00064, Plant]
+               - [PromethiumStone, 0.00065, Free]
+               - [CrystalStraight, 0.00001, Free]
+               - [SkeletonWhaleFull, 0.00017, Free]
+               - [RealRock1Water, 0.000001, Free]
+               - [RealRock5Water, 0.000001, Free]
+               - [RealRock8Water, 0.000001, Free]
+               - [RealRock9Water, 0.000001, Free]
+           Grass:
+               -  Name: Seaweed04
+                  Density: 0.006
+                  Preset: GrassDense
+         - Name: Mountains
+           IgnoreForcedBiome: True
+           Texture: [1, 6, 0.5, 2, 7, 0.8, 0.15]
+           UndergroundLayers:
+               - [1, 3]
+               - [10, 50]
+               - [9, 10]
+               - [11, 20]
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height > 170"
+           Color: [0.7, 0.7, 0.7]
+           StampProb: 1
+           StampForcesBiome: True
+           StampTries: 50
+           Stamps:
+               - Mountain_4a, 0.9
+               - Mountain_4b, 0.1
+           Temperature: 70
+           Decorations:
+               - [CornDogBush, 0.0001]
+               - [GasEmitter2, 0.00001]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: MareEdge
+           Texture: [0, 0, 0.5, 2, 7, 0.8, 0.5]
+           UndergroundLayers:
+               - [4, 3]
+               - [9, 2]
+               - [10, 10]
+               - [9, 10]
+               - [11, 10]
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height < 102"
+               - "Height > 99"
+           Color: [0.1, 0.1, 0.3]
+           StampProb: 1
+           Stamps:
+           Decorations:
+               - [GasEmitter2, 0.000001]
+               - [CrystalStraight, 0.0001, Free]
+           Grass:
+
+         - Name: Mare
+           AmbientSound: SmallLake
+           Texture: [4, 5, 0.5, 2, 7, 0.5, 0.5]
+           UndergroundLayers:
+               - [4, 3]
+               - [9, 2]
+               - [10, 10]
+               - [9, 10]
+               - [11, 10]
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height < 102"
+               - "Height > 10"
+           Color: [0.3, 0.3, 0.3]
+           StampProb: 0.9
+           Stamps:
+               - DunesSea_01b, 0.4 #Added 
+               - IceBergs_01, 0.6
+           Decorations:
+               - [GasEmitter2, 0.000001]
+               - [AlienPlant20, 0.003, Plant]
+               - [PixieStalksSnow, 0.004]
+               - [PromethiumStone, 0.003, Plant]
+               - [RealRock1Dark, 0.0006, Free]
+               - [RealRock2Dark, 0.0002, Free]
+               - [RealRock4Dark, 0.0006, Free]
+               - [RealRock8Dark, 0.0006, Free]
+               - [RealRock10Dark, 0.0004, Free]
+           Grass:
+
+         - Name: LargeCrater
+           AmbientSound: ArcticLowPlains
+           Texture: [8, 9, 0.5, 3, 7, 0.5, 0.001]
+           UndergroundLayers:
+               - [9, 10]
+               - [11, 30]
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.7, 0.2, 0.2]
+           StampProb: 1
+           StampForcesBiome: True
+           StampTries: 56
+           Stamps:
+               - DunesSea_01b, 1
+               - CraterMoon_12, 0.019
+               - CraterMoon_13, 0.011
+           Temperature: 30
+           Decorations:
+               - [GasEmitter2, 0.000001]
+               - [CrystalStraight, 0.0001, Free]
+               - [RockGrey01Large, 0.0004]
+               - [RockGrey02Large, 0.0004]
+               - [RockResourceSilicon, 0.0001, Free]
+               - [RockResourceCobalt, 0.0001, Free]
+               - [RockResourceIron, 0.0002, Free]
+           Grass:
+
+         - Name: RayCrater
+           Texture: [8, 9, 0.5, 3, 7, 0.5, 0.001]
+           UndergroundLayers:
+               - [9, 10]
+               - [11, 30]
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.7, 0.7, 0.2]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 19
+           Stamps:
+               - CraterMoon_14, 0.025
+               - CraterMoon_14b, 0.007
+           Temperature: 20
+           Decorations:
+           Grass:
+
+         - Name: SmallCrater
+           AmbientSound: ArcticLowPlains
+           Texture: [8, 9, 0.5, 3, 3, 0.5, 0.001]
+           UndergroundLayers:
+               - [9, 10]
+               - [11, 30]
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height > 600"
+           Color: [0.9, 0.3, 0.3]
+           StampProb: 1
+           StampForcesBiome: True
+           StampTries: 2200
+           Stamps:
+               - CraterMoon_7, 0.02
+               - CraterMoon_8, 0.015
+               - CraterMoon_9, 0.008
+               - CraterMoon_10, 0.003
+           Temperature: 15
+           Decorations:
+               - [AlienPlant11, 0.01, Free]
+               - [MushroomBellBrown01, 0.01, Bush]
+               - [GasEmitter2, 0.001]
+               - [CornDogBushSnow, 0.00001, Free]
+               - [RockResourceSilicon, 0.001, Free]
+               - [RockResourceCopper, 0.0001, Free]
+               - [RockResourceIron, 0.0001, Free]
+           Grass:
+
+         - Name: LowMountains
+           Texture: [1, 6, 0.5, 7, 7, 1, 0.25]
+           UndergroundLayers:
+               - [1, 3]
+               - [10, 20]
+               - [9, 10]
+               - [11, 30]
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height > 150"
+               - "Height < 280"
+           Color: [0.5, 0.5, 1]
+           StampProb: 1
+           Stamps:
+           Decorations:
+               - [RockResourceNeodymium, 0.0001, Free]
+               - [RockResourceSathium, 0.0001, Free]
+           Grass:
+
+         - Name: RegolithEdge
+           Texture: [0, 5, 0.9, 3, 3, 1, 0.2]
+           UndergroundLayers:
+               - [0, 3]
+               - [10, 20]
+               - [9, 10]
+               - [11, 30]
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height > 140"
+           Color: [0.4, 0.4, 0.4]
+           StampProb: 1
+           Stamps:
+           Decorations:
+               - [CoralStone04-03, 0.003, BigPlant]
+               - [DesertRock1, 0.0001, Free]
+               - [DesertRock2, 0.0001, Free]
+               - [Boulder1, 0.0001, Free]
+               - [Boulder2, 0.0001, Free]
+               - [ModRocksBrown02, 0.0001, Free]
+               - [ModRocksBrown04, 0.0001, Free]
+               - [GasEmitter2, 0.000001]
+               - [CrystalStraight, 0.0001, Free]
+               - [RockResourceSilicon, 0.001, Free]
+               - [RockResourceCopper, 0.0003, Free]
+               - [RockResourceIron, 0.0001, Free]
+           Grass:
+
+         - Name: Regolith
+           Texture: [0, 7, 0.2]
+           SelectionCriteria:
+               - "Height > 130"
+           Color: [0.5, 0.5, 0.5]
+           StampProb: 1
+           StampForcesBiome: True
+           StampTries: 2
+           Stamps:
+               - CraterMoon_10, 1
+           Decorations:
+               - [Snakeweed, 0.003, Bush]
+               - [RockResourceMagnesium, 0.01]
+               - [RockResourceSilicon, 0.001, Free]
+               - [RockResourceCopper, 0.0003, Free]
+               - [RockResourceIron, 0.0001, Free]
+           Grass:
+
+         - Name: Desolation
+           Texture: [10, 5, 0.5, 2, 7, 0.5, 0.02]
+           UndergroundLayersDefault: True
+           UndergroundLayers:
+               - [10, 3]
+               - [9, 2]
+               - [10, 20]
+               - [9, 10]
+               - [11, 30]
+               - [15, -1]
+               - [15, 1]
+           SelectionCriteria:
+               - "Height > 90"
+           Color: [0.6, 0.6, 0.6]
+           StampProb: 1
+           StampForcesBiome: True
+           StampForcesBiomeType: OverlapOther
+           StampTries: 6
+           Stamps:
+               - CraterMoon_13, 1
+           Temperature: 30
+           Decorations:
+               - [AlienDesertPlant, 0.02, BigPlant]
+               - [DesertPlant20, 0.001, Plant]
+               - [LeafPlant, 0.02, Plant]
+               - [BigFlower, 0.01, Plant]
+               - [AlienBush01, 0.02, BigPlant]
+               - [BushGreen01, 0.005, Plant]
+               - [BushGreen02, 0.005, Plant]
+               - [AlienPlant07, 0.001, Plant]
+               - [AlienPlant14, 0.001, Plant]
+               - [DeadTree01, 0.0002, Free]
+               - [AridRockBrown01, 0.0003, Free]
+               - [AridRockBrown03, 0.0003, Free]
+               - [AlienPlantWorm1, 0.002, Free]
+               - [CobraLeavesPlant, 0.002, Free]
+               - [MushroomBellBrown01, 0.0001, Free]
+               - [PixieStalks, 0.001, Free]
+               - [InsanityPepper, 0.001, Free]
+               - [GasEmitter2, 0.01]
+           Grass:
+
+         - Name: Flats
+           Texture: [0, 0, 0.2]
+           Color: [0, 1, 0]
+           StampProb: 1
+           Stamps:
+           Decorations:
+           Grass:
+
+
+
+
+# Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
+
+Description: "A small desolate world"
+
+PlanetType: Alien
+# Emissive: True
+PlayfieldType: Planet
+Difficulty: 3
+
+LandClaimZone: Device
+# # ==============================================================
+
+# Special Effects               # Special Particle Effects around player
+SpecialEffectsLocal: 
+  - Name: FireFliesRed          # Name of particle effect 
+    Biome: [ Any ]            # Biome in which particle effect appears
+    Time: Night                 # Time at which particle effect appears. Choose from pre-selection: Day, Night, Always
+    MaxHeight: 20               # Height above terrain at which particle effect disappears
+    FollowPlayerY: True         # Particle effect follows player in y direction 
+
+SpecialEffectsGlobal:
+# Weather
+  - Name: FogRadiationGreen                   # Name of weather effect. Use in-game console cmd "help weather" to get a list of possible weather effects.
+    Type: Weather               # Ignore (do not change)
+    InitialDelay: 0             # Initial delay, in game hours
+    Delay: 5                    # Delay between weather of the same type, in game hours
+    Lifetime: 1500              # Duration of weather effect, in realtime seconds
+  - Name: Clear
+    Type: Weather
+    InitialDelay: 0   
+    Delay: 2
+    Lifetime: 1500
+# Global Effect
+  - Name: ThunderAndLightningRed          # Name of effect 
+    Biome: [ Any ]  # Name of biome in which effect will spawn 
+    Time: Day                      # Time at which particle effect appears. Choose from pre-selection: Day, Night, Always
+    InitialDelay: 1                # Initial delay, in game hours
+    Delay: 4			         # Delay between effect of the same type, in game hours
+    Lifetime: 600	                 # Duration of effect, in realtime seconds
+    PlyDist: 100                   # Distance from player at which effect will spawn
+    SpawnY: 30                     # Height at which effect will spawn
+    Struct: True                   # If set to True, effect will not be spawned above player structures
+  - Name: ThunderAndLightning          # Name of effect 
+    Biome: [ Any ]  # Name of biome in which effect will spawn 
+    Time: Day                      # Time at which particle effect appears. Choose from pre-selection: Day, Night, Always
+    InitialDelay: 1                # Initial delay, in game hours
+    Delay: 4			         # Delay between effect of the same type, in game hours
+    Lifetime: 600	                 # Duration of effect, in realtime seconds
+    PlyDist: 100                   # Distance from player at which effect will spawn
+    SpawnY: 30                     # Height at which effect will spawn
+    Struct: True 
+# ==============================================================
+
+# Atmosphere and Sky
+AtmosphereEnabled: False
+
+# Light
+DayLightIntensity: 0.8
+NightLightIntensity: 0.6
+DayShadowStrength: 0.1
+
+# Sun
+SunFlare: EnvironmentalEffects/SunFlareBlue 
+
+# ==============================================================
+
+### Resource Deposits
+RandomResources:
+    - Name: CobaltResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3]
+      SizeMinMax: [ 4, 5 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 0.5
+      MaxDroneCount: 2
+      
+    - Name: MagnesiumResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3]
+      SizeMinMax: [ 4, 5 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 1
+      MaxDroneCount: 2  
+      
+    - Name: PromethiumResource
+      IsScalingCount: True
+      CountMinMax: [ 3, 4]
+      SizeMinMax: [ 4, 5 ]
+      DepthMinMax: [ 5, 10 ]
+      DroneProb: 1
+      MaxDroneCount: 1
+### Resource Asteroids
+AsteroidResources:
+    -  Name: CobaltResource        # Name of resource in asteroid: IronResource, CopperResource, PromethiumResource, SiliconResource, NeodymiumResource, MagnesiumResource, CobaltResource, SathiumResource,  ErestrumResource, ZascosiumResource, GoldResource, PentaxidResource          
+       Threshold: 0.6            # Float [0, 1] - threshold (compared to the total amount of ore, NOT related to single deposits) below which asteroids will start to spawn
+       Amount: 0.8
+    -  Name: MagnesiumResource        # Name of resource in asteroid: IronResource, CopperResource, PromethiumResource, SiliconResource, NeodymiumResource, MagnesiumResource, CobaltResource, SathiumResource,  ErestrumResource, ZascosiumResource, GoldResource, PentaxidResource          
+       Threshold: 0.6            # Float [0, 1] - threshold (compared to the total amount of ore, NOT related to single deposits) below which asteroids will start to spawn
+       Amount: 0.8   
+    -  Name: PromethiumResource        # Name of resource in asteroid: IronResource, CopperResource, PromethiumResource, SiliconResource, NeodymiumResource, MagnesiumResource, CobaltResource, SathiumResource,  ErestrumResource, ZascosiumResource, GoldResource, PentaxidResource          
+       Threshold: 0.6            # Float [0, 1] - threshold (compared to the total amount of ore, NOT related to single deposits) below which asteroids will start to spawn
+       Amount: 0.8
+#Random Meteors
+    -  Name: IronResource
+       Amount: 4000
+       InitialDelay: 1
+       Delay: 3
+       DespawnDelay: 3
+
+### POIs
+POIs:
+    Random:  
+        - GroupName: ZiblaxDroneCaller
+          DroneBaseSetup: DroneBaseSetup
+          IsCommandCenter: True
+          PlaceAt: OnWater, Terrain
+          Faction: Zirax
+          NoShieldReload: True  
+          CountMinMax: [ 1, 1 ]          
+          IsImportant: True
+          DroneProb: 0
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: True     
+          Properties: 
+            - Key: Music                 
+              Value: DarkSoundscape
+            - Key: SI 
+              Value: Off
+            - Key: RegenAfter
+              Value: 60
+              
+        - GroupName: PlanetVesselBase 
+          Faction: Zirax  
+          IsImportant: True
+          PlanetVesselBaseSetup: PlanetVesselBaseSetup
+          CountMinMax: [ 2, 3 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 3
+          TroopTransport: True
+          Properties: 
+            - Key: RegenAfter
+              Value: 120
+              
+        - GroupName: AbandonedMine
+          Faction: Alien        
+          CountMinMax: [ 2, 3 ]
+          IsImportant: True
+          DroneProb: 1
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: False
+          InitPower: True
+          Properties: 
+            - Key: Music
+              Value: lava
+            - Key: RegenAfter
+              Value: 160
+              
+        - GroupName: ZiraxSky  
+          Faction: Zirax    
+          NoShieldReload: True            
+          CountMinMax: [ 1, 1 ]
+          PlaceAt: OnWater
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 4 ]
+          ReserveCount: 4
+          TroopTransport: False
+          InitPower: True
+          Properties: 
+            - Key: Music
+              Value: lava
+            - Key: RegenAfter
+              Value: 160
+            - Key: SI
+              Value: Off
+              
+        - GroupName: ZiblonDefenseTower  
+          Faction: Ziblon 
+          NoShieldReload: True  
+          CountMinMax: [ 2, 3 ]
+          DroneProb: 1.0
+          DronesMinMax: [ 2, 4 ]
+          ReserveCount: 4
+          TroopTransport: False
+          InitPower: True
+          Properties: 
+            - Key: Music
+              Value: lava
+            - Key: RegenAfter
+              Value: 160
+
+        - GroupName: CrashedShip 
+          Faction: None       
+          CountMinMax: [ 2, 3 ]
+          IsScalingCount: True 
+          PlaceAt: UnderWater
+          DroneProb: 0.2
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: False
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 160
+              
+        - GroupName: ZiraxCiv  
+          Faction: Zirax    
+          NoShieldReload: True            
+          CountMinMax: [ 3, 4 ]
+          IsScalingCount: True 
+          DroneProb: 0.2
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: False
+          Properties: 
+            - Key: RegenAfter
+              Value: 160
+
+    FixedPlayerStart:
+        - Mode: Creative             
+          SubMode: Empty             
+          Armor: ArmorLight
+          Pos: [ -2559.7, 36.4, 2538 ]  
+          RotY: -155           
+
+        - Mode: Creative             
+          SubMode: Normal            
+          Armor: ArmorLight   
+          Pos: [ -2520.7, 52, 2487.6 ]  
+          RotY: -130     
+          
+        - Mode: Debug
+          Pos: [ -596, 104, -1063 ]
+          RotY: 125
+
+        # - Mode: Survival
+          # Spawn: Structure
+          # Structure: "VladeTradeFrigate"
+          # Armor: ArmorLight             
+          # Items: [ "SurvivalTool, Flashlight, Bandages:1, WaterBottle:2", "SurvivalTool, Flashlight, Bandages:1, WaterBottle:2", "SurvivalTool, Flashlight, Bandages:1, WaterBottle:2", "#FreshStart:SurvivalTool, Flashlight, Bandages:1, WaterBottle:2" ]        # Start equipment
+
+
+### Drones
+DroneBaseSetup:
+    Random:
+        - GroupName: DroneBaseSetup
+          Difficulty: 7
+          PresetStyle: 1
+          Stock:
+              - Name: DroneSmallFast01Minigun
+                Amount: 90000
+                Extra: 0
+
+              - Name: DroneLargeSlow01Minigun
+                Amount: 90000
+                Extra: 0
+
+              - Name: DroneSmallSlow01Cannon
+                Amount: 90000
+                Extra: 0
+
+              - Name: DroneLargeAttackBase
+                Amount: Infinite
+                Extra: 1
+                
+              - Name: DroneSmallAttackBase
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneTroopsTransport
+                Amount: Infinite
+                Extra: 2
+
+              - Name: ZiraxMinigun
+                Amount: 50000
+                Extra: 3
+
+              - Name: ArmoredGolem
+                Amount: 50000
+                Extra: 3
+
+          PlanetVesselBase:
+              Name: PlanetVesselBaseSetup
+              Faction: Vladian
+              Position3D: [ 0, 142, 0]
+              BaseType: PlanetVesselBase
+              KeyId: 0                   
+              PlanetVessel:
+                - Name: VladianInterceptor    
+                  Faction: Vladian
+                  Mission: PlanetPatrol
+                  FixedMaxSpeed: 13  
+                  RespawnDelay: 1                  
+               
+                  RangePatrolTask:
+                    Position3D: [ 1500, 80, 0 ]
+                    Radius: 1200
+                    DistToGround: 180
+
+                  AttackCVCircleAround:
+                    DistToTarget: 349                       
+                     
+DroneSpawning:
+    Random:
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: -2500
+          Radius: 1500
+
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: 2500
+          Radius: 1500
+          
+#Critter Spawning
+SpawnZones:                       # used for creating hotspots with more creatures around certain POIs and resource deposits 
+   - SpawnAt: [CobaltResource, PromethiumResource]           # location of the zone
+     BiomesExcluded: [ LowMountains, Mountains ]               
+     Radius: 500                  # radius
+     RadiusRandom: 50             # radius = radius + random(0, radiusRandom) 
+     RateMultiplyerCenter: 1.0    # how much we want to change the Amount from entities (0..1) at the center
+     RateMultiplyerEdge: 0.5      # the same as RateMultiplyerCenter but at the edge of the zone      
+     Color: "1.0, 1.0, 1.0, 1.0"  # color of circle and spawned entities in SSG
+     Entities:
+       - Names: [AlienBugs03]
+         Biomes: [Any]
+         Amount: 200
+         Period: Always
+         DelayMinMax: [-1, -1]    # Time in game hours during which no creatures will spawn after a kill: [-1,-1] means that creature will not respawn after a kill 
+
+   - SpawnAt: [ZiraxCiv]           # location of the zone
+     BiomesExcluded: [ LowMountains, Mountains ]               
+     Radius: 500                  # radius
+     RadiusRandom: 50             # radius = radius + random(0, radiusRandom) 
+     RateMultiplyerCenter: 1.0    # how much we want to change the Amount from entities (0..1) at the center
+     RateMultiplyerEdge: 0.5      # the same as RateMultiplyerCenter but at the edge of the zone      
+     Color: "1.0, 1.0, 1.0, 1.0"  # color of circle and spawned entities in SSG
+     Entities:
+       - Names: [ZiraxMinigunPatrol]
+         Biomes: [Any]
+         Amount: 200
+         Period: Always
+         DelayMinMax: [-1, -1]         
+CreatureSpawning:
+    - Biomes: [Mare, MareEdge, Desolation]         # List of biomes in which creature will spawn
+      Entities:
+        - Name: Telluropods                      # Name of creature 
+          Period: Always                           # Day, Night, Always          
+          Amount: 50                             # Amount of NPC per km^2
+          DelayMinMax: [10, 20]                 # Time in game hours during which no creatures will spawn after a kill 
+          AllowInWater: true
+          Color: "1.0, 1.0, 1.0"                # Color of NPC spawn point in SSG
+    - Biomes: [Mare, MareEdge, Desolation]         # List of biomes in which creature will spawn
+      Entities:
+        - Name: RipperDog                       # Name of creature 
+          Period: Night                           # Day, Night, Always          
+          Amount: 10                             # Amount of NPC per km^2
+          DelayMinMax: [10, 20]                 # Time in game hours during which no creatures will spawn after a kill 
+        - Name: AlienBugs01
+          Period: Always
+          Amount: 12
+          DelayMinMax: [10, 12]
+        - Name: Spiders01
+          Period: Day
+          Amount: 8
+          DelayMinMax: [20, 24]
+    - Biomes: [LargeCrater, RayCrater, SmallCrater]
+      Entities:
+        - Name: GolemsDesert
+          Period: Always
+          Amount: 10
+          DelayMinMax: [10, 12]
+        - Name: AlienBugs01
+          Period: Always
+          Amount: 12
+          DelayMinMax: [10, 12]
+        - Name: Spiders01
+          Period: Night
+          Amount: 8
+          DelayMinMax: [20, 24]
+
+Build: 2086
