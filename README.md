@@ -10,7 +10,7 @@ Please keep stock Eleon Playfields & POIs in the
 Transcendence17 scenario folder as many are edited. 
 
 Transcendence Gaming Community is in no way affialed with
-Eleon servers. 
+Eleon Studios. 
 
 Monetary donation is the only collection of funds for hosting & internet exspenses. 
 Please check out Eleons official site and refer to EULA. 
