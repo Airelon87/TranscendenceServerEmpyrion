@@ -1875,16 +1875,15 @@
 { +Entity Name: SpaceDroneLegacyLaser, Ref: SpaceDronePlasma
   Mesh: Enemies/Drones/LegacyDroneCrabPrefab
   MeshDead: Enemies/Drones/LegacyDroneCrabDmgPrefab
-  Faction: TheLegacy
+  Faction: Alien
 
-  MaxHealth: 60000
+  MaxHealth: 4000
   # XpFactor: 2
   XpFactor: 18
 
   DroneType: SpaceDroneHard
   HandItem: laserSpaceDrone
   ItemsOnEnterGame: laserSpaceDrone
-  LootListOnDeath: 174
 
   AllowUserInstantiate: true
 }
@@ -9702,23 +9701,23 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
 { +Entity Name: DroneLargeLegacyAntiProton, Ref: DroneTemplate
   Mesh: Enemies/Drones/LegacyDroneCrabPrefab
   MeshDead: Enemies/Drones/LegacyDroneCrabDmgPrefab
-  MaxHealth: 16000
+  MaxHealth: 1100
   XpFactor: 8.6
-  Faction: TheLegacy
+  Faction: Void
   HandItem: antiprotonLauncherDroneLarge
   ItemsOnEnterGame: antiprotonLauncherDroneLarge
-  LootListOnDeath: 174
+  #LootListOnDeath: 153
 }
 { +Entity Name: DroneSpaceLegacyAntiProton, Ref: DroneSpaceTemplate
   Mesh: Enemies/Drones/LegacyDroneCrabPrefab
   MeshDead: Enemies/Drones/LegacyDroneCrabDmgPrefab
-  Faction: TheLegacy
-  MaxHealth: 16000
+  Faction: Void
+  MaxHealth: 3000
   XpFactor: 18
   DroneType: SpaceDroneHard
   HandItem: antiprotonLauncherDroneLarge
   ItemsOnEnterGame: antiprotonLauncherDroneLarge
-  LootListOnDeath: 174
+  # LootListOnDeath: 158
 }
 
 #======================================================================================

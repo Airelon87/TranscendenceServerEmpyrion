@@ -1537,7 +1537,6 @@
 }
 
 { +Template Name: DetectorHVEpicUpgradeKit
-  BaseItem: true
   CraftTime: 10  
   Target: "LargeC,AdvC"
   { Child Inputs
@@ -1583,7 +1582,6 @@
 } 
 
 { +Template Name: DetectorCVEpicUpgradeKit
-  BaseItem: true
   CraftTime: 20  
   Target: "AdvC"
   { Child Inputs
@@ -2363,7 +2361,6 @@
 }
 
 { +Template Name: WarpDriveCVEpicUpgradeKit
-  BaseItem: true
   CraftTime: 90 #C2 CV 10
   Target: "AdvC"
   { Child Inputs
@@ -2400,7 +2397,6 @@
 }
 
 { +Template Name: TeleporterBAEpicUpgradeKit
-  BaseItem: true
   CraftTime: 250 
   Target: "AdvC"
   { Child Inputs
@@ -5569,13 +5565,12 @@
 } 
 
 { +Template Name:Coolant
-  BaseItem: true
   DeconOverride: Stop
   OutputCount: 2
   CraftTime: 10
   Target: "SmallC,HoverC,LargeC,AdvC"
   { Child Inputs
-    #ToxicWaste: 2
+    ToxicWaste: 2
     WaterJug: 6
     ErestrumGel: 2
   }
@@ -5595,7 +5590,6 @@
 
 { Template Name: Chemicals
   DeconOverride: Stop
-  BaseItem: true
   OutputCount: 1
   CraftTime: 15
   Target: "SmallC,HoverC,LargeC,AdvC"
@@ -5607,7 +5601,6 @@
 
 { Template Name: LuxuryGoods
   DeconOverride: Stop
-  BaseItem: true
   OutputCount: 1
   CraftTime: 20
   Target: "SmallC,HoverC,LargeC,AdvC"
@@ -5690,7 +5683,6 @@
 }
 
 { +Template Name: Robotics
-  BaseItem: true
   OutputCount: 1
   CraftTime: 15
   Target: "SmallC,HoverC,LargeC,AdvC"
@@ -5817,31 +5809,6 @@
     OpticalFiber: 2
     WarbotNanotubes: 1
     SteelPlateArmored: 32
-  }
-}
-
-{ +Template Name: AntiProtonLaserTurret
-  DeconOverride: Stop
-  OutputCount: 1
-  CraftTime: 32
-  Target: "AdvC"
-  { Child Inputs
-    Motor: 1
-    OpticalFiber: 2
-    LegacyEnergyCore: 1
-    SteelPlateArmored: 16
-    Computer: 1
-  }
-}
-
-{ +Template Name: AlienLaserRefill
-  DeconOverride: Stop
-  OutputCount: 24
-  CraftTime: 12
-  Target: "AdvC"
-  { Child Inputs
-    PentaxidElement: 8
-    Nanites: 16
   }
 }
 
@@ -6044,32 +6011,3 @@
     ZascosiumIngot: 25
   }
 } 
-
-#Reforged Eden additions Jab 19 2022
-
-{ +Template Name: CVLargeSolarPanelBlocks
-  CraftTime: 30 #A1 Ba CV 1
-  Target: "LargeC,AdvC"
-  { Child Inputs
-    GlassPlate: 32
-    TitanPlates: 12
-    OpticalFiber: 48
-    PlasticMaterial: 80
-    Electronics: 16
-    Computer: 1
-    CapacitorComponent: 2
-  }
-}
-
-{ +Template Name: CVSmallSolarPanelBlocks
-  CraftTime: 20 #A1 Ba CV 1
-  Target: "BaseC,LargeC,AdvC"
-  { Child Inputs
-    GlassPlate: 16
-    SteelPlate: 12
-    OpticalFiber: 24
-    PlasticMaterial: 40
-    Electronics: 12
-    Computer: 1
-  }
-}

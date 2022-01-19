@@ -1,0 +1,506 @@
+
+# For the star models, we support these:
+# SunBlueGiant, SunWhiteDwarf, SunYellowWhite, SunYellow, SunRedGiant, SunRedDwarf, SunNeutron, BlackHole
+
+  #===========================
+  # General Galaxy Settings
+  #===========================
+
+{ GalaxyConfig Id: 0, Name: General
+  StarCount: "1350, 2500" 
+  Radius: "0, 240" 
+
+  NebulaCount: "19, 120"
+  # NebulaColors 
+  NebulaColors1: "0.005,0.062,0.083,   0.050,0.045,0.055,    0.005,0.060,0.085,   0.050,0.053,0.048,   0.004,0.003,0.008,    0.075,0.067,0.068,  0.500,0.080,0.120     "
+  NebulaColors2: "1,0.16,0,     1.0,0.4,0,     1.0,0.20,0,   1.0,0.13,0.0,      0.22,0.79,0.7 "  
+  NebulaColors3: "0.008,0.000,0.012,   0.010,0.010,0.015,    0.000,0.035,0.035,   0.045,0.000,0.020,   0.200,0.450,0.400,    0.150,0.120,0.000,  0.050,0.200,0.140     "           
+
+#  ! StarterSystemLYCoord: "-39, -3, -36" 
+#  ! StarterSystemName: Havenian Solar System
+#  ! StarterSystemStarClass: G
+
+  RestrictGalaxyDisplayRadius: 240
+
+  GalaxyMode: Regions
+  SectorsPerLY: 100000
+
+  #===========================
+  # Region definitions
+  #===========================
+
+#  { Child StarRegion_1                       # Name of Region; Use 'StarRegion_<nr>' ; Each Region will only be placed ONCE
+#    Name: "The Center"                       # Currently only used as comment (not visible in the game)
+#    Shape: Sphere                            # Sphere (evenly distributed stars), Elliptical, Spiral (not supported yet); If not set, SPHERE is used per default
+#    RadiusMinMax: "0, 2"                     # If NO coordinates are given in addition via 'Position:', this is the radius, counted from the center of the galaxy in LY
+#    TotalSpawnCount: 1                       # Max spawn count of stars in this region, defined by the settings UseDefaultStarDef and the list of StarClass_<nr> below
+#    UseDefaultStarDef: false                 # true: All StarClasses of the 'Main Type' definitions are used EXCEPT those with GalaxySpawnAmount=0; false: Only StarClass defined as StarClass_<nr> are used from the Region list
+#    StarClass_1: SMbh, param1: "SpawnAmount=1, Prob=1, ClusterProb=0, ClusterRange=0-0" #StarClasses to be used in this Region; Can be used to overwrite its main Type entry, f.ex. SpawnAmount, Prob, ClusterProb, ClusterRange!
+#  }
+
+  { Child StarRegion_1  
+    Name: "PrimaryRegion"
+    Shape: Sphere
+    RadiusMinMax: "30, 55"
+    TotalSpawnCount: 90
+    UseDefaultStarDef: false
+    StarClass_1: F, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+    StarClass_2: G, param1: "Prob=0.2, ClusterProb=0, ClusterRange=0-0"
+    StarClass_3: K, param1: "Prob=0.3, ClusterProb=0, ClusterRange=0-0"
+    StarClass_4: M, param1: "Prob=0.35, ClusterProb=0, ClusterRange=0-0"
+    StarClass_5: K2, param1: "Prob=0.05, ClusterProb=0, ClusterRange=0-0"
+    StarClass_6: MIa, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+  }
+  { Child StarRegion_2  
+    Name: "OuterRegion"
+    Shape: Sphere
+    RadiusMinMax: "55, 150"
+    TotalSpawnCount: 360
+    UseDefaultStarDef: false
+    StarClass_1: O, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"      
+    StarClass_2: B, param1: "Prob=0.3, ClusterProb=0, ClusterRange=0-0"
+    StarClass_3: A, param1: "Prob=0.4, ClusterProb=0, ClusterRange=0-0"
+    StarClass_4: N, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+    StarClass_5: K2, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+    StarClass_6: O1b, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+    StarClass_7: O1a, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+    StarClass_8: O1a, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+  }
+  { Child StarRegion_3  
+    Name: "OuterGalacticBands"
+    Shape: Sphere
+    RadiusMinMax: "150, 240"
+    TotalSpawnCount: 500
+    UseDefaultStarDef: false
+    StarClass_1: MIa, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"      
+    StarClass_2: B, param1: "Prob=0.3, ClusterProb=0, ClusterRange=0-0"
+    StarClass_3: N1a, param1: "Prob=0.4, ClusterProb=0, ClusterRange=0-0"
+    StarClass_4: N, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+    StarClass_5: M, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+    StarClass_6: G, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+    StarClass_7: BH, param1: "Prob=0.1, ClusterProb=0, ClusterRange=0-0"
+  }
+
+  #===========================
+  # Territory definitions
+  #===========================
+
+  { Child Territory_1
+    Faction: UCH
+    Center: "0, 0, 0"
+    Radius: 27
+    Other_1: Polaris, param1: "1, 1"
+    Other_2: Talon, param1: "1, 1"
+    Other_3: Alien, param1: "1, 1"
+    Other_4: Zirax, param1: "1, 1"
+    Other_5: Trader, param1: "1, 1"
+    Other_6: Kriel, param1: "1, 1"
+    Other_7: Civilian, param1: "1, 1"
+    Other_8: RoboticsSyndicate, param1: "1, 1"
+    Other_9: Vladian, param1: "1, 1"
+    Other_10: Galorian, param1: "1, 1"
+    Other_11: Xenu, param1: "1, 1"
+    Other_12: Serdu, param1: "1, 1"
+    Other_13: Rados, param1: "1, 1"
+    Other_14: Abyssal, param1: "1, 1"
+    Other_15: Ziblon, param1: "1, 1"
+  }
+  { Child Territory_2
+    Faction: Civilian
+    Center: "0, 1, 0"
+    Radius: 100
+    Other_1: Polaris, param1: "1, 1"
+    Other_2: Talon, param1: "1, 1"
+    Other_3: Alien, param1: "1, 1"
+    Other_4: Zirax, param1: "1, 1"
+    Other_5: Trader, param1: "1, 1"
+    Other_6: RoboticsSyndicate, param1: "1, 1"
+    Other_7: Vladian, param1: "1, 1"
+    Other_8: Galorian, param1: "1, 1"
+    Other_9: TheLegacy, param1: "1, 1"
+    Other_10: Civilian, param1: "1, 1"
+    Other_11: Alien, param1: "1, 1"
+  }
+  { Child Territory_None  # area outside all faction territories are completely these factions
+    Other_1: TheLegacy, param1: "1, 1" 
+    Other_2: Alien, param1: "1, 1"
+    Other_3: Void, param1: "1, 1"
+    Other_4: Abyssal, param1: "1, 1"
+    Other_5: Trader, param1: "1, 1"
+    Other_6: Warlord, param1: "1, 1"
+    Other_7: Civilian, param1: "1, 1"
+    Other_8: Colonists, param1: "1, 1"
+    Other_9: Alien, param1: "1, 1"
+  }
+}
+
+  #===========================
+  # MAIN TYPE definitions
+  #===========================
+
+# Type O
+{ GalaxyConfig, Name: O Type Star
+  StarClass: O
+  Model: SunBlueGiant
+  Probability: 0.0125
+  SizeClass: 12
+  Color: "0.67, 0.75, 1"   
+  SurfaceTemperature: "30000, 50000" 
+  Mass: 40     # Trivia: multiple of the solar sun mass 
+  Radius: 18   # Trivia: multiple of the solar sun radius
+  Luminosity: 500000  # Trivia: multiples of the solar sun lumen; bolometric luminosities 
+  ColorName: Blue # Trivia: customizable color name for the star  
+  Age: 0.01 # Trivia: In Billion years
+  HabitableZone: "450, 900" # GENERATION; AU; Defines the Start-End RANGE of usual habitable zone, split in 3 sub-zones. Note: each playfield can be put in any zone of the system via setup in a random or unique solarsystemconfg!
+  InnerSystem: "8, 108"  # GENERATION: RANGE (start-end) for very hot playfields. Example: Lava planets
+  HabitableHot: "109, 120"  # GENERATION: RANGE (start-end) for warm/hot playfields. Example: Arid or deserts
+  HabitableTemperate: "121, 132"  # GENERATION:  RANGE (start-end) for temperate playfields (or those that are set to appear in the center hab zone)
+  HabitableCold: "133, 144"  # GENERATION: RANGE (start-end) for colder playfields. Example: ColdArid or ColdDesert or Snow
+  OuterSystem: "145, 252"  # GENERATION: RANGE (start-end) for very cold playfields. Snow, barren, GasPlanets
+  Description: "An O-type star is a hot, blue-white star of spectral type O in the Yerkes classification system employed by astronomers. They have temperatures in excess of 30,000 Kelvin (K)."
+  #GalaxySpawnRadius: "300, 400"  # min and max in LY from the center where this star should spawn, if not set star will spawn everywhere
+  #GalaxySpawnAmount: 10 # for special stars, specify the max number that should be spawned, if not set, star will spawn unlimited
+  ClusterProb: 0.9  # probability that this star class is placed within a cluster
+  ClusterRange: "0.7, 1"
+}
+# Type B
+{ GalaxyConfig, Name: B Type Star
+  StarClass: B
+  Model: SunBlueGiant
+  Probability: 0.025
+  SizeClass: 12
+  Color: "0.78, 0.84, 1"
+  SurfaceTemperature: "10000, 30000" 
+  Mass: 18
+  Radius: 8 
+  Luminosity: 800 
+  ColorName: Blue 
+  Age: 0.25
+  InnerSystem: "8, 92" 
+  HabitableHot: "93, 102" 
+  HabitableTemperate: "103, 112" 
+  HabitableCold: "113, 122" 
+  OuterSystem: "123, 214"
+  Description: "A B-type main-sequence star (B V) is a main-sequence (hydrogen-burning) star of spectral type B and luminosity class V. These stars have from 2 to 16 times the mass of the Sun and surface temperatures between 10,000 and 30,000 K. B-type stars are extremely luminous and blue."
+}
+# Type A
+{ GalaxyConfig, Name: A Type Star
+  StarClass: A
+  Model: SunWhiteDwarf
+  Probability: 0.05 
+  SizeClass: 11
+  Color: "0.97,0.97,1"
+  SurfaceTemperature: "7500, 10000" 
+  Mass: 2.2
+  Radius: 2.4 
+  Luminosity: 25 
+  ColorName: White
+  Age: 0.5
+  InnerSystem: "5, 78" 
+  HabitableHot: "79, 87" 
+  HabitableTemperate: "88, 95" 
+  HabitableCold: "96, 104" 
+  OuterSystem: "105, 182"
+  Description: "An A-type main-sequence star is a main-sequence (hydrogen-burning) star of spectral type A and luminosity class V. They have masses from 1.4 to 2.1 times the mass of the Sun and surface temperatures between 7600 and 10,000  K"
+}
+# Type F
+{ GalaxyConfig, Name: F Type Star
+  StarClass: F
+  Model: SunYellowWhite
+  Probability: 0.1
+  SizeClass: 11
+  Color: "0.99,0.96,0.85"
+  SurfaceTemperature: "6000, 7500" 
+  Mass: 1.5
+  Radius: 1.8 
+  Luminosity: 4.4
+  ColorName: Yellow-White
+  Age: 1
+  InnerSystem: "5, 66" 
+  HabitableHot: "67, 74" 
+  HabitableTemperate: "75, 81" 
+  HabitableCold: "82, 88" 
+  OuterSystem: "89, 155"
+  Description: "F-type stars have strengthening spectral lines H and K of Ca II. Neutral metals (Fe I, Cr I) beginning to gain on ionized metal lines by late F. Their spectra are characterized by the weaker hydrogen lines and ionized metals. Their color is white."
+}
+# Type G
+{ GalaxyConfig, Name: G Type Star
+  StarClass: G
+  Model: SunYellow
+  Probability: 0.2   
+  SizeClass: 10
+  Color: "1,0.95,0.63"
+  LightColor: "1,0.96,0.85"
+  SurfaceTemperature: "5500, 6000" 
+  Mass: 1
+  Radius: 1
+  Luminosity: 1
+  ColorName: Yellow
+  Age: 10
+  InnerSystem: "5, 56" 
+  HabitableHot: "57, 63" 
+  HabitableTemperate: "64, 69" 
+  HabitableCold: "70, 75" 
+  OuterSystem: "76, 132"
+  Description: "G-type stars, including the Sun, have prominent spectral lines H and K of Ca II, which are most pronounced at G2. They have even weaker hydrogen lines than F, but along with the ionized metals, they have neutral metals. There is a prominent spike in the G band of CH molecules."
+}
+# Type K
+{ GalaxyConfig, Name: K Type Star
+  StarClass: K
+  Model: SunRedGiant  # better: yellow orange?
+  Probability: 0.4 
+  SizeClass: 10
+  Color: "1,0.85,0.44"
+  SurfaceTemperature: "4000, 5500" 
+  Mass: 0.7
+  Radius: 0.8 
+  Luminosity: 0.3 
+  ColorName: Yellow-Orange
+  Age: 30
+  InnerSystem: "5, 48" 
+  HabitableHot: "49, 53" 
+  HabitableTemperate: "54, 59" 
+  HabitableCold: "60, 64" 
+  OuterSystem: "65, 112"
+  Description: "K-type stars are orangish stars that are slightly cooler than a G-Type star. They make up about 12% of the main-sequence stars in the solar neighborhood."
+}
+# Type K
+{ GalaxyConfig, Name: K2 Type Star
+  StarClass: K2
+  Model: SunRedGiant  
+  CompanionStarClass: M
+  Probability: 0.4 
+  SizeClass: 11
+  Color: "1,0.85,0.44"
+  SurfaceTemperature: "4000, 5500" 
+  Mass: 0.75
+  Radius: 0.82 
+  Luminosity: 0.37 
+  ColorName: Yellow-Orange
+  Age: 30
+  InnerSystem: "5, 48" 
+  HabitableHot: "49, 53" 
+  HabitableTemperate: "54, 59" 
+  HabitableCold: "60, 64" 
+  OuterSystem: "65, 112"
+  Description: "K-type stars are orangish stars that are slightly cooler than a G-Type star. This star is companioned with an M-type Red dwarf."
+}
+# Type M
+{ GalaxyConfig, Name: M Type Star
+  StarClass: M
+  Model: SunRedDwarf
+  Probability: 0.8  
+  SizeClass: 9
+  Color: "0.97,0.64,0.19"
+  SurfaceTemperature: "2500, 4000" 
+  Mass: 0.3
+  Radius: 0.4 
+  Luminosity: 0.002
+  ColorName: Red
+  Age: 200
+  InnerSystem: "5, 41" 
+  HabitableHot: "42, 45" 
+  HabitableTemperate: "46, 50" 
+  HabitableCold: "51, 54" 
+  OuterSystem: "55, 95"
+  Description: "Class M stars are by far the most common. About 76% of the main-sequence stars in the solar neighborhood are class M stars. However, class M main-sequence stars (red dwarfs) have such low luminosities that none are bright enough to be seen with the unaided eye, unless under exceptional conditions. Typically, an M-type star's surface temperature is under about 4,000 K."
+}
+# Type N
+{ GalaxyConfig, Name: Neutrone Star
+  StarClass: N
+  Model: SunNeutron
+  CompanionStarClass: M
+  Probability: 0.00625
+  SizeClass: 7
+  Color: "0.35,0.35,0.75"
+  SurfaceTemperature: "10000000, 100000000" 
+  ColorName: White
+  Mass: 2
+  Radius: 0.00004 
+  Description: "A neutron star is the collapsed core of a giant star which before collapse had a total mass of between 10 and 29 solar masses. Neutron stars are the smallest and densest stars, excluding black holes, hypothetical white holes, quark stars and strange stars. Neutron stars have a radius on the order of 10 kilometres (6.2 mi) and a mass of about 1.4 solar masses. They result from the supernova explosion of a massive star, combined with gravitational collapse, that compresses the core past white dwarf star density to that of atomic nuclei."
+  #Luminosity: 0.002
+  Age: 400
+  InnerSystem: "5, 108" 
+  HabitableHot: "109, 120" 
+  HabitableTemperate: "121, 132" 
+  HabitableCold: "133, 144" 
+  OuterSystem: "145, 252"  
+}
+# Type BH
+{ GalaxyConfig, Name: Black Hole
+  StarClass: BH
+  Model: BlackHole
+  CompanionStarClass: BH
+  Probability: 0.003125
+  SizeClass: 7
+  Color: "0.20,0.20,0.20"
+  # SurfaceTemperature: "10000000, 100000000" 
+  Mass: 1000000
+  # Schwarzschildradius
+  Radius: 0.21 
+  ColorName: Black
+  Description: "A black hole is a region of spacetime exhibiting gravitational acceleration so strong that nothing—no particles or even electromagnetic radiation such as light—can escape from it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. The boundary of the region from which no escape is possible is called the event horizon. Although the event horizon has an enormous effect on the fate and circumstances of an object crossing it, no locally detectable features appear to be observed."
+  #Luminosity: 0.002
+  Age: 900
+  InnerSystem: "5, 108" 
+  HabitableHot: "109, 120" 
+  HabitableTemperate: "121, 132" 
+  HabitableCold: "133, 144" 
+  OuterSystem: "145, 252"  
+  ClusterProb: 1                              # Decides if StarClass is placed in clusters in general. 1 = always/only , 0 = never; can use float between 0 and 1
+  ClusterRange: "0, 0.5"                      # Decides the position of the StarClass in a cluster; 0 = close to edge; 1 = close to center; Example: '0, 0.5' = position is more towards the edge of the cluster
+}
+# Type BH
+{ GalaxyConfig, Name: Cothga
+  StarClass: SMbh
+  Model: BlackHole
+  Probability: 1
+  SizeClass: 10
+  Color: "0.60,0.02,1"
+  # SurfaceTemperature: "10000000, 100000000" 
+  Mass: 1000000
+  # Schwarzschildradius
+  Radius: 0.21 
+  ColorName: Black
+  Description: "A supermassive black hole in the center of the Andromeda Galaxy"
+  #Luminosity: 0.002
+  Age: 900
+  InnerSystem: "5, 108" 
+  HabitableHot: "109, 120" 
+  HabitableTemperate: "121, 132" 
+  HabitableCold: "133, 144" 
+  OuterSystem: "145, 252"  
+  GalaxySpawnRadius: "0, 1"  # min and max in LY from the center where this star should spawn, if not set star will spawn everywhere
+  GalaxySpawnAmount: 1
+}
+
+# Type O1a
+{ GalaxyConfig, Name: GreenSuns
+  StarClass: O1a
+  Model: SunBlueGiant
+  Probability: 1
+  SizeClass: 12
+  Color: "0.2,1,0.2"   
+  SurfaceTemperature: "30000, 50000" 
+  Mass: 40     # Trivia: multiple of the solar sun mass 
+  Radius: 18   # Trivia: multiple of the solar sun radius
+  Luminosity: 500000  # Trivia: multiples of the solar sun lumen; bolometric luminosities 
+  ColorName: Green # Trivia: customizable color name for the star  
+  Age: 0.01 # Trivia: In Billion years
+  HabitableZone: "450, 900" 
+  InnerSystem: "8, 108"  # GENERATION: RANGE (start-end) for very hot playfields. Example: Lava planets
+  HabitableHot: "109, 120"  # GENERATION: RANGE (start-end) for warm/hot playfields. Example: Arid or deserts
+  HabitableTemperate: "121, 132"  # GENERATION:  RANGE (start-end) for temperate playfields (or those that are set to appear in the center hab zone)
+  HabitableCold: "133, 144"  # GENERATION: RANGE (start-end) for colder playfields. Example: ColdArid or ColdDesert or Snow
+  OuterSystem: "145, 252"  # GENERATION: RANGE (start-end) for very cold playfields. Snow, barren, GasPlanets
+  Description: "One of only a few green suns in the center of the galaxy .. what will you find here?"
+  # GalaxySpawnRadius: "0, 15"           # Does not work anymore. Will be removed.
+  # GalaxySpawnAmount: 0                   # Set to 0 and use in a Region = StarClass will ONLY spawn in that region!
+}
+# Type O1b
+{ GalaxyConfig, Name: Belt
+  StarClass: O1b
+  CompanionStarClass: N1a
+  Model: SunBlueGiant
+  Probability: 1
+  SizeClass: 12
+  Color: "0.67, 0.75, 1"   
+  SurfaceTemperature: "30000, 50000" 
+  Mass: 40     # Trivia: multiple of the solar sun mass 
+  Radius: 18   # Trivia: multiple of the solar sun radius
+  Luminosity: 500000  # Trivia: multiples of the solar sun lumen; bolometric luminosities 
+  ColorName: Green # Trivia: customizable color name for the star  
+  Age: 0.01 # Trivia: In Billion years
+  HabitableZone: "450, 900" 
+  InnerSystem: "8, 108"  # GENERATION: RANGE (start-end) for very hot playfields. Example: Lava planets
+  HabitableHot: "109, 120"  # GENERATION: RANGE (start-end) for warm/hot playfields. Example: Arid or deserts
+  HabitableTemperate: "121, 132"  # GENERATION:  RANGE (start-end) for temperate playfields (or those that are set to appear in the center hab zone)
+  HabitableCold: "133, 144"  # GENERATION: RANGE (start-end) for colder playfields. Example: ColdArid or ColdDesert or Snow
+  OuterSystem: "145, 252"  # GENERATION: RANGE (start-end) for very cold playfields. Snow, barren, GasPlanets
+  Description: "A belt of white giants  guarding the center of the galaxy. "
+  # GalaxySpawnRadius: "90, 100"           # Does not work anymore. Will be removed.
+  # GalaxySpawnAmount: 0                     # Set to 0 and use in a Region = StarClass will ONLY spawn in that region!
+}
+# Type G2
+{ GalaxyConfig, Name: G2 Type Star
+  StarClass: G2
+  Model: SunYellow
+  Probability: 0.2   
+  SizeClass: 10
+  Color: "1,0.95,0.63"
+  LightColor: "1,0.96,0.85"
+  SurfaceTemperature: "5500, 6000" 
+  Mass: 1
+  Radius: 1
+  Luminosity: 1
+  ColorName: Yellow
+  Age: 10
+  InnerSystem: "5, 56" 
+  HabitableHot: "57, 63" 
+  HabitableTemperate: "64, 69" 
+  HabitableCold: "70, 75" 
+  OuterSystem: "76, 132"
+  Description: "G-type stars, including the Sun, have prominent spectral lines H and K of Ca II, which are most pronounced at G2. They have even weaker hydrogen lines than F, but along with the ionized metals, they have neutral metals. There is a prominent spike in the G band of CH molecules."
+  # GalaxySpawnAmount: 0
+}
+# Type N
+{ GalaxyConfig, Name: Small Neutron Star
+  StarClass: N1a
+  Model: SunNeutron
+  Probability: 0.00625
+  SizeClass: 7
+  Color: "0.35,0.35,0.75"
+  SurfaceTemperature: "10000000, 100000000" 
+  ColorName: White
+  Mass: 2
+  Radius: 0.00004 
+  Description: "A neutron star is the collapsed core of a giant star which before collapse had a total mass of between 10 and 29 solar masses. Neutron stars are the smallest and densest stars, excluding black holes, hypothetical white holes, quark stars and strange stars. Neutron stars have a radius on the order of 10 kilometres (6.2 mi) and a mass of about 1.4 solar masses. They result from the supernova explosion of a massive star, combined with gravitational collapse, that compresses the core past white dwarf star density to that of atomic nuclei."
+  #Luminosity: 0.002
+  Age: 400
+  InnerSystem: "5, 108" 
+  HabitableHot: "109, 120" 
+  HabitableTemperate: "121, 132" 
+  HabitableCold: "133, 144" 
+  OuterSystem: "145, 252"  
+  # GalaxySpawnAmount: 0
+}
+# Type WD
+{ GalaxyConfig, Name: White Dwarf
+  StarClass: WD
+  Model: SunWhiteDwarf
+  Probability: 0.05 
+  SizeClass: 7
+  Color: "0.97,0.97,1"
+  SurfaceTemperature: "7500, 10000" 
+  Mass: 0.6
+  Radius: 0.02 
+  Luminosity: 1 
+  ColorName: White
+  Age: 0.5
+  InnerSystem: "5, 78" 
+  HabitableHot: "79, 87" 
+  HabitableTemperate: "88, 95" 
+  HabitableCold: "96, 104" 
+  OuterSystem: "105, 182"
+  Description: "A white dwarf, also called a degenerate dwarf, is a stellar core remnant composed mostly of electron-degenerate matter. A white dwarf is very dense: its mass is comparable to that of the Sun, while its volume is comparable to that of Earth. A white dwarf's faint luminosity comes from the emission of stored thermal energy as no fusion takes place in a white dwarf."
+}
+# Type MIa
+{ GalaxyConfig, Name: M Supergiant
+  StarClass: MIa
+  Model: SunRedGiant
+  Probability: 0.1  
+  SizeClass: 13
+  Color: "0.97,0.54,0.19"
+  SurfaceTemperature: "2500, 4000" 
+  Mass: 12
+  Radius: 900 
+  Luminosity: 125000
+  ColorName: Red
+  Age: 8
+  InnerSystem: "5, 41" 
+  HabitableHot: "42, 45" 
+  HabitableTemperate: "46, 50" 
+  HabitableCold: "51, 54" 
+  OuterSystem: "55, 95"
+  Description: "Class M Supergiant."
+}

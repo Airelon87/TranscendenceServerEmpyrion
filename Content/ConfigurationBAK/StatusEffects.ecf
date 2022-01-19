@@ -137,7 +137,7 @@
 # //////////////////////////////////////////////////// --- MUTILATION FLOW --- ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 { StatusEffect Name: Frostbite
-  Duration: 400
+  Duration: 600
 #  BuffIf: varBodyTemp < 12
   DebuffIf: varBodyTemp > 18
   Name: Frostbite
@@ -164,7 +164,7 @@
 }
 
 { StatusEffect Name: FractureClosed
-  Duration: 210
+  Duration: 420
   Name: FractureClosed
   BuffIf: varFallDamage > 50
   OnExpired: "Necrosis"
@@ -193,7 +193,7 @@
 }
 
 { StatusEffect Name: FractureOpen
-  Duration: 210
+  Duration: 420
   Name: FractureOpen
   BuffIf: varFallDamage > 75
   OnExpired: "Necrosis"
@@ -229,7 +229,7 @@
 }
 
 { StatusEffect Name: Necrosis
-  Duration: 300
+  Duration: 900
   Name: Necrosis
   OnExpired: "Mutilation"
   NextIsWorse: true
@@ -277,7 +277,7 @@
   }
   { Child Modify2
     Stat: health
-    ModifyMaxValue: -100
+    ModifyMaxValue: -300
     NumberOperationType: Flat
   }
 }
@@ -1923,18 +1923,18 @@
 
   { Child Modify0
     Stat: health
-    Amount: 20
+    Amount: 10
     Rate: 1
   }
   { Child Modify1
     Stat: food
-    Amount: 10
+    Amount: 5
     Rate: 1
   }
 }
 
 { StatusEffect Name: ImmunityBooster
-  Duration: 600
+  Duration: 240
   Name: ImmunityBooster
   Type: healthup
   Stack: discard
@@ -1943,18 +1943,18 @@
 
   { Child Modify0
     Stat: health
-    Amount: 2
+    Amount: 1
     Rate: 3
   }
   { Child Modify1
     Stat: food
-    Amount: 3
+    Amount: 1
     Rate: 3
   }
 }
 
 { StatusEffect Name: ImmunityBoosterII
-  Duration: 300
+  Duration: 120
   Name: ImmunityBoosterII
   Type: healthup
   Stack: discard
@@ -1963,28 +1963,28 @@
 
   { Child Modify0
     Stat: health
-    Amount: 2
+    Amount: 1
     Rate: 3
   }
   { Child Modify1
     Stat: food
-    Amount: 3
+    Amount: 2
     Rate: 3
   }
   { Child Modify2
     Stat: stamina
-    Amount: 2
+    Amount: 1
     Rate: 1
   }
   { Child Modify3
     Stat: oxygen
-    Amount: 2
+    Amount: 1
     Rate: 1
   }
 }
 
 { StatusEffect Name: ChlorophyllInfusion
-  Duration: 960
+  Duration: 480
   Name: ChlorophyllInfusion
   Type: healthup
   Stack: discard
@@ -1999,8 +1999,8 @@
 
   { Child Modify0
     Stat: health
-    Amount: 10
-    Rate: 1
+    Amount: 15
+    Rate: 2
   }
   { Child Modify1
     Stat: stamina

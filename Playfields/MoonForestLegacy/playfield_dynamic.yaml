@@ -35,7 +35,7 @@ GroundFogHeightRange: [45, 45]
 
 
 WaterProb: 1
-PvPProb: 1
+PvPProb: 0
 Water: [WaterGreen]
 Music: [Adrift]
 # ==============================================================

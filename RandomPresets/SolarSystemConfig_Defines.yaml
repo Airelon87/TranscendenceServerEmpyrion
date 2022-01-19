@@ -86,7 +86,8 @@ GenerationParams:
         Climate: Lava               # For 3D map purposes, limit climate (optional for non-terrain types) to one of Lava, Temperate, Snow, Desert, Alien, or Barren
         PlayfieldLevel: [6,10]
         Playfields:
-            - LavaLegacy
+            - LavaLegacy, 0.5
+            - Lava, 0.5
 
    # ==== WATER HOT Planets  =================
 
@@ -101,7 +102,8 @@ GenerationParams:
         Climate: Desert
         PlayfieldLevel: [4,10]
         Playfields:
-            - DesertLegacy
+            - DesertLegacy, 0.8
+            - Desert, 0.2
 
       - Name: AridLegacy 
         Color: [0.50, 0.47, 0.04]
@@ -113,7 +115,8 @@ GenerationParams:
         Climate: Arid
         PlayfieldLevel: [4,8]
         Playfields:
-            - AridLegacy
+            - AridLegacy, 0.5
+            - Arid, 0.5
 
 
    # ==== WATER TEMPERATE Planets  ===========
@@ -129,6 +132,18 @@ GenerationParams:
         PlayfieldLevel: [7,10]
         Playfields:
             - OceanLegacy
+
+      - Name: OceanPVE
+        Color: [0.04, 0.5, 0.1]    # Green
+        Placement:
+            - HabitableTemperate
+        OrbitType: [SpaceOrbitLegacy]
+        MoonProb: '0:0.7, 1:0.15, 2:0.1, 3:0.05'
+        MoonType: [MoonFaction, MoonBasic]   
+        Climate: Temperate
+        PlayfieldLevel: [7,10]
+        Playfields:
+            - OceanPVE
 
       - Name: TaloniaOG
         Color: [0.05, 0.6, 0.2]
@@ -203,8 +218,8 @@ GenerationParams:
         Climate: Snow
         PlayfieldLevel: [4,10]
         Playfields:
-            - SnowLegacy
-
+            - SnowLegacy, 0.7
+            - Snow, 0.3
 
 
 
@@ -222,7 +237,8 @@ GenerationParams:
         PlayfieldLevel: [5,10]
         Playfields:
             - BarrenMetalLegacy, 0.2
-            - BarrenLegacy, 0.8
+            - BarrenLegacy, 0.6
+            - Barren. 0.2
 
    # ==== ALIEN & EXOTIC Planets =============
       - Name: AlienLegacy
@@ -239,8 +255,8 @@ GenerationParams:
         Climate: Alien
         PlayfieldLevel: [7,10]
         Playfields:
-            - AlienLegacy
-
+            - AlienLegacy, 0.8
+            - Alien, 0.2
 
 
   MoonTypes:

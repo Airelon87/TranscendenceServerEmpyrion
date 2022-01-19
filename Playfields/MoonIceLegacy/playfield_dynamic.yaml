@@ -33,7 +33,7 @@ GroundFogIntensityRange: [0.04, 0.08]
 GroundFogHeightRange: [100, 140]
 
 WaterProb: 0
-PvPProb: 1
+PvPProb: 0
 Water: [WaterBlue]
 Music: [Anomalous]
 # ==============================================================

@@ -33,7 +33,7 @@ GroundFogProb: 0.9
 GroundFogIntensityRange: [0.05, 0.1]
 GroundFogHeightRange: [-20, 10]
 
-PvPProb: 1
+PvPProb: 0
 Water: [WaterGreen]
 Music: [snow]
 # ==============================================================

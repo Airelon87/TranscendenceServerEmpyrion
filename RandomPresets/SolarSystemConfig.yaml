@@ -22,10 +22,10 @@ GenerationParams:
     - 'Jupiter:0.45, Saturn: 0.35, Neptun:0.2'                                                # 1 GasPlanets
     - 'LavaLegacy:0.4'                                                                        # 2 Hot
     - 'AridLegacy:0.3, DesertLegacy:0.2, SyndicateOG:0.5'                                     # 3 Dry
-    - 'OceanLegacy:0.2, GalorianOG:0.3, HomeworldPolaris:0.3, Temperate:0.2'                  # 4 Temperate
-    - 'AlienLegacy:0.3'                                                                       # 5 Alien
+    - 'OceanPVE:0.2, GalorianOG:0.3, HomeworldPolaris:0.3, Temperate:0.2'                     # 4 Temperate
+    - 'AlienLegacy:0.3, OceanLegacy:0.2'                                                      # 5 Alien
     - 'SnowLegacy:0.6, TaloniaOG:0.4'                                                         # 6 Snow
-    - 'BarrenLegacy:0.5'                                                                      # 7 Barren
+    - 'BarrenLegacy:0.3'                                                                      # 7 Barren
 
   POICountProbs: '0 : 0.05,  1 : 0.1,  2 : 0.1,  3 : 0.2,  4 : 0.2,  5 : 0.2,  6 : 0.1,  7 : 0.05'
   POIs: 'SpaceEmptyPvP: 0.3, SpaceAsteroidFieldLegacy: 0.3, AsteroidField: 0.35, ArecthoriosPVP:0.05'  

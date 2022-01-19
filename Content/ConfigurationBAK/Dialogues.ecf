@@ -1343,7 +1343,7 @@
 }
 { +Dialogue Name: TR_WBI_Ranger
   NPCName: "Ranger"
-  Output: "@w1 Over & Beyond {PlayerName}! \n\n @w1 A friend of Kara Yarr's is a friend of mine." 
+  Output: "@w1 Over & Beyond {PlayerName}! \n\n @w1 If Kara Yarr tagged you as a freindly 10 seconds ago my ship would have decimated you." 
   Option_1: "Ranger, what can I trade for medical supplies?"
   OptionNext_1: TR_WBI_Ranger_Medical
   Option_2: "I heard Ranger ships have the most efficient thrusters in the fleet. How much for two?"
@@ -1353,12 +1353,12 @@
 }
 { +Dialogue Name: TR_WBI_Ranger_Medical
   NPCName: "Ranger"
-  Output: "@w1 I need 10 ImmunityBoosterPills. Civilians on this planet are in desperate."
-  Option_1: "I have 10 ImmunityBoosterPills here for you. "
+  Output: "@w1 I could use a crate of ImmunityBoosterPills. Civilians on dozens of planets are in desperate in these times."
+  Option_1: "I have 16 ImmunityBoosterPills here for you. "
   OptionIf_1: "HasItem('ImmunityBoosterPill', 10)"
   OptionNext_1: TR_WBI_Ranger_Medical_Sold
   Option_2: "I have to pass for now."
-  OptionNext_2: End
+  OptionNext_2: TR_WBI_Ranger
 }
 { +Dialogue Name: TR_WBI_Ranger_Thruster
   NPCName: "Ranger"
@@ -1396,7 +1396,7 @@
   Output: "@w1 Take these thrusters and best of luck!"
   Execute_1: "AddItem('RangerThrusterSV', 2)"
   Option_1: "Thanks Ranger"
-  OptionNext_1: End
+  OptionNext_1: TR_WBI_Ranger
 }
 { +Dialogue Name: TR_WBI_Ranger_Weapons
   NPCName: "Ranger"
@@ -1405,7 +1405,7 @@
   OptionIf_1: "HasItem('Nanites', 500) && HasItem('CompressedPromethium', 5)"
   OptionNext_1: TR_WBI_Ranger_Weapons_Trade
   Option_2: "I have to pass for now."
-  OptionNext_2: End
+  OptionNext_2: TR_WBI_Ranger
 }
 { +Dialogue Name: TR_WBI_Ranger_Weapons_Trade
   NPCName: "Ranger"
@@ -1436,10 +1436,10 @@
 { +Dialogue Name: TR_WBI_Ranger_Weapons_Poster
   NPCName: "Ranger"
   Output: "@w1 Take these posters to remember me by."
-  Execute_1: "AddItem('PosterZiraxAlienWorld', 1)"
+  Execute_1: "AddItem('PosterStranger', 1)"
   Execute_2: "AddItem('PosterJump', 1)"
   Option_1: "My enemies will explode upon gazing at these posters."
-  OptionNext_1: End
+  OptionNext_1: TR_WBI_Ranger
 }
 { +Dialogue Name: TR_WBI_Ranger_Weapons_Sentry
   NPCName: "Ranger"
@@ -1447,15 +1447,15 @@
   Execute_1: "AddItem('SentryGun01', 2)"
   Execute_2: "AddItem('5.8mmBullet', 300)"
   Option_1: "I guess my SV could use a couple."
-  OptionNext_1: End
+  OptionNext_1: TR_WBI_Ranger
 }
 { +Dialogue Name: TR_WBI_Ranger_Weapons_Bomber
   NPCName: "Ranger"
   Output: "@w1 This turret is among the most lethal in my arsenal. Use it wisely."
   Execute_1: "AddItem('RangerBomberCV', 1)"
   Execute_2: "AddItem('RangerRocketCV', 40)"
-  Option_1: "A fine addition for any battlecruiser."
-  OptionNext_1: End
+  Option_1: "My CV battle cruiser could use this to attack planetary bases for sure."
+  OptionNext_1: TR_WBI_Ranger
 }
 { +Dialogue Name: TR_WBI_Ranger_Weapons_Turret
   NPCName: "Ranger"
@@ -1472,7 +1472,7 @@
   Execute_2: "AddItem('RangerSVPlasmaCharge', 60)"
   Execute_3: "AddItem('5.8mmBullet', 500)"
   Option_1: "Thank you for the ammo."
-  OptionNext_1: End
+  OptionNext_1: TR_WBI_Ranger
 }
 { +Dialogue Name: TR_WBI_Commander
   NPCName: "Warbot Outpost Commander"

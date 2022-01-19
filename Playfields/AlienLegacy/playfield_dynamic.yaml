@@ -34,7 +34,7 @@ GroundFogIntensityRange: [0.10, 0.15]      #
 GroundFogHeightRange: [15, 20]             # Fitted to Sealevel. !!! Use this for ingame world generation !!!
 
 WaterProb: 1
-PvPProb: 1
+PvPProb: 0
 Water: [WaterBrown]
 Music: [Vanguard]
 # ==============================================================

@@ -27,7 +27,7 @@ AtmosphereDensityMinMax: [0.6, 1.0]
 AtmosphereO2MinMax: [0.1, 0.2]
 AtmoBreathableProb: 0.3
 WaterProb: 0.7
-PvPProb: 1
+PvPProb: 0
 Water: [WaterGreen]
 Music: [desert]
 

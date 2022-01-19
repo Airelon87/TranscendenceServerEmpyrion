@@ -32,7 +32,7 @@ GroundFogIntensityRange: [0.03, 0.15]
 GroundFogHeightRange: [110, 130]
 
 Water: [RockLava03]
-PvPProb: 1
+PvPProb: 0
 Music: [BarrenMoon]
 # ==============================================================
 

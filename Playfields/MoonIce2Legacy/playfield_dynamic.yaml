@@ -36,7 +36,7 @@ GroundFogHeightRange: [75, 75]
 
 
 WaterProb: 0
-PvPProb: 1
+PvPProb: 0
 Water: [WaterBlue]
 Music: [ColdDivide]
 # ==============================================================

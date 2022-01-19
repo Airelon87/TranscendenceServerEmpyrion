@@ -31,7 +31,7 @@ GroundFogHeightRange: [10, 15]
 AtmosphereFogRange: [0.1, 0.5]
 
 Water: [RockLava03]
-PvPProb: 1
+PvPProb: 0
 Music: [BarrenMoon]
 # ==============================================================
 

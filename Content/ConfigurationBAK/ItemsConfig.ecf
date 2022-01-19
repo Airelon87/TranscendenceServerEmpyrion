@@ -12517,8 +12517,7 @@
 }
 { +Item Id: 1013, Name: Chemicals , Ref: TradingGoodsTemplate
   MarketPrice: 85
-  FuelValue: 4, type: int, display: true, formatter: WattHour
-  Info: This is used for crafting unique items and can be burned off as fuel, display: true
+  Info: This is used for crafting unique items, display: true
   ShowUser: Yes
 }
 { +Item Id: 1014, Name: Filters , Ref: TradingGoodsTemplate
@@ -13287,7 +13286,6 @@
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
   Info: This item can be used to craft advanced medical items or eaten at your own risk, display: true
-  FuelValue: 3, type: int, display: true, formatter: WattHour
   Category: Components
   CustomIcon: Coolant
   ShowUser: Yes
@@ -13303,13 +13301,6 @@
     Buff: OrganFailure
     Buff_chance: 1
   }  
-}
-{ +Item Id: 1411, Name: LegacyEnergyCore , Ref: TradingGoodsTemplate
-  MarketPrice: 20000
-  CustomIcon: TechnicalArtifact
-  FuelValue: 2700, type: int, display: true, formatter: WattHour
-  Info: Provides a massive amount of fuel. A required crafting item for the AntiprotonLaserTurret, display: true
-  ShowUser: Yes
 }
 
 # =============================================================================
@@ -13747,72 +13738,7 @@
     BlastDamageMultiplier_1: 0.05, param1: dirt|stone
   }
 }
-############################
-#Turret for SS/MS for fighting back TheLegacy
-############################
-{ +Item Id: 1610, Name: RangerAlienTurretWeapon
-  Model: Entities/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
-  DropMeshfile: Entities/Misc/BagSmallChristmasPrefab   #Revert after Christmas to: BagSmallNewPrefab
-  ShowUser: NoButCSV  # reported by HWS
-  Canhold: false
-  Material: metalweapon
-  HoldType: 0
-  StackSize: 500
-  # Mass: 8500, type: float, display: false, formatter: Kilogram
-  Category: Weapons/Items  
-  { Child 0
-    Class: LauncherSS
-    ROF: 0.5, type: float, display: true, formatter: ROF
-    AllowAt: "Space"
-    Range: 650, display: false
-    RangeSpace: 1300, display: false
-    # Damage: 2000, display: true
-    AmmoCapacity: 500, display: false       # no need to display since unlimited ammo
-    AmmoType: AlienLaserRefill, display: true
-    # AmmoUnlimited: true
-    Automatic: true  
-    NoiseStrength: 100, display: false   
-    ReloadDelay: 0.6, display: true
-    SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
-    #  SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease    
-    SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
-    SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
-    # PfxMuzzle: turretMuzzleFire
-    # ParticleTransform: Muzzle/Particle1 
-  }
-}
-{ +Item Id: 1611, Name: AlienLaserRefill, Ref: TurretEnemyLaserChargeT2
-  CustomIcon: PulseLaserChargePistol
-  Info: Ammo refill for AntiProtonTurrets., display: true
-  Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketGreenPrefab
-  DropMeshfile: Entities/Misc/BagSmallChristmasPrefab   #Revert after Christmas to: BagSmallNewPrefab
-  Material: metalweapon
-  AllowPlacingAt: "MS", display: false
-  StackSize: 1000
-  MarketPrice: 10, display: true
-  ShowUser: Yes
-  Mass: 1, type: float, display: true, formatter: Kilogram
-  Volume: 1.5, type: float, display: true, formatter: Liter
-  Category: Weapons/Items
-  { Child 0
-    Class: Projectile
-    Damage: 750, display: true   # new: because we removed explosion 
-    BlastParticleIndex: 7
-    Speed: 775
-    Range: 1300
-    SpeedSpace: 820
-    RangeSpace: 1300
-    Ballistic: false
-	
-    DamageMultiplier_1: 0.25, param1: head|body
-    DamageMultiplier_2: 0, param1: stone|dirt|rock
-    DamageMultiplier_3: 0.3, param1: shield
-    BlastDamageMultiplier_1: 0.25, param1: head|body
-    BlastDamageMultiplier_2: 0.4, param1: stone|dirt
-    BlastDamageMultiplier_3: 0.1, param1: rock
-    BlastDamageMultiplier_4: 0, param1: shield
-  }
-}
+
 #===============================================================================
 #Transcendence121 Compressed Ingots System for easy storage and trading. 
 #===============================================================================
