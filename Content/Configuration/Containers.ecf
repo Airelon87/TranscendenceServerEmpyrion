@@ -522,6 +522,7 @@
     Name_1: 5.8mmBullet, param1: 0.5, param2: "5,10"
     Name_2: CannedVegetables, param1: 0.3, param2: "1,2"
     Name_3: MoneyCard, param1: 0.05, param2: "50,150"
+    Name_4: ReportCommunicationData, param1: 0.05, param2: "1,2"
     Group_0: MedicalItems, param1: 0.2
   }
 } */
@@ -538,6 +539,7 @@
     Name_1: AlienParts02, param1: 0.5, param2: "2,3"
     Name_2: AlienTooth, param1: 0.3, param2: "2,3"
 	  Name_3: MutatedSubstance, param1: 0.2, param2: 1
+    Name_4: ReportBiologicalData, param1: 0.05, param2: 1
   }
 }
 
@@ -567,6 +569,7 @@
     Name_1: DrillEpic, param1: 0.3, param2: 1
     Name_2: ShotgunChristmas, param1: 0.2, param2: 1
     Name_3: WarbotNanotubes, param1: 0.2, param2: 1
+    Group_0: Reports, param1: 0.05
   }
 }
 
@@ -603,7 +606,7 @@
     Group_9: WeaponsBasicKit, param1: 0.15
     Group_10: Seeds, param1: 0.4
     Group_11: MedicalItems, param1: 0.4
-  #  Group_12: FoodItems, param1: 0.1
+    Group_12: Reports, param1: 0.2
   }
 } */
 
@@ -628,10 +631,13 @@
     Name_10: CopperIngot, param1: 0.9, param2: "100,125"
     Name_11: SiliconIngot, param1: 0.9, param2: "100,125"
     Name_12: IronIngot, param1: 0.9, param2: "125,150"
+    Name_13: ReportMaterialData, param1: 0.03, param2: 1
+    Name_14: ReportScienceRawData, param1: 0.01, param2: 1
 	
     Group_0: MedicalItems, param1: 1
     Group_1: WeaponsBasic, param1: 0.8
     Group_2: WeaponsBasicKit, param1: 0.2
+    Group_3: Reports, param1: 0.2
   }
 }
 
@@ -643,6 +649,8 @@
   SfxClose: UseActions/BarrelClose
 
   { Child Items
+    Name_0: ReportTransportationData, param1: 0.01, param2: 1
+    Name_1: ReportEconomicData, param1: 0.01, param2: 1
     Group_0: DevicesRare, param1: 0.08
     Group_1: DevicesVesselRare, param1: 0.08
     Group_2: ComponentsRare, param1: 0.5
@@ -676,11 +684,14 @@
     Name_9: DrillAttachmentT2, param1: 0.04, param2: "1,2"
     Name_10: TitanRods, param1: 0.7, param2: "75,100"
     Name_11: NeodymiumIngot, param1: 0.4, param2: "25,50"
+    Name_12: ReportMaintenanceData, param1: 0.01, param2: 1
+    Name_13: ReportWorkShiftData, param1: 0.01, param2: 1
 	
     Group_0: WeaponsBasic, param1: 0.08
     Group_1: WeaponsBasicKit, param1: 0.08
     Group_2: Medikits, param1: 1
     Group_3: SuitBooster, param1: 0.7
+    Group_4: Reports, param1: 0.2
   }
 }
 
@@ -727,9 +738,11 @@
     Name_15: SmallOptronicMatrix, param1: 0.07, param2: "2,3"
     Name_16: LargeOptronicBridge, param1: 0.05, param2: "2,3"
     Name_17: LargeOptronicMatrix, param1: 0.03, param2: "2,3"
+    Name_18: Leather, param1: 0.01, param2: "2,3"
 	
     Group_0: WeaponsRare, param1: 0.1
     Group_1: WeaponsRareKit, param1: 0.09
+    Group_2: Reports, param1: 0.2
   }
 }
 
@@ -747,11 +760,15 @@
     Name_3: SmallOptronicMatrix, param1: 0.2, param2: "1,2"
     Name_4: LargeOptronicBridge, param1: 0.2, param2: "1,2"
     Name_5: LargeOptronicMatrix, param1: 0.2, param2: "1,2"
-    Name_6: PlasmaCannonAlien, param1: 0.03, param2: "1,1"
+    Name_6: PlasmaCannonAlien, param1: 0.02, param2: 1
+    Name_7: ReportAnomalousData, param1: 0.01, param2: 1
+    Name_8: AlphaVirus, param1: 0.01, param2: 1
+    Name_9: LegacyEnergyCore, param1: 0.01, param2: 1
 	
     Group_0: WeaponsEpic, param1: 0.5
     Group_1: WeaponsRare, param1: 0.3
     Group_2: WeaponsRareKit, param1: 0.1
+    Group_3: Reports, param1: 0.1
   }
 }
 
@@ -813,6 +830,9 @@
   SfxClose: UseActions/drone_close
 
   { Child Items
+    Name_0: ReportPlanetaryResourceData, param1: 0.08, param2: 1
+    Name_1: Robotics, param1: 0.1, param2: 1
+    Name_2: SpareParts, param1: 0.1, param2: 1
     Group_0: EnergyItems, param1: 0.6
     Group_1: ComponentsRare, param1: 0.8
     Group_2: WeaponsBasicKit, param1: 0.4
@@ -871,6 +891,7 @@
     Name_4: AutoMinerCore, param1: 0.2, param2: "1,2"	
     Name_5: Nanites, param1: 0.3, param2: "20,50"
 
+    Group_0: Reports, param1: 0.2
     Group_1: WeaponsEpic, param1: 0.5
   }
 }
@@ -923,9 +944,10 @@
     Name_15: MobilityBoost, param1: 0.01, param2: 1
     Name_16: RadiationBoost, param1: 0.01, param2: 1
     Name_17: EVABoost, param1: 0.025, param2: 1
-    Name_18: ArmorLightEpic, param1: 0.001, param2: 1
+    Name_18: ArmorLightEpic, param1: 0.01, param2: 1
 
     Group_0: WeaponsBasicKit, param1: 0.2
+    Group_1: Reports, param1: 0.06
   }
 }
 ## Locker LockerWShelves 
@@ -955,6 +977,7 @@
     Name_16: 50Caliber, param1: 0.3, param2: "5,10"
     Name_17: ArmorMedium, param1: 0.1, param2: 1
     Group_0: WeaponsBasicKit, param1: 0.02
+    Group_1: Reports, param1: 0.1
   }
 }
 ## Operation Table OperationTableWDrawers 
@@ -974,6 +997,8 @@
     Name_6: RespiratorCharge, param1: 0.3, param2: "1,2"
     Name_7: ImmunityBoosterPill, param1: 0.3, param2: "3,4"
     Name_8: NaniteBoosterPill, param1: 0.1, param2: "3,4"
+
+    Group_0: Reports, param1: 0.06
   }
 }
 ## Box Medium Props6BoxMedium1 
@@ -1080,6 +1105,7 @@
     Name_19: EVABoost, param1: 0.0025, param2: 1
 	
     Group_0: WeaponsBasicKit, param1: 0.02
+    Group_1: Reports, param1: 0.01
   }
 }
 ## Repository 2 Level4Prop3 
@@ -1193,6 +1219,9 @@
     Name_6: Milk, param1: 0.2, param2: 1
     Name_7: CannedVegetables, param1: 0.1, param2: 1
     Name_8: CannedMeat, param1: 0.1, param2: 1
+    Name_9: ImmunityBoosterPill, param1: 0.1, param2: 1
+
+    Group_0: Reports, param1: 0.02
   }
 }
 ## Closet ScifiStorage 
@@ -1683,6 +1712,7 @@
     Name_8: Token, param1: 0.01, param2: "meta=7225"
     Group_0: MedicalItems, param1: 0.4
     Group_1: TroopersFood, param1: 0.6
+    Group_2: Reports, param1: 0.05
   }
 }
 
@@ -1897,13 +1927,13 @@
     Name_3: Robotics, param1: 0.4, param2: 1
     Name_4: LuxuryGoods, param1: 0.4, param2: "1,2"
     Name_5: Narcotics, param1: 0.4, param2: "2,4"
-    ##Name_6: TechnicalArtifact, param1: 0.4, param2: 1
     Name_6: ToxicWaste, param1: 0.1, param2: 1
     Name_7: AlienOrganism, param1: 0.8, param2: "2,6"
     Name_8: Chemicals, param1: 0.6, param2: "2,3"
     Name_9: AncientRelics, param1: 0.2, param2: 1
     Name_10: RawDiamond, param1: 0.1, param2: 1
     Name_11: Token, param1: 0.01, param2: "meta=7225"
+    Group_0: Reports, param1: 0.1
   }
 }
 
@@ -1922,7 +1952,6 @@
     Name_4: LuxuryGoods, param1: 0.4, param2: "1,2"
     Name_5: Narcotics, param1: 0.4, param2: "1,4"
     Name_6: WarbotNanotubes, param1: 0.01, param2: 1
-    ##Name_6: TechnicalArtifact, param1: 0.4, param2: 1
     Name_7: AlienOrganism, param1: 0.8, param2: "2,6"
     Name_8: Chemicals, param1: 0.6, param2: "1,3"
     Name_9: AncientRelics, param1: 0.2, param2: 1
@@ -1933,6 +1962,7 @@
     Name_14: LargeOptronicMatrix, param1: 0.03, param2: "1,2"
     Name_15: TransportationBoost, param1: 0.1, param2: 1
     Name_16: Nanites, param1: 0.1, param2: "6,24"
+    Group_0: Reports, param1: 0.06
   }
 }
 
@@ -1947,7 +1977,7 @@
     Name_1: Optronics, param1: 0.8, param2: "1,3"
     Name_2: ScienceEquipment, param1: 0.6, param2: 1
     Name_3: AluminiumPowder, param1: 0.4, param2: "1,2"
-    Name_4: WarbotNanotubes, param1: 0.1, param2: "3,4"
+    Name_4: WarbotNanotubes, param1: 0.1, param2: 1
     Name_5: AlienOrganism, param1: 0.8, param2: "5,6"
     Name_6: Chemicals, param1: 0.6, param2: "2,3"
     Name_7: PlatinBar, param1: 0.4, param2: "5,15"
@@ -1957,7 +1987,8 @@
     Name_11: WarpDriveCVEpicUpgradeKit, param1: 0.1, param2: 1
     Name_12: TeleporterBAEpicUpgradeKit, param1: 0.1, param2: 1
     Name_13: NaniteChlorophyllInfusion, param1: 0.5, param2: 1
-    Group_13: OresRare, param1: 0.4
+    Group_0: OresRare, param1: 0.4
+    Group_1: Reports, param1: 0.2
   }
 }
 
@@ -1972,6 +2003,7 @@
     Name_0: Meat, param1: 0.8, param2: "2,3"
 	  Name_1: AlienOrganism, param1: 0.6, param2: "2,4"
     Name_2: MutatedSubstance, param1: 0.4, param2: "4,5"
+    Name_3: ReportBiologicalData, param1: 0.4, param2: 1
     Group_0: Sprouts, param1: 0.6
     Group_1: FoodItems, param1: 0.1
   }
@@ -2009,11 +2041,11 @@
     Name_4: AluminiumOre, param1: 0.1, param2: "10,50"
     Name_5: TitanOre, param1: 0.1, param2: "85,125"
     Group_0: WeaponsVeryRare, param1: 0.3
-    # Group_1: WeaponsEpic, param1: 0.05
     Group_1: EnergyItems, param1: 0.9
     Group_2: MedicalItems, param1: 0.8
     Group_3: WeaponsRare, param1: 0.6
     Group_4: WeaponsRareKit, param1: 0.6
+    Group_5: Reports, param1: 0.03
   }
 }
 
@@ -2109,6 +2141,7 @@
     Name_8: ArmorHeavyEpic, param1: 0.15, param2: 1
     Name_9: MoneyCard, param1: 0.25, param2: "2500,7500"
     Name_10: LegacyEnergyCore, param1: 0.1, param2: 1
+    Group_0: Reports, param1: 0.04
   }
 }
 
@@ -2128,6 +2161,7 @@
     Name_5: WarBotBoostEpic, param1: 0.15, param2: 1
     Name_6: ScienceEquipment, param1: 0.25, param2: "7,42"
     Name_7: Token, param1: 1, param2: "meta=7238"
+    Group_0: Reports, param1: 0.1
   }
 } 
 
@@ -2147,6 +2181,7 @@
 	  Name_6: EnergyMatrix, param1: 0.7, param2: "2,4"
 	  Name_7: AntiProtonLaserTurret, param1: 0.01, param2: "1"  
 	  Name_8: EnergyMatrix, param1: 0.7, param2: "2,4"
+    Group_0: Reports, param1: 0.03
   }
 }
 

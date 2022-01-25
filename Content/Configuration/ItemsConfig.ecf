@@ -12461,7 +12461,7 @@
   ShowUser: Yes
 }
 { +Item Id: 1008, Name: Leather , Ref: TradingGoodsTemplate
-  MarketPrice: 390
+  MarketPrice: 190
   ShowUser: Yes
 }
 { +Item Id: 1009, Name: ToxicWaste , Ref: FoodTemplate
@@ -12578,7 +12578,7 @@
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 300, display: true
+  MarketPrice: 100, display: true
   Mass: 0, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
@@ -12586,149 +12586,149 @@
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 300, display: true
+  MarketPrice: 85, display: true
 }
 { +Item Id: 1052, Name: ReportTransportationData , Ref: ReportsTemplate
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 300, display: true
+  MarketPrice: 175, display: true
 }
 { +Item Id: 1053, Name: ReportCommunicationData , Ref: ReportsTemplate
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 400, display: true
+  MarketPrice: 40, display: true
 }
 { +Item Id: 1054, Name: ReportEconomicData , Ref: ReportsTemplate
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 500, display: true
+  MarketPrice: 150, display: true
 }
 # == Reports Science 60%
 { +Item Id: 1060, Name: ReportScienceRawData , Ref: ReportsTemplate
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 1500, display: true
+  MarketPrice: 50, display: true
 }
 { +Item Id: 1061, Name: ReportBiologicalData , Ref: ReportsTemplate
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 1500, display: true
+  MarketPrice: 55, display: true
 }
 { +Item Id: 1062, Name: ReportMaterialData , Ref: ReportsTemplate
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 1500, display: true
+  MarketPrice: 70, display: true
 }
 { +Item Id: 1063, Name: ReportArcheologicalData , Ref: ReportsTemplate
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 1500, display: true
+  MarketPrice: 85, display: true
 }
 { +Item Id: 1064, Name: ReportAnomalousData , Ref: ReportsTemplate
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 1500, display: true
+  MarketPrice: 95, display: true
 }
 # == Reports Exploration 40%
 { +Item Id: 1070, Name: ReportExplorationRawData , Ref: ReportsTemplate
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 3000, display: true
+  MarketPrice: 64, display: true
 }
 { +Item Id: 1071, Name: ReportGeologicalData , Ref: ReportsTemplate
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 3000, display: true
+  MarketPrice: 27, display: true
 }
 { +Item Id: 1072, Name: ReportAtmosphericData , Ref: ReportsTemplate
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 3000, display: true
+  MarketPrice: 35, display: true
 }
 { +Item Id: 1073, Name: ReportAstronomicalData , Ref: ReportsTemplate
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 3000, display: true
+  MarketPrice: 45, display: true
 }
 { +Item Id: 1074, Name: ReportPlanetaryResourceData , Ref: ReportsTemplate
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 3000, display: true
+  MarketPrice: 30, display: true
 }
 # == Reports Security 20%
 { +Item Id: 1080, Name: ReportSpaceWeather , Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 5000, display: true
+  MarketPrice: 60, display: true
 }
 { +Item Id: 1081, Name: ReportNavigationData , Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 5000, display: true
+  MarketPrice: 50, display: true
 }
 { +Item Id: 1082, Name: ReportSpaceAnomality , Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 5000, display: true
+  MarketPrice: 50, display: true
 }
 { +Item Id: 1083, Name: ReportWarpSignatures , Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 6000, display: true
+  MarketPrice: 200, display: true
 }
 { +Item Id: 1084, Name: ReportWeaponSignatures , Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 6000, display: true
+  MarketPrice: 200, display: true
 }
 # == Reports Military 10%
 { +Item Id: 1090, Name: ReportMilitaryRawData , Ref: ReportsTemplate
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 8000, display: true
+  MarketPrice: 20, display: true
 }
 { +Item Id: 1091, Name: ReportMilitaryScouting , Ref: ReportsTemplate
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 8000, display: true
+  MarketPrice: 30, display: true
 }
 { +Item Id: 1092, Name: ReportMilitarySurveillance , Ref: ReportsTemplate
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 8000, display: true
+  MarketPrice: 60, display: true
 }
 { +Item Id: 1093, Name: ReportMilitaryTroopMovement , Ref: ReportsTemplate
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 8000, display: true
+  MarketPrice: 40, display: true
 }
 { +Item Id: 1094, Name: ReportMilitaryClassified , Ref: ReportsTemplate
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 8000, display: true
+  MarketPrice: 275, display: true
 }
 # ========================================= Special Story and Mission Items ==========================
 { +Item Id: 1100, Name: MeleeTalonGuardianCharged , Ref: TradingGoodsTemplate

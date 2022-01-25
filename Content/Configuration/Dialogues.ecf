@@ -1548,3 +1548,724 @@
   Option_1: "I heard a rumor theirs a ship building facility in the anamoly. I'll have to check this out."
   OptionNext_1: End
 }
+/* ------------------------------------------- */
+/* ---PolarisFix---Trader---Jan22------------- */
+/* ------------------------------------------- */
+{ +Dialogue Name: Trader_DialogueSwitch_Start
+  NPCName: Trader
+  Output: dialogue_traderSplit1
+  Option_1: dialogue_traderSplit1a
+  OptionNext_1: Barking_Polaris_Managers_Dialogues, param1: Trader_DialogueSwitch_Start
+  Option_2: dialogue_traderSplit1b
+  OptionNext_2: Trader_DialogueSwitch_Trade
+  Option_3: dialogue_WC0Smaq
+  OptionIf_3: "HasItem('Presents',1) && ChristmasHats == 0"
+  OptionNext_3: Trader_DialogueSwitch_Present
+  #: "General trader start dialogue"
+  Variable_1: "ChristmasHats", param1: dbplayer_int
+}
+{ +Dialogue Name: Trader_DialogueSwitch_Talk
+  NPCName: Trader
+  Output: dialogue_traderSplit2
+  Option_1: dialogue_traderSplit2a
+  OptionNext_1: Trader_DialogueSwitch_Start
+  Option_2: dialogue_traderSplit2b
+  OptionNext_2: End
+  #: "General trader start dialogue"
+}
+{ +Dialogue Name: Trader_DialogueSwitch_Trade
+  NPCName: Trader
+  Execute_1: "OpenTraderWindow()"
+  #: "General trader start dialogue"
+}
+{ +Dialogue Name: Trader_DialogueSwitch_Present
+  Output: dialogue_0w3qYqC
+  Option_1: dialogue_40Oe4OW
+  OptionNext_1: End
+  Execute_1: "AddItem('SantaClausHat',1)"
+  Execute_2: "AddItem('SnowmanHead',1)"
+  Execute_3: "RemoveItem('Presents',1)"
+  Execute_4: "ChristmasHats = 1"
+}
+/* ------------------------------------------- */
+/* ---PolarisFix---Barking States---Jan22---- */
+/* ------------------------------------------- */
+{ +Dialogue Name: Barking_Civilian_Random_Init
+  BarkingState: Barking_Civilian_Random_Dialogues
+}
+{ +Dialogue Name: Barking_Civilian_Random_Dialogues
+  Variable_1: "randomizer", param1: int
+  Execute_1: "randomizer = Random(1,17)"
+  Next_1: Barking_Civilian_Random_1
+  NextIf_1: "randomizer == 1"
+  Next_2: Barking_Civilian_Random_2
+  NextIf_2: "randomizer == 2"
+  Next_3: Barking_Civilian_Random_3
+  NextIf_3: "randomizer == 3"
+  Next_4: Barking_Civilian_Random_4
+  NextIf_4: "randomizer == 4"
+  Next_5: Barking_Civilian_Random_5
+  NextIf_5: "randomizer == 5"
+  Next_6: Barking_Civilian_Random_6
+  NextIf_6: "randomizer == 6"
+  Next_7: Barking_Civilian_Random_7
+  NextIf_7: "randomizer == 7"
+  Next_8: Barking_Civilian_Random_8
+  NextIf_8: "randomizer == 8"
+  Next_9: Barking_Civilian_Random_9
+  NextIf_9: "randomizer == 9"
+  Next_10: Barking_Civilian_Random_10
+  NextIf_10: "randomizer == 10"
+  Next_11: Barking_Civilian_Random_11
+  NextIf_11: "randomizer == 11"
+  Next_12: Barking_Civilian_Random_12
+  NextIf_12: "randomizer == 12"
+  Next_13: Barking_Civilian_Random_13
+  NextIf_13: "randomizer == 13"
+  Next_14: Barking_Civilian_Random_14
+  NextIf_14: "randomizer == 14"
+  Next_15: Barking_Civilian_Random_15
+  NextIf_15: "randomizer == 15"
+  Next_16: Barking_Civilian_Random_16
+  NextIf_16: "randomizer == 16"
+  Next_17: Barking_Civilian_Random_17
+  NextIf_17: "randomizer == 17"
+}
+{ +Dialogue Name: Barking_Civilian_Random_1
+  Output: dialogue_O2uWK
+  Option_1: dialogue_6pmsM
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_2
+  Output: dialogue_CKKaK
+  Option_1: dialogue_0EuCe
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_3
+  Output: dialogue_W8uBS
+  Option_1: dialogue_GOi8I
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_4
+  Output: dialogue_wWKTq
+  Option_1: dialogue_a4G8W
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_5
+  Output: dialogue_oKiaa
+  Option_1: dialogue_mOqee
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_6
+  Output: dialogue_aq0uu
+  Option_1: dialogue_eG9aS
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_7
+  Option_1: dialogue_Cm84a
+  OptionNext_1: End
+  Output: dialogue_e8aaK
+}
+{ +Dialogue Name: Barking_Civilian_Random_8
+  Output: dialogue_4exuC
+  Option_1: dialogue_WQGAa
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_9
+  Output: dialogue_OqiK0
+  Option_1: dialogue_SecG0
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_10
+  Output: dialogue_4ieSe
+  Option_1: dialogue_GC4S4
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_11
+  Output: dialogue_uqqiK
+  Option_1: dialogue_W8OqM
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_12
+  Output: dialogue_3uku4
+  Option_1: dialogue_44OOm
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_13
+  Output: dialogue_mqS04
+  Option_1: dialogue_04ila
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_14
+  Output: dialogue_We84e
+  Option_1: dialogue_Pqsuq
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_15
+  Output: dialogue_uECW0
+  Option_1: dialogue_8uuOW
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_16
+  Output: dialogue_0UmSG
+  Option_1: dialogue_q4aqS
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Civilian_Random_17
+  Output: dialogue_6SG4t
+  Option_1: dialogue_OO8VS
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_Init
+  BarkingState: Barking_Military_Random_Dialogues
+}
+{ +Dialogue Name: Barking_Military_Random_Dialogues
+  Variable_1: "randomizer", param1: int
+  Execute_1: "randomizer = Random(1,12)"
+  Next_1: Barking_Military_Random_1
+  NextIf_1: "randomizer == 1"
+  Next_2: Barking_Military_Random_2
+  NextIf_2: "randomizer == 2"
+  Next_3: Barking_Military_Random_3
+  NextIf_3: "randomizer == 3"
+  Next_4: Barking_Military_Random_4
+  NextIf_4: "randomizer == 4"
+  Next_5: Barking_Military_Random_5
+  NextIf_5: "randomizer == 5"
+  Next_6: Barking_Military_Random_6
+  NextIf_6: "randomizer == 6"
+  Next_7: Barking_Military_Random_7
+  NextIf_7: "randomizer == 7"
+  Next_8: Barking_Military_Random_8
+  NextIf_8: "randomizer == 8"
+  Next_9: Barking_Military_Random_9
+  NextIf_9: "randomizer == 9"
+  Next_10: Barking_Military_Random_10
+  NextIf_10: "randomizer == 10"
+  Next_11: Barking_Military_Random_11
+  NextIf_11: "randomizer == 11"
+}
+{ +Dialogue Name: Barking_Military_Random_1
+  Output: dialogue_KWMmx
+  Option_1: dialogue_0SW4q
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_2
+  Output: dialogue_OCsS4
+  Option_1: dialogue_ae40Y
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_3
+  Output: dialogue_WW401
+  Option_1: dialogue_SSuuK
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_4
+  Output: dialogue_mCeu0
+  Option_1: dialogue_iUSim
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_5
+  Output: dialogue_YOwMq
+  Option_1: dialogue_SOeCe
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_6
+  Output: dialogue_KKSeK
+  Option_1: dialogue_QKSOp
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_7
+  Output: dialogue_WiTWq
+  Option_1: dialogue_KCeNm
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_8
+  Output: dialogue_aASCi
+  Option_1: dialogue_Kqu0O
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_9
+  Output: dialogue_G000a
+  Option_1: dialogue_uii0T
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_10
+  Output: dialogue_0KcZq
+  Option_1: dialogue_OCceO
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Military_Random_11
+  Output: dialogue_qa8S8
+  Option_1: dialogue_4kSGu
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_Init
+  BarkingState: Barking_Talon_Random_Dialogues
+}
+{ +Dialogue Name: Barking_Talon_Random_Dialogues
+  Variable_1: "randomizer", param1: int
+  Execute_1: "randomizer = Random(1,15)"
+  Next_1: Barking_Talon_Random_1
+  NextIf_1: "randomizer == 1"
+  Next_2: Barking_Talon_Random_2
+  NextIf_2: "randomizer == 2"
+  Next_3: Barking_Talon_Random_3
+  NextIf_3: "randomizer == 3"
+  Next_4: Barking_Talon_Random_4
+  NextIf_4: "randomizer == 4"
+  Next_5: Barking_Talon_Random_5
+  NextIf_5: "randomizer == 5"
+  Next_6: Barking_Talon_Random_6
+  NextIf_6: "randomizer == 6"
+  Next_7: Barking_Talon_Random_7
+  NextIf_7: "randomizer == 7"
+  Next_8: Barking_Talon_Random_8
+  NextIf_8: "randomizer == 8"
+  Next_9: Barking_Talon_Random_9
+  NextIf_9: "randomizer == 9"
+  Next_10: Barking_Talon_Random_10
+  NextIf_10: "randomizer == 10"
+  Next_11: Barking_Talon_Random_11
+  NextIf_11: "randomizer == 11"
+  Next_12: Barking_Talon_Random_12
+  NextIf_12: "randomizer == 12"
+  Next_13: Barking_Talon_Random_13
+  NextIf_13: "randomizer == 13"
+  Next_14: Barking_Talon_Random_14
+  NextIf_14: "randomizer == 14"
+  Next_15: Barking_Talon_Random_15
+  NextIf_15: "randomizer == 15"
+}
+{ +Dialogue Name: Barking_Talon_Random_1
+  Output: dialogue_rH0eW
+  Option_1: dialogue_0uCa0
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_2
+  Output: dialogue_W4uva
+  Option_1: dialogue_8vSiC
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_3
+  Output: dialogue_icCWa
+  Option_1: dialogue_9WC40
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_4
+  Output: dialogue_88GS4
+  Option_1: dialogue_LPCuS
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_5
+  Output: dialogue_0mqi4
+  Option_1: dialogue_Gum01
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_6
+  Output: dialogue_8COm4
+  Option_1: dialogue_qOm0W
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_7
+  Output: dialogue_K0KCK
+  Option_1: dialogue_i4iH8
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_8
+  Output: dialogue_OQ7eO
+  Option_1: dialogue_LO84S
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_9
+  Output: dialogue_4qNGE
+  Option_1: dialogue_uu8K8
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_10
+  Output: dialogue_OWm8Q
+  Option_1: dialogue_gmSGu
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_11
+  Output: dialogue_iWaqC
+  Option_1: dialogue_ugMim
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_12
+  Output: dialogue_ijGi0
+  Option_1: dialogue_eeem0
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_13
+  Output: dialogue_K0emu
+  Option_1: dialogue_K80iW
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_14
+  Output: dialogue_pCaiS
+  Option_1: dialogue_eSmCS
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Talon_Random_15
+  Output: dialogue_VmimW
+  Option_1: dialogue_qaKb4
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Anywhere_Init
+  BarkingState: Barking_Zirax_Anywhere_Dialogues
+}
+{ +Dialogue Name: Barking_Zirax_Anywhere_Dialogues
+  Variable_1: "randomizer", param1: int
+  Execute_1: "randomizer = Random(1,4)"
+  Next_1: Barking_Zirax_Anywhere_1
+  NextIf_1: "randomizer == 1"
+  Next_2: Barking_Zirax_Anywhere_2
+  NextIf_2: "randomizer == 2"
+  Next_3: Barking_Zirax_Anywhere_3
+  NextIf_3: "randomizer == 3"
+  Next_4: Barking_Zirax_Anywhere_4
+  NextIf_4: "randomizer == 4"
+}
+{ +Dialogue Name: Barking_Zirax_Anywhere_1
+  Output: dialogue_G8uaC
+  Option_1: dialogue_W0a0W
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Anywhere_2
+  Output: dialogue_GHOuC
+  Option_1: dialogue_GiuGW
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Anywhere_3
+  Output: dialogue_eOKI0
+  Option_1: dialogue_4CWm8
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Anywhere_4
+  Output: dialogue_uiW4C
+  Option_1: dialogue_CGW4m
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_Init
+  BarkingState: Barking_Zirax_Own_Dialogues
+}
+{ +Dialogue Name: Barking_Zirax_Own_Dialogues
+  Variable_1: "randomizer", param1: int
+  Execute_1: "randomizer = Random(1,15)"
+  Next_1: Barking_Zirax_Own_1
+  NextIf_1: "randomizer == 1"
+  Next_2: Barking_Zirax_Own_2
+  NextIf_2: "randomizer == 2"
+  Next_3: Barking_Zirax_Own_3
+  NextIf_3: "randomizer == 3"
+  Next_4: Barking_Zirax_Own_4
+  NextIf_4: "randomizer == 4"
+  Next_5: Barking_Zirax_Own_5
+  NextIf_5: "randomizer == 5"
+  Next_6: Barking_Zirax_Own_6
+  NextIf_6: "randomizer == 6"
+  Next_7: Barking_Zirax_Own_7
+  NextIf_7: "randomizer == 7"
+  Next_8: Barking_Zirax_Own_8
+  NextIf_8: "randomizer == 8"
+  Next_9: Barking_Zirax_Own_9
+  NextIf_9: "randomizer == 9"
+  Next_10: Barking_Zirax_Own_10
+  NextIf_10: "randomizer == 10"
+  Next_11: Barking_Zirax_Own_11
+  NextIf_11: "randomizer == 11"
+  Next_12: Barking_Zirax_Own_12
+  NextIf_12: "randomizer == 12"
+  Next_13: Barking_Zirax_Own_13
+  NextIf_13: "randomizer == 13"
+  Next_14: Barking_Zirax_Own_14
+  NextIf_14: "randomizer == 14"
+  Next_15: Barking_Zirax_Own_15
+  NextIf_15: "randomizer == 15"
+}
+{ +Dialogue Name: Barking_Zirax_Own_1
+  Output: dialogue_OWiGC
+  Option_1: dialogue_GmCue
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_2
+  Output: dialogue_qu8KW
+  Option_1: dialogue_qOSGC
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_3
+  Output: dialogue_a8WWW
+  Option_1: dialogue_mO44I
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_4
+  Output: dialogue_uKaiG
+  Option_1: dialogue_KaCea
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_5
+  Output: dialogue_emSaS
+  Option_1: dialogue_m4eKM
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_6
+  Output: dialogue_OGamS
+  Option_1: dialogue_CK8Wi
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_7
+  Output: dialogue_KeqmK
+  Option_1: dialogue_GS4OW
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_8
+  Output: dialogue_0WG0q
+  Option_1: dialogue_0a6iG
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_9
+  Output: dialogue_S48Oi
+  Option_1: dialogue_OCqKe
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_10
+  Output: dialogue_i0Sae
+  Option_1: dialogue_iqKWO
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_11
+  Output: dialogue_Jwe80
+  Option_1: dialogue_GiqWC
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_12
+  Output: dialogue_Se8Ga
+  Option_1: dialogue_W4D4w
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_13
+  Output: dialogue_AO6O0
+  Option_1: dialogue_WCaqW
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_14
+  Output: dialogue_KS4em
+  Option_1: dialogue_qUTF2
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Zirax_Own_15
+  Output: dialogue_4Vc6m
+  Option_1: dialogue_at800
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Polaris_Managers_Init
+  BarkingState: Barking_Polaris_Managers_Dialogues
+}
+{ +Dialogue Name: Barking_Polaris_Managers_Dialogues
+  Variable_1: "randomizer", param1: int
+  Execute_1: "randomizer = Random(1,11)"
+  Next_1: Barking_Polaris_Managers_1
+  NextIf_1: "randomizer == 1"
+  Next_2: Barking_Polaris_Managers_2
+  NextIf_2: "randomizer == 2"
+  Next_3: Barking_Polaris_Managers_3
+  NextIf_3: "randomizer == 3"
+  Next_4: Barking_Polaris_Managers_4
+  NextIf_4: "randomizer == 4"
+  Next_5: Barking_Polaris_Managers_5
+  NextIf_5: "randomizer == 5"
+  Next_6: Barking_Polaris_Managers_6
+  NextIf_6: "randomizer == 6"
+  Next_7: Barking_Polaris_Managers_7
+  NextIf_7: "randomizer == 7"
+  Next_8: Barking_Polaris_Managers_8
+  NextIf_8: "randomizer == 8"
+  Next_9: Barking_Polaris_Managers_9
+  NextIf_9: "randomizer == 9"
+  Next_10: Barking_Polaris_Managers_10
+  NextIf_10: "randomizer == 10"
+  Next_11: Barking_Polaris_Managers_11
+  NextIf_11: "randomizer == 11"
+}
+{ +Dialogue Name: Barking_Polaris_Managers_1
+  Output: dialogue_ame0a
+  Option_1: dialogue_mGauO
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_2
+  Output: dialogue_0oqiq
+  Option_1: dialogue_GK8qc
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_3
+  Output: dialogue_0iiqb
+  Option_1: dialogue_0GUm0
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_4
+  Output: dialogue_OCmu4
+  Option_1: dialogue_mWk0G
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_5
+  Output: dialogue_S0a4W
+  Option_1: dialogue_SNaC3
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_6
+  Output: dialogue_WCueC
+  Option_1: dialogue_eS204
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_7
+  Output: dialogue_A88Uu
+  Option_1: dialogue_4fmCC
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_8
+  Output: dialogue_Im89u
+  Option_1: dialogue_84iW7
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_9
+  Output: dialogue_auqWW
+  Option_1: dialogue_uGieS
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_10
+  Output: dialogue_Ue48a
+  Option_1: dialogue_8IWCK
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Polaris_Managers_11
+  Output: dialogue_emeGO
+  Option_1: dialogue_m0WOJ
+  OptionNext_1: Return
+}
+{ +Dialogue Name: Barking_Colonists_Random_Init
+  BarkingState: Barking_Colonists_Random_Dialogues
+}
+{ +Dialogue Name: Barking_Colonists_Random_Dialogues
+  Variable_1: "randomizer", param1: int
+  Execute_1: "randomizer = Random(1,17)"
+  Next_1: Barking_Colonists_Random_1
+  NextIf_1: "randomizer == 1"
+  Next_2: Barking_Colonists_Random_2
+  NextIf_2: "randomizer == 2"
+  Next_3: Barking_Colonists_Random_3
+  NextIf_3: "randomizer == 3"
+  Next_4: Barking_Colonists_Random_4
+  NextIf_4: "randomizer == 4"
+  Next_5: Barking_Colonists_Random_5
+  NextIf_5: "randomizer == 5"
+  Next_6: Barking_Colonists_Random_6
+  NextIf_6: "randomizer == 6"
+  Next_7: Barking_Colonists_Random_7
+  NextIf_7: "randomizer == 7"
+  Next_8: Barking_Colonists_Random_8
+  NextIf_8: "randomizer == 8"
+  Next_9: Barking_Colonists_Random_9
+  NextIf_9: "randomizer == 9"
+  Next_10: Barking_Colonists_Random_10
+  NextIf_10: "randomizer == 10"
+  Next_11: Barking_Colonists_Random_11
+  NextIf_11: "randomizer == 11"
+  Next_12: Barking_Colonists_Random_12
+  NextIf_12: "randomizer == 12"
+  Next_13: Barking_Colonists_Random_13
+  NextIf_13: "randomizer == 13"
+  Next_14: Barking_Colonists_Random_14
+  NextIf_14: "randomizer == 14"
+  Next_15: Barking_Colonists_Random_15
+  NextIf_15: "randomizer == 15"
+  Next_16: Barking_Colonists_Random_16
+  NextIf_16: "randomizer == 16"
+  Next_17: Barking_Colonists_Random_17
+  NextIf_17: "randomizer == 17"
+}
+{ +Dialogue Name: Barking_Colonists_Random_1
+  Output: dialogue_eWieW
+  Option_1: dialogue_aaqu8
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_2
+  Output: dialogue_ju8Wq
+  Option_1: dialogue_qiIGq
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_3
+  Output: dialogue_OameC
+  Option_1: dialogue_OamCi
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_4
+  Output: dialogue_8q04e
+  Option_1: dialogue_C7GiK
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_5
+  Output: dialogue_KOSSm
+  Option_1: dialogue_OWeCC
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_6
+  Output: dialogue_0SSG8
+  Option_1: dialogue_OKeCC
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_7
+  Output: dialogue_0eCii
+  Option_1: dialogue_9ICOi
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_8
+  Output: dialogue_ymOqq
+  Option_1: dialogue_8i8aP
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_9
+  Output: dialogue_00Oia
+  Option_1: dialogue_2SWOU
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_10
+  Output: dialogue_O6Oea
+  Option_1: dialogue_G8suC
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_11
+  Output: dialogue_Sm4Cd
+  Option_1: dialogue_Sa4xG
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_12
+  Output: dialogue_mCOWO
+  Option_1: dialogue_S88ko
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_13
+  Output: dialogue_aqiOK
+  Option_1: dialogue_iS8iq
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_14
+  Output: dialogue_Ke0K8
+  Option_1: dialogue_8840K
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_15
+  Output: dialogue_k0Kio
+  Option_1: dialogue_qSK8u
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_16
+  Output: dialogue_SaK8O
+  Option_1: dialogue_C0i0M
+  OptionNext_1: End
+}
+{ +Dialogue Name: Barking_Colonists_Random_17
+  Output: dialogue_iSuOC
+  Option_1: dialogue_E8GCC
+  OptionNext_1: End
+}
