@@ -23546,7 +23546,7 @@
   SoundOpen: UseActions/HangarDoor
   SoundClose: UseActions/HangarDoor
   # PlayerTriggersOpen: true     
-  ChildBlocks: "Ramp1x1x1, Ramp3x1x1, Ramp1x2x1, Ramp3x2x1, Ramp1x3x1, Ramp3x3x1, Ramp1x4x2, Ramp3x4x2, Ramp3x5x3"
+  ChildBlocks: "Ramp1x1x1, Ramp3x1x1, Ramp1x2x1, Ramp3x2x1, Ramp1x3x1, Ramp3x3x1, Ramp1x4x2, Ramp3x4x2, Ramp3x5x3, Ramp1x1x1Airtight, Ramp3x1x1Airtight, Ramp1x2x1Airtight, Ramp3x2x1Airtight, Ramp1x3x1Airtight, Ramp3x3x1Airtight, Ramp1x4x2Airtight, Ramp3x4x2Airtight, Ramp3x5x3Airtight"
   
   # Parent properties
   TemplateRoot: RampLargeBlocks
@@ -23579,7 +23579,7 @@
   SoundOpen: UseActions/HangarDoor
   SoundClose: UseActions/HangarDoor
   # PlayerTriggersOpen: true     
-  ChildBlocks: "Ramp1x1x1, Ramp3x1x1, Ramp1x2x1, Ramp3x2x1, Ramp1x3x1, Ramp3x3x1, Ramp1x4x2, Ramp3x4x2, Ramp3x5x3"
+  ChildBlocks: "Ramp1x1x1, Ramp3x1x1, Ramp1x2x1, Ramp3x2x1, Ramp1x3x1, Ramp3x3x1, Ramp1x4x2, Ramp3x4x2, Ramp3x5x3, Ramp1x1x1Airtight, Ramp3x1x1Airtight, Ramp1x2x1Airtight, Ramp3x2x1Airtight, Ramp1x3x1Airtight, Ramp3x3x1Airtight, Ramp1x4x2Airtight, Ramp3x4x2Airtight, Ramp3x5x3Airtight"
   
   # Parent properties
   TemplateRoot: RampSmallBlocks
@@ -32430,6 +32430,99 @@
     Prob: 1
   }
 }
+# ============= Airthight Ramps (with Forcefields) =============
+
+{ +Block Name: Ramp1x1x1Airtight, Ref: RampTemplate
+  Model: @models/Blocks/Mothership/Ramps/Ramp1x1x1AirtightPrefab
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 50, type: float, display: true, formatter: Liter
+  IsOxygenTight: true, display: true
+  HitPoints: 100, type: int, display: true
+  Mass: 15, type: float, display: true, formatter: Kilogram
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  ParentBlocks: "RampSmallBlocks, RampLargeBlocks"
+}
+{ +Block Name: Ramp3x1x1Airtight, Ref: RampTemplate
+  Model: @models/Blocks/Mothership/Ramps/Ramp3x1x1AirtightPrefab
+  SizeInBlocks: "3,1,1", display: true
+  IsOxygenTight: true, display: true
+  # Volume: 100, type: float, display: true, formatter: Liter
+  HitPoints: 100, type: int, display: true
+  Mass: 25, type: float, display: true, formatter: Kilogram
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  ParentBlocks: "RampSmallBlocks, RampLargeBlocks"
+}
+{ +Block Name: Ramp3x2x1Airtight, Ref: RampTemplate
+  Model: @models/Blocks/Mothership/Ramps/Ramp3x2x1AirtightPrefab
+  SizeInBlocks: "3,2,1", display: true
+  IsOxygenTight: true, display: true
+  Volume: 300, type: float, display: true, formatter: Liter
+  HitPoints: 120, type: int, display: true
+  Mass: 50, type: float, display: true, formatter: Kilogram
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  ParentBlocks: "RampSmallBlocks, RampLargeBlocks"
+}
+{ +Block Name: Ramp3x3x1Airtight, Ref: RampTemplate
+  Model: @models/Blocks/Mothership/Ramps/Ramp3x3x1AirtightPrefab
+  SizeInBlocks: "3,3,1", display: true
+  IsOxygenTight: true, display: true
+  Volume: 400, type: float, display: true, formatter: Liter
+  HitPoints: 150, type: int, display: true
+  Mass: 75, type: float, display: true, formatter: Kilogram
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  ParentBlocks: "RampSmallBlocks, RampLargeBlocks"
+}
+{ +Block Name: Ramp3x4x2Airtight, Ref: RampTemplate
+  Model: @models/Blocks/Mothership/Ramps/Ramp3x4x2AirtightPrefab
+  SizeInBlocks: "3,4,2", display: true
+  IsOxygenTight: true, display: true
+  Volume: 1000, type: float, display: true, formatter: Liter
+  HitPoints: 200, type: int, display: true
+  Mass: 125, type: float, display: true, formatter: Kilogram
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  ParentBlocks: "RampSmallBlocks, RampLargeBlocks"
+}
+{ +Block Name: Ramp3x5x3Airtight, Ref: RampTemplate
+  Model: @models/Blocks/Mothership/Ramps/Ramp3x5x3AirtightPrefab
+  SizeInBlocks: "3,5,3", display: true
+  IsOxygenTight: true, display: true
+  Volume: 2000, type: float, display: true, formatter: Liter
+  HitPoints: 250, type: int, display: true
+  Mass: 175, type: float, display: true, formatter: Kilogram
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  ParentBlocks: "RampSmallBlocks, RampLargeBlocks"
+}
+
+{ +Block Name: Ramp1x2x1Airtight, Ref: RampTemplate
+  Model: @models/Blocks/Mothership/Ramps/Ramp1x2x1AirtightPrefab
+  SizeInBlocks: "1,2,1", display: true
+  IsOxygenTight: true, display: true
+  Volume: 70, type: float, display: true, formatter: Liter
+  HitPoints: 110, type: int, display: true
+  Mass: 20, type: float, display: true, formatter: Kilogram
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  ParentBlocks: "RampSmallBlocks, RampLargeBlocks"
+}
+{ +Block Name: Ramp1x3x1Airtight, Ref: RampTemplate
+  Model: @models/Blocks/Mothership/Ramps/Ramp1x3x1AirtightPrefab
+  SizeInBlocks: "1,3,1", display: true
+  IsOxygenTight: true, display: true
+  Volume: 100, type: float, display: true, formatter: Liter
+  HitPoints: 120, type: int, display: true
+  Mass: 25, type: float, display: true, formatter: Kilogram
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  ParentBlocks: "RampSmallBlocks, RampLargeBlocks"
+}
+{ +Block Name: Ramp1x4x2Airtight, Ref: RampTemplate
+  Model: @models/Blocks/Mothership/Ramps/Ramp1x4x2AirtightPrefab
+  SizeInBlocks: "1,4,2", display: true
+  IsOxygenTight: true, display: true
+  Volume: 400, type: float, display: true, formatter: Liter
+  HitPoints: 130, type: int, display: true
+  Mass: 50, type: float, display: true, formatter: Kilogram
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  ParentBlocks: "RampSmallBlocks, RampLargeBlocks"
+}
 
 #==================================v17eIII===
 #TranscendenceCustomItems          12/8/2021
@@ -33037,6 +33130,26 @@
   TechTreeParent: RangerBomberCV
   TechTreeNames: Capital Vessel
 }
+{ Block Name: StrangeEggPlant, Ref: EggPlant
+  CustomIcon: EggPlant
+  Class: CropsGrown
+  { Child DropOnHarvest
+    Item: Egg
+    Count: 3
+  }
+  { Child CropsGrown   
+    OnHarvest: EggPlantHarvested
+    OnDeath: PlantDead 
+  }
+  Material: plants
+  Shape: Deco
+  IsTerrainDecoration: true
+  IsDeco: true
+  IsPlant: true
+  Model: @models2/Environment/Plants/FractalFlora/EggPlantPrefab
+  # SizeInBlocks: "1,1,1"
+  ShowUser: No
+}
 #===================================
 #End TranscendenceCustomItems
 #==================================v1711=====
@@ -33050,7 +33163,7 @@
   Material: metallight
   Shape: Invisible
   Place: Free
-  # CustomIcon: SolarPanelSmallBlocks
+  CustomIcon: SolarPanelSmallBlocks
   DropMeshfile: Entities/Misc/BagSmallPrefab
   SizeInBlocks: "3,1,2", display: true
   AllowPlacingAt: "MS", display: true
@@ -33122,7 +33235,7 @@
   Material: metallight
   Shape: Invisible
   Place: Free
-  # CustomIcon: SolarPanelBlocks
+  CustomIcon: SolarPanelBlocks
   DropMeshfile: Entities/Misc/BagSmallPrefab
   SizeInBlocks: "5,2,3", display: true
   AllowPlacingAt: "MS", display: true
