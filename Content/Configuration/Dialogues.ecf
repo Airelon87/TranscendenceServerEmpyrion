@@ -155,6 +155,14 @@
 { +Dialogue Name: BJ_Bye
   Output: txt_O8CaF
 }
+/* ------------------------------------------- */
+/* ---Transcendence Scenario Dialogue--------- */
+/* -------------By Airelon-------------------- */
+/* ------------------------------------------- */
+/* ------A Galaxy where nothing needs--------- */
+/* ------to make since if it is silly--------- */
+/* ------enough or tortures skilled noobs----- */
+/* ------------------------------------------- */
 { +Dialogue Name: TR_RecallProgram
   NPCName: "Haven OS Terminal"
   Output: "@w2 User {PlayerName} Detected. Do you have a recalled or defective superior item? @w1 The item must be placed on your hotbar."
@@ -1547,6 +1555,85 @@
   Output: "@w1 Another 27 hour shift staring at that \n\n multicolored asteroid over there and that big mess we set up shop next to. @p9 That mess was a pristine rogue dwarf planet. \n\n The Syndicate built a lab inside. I hear things went terribly wrong. @p9 The entrance to it is a portal. \n\n You can teleport there from StarKors Diner @p9Bet whatever they built links up to the anamoly in this sector."
   Option_1: "I heard a rumor theirs a ship building facility in the anamoly. I'll have to check this out."
   OptionNext_1: End
+}
+/* ---Transcendence Galorian GIN Console---Jan27-v172--- */
+{ +Dialogue Name: GIN_Console_Admin
+  NPCName: "GIN Console"
+  Output: "Error reading data files in report directory @w3 Science . . . Archeology . . . Surveillance!"
+  Option_1: "Smash Ctrl Alt Delete several times"
+  OptionNext_1: Return
+  Option_2: "Run virus protector"
+  OptionIf_2: "HasItem('GoldCoins',1)"
+  OptionNext_2: GIN_Console_Admin_Fix
+}
+{ +Dialogue Name: GIN_Console_Admin_Fix
+  NPCName: "GIN Console"
+  Output: "This function costs 1 gold coin to activate!"
+  Option_1: "Smash Ctrl Alt Delete several times"
+  OptionNext_1: GIN_Console_Admin_Fix_Pay
+  OptionExecute_1: "RemoveItem('GoldCoins', 1)"
+}
+{ +Dialogue Name: GIN_Console_Admin_Fix_Pay
+  NPCName: "GIN Console"
+  Output: "Thank you for your payemnt. Premium features are locked by a virus at this time."
+  Option_1: "Smash Ctrl Alt Delete several times"
+  OptionNext_1: End
+  OptionExecute_1: "AddItem('AlphaVirus', 1)"
+}
+{ +Dialogue Name: GIN_Console_Initialize
+  NPCName: "GIN Console"
+  Output: "@w1 Galorian Intelligence Network Console. I am listening for a local response. \n\n @w2 . @w2 . @w2 . Space Weather Error0x1080, Navigation data missing."
+  Option_1: "Blip Bloop Blip Blip Bleep."
+  OptionNext_1: GIN_Console_Reports
+  Option_2: "Ctrl Alt Delete"
+  OptionNext_2: End
+}
+{ +Dialogue Name: GIN_Console_Reports
+  NPCName: "GIN Console"
+  Output: "Blip Ding! User {PlayerName} verified. \n\n Do you wish to proceed with a data report check?"
+  Option_1: "I submit to the scan and all safety waivers."
+  OptionNext_1: GIN_Console_Reports_Scan
+  Option_2: "Ctrl Alt Delete"
+  OptionNext_2: End
+}
+{ +Dialogue Name: GIN_Console_Reports
+  NPCName: "GIN Console"
+  Output: "Blip Ding! User {PlayerName} verified. \n\n Do you wish to proceed with a data report check?"
+  Option_1: "I submit to the scan and all safety waivers."
+  OptionNext_1: GIN_Console_Reports_Scan
+  Option_2: "Ctrl Alt Delete"
+  OptionNext_2: End
+}
+{ +Dialogue Name: GIN_Console_Reports
+  NPCName: "GIN Console"
+  Output: "@w1 Scanning @w2 . @w2 . @w2 ."
+  Option_1: "First Report Detected. Click to turn in for a reward."
+  OptionIf_1: "HasItem('ReportScienceRawData', 1)"
+  OptionNext_1: GIN_Console_Reward
+  OptionExecute_1: "RemoveItem('ReportScienceRawData', 1);AddReputation(Faction.Polaris, 2500)"
+  Option_2: "Another Report Detected. Click to turn in for a reward."
+  OptionIf_2: "HasItem('ReportArcheologicalData', 1)"
+  OptionNext_2: GIN_Console_Reward
+  OptionExecute_2: "RemoveItem('ReportArcheologicalData', 1);AddReputation(Faction.Talon, 2500)"
+  Option_3: "Additional Report Detected. Click to turn in for a reward."
+  OptionIf_3: "HasItem('ReportMilitarySurveillance', 1)"
+  OptionNext_3: GIN_Console_Reward
+  OptionExecute_3: "RemoveItem('ReportMilitarySurveillance', 1);AddReputation(Faction.Galorian, 1750);AddReputation(Faction.Vladian, 1750)"
+  Option_4: "Premium Reports Detected. Click to turn in for a reward."
+  OptionIf_4: "HasItem('ReportNavigationData', 1) && HasItem('ReportSpaceWeather', 1)"
+  OptionNext_4: GIN_Console_Reward
+  OptionExecute_4: "RemoveItem('ReportNavigationData', 1);RemoveItem('ReportSpaceWeather', 1);AddReputation(Faction.Galorian, 4000);AddReputation(Faction.Talon, 3500);AddReputation(Faction.Polaris, 3000)"
+  Option_5: "Scan failure...End Program?"
+  OptionNext_5: GIN_Console_Initialize
+  Option_6: "Scan failure...Debug?"
+  OptionNext_6: GIN_Console_Admin
+}
+{ +Dialogue Name: GIN_Console_Reward
+  NPCName: "GIN Console"
+  Output: "You have been rewarded with reputation amongst a Galorian allied faction."
+  Option_1: "Click to Accept 100 credits and Return to the main menu."
+  OptionNext_1: "GIN_Console_Reports"
+  OptionExecute_1: "AddItem('MoneyCard', 100)"
 }
 /* ------------------------------------------- */
 /* ---PolarisFix---Trader---Jan22------------- */

@@ -10580,13 +10580,14 @@
 }
 { Item Id: 659, Name: WarBotBoostEpic , Ref: MobilityBoost
   Armor: 1750, type: int, display: true 
-  Heat: -5, type: int, display: true 
+  Heat: 50, type: int, display: true 
   Cold: 50, type: int, display: true 
-  PowerFac: 0.75, type: float, display: true
-  SpeedFac: -0.29, type: float, display: true
+  PowerFac: 0.65, type: float, display: true
+  SpeedFac: -0.23, type: float, display: true
   StaminaFac: -0.85, type: float, display: true
-  JumpFac: 1.25, type: float, display: true
+  JumpFac: 0.95, type: float, display: true
   FoodFac: -0.25, type: float, display: true
+  JetpackFac: -0.35, type: float, display: true
   VolumeCapacity: 7500, type: float, display: true, formatter: Liter 
   CustomIcon: ArmorBoostEpic 
 
