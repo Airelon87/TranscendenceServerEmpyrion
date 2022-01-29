@@ -1596,15 +1596,15 @@
   Option_2: "Ctrl Alt Delete"
   OptionNext_2: End
 }
-{ +Dialogue Name: GIN_Console_Reports
+{ +Dialogue Name: GIN_Console_Reports_Scan
   NPCName: "GIN Console"
   Output: "Blip Ding! User {PlayerName} verified. \n\n Do you wish to proceed with a data report check?"
   Option_1: "I submit to the scan and all safety waivers."
-  OptionNext_1: GIN_Console_Reports_Scan
+  OptionNext_1: GIN_Console_Reports_Scan_Action
   Option_2: "Ctrl Alt Delete"
   OptionNext_2: End
 }
-{ +Dialogue Name: GIN_Console_Reports
+{ +Dialogue Name: GIN_Console_Reports_Scan_Action
   NPCName: "GIN Console"
   Output: "@w1 Scanning @w2 . @w2 . @w2 ."
   Option_1: "First Report Detected. Click to turn in for a reward."
