@@ -1541,8 +1541,9 @@
   CraftTime: 10  
   Target: "LargeC,AdvC"
   { Child Inputs
-    WarbotNanotubes: 1
-    OpticalFiber: 1
+    Electronics: 3
+    Nanotubes: 12
+    OpticalFiber: 4
     GlassPlate: 1
   }
 }
@@ -5870,7 +5871,7 @@
     GoldIngot: 128
     SiliconIngot: 6
     ScienceEquipment: 1
-    RawDiamond: 2
+    RawDiamond: 1
     Coolant: 1
   }
 } 

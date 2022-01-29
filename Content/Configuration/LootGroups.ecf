@@ -8,18 +8,18 @@
 { +LootGroup Name: Reports
   Count: all
   Item_0: ReportAnomalousData, param1: 1
-  Item_1: ReportArcheologicalData, param1: 5
+  Item_1: ReportArcheologicalData, param1: 1
   Item_2: ReportAtmosphericData, param1: 1
   Item_3: ReportBiologicalData, param: 1
-  Item_4: ReportCommunicationData, param:1
-  Item_5: ReportEconomicData, param:1
-  Item_6: ReportExplorationRawData, param:1
-  Item_7: ReportGeologicalData, param1: 5
+  Item_4: ReportCommunicationData, param: 1
+  Item_5: ReportEconomicData, param: 1
+  Item_6: ReportExplorationRawData, param: 1
+  Item_7: ReportGeologicalData, param1: 1
   Item_8: ReportMaintenanceData, param1: 1
   Item_9: ReportMaterialData, param: 1
-  Item_10: ReportMilitaryClassified, param:1
-  Item_11: ReportMilitaryRawData, param:1
-  Item_12: ReportMilitaryScouting, param:1
+  Item_10: ReportMilitaryClassified, param: 1
+  Item_11: ReportMilitaryRawData, param: 1
+  Item_12: ReportMilitaryScouting, param: 1
   Item_13: ReportMilitarySurveillance, param1: 1
   Item_14: ReportMilitaryTroopMovement, param1: 1
   Item_15: ReportNavigationData, param1: 1

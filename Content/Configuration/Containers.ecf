@@ -522,7 +522,7 @@
     Name_1: 5.8mmBullet, param1: 0.5, param2: "5,10"
     Name_2: CannedVegetables, param1: 0.3, param2: "1,2"
     Name_3: MoneyCard, param1: 0.05, param2: "50,150"
-    Name_4: ReportCommunicationData, param1: 0.05, param2: "1,2"
+    Name_4: ReportCommunicationData, param1: 0.05, param2: 1
     Group_0: MedicalItems, param1: 0.2
   }
 } */
@@ -569,7 +569,7 @@
     Name_1: DrillEpic, param1: 0.3, param2: 1
     Name_2: ShotgunChristmas, param1: 0.2, param2: 1
     Name_3: WarbotNanotubes, param1: 0.2, param2: 1
-    Group_0: Reports, param1: 0.05
+    Group_0: Reports, param1: 0.02
   }
 }
 
@@ -606,7 +606,7 @@
     Group_9: WeaponsBasicKit, param1: 0.15
     Group_10: Seeds, param1: 0.4
     Group_11: MedicalItems, param1: 0.4
-    Group_12: Reports, param1: 0.2
+    Group_12: Reports, param1: 0.02
   }
 } */
 
@@ -691,7 +691,7 @@
     Group_1: WeaponsBasicKit, param1: 0.08
     Group_2: Medikits, param1: 1
     Group_3: SuitBooster, param1: 0.7
-    Group_4: Reports, param1: 0.2
+    Group_4: Reports, param1: 0.05
   }
 }
 
@@ -742,7 +742,7 @@
 	
     Group_0: WeaponsRare, param1: 0.1
     Group_1: WeaponsRareKit, param1: 0.09
-    Group_2: Reports, param1: 0.2
+    Group_2: Reports, param1: 0.05
   }
 }
 
@@ -768,7 +768,7 @@
     Group_0: WeaponsEpic, param1: 0.5
     Group_1: WeaponsRare, param1: 0.3
     Group_2: WeaponsRareKit, param1: 0.1
-    Group_3: Reports, param1: 0.1
+    Group_3: Reports, param1: 0.05
   }
 }
 
@@ -891,7 +891,7 @@
     Name_4: AutoMinerCore, param1: 0.2, param2: "1,2"	
     Name_5: Nanites, param1: 0.3, param2: "20,50"
 
-    Group_0: Reports, param1: 0.2
+    Group_0: Reports, param1: 0.05
     Group_1: WeaponsEpic, param1: 0.5
   }
 }
@@ -1933,7 +1933,7 @@
     Name_9: AncientRelics, param1: 0.2, param2: 1
     Name_10: RawDiamond, param1: 0.1, param2: 1
     Name_11: Token, param1: 0.01, param2: "meta=7225"
-    Group_0: Reports, param1: 0.1
+    Group_0: Reports, param1: 0.06
   }
 }
 
@@ -1988,7 +1988,7 @@
     Name_12: TeleporterBAEpicUpgradeKit, param1: 0.1, param2: 1
     Name_13: NaniteChlorophyllInfusion, param1: 0.5, param2: 1
     Group_0: OresRare, param1: 0.4
-    Group_1: Reports, param1: 0.2
+    Group_1: Reports, param1: 0.05
   }
 }
 
@@ -2161,7 +2161,7 @@
     Name_5: WarBotBoostEpic, param1: 0.15, param2: 1
     Name_6: ScienceEquipment, param1: 0.25, param2: "7,42"
     Name_7: Token, param1: 1, param2: "meta=7238"
-    Group_0: Reports, param1: 0.1
+    Group_0: Reports, param1: 0.05
   }
 } 
 
