@@ -16543,7 +16543,7 @@
   SizeInBlocksLocked: "Base,MS"
   IsActivateable: true
   IsActivateableInCP: true
-  Info: bkiTurretSpace, display: true
+  Info: Non Retractable laser turrets can be upgraded with a LegacyEnergyCore, display: true
   Category: Weapons/Items
   BlockColor: "110,110,110"
   # ModelOffset: "0,0.5,0"
@@ -16557,7 +16557,7 @@
   Volume: 2880, type: float, display: true, formatter: Liter
   Mass: 11760, type: float, display: true, formatter: Kilogram
   HitPoints: 3450, type: int, display: true
-  
+  UpgradeTo: AntiProtonLaserTurret, display: true
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
@@ -33096,7 +33096,7 @@
   Material: metalhard
   Shape: Turret
   # TemplateRoot: TurretBaseCannon
-  # PickupTarget: TurretBaseLaserBlocks
+  PickupTarget: AntiProtonLaserTurret
   Place: Face
   DropMeshfile: Entities/Misc/BagSmallChristmasPrefab   #Revert after Christmas to: BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -33123,7 +33123,6 @@
   EnergyIn: 35, type: int, display: true, formatter: Watt
   CPUIn: 900, type: int, display: true
   XpFactor: 2
-  AboveTerrainCheck: false
 
   UnlockCost: 50, display: true
   UnlockLevel: 20, display: true

@@ -5827,11 +5827,12 @@
   CraftTime: 32
   Target: "AdvC"
   { Child Inputs
-    Motor: 1
-    OpticalFiber: 2
+    MechanicalComponents: 20
+    Electronics: 5
+    Motor: 2
+    Oscillator: 8
+    PowerCoil: 1
     LegacyEnergyCore: 1
-    SteelPlateArmored: 16
-    Computer: 1
   }
 }
 
