@@ -213,6 +213,7 @@ POIs:
           DroneProb: 1.0
           DronesMinMax: [ 3, 5 ] 
           ReserveCount: 5
+          NoShieldReload: True
           TroopTransport: True
           InitPower: True
           Properties: 

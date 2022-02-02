@@ -8,7 +8,7 @@ TemperatureDay: [-200,-100]
 Music: [moonstone, space, DistantWorlds, Migration]          
  
 PlayfieldType: Space  
-PlanetType: Moon           
+PlanetType: Orbit           
 
 ### Resource Asteroid
 Resources:                     
@@ -172,7 +172,7 @@ POIs:
 #None  - JUNKYARDS
 
     - Type: BA_Alien
-      GroupName: TalonSpaceVillage
+      GroupName: [TalonSpaceVillage]
       Faction: Talon
       Mode: Survival
       CountMinMax: [ 1, 3 ]
@@ -188,10 +188,10 @@ POIs:
 
 # CV single
     - Type: CV_Alien
-      GroupName: JunkYardSpaceCV
+      GroupName: [JunkYardSpaceCV]
       Faction: None
       Mode: Survival
-      CountMinMax: [ 0,6 ]
+      CountMinMax: [ 1,6 ]
       Probability: 0.3
       InitPower: True
       Properties:
@@ -202,10 +202,10 @@ POIs:
 
 # SV single
     - Type: SV_Player
-      GroupName: JunkYardSpaceSV
+      GroupName: [JunkYardSpaceSV]
       Faction: None
       Mode: Survival
-      CountMinMax: [ 0, 8 ]
+      CountMinMax: [ 1, 8 ]
       Probability: 0.4
       InitPower: True
       Properties:
@@ -214,20 +214,45 @@ POIs:
         - Key: RegenAfter
           Value: 360
  
-DroneBaseSetup:                                                # Note: not ALL possible settings are used in that config. Check +ExampleSpace folder > space_dynamic.yaml
+DroneBaseSetup:         
+                                                                # Note: not ALL possible settings are used in that config. Check +ExampleSpace folder > space_dynamic.yaml
       - FreeDrones:                                             #FreeDrones = only relevant for NPC Factions that have a galactic territory: Zirax, Polaris, Trader, Kriel, Pirates, Legacy. Will not spawn in non-territory!
           - Name: [SpaceDroneBattered02]
             Faction: Talon                               
             CanNotBeControlledByMasterAI: False          
             Count: [16, 32]                          #Drone Swarm!
-            Radius: [2500, 16000]
+            Radius: [5000, 8000]
+            Properties:
+              - Key: AIManMaxPursuitRange 
+                Value: 2500
+          - Name: [SpaceDroneBattered02]
+            Faction: Talon                               
+            CanNotBeControlledByMasterAI: False          
+            Count: [16, 32]                          #Drone Swarm!
+            Radius: [-5000, -8000]
+            Properties:
+              - Key: AIManMaxPursuitRange 
+                Value: 2500
+          - Name: [SpaceDroneBattered02]
+            Faction: Talon                               
+            CanNotBeControlledByMasterAI: False          
+            Count: [16, 32]                          #Drone Swarm!
+            Radius: [-5000, 8000]
+            Properties:
+              - Key: AIManMaxPursuitRange 
+                Value: 2500
+          - Name: [SpaceDroneBattered02]
+            Faction: Talon                               
+            CanNotBeControlledByMasterAI: False          
+            Count: [16, 32]                          #Drone Swarm!
+            Radius: [5000, -8000]
             Properties:
               - Key: AIManMaxPursuitRange 
                 Value: 2500
       - SpaceVessels:
           - Name: [FungalShipSpace]                  
             Faction: Talon
-            CountMinMax: [6, 12]   
+            CountMinMax: [3, 6]   
             Probability: 1        
             CanNotBeControlledByMasterAI: False 
             FixedMaxSpeed: [10, 25] 
@@ -243,7 +268,7 @@ DroneBaseSetup:                                                # Note: not ALL p
               Type: FighterDrone  
             Properties:                        # OPV = default behavior is to patrol POIs of the own faction. Drones shall patrol Resources.
               - Key: SelfDestructionWithNoCore # Military ships = self destruct!
-                Value: True                        
+                Value: False                        
               - Key: AIManMaxPursuitRange 
                 Value: 4000
           - Name: [TalonShipSpace]                  
@@ -264,7 +289,7 @@ DroneBaseSetup:                                                # Note: not ALL p
               Type: FighterDrone  
             Properties:                        # OPV = default behavior is to patrol POIs of the own faction. Drones shall patrol Resources.
               - Key: SelfDestructionWithNoCore # Military ships = self destruct!
-                Value: True                        
+                Value: False                        
               - Key: AIManMaxPursuitRange 
                 Value: 2000
           - Name: [OPVWarlord]     
@@ -286,7 +311,7 @@ DroneBaseSetup:                                                # Note: not ALL p
               Type: FighterDrone  
             Properties:                        # OPV = default behavior is to patrol POIs of the own faction. Drones shall patrol Resources.
               - Key: SelfDestructionWithNoCore # Military ships = self destruct!
-                Value: True                        
+                Value: False                        
               - Key: AIManMaxPursuitRange 
                 Value: 4000
           - Name: [AlienIceDragon]     
@@ -308,6 +333,6 @@ DroneBaseSetup:                                                # Note: not ALL p
               Type: FighterDrone  
             Properties:                        # OPV = default behavior is to patrol POIs of the own faction. Drones shall patrol Resources.
               - Key: SelfDestructionWithNoCore # Military ships = self destruct!
-                Value: True                        
+                Value: False                        
               - Key: AIManMaxPursuitRange 
                 Value: 4000
