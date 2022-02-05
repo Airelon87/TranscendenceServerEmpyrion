@@ -159,6 +159,14 @@ SolarSystems:
         SectorMapType: AsteroidField
         Playfields:
           - ['0,0,0', AdminiumSpace, AdminiumSpace]
+      - Coordinates: [-125, 0, -125]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'ResortPortalInstance', RIPResortPortalInstance, '']
+      - Coordinates: [-125, 0, -125]
+        SectorMapType: Instance
+        Playfields:
+          - ['0,0,0', 'TunnelPortalInstance', RIPTunnelPortalInstance, '']
   - Name: DeepSpace System
     StarClass: K2
     Coordinates:
