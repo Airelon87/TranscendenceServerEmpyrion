@@ -1,12 +1,12 @@
 
-# -------
-# Author: Hendrake
-# Based on Work by: Airelon
-# For sole use of Transcendence.Community 
-# -------
-# Transcendence A12.1 Mulitplayer Sector w/ Galaxy 
-# June 2020
-# -------
+# -------------------------------
+# Authors: Hendrake, Airelon, RipDatPow
+# Only for use with Transcendence TR17 Scenario 
+# -------------------------------
+# Transcendence 17 Mulitplayer Sector w/ Galaxy 
+# June 2020 to present 
+# Last Edit 2/5/2020
+# -------------------------------
 SolarSystems:
   - Name: Instance System
     StarClass: N
@@ -159,14 +159,28 @@ SolarSystems:
         SectorMapType: AsteroidField
         Playfields:
           - ['0,0,0', AdminiumSpace, AdminiumSpace]
-      - Coordinates: [-125, 0, -125]
+      - Coordinates:
+          - 75
+          - 0
+          - 75
+        Color: '1, 1, 1'
         SectorMapType: Instance
         Playfields:
-          - ['0,0,0', 'ResortPortalInstance', RIPResortPortalInstance, '']
-      - Coordinates: [-125, 0, -125]
-        SectorMapType: Instance
-        Playfields:
-          - ['0,0,0', 'TunnelPortalInstance', RIPTunnelPortalInstance, '']
+          - - '0,0,0'
+            - RIPzed
+            - Oculus
+          - - '9000,0,9000'
+            - ResortPortalInstance
+            - RIPResortPortalInstance
+          - - '-9000,0,9000'
+            - TunnelPortalInstance
+            - RIPTunnelPortalInstance
+          - - '0,0,0'
+            - RIPzed Orbit
+            - ZedOrbit
+            - ''
+        Allow: []
+        Deny: []
   - Name: DeepSpace System
     StarClass: K2
     Coordinates:
