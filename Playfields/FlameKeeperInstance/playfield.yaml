@@ -599,7 +599,7 @@ POIs:
             - Key: Music
               Value: DarkSoundscape
             - Key: PersonalContainer
-              Value: Flamethrower, Coolant:5, MoneyCard:10000, InsulationBoostEpic
+              Value: FlameThrower, Coolant:5, MoneyCard:10000, InsulationBoostEpic
 
 #END OF POI SECTION =============================================================
 
