@@ -5031,7 +5031,7 @@
     ROF: 0.5, type: float, display: true, formatter: ROF
     AllowAt: "Planet,Space"
     Range: 650, display: false
-    RangeSpace: 1300, display: false
+    RangeSpace: 2200, display: false
     # Damage: 2000, display: true
     AmmoCapacity: 500, display: false       # no need to display since unlimited ammo
     AmmoType: TurretEnemyLaserChargeT2, display: true
@@ -10305,6 +10305,7 @@
 
 ##TR163 item for instance only
 { +Item Id: 606, Name: WarbotSlotArmor, Ref: ArmorHeavy
+  Class: Armor
   RecipeName: WarbotSlotArmor
   CustomIcon: ArmorHeavyEpic
   
@@ -13700,14 +13701,14 @@
   Material: metalweapon
   HoldType: 0
   StackSize: 500
-  Mass: 5777, type: float, display: false, formatter: Kilogram
+  Mass: 700, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 735, display: false
-    RangeSpace: 2200, display: false
+    Range: 635, display: false
+    RangeSpace: 1100, display: false
     AmmoCapacity: 25, display: true
     AmmoType: RangerRocketCV, display: true
     NoiseStrength: 150, display: false  
@@ -13731,20 +13732,20 @@
   { Child 0
     Damage: 2258, display: true 
     BlastParticleIndex: 3
-    BlastRadius: 8, display: true
-    BlastDamage: 7200, display: true
-    Speed: 30
+    BlastRadius: 6, display: true
+    BlastDamage: 5200, display: true
+    Speed: 32
     Range: 735
-    SpeedSpace: 60
-    RangeSpace: 2200
+    SpeedSpace: 64
+    RangeSpace: 1100
     HomingSpeed: 2.0
     Ballistic: false
 	
-    DamageMultiplier_1: 3, param1: metal
-    DamageMultiplier_2: 2, param1: metalhard|concrete|woodblock|hull
-    DamageMultiplier_3: 1, param1: hullarmored|hullcombat
+    DamageMultiplier_1: 1, param1: metal
+    DamageMultiplier_2: 1.1, param1: metalhard|concrete|woodblock|hull
+    DamageMultiplier_3: 1.2, param1: hullarmored|hullcombat
     DamageMultiplier_4: 0, param1: dirt|stone
-    DamageMultiplier_5: 0.5, param1: shield
+    DamageMultiplier_5: 0.4, param1: shield
     BlastDamageMultiplier_1: 0.05, param1: dirt|stone
   }
 }

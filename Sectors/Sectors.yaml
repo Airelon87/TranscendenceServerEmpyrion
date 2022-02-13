@@ -582,6 +582,14 @@ SolarSystems:
         Allow: []
         Deny:
           - EventOrbitPVE
+      - Coordinates: [-32, 0, -32] 
+        Color: '1, 1, 1'
+        SectorMapType: Station
+        Playfields:
+          - ['0,0,0', Battle of ZedZorg, ZedZorgSpace]
+        Allow: []
+        Deny:
+          - EventOrbitPVE
   - Name: Nebulo
     StarClass: K2
     Coordinates:

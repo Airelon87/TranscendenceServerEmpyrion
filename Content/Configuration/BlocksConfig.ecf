@@ -32557,7 +32557,7 @@
   PickupTarget: ShieldGeneratorSuperSV    # Might need changed to ShieldGeneratorCV
   UpgradeTo: null, display: true
   CustomIcon: ShieldGeneratorSV
-  Info: This cutting edge shield is much stronger than standard shields. Do not pair it with a T1 or T2 sheild. Do not let it blow up. This item cannot be salvaged for its original components!, display: true
+  Info: This cutting edge shield is much stronger than standard shields. Do not pair it with a T1 or T2 shield. Do not let it blow up. This item cannot be salvaged for its original components!, display: true
 
   BlastParticleIndex: 10
   BlastRadius: 16
@@ -32838,7 +32838,7 @@
   PickupTarget: ShieldGeneratorSuperBA    # Might need changed to ShieldGeneratorBA 
   UpgradeTo: null, display: true
   CustomIcon: ShieldGeneratorSV
-  Info: This cutting edge shield is much stronger than standard shields. Do not pair it with a T1 or T2 sheild. Do not let it blow up. This item cannot be salvaged for its original components!, display: true
+  Info: This cutting edge shield is much stronger than standard shields. Do not pair it with a T1 or T2 shield. Do not let it blow up. This item cannot be salvaged for its original components!, display: true
 
   BlastParticleIndex: 10
   BlastRadius: 16
@@ -32966,11 +32966,11 @@
   CPUIn: 36000, type: int, display: true  
   EnergyInIdle: 500, type: int, display: true, formatter: Watt
   ShieldCapacity: 150000, type: int, display: true
-  ShieldRecharge: 275, type: int, display: true     # recharge rate per sec
+  ShieldRecharge: 500, type: int, display: true     # recharge rate per sec
   PickupTarget: ShieldGeneratorSuperCV    # Might need changed to ShieldGeneratorCV
   UpgradeTo: null, display: true
   CustomIcon: ShieldGeneratorSV
-  Info: This cutting edge shield is much stronger than standard shields. Do not pair it with a T1 or T2 sheild. Do not let it blow up. This item cannot be salvaged for its original components!, display: true
+  Info: This cutting edge shield is much stronger than standard shields. Do not pair it with a T1 or T2 shield. Do not let it blow up. This item cannot be salvaged for its original components!, display: true
 
   BlastParticleIndex: 10
   BlastRadius: 16
@@ -33148,6 +33148,66 @@
   Model: @models2/Environment/Plants/FractalFlora/EggPlantPrefab
   # SizeInBlocks: "1,1,1"
   ShowUser: No
+}
+{ Block Name: RapidChargeShieldGenerator, Ref: ShieldGeneratorBA
+  CustomIcon: ShieldGeneratorPOI
+  MarketPrice: 4780
+  AllowedInBlueprint: true, display: true     
+  AllowPlacingAt: "Base,MS", display: true
+  PickupTarget: RefurbishedShieldGenerator 
+  TemplateRoot: ShieldGeneratorBA
+  HitPoints: 700, type: int, display: true
+  Mass: 2450, type: float, display: true, formatter: Kilogram
+  Volume: 1450, type: float, display: true, formatter: Liter
+  EnergyIn: 7500, type: int, display: true, formatter: Watt
+  CPUIn: 5000, type: int, display: true 
+  EnergyInIdle: 200, type: int, display: true, formatter: Watt
+  ShieldCapacity: 5000, type: int, display: true
+  ShieldRecharge: 500, type: int, display: true # per second
+  ShieldCooldown: 15, type: int, display: true   # in seconds
+  ShieldPerCrystal: 1000, type: int, display: true
+  Info: This is a homebrew designed shield made of scrap. Cannot be upgraded or paired with other shields!, display: true
+  UpgradeTo: null
+  
+  UnlockCost: 4, display: true
+  UnlockLevel: 3, display: true
+  TechTreeNames: "Base,Capital Vessel"
+}
+{ Block Name: SuperShieldPOI, Ref: ShieldGeneratorBA
+  CustomIcon: ShieldGeneratorPOI
+  AllowedInBlueprint: false, display: true     
+  AllowPlacingAt: "Base,MS", display: true
+  PickupTarget: ShieldGeneratorSuperBA   # Avoid getting back POI shield generator 
+  TemplateRoot: ShieldGeneratorBA
+  EnergyInIdle: 1000, type: int, display: true, formatter: Watt
+  ShieldCapacity: 150000, type: int, display: true
+  ShieldRecharge: 500, type: int, display: true # per second
+  ShieldCooldown: 15, type: int, display: true   # in seconds
+  ShieldPerCrystal: 1000, type: int, display: true
+  UpgradeTo: null
+  
+  UnlockCost: 0
+  UnlockLevel: 1 
+  TechTreeParent: ""
+  TechTreeNames: ""  
+}
+{ Block Name: HyperShieldPOI, Ref: ShieldGeneratorBA
+  CustomIcon: ShieldGeneratorPOI
+  AllowedInBlueprint: false, display: true     
+  AllowPlacingAt: "Base,MS", display: true
+  PickupTarget: ShieldGeneratorSuperBA   # Avoid getting back POI shield generator 
+  TemplateRoot: ShieldGeneratorBA
+  EnergyInIdle: 1000, type: int, display: true, formatter: Watt
+  ShieldCapacity: 2000000, type: int, display: true
+  ShieldRecharge: 25000, type: int, display: true # per second
+  ShieldCooldown: 7, type: int, display: true   # in seconds
+  ShieldPerCrystal: 5000, type: int, display: true
+  UpgradeTo: null
+  
+  UnlockCost: 0
+  UnlockLevel: 1 
+  TechTreeParent: ""
+  TechTreeNames: ""  
 }
 #===================================
 #End TranscendenceCustomItems

@@ -1,0 +1,390 @@
+#ZedZorg Space 
+#By Airelon87
+#--Credited authors--
+#Dark Koreth - Light Cruiser Refit & Starship Suacers
+#Unknown Author - Borg Cube exterior
+#==================================================
+#Feb 8th, 2022
+TemperatureDay: -171
+PlayfieldLevel: 4
+IsOrbitPlayfield: False
+Music: Migration
+Description: AdminZone
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 3
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+# Stars: SkyboxStarsRed
+# Nebula: PrefabNebulaRed2
+Build: 3639
+Radiation: 3
+PvP: False
+UseFixed: True
+AllowBA: False
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+POIs:
+   Fixed:
+   -  Type: AsteroidVoxel01Gold
+      Prefab: AsteroidVoxel01Gold
+      Name: Gold Asteroid
+      Pos: [3522.5, 727, 3356.4]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV9
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [-5200, -1850, -4137]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: BA_Alien
+      Prefab: TrAsteroidSuperiumV9
+      Mode: Survival
+      Name: SuperiumAsteroid
+      Pos: [5200, 1850, 6137]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   #Lord have mercy on these poor souls. Size Class 73 entity with impossible sheilds, legacy weapons, and robot npcs.
+   #Solutions from within cube
+   # 1. lower power to half the lasers 
+   # 2. lower sheild 
+   # 3. Destroy the core in center of cube.
+   #Personal Container is in front of core.
+   -  Type: BA_Alien
+      Prefab: ZedZorgCube
+      Mode: Survival
+      Name: ZedZorgCube
+      InitPower: true
+      Pos: [10, 10, 10]
+      Rot: [0, 0, 0]
+      Faction: Alien
+      Properties:
+      -  Key: Music
+         Value: EnergyMatrix
+      -  Key: RegenAfter
+         Value: 360
+      -  Key: PersonalContainer
+         Value: TalonCrossbowPlayer, PulseLaserChargeRifle:300, LegacyEnergyCore:2, FlameThrower, Coolant:10, OxygenBottleSmall:5, EmergencyRations:1, MoneyCard:50000
+   #Personal Container is in front of core.
+   -  Type: BA_Admin
+      Prefab: UCH_Havenia
+      Mode: Survival
+      Name: UCH_Havenia
+      InitPower: true
+      Pos: [4900, 1750, 5937]
+      Rot: [0, 0, 0]
+      Faction: Admin
+      Properties:
+      -  Key: Music
+         Value: EnergyMatrix
+      -  Key: RegenAfter
+         Value: 720
+      -  Key: PersonalContainer
+         Value: OxygenBottleSmall:5, EmergencyRations:1, ReportScienceRawData:1, ReportNavigationData:1
+#An unclaimed vessel a player can leverage for battling the borg cube. 
+   -  Type: CV_Player
+      Prefab: KiwayahHeavyCruiser
+      Mode: Survival
+      Name: USS_Kiwayah
+      InitPower: false
+      Pos: [5200, 850, 1137]
+      Rot: [0, 60, 30]
+      Faction: None
+      Properties: &o5
+      -  Key: MapMarker
+         Value: Neutral
+      -  Key: RegenAfter
+         Value: 240
+#If a player so chooses to travel this far out. 
+   -  Type: CV_Player
+      Prefab: NebulonHeroClass
+      Mode: Survival
+      Name: USS_Nebulon
+      InitPower: false
+      Pos: [85200, 10850, 71137]
+      Rot: [0, 0, 0]
+      Faction: None
+      Properties: &o5
+      -  Key: MapMarker
+         Value: Neutral
+      -  Key: RegenAfter
+         Value: 480
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [6000, 3000, -6000]
+      Items: [CrushedStone, CrushedStone, CrushedStone]
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDroneLegacyLaser
+         Faction: Alien
+         Pos: [-1273, 173, 1257]
+         Radius: 2000
+      -  Name: SpaceDroneLegacyLaser
+         Faction: Alien
+         Pos: [-1573, -173, 1157]
+         Radius: 2000
+      -  Name: SpaceDroneLegacyLaser
+         Faction: Alien
+         Pos: [-1523, 273, 1257]
+         Radius: 2000
+      -  Name: SpaceDroneLegacyLaser
+         Faction: Alien
+         Pos: [-1573, -273, 1157]
+         Radius: 2000
+      -  Name: SpaceDroneLegacyLaser
+         Faction: Alien
+         Pos: [-1523, 0, 1557]
+         Radius: 2000
+      -  Name: SpaceDroneLegacyLaser
+         Faction: Alien
+         Pos: [-1573, 0, 1257]
+         Radius: 2000
+      -  Name: SpaceDroneLegacyLaser
+         Faction: Alien
+         Pos: [-1523, -73, 1157]
+         Radius: 2000
+      -  Name: SpaceDroneLegacyLaser
+         Faction: Alien
+         Pos: [-1573, 73, 1257]
+         Radius: 2000
+      SpaceVessel:
+      #Federation Starships controlled by Zirax (Only Zirax allows AI to fight ALN)
+      #SuvoClassStarShip - Short range Science Vessel
+      #IntrepidClassStarShip - Exploration & Support vessel.
+      #KiwayahHeavyCruiser - A longe range multi role cruiser used for exploration and defense.
+      #RackoraLightCruiser - Well defended compact design with 6 powerful turrets. 
+      #MyrionClassCruiser - Mid sized cruiser with Weapons platform.
+      #EncealadesClassStarShip - Long range exploration vessel.
+      #OvusClassStarShip  - Medium range Science Vessel. 
+      #NebulonClassDreadnaught - An enhanced tactical version of the Kiwayah. 
+      -  Name: SuvoClassStarShip
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: SpacePatrol
+         DelayBetweenRespawn: 5
+         DelayBeforeSelfDestruction: 120
+         IsRespawnAfterDestruction: true
+         RangePatrol:
+            Position3D: [100, 100, 100]
+            Radius: 700
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+#         -  Name: SpaceDroneLaser
+#            Amount: 3
+#            Extra: 1
+         Properties: &o10
+         -  Key: SelfDestructionWithNoCore
+            Value: False
+         -  Key: AIManMaxPursuitRange
+            Value: 4000
+      -  Name: IntrepidClassStarShip
+         Faction: Zirax
+         FixedMaxSpeed: 13
+         Mission: SpacePatrol
+         DelayBetweenRespawn: 5
+         DelayBeforeSelfDestruction: 120
+         IsRespawnAfterDestruction: true
+         RangePatrol:
+            Position3D: [30, 4, 40]
+            Radius: 700
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+#         -  Name: SpaceDroneLaser
+#            Amount: 5
+#            Extra: 1
+         Properties: &o10
+         -  Key: SelfDestructionWithNoCore
+            Value: False
+         -  Key: AIManMaxPursuitRange
+            Value: 4000
+      -  Name: KiwayahHeavyCruiser
+         Faction: Zirax
+         FixedMaxSpeed: 15
+         Mission: SpacePatrol
+         DelayBetweenRespawn: 5
+         DelayBeforeSelfDestruction: 120
+         IsRespawnAfterDestruction: true
+         RangePatrol:
+            Position3D: [-100, 20, -100]
+            Radius: 700
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+#         -  Name: SpaceDroneLaser
+#            Amount: 7
+#            Extra: 1
+         Properties: &o10
+         -  Key: SelfDestructionWithNoCore
+            Value: False
+         -  Key: AIManMaxPursuitRange
+            Value: 4000
+      -  Name: RackoraLightCruiser
+         Faction: Zirax
+         FixedMaxSpeed: 15
+         Mission: SpacePatrol
+         DelayBetweenRespawn: 5
+         DelayBeforeSelfDestruction: 120
+         IsRespawnAfterDestruction: true
+         RangePatrol:
+            Position3D: [30, -20, 90]
+            Radius: 700
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+#         -  Name: SpaceDroneLaser
+#            Amount: 4
+#            Extra: 1
+         Properties: &o10
+         -  Key: SelfDestructionWithNoCore
+            Value: False
+         -  Key: AIManMaxPursuitRange
+            Value: 4000
+      -  Name: MyrionClassCruiser
+         Faction: Zirax
+         FixedMaxSpeed: 17
+         Mission: SpacePatrol
+         DelayBetweenRespawn: 5
+         DelayBeforeSelfDestruction: 120
+         IsRespawnAfterDestruction: true
+         RangePatrol:
+            Position3D: [-30, -40, 30]
+            Radius: 700
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+#         -  Name: SpaceDroneLaser
+#            Amount: 2
+#            Extra: 1
+         Properties: &o10
+         -  Key: SelfDestructionWithNoCore
+            Value: False
+         -  Key: AIManMaxPursuitRange
+            Value: 4000
+      -  Name: MyrionClassCruiser
+         Faction: Zirax
+         FixedMaxSpeed: 19
+         Mission: SpacePatrol
+         DelayBetweenRespawn: 5
+         DelayBeforeSelfDestruction: 120
+         IsRespawnAfterDestruction: true
+         RangePatrol:
+            Position3D: [-130, -50, 70]
+            Radius: 700
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+#         -  Name: SpaceDroneLaser
+#            Amount: 2
+#            Extra: 1
+         Properties: &o10
+         -  Key: SelfDestructionWithNoCore
+            Value: False
+         -  Key: AIManMaxPursuitRange
+            Value: 4000
+      -  Name: EncealadesClassStarship
+         Faction: Zirax
+         FixedMaxSpeed: 15
+         Mission: SpacePatrol
+         DelayBetweenRespawn: 5
+         DelayBeforeSelfDestruction: 120
+         IsRespawnAfterDestruction: true
+         RangePatrol:
+            Position3D: [110, 0, -55]
+            Radius: 700
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+#         -  Name: SpaceDroneLaser
+#            Amount: 5
+#            Extra: 1
+      -  Name: OvusClassStarShip
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [-220, -15, -60]
+            Radius: 700
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+#         -  Name: SpaceDroneLaser
+#            Amount: 3
+#            Extra: 1
+         Properties: &o10
+         -  Key: SelfDestructionWithNoCore
+            Value: False
+         -  Key: AIManMaxPursuitRange
+            Value: 3000
+      -  Name: NebulonClassDreadnaught
+         Faction: Zirax
+         FixedMaxSpeed: 20
+         Mission: SpacePatrol
+         RangePatrol:
+            Position3D: [-100, 17, -200]
+            Radius: 700
+         Immobile:
+            Position3D: [0, 0, 0]
+         Freighter: {}
+         Stock:
+         -  Name: SpaceDroneLaser
+            Amount: 12
+            Extra: 1
+         Properties: &o10
+         -  Key: SelfDestructionWithNoCore
+            Value: False
+         -  Key: AIManMaxPursuitRange
+            Value: 3000
+      -  Name: NebulonClassDreadnaught
+         Faction: Zirax
+         FixedMaxSpeed: 10
+         Mission: Freighter
+         RangePatrol:
+            Position3D: [0, 0, 0]
+         Immobile: {}
+         Freighter:
+            DelayBetweenRespawn: 1200
+            DelayBeforeSelfDestruction: 2000
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [400, 0, 100]
+            - [200, 0, 0]
+            - [-200, 0, 0]
+            - [400, 0, 100]
+            - [200, 0, 0]
+            - [-200, 0, 0]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 24
+            Extra: 0
+
+
+

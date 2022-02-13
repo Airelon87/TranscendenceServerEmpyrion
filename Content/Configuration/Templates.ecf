@@ -5429,6 +5429,17 @@
   }
 }
 
+{ +Template Name: RapidChargeShieldGenerator
+  CraftTime: 90 #C2 CV 10
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    EnergyMatrix: 3
+    CapacitorComponent: 5
+    MechanicalComponents: 2
+    SpareParts: 6
+  }
+}
+
 { +Template Name: ShieldGeneratorSuperBA
   CraftTime: 120 
   Target: "AdvC"
@@ -5877,6 +5888,20 @@
   }
 } 
 
+#{ +Template Name: WarbotSlotArmor
+#  DeconOverride: Stop
+#  OutputCount: 1
+#  CraftTime: 120
+#  Target: "AdvC"
+#  { Child Inputs
+#    WarbotNanotubes: 2
+#    GoldIngot: 12
+#    SiliconIngot: 6
+#    ScienceEquipment: 1
+#    Robotics: 6
+#  }
+#}
+
 ##Old Reforged Galaxy 
 { +Template Name: PentaxidSeedCrystal
   DeconOverride: Stop
@@ -6047,7 +6072,7 @@
   }
 } 
 
-#Reforged Eden additions Jab 19 2022
+#Reforged Eden additions Jan 19 2022
 
 { +Template Name: CVLargeSolarPanelBlocks
   CraftTime: 30 #A1 Ba CV 1
