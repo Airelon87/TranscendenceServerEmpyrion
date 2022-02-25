@@ -13565,7 +13565,7 @@
   BlastRadius: 3
   BlastDamage: 80
   
-  UpgradeTo: RCSBlockMS_T2, display: true
+  UpgradeTo: null, display: true
   UnlockCost: 5, display: true
   UnlockLevel: 10, display: true
   TechTreeParent: RCSBlockMS
@@ -14101,7 +14101,7 @@
   HitPoints: 250, type: int, display: true
   BlockColor: "170,5,5"
   
-  UpgradeTo: null
+  UpgradeTo: null, display: false
   UnlockCost: 0
   UnlockLevel: 1 
   TechTreeNames: ""
@@ -17956,7 +17956,7 @@
   ChildBlocks: "ExplosiveBlockFull, ExplosiveBlockThin"
   
   BlastParticleIndex: 4
-  BlastRadius: 1, display: Radius 
+  BlastRadius: 2, display: Radius 
   BlastDamage: 5000 
 }
 
@@ -19704,6 +19704,7 @@
   UnlockLevel: 20, display: true
   TechTreeParent: PentaxidTank
   TechTreeNames: "Small Vessel,Hover Vessel,Capital Vessel,Base"
+  UpgradeTo: null, display: false
 }
 
 
@@ -22322,7 +22323,7 @@
   CPUIn: 2500, type: int, display: true
   EnergyInIdle: 5, type: int, display: true, formatter: Watt
 
-  UpgradeTo: null
+  UpgradeTo: null, display: false
   
   UnlockCost: 5, display: true
   UnlockLevel: 3, display: true
@@ -24730,7 +24731,7 @@
   EnergyInIdle: 360, type: int, display: true, formatter: Watt
   ShieldCapacity: 12000, type: int, display: true
   ShieldRecharge: 500, type: int, display: true     # recharge rate per sec
-#  UpgradeTo: null
+#  UpgradeTo: null, display: false
   UpgradeTo: ShieldGeneratorSuperSV, display: true
   
   UnlockCost: 5, display: true
@@ -24793,7 +24794,7 @@
   AllowPlacingAt: "Base,MS", display: true
   PickupTarget: ShieldGeneratorBA   # Avoid getting back POI shield generator 
   TemplateRoot: ShieldGeneratorBA
-  UpgradeTo: null
+  UpgradeTo: null, display: false
   
   UnlockCost: 0
   UnlockLevel: 1 
@@ -25215,7 +25216,7 @@
   EnergyInIdle: 360, type: int, display: true, formatter: Watt
   ShieldCapacity: 9000, type: int, display: true
   ShieldRecharge: 400, type: int, display: true     # recharge rate per sec
-  UpgradeTo: null
+  UpgradeTo: null, display: false
   
   UnlockCost: 10, display: true
   UnlockLevel: 7, display: true
@@ -26105,6 +26106,7 @@
   # CPUOut: 3000, type: int, display: true
   CPUExtenderLevel: 4, type: int, display: true
   HitPoints: 330, type: int, display: true
+  UpgradeTo: null, display: false
 
   UnlockCost: 20, display: true
   UnlockLevel: 20, display: true
@@ -26222,6 +26224,7 @@
   # CPUOut: 6000, type: int, display: true  
   CPUExtenderLevel: 4, type: int, display: true
   HitPoints: 330, type: int, display: true
+  UpgradeTo: null, display: false
 
   UnlockCost: 20, display: true
   UnlockLevel: 20, display: true
@@ -26339,6 +26342,7 @@
   # CPUOut: 200000, type: int, display: true  
   CPUExtenderLevel: 4, type: int, display: true
   HitPoints: 950, type: int, display: true
+  UpgradeTo: null, display: false
 
   UnlockCost: 20, display: true
   UnlockLevel: 20, display: true
@@ -26456,6 +26460,7 @@
   # CPUOut: 300000, type: int, display: true
   CPUExtenderLevel: 4, type: int, display: true
   HitPoints: 950, type: int, display: true
+  UpgradeTo: null, display: false
 
   UnlockCost: 20, display: true
   UnlockLevel: 20, display: true
@@ -33167,7 +33172,7 @@
   ShieldCooldown: 15, type: int, display: true   # in seconds
   ShieldPerCrystal: 1000, type: int, display: true
   Info: This is a homebrew designed shield made of scrap. Cannot be upgraded or paired with other shields!, display: true
-  UpgradeTo: null
+  UpgradeTo: null, display: false
   
   UnlockCost: 4, display: true
   UnlockLevel: 3, display: true

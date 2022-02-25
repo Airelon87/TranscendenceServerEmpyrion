@@ -2401,8 +2401,8 @@ Chapters:
   - ChapterTitle: Zed City
     Category: SoloMission
     Rewards:
-      - Item: ArmorMediumEpic
-        Count: 1
+      - Type: UP
+        Count: 10
       - Item: RawDiamond
         Count: 1
       - Item: Robotics

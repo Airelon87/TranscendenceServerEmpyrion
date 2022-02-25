@@ -1,0 +1,354 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v2.15.2.5126, Playfield Version: 1.7 [3660] (V1.7)
+# Last Saved: 2022-02-24 23:11:49
+# --------------------------------------------------------------------------------------------------------------------------
+#
+TemperatureDay: [-200, -100]
+Radiation: [5, 10]
+UseFixed: True
+Gravity: 0
+AtmosphereEnabled: False
+Music: [moonstone, space, DistantWorlds, Migration]
+PlayfieldType: Space
+PlanetType: Orbit
+Build: 3717
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+LandClaimZone: Device
+BaseAttackCount: 0
+Resources:
+-  Name: [AsteroidVoxel01Iron, AsteroidVoxel02Iron, AsteroidVoxel03Iron]
+   DisplayName: Iron Asteroid
+   CountMinMax: [1, 15]
+   Probability: 0.8
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Copper, AsteroidVoxel02Copper, AsteroidVoxel03Copper]
+   DisplayName: Copper Asteroid
+   CountMinMax: [1, 7]
+   Probability: 0.8
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Silicon, AsteroidVoxel02Silicon, AsteroidVoxel03Silicon]
+   DisplayName: Silicon Asteroid
+   CountMinMax: [1, 7]
+   Probability: 0.8
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Magnesium, AsteroidVoxel02Magnesium, AsteroidVoxel03Magnesium]
+   DisplayName: Magnesium Asteroid
+   CountMinMax: [1, 4]
+   Probability: 0.5
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Cobalt, AsteroidVoxel02Cobalt, AsteroidVoxel03Cobalt]
+   DisplayName: Cobalt Asteroid
+   CountMinMax: [1, 7]
+   Probability: 0.5
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Neodymium, AsteroidVoxel02Neodymium, AsteroidVoxel03Neodymium]
+   DisplayName: Neodymium Asteroid
+   CountMinMax: [1, 6]
+   Probability: 0.7
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Promethium, AsteroidVoxel02Promethium, AsteroidVoxel03Promethium]
+   DisplayName: Promethium Asteroid
+   CountMinMax: [2, 8]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Sathium, AsteroidVoxel02Sathium, AsteroidVoxel03Sathium]
+   DisplayName: Sathium Asteroid
+   CountMinMax: [1, 4]
+   Probability: 0.6
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Erestrum, AsteroidVoxel02Erestrum, AsteroidVoxel03Erestrum]
+   DisplayName: Erestrum Asteroid
+   CountMinMax: [1, 3]
+   Probability: 0.7
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Zascosium, AsteroidVoxel02Zascosium, AsteroidVoxel03Zascosium]
+   DisplayName: Zascosium Asteroid
+   CountMinMax: [1, 2]
+   Probability: 0.3
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Pentaxid, AsteroidVoxel02Pentaxid, AsteroidVoxel03Pentaxid]
+   DisplayName: Pentaxid Asteroid
+   CountMinMax: [4, 8]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Gold, AsteroidVoxel02Gold, AsteroidVoxel03Gold]
+   DisplayName: Gold Asteroid
+   CountMinMax: [1, 3]
+   Probability: 0.4
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Ice, AsteroidVoxel02Ice, AsteroidVoxel03Ice]
+   DisplayName: Ice Asteroid
+   CountMinMax: [4, 6]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Titan, AsteroidVoxel02Titan, AsteroidVoxel03Titan]
+   DisplayName: Titan Asteroid
+   CountMinMax: [3, 7]
+   Probability: 0.7
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Aluminium, AsteroidVoxel02Aluminium, AsteroidVoxel03Aluminium]
+   DisplayName: Aluminium Asteroid
+   CountMinMax: [1, 2]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+-  Name: [AsteroidVoxel01Platin, AsteroidVoxel02Platin, AsteroidVoxel03Platin]
+   DisplayName: Platin Asteroid
+   CountMinMax: [1, 2]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 45
+POIs:
+-  Name: [AsteroidFieldFewBoxExclude, AsteroidRingPlanet]
+   FieldName: [AsteroidField, AsteroidFieldRectangle2]
+   Pos: [0, 0, 0]
+   Rot: [0, 0, 0]
+   CountMinMax: [1, 4]
+   Probability: 0.5
+   BaseField: True
+   RandomRotation: True
+-  Type: BA_Alien
+   Name: [ZedZorgCubeGalaxy]
+   DisplayName: ZedZorgCube
+   Faction: Alien
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   CountMinMax: [1, 1]
+   Probability: 0.3
+   InitPower: True
+   Properties:
+   -  Key: RegenAfter
+      Value: 90
+   -  Key: Music
+      Value: WhatWalksBelow
+   -  Key: PersonalContainer
+      Value: LegacyEnergyCore:3, RawDiamond:2, WarbotNanotubes:2, AlienLaserRefill:500, MoneyCard:50000
+-  Type: BA_Alien
+   Name: [TraderlingStation]
+   DisplayName: TraderlingStation
+   Faction: Trader
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   CountMinMax: [1, 1]
+   Probability: 1
+   InitPower: True
+   Properties:
+   -  Key: RegenAfter
+      Value: 120
+   -  Key: StationInterface
+      Value: "Fuel:0.3, O2:0.5, Warp:0.75, Ammo:0.7, Repair:0.75, Shield:0.1, IfNeutral:0.1, IfFriendly:-0.1, IfHonored:-0.2"
+   -  Key: Music
+      Value: Vanguard
+-  Type: BA_Alien
+   Name: [ZedZorgAttractor]
+   DisplayName: ZedZorgAttractor
+   Faction: Alien
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   CountMinMax: [1, 2]
+   Probability: 0.75
+   InitPower: True
+   Properties:
+   -  Key: RegenAfter
+      Value: 120
+   -  Key: Music
+      Value: EnergyMatrix
+   -  Key: PersonalContainer
+      Value: WarbotNanotubes, RangerRocketCV:250, TransportationBoostEpic, LegacyEnergyCore:2, RawDiamond
+-  Type: BA_Alien
+   Name: [ZedZorgZegulator]
+   DisplayName: ZedZorgZegulator
+   Faction: Alien
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   CountMinMax: [1, 4]
+   Probability: 1
+   InitPower: True
+   Properties:
+   -  Key: RegenAfter
+      Value: 90
+   -  Key: Music
+      Value: Anomalous
+   -  Key: PersonalContainer
+      Value: LegacyEnergyCore, RangerSVPlasmaCharge:256, TurretSVRanger, RawDiamond, WarbotNanotubes:2
+-  Type: BA_Alien
+   Name: [BAO_BurntOutReconVessel, BAO_CombatWreckage, BAO_JettisonedCargoPod, BAO_SeveredShip, BAO_TornThrusterArray, CV_LightCarrierWreck, SV_FA005XHunter]
+   DisplayName: Wreckage
+   Faction: None
+   Mode: Survival
+   CountMinMax: [1, 5]
+   Probability: 0.3
+   InitPower: True
+   Properties:
+   -  Key: RegenAfter
+      Value: 120
+-  Type: CV_Player
+   Name: [ZedZorgulatedStarShip, ZedZorgulatedWarship]
+   DisplayName: ZedZorgulatedShip
+   Faction: None
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   CountMinMax: [1, 2]
+   Probability: 0.5
+   InitPower: True
+   Properties:
+   -  Key: Discovery
+      Value: True
+   -  Key: MapDistance
+      Value: 4000
+-  Type: BA_Alien
+   Name: [ExplodingPlanetFragment]
+   DisplayName: PlanetFragment
+   Faction: Alien
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   CountMinMax: [1, 1]
+   Probability: 1
+   InitPower: True
+   Properties:
+   -  Key: Music
+      Value: Voyage
+   -  Key: RegenAfter
+      Value: 120
+-  Type: BA_Alien
+   Name: [LargePlanetFragment]
+   DisplayName: LargePlanetFragment
+   Faction: None
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   CountMinMax: [1, 4]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 60
+-  Type: CV_Player
+   Name: [DamagedMyrionCruiser, DamagedEncealadesClass, DestroyedExplorerShip]
+   DisplayName: AbandonedShip
+   Faction: None
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   CountMinMax: [1, 2]
+   Probability: 1
+DroneBaseSetup:
+# -  FreeDrones:
+#    -  Name: [SpaceDroneLegacyLaser]
+#       Faction: Alien
+#       Count: [5, 10]
+#       Radius: [4000, 9000]
+#       MissionDescription:
+#          RadiusMinMax: [1000, 2500]
+#          IsRespawnAfterDestruction: True
+ - SpaceVessels:
+   -  Name: [Freighter]
+      Faction: Trader
+      Count: [1, 2]
+      Probability: 0.5
+      FixedMaxSpeed: [5, 10]
+      Mission: Freighter
+      MissionDescription:
+         RadiusMinMax: [1000, 2500]
+         Position:
+            PosXZMinMax: [3000, 7000]
+            PosYMax: 3000
+         DelayBetweenRespawnMinMax: [300, 600]
+         DelayBeforeSelfDestructionMinMax: [500, 1000]
+         IsRespawnAfterDestruction: True
+      StockDescription:
+         Name: [SpaceDroneLaser]
+         AmountMinMax: [3, 5]
+         ExtraMinMax: [1, 2]
+   -  Name: [ZedZorgulatedVessel, ZedZorgulatedWarship, ZedZorgulatedStarShip]
+      Faction: Alien
+      Count: [1, 7]
+      Probability: 1
+      FixedMaxSpeed: [5, 15]
+      Mission: Freighter
+      MissionDescription:
+         RadiusMinMax: [1000, 2500]
+         Position:
+            PosXZMinMax: [3000, 9999]
+            PosYMax: 2000
+         DelayBetweenRespawnMinMax: [300, 600]
+         DelayBeforeSelfDestructionMinMax: [500, 1000]
+         IsRespawnAfterDestruction: True
+      StockDescription:
+         Name: [SpaceDroneLaser, SpaceDroneLegacyLaser]
+         AmountMinMax: [4, 10]
+         ExtraMinMax: [0, 1]
+   -  Name: [ZedZorgNano, ZedZorgNode, ZedZorgPatrol]
+      Faction: Alien
+      Count: [1, 3]
+      Probability: 1
+      FixedMaxSpeed: [3, 7]
+      Mission: SpacePatrol
+      MissionDescription:
+         RadiusMinMax: [750, 1500]
+         Position:
+            PosXZMinMax: [5000, 15000]
+            PosYMax: 2000
+         DelayBetweenRespawnMinMax: [300, 600]
+         DelayBeforeSelfDestructionMinMax: [500, 1000]
+         IsRespawnAfterDestruction: True
+      StockDescription:
+         Name: [SpaceDroneLegacyLaser, SpaceDronePlasma]
+         AmountMinMax: [10, 25]
+         ExtraMinMax: [0, 0]
+      Properties:
+      -  Key: PersonalContainer
+         Value: RawDiamond, LegacyEnergyCore:2, CPUExtenderSVT4:4
+   -  Name: [KiwayahHeavyCruiser, NebulonClassDreadnaught, OvusClassStarShip, MyrionClassCruiser, SuvoClassStarShip, RackoraLightCruiser, IntrepidClassStarship]
+      Faction: Zirax
+      Count: [1, 3]
+      Probability: 1
+      FixedMaxSpeed: [5, 10]
+      Mission: SpacePatrol
+      MissionDescription:
+         Name: RangePatrol
+         RadiusMinMax: [1100, 2750]
+         Position:
+            PosXZMinMax: [5000, 20000]
+            PosYMax: 1250
+         DelayBetweenRespawnMinMax: [300, 600]
+         DelayBeforeSelfDestructionMinMax: [500, 1000]
+         IsRespawnAfterDestruction: True
+      StockDescription:
+         Name: [SpaceDroneLaser]
+         AmountMinMax: [1, 4]
+         ExtraMinMax: [0, 1]

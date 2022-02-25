@@ -259,6 +259,8 @@ Biome:
       - [RockResourceSilicon, 0.001, Free]
       - [RockResourceIron, 0.001, Plant]
       - [RockResourceCopper, 0.001, Plant]
+      ##Test Jan22
+      - [StrangeEggPlant, 0.01, Plant]
       Grass:
       -  Name: Flower06
          Density: 0.0050000000000000001
@@ -305,6 +307,8 @@ Biome:
       - [RockResourceSilicon, 0.001, Free]
       - [RockResourceIron, 0.001, Plant]
       - [RockResourceCopper, 0.001]
+      ##Test Jan22
+      - [StrangeEggPlant, 0.001, Plant]
       Grass:
       -  Name: GrassGreen02
          Density: 0.20000000000000001
@@ -348,6 +352,8 @@ Biome:
       - [CornDogBush, 0.02, Plant]
       - [CobraLeavesPlant, 0.01, Plant]
       - [CattailWinter, 0.01, Plant]
+      ##Test Jan22
+      - [StrangeEggPlant, 0.001, Plant]
       Grass:
       -  Name: GrassGreen02
          Density: 0.10000000000000001
@@ -384,6 +390,8 @@ Biome:
       - [RockResourceCopper, 0.0003, Free]
       - [CattailWinter, 0.01, Plant]
       - [RockResourcePromethium, 0.001, Free]
+      ##Test Jan22
+      - [StrangeEggPlant, 0.001, Plant]
       Grass:
       -  Name: GrassBrown04
          Density: 0.20000000000000001
@@ -412,6 +420,8 @@ Biome:
       - [LavaPlant2, 0.004, Plant]
       - [Snakeweed, 0.0001, Plant]
       - [RockResourcePromethium, 0.001]
+      ##Test Jan22
+      - [StrangeEggPlant, 0.001, Plant]
       Grass:
       -  Name: GrassBrown02d
          Density: 0.01
@@ -438,6 +448,8 @@ Biome:
       - [Pillar2, 0.0004, Tree]
       - [Pillar3, 0.0002, Tree]
       - [Pillar4, 0.0002, Tree]
+      ##Test Jan22
+      - [StrangeEggPlant, 0.001, Plant]
       Grass:
       -  Name: GrassGreen02
          Density: 0.050000000000000003

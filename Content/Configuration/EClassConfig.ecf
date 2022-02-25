@@ -1877,7 +1877,7 @@
   MeshDead: Enemies/Drones/LegacyDroneCrabDmgPrefab
   Faction: TheLegacy
 
-  MaxHealth: 60000
+  MaxHealth: 40000
   # XpFactor: 2
   XpFactor: 18
 

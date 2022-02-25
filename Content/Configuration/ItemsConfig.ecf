@@ -2466,7 +2466,7 @@
   Info: bkiPlasmaCannonAlien, display: true
   Mass: 45, type: float, display: true, formatter: Kilogram
   Volume: 50, type: float, display: true, formatter: Liter
-  #just for display - BlastRadius and BlastDamage is controlled by "SciFiCannonPlasmaCharge"
+  #just for display - BlastRadius and BlastDamage is controlled by "PlasmaCannonAlienCharge"
   Damage: 1000, display: true
   Mod.Damage: "Damage + Player.Skills['Plasmatics']"  
   BlastRadius: 3, display: true
@@ -2868,23 +2868,23 @@
   Volume: 0.5, type: float, display: true, formatter: Liter
   { Child 0
     Class: Projectile
-    Damage: 1000, display: true  
+    Damage: 500, display: true  
     Mod.Damage: "Damage + Player.Skills['Plasmatics']"
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 650, display: true
+    BlastDamage: 1000, display: true
     Speed: 90
-    Range: 450
+    Range: 375
     NoiseStrength: 80, display: false   
     Ballistic: false
     HomingSpeed: 2, display: true
 	
     DamageMultiplier_1: 0, param1: dirt|stone
-    DamageMultiplier_2: 1.1, param1: hullarmored|hullcombat
-    # DamageMultiplier_3: 10,   param1: rock
-    DamageMultiplier_4: 1.1,   param1: shield
-    BlastDamageMultiplier_1: 1.1, param1: hullarmored|hullcombat
-    BlastDamageMultiplier_2: 0.5, param1: dirt|stone
+    DamageMultiplier_2: 2, param1: hullarmored|hullcombat
+    DamageMultiplier_3: 1,   param1: rock
+    DamageMultiplier_4: 2,   param1: shield
+    BlastDamageMultiplier_1: 0.5, param1: hullarmored|hullcombat
+    BlastDamageMultiplier_2: 0, param1: dirt|stone
     BlastDamageMultiplier_3: 0, param1: shield
   }
 
@@ -9175,7 +9175,7 @@
     Ballistic: false
 		    
     DamageMultiplier_1: 0.5, param1: head|body 
-	DamageMultiplier_2: 3, param1: metal
+	  DamageMultiplier_2: 3, param1: metal
     DamageMultiplier_3: 25, param1: metalhard|concrete|woodblock|hull
     DamageMultiplier_4: 60, param1: hullarmored|hullcombat
     DamageMultiplier_5: 0, param1: stone|dirt
@@ -9243,11 +9243,11 @@
     Range: 625
 		    
     DamageMultiplier_1: 0.5, param1: head|body 
-	DamageMultiplier_2: 3, param1: metal
-    DamageMultiplier_3: 25, param1: metalhard|concrete|woodblock|hull
-    DamageMultiplier_4: 60, param1: hullarmored|hullcombat
+	  DamageMultiplier_2: 3, param1: metal
+    DamageMultiplier_3: 20, param1: metalhard|concrete|woodblock|hull
+    DamageMultiplier_4: 30, param1: hullarmored|hullcombat
     DamageMultiplier_5: 0, param1: stone|dirt
-    DamageMultiplier_6: 0.1, param1: shield
+    DamageMultiplier_6: 1.1, param1: shield
   }
 }
 { +Item Id: 560, Name: cannonDroneSmall, Ref: minigunDroneSmall
@@ -9328,7 +9328,7 @@
   { Child 0
     Class: LauncherSS
     ROF: 0.6, type: float
-    Range: 500
+    Range: 650
     AmmoType: laserChargeSpaceDrone, display: true
     SfxBegin: Weapons/SS/LaserSS/weapon_laser_001
   }
@@ -9343,18 +9343,21 @@
   ShowUser: No
   { Child 0
     Class: Projectile
-    Damage: 60, display: true
+    Damage: 360, display: true
     BlastParticleIndex: 12
-    BlastRadius: 2, display: true
-    BlastDamage: 800, display: true
+    BlastRadius: 3, display: true
+    BlastDamage: 400, display: true
     Speed: 200
     Range: 800
     Ballistic: false
 	
-    DamageMultiplier_1: 3, param1: hullarmored
-    DamageMultiplier_2: 3, param1: hullcombat
+    DamageMultiplier_1: 1.1, param1: hullarmored
+    DamageMultiplier_2: 1.2, param1: hullcombat
     DamageMultiplier_3: 2, param1: shield
+    DamageMultiplier_4: 0.1, param1: head|body
+    DamageMultiplier_5: 0, param1: stone|dirt
     BlastDamageMultiplier_1: 0, param1: shield
+    BlastDamageMultiplier_2: 2, param1: metalhard|hullarmored|hullcombat
   }
 }
 # obsolete
@@ -13563,7 +13566,7 @@
     TracerPerBullet: 1
 
     DamageMultiplier_1: 0, param1: head|body 
-	DamageMultiplier_2: 0, param1: metal
+	  DamageMultiplier_2: 0, param1: metal
     DamageMultiplier_3: 0, param1: metalhard|concrete|woodblock|hull
     DamageMultiplier_4: 0, param1: hullarmored|hullcombat
     DamageMultiplier_5: 0, param1: stone|dirt
@@ -13580,10 +13583,10 @@
   Info: bkiWeaponHandheldIgnoringAtmo, display: true
   Mass: 55, type: float, display: true, formatter: Kilogram
   Volume: 60, type: float, display: true, formatter: Liter
-  #just for display - BlastRadius and BlastDamage is controlled by "SciFiCannonPlasmaCharge"
-  Damage: 1000, display: true
+  #just for display - BlastRadius and BlastDamage is controlled by "PlasmaCannonAlienCharge"
+  Damage: 500, display: true
   BlastRadius: 6, display: true
-  BlastDamage: 500, display: true
+  BlastDamage: 1000, display: true
   # Explosion Radius: 3, display: true 
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
@@ -13598,7 +13601,7 @@
     Recoil: 3.0, display: true
     IgnoreAtmo: true, display: true
     AmmoCapacity: 7, display: true
-    AmmoType: SciFiCannonPlasmaCharge, display: true
+    AmmoType: PlasmaCannonAlienCharge, display: true
     ReloadDelay: 4.1, display: true
     Particles: diggerplasma_green        # particle effect shown at impact
     ParticleTransform: Muzzle/Particle3
@@ -13607,12 +13610,10 @@
     SfxReload: Weapons/Player/Reload/HeavyWeaponReloadNormal
     PfxMuzzle: rocketlauncherMSMuzzleFire
 
-    DamageMultiplier_1: 0.7, param1: head|body 
-	  DamageMultiplier_2: 2, param1: metal
-    DamageMultiplier_3: 2, param1: metalhard|concrete|woodblock|hull
-    DamageMultiplier_4: 2.5, param1: hullarmored|hullcombat
-    DamageMultiplier_5: 0.1, param1: stone|dirt
-    DamageMultiplier_6: 10, param1: shield
+    DamageMultiplier_1: 1, param1: head|body 
+    DamageMultiplier_2: 2, param1: metal|metalhard|concrete|woodblock|hull
+    DamageMultiplier_3: 1, param1: hullarmored|hullcombat
+    DamageMultiplier_4: 2, param1: shield
 
     ShowUser: No
   }
@@ -13636,10 +13637,10 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2.4, type: float, display: true, formatter: ROF
-    Range: 650, display: false
-    RangeSpace: 1200, display: false
-    AmmoCapacity: 64, display: true
+    ROF: 2, type: float, display: true, formatter: ROF
+    Range: 550, display: false
+    RangeSpace: 850, display: false
+    AmmoCapacity: 256, display: true
     AutoReload: true
     AmmoType: RangerSVPlasmaCharge, display: true
     NoiseStrength: 120, display: false   
@@ -13660,7 +13661,7 @@
   Material: metalweapon
   AllowPlacingAt: "SS,GV", display: false
   HoldType: 0
-  StackSize: 2000
+  StackSize: 256
   Canhold: false
   Mass: 2, type: float, display: true, formatter: Kilogram
   Volume: 5.9, type: float, display: true, formatter: Liter
@@ -13673,20 +13674,21 @@
     Mod.Damage: "Damage + Player.Skills['Plasmatics']" 
     BlastParticleIndex: 3
     BlastRadius: 4, display: true
-    BlastDamage: 1400, display: true
+    BlastDamage: 1000, display: true
     Speed: 40
-    Range: 650
+    Range: 550
     SpeedSpace: 50
-    RangeSpace: 1200
+    RangeSpace: 850
     Ballistic: false
 	
-    DamageMultiplier_1: 0.15, param1: head|body
+    DamageMultiplier_1: 3, param1: head|body
     DamageMultiplier_2: 0.01, param1: stone|dirt
-    DamageMultiplier_3: 2, param1: rock    # can destroy rocks
-    DamageMultiplier_4: 2, param1: shield
-    DamageMultiplier_5: 1.2, param1: hullarmored|hullcombat
-    BlastDamageMultiplier_1: 0.15, param1: head|body
+    DamageMultiplier_3: 1, param1: rock    # can destroy rocks
+    DamageMultiplier_4: 3, param1: shield
+    DamageMultiplier_5: 1.5, param1: hullarmored|hullcombat
+    BlastDamageMultiplier_1: 0, param1: head|body
     BlastDamageMultiplier_2: 0.01, param1: stone|dirt
+    BlastDamageMultiplier_3: 0, param1: shield
   }
 
   UnlockLevel: 1
@@ -13726,27 +13728,29 @@
 { +Item Id: 1609, Name: RangerRocketCV, Ref: FastRocketMS
   AllowPlacingAt: MS, display: false
   CustomIcon: PlasmaCannonAlienCharge
-  Mass: 27, type: float, display: true, formatter: Kilogram
-  Volume: 16, type: float, display: true, formatter: Liter
+  Mass: 14, type: float, display: true, formatter: Kilogram
+  Volume: 8, type: float, display: true, formatter: Liter
   MarketPrice: 269
   { Child 0
-    Damage: 2258, display: true 
+    Damage: 1000, display: true 
     BlastParticleIndex: 3
     BlastRadius: 6, display: true
-    BlastDamage: 5200, display: true
-    Speed: 32
-    Range: 735
-    SpeedSpace: 64
-    RangeSpace: 1100
-    HomingSpeed: 2.0
+    BlastDamage: 1000, display: true
+    Speed: 42
+    Range: 435
+    SpeedSpace: 74
+    RangeSpace: 950
+    HomingSpeed: 2.5
     Ballistic: false
 	
     DamageMultiplier_1: 1, param1: metal
-    DamageMultiplier_2: 1.1, param1: metalhard|concrete|woodblock|hull
-    DamageMultiplier_3: 1.2, param1: hullarmored|hullcombat
+    DamageMultiplier_2: 5, param1: metalhard|concrete|woodblock|hull
+    DamageMultiplier_3: 4, param1: hullarmored|hullcombat
     DamageMultiplier_4: 0, param1: dirt|stone
     DamageMultiplier_5: 0.4, param1: shield
     BlastDamageMultiplier_1: 0.05, param1: dirt|stone
+    BlastDamageMultiplier_2: 4, param1: hullarmored|hullcombat
+    BlastDamageMultiplier_5: 0, param1: shield
   }
 }
 ############################
@@ -13766,8 +13770,8 @@
     Class: LauncherSS
     ROF: 0.5, type: float, display: true, formatter: ROF
     AllowAt: "Space"
-    Range: 650, display: false
-    RangeSpace: 1300, display: false
+    Range: 500, display: false
+    RangeSpace: 1000, display: false
     # Damage: 2000, display: true
     AmmoCapacity: 500, display: false       # no need to display since unlimited ammo
     AmmoType: AlienLaserRefill, display: true
@@ -13798,20 +13802,17 @@
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 750, display: true   # new: because we removed explosion 
+    Damage: 750, display: true 
     BlastParticleIndex: 7
-    Speed: 775
-    Range: 1300
+    Speed: 675
+    Range: 500
     SpeedSpace: 820
-    RangeSpace: 1300
+    RangeSpace: 1000
     Ballistic: false
 	
-    DamageMultiplier_1: 0.25, param1: head|body
+    DamageMultiplier_1: 0.15, param1: head|body
     DamageMultiplier_2: 0, param1: stone|dirt|rock
-    DamageMultiplier_3: 0.3, param1: shield
-    BlastDamageMultiplier_1: 0.25, param1: head|body
-    BlastDamageMultiplier_2: 0.4, param1: stone|dirt
-    BlastDamageMultiplier_3: 0.1, param1: rock
+    DamageMultiplier_3: 0.25, param1: hull|hullarmored|hullcombat
     BlastDamageMultiplier_4: 0, param1: shield
   }
 }

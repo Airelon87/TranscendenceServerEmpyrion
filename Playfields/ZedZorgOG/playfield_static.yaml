@@ -1,0 +1,399 @@
+# 
+# ====================
+# GENERAL SETUP 
+# ====================
+#
+Description: "This planet has been Zorgulated by the ZedZorg"
+PlanetType: Alien
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 5
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: SnowLight
+   Biome: [Any]
+   Time: Day
+   MaxHeight: 255
+-  Name: DustDevil
+   Biome: [Any]
+   Time: Always
+   MaxHeight: 255
+   FollowPlayerY: True
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Lifetime: 2000
+-  Name: CloudsDark
+   Type: Weather
+   Delay: 50
+   Lifetime: 750
+-  Name: ThunderAndLightningPurple
+   Biome: [Any]
+   Time: Night
+   PlyDist: 30
+   Struct: False
+   Lifetime: 75
+   SpawnY: 25
+AtmosphereColor: 0,0.5,0.5
+SkyColor: 0.18,0.55,0.34
+SkyHorizonColor: 0.73,0.33,0.83
+AtmosphereParams: [1, 1.6]
+LightZenithColor: 0.5,1,0.83
+LightHorizonColor: 0,1,1
+DayLightIntensity: 1
+NightLightIntensity: 1
+NightLightColor: 0.56,0.74,0.56
+SunFlare: EnvironmentalEffects/SunFlareRed
+AtmosphereFog: 0.05
+FogColor: 0.9,0.9,0.98
+GroundFogIntensity: 0.02
+GroundFogHeight: 5
+CloudsDensity: 0.3
+CloudsSharpness: 0.2
+CloudsBrightness: 0.25
+CloudsOpacity: 0.37
+CloudsZenithColor: 0,0.81,0.82
+CloudsHorizonColor: 0.27,0.51,0.71
+CloudsNightZenithColor: 1,0.71,0.76
+CloudsNightHorizonColor: 0.78,0.08,0.52
+WindSpeed: 2
+Build: 3715
+PvP: False
+BaseAttackCount: 0
+UseRandom: True
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+# 
+# ====================
+# RANDOM RESOURCES
+# ====================
+#
+RandomResources:
+-  Name: IceResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [1, 2]
+   SizeMinMax: [40, 200]
+   DepthMinMax: [1, 5]
+   DroneProb: 1
+   MaxDroneCount: 2
+-  Name: TitanResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [1, 2]
+   SizeMinMax: [40, 200]
+   DepthMinMax: [1, 5]
+   DroneProb: 1
+   MaxDroneCount: 7
+# 
+# ====================
+# ASTEROID RESOURCES
+# ====================
+#
+AsteroidResources:
+-  Name: PlatinResource
+   Amount: 5000
+   InitialDelay: 1
+   Delay: 12
+   DespawnDelay: 12
+-  Name: CobaltResource
+   Amount: 5000
+   InitialDelay: 1
+   Delay: 4
+   DespawnDelay: 4
+-  Name: IronResource
+   Amount: 10000
+   InitialDelay: 2
+   Delay: 5
+   DespawnDelay: 5
+-  Name: CopperResource
+   Amount: 7500
+   InitialDelay: 2
+   Delay: 6
+   DespawnDelay: 5
+-  Name: SiliconResource
+   Amount: 1
+   InitialDelay: 7
+   Delay: 5
+   DespawnDelay: 5
+-  Name: NeodymiumResource
+   Amount: 4500
+   InitialDelay: 1
+   Delay: 6
+   DespawnDelay: 8
+-  Name: SathiumResource
+   Amount: 6500
+   InitialDelay: 4
+   Delay: 9
+   DespawnDelay: 9
+-  Name: TitanResource
+   Amount: 2500
+   InitialDelay: 3
+   Delay: 3
+   DespawnDelay: 3
+# 
+# ====================
+# POIS 
+# ====================
+#
+POIs:
+   Random:
+   -  GroupName: ZedZorgDroneBase
+      Faction: Alien
+      Territory: False
+      LevelMod: +2
+      DroneBaseSetup: DroneBaseSetup
+      Type: BA_Alien
+      CountMinMax: [1, 1]
+      IsImportant: True
+      DroneProb: 1
+      DronesMinMax: [3, 8]
+      ReserveCount: 1
+      IsCommandCenter: True
+      TroopTransport: False
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 120
+      -  Key: Music
+         Value: EnergyMatrix
+      -  Key: PersonalContainer
+         Value: "MoneyCard:33000, RawDiamond:2, LegacyEnergyCore:2"
+   -  GroupName: ZedZorgPlatform
+      Faction: Alien
+      Territory: False
+      PlanetVesselBaseSetup: PlanetVesselBaseSetup
+      Type: BA_Alien
+      CountMinMax: [1, 3]
+      DroneProb: 1
+      DronesMinMax: [1, 5]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: True
+      PlaceAt: OnWater,UnderWater
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 90
+      -  Key: Music
+         Value: EnergyMatrix
+      -  Key: PersonalContainer
+         Value: "MoneyCard:10000, ArmorHeavyEpic, LegacyEnergyCore:1"
+   -  GroupName: CrashedLaserCruiser
+      Faction: Alien
+      Territory: False
+      Type: BA_Alien
+      CountMinMax: [1, 2]
+      IsScalingCount: True
+      DroneProb: 1
+      DronesMinMax: [1, 5]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      PlaceAt: OnWater,UnderWater
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 90
+      -  Key: Music
+         Value: EnergyMatrix
+      -  Key: PersonalContainer
+         Value: "MoneyCard:1500, LegacyEnergyCore:1"
+   -  GroupName: PentaxidSpireWarbot
+      Faction: Alien
+      Territory: False
+      Type: BA_Alien
+      CountMinMax: [1, 4]
+      IsScalingCount: True
+      DroneProb: 1
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: True
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 90
+      -  Key: PersonalContainer
+         Value: "MoneyCard:3000, LegacyEnergyCore:1"
+   -  GroupName: AbandonedLumusClass
+      BiomesExcluded: [ Peaks, Dunes, Plains, Lowlands ]
+      Faction: None
+      Territory: False
+      Type: CV_Player
+      CountMinMax: [1, 2]
+      IsScalingCount: False
+      DroneProb: 1
+      DronesMinMax: [1, 1]
+      ReserveCount: 1
+      TroopTransport: False
+      InitPower: False
+      Properties:
+      -  Key: MapMarker
+         Value: Neutral
+   -  GroupName: PentaxidSpire
+      Faction: None
+      Territory: False
+      Type: BA_Alien
+      CountMinMax: [3, 8]
+      IsScalingCount: True
+      DroneProb: 1
+      DronesMinMax: [1, 2]
+      ReserveCount: 1
+      TroopTransport: True
+      Properties:
+      -  Key: MapMarker
+         Value: Neutral
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [-1500, 150, 1500]
+      RotY: 125
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+   -  Mode: Survival
+      Spawn: EscapePod
+      Pos: [0, 0, 0]
+      Items: [WaterBottle, PlayerBike, Pizza, '#FreshStart: PlantDead']
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorLight
+   -  Mode: Creative
+      SubMode: Empty
+      Spawn: EscapePod
+      Pos: [0, 0, 0]
+      Items: [MultiToolT2, MultiToolT2, MultiToolT2, '#FreshStart: PhoenixFernFonds']
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorHeavyEpic
+# 
+# ====================
+# DRONEBASE SETUP 
+# ====================
+#
+DroneBaseSetup:
+    Random:
+        - GroupName: DroneBaseSetup
+          Difficulty: 6
+          PresetStyle: 3
+          Stock:
+              - Name: DroneSmallFast01Plasma
+                Amount: 100000
+                Extra: 0
+
+              - Name: SpaceDroneLegacyLaser
+                Amount: 100000
+                Extra: 0
+
+              - Name: EnemyDroneV2Plasma
+                Amount: 100000
+                Extra: 0
+
+              - Name: EnemyDroneV2Plasma
+                Amount: Infinite
+                Extra: 1
+
+              - Name: DroneTroopsTransport01
+                Amount: Infinite
+                Extra: 2
+
+              - Name: AssaultCyborgs
+                Amount: 100000
+                Extra: 3
+
+              - Name: TurretRobotV2
+                Amount: 100000
+                Extra: 3
+
+         #  PlanetVesselBase:
+         #      Name: PlanetVesselBaseSetup
+         #      Position3D: [500, 0, -400]
+         #      BaseType: PlanetVesselBase
+         #      KeyId: 0
+         #      PlanetVessel:
+         #        - Name: ZedZorgPatrolVessel
+         #          Mission: PlanetPatrol
+         #          Faction: Alien
+         #          FixedMaxSpeed: 10
+         #          #PauseTimeOnStart: 60
+         #          RespawnDelay: 30
+         #          InitialDelay: 72
+         #          DelayBetweenRespawn: 600
+         #          DelayBeforeSelfDestruction: 300
+         #          IsRespawnAfterDestruction: True
+
+         #          RangePatrolTask:
+         #            Position3D: [500, 0, -400]
+         #            #POINameAsPositionRef: ZedZorgPlatform
+         #            Radius: 1500
+         #            DistToGround: 80
+
+         #          AttackCVCircleAround:
+         #            DistToTarget: 200
+# 
+# ====================
+# DRONEBASE SPAWNING 
+# ====================
+#
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 10]
+      Faction: Alien
+      CenterX: 500
+      Radius: 500
+
+# ==============================================================
+# ==============================================================
+
+### Creatures
+
+SpawnZones:                       # used for creating hotspots with more creatures around certain POIs and resource deposits 
+   - SpawnAt: [Strange, PentaxidSpire]           # location of the zone              
+     Radius: 500                  # radius
+     RadiusRandom: 50             # radius = radius + random(0, radiusRandom) 
+     RateMultiplyerCenter: 1.0    # how much we want to change the Amount from entities (0..1) at the center
+     RateMultiplyerEdge: 0.5      # the same as RateMultiplyerCenter but at the edge of the zone      
+     Color: "1.0, 1.0, 1.0, 1.0"  # color of circle and spawned entities in SSG
+     SpawnOnlyIfPoiIsAlien: false  # creatures will not spawn anymore if POI has been conquered
+     Entities:
+       - Names: [AlienBugs03]
+         Biomes: [Any]
+         Amount: 320
+         Period: Always
+         DelayMinMax: [1, 2]
+       - Names: [Slimes]
+         Biomes: [Any]
+         Amount: 320
+         Period: Always
+         DelayMinMax: [1, 2]
+
+# 
+# ====================
+# CREATURE SPAWNING 
+# ====================
+#
+CreatureSpawning:
+-  Biomes: [Plains, Dunes]
+   Entities:
+   -  Name: Spiders03
+      Period: Always
+      Amount: 12
+      Color: "0.29, 0, 0.51"
+   -  Name: Slimes
+      Period: Day
+      Amount: 12
+      Color: "0.29, 0, 0.51"
+-  Biomes: [Strange, Lowlands]
+   Entities:
+   -  Name: Telluropods
+      Period: Always
+      Amount: 24
+      AllowInWater: True
+      Color: "0, 0, 0.7"

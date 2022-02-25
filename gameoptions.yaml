@@ -32,6 +32,8 @@ Options:
   DiffConstrCraftTime: Faster
   DiffBpProdTime: Faster
   UndergroundBpSpawn: Always
+  DiffPlayerBackpackDrop: DropBagOnly
+  CustomPlayerTab: "Server;https://airelon87.wixsite.com/transcendanceemp"
 - ValidFor:
   - MP
   - Survival
@@ -66,3 +68,5 @@ Options:
   DiffBpProdTime: Faster
   UndergroundBpSpawn: Always
   EnableDecoKnockDown: True
+  DiffPlayerBackpackDrop: DropBagOnly
+  CustomPlayerTab: "Server;https://airelon87.wixsite.com/transcendanceemp"

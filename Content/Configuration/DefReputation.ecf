@@ -1,4 +1,4 @@
-#Transcendence WIP DefRep
+# Transcendence WIP DefRep
 # Allow to override the default reputation for all Origin based factions to NPC factions
 { Reputation Name: "Human:1"
   Zirax: 2500
@@ -184,5 +184,13 @@
   KilledMember:            "    0,     0,   -15,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0"
   DestroyBlock:            "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0"
   OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0"
+}
+{ Reputation Name: "Vladian.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    1,     0,    -1,         0,    -1,      0,         0,    1,     1,       1,     1,       1,     0,     0,     0,     0,    -1,     0" # value is multiplied with damage points
+  KilledMember:            "    2,     0,    -1,         0,    -1,      0,         0,    1,     1,       1,     1,       1,     0,     0,     0,    -1,    -2,     0"
+  DestroyBlock:            "    5,     0,    -1,         0,    -1,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,    -5,    -5,     0"
+  OpenContainer:           "    0,     0,     0,         1,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0"
   StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0"
 }

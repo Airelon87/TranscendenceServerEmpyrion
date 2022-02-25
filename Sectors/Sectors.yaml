@@ -2574,6 +2574,19 @@ SolarSystems:
           - ['0,0,0', AlphaFive Orbit, OrbitEasyNew]
         Allow: []
         Deny: []
+      #Delete after testing ZedZorg
+      - Coordinates:
+          - 64
+          - 5
+          - -64
+        Color: '1, 1, 1'
+        SectorMapType: Planet
+        Playfields:
+          - ['0,0,0', ZedZorgula, ZedZorgOG]
+          - ['0,0,0', ZedZorgula Orbit, ZedZorgOGSpace]
+        Allow: []
+        Deny: []
+        ############
       - Coordinates: [-47, 2, -22]
         Color: '1, 1, 1'
         SectorMapType: AsteroidField
