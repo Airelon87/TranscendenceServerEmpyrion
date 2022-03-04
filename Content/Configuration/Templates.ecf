@@ -5992,15 +5992,31 @@
 #  }
 #}
 
-##Old Reforged Galaxy 
-{ +Template Name: PentaxidSeedCrystal
+{ +Template Name: GoldSeedCrystal
   DeconOverride: Stop
+  OutputCount: 2
   CraftTime: 30
   Target: "FoodP"
   { Child Inputs
-    PentaxidElement: 5
-  	NutrientSolution: 1
-    AncientRelics: 1
+    GoldIngot: 8
+    PlatinOunce: 2
+    MoneyCard: 2
+    ATM: 1
+    ReportBiologicalData: 1
+    ReportEconomicData: 1
+  }
+}
+
+##Old Reforged Galaxy 
+{ +Template Name: PentaxidSeedCrystal
+  DeconOverride: Stop
+  OutputCount: 3
+  CraftTime: 30
+  Target: "FoodP"
+  { Child Inputs
+    PentaxidElement: 30
+  	NutrientSolution: 2
+    ReportBiologicalData: 1
     ReportPlanetaryResourceData: 1
   }
 }
@@ -6046,6 +6062,7 @@
     OpticalFiber: 1
     Optronics: 1
     ScienceEquipment: 1
+    ReportBiologicalData: 1
   }
 }
 { +Template Name: RangerThrusterSV
