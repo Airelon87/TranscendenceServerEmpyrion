@@ -361,6 +361,7 @@ Instance:
    PortalOpen: 30
    Cooldown: 120
    AllowBlueprints: True
+   NoVolumeWeightForPlayer: True
 RandomResources:
 -  Name: GoldResource
    IsScalingCount: True

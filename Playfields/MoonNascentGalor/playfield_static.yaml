@@ -231,7 +231,6 @@ POIs:
           Faction: Galorian  
           NoShieldReload: True
           IsCommandCenter: True
-          Biome: [ LowMountains, LowMountains_1, Moss, Mountains, HighMountains ]
           DroneBaseSetup: DroneBaseSetup
           IsImportant: True
           CountMinMax: [ 1 ]
@@ -247,7 +246,7 @@ POIs:
         - GroupName: GalorMoonSat
           Faction: Galorian  
           NoShieldReload: True
-          CountMinMax: [ 2, 2 ]
+          CountMinMax: [ 1, 2 ]
           DroneProb: 1.0
           DronesMinMax: [ 1, 2 ]
           ReserveCount: 2
@@ -275,12 +274,10 @@ POIs:
           Faction: RoboticsSyndicate    
           NoShieldReload: True
           CountMinMax: [ 1, 2 ]
-          DroneProb: 0.1
-          DronesMinMax: [ 0, 1 ]
+          DroneProb: 1
+          DronesMinMax: [ 1, 4 ]
           ReserveCount: 0
           TroopTransport: False        
-          SpawnPOINear: [DroneComputeUnit]
-          SpawnPOINearRange: [200, 700]
           Properties:  
             - Key: SI
               Value: Off
@@ -293,7 +290,6 @@ POIs:
           Faction: Galorian  
           NoShieldReload: True
           IsImportant: True
-          BiomesExcluded: [ Plains, Rocks, HighMountains ]
           PlanetVesselBaseSetup: PlanetVesselBaseSetup
           CountMinMax: [ 1, 1 ]
           DroneProb: 1.0
@@ -324,7 +320,7 @@ POIs:
         - GroupName: GalorTelecom
           Faction: Galorian  
           NoShieldReload: True
-          CountMinMax: [ 1, 2 ]
+          CountMinMax: [ 1, 4 ]
           DroneProb: 0.7
           DronesMinMax: [ 1, 2 ]
           ReserveCount: 2

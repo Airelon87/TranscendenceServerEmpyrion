@@ -5403,6 +5403,90 @@
 #=================================================
 #Transcendence Unique Items
 #=================================================
+{ +Template Name: TalonCrossbowPlayer
+  OutputCount: 1
+  CraftTime: 16 
+  Target: "AdvC"
+  { Child Inputs
+    WoodLogs: 4
+    OpticalFiber: 2
+    AlienTooth: 7
+    LaserKit: 1
+    ReportExplorationRawData: 1
+  }
+}
+
+{ +Template Name: LegacyEnergyCore
+  OutputCount: 1
+  CraftTime: 24 
+  Target: "AdvC"
+  { Child Inputs
+    PentaxidOre: 16
+    CompressedPromethium: 1
+    MagnesiumPowder: 8
+    AluminiumPowder: 4
+    ScienceEquipment: 1
+    ReportScienceRawData: 1
+  }
+}
+
+{ +Template Name: AntiMatterRod
+  DeconOverride: Stop
+  OutputCount: 64
+  CraftTime: 90 
+  Target: "AdvC"
+  { Child Inputs
+    PentaxidElement: 16
+    LegacyEnergyCore: 1
+    Nanites: 64
+    ReportScienceRawData: 1
+  }
+}
+
+{ +Template Name: AntiMatterPhaseCannonBlocks
+  CraftTime: 120 
+  Target: "AdvC"
+  { Child Inputs
+    TitanPlates: 75
+    PowerCoil: 10
+    Motor: 5
+    ZascosiumAlloy: 75
+    Oscillator: 20
+    RawDiamond: 2
+    WarbotNanotubes: 4
+    ReportScienceRawData: 1
+  }
+}
+
+{ +Template Name: ZedZorgGenerator
+  CraftTime: 720 
+  Target: "AdvC"
+  { Child Inputs
+    Motor: 1
+    EnergyMatrix: 1
+    CapacitorComponent: 1
+    MechanicalComponents: 2
+    Computer: 3
+    PlatinBar: 5
+    AluminiumCoil: 5
+    WarbotNanotubes: 4
+    LegacyEnergyCore: 20
+    ReportScienceRawData: 1
+  }
+}
+
+{ +Template Name: LegacyEnergyCoreTank
+  CraftTime: 70 #C2 Ba CV 15
+  Target: AdvC
+  { Child Inputs
+    Electronics: 20
+    TitanPlates: 30
+    Nanites: 75
+    CobaltAlloy: 40
+    Robotics: 2
+    ReportScienceRawData: 1
+  }
+}
 
 { +Template Name: GravityGeneratorSS
   CraftTime: 30 
@@ -5415,6 +5499,7 @@
     Computer: 3
     PlatinBar: 5
     AluminiumCoil: 5
+    ReportMaintenanceData: 1
   }
 }
 
@@ -5451,6 +5536,7 @@
     AluminiumCoil: 35
     Coolant: 5
     RawDiamond: 2
+    ReportMaintenanceData: 1
   }
 }
 
@@ -5465,10 +5551,12 @@
     AluminiumCoil: 25
     Coolant: 5
     RawDiamond: 1
+    ReportMaintenanceData: 1
   }
 }
 
 { +Template Name: ShieldGeneratorSuperSV
+  DeconOverride: Continue
   CraftTime: 90
   Target: "AdvC"
   { Child Inputs
@@ -5479,6 +5567,7 @@
     AluminiumCoil: 15
     Coolant: 3
     WarbotNanotubes: 1
+    ReportMaintenanceData: 1
   }
 }
 
@@ -5516,7 +5605,7 @@
     Nanotubes: 5
     EnergyMatrix: 1
     Robotics: 1
-    RawDiamond: 1
+    ReportMilitaryRawData: 1
   }
 }
 
@@ -5576,7 +5665,7 @@
     PlatinBar: 8
     CompressedZascosium: 5
     Robotics: 2
-    Coolant: 3
+    ReportAtmosphericData: 3
   }
 } 
 
@@ -5599,7 +5688,7 @@
   { Child Inputs
     MechanicalComponents: 5
     AluminiumCoil: 5
-    ScienceEquipment: 1
+    ReportBiologicalData: 1
     PistolKit: 1
     Pistol: 1
   }
@@ -5620,15 +5709,15 @@
 { Template Name: LuxuryGoods
   DeconOverride: Stop
   BaseItem: true
-  OutputCount: 1
+  OutputCount: 3
   CraftTime: 20
   Target: "SmallC,HoverC,LargeC,AdvC"
   { Child Inputs 
-    Chemicals: 10
-	  FusionCell: 5
-	  ScienceEquipment: 10
-	  PlasticMaterial: 1000
-	  PlatinBar: 1
+    Chemicals: 9
+	  FusionCell: 15
+	  ScienceEquipment: 3
+	  PlasticMaterial: 900
+	  PlatinBar: 3
   }
 }
 
@@ -5711,7 +5800,7 @@
 	  MechanicalComponents: 25
 	  Electronics: 10
     AluminiumCoil: 15
-    BioFuel: 10
+    ReportMaterialData: 1
   }
 } 
 
@@ -5803,6 +5892,7 @@
     OpticalFiber: 2
     WarbotNanotubes: 1
     Robotics: 2
+    ReportMilitaryClassified: 1
   }
 }
 
@@ -5829,6 +5919,7 @@
     OpticalFiber: 2
     WarbotNanotubes: 1
     SteelPlateArmored: 32
+    ReportMilitaryClassified: 1
   }
 }
 
@@ -5859,7 +5950,7 @@
 }
 
 { +Template Name: PlasmaCannonAlien
-  DeconOverride: Stop
+  DeconOverride: Continue
   OutputCount: 1
   CraftTime: 50
   Target: "AdvC"
@@ -5869,7 +5960,7 @@
     WarbotNanotubes: 1
     AlienTooth: 2
     PlatinBar: 10
-    EnergyMatrix: 1
+    ReportAnomalousData: 1
   }
 }
 
@@ -5882,9 +5973,8 @@
     Nanotubes: 32
     GoldIngot: 128
     SiliconIngot: 6
-    ScienceEquipment: 1
     RawDiamond: 1
-    Coolant: 1
+    ReportMilitaryClassified: 1
   }
 } 
 
@@ -5911,7 +6001,7 @@
     PentaxidElement: 5
   	NutrientSolution: 1
     AncientRelics: 1
-    ScienceEquipment: 1
+    ReportPlanetaryResourceData: 1
   }
 }
 
@@ -5968,6 +6058,7 @@
     AluminiumOre: 5
     OpticalFiber: 3
     WarbotNanotubes: 1
+    ReportMaterialData: 1
   }
 }
 
@@ -6100,3 +6191,81 @@
     Computer: 1
   }
 }
+
+#Shield Boosters
+
+#SmallShieldCapacitor
+#EpicShieldPerplexor
+#LargeShieldPerplexor
+#SmallShieldPerplexor
+
+{ +Template Name: LargeShieldCapacitor
+  DeconOverride: Continue
+  CraftTime: 20 #A1 Ba CV 1
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    GlassPlate: 32
+    SteelPlate: 24
+    OpticalFiber: 48
+    PlasticMaterial: 40
+    Electronics: 12
+    Computer: 3
+  }
+}
+
+{ +Template Name: SmallShieldCapacitor
+  DeconOverride: Continue
+  CraftTime: 20 #A1 Ba CV 1
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    GlassPlate: 8
+    SteelPlate: 6
+    OpticalFiber: 12
+    PlasticMaterial: 20
+    Electronics: 6
+    Computer: 1
+  }
+}
+
+{ +Template Name: EpicShieldPerplexor
+  DeconOverride: Continue
+  CraftTime: 20 #A1 Ba CV 1
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    GlassPlate: 32
+    SteelPlate: 24
+    OpticalFiber: 48
+    PlasticMaterial: 40
+    Electronics: 12
+    Computer: 3
+    LegacyEnergyCore: 1
+    ReportWeaponSignatures: 1
+  }
+}
+
+{ +Template Name: LargeShieldPerplexor
+  CraftTime: 20 #A1 Ba CV 1
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    GlassPlate: 32
+    SteelPlate: 24
+    OpticalFiber: 48
+    PlasticMaterial: 40
+    Electronics: 12
+    Computer: 3
+  }
+}
+
+{ +Template Name: SmallShieldPerplexor
+  CraftTime: 20 #A1 Ba CV 1
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    GlassPlate: 8
+    SteelPlate: 6
+    OpticalFiber: 12
+    PlasticMaterial: 20
+    Electronics: 6
+    Computer: 1
+  }
+}
+

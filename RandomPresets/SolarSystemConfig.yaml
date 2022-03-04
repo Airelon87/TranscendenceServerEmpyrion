@@ -19,12 +19,12 @@ GenerationParams:
      - '0 : 0.1,   1 : 0.6,  2 : 0.3'                     # 7 - Barren
   #Organizes the GasPlanets class lables and their [probability] to show up for any of the 'GasPlanets slots' drawn in the 1st Step
   PlanetLists:           # Lable name depicts, in a descriptive way, the class or global or visual approach of the playfields summarized under this lable; playfields are added in the *Types sections
-    - 'Jupiter:0.45, Saturn: 0.35, Neptun:0.2'                                                # 1 GasPlanets
-    - 'LavaLegacy:0.4'                                                                        # 2 Hot
+    - 'Jupiter:0.35, Saturn: 0.35, Neptun:0.3'                                                # 1 GasPlanets
+    - 'LavaLegacy:0.4, OceanPVE:0.3'                                                                        # 2 Hot
     - 'AridLegacy:0.3, DesertLegacy:0.2, SyndicateOG:0.5'                                     # 3 Dry
-    - 'OceanPVE:0.2, GalorianOG:0.3, HomeworldPolaris:0.3, Temperate:0.2'                     # 4 Temperate
-    - 'AlienLegacy:0.3, OceanLegacy:0.2'                                                      # 5 Alien
-    - 'SnowLegacy:0.6, TaloniaOG:0.4'                                                         # 6 Snow
+    - 'GalorianOG:0.3, HomeworldPolaris:0.3, Temperate:0.2'                     # 4 Temperate
+    - 'AlienLegacy:0.3, OceanLegacy:0.2, ZedZorgOG:0.5'                                       # 5 Alien
+    - 'SnowLegacy:1'                                                                          # 6 Snow
     - 'BarrenLegacy:0.3'                                                                      # 7 Barren
 
   POICountProbs: '0 : 0.05,  1 : 0.1,  2 : 0.1,  3 : 0.2,  4 : 0.2,  5 : 0.2,  6 : 0.1,  7 : 0.05'

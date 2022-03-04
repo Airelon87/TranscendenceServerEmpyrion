@@ -134,6 +134,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: Music
@@ -150,6 +151,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: Music
@@ -165,6 +167,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: Music
@@ -172,58 +175,58 @@ POIs:
         - Key: StationInterface
           Value: "Fuel:0.5,O2:0.5,Warp:0.5,Ammo:0.8,Repair:0.8,Shield:0.8,IfNeutral:1,IfFriendly:-0.5,IfHonored:-0.9"     #
 
-#None  - JUNKYARDS
-
-    - Type: BA_Alien
-      GroupName: JunkYardSpaceBAO
-      Faction: None
-      Mode: Survival
-      CountMinMax: [ 0, 4 ]
-      Probability: 0.3
-      InitPower: True
-      Properties:
-        - Key: MapMarker
-          Value: Neutral
-        - Key: RegenAfter
-          Value: 720
-
 # CV single
     - Type: CV_Alien
-      GroupName: JunkYardSpaceCV
+      Name: [JunkYardSpaceCV]  
+      DisplayName: JunkYardSpaceCV
       Faction: None
       Mode: Survival
-      CountMinMax: [ 0,6 ]
-      Probability: 0.3
+      SpaceDefenseProbability: 0
+      CountMinMax: [ 1,6 ]
+      Probability: 0.7
       InitPower: True
       Properties:
         - Key: MapMarker
           Value: Neutral
-        - Key: RegenAfter
-          Value: 720
 
 # SV single
     - Type: SV_Player
-      GroupName: JunkYardSpaceSV
+      Name: [JunkYardSpaceSV]  
+      DisplayName: JunkYardSpaceSV
       Faction: None
       Mode: Survival
-      CountMinMax: [ 0, 8 ]
-      Probability: 0.4
+      SpaceDefenseProbability: 0
+      CountMinMax: [ 1, 8 ]
+      Probability: 0.7
       InitPower: True
       Properties:
         - Key: MapMarker
           Value: Neutral
-        - Key: RegenAfter
-          Value: 720
+
+#ZedZorg Series Abandoned Vessel - Rare Chance
+    - Type: CV_Player
+      Name: [DamagedMyrionCruiser, DamagedEncealadesClass, DestroyedExplorerShip]
+      DisplayName: AbandonedShip
+      Faction: None
+      Mode: Survival
+      SpaceDefenseProbability: 0
+      CountMinMax: [1, 1]
+      Probability: 0.1
+      Properties:
+        - Key: MapMarker
+          Value: Neutral
 
 
 #Alien Orbital Dungeons
 
     - Type: BA_Alien
-      GroupName: BAOLegacy
+      Name: [BAOLegacy]
+      DisplayName: LegacyMainFrame
       Faction: TheLegacy
       Mode: Survival
       CountMinMax: [ 1, 2 ]
       Probability: 0.3
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties:
         - Key: RegenAfter

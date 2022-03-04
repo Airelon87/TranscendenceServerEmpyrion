@@ -248,6 +248,7 @@ Instance:
    PortalOpen: 120
    Cooldown: 60
    AllowBlueprints: True
+   NoVolumeWeightForPlayer: True
 RandomResources:
 -  Name: PentaxidResource
    IsScalingCount: False

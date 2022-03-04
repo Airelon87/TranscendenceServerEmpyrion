@@ -104,6 +104,8 @@
     Other_13: Rados, param1: "1, 1"
     Other_14: Abyssal, param1: "1, 1"
     Other_15: Ziblon, param1: "1, 1"
+    Other_16: Tesch, param1: "1, 1"
+    Other_17: Pirate, param1: "1, 1"
   }
   { Child Territory_2
     Faction: Civilian
@@ -119,7 +121,9 @@
     Other_8: Galorian, param1: "1, 1"
     Other_9: TheLegacy, param1: "1, 1"
     Other_10: Civilian, param1: "1, 1"
-    Other_11: Alien, param1: "1, 1"
+    Other_11: Ghyst, param1: "1, 1"
+    Other_12: Epsilon, param1: "1, 1"
+    Other_13: Pirate, param1: "1, 1"
   }
   { Child Territory_None  # area outside all faction territories are completely these factions
     Other_1: TheLegacy, param1: "1, 1" 
@@ -128,9 +132,13 @@
     Other_4: Abyssal, param1: "1, 1"
     Other_5: Trader, param1: "1, 1"
     Other_6: Warlord, param1: "1, 1"
-    Other_7: Civilian, param1: "1, 1"
+    Other_7: Kriel, param1: "1, 1"
     Other_8: Colonists, param1: "1, 1"
-    Other_9: Alien, param1: "1, 1"
+    Other_9: Zirax, param1: "1, 1"
+    Other_10: Galorian, param1: "1, 1"
+    Other_11: RoboticsSyndicate, param1: "1, 1"
+    Other_12: Talon, param1: "1, 1"
+    Other_13: Polaris, param1: "1, 1"
   }
 }
 

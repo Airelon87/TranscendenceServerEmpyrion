@@ -132,6 +132,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -148,6 +149,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 2 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -164,6 +166,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 2 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -172,21 +175,6 @@ POIs:
           Value: Vanguard  
         - Key: StationInterface
           Value: "Fuel:4,O2:4,Repair:8,Shield:8,IfNeutral:0,IfFriendly:-0.1,IfHonored:-0.20"
-
-#None  - JUNKYARDS
-
-    - Type: BA_Alien
-      GroupName: JunkYardSpaceBAO
-      Faction: None
-      Mode: Survival
-      CountMinMax: [ 0, 4 ]
-      Probability: 0.3
-      InitPower: True
-      Properties:
-        - Key: MapMarker
-          Value: Neutral
-        - Key: RegenAfter
-          Value: 720
  
 DroneBaseSetup:                                                # Note: not ALL possible settings are used in that config. Check +ExampleSpace folder > space_dynamic.yaml
       - FreeDrones:                                             #FreeDrones = only relevant for NPC Factions that have a galactic territory: Zirax, Polaris, Trader, Kriel, Pirates, Legacy. Will not spawn in non-territory!

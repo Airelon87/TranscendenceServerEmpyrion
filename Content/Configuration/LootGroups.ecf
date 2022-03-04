@@ -6,7 +6,7 @@
 ## Transcendence171 
 ## Jan 24 2022 
 { +LootGroup Name: Reports
-  Count: all
+  Count: "1,2"
   Item_0: ReportAnomalousData, param1: 1
   Item_1: ReportArcheologicalData, param1: 1
   Item_2: ReportAtmosphericData, param1: 1

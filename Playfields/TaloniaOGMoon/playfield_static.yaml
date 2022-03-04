@@ -2,7 +2,7 @@
 # Playfield Configuration
 # IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
 
-PlanetType: ContAr195GasGiantMoon
+PlanetType: ForestMoon
 PlayfieldType: Moon
 Difficulty: 3
 

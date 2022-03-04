@@ -1799,6 +1799,12 @@ SolarSystems:
           - ['0,0,0', Talonia, Talonia]
           - ['14500,4000,0', Talonia Moon, TaloniaMoon]
           - ['0,0,0', Talonia Sector, TaloniaOrbit]
+      # - Coordinates: [-12, 0, 15]
+      #   Color: '0.44,0.66,0.86 : 0.9,0.6,0.4'
+      #   Playfields:
+      #     - ['0,0,0', Talonish, TaloniaOG]
+      #     - ['14500,4000,0', Talonish Moon, TaloniaOGMoon]
+      #     - ['0,0,0', Talonish Sector, TaloniaOGSpaceOrbit]
       - Coordinates: [25, 2, 36]
         Color: '1, 1, 1'
         SectorMapType: AsteroidField

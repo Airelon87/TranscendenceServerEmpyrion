@@ -22,7 +22,7 @@ TemperatureNoiseFac: 0.75
 HumidityHeightFac: [0, 270]
 HumidityNoiseFac: 0.9
 
-GravityMinMax: [-11, -9]
+GravityMinMax: [-9, -9]
 AtmosphereDensityMinMax: [1.2, 1.4]
 AtmosphereO2MinMax: [0.15, 0.25]
 AtmoBreathableProb: 1
@@ -46,79 +46,79 @@ BiomeStampTries: 50
 
 
 # # ======================== SPACING AS IN PLAYFIELD DEBUG
-Presets:
-- Name: Small
-  Density: 1
-  Snow: 0
-  spawn:
-    Min: 0
-    Max: 0.300000012
-    BushPower: 2
-    Noise: 2,0.01,2,0.5
-  scale:
-    Power: 1
-    Noise: 1,0.1,2,0.5
-  Hue: -5,5,0.001
-- Name: Medium
-  Density: 1
-  Snow: 0
-  spawn:
-    Min: 0
-    Max: 0.5
-    BushPower: 2
-    Noise: 2,0.01,2,0.5
-  scale:
-    Power: 1
-    Noise: 1,0.1,2,0.5
-  Hue: -5,5,0.001
-- Name: Large
-  Density: 1
-  Snow: 0
-  spawn:
-    Min: 0.349999994
-    Max: 0.699999988
-    BushPower: 2
-    Noise: 2,0.01,2,0.5
-  scale:
-    Power: 1
-    Noise: 1,0.1,2,0.5
-  Hue: -5,5,0.001
-- Name: Ultra
-  Density: 1
-  Snow: 0
-  spawn:
-    Min: 0
-    Max: 0.800000012
-    BushPower: 1
-    Noise: 2,0.01,2,0.5
-  scale:
-    Power: 1
-    Noise: 1,0.1,2,0.5
-  Hue: -5,5,0.001
-- Name: Total
-  Density: 1
-  Snow: 0
-  spawn:
-    Min: 0
-    Max: 1
-    BushPower: 1
-    Noise: 2,0.01,2,0.5
-  scale:
-    Power: 1
-    Noise: 1,0.1,2,0.5
-  Hue: -5,5,0.001
-- Name: Snow
-  Density: 1
-  Snow: 5
-  spawn:
-    Min: 0
-    Max: 0.800000012
-    BushPower: 1
-    Noise: 1,0.1,2,0.5
-  scale:
-    Power: 1
-    Noise: 1,0.1,2,0.5
-  Hue: 0,0,0.001
+# #Presets:
+# - Name: Small
+#   Density: 1
+#   Snow: 0
+#   spawn:
+#     Min: 0
+#     Max: 0.300000012
+#     BushPower: 2
+#     Noise: 2,0.01,2,0.5
+#   scale:
+#     Power: 1
+#     Noise: 1,0.1,2,0.5
+#   Hue: -5,5,0.001
+# - Name: Medium
+#   Density: 1
+#   Snow: 0
+#   spawn:
+#     Min: 0
+#     Max: 0.5
+#     BushPower: 2
+#     Noise: 2,0.01,2,0.5
+#   scale:
+#     Power: 1
+#     Noise: 1,0.1,2,0.5
+#   Hue: -5,5,0.001
+# - Name: Large
+#   Density: 1
+#   Snow: 0
+#   spawn:
+#     Min: 0.349999994
+#     Max: 0.699999988
+#     BushPower: 2
+#     Noise: 2,0.01,2,0.5
+#   scale:
+#     Power: 1
+#     Noise: 1,0.1,2,0.5
+#   Hue: -5,5,0.001
+# - Name: Ultra
+#   Density: 1
+#   Snow: 0
+#   spawn:
+#     Min: 0
+#     Max: 0.800000012
+#     BushPower: 1
+#     Noise: 2,0.01,2,0.5
+#   scale:
+#     Power: 1
+#     Noise: 1,0.1,2,0.5
+#   Hue: -5,5,0.001
+# - Name: Total
+#   Density: 1
+#   Snow: 0
+#   spawn:
+#     Min: 0
+#     Max: 1
+#     BushPower: 1
+#     Noise: 2,0.01,2,0.5
+#   scale:
+#     Power: 1
+#     Noise: 1,0.1,2,0.5
+#   Hue: -5,5,0.001
+# - Name: Snow
+#   Density: 1
+#   Snow: 5
+#   spawn:
+#     Min: 0
+#     Max: 0.800000012
+#     BushPower: 1
+#     Noise: 1,0.1,2,0.5
+#   scale:
+#     Power: 1
+#     Noise: 1,0.1,2,0.5
+#   Hue: 0,0,0.001
 
 Biomes: 
   - Name: DeepWater
@@ -133,23 +133,23 @@ Biomes:
      - Height < SeaLevel - 17  
     Color: [0, 0, 1]
     Decorations:
-               - [ Trumpet, 0.01, Large, 1.00 ]
-               - [ Hydrilla, 0.001, Large, 1.00 ]
-               - [ SeaWeed02-04, 0.001, Large, 1.00 ]
-               - [ MoundzTree, 0.001, Large, 1.00 ]
+               - [ Trumpet, 0.01, Tree ] # 1.00 ]
+               - [ Hydrilla, 0.001, Tree ] # 1.00 ]
+               - [ SeaWeed02-04, 0.001, Tree ] # 1.00 ]
+               - [ MoundzTree, 0.001, Tree ] # 1.00 ]
     Grass:
                - Name: Seaweed02
                  Density: 0.80
                  YScale: 1.60
-                 Preset: GrassDense
+                 #Preset: GrassDense
                - Name: Seaweed03
                  Density: 0.05
                  YScale: 1.40
-                 Preset: GrassDense
+                 #Preset: GrassDense
                - Name: Seaweed05
                  Density: 0.05
                  YScale: 1.50
-                 Preset: GrassDense
+                 #Preset: GrassDense
 
 # ==============================================================
   - Name: Water
@@ -165,16 +165,16 @@ Biomes:
     - Height < SeaLevel - 7          
     Color: [0.2, 0.2, 1]
     Decorations:
-               - [ Alien_Shroom_plant1_3, 0.001, Small, 1.00 ]
+               - [ Alien_Shroom_plant1_3, 0.001, Plant ] # 1.00 ]
     Grass:
                - Name: Seaweed02
                  Density: 0.80
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Seaweed03
                  Density: 0.05
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
                  
 # ==============================================================
@@ -191,18 +191,18 @@ Biomes:
     - Height < SeaLevel  
     Color: [0.4, 0.4, 1]
     Decorations:
-               - [ RockGrey01Large, 0.002, Free, 1.00 ]
-               - [ RockGrey02Large, 0.002, Free, 1.00 ]
-               - [ RockResourceSilicon, 0.004, Free, 1.00 ]
+               - [ RockGrey01Large, 0.002, Free ] # 1.00 ]
+               - [ RockGrey02Large, 0.002, Free ] # 1.00 ]
+               - [ RockResourceSilicon, 0.004, Free ] # 1.00 ]
     Grass:
                - Name: GrassGreen01
                  Density: 1.00
                  YScale: 0.50
-                 Preset: Total
+                 #Preset: Total
                - Name: Seaweed03
                  Density: 0.10
                  YScale: 0.70
-                 Preset: Total
+                 #Preset: Total
                
 # ==============================================================
   - Name: Pole
@@ -236,10 +236,10 @@ Biomes:
     - Height > 300
     Color: [1, 1, 1]
     Decorations:
-               - [ RealRock1, 0.005, Snow, 3.00 ]
-               - [ RealRock8, 0.001, Snow, 3.00 ]
-               - [ _Spruce_Norway_Desktop_1_Field_Fall, 0.001, Snow, 4.00 ]
-               - [ _Spruce_Norway_Desktop_1_Field_Spring, 0.001, Snow, 4.00 ]
+               - [ RealRock1, 0.005, Free ] # 3.00 ]
+               - [ RealRock8, 0.001, Free ] # 3.00 ]
+               - [ Bamboo, 0.001, Free ] # 4.00 ]
+               - [ Fern, 0.001, Free ] # 4.00 ]
     Grass:
 
 # ==============================================================    
@@ -258,13 +258,13 @@ Biomes:
     - Height > 180
     Color: [0.9, 0.9, 0.9]
     Decorations:
-               - [ _Spruce_Norway_Desktop_1_Field_Fall, 0.005, Snow, 3.00 ]
-               - [ _Spruce_Norway_Desktop_1_Field_Spring, 0.005, Snow, 1.00 ]
+               - [ Fern, 0.005, Free ] # 3.00 ]
+               - [ CoconutTree, 0.005, Free ] # 1.00 ]
     Grass:
                - Name: GrassGreen06Snow
                  Density: 0.02
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 # ==============================================================      
   - Name: HighMountains
@@ -282,12 +282,12 @@ Biomes:
     - Height > 160
     Color: [0.8, 0.8, 0.8]
     Decorations:
-               - [ Alien_Shroom_plant1_3, 0.001, Small, 1.00 ]
+               - [ CattailWinter, 0.001, Plant ] # 1.00 ]
     Grass:
                - Name: GrassBrown06
                  Density: 0.10
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 # # ==============================================================
   - Name: Mountains 
@@ -308,17 +308,17 @@ Biomes:
     - CraterLava_3_BM, 0.8 
 
     Decorations:
-               - [ _Pine_Eastern_White_Desktop_Forest_Spring, 0.005, Small, 2.00 ]
-               - [ _Pine_Eastern_White_Desktop_Forest_Fall, 0.005, Small, 2.00 ]
+               - [ WeepingPalm1, 0.005, Plant ] # 2.00 ]
+               - [ WeepingPalm3, 0.005, Plant ] # 2.00 ]
     Grass:
                - Name: GrassBrown06
                  Density: 0.50
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Plant01Brown
                  Density: 0.001
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 # # ==============================================================
   - Name: LowMountains
@@ -350,21 +350,21 @@ Biomes:
     - Volcanic_04, 0.4
     
     Decorations:
-               - [ _Birch_River_Desktop_2_Forest_Spring, 0.005, Medium, 1.00 ]
-               - [ _Birch_Paper_Desktop_Field_Spring, 0.001, Ultra, 2.00 ]
+               - [ ElderberryBush, 0.005, BigPlant ] # 1.00 ]
+               - [ ChineseBanyan, 0.001, BigPlant ] # 2.00 ]
     Grass:
                - Name: GrassGreen03
                  Density: 1.00
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Grass07
                  Density: 0.02
                  YScale: 0.80
-                 Preset: Total
+                 #Preset: Total
                - Name: Grass14
                  Density: 0.015
                  YScale: 0.80
-                 Preset: Total
+                 #Preset: Total
 
 # ==============================================================
   - Name: WaterSwamp
@@ -384,25 +384,25 @@ Biomes:
     Color: [0, 1, 0.2]    
     
     Decorations:
-               - [ Alien_Tree_02_1, 0.001, Ultra, 4.00 ]
-               - [ Alien_Tree_04_1, 0.001, Medium, 4.00 ]
-               - [ Alien_Plant_01_2, 0.001, Medium, 2.00 ]
-               - [ Alien_Plant_01_1, 0.001, Medium, 4.00 ]
-               - [ Alien_Plant_02_2, 0.001, Medium, 4.00 ]
-               - [ Alien_Plant_9, 0.001, Large, 2.00 ]
+               - [ Bamboo, 0.001, BigPlant ] # 4.00 ]
+               - [ BulbShroom, 0.001, BigPlant ] # 4.00 ]
+               - [ Snakeweed, 0.001, BigPlant ] # 2.00 ]
+               - [ Cactus1, 0.001, BigPlant ] # 4.00 ]
+               - [ RockResourcePromethium, 0.001, Plant ] # 1.00 ]
+               - [ Alien_Plant_9, 0.001, Tree ] # 2.00 ]
     Grass:
                - Name: Reeds01
                  Density: 0.60
                  YScale: 0.50
-                 Preset: Total
+                 #Preset: Total
                - Name: Reeds01
                  Density: 0.20
                  YScale: 0.70
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen01a
                  Density: 0.30
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 # ==============================================================
   - Name: Beach
@@ -420,18 +420,18 @@ Biomes:
     Color: [0.9, 0.9, 0]  
     
     Decorations:
-               - [ _Palm_Coconut_Desktop_2_Spring, 0.001, Medium, 5.00 ]
-               - [ _Palm_Coconut_Desktop_2_Fall, 0.001, Medium, 8.00 ]
-               - [ _Dracaena_Sapling_Desktop_Fall, 0.005, Large, 6.00 ]
+               - [ Snakeweed, 0.001, Plant ] # 5.00 ]
+               - [ FantasyPlant2, 0.001, BigPlant ] # 8.00 ]
+               - [ AlienPalmTree, 0.005, Tree ] # 6.00 ]
     Grass:
                - Name: Grass03
                  Density: 1.00
                  YScale: 0.40
-                 Preset: Large
+                 #Preset: Large
                - Name: GrassBrown01
                  Density: 0.10
                  YScale: 0.70
-                 Preset: Large
+                 #Preset: Large
 
 # # ==============================================================
   - Name: Radiated
@@ -456,24 +456,24 @@ Biomes:
                - DunesSea_01  
     
     Decorations:
-               - [ Alien_Shroom_plant1_3, 0.001, Small, 1.00 ]
+               - [ BigFlower, 0.001, Plant ] # 1.00 ]
     Grass:
                - Name: GrassBrown04a
                  Density: 1.00
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassBrown02d
                  Density: 0.25
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: FlowerBlue01
                  Density: 0.008
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Plant01a
                  Density: 0.05
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 
 
@@ -492,13 +492,13 @@ Biomes:
     - Temperature < 3
     Color: [1, 1, 1]
     Decorations:  
-               - [ Alien_Shroom_plant1_3, 0.001, Small, 1.00 ]
+               - [ RockResourceGold, 0.001, Plant ] # 1.00 ]
 
     Grass:
                - Name: GrassGreen06Snow
                  Density: 0.0500000007
                  YScale: 0
-                 Preset: Total
+                 #Preset: Total
 
 
 
@@ -521,22 +521,23 @@ Biomes:
     - Pingo_01, 0.9
 
     Decorations:
-               - [ Alien_Shroomtree_02_2, 0.001, Small, 8.00 ]
-               - [ Alien_ShroomTree_01_3, 0.001, Medium, 1.00 ]
-               - [ Alien_ShroomTree_01_2, 0.008, Medium, 1.00 ]
+               - [ CornDogBushSnow, 0.001, Plant ] # 5.00 ]
+               - [ PixieStalksSnow, 0.001, Plant ] # 3.00 ]
+               - [ BushWinter01, 0.001, BigPlant ] # 1.00 ]
+               - [ BushWinter03, 0.008, BigPlant ] # 1.00 ]
     Grass:
                - Name: GrassBrown06
                  Density: 1.00
                  YScale: 0.00
-                 Preset: Large
+                 #Preset: Large
                - Name: Plant01Brown
                  Density: 0.20
                  YScale: 0.00
-                 Preset: Medium
+                 #Preset: Medium
                - Name: Plant01
                  Density: 0.20
                  YScale: 0.00
-                 Preset: Ultra
+                 #Preset: Ultra
 
 
 # # ==============================================================
@@ -554,21 +555,21 @@ Biomes:
     - CraterLava_3_BM, 1
     
     Decorations:
-               - [ Alien_Dead_trunk_01, 0.007, Large, 8.00 ]
-               - [ Alien_Plant_06_1, 0.005, Large, 8.00 ]
+               - [ BushWinter01, 0.001, BigPlant ] # 1.00 ]
+               - [ BushWinter03, 0.008, BigPlant ] # 1.00 ]
     Grass:
                - Name: GrassGreen02
                  Density: 1.50
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen03
                  Density: 0.80
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Flower04
                  Density: 0.01
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 
 
@@ -590,34 +591,34 @@ Biomes:
     Color: [0, 0.2, 0]
 
     Decorations:
-               - [ Alien_Tree_04_2, 0.001, Small, 2.00 ]
-               - [ Alien_Tree_04_3, 0.001, Medium, 3.00 ]
-               - [ Alien_Tree_04_1, 0.001, Large, 2.00 ]
-               - [ Alien_Plant_02_1, 0.001, Large, 8.00 ]
-               - [ Alien_Fern1, 0.01, Ultra, 2.00 ]
-               - [ Alien_Ground_Cover1, 0.005, Ultra, 8.00 ]
-               - [ Alien_Plant_10_2, 0.01, Ultra, 3.00 ]
+               - [ EggPlant, 0.001, Plant ] # 2.00 ]
+               - [ BananaBush, 0.001, BigPlant ] # 3.00 ]
+               - [ BushGreen02, 0.001, Tree ] # 2.00 ]
+               - [ WeepingPalm3, 0.001, Tree ] # 8.00 ]
+               - [ Fern, 0.01, BigPlant ] # 2.00 ]
+               - [ Mushroom2, 0.005, BigPlant ] # 8.00 ]
+               - [ Alien_Plant_10_2, 0.01, BigPlant ] # 3.00 ]
     Grass:
                - Name: GrassGreen02
                  Density: 0.70
                  YScale: 0.00
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: GrassGreen02
                  Density: 0.20
                  YScale: 0.00
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: GrassBrown06
                  Density: 0.80
                  YScale: 0.00
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: GrassBrown06
                  Density: 0.20
                  YScale: 0.70
-                 Preset: Total
+                 #Preset: Total
                - Name: Reeds01
                  Density: 0.30
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 
 # ==============================================================
@@ -637,20 +638,21 @@ Biomes:
     Color: [0.55, 0.65, 0.1]
 
     Decorations:
-               - [ Alien_Shroom_plant1_3, 0.001, Small, 1.00 ]
+               - [ EggPlant, 0.001, Plant ] # 1.00 ]
+               - [ OmicronWaterleaf, 0.001, Plant ] # 1.00 ]
     Grass:
                - Name: GrassBrown02c
                  Density: 0.90
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassBrown05
                  Density: 0.10
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen04
                  Density: 0.20
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 
 
@@ -679,27 +681,27 @@ Biomes:
                - Valley_3, 0.3    
 
     Decorations:
-               - [ OmicronPlant, 0.005, Small, 2.00 ]
-               - [ AlienDesertPlant, 0.005, Small, 2.00 ]
-               - [ OmicronPalm, 0.005, Large, 2.00 ]
-               - [ Alien_Tree_08, 0.002, Large, 6.00 ]
+               - [ OmicronPlant, 0.005, Plant ] # 2.00 ]
+               - [ AlienDesertPlant, 0.005, Plant ] # 2.00 ]
+               - [ OmicronPalm, 0.005, Tree ] # 2.00 ]
+               - [ BallFlower03, 0.002, Tree ] # 6.00 ]
     Grass:
                - Name: GrassGreen01
                  Density: 0.90
                  YScale: 0.00
-                 Preset: Large
+                 #Preset: Large
                - Name: GrassGreen01a
                  Density: 0.90
                  YScale: 0.00
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: GrassBrown05
                  Density: 0.05
                  YScale: 0.70
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: Flower18
                  Density: 0.05
                  YScale: 0.60
-                 Preset: Medium
+                 #Preset: Medium
 
 
 # ============================================================== 
@@ -718,18 +720,18 @@ Biomes:
     Color: [0.9, 0.8, 0]    
 
     Decorations:
-               - [ Alien_Shroomtree_02_1, 0.002, Small, 8.00 ]
-               - [ Alien_Plant_8_4, 0.005, Medium, 4.00 ]
-               - [ Alien_Plant_14, 0.005, Medium, 4.00 ]
+               - [ SeaWeed02-04, 0.002, Plant ] # 8.00 ]
+               - [ OmicronWaterleaf, 0.005, Plant ] # 4.00 ]
+               - [ RockResourceZascosium, 0.005, Plant ] # 4.00 ]
     Grass:
                - Name: GrassGreen03
                  Density: 1.00
                  YScale: 0.60
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: Flower03
                  Density: 0.10
                  YScale: 0.80
-                 Preset: Ultra
+                 #Preset: Ultra
 
 
 # ============================================================== 
@@ -747,22 +749,22 @@ Biomes:
     Color: [0.7, 0.7, 0.06] 
 
     Decorations:
-               - [ Alien_Plant_9, 0.008, Medium, 2.00 ]
-               - [ Alien_Plant_14, 0.005, Large, 8.00 ]
-               - [ Alien_Plant_02_1, 0.005, Large, 8.00 ]
+               - [ AlienPlantSpike1, 0.008, BigPlant ] # 2.00 ]
+               - [ Cactus1, 0.005, Tree ] # 8.00 ]
+               - [ ElderberryBushRed, 0.005, Tree ] # 8.00 ]
     Grass:
                - Name: GrassBrown02c
                  Density: 1.50
                  YScale: 0.95
-                 Preset: Large
+                 #Preset: Large
                - Name: GrassBrown02c
                  Density: 0.10
                  YScale: 1.10
-                 Preset: Large
+                 #Preset: Large
                - Name: GrassBrown04
                  Density: 1.00
                  YScale: 0.00
-                 Preset: Ultra
+                 #Preset: Ultra
 
 
 # ==============================================================
@@ -788,27 +790,27 @@ Biomes:
     Color: [0, 0.3, 0]
 
     Decorations:
-               - [ _Redwood_Sierra_Desktop_Forest, 0.0005, Medium, 8.00 ]
-               - [ _Pine_Eastern_White_Desktop_Forest_Fall, 0.003, Medium, 4.00 ]
-               - [ Alien_Tree_Small_07_2, 0.001, Medium, 2.00 ]
-               - [ _Redwood_Sierra_Seedling, 0.05, Small, 8.00 ]
+               - [ RiverBirch, 0.0005, BigPlant ] # 8.00 ]
+               - [ BigFlower, 0.003, BigPlant ] # 4.00 ]
+               - [ Rainforest, 0.001, Tree ] # 2.00 ]
+               - [ MushroomTallBlue02, Plant ] # 8.00 ]
     Grass:
                - Name: GrassGreen07
                  Density: 1.00
                  YScale: 0.50
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen04
                  Density: 1.00
                  YScale: 0.00
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: Flower20
                  Density: 0.05
                  YScale: 0.70
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: Grass25
                  Density: 0.05
                  YScale: 1.00
-                 Preset: Ultra
+                 #Preset: Ultra
 
 
 
@@ -829,24 +831,24 @@ Biomes:
     Color: [1, 0, 0]  
     
     Decorations:
-               - [ Alien_Shroom_plant1_3, 0.001, Small, 1.00 ]
+               - [ CornDogBush, 0.001, Plant ] # 1.00 ]
     Grass:
                - Name: GrassBrown04
                  Density: 1.00
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassBrown06
                  Density: 0.90
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Plant01Brown
                  Density: 0.05
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Flower02
                  Density: 0.15
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 
 
@@ -879,36 +881,37 @@ Biomes:
                - Volcanic_03_LO, 0.3
 
     Decorations:
-               - [ _Maple_Red_Hero_Field_Spring, 0.002, Small, 4.00 ]
-               - [ _Birch_Paper_Sapling_Small_Spring, 0.002, Medium, 6.00 ]
-               - [ _Shagbark_Hickory_Desktop_2_Forest_Spring, 0.0005, Small, 6.00 ]
-               - [ _Shagbark_Hickory_Seedling_Spring, 0.005, Medium, 6.00 ]
-               - [ _Birch_River_Desktop_2_Forest_Spring, 0.002, Medium, 3.00 ]
+               - [ AlienPlant05, 0.002, Plant ] # 4.00 ]
+               - [ AkuaFern, 0.002, BigPlant ] # 6.00 ]
+               - [ RiverBirch, 0.0005, BigPlant ] # 8.00 ]
+               - [ BigFlower, 0.003, BigPlant ] # 4.00 ]
+               - [ Rainforest, 0.001, Tree ] # 2.00 ]
+               - [ LavaPlant2, Plant ] # 8.00 ]
     Grass:
                - Name: GrassGreen07
                  Density: 0.90
                  YScale: 0.00
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: GrassGreen08
                  Density: 0.95
                  YScale: 0.00
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: Plant02
                  Density: 0.05
                  YScale: 1.00
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: Flower05
                  Density: 0.01
                  YScale: 1.00
-                 Preset: Ultra
+                 #Preset: Ultra
                - Name: Grass25
                  Density: 0.10
                  YScale: 1.00
-                 Preset: Small
+                 #Preset: Small
                - Name: Flower18
                  Density: 0.01
                  YScale: 0.60
-                 Preset: Large
+                 #Preset: Large
 
 
 
@@ -932,28 +935,28 @@ Biomes:
                - Hollow_01_SUB, 1 
 
     Decorations:
-               - [ Alien_Shroom_plant1_3, 0.001, Small, 1.00 ]
+               - [ LavaPlant2, 0.001, Plant ] # 1.00 ]
     Grass: 
                - Name: GrassBrown02c
                  Density: 0.800000012
                  YScale: 0
-                 Preset: Total
+                 #Preset: Total
                - Name: Flower05
                  Density: 0.200000003
                  YScale: 0
-                 Preset: Total
+                 #Preset: Total
                - Name: Flower04
                  Density: 0.00999999978
                  YScale: 0
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassBrown06
                  Density: 0.200000003
                  YScale: 0
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassFern
                  Density: 0.00100000005
                  YScale: 0
-                 Preset: Total
+                 #Preset: Total
 
 
 # ==============================================================
@@ -984,25 +987,26 @@ Biomes:
 
                
     Decorations:
-               - [ _Oak_White_Desktop_Field_2_Spring, 0.001, Medium, 2.00 ]
-               - [ _Shagbark_Hickory_Seedling_Spring, 0.005, Medium, 16.00 ]
+               - [ DesertPlant20, BigPlant ] # 2.00 ]
+               - [ Snakeweed, 0.005, BigPlant ] # 4.00 ]
+               - [ RockResourceCobalt, 0.005, Plant ] # 1.00 ]
     Grass:
                - Name: GrassGreen02
                  Density: 1.50
                  YScale: 0.30
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen03
                  Density: 0.80
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Grass15
                  Density: 1.00
                  YScale: 0.40
-                 Preset: Large
+                 #Preset: Large
                - Name: Flower04
                  Density: 1.00
                  YScale: 0.50
-                 Preset: Medium
+                 #Preset: Medium
 
 
 # ==============================================================
@@ -1025,38 +1029,38 @@ Biomes:
     
     AmbientSound: OpenPlains
     Decorations:
-               - [ Alien_Plant_06_1, 0.0005, Large, 4.00 ]
-               - [ Alien_Plant_11_1, 0.003, Large, 2.00 ]
-               - [ Alien_Plant_11_2, 0.003, Large, 3.00 ]
-               - [ Alien_Plant_15B, 0.001, Small, 5.00 ]
-               - [ Alien_Plant_15C, 0.001, Small, 5.00 ]
-               - [ Alien_Plant_16, 0.001, Small, 2.00 ]
-               - [ Alien_Plant_14, 0.005, Large, 2.00 ]
+               - [ ElderberryBushRed, 0.0005, Tree ] # 4.00 ]
+               - [ BallTree, 0.003, Tree ] # 2.00 ]
+               - [ AlienPlantWorm1, 0.003, Tree ] # 3.00 ]
+               - [ RockResourceNeodymium, 0.001, Plant ] # 5.00 ]
+               - [ RockResourceSilicon, 0.001, Plant ] # 5.00 ]
+               - [ ScalyPods, 0.001, Plant ] # 2.00 ]
+               - [ Alien_Plant_14, 0.005, Tree ] # 2.00 ]
     Grass:
                - Name: Flower01
                  Density: 0.005
                  YScale: 0.80
-                 Preset: Large
+                 #Preset: Large
                - Name: Flower02
                  Density: 0.005
                  YScale: 0.90
-                 Preset: Large
+                 #Preset: Large
                - Name: Flower04
                  Density: 0.01
                  YScale: 0.90
-                 Preset: Large
+                 #Preset: Large
                - Name: GrassGreen02
                  Density: 1.80
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen03
                  Density: 1.00
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Flower13
                  Density: 0.005
                  YScale: 1.00
-                 Preset: Large
+                 #Preset: Large
 
 
 
@@ -1084,27 +1088,27 @@ Biomes:
                - Name: GrassGreen02
                  Density: 0.30
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen02
                  Density: 1.50
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen03
                  Density: 0.10
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen02
                  Density: 1.00
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Flower05
                  Density: 0.18
                  YScale: 0.60
-                 Preset: Total
+                 #Preset: Total
                - Name: Flower05
                  Density: 0.02
                  YScale: 0.80
-                 Preset: Total
+                 #Preset: Total
 
 
 # ==============================================================
@@ -1127,29 +1131,29 @@ Biomes:
      - StarterGroves_1
     
     Decorations:
-               - [ Alien_Tree_02_1, 0.001, Medium, 5.00 ]
-               - [ Alien_Tree_04_2, 0.001, Medium, 3.00 ]
+               - [ AlienPlantWorm1, 0.001, BigPlant ] # 5.00 ]
+               - [ ElderberryBush, 0.001, BigPlant ] # 3.00 ]
     Grass:
                - Name: GrassGreen07
                  Density: 0.90
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassGreen08
                  Density: 0.95
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassFern
                  Density: 0.02
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Plant02
                  Density: 0.05
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Flower05
                  Density: 0.005
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 
 
 
@@ -1177,22 +1181,24 @@ Biomes:
     Stamps:
                - DunesSea_01b
     Decorations:
-               - [ Alien_Shroom_plant1_3, 0.001, Small, 1.00 ]
+               - [ RockResourceSathium, 0.001, Plant ] # 1.00 ]
+               - [ RockResourceErestrum, 0.001, Plant ] # 1.00 ]
+               - [ RockResourceZascosium, 0.001, Plant ] # 1.00 ]
     Grass:
                - Name: GrassBrown04a
                  Density: 1.00
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: GrassBrown02d
                  Density: 0.25
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: FlowerBlue01
                  Density: 0.008
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
                - Name: Plant01a
                  Density: 0.05
                  YScale: 0.00
-                 Preset: Total
+                 #Preset: Total
 

@@ -172,9 +172,9 @@ RandomResources:
       DroneProb: 0.7
       MaxDroneCount: 2
       DepthMinMax: [ 0, 1 ]
-      DistTypeCylinder:
-        MaxRadius: 13
-        YVariance: 10
+      # DistTypeCylinder:
+        # MaxRadius: 13
+        # YVariance: 10
 
     - Name: PentaxidResource      
       Biome: [Hotspot, RadiatedFog]
@@ -184,9 +184,9 @@ RandomResources:
       DroneProb: 0.7
       MaxDroneCount: 2
       DepthMinMax: [ 0, 5 ]
-      DistTypeCylinder:
-        MaxRadius: 13
-        YVariance: 10
+      # DistTypeCylinder:
+        # MaxRadius: 13
+        # YVariance: 10
 
     - Name: SathiumResource #rich      
       Biome: [Hotspot, RadiatedFog]
@@ -231,7 +231,7 @@ POIs:
             - Key: Music
               Value: lava2  
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
         - GroupName: PlanetVesselBase
           Faction: Zirax  
@@ -245,10 +245,10 @@ POIs:
             - Key: Music
               Value: lava
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # ================================
-       # Trading Station with CivilSettlements
+       # Trading Station with Settlements
         - GroupName: TS_Planet
           Faction: Polaris  
           NoShieldReload: True
@@ -260,6 +260,8 @@ POIs:
           Properties:  
             - Key: Music
               Value: SunnySkies 
+            - Key: RegenAfter
+              Value: 720 
 
         - GroupName: PolarisSettlement
           Faction: Polaris  
@@ -270,7 +272,7 @@ POIs:
           SpawnPOINearRange: [150, 250]  
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
  
         - GroupName: PolarisDefence
           Faction: Polaris    
@@ -281,23 +283,23 @@ POIs:
           SpawnPOINearRange: [300, 400] 
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
 # Civilians
 
         - GroupName: CivilSettlement 
           Territory: False
-          Faction: None
+          Faction: Colonists
           NoShieldReload: True
           CountMinMax: [ 3, 4 ]
           Properties:  
             - Key: RegenAfter
-              Value: 120 
+              Value: 720 
 
        # ================================
        # Military Xenu Large Bunker in fog with ruins around
         - GroupName: XenuBunker
-          Faction: Xenu
+          Faction: Xenu  
           NoShieldReload: True
           IsImportant: True
           Biome: [ Hotspot, RadiatedFog ]
@@ -308,7 +310,7 @@ POIs:
           TroopTransport: True
           Properties:
             - Key: RegenAfter
-              Value: 120
+              Value: 720
       # Ruins
         - GroupName: Ruins
           Faction: None  
@@ -319,7 +321,7 @@ POIs:
             - Key: MapMarker
               Value: Neutral
             - Key: RegenAfter
-              Value: 120
+              Value: 720
        # ================================
        # Defense of PlanetVesselBase
        # Auxiliary Buildings
@@ -335,7 +337,7 @@ POIs:
           SpawnPOINearRange: [150, 250]
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # Defense Buildings
         - GroupName: XenuDefenceT2
@@ -350,7 +352,7 @@ POIs:
           SpawnPOINearRange: [300, 500]
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # ================================
        # Defense of Drone Base
@@ -369,7 +371,7 @@ POIs:
           SpawnPOINearRange: [200, 300]
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
        # Defense Buildings
         - GroupName: XenuDefenceT2
           Faction: Xenu  
@@ -383,7 +385,7 @@ POIs:
           SpawnPOINearRange: [200, 300]
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
 # Kriel
 
@@ -395,7 +397,7 @@ POIs:
             - Key: Music
               Value: AlteredPhase
             - Key: RegenAfter
-              Value: 120 
+              Value: 720 
 
         - GroupName: KrielDefenseT1 
           Faction: Kriel    
@@ -405,7 +407,7 @@ POIs:
             - Key: Music
               Value: AlteredPhase
             - Key: RegenAfter
-              Value: 120 
+              Value: 720 
 
 # Pirates
 
@@ -416,7 +418,7 @@ POIs:
      #     IsImportant: True
           Properties:  
             - Key: RegenAfter
-              Value: 120 
+              Value: 720 
 
        # ================================
        # Various POIs scattered around planet 
@@ -432,6 +434,20 @@ POIs:
             - Key: Music
               Value: DarkSoundscape
 
+        - GroupName: CrashedShipLargeDesert      # Tilded, large variant BA_CrashedCV_4 !
+          Faction: None  
+          CountMinMax: [ 1, 1 ]
+          IsScalingCount: True
+          DroneProb: 0.8
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 4
+          TroopTransport: False
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 720
+
         - GroupName: CrashedShip      # Only use regeneration with burried POIs if LandClaimZone: Device is set in playfield.yaml  
           Faction: None  
           CountMinMax: [ 1, 2 ]
@@ -444,7 +460,7 @@ POIs:
             - Key: MapMarker
               Value: Neutral
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # Alien Artifacts
         - GroupName: Artifacts
@@ -457,7 +473,7 @@ POIs:
             - Key: Music
               Value: EvilWhispering
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # Alien Artifacts - Floating
         - GroupName: ArtifactsFloating
@@ -473,7 +489,7 @@ POIs:
             - Key: SI
               Value: Off
             - Key: RegenAfter
-              Value: 120
+              Value: 720
        # ================================
        # Military Xenu POIs scattered around planet 
         - GroupName: XenuAuxT2
@@ -489,7 +505,7 @@ POIs:
           SpawnPOIAvoidDistance: 4000
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # ================================
 
@@ -560,7 +576,7 @@ DroneBaseSetup:
               BaseType: PlanetVesselBase
               KeyId: 0
               PlanetVessel:
-                - Name: Patrol-S-Medium
+                - Name: PVZiraxT2
                   Mission: PlanetPatrol
                   FixedMaxSpeed: 5
                   RespawnDelay: 12
@@ -668,7 +684,7 @@ SpawnZones:
 CreatureSpawning:
     - Biomes: [Hotspot, RadiatedFog]
       Entities:
-        - Name: AlienAssassinReds
+        - Name: AlienAssassinGreysInfected
           Period: Always
           Amount: 30
           DelayMinMax: [10, 20]

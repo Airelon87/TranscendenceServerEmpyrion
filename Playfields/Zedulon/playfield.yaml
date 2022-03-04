@@ -335,6 +335,8 @@ Instance:
    PortalOpen: 480
    Cooldown: 480
    DropInventory: True
+   NoVolumeWeightForPlayer: True
+   EnterWithEmptyInventory: True
 IndestructibleTerrain: True
 RandomResources:
 -  Name: PromethiumResource
@@ -385,7 +387,7 @@ POIs:
       -  Key: SI
          Value: Off
       -  Key: PersonalContainer
-         Value: AssaultRifleT2, RawDiamond, 5.8mmBullet:1000, Shotgun2, ShotgunShells:500, ShotgunShells:500, Medikit04:5, Medikit02:3, Medikit01:3, Medikit03:2, EmergencyRations:3, 15mmBullet:350, FusionCell, Robotics:5, AncientRelics:5, AutoMinerCore:5, AntiToxicInjection:2, AntibioticInjection:2
+         Value: AssaultRifleT2, RawDiamond, 5.8mmBullet:1000, Shotgun2Epic, ShotgunShells:500, ShotgunShells:500, Medikit04:5, Medikit02:3, Medikit01:3, Medikit03:2, EmergencyRations:3, 15mmBullet:350, FusionCell, Robotics:5, AncientRelics:5, AutoMinerCore:5, AntiToxicInjection:2, AntibioticInjection:2
    -  GroupName: ZombieTruck
       Faction: Public
       Type: HV_Player

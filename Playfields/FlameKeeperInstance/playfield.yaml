@@ -43,6 +43,7 @@ Instance:
    MaxPlayers: 3
    PortalOpen: 15
    Cooldown: 5
+   NoVolumeWeightForPlayer: True
 IndestructibleTerrain: True
 PlayfieldLevel: 10
 

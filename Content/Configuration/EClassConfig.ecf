@@ -106,7 +106,7 @@
 { Entity Name: Backpack
   EntityType: PlayerBackpack
   /* Mesh and class properties */
-  Mesh: Misc/CargoDropPrefab
+  Mesh: Misc/CargoDropNewUCHPrefab
   BlockColor: "0,100,255"
   ModelType: Custom
   Prefab: Backpack
@@ -129,7 +129,7 @@
 { Entity Name: DropContainer
   EntityType: DropContainer
   /* Mesh and class properties */
-  Mesh: Misc/DropContainerPrefab
+  Mesh: Misc/DropContainerNewPrefab
   BlockColor: "0,100,255"
   ModelType: Custom
   Prefab: Backpack
@@ -231,7 +231,7 @@
   TimeStayAfterDeath: 2000
 
   IsEnemy: false
-  LootListOnDeath: 35
+  # LootListOnDeath: 35
   MapIcon: map_EscapePod
   HudInfo: false
 
@@ -1877,7 +1877,7 @@
   MeshDead: Enemies/Drones/LegacyDroneCrabDmgPrefab
   Faction: TheLegacy
 
-  MaxHealth: 40000
+  MaxHealth: 20000
   # XpFactor: 2
   XpFactor: 18
 
@@ -6529,7 +6529,7 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
   FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
   LootListOnDeath: 29
   
-  AffectedByBuffs: "Fire,BrokenLeg,OpenWound"
+  AffectedByBuffs: "Fire,FractureClosed,OpenWound"
   
   /* AI Properties */
   { Child MainBehavior
@@ -6607,7 +6607,7 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
   SfxHurt:  Enemies/Spiders/Spiders_SfxHurt
   SfxDeath: Enemies/Spiders/Spiders_SfxDeath
 
-  AffectedByBuffs: "BrokenLeg,OpenWound,Fire"
+  AffectedByBuffs: "FractureClosed,OpenWound,Fire"
 
   LootListOnDeath: 20
   
@@ -8142,6 +8142,7 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
 
 
 */
+
 # ================ Base attack entities =============
 { +Entity Name: ZiraxMinigunBaseAttack, Ref: ZiraxMinigun
   MaxHealth: 750

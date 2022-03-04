@@ -327,7 +327,6 @@ Biome:
       - [AlienPlant25, 0.01, Free]
       - [Snakeweed, 0.01, Plant]
       - [ElderberryBush, 0.001, BigPlant]
-      - [Snakeweed, 0.001, Plant]
       - [CornDogBush, 0.002, Plant]
       - [ElderberryBushGreen, 0.0015, Bush]
       - [DimpleDome, 0.0015, Plant]
@@ -469,8 +468,8 @@ Biome:
       - [ElderberryBushGreen, 0.007, Plant]
       - [Fern, 0.004, Plant]
       - [DesertPlant11, 0.01, Plant]
-      - [AlienPlantSpike1, 0.001]
-      - [RockResourcePromethium, 0.001]
+      - [AlienPlantSpike1, 0.001, Plant]
+      - [RockResourcePromethium, 0.001, Free]
       - [AlienPlant14, 0.001, Plant]
       Grass:
       -  Name: GrassGreen01a

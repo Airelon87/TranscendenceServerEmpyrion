@@ -167,6 +167,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 2 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -183,6 +184,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 2, 2 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -199,6 +201,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -216,6 +219,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -234,6 +238,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: Music
@@ -245,48 +250,18 @@ POIs:
         - Key: StationInterface
           Value: "Fuel:1.1,O2:1.1,Warp:1.1,Ammo:2,Repair:2,Shield:2,IfNeutral:1,IfFriendly:-0.08,IfHonored:-0.16"
 
-#None  - JUNKYARDS
-
-    - Type: BA_Alien
-      GroupName: JunkYardSpaceBAO
+#ZedZorg Series Abandoned Vessel - Rare Chance
+    - Type: CV_Player
+      Name: [DamagedMyrionCruiser, DamagedEncealadesClass, DestroyedExplorerShip]
+      DisplayName: AbandonedShip
       Faction: None
       Mode: Survival
-      CountMinMax: [ 0, 4 ]
-      Probability: 0.3
-      InitPower: True
+      SpaceDefenseProbability: 0
+      CountMinMax: [1, 1]
+      Probability: 0.1
       Properties:
         - Key: MapMarker
           Value: Neutral
-        - Key: RegenAfter
-          Value: 720
-
-# CV single
-    - Type: CV_Alien
-      GroupName: JunkYardSpaceCV
-      Faction: None
-      Mode: Survival
-      CountMinMax: [ 0,6 ]
-      Probability: 0.2
-      InitPower: True
-      Properties:
-        - Key: MapMarker
-          Value: Neutral
-        - Key: RegenAfter
-          Value: 720
-
-# SV single
-    - Type: SV_Player
-      GroupName: JunkYardSpaceSV
-      Faction: None
-      Mode: Survival
-      CountMinMax: [ 0, 8 ]
-      Probability: 0.4
-      InitPower: True
-      Properties:
-        - Key: MapMarker
-          Value: Neutral
-        - Key: RegenAfter
-          Value: 720
  
 DroneBaseSetup:                                                # Note: not ALL possible settings are used in that config. Check +ExampleSpace folder > space_dynamic.yaml
       - FreeDrones:                                             #FreeDrones = only relevant for NPC Factions that have a galactic territory: Zirax, Polaris, Trader, Kriel, Pirates, Legacy. Will not spawn in non-territory!

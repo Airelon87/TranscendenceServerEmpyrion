@@ -147,7 +147,8 @@ POIs:
       Faction: Trader
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
-      Probability: 0.15
+      Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Pos:
       - -6018
@@ -164,11 +165,13 @@ POIs:
 #None  - JUNKYARDS
 
     - Type: BA_Alien
-      GroupName: GalorEmpireShipyard
+      Name: [GalorEmpireShipyard]
+      DisplayName: GalorShipYard
       Faction: Galorian
       Mode: Survival
       CountMinMax: [ 1, 1 ]
       Probability: 0.75
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties:
         - Key: Music
@@ -179,11 +182,12 @@ POIs:
           Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1,IfNeutral:0.2,IfHonored:-0.20"
 
     - Type: BA_Alien
-      GroupName: GalorArmadaStation
+      Name: [GalorArmadaStation]
       Faction: Galorian
       Mode: Survival
       CountMinMax: [ 1, 1 ]
       Probability: 0.25
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties:
         - Key: Music
@@ -194,7 +198,8 @@ POIs:
           Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1,IfNeutral:0.2,IfHonored:-0.20"
 
     - Type: BA_Alien
-      GroupName: GalorSat
+      Name: [GalorSat]
+      DisplayName: GalorSat
       Faction: Galorian
       Mode: Survival
       CountMinMax: [ 3, 10 ]
@@ -211,16 +216,18 @@ POIs:
       Mode: Survival
       CountMinMax: [ 0, 1 ]
       Probability: 0.3
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties:
         - Key: MapMarker
           Value: Neutral
-        - Key: RegenAfter
-          Value: 360
+        # - Key: RegenAfter
+        #   Value: 360
 
 # SV single
     - Type: SV_Player
-      GroupName: JunkYardSpaceSV
+      Name: [JunkYardSpaceSV]
+      DisplayName: JunkYardSpaceSV
       Faction: None
       Mode: Survival
       CountMinMax: [ 0, 8 ]

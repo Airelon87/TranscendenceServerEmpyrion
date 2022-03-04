@@ -359,6 +359,7 @@ Instance:
    PortalOpen: 240
    Cooldown: 60
    AllowBlueprints: True
+   NoVolumeWeightForPlayer: True
 RandomResources:
 -  Name: IronResource
    IsScalingCount: True

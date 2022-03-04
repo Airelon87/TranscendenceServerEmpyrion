@@ -3,6 +3,17 @@
 # Last Saved: 2022-02-23 18:54:05
 # --------------------------------------------------------------------------------------------------------------------------
 #
+#==================================v17=======
+#Transcendence Custom World        2022-02-23
+#==================================Airelon===
+# ===Summary=== 
+# Creative mode Blank Canvas given mild land features including AlnLegacy stamps
+# 
+# ===Authors Note===
+# TR debug Seed 2309566 creates a unique feature in the center of the 
+# planet of pillars and alien land formations. Telluripods on the world
+# are attracted to the waters within the Strange biome. 
+# --------------------------------------------------------------------------------------------------------------------------
 PlanetSize:
    SizeRange: [3, 4, 5]
    SizeProbs: [0.5, 0.25, 0.1]

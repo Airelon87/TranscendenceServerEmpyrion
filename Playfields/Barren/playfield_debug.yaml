@@ -1,12 +1,12 @@
 ---
 Seed: 1
-PlanetSize: 4
-PlanetAxis: 20
-TemperatureMinMax: [-10, 41]
-TemperatureNight: 10
+PlanetSize: 3
+PlanetAxis: 15
+TemperatureMinMax: [-10, 46]
+TemperatureNight: 20
 HumidityMinMax: [0.16, 0.7]
 SeaLevel: 0
-TerrainLevel: 150
+TerrainLevel: 140
 BaseLevel: 0
 LandWaterRatio: 0
 TemperatureHeightRange: [0, 107]
@@ -15,16 +15,16 @@ TemperatureNoiseFac: 0.85
 HumidityHeightFac: [35, 350]
 HumidityNoiseFac: 0.57
 
-Gravity: -7.70
-Radiation: 10.1
-AtmosphereDensity: 1.6
-AtmosphereO2: 0.1
+Gravity: -7.502663
+Radiation: 10.66446
+AtmosphereDensity: 1.433505
+AtmosphereO2: 0.1040123
 AtmosphereBreathable: True
-GroundFogIntensity: 0.1574655
-GroundFogHeight: 38.3244
-AtmosphereFog: 0
-
+GroundFogIntensity: 0.2486278
+GroundFogHeight: 39.32783
+AtmosphereFog: 0.4
 PvP: True
+PlayfieldLevel: 0
 
 Water: WaterGreen
 Music: StellarGrasp
@@ -43,7 +43,11 @@ Biome:
                - "+Lat > 0.975"
            Color: [0.7, 0.6, 0]
            StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
            Stamps:
+           Temperature: 0
            AmbientSound: BarrenOpenPlains
            Decorations:
            Grass:
@@ -59,6 +63,9 @@ Biome:
                - "Height < 30"
            Color: [0.2, 1, 0]
            StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
            Stamps:
            Temperature: 30
            Radiation: 20
@@ -83,6 +90,9 @@ Biome:
                - "Height < 35"
            Color: [0.2, 0.8, 0.3]
            StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
            Stamps:
            Temperature: 10
            Radiation: 10
@@ -104,6 +114,9 @@ Biome:
                - "Height < 40"
            Color: [0.1, 0.5, 0]
            StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
            Stamps:
            Temperature: 1
            Radiation: 1
@@ -123,6 +136,9 @@ Biome:
                - "Temperature > 10"
            Color: [0.8, 0.8, 0]
            StampProb: 0.3
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
            Stamps:
                - Cliff_1, 0.4
                - Cliff_2, 0.4
@@ -136,6 +152,7 @@ Biome:
                - MountainDesert_02, 0.1
                - MountainDesert_03, 0.1
                - MountainDesert_04, 0.1
+           Temperature: 0
            AmbientSound: BarrenOpenPlains
            Decorations:
                - [BulbShroom, 0.002]
@@ -151,9 +168,11 @@ Biome:
            Grass:
                - Name: GrassBrown06
                  Density: 0.15
+                 YScale: 0
                  Preset: GrassDense
                - Name: Plant01Brown
                  Density: 0.01
+                 YScale: 0
                  Preset: GrassDense
 
          - Name: PlainsEdge
@@ -169,10 +188,12 @@ Biome:
            Color: [0.7, 0.7, 0]
            StampProb: 1
            StampForcesBiome: True
+           StampForcesBiomeType: OverlapAll
            StampTries: 15
            Stamps:
                - Erosion_1, 0.5
                - Erosion_1b, 0.5
+           Temperature: 0
            AmbientSound: BarrenOpenPlains
            Decorations:
                - [Cactus1, 0.002]
@@ -189,6 +210,7 @@ Biome:
            Grass:
                - Name: GrassBrown06
                  Density: 0.15
+                 YScale: 0
                  Preset: GrassDense
 
          - Name: Flats
@@ -198,7 +220,7 @@ Biome:
                - [14, -1]
                - [15, 1]
            SelectionCriteria:
-               - "Height > 600"
+               - "false"
            Color: [1, 0.7, 0]
            StampProb: 1
            StampForcesBiome: True
@@ -207,6 +229,7 @@ Biome:
            Stamps:
                - Flats_1_BM, 0.5
                - Flats_1b_BM, 0.5
+           Temperature: 0
            AmbientSound: BarrenOpenPlains
            Decorations:
                - [Cactus1, 0.002]
@@ -223,6 +246,7 @@ Biome:
            Grass:
                - Name: GrassBrown06
                  Density: 0.2
+                 YScale: 0
                  Preset: GrassDense
 
          - Name: Mountains
@@ -235,7 +259,11 @@ Biome:
                - "Height > 130"
            Color: [0.3, 0.3, 0.3]
            StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
            Stamps:
+           Temperature: 0
            AmbientSound: Mountains
            Decorations:
                - [DesertRock1, 0.002]
@@ -248,6 +276,7 @@ Biome:
            Grass:
                - Name: GrassBrown06
                  Density: 0.1
+                 YScale: 0
                  Preset: GrassDense
 
          - Name: LowMountains
@@ -266,6 +295,7 @@ Biome:
                - Mountain_2, 0.5
                - Mountain_2b, 0.05
                - Mountain_3, 0.3
+           Temperature: 0
            AmbientSound: BarrenOpenPlains
            Decorations:
                - [DesertRock1, 0.002]
@@ -278,6 +308,7 @@ Biome:
            Grass:
                - Name: GrassBrown06
                  Density: 0.15
+                 YScale: 0
                  Preset: GrassDense
 
          - Name: Dunes
@@ -291,6 +322,9 @@ Biome:
                - "Humidity > 0.1"
            Color: [0.7, 0.6, 0]
            StampProb: 0.6
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
            Stamps:
                - Cliff_1, 0.4
                - Cliff_2, 0.4
@@ -304,6 +338,7 @@ Biome:
                - MountainDesert_02, 0.1
                - MountainDesert_03, 0.1
                - MountainDesert_04, 0.1
+           Temperature: 0
            AmbientSound: BarrenOpenPlains
            Decorations:
                - [Pillar1, 0.001]
@@ -316,6 +351,7 @@ Biome:
            Grass:
                - Name: GrassBrown06
                  Density: 0.05
+                 YScale: 0
                  Preset: GrassDense
 
          - Name: Sand
@@ -323,9 +359,15 @@ Biome:
            UndergroundLayers:
                - [14, -1]
                - [15, 1]
+           SelectionCriteria:
+               - "true"
            Color: [0.9, 1, 0.1]
            StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
            Stamps:
+           Temperature: 0
            AmbientSound: BarrenOpenPlains
            Decorations:
            Grass:
@@ -336,7 +378,7 @@ Biome:
 # Playfield Configuration
 # IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
 
-Description: "A planet with large amounts of fissible elements deep in its mantle, causing runaway nuclear reactions."   
+Description: "A planet with large amounts of fissile elements deep in its mantle, causing runaway nuclear reactions."   
 
 PlanetType: Barren
 PlayfieldType: Planet
@@ -347,7 +389,7 @@ LandClaimZone: Device
 
 # Atmosphere and Sky
 AtmosphereEnabled: True
-AtmosphereColor: "0.15, 0.26, 0.25"
+AtmosphereColor: "0.5, 0.8, 0.45"
 SkyColor: "0.6, 1, 0.2"
 SkyHorizonColor: "0.3, 1, 0"  
 AtmosphereParams: [3, 1.7]       
@@ -365,14 +407,12 @@ DayShadowStrength: 0.95
 # Sun
 SunFlare: EnvironmentalEffects/SunFlareBlue
 
-# ==============================================================
-# ==============================================================
 
 # Fog
 
 FogColor: "0.6, 1, 0.3"
 FogCloudIntensity: 0.8
-# AtmosphereFog: 0.9
+# AtmosphereFog: 0.9    # Needs to be below 0.5
 # GroundFogIntensity: 0.25
 # GroundFogHeight: 40
 
@@ -381,8 +421,12 @@ CloudsDensity: 1
 CloudsSharpness: 1
 CloudsBrightness: 1
 CloudsOpacity: 0.3 
+
 CloudsZenithColor: "0.6, 1, 0.1"
-CloudsHorizonColor: "0, 1, 0"
+CloudsHorizonColor: "0.1, 0.33, 0.13"
+CloudsNightZenithColor: "0.01, 0.025, 0.015"
+CloudsNightHorizonColor: "0.01, 0.025, 0.015"
+
 
 # Wind Speed
 WindSpeed: 4  
@@ -477,7 +521,7 @@ RandomResources:
       IsScalingCount: True 
       CountMinMax: [ 3, 5 ]
       SizeMinMax: [ 10, 12 ]
-      DepthMinMax: [ 5, 10 ]
+      DepthMinMax: [ 6, 15 ]
       DroneProb: 0.9
       MaxDroneCount: 2
 
@@ -485,7 +529,7 @@ RandomResources:
       IsScalingCount: True 
       CountMinMax: [ 3, 4 ]
       SizeMinMax: [ 9, 10 ]
-      DepthMinMax: [ 5, 10 ]
+      DepthMinMax: [ 6, 15 ]
       DroneProb: 0.2
       MaxDroneCount: 2
 
@@ -493,7 +537,7 @@ RandomResources:
       IsScalingCount: True 
       CountMinMax: [ 3, 5 ]
       SizeMinMax: [ 7, 9 ]
-      DepthMinMax: [ 0, 5 ]
+      DepthMinMax: [ 6, 15 ]
       DroneProb: 1
       MaxDroneCount: 4
 
@@ -501,23 +545,33 @@ RandomResources:
       IsScalingCount: True 
       CountMinMax: [ 2, 3 ]
       SizeMinMax: [ 5, 6 ]
-      DepthMinMax: [ 0, 1 ]
       DroneProb: 0.7
       MaxDroneCount: 2
-      DistTypeCylinder:
-        MaxRadius: 8
-        YVariance: 12
+      DepthMinMax: [ 0, 1 ]
+      # DistTypeCylinder:
+        # MaxRadius: 13
+        # YVariance: 10
 
-    - Name: SathiumResource #rich
+    - Name: PentaxidResource      
+      Biome: [Hotspot, RadiatedFog]
+      IsScalingCount: True 
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 3, 6 ]
+      DroneProb: 0.7
+      MaxDroneCount: 2
+      DepthMinMax: [ 0, 5 ]
+      # DistTypeCylinder:
+        # MaxRadius: 13
+        # YVariance: 10
+
+    - Name: SathiumResource #rich      
+      Biome: [Hotspot, RadiatedFog]
       IsScalingCount: True 
       CountMinMax: [ 4, 5 ]
       SizeMinMax: [ 11, 13 ] 
-      DepthMinMax: [ 0, 10 ] 
+      DepthMinMax: [ 6, 15 ]
       DroneProb: 0.9
       MaxDroneCount: 3
-      DistTypeCylinder:
-        MaxRadius: 13
-        YVariance: 10  
 
 ### Resource Asteroids
 AsteroidResources:
@@ -540,7 +594,10 @@ AsteroidResources:
 ### POIs
 POIs:
     Random:
-        - GroupName: DroneBaseT1
+        - GroupName: DroneBaseT1                           #CommandCenter
+          Faction: Zirax 
+          NoShieldReload: True 
+          IsCommandCenter: True
           DroneBaseSetup: DroneBaseSetup
           CountMinMax: [ 1, 1 ]
           DroneProb: 1.0
@@ -550,9 +607,11 @@ POIs:
             - Key: Music
               Value: lava2  
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
         - GroupName: PlanetVesselBase
+          Faction: Zirax  
+          NoShieldReload: True
           PlanetVesselBaseSetup: PlanetVesselBaseSetup
           CountMinMax: [ 1, 1 ] 
           DroneProb: 1.0
@@ -562,42 +621,60 @@ POIs:
             - Key: Music
               Value: lava
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # ================================
        # Trading Station with CivilSettlements
         - GroupName: TS_Planet
+          Faction: Polaris  
+          NoShieldReload: True
           IsImportant: True
           BiomesExcluded: [ Hotspot, RadiatedFog ] 
           CountMinMax: [ 1, 1 ]
-          DroneProb: 0 
-          DronesMinMax: [ 0, 0 ]
-          ReserveCount: 0
-          TroopTransport: False
           SpawnPOIAvoid: [PlanetVesselBase, DroneBaseAkua]  
           SpawnPOIAvoidDistance: 1000
-          Properties: 
+          Properties:  
             - Key: Music
               Value: SunnySkies 
 
-        - GroupName: CivilSettlement
+        - GroupName: PolarisSettlement
+          Faction: Polaris  
+          NoShieldReload: True
           CountMinMax: [ 2, 3 ]
-          BiomesExcluded: [ Hotspot, RadiatedFog ] 
-          DroneProb: 0 
-          DronesMinMax: [ 0, 0 ]
-          ReserveCount: 0
-          TroopTransport: False
+          BiomesExcluded: [ Hotspot, RadiatedFog ]
           SpawnPOINear: [TS_Planet]
           SpawnPOINearRange: [150, 250]  
           Properties: 
-            - Key: MapMarker
-              Value: Neutral
             - Key: RegenAfter
-              Value: 120
+              Value: 720
+ 
+        - GroupName: PolarisDefence
+          Faction: Polaris    
+          NoShieldReload: True
+          BiomesExcluded: [ Hotspot, RadiatedFog ] 
+          CountMinMax: [ 5, 6 ]
+          SpawnPOINear: [TS_Planet]
+          SpawnPOINearRange: [300, 400] 
+          Properties: 
+            - Key: RegenAfter
+              Value: 720
+
+# Civilians
+
+        - GroupName: CivilSettlement 
+          Territory: False
+          Faction: Colonists
+          NoShieldReload: True
+          CountMinMax: [ 3, 4 ]
+          Properties:  
+            - Key: RegenAfter
+              Value: 720 
 
        # ================================
        # Military Xenu Large Bunker in fog with ruins around
         - GroupName: XenuBunker
+          Faction: Xenu  
+          NoShieldReload: True
           IsImportant: True
           Biome: [ Hotspot, RadiatedFog ]
           CountMinMax: [ 1, 1 ]
@@ -607,25 +684,24 @@ POIs:
           TroopTransport: True
           Properties:
             - Key: RegenAfter
-              Value: 120
+              Value: 720
       # Ruins
         - GroupName: Ruins
+          Faction: None  
           CountMinMax: [ 3, 5 ]
-          DroneProb: 0
-          DronesMinMax: [ 1, 1 ]
-          ReserveCount: 1
-          TroopTransport: False
           SpawnPOINear: [XenuBunker]
           SpawnPOINearRange: [150, 350]
           Properties: 
             - Key: MapMarker
               Value: Neutral
             - Key: RegenAfter
-              Value: 120
+              Value: 720
        # ================================
        # Defense of PlanetVesselBase
        # Auxiliary Buildings
         - GroupName: XenuAuxT1
+          Faction: Xenu  
+          NoShieldReload: True
           CountMinMax: [ 1, 2 ]
           DroneProb: 0.8
           DronesMinMax: [ 1, 2 ]
@@ -635,10 +711,12 @@ POIs:
           SpawnPOINearRange: [150, 250]
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # Defense Buildings
         - GroupName: XenuDefenceT2
+          Faction: Xenu  
+          NoShieldReload: True
           CountMinMax: [ 2, 3 ]
           DroneProb: 0.8
           DronesMinMax: [ 1, 2 ]
@@ -648,13 +726,15 @@ POIs:
           SpawnPOINearRange: [300, 500]
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # ================================
        # Defense of Drone Base
        # Military Xenu Compound
        # Main Building
         - GroupName: XenuMain
+          Faction: Xenu  
+          NoShieldReload: True
           IsImportant: True
           CountMinMax: [ 1, 1 ]  
           DroneProb: 1.0
@@ -665,9 +745,11 @@ POIs:
           SpawnPOINearRange: [200, 300]
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
        # Defense Buildings
         - GroupName: XenuDefenceT2
+          Faction: Xenu  
+          NoShieldReload: True
           CountMinMax: [ 2, 3 ]
           DroneProb: 0.8
           DronesMinMax: [ 1, 2 ]
@@ -677,11 +759,45 @@ POIs:
           SpawnPOINearRange: [200, 300]
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
+
+# Kriel
+
+        - GroupName: KrielMain 
+          Faction: Kriel    
+          NoShieldReload: True
+          CountMinMax: [ 1, 2 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: KrielDefenseT1 
+          Faction: Kriel    
+          NoShieldReload: True
+          CountMinMax: [ 1, 4 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+# Pirates
+
+        - GroupName: PiratesAux 
+          Faction: Pirates    
+          NoShieldReload: True
+          CountMinMax: [ 0, 3 ]
+     #     IsImportant: True
+          Properties:  
+            - Key: RegenAfter
+              Value: 720 
 
        # ================================
        # Various POIs scattered around planet 
         - GroupName: AbandonedPOI
+          Faction: Alien  
           CountMinMax: [ 1, 2 ]
           IsScalingCount: True
           DroneProb: 0.1
@@ -692,7 +808,22 @@ POIs:
             - Key: Music
               Value: DarkSoundscape
 
+        - GroupName: CrashedShipLargeDesert      # Tilded, large variant BA_CrashedCV_4 !
+          Faction: None  
+          CountMinMax: [ 1, 1 ]
+          IsScalingCount: True
+          DroneProb: 0.8
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 4
+          TroopTransport: False
+          Properties: 
+            - Key: MapMarker
+              Value: Neutral
+            - Key: RegenAfter
+              Value: 720
+
         - GroupName: CrashedShip      # Only use regeneration with burried POIs if LandClaimZone: Device is set in playfield.yaml  
+          Faction: None  
           CountMinMax: [ 1, 2 ]
           IsScalingCount: True
           DroneProb: 0.8
@@ -702,48 +833,42 @@ POIs:
           Properties: 
             - Key: MapMarker
               Value: Neutral
+            - Key: RegenAfter
+              Value: 720
 
        # Alien Artifacts
         - GroupName: Artifacts
+          Faction: Alien  
           CountMinMax: [ 1, 2 ]
           IsScalingCount: True
-          DroneProb: 0
-          DronesMinMax: [ 1, 1 ]
-          ReserveCount: 1
-          TroopTransport: False
           SpawnPOIAvoid: [START]
           SpawnPOIAvoidDistance: 4000 
           Properties: 
-            - Key: MapMarker 
-              Value: Neutral 
             - Key: Music
               Value: EvilWhispering
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # Alien Artifacts - Floating
         - GroupName: ArtifactsFloating
+          Faction: Alien  
           Biome: [ Hotspot, RadiatedFog ]
           CountMinMax: [ 1, 2 ]
           IsScalingCount: True
-          DroneProb: 0
-          DronesMinMax: [ 1, 1 ]
-          ReserveCount: 1
-          TroopTransport: False
           SpawnPOIAvoid: [START]
           SpawnPOIAvoidDistance: 4000
           Properties: 
-            - Key: MapMarker 
-              Value: Neutral 
             - Key: Music
               Value: EvilWhispering
             - Key: SI
               Value: Off
             - Key: RegenAfter
-              Value: 120
+              Value: 720
        # ================================
        # Military Xenu POIs scattered around planet 
         - GroupName: XenuAuxT2
+          Faction: Xenu  
+          NoShieldReload: True
           CountMinMax: [ 5, 7 ]
           IsScalingCount: True
           DroneProb: 1.0
@@ -754,7 +879,7 @@ POIs:
           SpawnPOIAvoidDistance: 4000
           Properties: 
             - Key: RegenAfter
-              Value: 120
+              Value: 720
 
        # ================================
 
@@ -762,6 +887,7 @@ POIs:
         - Mode: Debug
           Pos: [ -835, 165, -1000 ]
           RotY: 125
+          Armor: ArmorMedium
 
         - Mode: Survival
           Spawn: EscapePod
@@ -814,7 +940,7 @@ DroneBaseSetup:
                 Amount: 500
                 Extra: 3
 
-              - Name: Crawler
+              - Name: RipperDog
                 Amount: 250
                 Extra: 3
 
@@ -824,7 +950,7 @@ DroneBaseSetup:
               BaseType: PlanetVesselBase
               KeyId: 0
               PlanetVessel:
-                - Name: Patrol-S-Medium
+                - Name: PVZiraxT2
                   Mission: PlanetPatrol
                   FixedMaxSpeed: 5
                   RespawnDelay: 12
@@ -839,12 +965,12 @@ DroneBaseSetup:
 
 DroneSpawning:
     Random:
-        - DronesMinMax: [ 10, 15 ]
-          CenterX: -2500
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: -5000
           Radius: 3000
 
-        - DronesMinMax: [ 10, 15 ]
-          CenterX: 2500
+        - DronesMinMax: [ 5, 10 ]
+          CenterX: 5000
           Radius: 3000
 
 # ==============================================================
@@ -860,7 +986,7 @@ SpawnRateZones:
      Color: "0.0, 1.0, 0.0, 0.7"  
 
 SpawnZones:
-   - SpawnAt: [NeodymiumResource, SiliconResource]
+   - SpawnAt: [NeodymiumResource, PentaxidResource, SiliconResource]
      BiomesExcluded: [ LowMountains, Mountains ]
      Radius: 400
      RadiusRandom: 25
@@ -868,7 +994,7 @@ SpawnZones:
      RateMultiplyerEdge: 0.5
      Color: "1.0, 1.0, 1.0, 1.0" 
      Entities:
-       - Names: [GolemsDesert]
+       - Names: [Otyughs, GolemsDesert]
          Biomes: [Any]
          Amount: 200
          Period: Always
@@ -881,7 +1007,7 @@ SpawnZones:
      RateMultiplyerEdge: 0.5
      Color: "1.0, 1.0, 1.0, 1.0" 
      Entities:
-       - Names: [Spiders02]
+       - Names: [Spiders02, GolemsDesert]
          Biomes: [Any]
          Amount: 200
          Period: Always
@@ -893,6 +1019,7 @@ SpawnZones:
      RateMultiplyerCenter: 1.0
      RateMultiplyerEdge: 0.5
      Color: "1.0, 1.0, 1.0, 1.0" 
+     SpawnOnlyIfPoiIsAlien: true
      Entities:
        - Names: [CaveWormGreyHerd, Otyughs, Spiders02]
          Biomes: [Any]
@@ -906,8 +1033,9 @@ SpawnZones:
      RateMultiplyerCenter: 1.0
      RateMultiplyerEdge: 0.4
      Color: "1.0, 1.0, 1.0, 1.0"
+     SpawnOnlyIfPoiIsAlien: true
      Entities:
-       - Names: [ZiraxMinigunPatrol, ZiraxRocketPatrol, ZiraxShotgunPatrol, ZiraxMechanoidPatrol, ZiraxCrawlerPatrol, ZiraxOverseerPatrol]
+       - Names: [ZiraxMinigunPatrol, ZiraxRocketPatrol, ZiraxShotgunPatrol, ZiraxMechanoidPatrol, ZiraxRipperDogPatrol]
          Biomes: [Any]
          Amount: 250
          Period: Always
@@ -919,8 +1047,9 @@ SpawnZones:
      RateMultiplyerCenter: 1.0
      RateMultiplyerEdge: 0.6
      Color: "1.0, 1.0, 1.0, 1.0"
+     SpawnOnlyIfPoiIsAlien: true
      Entities:
-       - Names: [ZiraxMinigunPatrol, ZiraxRocketPatrol, ZiraxShotgunPatrol, ZiraxMechanoidPatrol, ZiraxCrawlerPatrol, ZiraxOverseerPatrol]
+       - Names: [ZiraxMinigunPatrol, ZiraxRocketPatrol, ZiraxShotgunPatrol, ZiraxMechanoidPatrol, ZiraxRipperDogPatrol]
          Biomes: [Any]
          Amount: 200
          Period: Always
@@ -929,7 +1058,7 @@ SpawnZones:
 CreatureSpawning:
     - Biomes: [Hotspot, RadiatedFog]
       Entities:
-        - Name: AlienAssassinReds
+        - Name: AlienAssassinGreysInfected
           Period: Always
           Amount: 30
           DelayMinMax: [10, 20]
@@ -966,5 +1095,9 @@ CreatureSpawning:
           Period: Always
           Amount: 5
           DelayMinMax: [10, 20]
+        - Name: GolemsDesert
+          Period: Night
+          Amount: 5
+          DelayMinMax: [10, 20]
 
-Build: 1764
+Build: 3258

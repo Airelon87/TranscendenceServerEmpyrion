@@ -890,7 +890,7 @@ Biomes:
                
                # Rock Resources
                - [RockResourceSilicon, 0.005, Plant]
-               - [RockResourceSilicon, 0.005, Free]
+               - [RockResourceCopper, 0.005, Free]
                - [RockResourceIron, 0.0025, Plant]
                - [RockResourceNeodymium, 0.0005, Plant]
                - [RockResourceGold, 0.00015, Plant]

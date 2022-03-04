@@ -1,3 +1,213 @@
+---
+Seed: 2309566
+PlanetSize: 3
+PlanetAxis: 0
+TemperatureMinMax: [23, 27]
+TemperatureNight: 10
+HumidityMinMax: [0.125, 0.315]
+SeaLevel: 4
+TerrainLevel: 155
+BaseLevel: 31
+LandWaterRatio: 0.225
+TemperatureHeightRange: [0, 195]
+TemperatureGradientRange: [0.1, 0.6]
+TemperatureNoiseFac: 0.2
+HumidityHeightFac: [0, 365]
+HumidityNoiseFac: 0.2
+
+Gravity: -18.1514
+Radiation: 0.600577
+AtmosphereDensity: 1.118617
+AtmosphereO2: 0.09900216
+AtmosphereBreathable: True
+GroundFogIntensity: 0
+GroundFogHeight: 0
+AtmosphereFog: 0
+PvP: False
+PlayfieldLevel: 0
+
+Water: WaterGreen
+Music: Resurgence
+
+TerrainHeightMapMax: 490
+
+GroundShapes:
+   - GroundShape_Mercury, 1
+   - GroundShape_2, 0.25
+
+TemperatureMasks:
+   - Global_1, 1
+
+HumidityMasks:
+   - Global_1, 1
+
+BiomeStampTries: 20
+
+Biome:
+   - BiomeClusterData:
+         - Name: Pole
+           IgnoreForcedBiome: True
+           Weather: PoleFog
+           Texture: [4, 4, 0.02]
+           SelectionCriteria:
+               - "+Lat > 0.975"
+           Color: [0, 0, 0]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+           Temperature: 0
+           AmbientSound: Mountains
+           Decorations:
+           Grass:
+
+         - Name: Peaks
+           IgnoreForcedBiome: True
+           Weather: BmFogRadiationPurple
+           Texture: [5, 5, 0.5, 3, 3, 1, 0.25]
+           UndergroundLayers:
+               - [12, 2]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height > 100"
+               - "Height < 280"
+           Color: [0.6, 0.5, 0.7]
+           StampProb: 0.5
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 0
+           Stamps:
+               - Mountain_1, 0.25
+               - Mountain_15, 0.5
+               - Mountain_2, 0.25
+           Temperature: 0
+           AmbientSound: BarrenFog
+           Decorations:
+               - [PromethiumStone, 0.0001, Free]
+           Grass:
+
+         - Name: Dunes
+           IgnoreForcedBiome: True
+           Texture: [2, 2, 0.5, 3, 3, 0.8, 0.2]
+           UndergroundLayers:
+               - [0, 1]
+               - [12, 15]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height < 100"
+               - "Height > 50"
+               - "+Lat > 0.5"
+               - "+Lat < 0.975"
+           Color: [0.3, 0.2, 0.3]
+           StampProb: 0.5
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 5
+           Stamps:
+               - IceDunes_01
+           Temperature: 5
+           AmbientSound: OpenPlains
+           Decorations:
+               - [ConfettiMoss, 0.0001, Free]
+           Grass:
+
+         - Name: Plains
+           Texture: [4, 4, 0]
+           UndergroundLayers:
+               - [11, 2]
+               - [10, 2]
+               - [12, 15]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height < 75"
+               - "Height > 25"
+               - "+Lat < 0.5"
+           Color: [0.5, 1, 0]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapOther
+           StampTries: 10
+           Stamps:
+               - Erosion_1, 0.5
+               - AlnLegacy_Scar, 0.25
+               - MenhirCircle, 0.25
+           Temperature: 4
+           AmbientSound: OpenPlains
+           Decorations:
+               - [AlienPlantSpike1, 0.0001, Plant]
+               - [Snakeweed, 0.0002, Plant]
+           Grass:
+
+         - Name: Strange
+           Texture: [0, 5, 0.9, 6, 6, 1, 0]
+           UndergroundLayersDefault: True
+           UndergroundLayers:
+               - [0, 3]
+               - [12, 2]
+               - [10, 1]
+               - [12, 2]
+               - [10, 2]
+               - [11, 2]
+               - [12, 15]
+               - [15, -1]
+               - [11, 1]
+           SelectionCriteria:
+               - "Height > 10"
+               - "Height < 25"
+           Color: [0.85, 0.44, 0.84]
+           StampProb: 0.8
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 50
+           Stamps:
+               - AlnLegacy_Ziggurat, 0.1
+               - AlnLegacy_Hub, 0.2
+               - AlnLegacy_Proximity, 0.2
+               - AlnLegacy_Struct, 0.3
+               - AlnLegacy_Struct_2, 0.2
+           Temperature: 0
+           AmbientSound: ArcticLowPlains
+           LevelMod: +1
+           Decorations:
+               - [GlowTube01, 0.001, BigPlant]
+               - [CrystalStraight, 0.001, Free]
+               - [AlienPlantTube1, 0.001, Plant]
+               - [AlienPlantSpike1, 0.0001, Plant]
+               - [PulpitFungus, 0.0001, BigPlant]
+               - [MushroomTallGreen01, 0.0001, Free]
+               - [MushroomBigSky, 0.0001, Tree]
+               - [BrainFungusSnow, 0.0001, BigPlant]
+               - [PixieStalksSnow, 0.0001, Plant]
+               - [ElderberryBushGreen, 0.001, BigPlant]
+               - [CornDogBush, 0.002, Plant]
+           Grass:
+               - Name: Seaweed05
+                 Density: 0.1
+                 YScale: 0
+                 Preset: GrassDense
+
+         - Name: Lowlands
+           Texture: [0, 6, 0.45]
+           SelectionCriteria:
+               - "True"
+           Color: [1, 0.5, 0]
+           StampProb: 1
+           StampForcesBiome: False
+           StampForcesBiomeType: OverlapAll
+           StampTries: 25
+           Stamps:
+               - Crystalline_Bubbles
+           Temperature: 0
+           AmbientSound: ArcticLowPlains
+           Decorations:
+               - [RockResourceGold, 0.0001, Free]
+           Grass:
+
+
 # 
 # ====================
 # GENERAL SETUP 
@@ -176,7 +386,7 @@ POIs:
       -  Key: Music
          Value: EnergyMatrix
       -  Key: PersonalContainer
-         Value: "MoneyCard:33000, RawDiamond:1, LegacyEnergyCore:2, AntiMatterRod:8"
+         Value: "MoneyCard:33000, RawDiamond:2, LegacyEnergyCore:2"
    -  GroupName: ZedZorgPlatform
       Faction: Alien
       Territory: False
@@ -197,7 +407,7 @@ POIs:
       -  Key: Music
          Value: EnergyMatrix
       -  Key: PersonalContainer
-         Value: "MoneyCard:10000, ArmorHeavyEpic, LegacyEnergyCore:1, AntiMatterRod:7"
+         Value: "MoneyCard:10000, ArmorHeavyEpic, LegacyEnergyCore:1"
    -  GroupName: CrashedLaserCruiser
       Faction: Alien
       Territory: False
@@ -218,7 +428,7 @@ POIs:
       -  Key: Music
          Value: EnergyMatrix
       -  Key: PersonalContainer
-         Value: "MoneyCard:1500, LegacyEnergyCore:1, AntiMatterRod:6"
+         Value: "MoneyCard:1500, LegacyEnergyCore:1"
    -  GroupName: PentaxidSpireWarbot
       Faction: Alien
       Territory: False
@@ -236,7 +446,7 @@ POIs:
       -  Key: RegenAfter
          Value: 90
       -  Key: PersonalContainer
-         Value: "MoneyCard:3000, LegacyEnergyCore:1, AntiMatterRod:1"
+         Value: "MoneyCard:3000, LegacyEnergyCore:1"
    -  GroupName: AbandonedLumusClass
       BiomesExcluded: [ Peaks, Dunes, Plains, Lowlands ]
       Faction: None
@@ -407,3 +617,6 @@ CreatureSpawning:
       Amount: 24
       AllowInWater: True
       Color: "0, 0, 0.7"
+
+
+Build: 3717

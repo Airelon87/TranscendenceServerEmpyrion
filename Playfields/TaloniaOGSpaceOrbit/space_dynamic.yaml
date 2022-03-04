@@ -1,4 +1,5 @@
 # Playfield Characteristics
+
 Gravity: 0                         
 AtmosphereEnabled: False          
 PvPProb: 0
@@ -146,6 +147,7 @@ POIs:
       DisplayName: TraderlingStation
       Faction: Trader
       Mode: Survival
+      SpaceDefenseProbability: 0
       CountMinMax: [ 1, 1 ]     
       Probability: 0.75
       InitPower: True
@@ -157,24 +159,14 @@ POIs:
         - Key: Music
           Value: NebularClouds
 
-    - Type: SV_Player
-      Name: [SV_SantasSleigh]
-      DisplayName: 54-NTA Transport
-      Faction: None
-      Mode: Survival
-      CountMinMax: [ 1, 1 ]     
-      Probability: 0.25
-      InitPower: True
-      Properties: 
-        - Key: RegenAfter
-          Value: 720
-
 #None  - JUNKYARDS
 
     - Type: BA_Alien
-      GroupName: [TalonSpaceVillage]
+      Name: [TalonSpaceVillage]  
+      DisplayName: TalonSpaceVillage
       Faction: Talon
       Mode: Survival
+      SpaceDefenseProbability: 0
       CountMinMax: [ 1, 3 ]
       Probability: 1
       InitPower: True
@@ -188,31 +180,44 @@ POIs:
 
 # CV single
     - Type: CV_Alien
-      GroupName: [JunkYardSpaceCV]
+      Name: [JunkYardSpaceCV]  
+      DisplayName: JunkYardSpaceCV
       Faction: None
       Mode: Survival
+      SpaceDefenseProbability: 0
       CountMinMax: [ 1,6 ]
-      Probability: 0.3
+      Probability: 0.7
       InitPower: True
       Properties:
         - Key: MapMarker
           Value: Neutral
-        - Key: RegenAfter
-          Value: 360
 
 # SV single
     - Type: SV_Player
-      GroupName: [JunkYardSpaceSV]
+      Name: [JunkYardSpaceSV]  
+      DisplayName: JunkYardSpaceSV
       Faction: None
       Mode: Survival
+      SpaceDefenseProbability: 0
       CountMinMax: [ 1, 8 ]
-      Probability: 0.4
+      Probability: 0.7
       InitPower: True
       Properties:
         - Key: MapMarker
           Value: Neutral
-        - Key: RegenAfter
-          Value: 360
+
+#ZedZorg Series Abandoned Vessel - Rare Chance
+    - Type: CV_Player
+      Name: [DamagedMyrionCruiser, DamagedEncealadesClass, DestroyedExplorerShip]
+      DisplayName: AbandonedShip
+      Faction: None
+      Mode: Survival
+      SpaceDefenseProbability: 0
+      CountMinMax: [1, 1]
+      Probability: 0.1
+      Properties:
+        - Key: MapMarker
+          Value: Neutral
  
 DroneBaseSetup:         
                                                                 # Note: not ALL possible settings are used in that config. Check +ExampleSpace folder > space_dynamic.yaml
@@ -221,7 +226,7 @@ DroneBaseSetup:
             Faction: Talon                               
             CanNotBeControlledByMasterAI: False          
             Count: [16, 32]                          #Drone Swarm!
-            Radius: [5000, 8000]
+            Radius: [1500, 3000]
             Properties:
               - Key: AIManMaxPursuitRange 
                 Value: 2500
@@ -229,7 +234,7 @@ DroneBaseSetup:
             Faction: Talon                               
             CanNotBeControlledByMasterAI: False          
             Count: [16, 32]                          #Drone Swarm!
-            Radius: [-5000, -8000]
+            Radius: [1500, 3000]
             Properties:
               - Key: AIManMaxPursuitRange 
                 Value: 2500
@@ -237,7 +242,7 @@ DroneBaseSetup:
             Faction: Talon                               
             CanNotBeControlledByMasterAI: False          
             Count: [16, 32]                          #Drone Swarm!
-            Radius: [-5000, 8000]
+            Radius: [1500, 3000]
             Properties:
               - Key: AIManMaxPursuitRange 
                 Value: 2500
@@ -245,7 +250,7 @@ DroneBaseSetup:
             Faction: Talon                               
             CanNotBeControlledByMasterAI: False          
             Count: [16, 32]                          #Drone Swarm!
-            Radius: [5000, -8000]
+            Radius: [1500, 3000]
             Properties:
               - Key: AIManMaxPursuitRange 
                 Value: 2500

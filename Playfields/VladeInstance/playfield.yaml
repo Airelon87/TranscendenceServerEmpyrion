@@ -827,6 +827,7 @@ Instance:
    PortalOpen: 240
    Cooldown: 60
    AllowBlueprints: False
+   NoVolumeWeightForPlayer: True
 # Fog
 FogCloudIntensity: 0.8
 # AtmosphereFog: 0.3

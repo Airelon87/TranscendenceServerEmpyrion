@@ -22,16 +22,16 @@ TemperatureNoiseFac: 0.44
 HumidityHeightFac: [0, 350]
 HumidityNoiseFac: 0.86
 
-GravityMinMax: [-7, -5]
+GravityMinMax: [-7, -7]
 AtmosphereDensityMinMax: [0.7, 1.5]
 AtmosphereO2MinMax: [0.05, 0.12]
 AtmoBreathableProb: 0.2
 WaterProb: 1.0
 
 AtmosphereFogRange: [0.4, 0.6]
-GroundFogProb: 0.9
+GroundFogProb: 0.3
 GroundFogIntensityRange: [0.05, 0.1]
-GroundFogHeightRange: [-20, 10]
+GroundFogHeightRange: [10, 20]
 
 PvPProb: 0
 Water: [WaterGreen]
@@ -45,80 +45,6 @@ HumidityMasks:
 TemperatureMasks: 
 
 BiomeStampTries: 200
-
-Presets:
-- Name: Small
-  Density: 1
-  Snow: 0.449999988
-  spawn:
-    Min: 0
-    Max: 0.400000006
-    BushPower: 1
-    Noise: 3,0.05,2,0.5
-  scale:
-    Power: 0
-    Noise: 1,0.1,2,0.5
-  Hue: 0,0,0.001
-- Name: Medium
-  Density: 1
-  Snow: 0.449999988
-  spawn:
-    Min: 0
-    Max: 0.5
-    BushPower: 1
-    Noise: 3,0.05,2,0.5
-  scale:
-    Power: 0
-    Noise: 1,0.1,2,0.5
-  Hue: 0,0,0.001
-- Name: Large
-  Density: 1
-  Snow: 0.449999988
-  spawn:
-    Min: 0
-    Max: 0.600000024
-    BushPower: 1
-    Noise: 3,0.05,2,0.5
-  scale:
-    Power: 0
-    Noise: 1,0.1,2,0.5
-  Hue: 0,0,0.001
-- Name: Ultra
-  Density: 1
-  Snow: 0.449999988
-  spawn:
-    Min: 0
-    Max: 0.800000012
-    BushPower: 1
-    Noise: 3,0.05,2,0.5
-  scale:
-    Power: 1
-    Noise: 1,0.1,2,0.5
-  Hue: 0,0,0.001
-- Name: Total
-  Density: 1
-  Snow: 0.449999988
-  spawn:
-    Min: 0
-    Max: 1
-    BushPower: 1
-    Noise: 3,0.05,2,0.5
-  scale:
-    Power: 1
-    Noise: 1,0.1,2,0.5
-  Hue: 0,0,0.001
-- Name: SmallNormal
-  Density: 1
-  Snow: 0.100000001
-  spawn:
-    Min: 0
-    Max: 0.400000006
-    BushPower: 1
-    Noise: 1,0.1,2,0.5
-  scale:
-    Power: 1
-    Noise: 1,0.1,2,0.5
-  Hue: 0,0,0.001
 
 Biomes: 
  
@@ -138,32 +64,18 @@ Biomes:
                - [9, 1]    
     
     Decorations:
-                - [ SeaWeed02-04, 0.01, Small, 8.00 ]
-               # - [CoralStone01-05, 0.003, Free]
-               # - [CoralStone03-06, 0.003, Free]
-               # - [FingerSponge03-01, 0.001, Free]
-               # - [RealRock1Water, 0.001, Free]
-               # - [RealRock5Water, 0.001, Free]
-               # - [RealRock8Water, 0.001, Free]
-               # - [RealRock9Water, 0.001, Free]
-               # - [RockGrey01Large, 0.001, Free]
-               # - [RockGrey02Large, 0.001, Free]
-               # - [SkeletonWhaleFull, 0.0017, Free]
-               # # Harvestables:
-               # - [CoralBig01, 0.02, Plant]
-               # - [CoralBig08, 0.03, Plant]
-               # # Rock Resources:
-               # - [PromethiumStone, 0.001, Free]
-               # - [RockResourceCopper, 0.006, Free]
-               # - [RockResourceSilicon, 0.0008, Free]
-               # - [RockResourceGold, 0.0003, Free]
+                - [ SeaWeed02-04, 0.01, Free ] #, 8.00 ]
+               # Harvestables:
+                - [ CoralBig01, 0.02, Free ] #, 1.50]
+                - [ CoralBig08, 0.03, Free ] #, 1.50]
+
     Grass: 
                # - Name: GrassGreen01
                  # Density: 0.1
-                 # Preset: GrassDense
+                 # #Preset: GrassDense
                # - Name: Seaweed04
                  # Density: 0.006
-                 # Preset: GrassDense
+                 # #Preset: GrassDense
 
 # ==============================================================
                  
@@ -183,20 +95,20 @@ Biomes:
                - [9, 1]
     
     Decorations:
-                - [ SeaWeed02-04Harvested, 0.01, Large, 4.00 ]
-                - [ CoralStone04-03, 0.001, Large, 3.00 ]
+                - [ SeaWeed02-04Harvested, 0.01, Tree ] #, 4.00 ]
+                - [ CoralStone04-03, 0.001, Tree ] #, 3.00 ]
     Grass:
                 - Name: Seaweed03
                   Density: 1.00
                   YScale: 2.00
-                  Preset: Medium
+                  #Preset: Medium
                 - Name: Seaweed04
                   Density: 0.50
                   YScale: 1.00
-                  Preset: Medium
+                  #Preset: Large
 # ==============================================================                 
   - Name: ShallowWater
-    AmbientSound: SmallLake
+    AmbientSound: Free ] #Lake
     IgnoreForcedBiome: true
     Texture: [0, 8, 0.20]   
     Texture: [0, 10, 0.2]
@@ -213,16 +125,12 @@ Biomes:
                - [9, 1]
     
     Decorations:
-                - [ Alien_Tree_06_2, 0.001, Small, 4.00 ]
+                - [ WhiteOak, 0.002, Tree ]
     Grass:
                - Name: Seaweed03
                  Density: 0.10
                  YScale: 1.00
-                 Preset: Large
-               - Name: Plant01a
-                 Density: 1.00
-                 YScale: 1.00
-                 Preset: Large
+                 #Preset: Medium
 # ==============================================================
   - Name: Pole          # same as GlacierSnow biome
     Weather: PoleFog
@@ -250,12 +158,12 @@ Biomes:
                - [9, 1]
     
     Decorations:
-                - [ _Spruce_Norway_Desktop_1_Field_Spring, 0.002, Medium, 4.00 ]
+                - [ WhiteOak, 0.002, Tree ] #, 4.00 ]
     Grass:
                - Name: Grass03
                  Density: 1.00
                  YScale: 1.00
-                 Preset: Large
+                 #Preset: Medium
 # ==============================================================
   - Name: LowMountains
     AmbientSound: ArcticHighPlains
@@ -288,16 +196,16 @@ Biomes:
     - MountainIce_02, 0.7
 
     Decorations:
-                - [ _Spruce_Norway_Desktop_1_Forest_Fall, 0.001, Medium, 6.00 ]
+                - [ WhiteOak, 0.001, Tree ] #, 4.00 ]
     Grass:
                - Name: GrassBrown04
                  Density: 1.00
                  YScale: 0.70
-                 Preset: Large
+                 #Preset: Medium
                - Name: Grass08
                  Density: 0.10
                  YScale: 1.00
-                 Preset: Total 
+                 #Preset: Total 
 # ==============================================================                 
   - Name: Shore
     AmbientSound: ArcticLowPlains 
@@ -316,20 +224,21 @@ Biomes:
                - [9, 1]
     
     Decorations:
-               - [ Alien_Tree_02_1, 0.001, SmallNormal, 8.00 ]
-               - [ Alien_Tree_04_1, 0.001, SmallNormal, 6.00 ]
-               - [ Alien_Dead_trunk_02, 0.0005, Medium, 8.00 ]
-               - [ Alien_Tree_06_3, 0.001, SmallNormal, 3.00 ]
-               - [ Alien_Tree_05_1, 0.001, SmallNormal, 1.00 ]
+               - [ AlienTreeBlue, 0.004, Free ] #, 2.00 ]
+               - [ AlienTreeBlue02, 0.002, Free ] #, 2.00 ]
+               - [ WhiteOak, 0.002, Tree ] #, 3.00]
+               - [ ElderberryBushGreen, 0.0005, Free ] #, 2.00 ]
+               - [ CobraLeavesFree, 0.0005, Free ] #, 1.50, 0.01, Free ] #, 2.00 ]
+               - [ CrystalStraight, 0.001, Free ] #, 2.00 ]
     Grass:
                - Name: GrassGreen01
                  Density: 1.00
                  YScale: 1.00
-                 Preset: SmallNormal
+                 #Preset: Large
                - Name: Flower24
                  Density: 0.10
                  YScale: 1.00
-                 Preset: Large
+                 #Preset: Medium
 # ==============================================================
   - Name: IceLens
     IgnoreForcedBiome: true
@@ -359,9 +268,9 @@ Biomes:
     - RiftLava_2, 0.5    
 
     Decorations:
-               - [ RealRock1Water, 0.001, Medium, 8.00 ]
-               - [ RealRock5Water, 0.005, Medium, 1.00 ]
-               - [ RealRock9Water, 0.005, Medium, 1.00 ]
+               - [ RealRock1Water, 0.001, Free ] #, 2.00 ]
+               - [ RealRock5Water, 0.005, Free ] #, 2.00 ]
+               - [ RealRock9Water, 0.005, Free ] #, 2.00 ]
     Grass:
 
 # ==============================================================
@@ -389,9 +298,8 @@ Biomes:
                - RiftLava_2, 0.2
 
     Decorations:
-               - [ CrystalIcePlate, 0.005, Medium, 16.00 ]
-               - [ AlienPlant14, 0.005, Medium, 4.00 ]
-               - [ RockFormationN, 0.001, Medium, 2.00 ]
+               - [ CrystalIcePlate, 0.005, Free ] #, 2.00 ]
+               - [ RockFormationN, 0.001, Free ] #, 2.00 ]
     Grass:
 # ==============================================================
   - Name: Rocks
@@ -415,14 +323,14 @@ Biomes:
                - [9, 1]
     
     Decorations:
-               - [ Alien_Dead_trunk_01, 0.0001, Medium, 32.00 ]
-               - [ RealRock1Dark, 0.0002, Medium, 12.00 ]
-               - [ RealRock6, 0.002, Medium, 4.00 ]
-               - [ RealRock10, 0.002, Medium, 4.00 ]
-               - [ RealRock5, 0.002, Medium, 4.00 ]
-               - [ RealRock4, 0.002, Medium, 4.00 ]
-               - [ RockFormationO, 0.02, Medium, 1.00 ]
-               - [ RockFormationJ, 0.02, Medium, 1.00 ]
+               - [ CrystalStraight, 0.0001, Free ] #, 2.00 ]
+               - [ RealRock1Dark, 0.0002, Free ] #, 2.00 ]
+               - [ RealRock6, 0.002, Free ] #, 2.00 ]
+               - [ RealRock10, 0.002, Free ] #, 2.00 ]
+               - [ RealRock5, 0.002, Free ] #, 2.00 ]
+               - [ RealRock4, 0.002, Free ] #, 2.00 ]
+               - [ RockFormationO, 0.02, Free ] #, 2.00 ]
+               - [ RockFormationJ, 0.02, Free ] #, 2.00 ]
     Grass:
 # ==============================================================
   - Name: GlacierSnow
@@ -449,23 +357,19 @@ Biomes:
                - RiftLava_2, 0.1
 
     Decorations:
-               - [ Alien_Plant_15B, 0.001, Small, 16.00 ]
-               - [ Alien_Plant_15C, 0.001, Medium, 8.00 ]
-               - [ Alien_Plant_16, 0.005, Medium, 5.00 ]
-               - [ Alien_Plant_14, 0.003, Medium, 3.00 ]
-               - [ CoralStone03-05, 0.001, Medium, 1.00 ]
-               - [ RockFormationO, 0.001, Medium, 4.00 ]
-               - [ RockFormationN, 0.001, Medium, 2.00 ]
-               - [ RockFormationJ, 0.001, Medium, 2.00 ]
+               - [ CoralStone03-05, 0.001, Free ] #, 2.00 ]
+               - [ RockFormationO, 0.001, Free ] #, 2.00 ]
+               - [ RockFormationN, 0.001, Free ] #, 2.00 ]
+               - [ RockFormationJ, 0.001, Free ] #, 2.00 ]
     Grass:
                - Name: Grass15
                  Density: 1.00
                  YScale: 0.70
-                 Preset: Medium
+                 #Preset: Medium
                - Name: GrassLowBrown010
                  Density: 0.00
                  YScale: 0.80
-                 Preset: Ultra
+                 #Preset: Medium
 # ==============================================================  
   - Name: Hellmouth
     AmbientSound: LavaFog
@@ -532,17 +436,17 @@ Biomes:
                - [9, 1]    
     
     Decorations:
-               - [ _Oak_White_Sapling_Spring, 0.005, Small, 16.00 ]
-               - [ _Oak_White_Desktop_Forest_Spring, 0.001, Small, 8.00 ]
+               - [ AlaskaCedarBare, 0.07, Tree ] #, 4.00 ]
+               - [ BushWinter01, 0.1, Free ] #, 4.00 ]
     Grass:
                - Name: GrassGreen04aSnow
                  Density: 1.00
                  YScale: 0.90
-                 Preset: Medium
+                 #Preset: Medium
                - Name: Flower13
                  Density: 0.05
                  YScale: 0.70
-                 Preset: Ultra
+                 #Preset: Large
 # ==============================================================
   - Name: TaigaEdge
     AmbientSound: ArcticForest
@@ -562,19 +466,19 @@ Biomes:
                - [9, 1]
     
     Decorations:
-               - [ _Spruce_Norway_Desktop_1_Field_Fall, 0.005, Small, 7.00 ]
-               - [ _Spruce_Norway_Seedling_Fall, 0.001, Medium, 10.00 ]
-               - [ Alien_Plant_01_1, 0.005, Medium, 2.00 ]
-               - [ Alien_Plant_01_2, 0.005, Medium, 3.00 ]
+               - [ AlaskaCedarBare, 0.07, Tree ] #, 4.00 ]
+               - [ BushWinter01, 0.001, Free ] #, 4.00 ]
+               - [ CornDogBushSnow, 0.007, Free ] #, 2.00 ]
+               - [ PixieStalksSnow, 0.007, Free ] #, 2.00 ]
     Grass:
                - Name: Flower12
                  Density: 0.50
                  YScale: 0.70
-                 Preset: Medium
+                 #Preset: Large
                - Name: Grass02
                  Density: 1.00
                  YScale: 0.50
-                 Preset: Total
+                 #Preset: Total
 # ==============================================================
   - Name: Dunes
     AmbientSound: ArcticLowPlains
@@ -602,22 +506,21 @@ Biomes:
                - IceSprings_01, 0.6
                
     Decorations:
-               - [ _Redwood_Sierra_Desktop_Forest, 0.001, Medium, 8.00 ]
-               - [ _Vine_Balloon_Desktop_2_Spring, 0.01, Small, 12.00 ]
-               - [ _Oak_Willow_Seedling_Desktop_Spring, 0.001, Small, 64.00 ]
-               - [ _Sycamore_American_Hero_Forest_Spring, 0.001, Small, 4.00 ]
-               - [ _Pine_Eastern_White_Desktop_Forest_Spring, 0.001, Medium, 8.00 ]
-               - [ ElderberryBushGreen, 0.005, Medium, 0.50 ]
-               - [ RealRock1Snow, 0.001, Medium, 4.00 ]
+               - [ OnionFlower, 0.0001, Free ] #, 2.00 ]
+               - [ AlaskaCedarBare, 0.001, Tree ] #, 4.00 ]
+               - [ RockResourceMagnesium, 0.0005, Free ] #, 2.00 ]
+               - [ BaldCypresFall, 0.001, Tree ] #, 4.00 ]
+               - [ ElderberryBushGreen, 0.001, Free ] #, 4.00 ]
+               - [ RealRock1, 0.0001, Free ] #, 2.00 ]
     Grass:
                - Name: GrassBrown04
                  Density: 1.00
                  YScale: 0.50
-                 Preset: Total
+                 #Preset: Total
                - Name: Flower05
                  Density: 0.10
                  YScale: 0.80
-                 Preset: Total
+                 #Preset: Total
 # ==============================================================
   - Name: Plains
     AmbientSound: ArcticLowPlains
@@ -634,18 +537,18 @@ Biomes:
                - [9, 1]
 
     Decorations:
-               - [ _Oak_White_Desktop_Field_2_Spring, 0.001, Medium, 3.00 ]
-               - [ _Oak_White_Sapling_Spring, 0.001, Medium, 8.00 ]
-               - [ RealRock1, 0.001, Medium, 4.00 ]
+               - [ RockResourceSilicon, 0.0005, Free ] #, 2.00 ]
+               - [ ElderberryBushGreen, 0.001, Free ] #, 4.00 ]
+               - [ Fern, 0.004, Free ] #, 1.50 ]
     Grass:
                - Name: GrassGreen04
                  Density: 1.00
                  YScale: 1.00
-                 Preset: Medium
+                 #Preset: Large
                - Name: Grass25
                  Density: 0.10
                  YScale: 1.00
-                 Preset: Ultra
+                 #Preset: Ultra
 # ==============================================================
   - Name: TaigaSnow
     AmbientSound: ArcticForest
@@ -670,19 +573,14 @@ Biomes:
                - IceSlabs_01, 0.15 
 
     Decorations:
-               - [ BaldCypres, 0.001, Medium, 4.00 ]
-               - [ Alien_Tree_01_2, 0.001, Medium, 5.00 ]
-               - [ Alien_Plant_9, 0.007, Large, 4.00 ]
-               - [ _Redwood_Sierra_Sapling, 0.001, Large, 8.00 ]
+               - [ BaldCypres, 0.001, Tree ] #, 4.00 ]
+               - [ BaldCypresFall, 0.001, Tree ] #, 4.00 ]
+               - [ RockResourcePromethium, 0.001, Free ] #, 2.00 ]
     Grass:
                - Name: GrassGreen03b
                  Density: 1.00
                  YScale: 1.00
-                 Preset: Medium
-               - Name: Flower24
-                 Density: 0.10
-                 YScale: 0.60
-                 Preset: Total
+                 #Preset: Large
 # ==============================================================
   - Name: TaigaSnowEdge
     AmbientSound: ArcticForest
@@ -701,14 +599,14 @@ Biomes:
                - [9, 1]
     
     Decorations:
-               - [ Alien_ShroomTree_01_2, 0.001, Small, 8.00 ]
-               - [ RealRock1Water, 0.0005, Large, 5.00 ]
-               - [ RealRock5Water, 0.0005, Large, 8.00 ]
+               - [ ElderberryBushGreen, 0.007, Free ] #, 4.00 ]
+               - [ RealRock1Water, 0.0005, Free ] #, 2.00 ]
+               - [ RealRock5Water, 0.0005, Free ] #, 2.00 ]
     Grass:
                - Name: GrassType01Brown
                  Density: 1.00
                  YScale: 1.00
-                 Preset: Small
+                 #Preset: Medium
 # ============================================================== 
   - Name: Tundra
     AmbientSound: ArcticForest
@@ -725,18 +623,13 @@ Biomes:
     - Volcanic_03_LO, 1
     
     Decorations:
-               - [ Alien_Plant_16, 0.005, Small, 4.00 ]
-               - [ Alien_Tree_01_2, 0.005, Small, 2.00 ]
-               - [ AlienPlant24, 0.005, Small, 2.00 ]
-               - [ AlienPlant17, 0.01, Small, 3.00 ]
-               - [ Alien_Plant_15A, 0.002, Small, 4.00 ]
-               - [ RockFormationO, 0.01, Medium, 1.00 ]
-               - [ RockFormationK, 0.01, Medium, 1.00 ]
+               - [ RockFormationO, 0.01, Free ] #, 2.00 ]
+               - [ RockFormationK, 0.01, Free ] #, 2.00 ]
     Grass:
                - Name: GrassBlue04
                  Density: 1.00
                  YScale: 1.00
-                 Preset: Small
+                 #Preset: Medium
 # ==============================================================
 # CATCH ALL
 # ============================================================== 
@@ -754,16 +647,16 @@ Biomes:
                - [9, 1]
  
     Decorations:
-               - [ Alien_Plant_15C, 0.003, Medium, 3.00 ]
-               - [ RealRock1Water, 0.001, Medium, 1.00 ]
-               - [ RealRock8Water, 0.001, Medium, 1.00 ]
-               - [ RealRock9Water, 0.001, Medium, 1.00 ]
+               - [ Snakeweed, 0.003, Free ] #, 1.50 ]
+               - [ RealRock1Water, 0.001, Free ] #, 2.00 ]
+               - [ RealRock8Water, 0.001, Free ] #, 2.00 ]
+               - [ RealRock9Water, 0.001, Free ] #, 2.00 ]
     Grass:
                - Name: GrassBlue04
                  Density: 1.00
                  YScale: 1.00
-                 Preset: Large
+                 #Preset: Medium
                - Name: Grass15
                  Density: 0.10
                  YScale: 0.60
-                 Preset: Total
+                 #Preset: Total

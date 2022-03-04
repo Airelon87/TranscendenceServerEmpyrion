@@ -1,9 +1,22 @@
+# Trader configuration file
+# For each Item please specify the data as follows. Instead of a range you may specify a single value only.
+# The buying section is optional, if not given the trader will not buy that item
+# Item name, sell price range, available stock range[, buy price range, max stock range]
+#
+# If the trader also buys an item (and thus, max stock is given) the original prices determined within the given ranges are used
+# if the trader's current stock is exactly half of max stock. If the trader has more items in stock, the prices goes down and vice versa.
+# If the trader only sells an item the price will not depend on the stock.
+# NOTE: - The buy price range is allowed to overlap with the sell price range, the trader will still check that he sells for a higher
+#         price than he buys (guaranteed spread is 5%).
+#       - You can specify a factor to the market price 
+#          Item1: "AutoMinerCore, mf=2.5-3.2, 10-50, mf=1.2-2.3, 55-150"
+
+# Please do not change the name of the default trader
 { Trader Name: TraderDefault
   SellingText: "Hi, I am trader <NAME>\nI am selling <GOODS>.\nYou can pay with <PAYMENT>."
   SellingGoods: "trwFood"
-  Discount: "0"
-  Item1: "CannedVegetables, 100-150, 3-5, 80-100, 5-10"
-  Item2: "CannedMeat, 222-333, 3-5, 178-222, 5-10"
+  Item1: "CannedVegetables, 10-15, 3-5, 8-10, 5-10"
+  Item2: "CannedMeat, 22-33, 3-5, 17-22, 5-10"
 }
 
 { Trader Name: QuantumSTAR
@@ -27,31 +40,31 @@
   SellingGoods: "trwInfoHoarderAll"
   Discount: 0.3
   #SELLING to player 
-  Item1: "ReportMaintenanceData, 0, 0, mf=1.1-1.2, 100-150"
-  Item2: "ReportWorkShiftData, 0, 0, mf=1.1-1.2, 100-150"
-  Item3: "ReportTransportationData, 0, 0, mf=1.1-1.2, 100-150"
-  Item4: "ReportCommunicationData, 0, 0, mf=1.1-1.2, 100-150"
-  Item5: "ReportEconomicData, 0, 0, mf=1.1-1.2, 100-150"
-  Item6: "ReportScienceRawData, 0, 0, mf=1.1-1.2, 100-150"
-  Item7: "ReportBiologicalData, 0, 0, mf=1.1-1.2, 100-150"
-  Item8: "ReportMaterialData, 0, 0, mf=1.1-1.2, 100-150"
-  Item9: "ReportArcheologicalData, 0, 0, mf=1.1-1.2, 100-150"
-  Item10: "ReportAnomalousData, 0, 0, mf=1.1-1.2, 100-150"
-  Item11: "ReportExplorationRawData, 0, 0, mf=1.1-1.2, 100-150"
-  Item12: "ReportGeologicalData, 0, 0, mf=1.1-1.2, 100-150"
-  Item13: "ReportAtmosphericData, 0, 0, mf=1.1-1.2, 100-150"
-  Item14: "ReportAstronomicalData, 0, 0, mf=1.1-1.2, 100-150"
-  Item15: "ReportPlanetaryResourceData, 0, 0, mf=1.1-1.2, 100-150"
-  Item16: "ReportSpaceWeather, 0, 0, mf=1.1-1.2, 100-150"
-  Item17: "ReportNavigationData, 0, 0, mf=1.1-1.2, 100-150"
-  Item18: "ReportSpaceAnomality, 0, 0, mf=1.1-1.2, 100-150"
-  Item19: "ReportWarpSignatures, 0, 0, mf=1.1-1.2, 100-150"
-  Item20: "ReportWeaponSignatures, 0, 0, mf=1.1-1.2, 100-150"
-  Item21: "ReportMilitaryRawData, 0, 0, mf=1.1-1.2, 100-150"
-  Item22: "ReportMilitaryScouting, 0, 0, mf=1.1-1.2, 100-150"
-  Item23: "ReportMilitarySurveillance, 0, 0, mf=1.1-1.2, 100-150"
-  Item24: "ReportMilitaryTroopMovement, 0, 0, mf=1.1-1.2, 100-150"
-  Item25: "ReportMilitaryClassified, 0, 0, mf=1.1-1.2, 100-150"
+  Item1: "ReportMaintenanceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item2: "ReportWorkShiftData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item3: "ReportTransportationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item4: "ReportCommunicationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item5: "ReportEconomicData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item6: "ReportScienceRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item7: "ReportBiologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item8: "ReportMaterialData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item9: "ReportArcheologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item10: "ReportAnomalousData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item11: "ReportExplorationRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item12: "ReportGeologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item13: "ReportAtmosphericData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item14: "ReportAstronomicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item15: "ReportPlanetaryResourceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item16: "ReportSpaceWeather, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item17: "ReportNavigationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item18: "ReportSpaceAnomality, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item19: "ReportWarpSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item20: "ReportWeaponSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item21: "ReportMilitaryRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item22: "ReportMilitaryScouting, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item23: "ReportMilitarySurveillance, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item24: "ReportMilitaryTroopMovement, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item25: "ReportMilitaryClassified, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 } 
 
 { Trader Name: Forger
@@ -319,7 +332,7 @@
 { Trader Name: Talon
   SellingText: "Welcome traveler! How may we serve you? \n<DISCOUNTTEXT>"
   SellingGoods: "trwSeeds"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "Bandages, 2-3, 0-10, 1-2, 10-20"
   Item2: "NCPowder, 1-2, 50-100, 1-1, 100-500"
   Item3: "MagnesiumPowder, 2-3, 50-100, 1-2, 100-500"
@@ -365,7 +378,7 @@
 { Trader Name: Totally Overpowered
   SellingText: "Welcome to TOP! How can we server you today?\n<DISCOUNTTEXT>"
   SellingGoods: "trwFood"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "PistolT2, 56-85, 1-5"
   Item2: "AdrenalineShot, 12-18, 0-10"
   Item3: "EnergyPills, 30-46, 0-10"
@@ -397,7 +410,7 @@
 { Trader Name: Bertrams
   SellingText: "Welcome to BERTRAM Weapons and Commodities!\n<DISCOUNTTEXT>"
   SellingGoods: "trwAmmo,trwWeaponsBasic,trwFood,trwMedical"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "CannedVegetables, 21-32, 3-50"
   Item2: "CannedMeat, 22-33, 3-50"
   Item3: "EnergyDrink, 24-36, 0-10"
@@ -424,7 +437,7 @@
 { Trader Name: OkYMedical
   SellingText: "Welcome to OkY Medical Care!\n<DISCOUNTTEXT>"
   SellingGoods: "trwMedical"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "Bandages, 19-29, 0-10"
   Item2: "Medikit04, 97-145, 3-5"
   Item3: "Medikit01, 110-155, 3-5"
@@ -453,7 +466,7 @@
 { Trader Name: AuntMarys
   SellingText: "Welcome to Aunt Marys Gardening Center!\n<DISCOUNTTEXT>"
   SellingGoods: "trwSeeds"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "DurianRoot, 54-82, 3-5"
   Item2: "CornStage1, 54-82, 3-5"
   Item3: "PumpkinStage1, 54-82, 3-5"
@@ -483,7 +496,7 @@
 { Trader Name: InterWeap
   SellingText: "Welcome to InterWeap Military Equipment Store!\n<DISCOUNTTEXT>"
   SellingGoods: "trwAmmo,trwWeaponsAdvanced,trwArmorBoost"
-  Discount: "0.2"
+  Discount: 0.2
   Item1: "NightVision, 500-1500, 1-5, 20-30, 5-10"
   Item2: "NCPowder, 1-2, 50-100, 1-1, 100-500"
   Item3: "MagnesiumPowder, 3-5, 50-100, 1-3, 100-500"
@@ -499,7 +512,7 @@
 { Trader Name: ServantCorp
   SellingText: "Welcome to SERVANT CORP Hardware and Utilities Store!\n<DISCOUNTTEXT>"
   SellingGoods: "trwComponents,trwArmorBoost"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "Chainsaw, 160-200, 1-5"
   Item2: "MultiCharge, 3-5, 50-100"
   Item3: "BioFuel, 5-20, 50-100"
@@ -519,7 +532,7 @@
 { Trader Name: MACorp
   SellingText: "Welcome to M.A. Corp Mining and Materials!\n<DISCOUNTTEXT>"
   SellingGoods: "trwResources"
-  Discount: "0.25"
+  Discount: 0.25
   Item1: "DrillT2, 2000-3000, 1-10, 1000-1750, 10-20"
   Item2: "DrillCharge, 11-17, 50-100, 1-2, 100-500"
   Item3: "ArmorMedium, 2500-5000, 1-5, 2000-2500, 5-10"
@@ -544,7 +557,7 @@
 { Trader Name: MarketCafe
   SellingText: "Welcome to the Market Cafe Restaurant!\n<DISCOUNTTEXT>"
   SellingGoods: "trwFood"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "Steak, 62-93, 0-10, 10-15, 10-20"
   Item2: "Ham, 68-102, 0-10, 10-15, 10-20"
   Item3: "Pizza, 104-156, 0-10, 10-15, 10-20"
@@ -572,7 +585,7 @@
 { Trader Name: PaxPurgatory
   SellingText: "Welcome to PaxPurgatory!\n<DISCOUNTTEXT>"
   SellingGoods: "trwFood"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "PistolT2, 568-853, 1-3, 225-495, 3-5"
   Item2: "AdrenalineShot, 12-18, 0-10, 1-3, 10-20"
   Item3: "EnergyPills, 30-46, 0-10, 1-30, 10-20"
@@ -590,7 +603,7 @@
 { Trader Name: Food
   SellingText: "Hi, I am trader <NAME>\nI am selling <GOODS>.\nYou can pay with <PAYMENT>."
   SellingGoods: "trwFood"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "Steak, 6-10, 0-10, 1-1, 10-20"
   Item2: "Ham, 7-12, 0-10"
   Item3: "Pizza, 10-12, 0-10"
@@ -605,7 +618,7 @@
 { Trader Name: Medic
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwMedical"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "Bandages, 19-29, 0-10"
   Item2: "Medikit04, 97-145, 3-5"
   Item3: "Medikit01, 110-155, 3-5"
@@ -634,7 +647,7 @@
 { Trader Name: MedicalIngredients
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwArmorBoost"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "AlienParts01, 6-8, 1-2, 4-6, 2-4"
   Item2: "AlienParts03, 6-8, 1-2, 4-6, 2-4"
   Item3: "AlienTooth, 6-8, 2-3, 4-6, 3-6"
@@ -656,7 +669,7 @@
 { Trader Name: Seeds
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwSeeds"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "DurianRoot, 54-82, 1-5, 10-54, 5-10"
   Item2: "CornStage1, 54-82, 1-5, 10-54, 5-10"
   Item3: "PumpkinStage1, 54-82, 1-5, 10-54, 5-10"
@@ -682,7 +695,7 @@
 { Trader Name: BasicWeaponTools
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwWeaponsBasic"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "Pistol, 529-794, 1-5, 250-520, 5-10"
   Item2: "Shotgun, 1552-2329, 1-5, 312-615, 5-10"
   Item3: "AssaultRifle, 1500-3251, 1-5, 428-935, 5-10"
@@ -705,7 +718,7 @@
 { Trader Name: AdvancedWeaponToolsKits
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwWeaponsAdvanced"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "RifleKit, 200-300, 1-10, 20-30, 10-20"
   Item2: "ShotgunKit, 192-288, 1-10, 153-192, 10-20"
   Item3: "HeavyWeaponKit, 112-168, 1-10, 89-112, 10-20"
@@ -717,7 +730,7 @@
 { Trader Name: ArmorAndBoosts
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwArmorBoost"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "InsulationBoost, 120-200, 1-5, 10-120, 5-10"
   Item2: "MobilityBoost, 120-200, 1-5, 10-120, 5-10"
   Item3: "ArmorBoost, 120-200, 1-5, 10-120, 5-10"
@@ -725,7 +738,7 @@
   Item5: "MultiBoost, 120-200, 1-5, 10-120, 5-10"
   Item6: "OxygenBoost, 120-200, 1-5, 10-120, 5-10"
   Item7: "RadiationBoost, 120-200, 1-5, 10-120, 5-10"
-  Item8: "EVABoost, 50-100, 1-5"
+  Item8: "EVABoost, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150""
   Item9: "ArmorMedium, 2500-5000, 1-5, 2000-2500, 5-10"
   Item10: "TransportationBoost, 590-1220, 1-15, 450-560, 15-20"
 }
@@ -733,7 +746,7 @@
 { Trader Name: Resources
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwResources"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "IronIngot, 6-9, 50-100, 1-5, 100-500"
   Item2: "CobaltIngot, 22-33, 50-100, 1-5, 100-500"
   Item3: "CopperIngot, 34-51, 50-100, 1-5, 100-500"
@@ -752,7 +765,7 @@
 { Trader Name: ComponentsBasic
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwComponentsBasic"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "SteelPlate, 1-2, 3-5, 1-1, 5-10"
   Item2: "Electronics, 4-6, 0-10, 1-2, 10-20"
   Item3: "OpticalFiber, 17-26, 0-10, 1-2, 10-20"
@@ -804,7 +817,7 @@
   Item6: "DrillAttachmentT2, 6400-9600, 1-5, 5120-6400, 5-10"
   Item7: "DrillAttachmentLarge, 6400-9600, 1-5, 5120-6400, 5-10"
   Item8: "DrillAttachmentCV, 6400-9600, 1-5, 5120-6400, 5-10"  
-  Item9: "PentaxidCrystal, 269-403, 50-100, 215-269, 100-500 "  
+  Item9: "PentaxidCrystal, 269-403, 50-100, 215-269, 100-500"  
   Item10: "OreScanner, 1167-1750, 1-5, 933-1167, 5-10"
 }
 
@@ -825,7 +838,7 @@
 { Trader Name: HavenDarkMarket
   SellingText: "I have the rarest goods in the land."
   SellingGoods: "trwFood"
-  Discount: "0"
+  Discount: 0.1
   Item1: "RawDiamond, 50000-65000, 1-3, 35000-45000, 3-6"
   Item2: "Robotics, 2500-4000, 1-25, 1750-2500, 25-27"
   Item3: "AutoMinerCore, 2000-2550, 1-20, 1870-1990, 20-45"
@@ -840,7 +853,7 @@
   Item12: "Token:7238, 8000-12000, 1-5, 0-0, 0-0" 
   Item13: "ArmorBoostEpic, 75000-85000, 1-5, 45000-75000, 5-10"
   Item14: "CoreNoCPU, 600000-800000, 1-2, 425000-575000, 2-3"
-  Item15: "ReportMilitaryClassified, 0, 0, mf=1.1-1.2, 100-150"
+  Item15: "ReportMilitaryClassified, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: Factory
@@ -966,7 +979,7 @@
 { Trader Name: PolarisWares
   SellingText: "The greatest wares in all of Polaria \n<DISCOUNTTEXT>"
   SellingGoods: "trwWeaponsAdvanced"
-  Discount: "0.3"
+  Discount: 0.3
   Item1: "12.7mmBullet, 3-6, 250-500, 3-5, 250-500"
   Item2: "PulseLaserChargeRifle, 3-5, 1-900, 2-3, 900-999"
   Item3: "Sniper2Epic, 29000-33000, 1-9, 14500-16700, 9-12"
@@ -1079,7 +1092,7 @@
 { Trader Name: ZiblaxOverLord
   SellingText: "If you have the credits, I have the power desire! \n<DISCOUNTTEXT>"
   SellingGoods: "trwArmorBoost"
-  Discount: "0.3"
+  Discount: 0.3
   Item1: "RawDiamond, 50000-65000, 1-3, 35000-45000, 3-6"
   Item2: "ArmorHeavyEpic, 75000-90000, 1-2, 30000-50000, 2-5"
   Item3: "ScifiCannonEpic, 35000-50000, 1-4, 11900-21800, 4-9"
@@ -1126,8 +1139,8 @@
   Item24: "12.7mmBullet, 5-7, 50-100, 4-5, 100-200"
   Item25: "SlowRocket, 49-74, 50-100, 40-49, 100-200"
   Item26: "8.3mmBullet, 1-2, 500-1000, 1-1, 1000-5000"
-  Item27: "ReportMilitaryRawData, 0, 0, mf=1.1-1.2, 100-150"
-  Item28: "ReportMilitaryScouting, 0, 0, mf=1.1-1.2, 100-150"
+  Item27: "ReportMilitaryRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item28: "ReportMilitaryScouting, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: MilitaryT2
@@ -1161,8 +1174,8 @@
   Item26: "SlowRocket, 49-74, 50-100, 40-49, 100-200"
   Item27: "8.3mmBullet, 1-2, 500-1000, 1-1, 1000-5000"
   Item28: "PulseLaserChargePistol, 14-22, 50-100, 12-14, 100-500" 
-  Item29: "ReportMilitarySurveillance, 0, 0, mf=1.1-1.2, 100-150"
-  Item30: "ReportMilitaryTroopMovement, 0, 0, mf=1.1-1.2, 100-150"
+  Item29: "ReportMilitarySurveillance, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item30: "ReportMilitaryTroopMovement, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: MilitaryT3
@@ -1200,13 +1213,13 @@
   Item29: "PulseLaserChargeRifle, 40-61, 50-100, 33-40, 100-500"
   Item30: "SciFiCannonPlasmaCharge, 42-63, 50-100, 33-42, 100-500"
   Item31: "SlowRocketHoming, 71-106, 50-100, 57-71, 100-500" 
-  Item32: "ReportMilitaryClassified, 0, 0, mf=1.1-1.2, 100-150"
+  Item32: "ReportMilitaryClassified, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: JustBoosts
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwArmorBoost"
-  Discount: "0.1"
+  Discount: 0.1
   Item1: "ArmorBoost, 3000-3500, 1-10, 1300-1350, 10-15"
   Item2: "EVABoost, 250-500, 1-20, 125-150, 20-22"
   Item3: "InsulationBoost, 1000-1500, 1-10, 200-250, 10-20"
@@ -1222,7 +1235,7 @@
 { Trader Name: PewPews
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwWeaponsBasic"
-  Discount: "0.1"
+  Discount: 0.1
   Item1: "Pistol, 150-250, 1-7, 115-125, 7-9"
   Item2: "AssaultRifle, 550-750, 1-10, 250-370, 10-20"
   Item3: "Shotgun, 300-350, 1-15, 130-235, 15-18"
@@ -1240,7 +1253,7 @@
 { Trader Name: ToolTime
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwWeaponsBasic"
-  Discount: "0.1"
+  Discount: 0.1
   Item1: "MultiTool, 300-500, 1-8, 130-150, 8-12"
   Item2: "MultiToolT2, 600-800, 1-12, 160-180, 12-25"
   Item3: "MultiCharge, 1-3, 1-40, 1-2, 40-50"
@@ -1251,7 +1264,7 @@
 { Trader Name: GreenThumb
   SellingText: "Welcome To GreenThumb!"
   SellingGoods: "trwSeeds"
-  Discount: "0.1"
+  Discount: 0.1
   Item1: "AlienPalmTreeStage1, 25-50, 50-100, 5-7, 100-120"
   Item2: "AlienPlantTube2Stage1, 25-30, 100-500, 2-5, 500-520"
   Item3: "AlienplantWormStage1, 25-40, 50-300, 2-4, 300-310"
@@ -1276,7 +1289,7 @@
 { Trader Name: GardenGoods
   SellingText: "A Good Garden Means A Good Soul!"
   SellingGoods: "trwSeeds"
-  Discount: "0.1"
+  Discount: 0.1
   Item1: "LightPlant01, 200-250, 5-25, 92-115, 25-30"
   Item2: "GrowingPotWood, 300-400, 20-60, 110-212, 60-65"
   Item3: "GrowingPotConcrete, 250-400, 20-80, 98-311, 80-90"
@@ -1284,13 +1297,13 @@
   Item5: "NutrientSolution, 75-100, 1-50, 43-65, 50-55"
   Item6: "WaterJug, 10-15, 1-50"
   Item7: "WaterGenerator, 600-1000, 1-10, 260-400, 10-13"
-  Item20: "ReportAtmosphericData, 0, 0, mf=1.1-1.2, 100-150"
+  Item20: "ReportAtmosphericData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: WeaponUpgrades
   SellingText: "We got what you need to give your Pew Pews some extra killen power!"
   SellingGoods: "trwAmmo,trwWeaponsAdvanced"
-  Discount: "0.05"
+  Discount: 0.05
   Item1: "HeavyWeaponKit, 100-200, 1-10, 40-80, 10-15"
   Item2: "LaserKit, 100-200, 10-20, 40-80, 20-30"
   Item3: "PistolKit, 100-200, 10-20, 40-80, 20-30"
@@ -1303,7 +1316,7 @@
 { Trader Name: HoverBuilderz
   SellingText: "All the basics for your hover vessel"
   SellingGoods: "trwComponentsBasic"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "HoverBooster, 1000-1500, 1-10, 10-1000, 10-12"
   Item2: "HoverEngineThruster, 500-900, 1-20, 10-500, 20-25"
   Item3: "HoverEngineSmall, 1100-1675, 1-80, 20-1030, 80-85"
@@ -1316,27 +1329,27 @@
   Item10: "ContainerHarvestControllerSmall, 100-150, 5-15"
   Item11: "PlasticSmallBlocks, 5-12, 100-500"
   Item12: "ContainerExtensionSmall, 50-75, 50-250"
-  Item13: "Core, 50-75, 2-8"
+  Item13: "Core, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item14: "PassengerSeat2SV, 500-650, 5-25, 105-210, 25-30"
   Item15: "ConstructorHV, 300-400, 5-40"
   Item16: "FridgeSV, 75-125, 5-15"
   Item17: "DetectorHVT1, 300-450, 6-12, 100-212, 12-15"
   Item18: "SawAttachment, 1000-1250, 4-9"
   Item19: "DetectorHVEpic, 3750-4600, 0-5, 5-9, 2350-3400"
-  Item20: "ReportGeologicalData, 0, 0, mf=1.1-1.2, 100-150"
-  Item21: "ReportPlanetaryResourceData, 0, 0, mf=1.1-1.2, 100-150"
+  Item20: "ReportGeologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item21: "ReportPlanetaryResourceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: TheWarpSociety
   SellingText: "Your local experts in SV warp technology"
   SellingGoods: "trwComponentsBasic"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "WarpDriveSV, 2500-3500, 1-15, 1500-2400, 15-50"
   Item2: "PentaxidTankSV, 300-600, 1-25, 150-300, 25-50"
   Item3: "PentaxidOre, 25-30, 100-500, 10-20, 500-1000"
   Item4: "FuelTankSV, 550-750, 1-24, 150-300, 24-50"
   Item5: "OxygenTankSV, 250-300, 1-12, 50-200, 12-24"
-  Item6: "Core, 50-75, 2-10, 20-40, 75-90"
+  Item6: "Core, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item7: "GeneratorSV, 500-600, 2-12, 150-300, 12-18""
   Item8: "CockpitBlocksSV, 1000-1500, 5-20, 150-300, 20-30"
   Item9: "ThrusterSVDirectional, 500-750, 1-6, 150-300, 6-10"
@@ -1349,14 +1362,16 @@
   Item16: "DrillAttachmentSV, 1000-2500, 1-2, 650-1000, 2-6"
   Item17: "GravityGeneratorSS, 2000-4500, 1-2, 1750-2000, 2-6"
   Item18: "MinigunSSWeapon, 1000-2500, 1-2, 650-1000, 2-6"
-  Item19: "ReportWarpSignatures, 0, 0, mf=1.1-1.2, 100-150"
-  Item20: "ReportSpaceAnomality, 0, 0, mf=1.1-1.2, 100-150"
+  Item19: "ReportWarpSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item20: "ReportSpaceAnomality, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item21: "SmallShieldCapacitor, 2200-4700, 10-16, 1100-2150, 16-32"
+  Item22: "SmallShieldPerplexor, 2200-5300, 10-16, 1100-2150, 16-32"
 }
 
 { Trader Name: HavenArmorer
   SellingText: "Without armor, your pretty much food"
   SellingGoods: "trwArmorBoost"
-  Discount: "0"
+  Discount: 0.1
   Item1: "ArmorLight, 250-500, 1-6, 50-240, 6-15"
   Item2: "ArmorMedium, 2500-5000, 1-5, 2000-2500, 5-10"
   Item3: "ArmorHeavy, 9000-12500, 1-3, 1900-9000, 3-5"
@@ -1368,7 +1383,7 @@
 { Trader Name: StarKorsCoffee
   SellingText: "Its always morning among the stars."
   SellingGoods: "trwFood"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "HotBeverage, 15-25, 1-30, 2-3, 30-50"
   Item2: "CoffeePlantStage1, 9-13, 5-25, 3-5, 25-99"
   Item3: "AdrenalineShot, 15-25, 10-20, 4-5, 20-40"
@@ -1387,13 +1402,13 @@
   Item16: "Liquors, 25-30, 1-5, 15-19, 5-10"
   Item17: "Stew, 55-60, 5-10, 40-55, 10-30"
   Item18: "PentaxidElement, 17-30, 15-50, 9-15, 50-100" 
-  Item19: "ReportScienceRawData, 0, 0, mf=1.1-1.2, 100-150"
+  Item19: "ReportScienceRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: StarKorsMarket
   SellingText: "Rare collectables from all around the galaxy"
   SellingGoods: "trwComponents"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "LuxuryGoods, 2300-3000, 1-5, 1700-2300, 5-10"
   Item2: "AluminiumPowder, 25-30, 1-50, 15-19, 50-100"
   Item3: "PlantDead2, 8-11, 25-100, 2-3, 100-999"
@@ -1408,16 +1423,19 @@
   Item12: "Token:7238, 800-1200, 1-5, 500-600, 5-10"
   Item13: "ArmorLightEpic, 11100-17500, 1-2, 8000-11000, 2-5"
   Item14: "15mmBullet, 4-5, 500-1000, 3-4, 1000-5000"
-  Item15: "ReportBiologicalData, 0, 0, mf=1.1-1.2, 100-150"
-  Item16: "ReportAstronomicalData, 0, 0, mf=1.1-1.2, 100-150"
-  Item17: "ReportEconomicData, 0, 0, mf=1.1-1.2, 100-150"
-  Item18: "ReportMilitaryScouting, 0, 0, mf=1.1-1.2, 100-150"
+  Item15: "ReportBiologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item16: "ReportAstronomicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item17: "ReportEconomicData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item18: "ReportMilitaryScouting, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item19: "LargeShieldPerplexor, 2800-6600, 10-16, 1100-2750, 16-32"
+  Item20: "LegacyEnergyCore, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item21: "AntiMatterRod, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: StarKorsShipShop
   SellingText: "Only the best CV parts for your galactic junk hauler!"
   SellingGoods: "trwComponents"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "SpawnNewCV, 1000-2000, 10-16, 100-1000, 16-32"
   Item2: "PlasticLargeBlocks, 3-4, 250-700, 1-2, 700-1500"
   Item3: "FuelTankMSSmall, 330-600, 10-16, 160-300, 16-32"
@@ -1441,14 +1459,17 @@
   Item21: "ConstructorT0, 100-200, 10-16, 10-100, 16-32"
   Item22: "5.8mmBullet, 2-3, 500-1000, 1-2, 1000-5000"
   Item23: "ThrusterMSRoundBlocks, 1900-3600, 10-16, 1100-1750, 16-32"
-  Item24: "ReportNavigationData, 0, 0, mf=1.1-1.2, 100-150"
-  Item25: "ReportSpaceWeather, 0, 0, mf=1.1-1.2, 100-150"
+  Item24: "ReportNavigationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item25: "ReportSpaceWeather, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item26: "LargeShieldCapacitor, 2800-6600, 10-16, 1100-2750, 16-32"
+  Item27: "AntiMatterPhaseCannonBlocks, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item28: "ZedZorgGenerator, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: DarkGarsGiftShop
   SellingText: "Rare collectables from all around the galaxy"
   SellingGoods: "trwComponents"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "LuxuryGoods, 2300-3000, 1-5, 1700-2300, 5-10"
   Item2: "PlantDead, 8-11, 25-100, 2-3, 100-999"
   Item3: "PlantDead2, 8-11, 25-100, 2-3, 100-999"
@@ -1467,7 +1488,7 @@
 { Trader Name: AquaHavenia
   SellingText: "The basics for life"
   SellingGoods: "trwFood"
-  Discount: "0"
+  Discount: 0.1
   Item1: "WaterGenerator, 150-375, 3-6"
   Item2: "OxygenBottleLarge, 23-29, 10-40, 17-21, 40-50"
   Item3: "OxygenBottleSmall, 11-30, 10-20, 7-11, 20-25"
@@ -1480,13 +1501,13 @@
   Item10: "NaniteBoosterPill, 18-36, 0-20, 10-17, 20-50"
   Item11: "NaniteChlorophyllInfusion, 275-536, 0-20, 90-225, 20-50"
   Item12: "Nanites, 12-19, 200-350, 7-10, 350-600" 
-  Item13: "ReportAtmosphericData, 0, 0, mf=1.1-1.2, 100-150"
+  Item13: "ReportAtmosphericData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: BlackHoleTechnologies
   SellingText: "We only buy and sell the items that solve the mysteries of the galaxy."
   SellingGoods: "trwSpecial"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "MultiBoostEpic, 36000-50000, 1-5, 25000-36000, 5-10"
   Item2: "ScienceEquipment, 306-460, 0-10, 185-306, 10-20"
   Item3: "OxygenBottleSmall, 11-30, 10-20, 7-11, 20-25"
@@ -1501,16 +1522,16 @@
   Item12: "PentaxidSeedCrystal, 1800-2500, 1-50, 1250-1800, 50-100" 
   Item13: "MutatedSubstance, 10-14, 1-50, 5-10, 50-100"
   Item14: "AutoMinerCore, 2000-2550, 1-20, 1870-1990, 20-45"
-  Item15: "ReportSpaceAnomality, 0, 0, mf=1.1-1.2, 100-150"
-  Item16: "ReportAstronomicalData, 0, 0, mf=1.1-1.2, 100-150"
-  Item17: "ReportWarpSignatures, 0, 0, mf=1.1-1.2, 100-150"
-  Item18: "ReportArcheologicalData, 0, 0, mf=1.1-1.2, 100-150"
+  Item15: "ReportSpaceAnomality, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item16: "ReportAstronomicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item17: "ReportWarpSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item18: "ReportArcheologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: VladianMarkets
   SellingText: "Its not easy acquiring items like these on Vlade. Be swift."
   SellingGoods: "trwSpecial"
-  Discount: "0.25"
+  Discount: 0.25
   Item1: "ArmorBoostEpic, 36000-50000, 1-5, 25000-36000, 5-10"
   Item2: "ScienceEquipment, 306-460, 0-10, 185-306, 10-20"
   Item3: "OxygenBottleSmall, 11-30, 10-20, 7-11, 20-25"
@@ -1526,15 +1547,15 @@
   Item13: "WarbotNanotubes, 57500-98600, 1-10, 19350-47400, 10-25"
   Item14: "AutoMinerCore, 1900-2350, 1-20, 1470-1790, 20-45"
   Item15: "DetectorHVEpic, 3750-4600, 0-5, 2350-3400, 5-10"
-  Item16: "ReportMilitaryTroopMovement, 0, 0, mf=1.1-1.2, 100-150"
-  Item17: "ReportTransportationData, 0, 0, mf=1.1-1.2, 100-150"
-  Item18: "ReportGeologicalData, 0, 0, mf=1.1-1.2, 100-150"
+  Item16: "ReportMilitaryTroopMovement, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item17: "ReportTransportationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item18: "ReportGeologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: FlameKeepersMedic
   SellingText: "Many have died at the hands of the FlameKeeper, I resell their medical supplies."
   SellingGoods: "trwSpecial"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "AdmiralsDose, 100-260, 1-3, 85-100, 3-5"
   Item2: "OraclesConcoction, 6-12, 3-10, 1-6, 10-20"
   Item3: "AntiNarcotics, 11-30, 1-20, 7-11, 20-25"
@@ -1546,13 +1567,13 @@
   Item9: "StomachPills, 16-32, 3-10, 1-32, 10-20"
   Item10: "Narcotics, 129-130, 1-24, 119-126, 24-50"
   Item11: "MedicsPistol, 450-700, 1-10, 200-450, 10-20"
-  Item12: "ReportBiologicalData, 0, 0, mf=1.1-1.2, 100-150"
+  Item12: "ReportBiologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: SyndicateWeaponsDealer
   SellingText: "Big boom high tech weapons for the finest of pirates. All can kill puny human and Zirax effortlessly!"
   SellingGoods: "trwSpecial"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "AssaultRifleEpic, 4000-5000, 1-10, 1150-3700, 10-20"
   Item2: "Sniper2Epic, 29000-33000, 1-10, 14500-26700, 10-20"
   Item3: "MinigunEpic, 22000-32000, 1-10, 14500-22000, 10-20"
@@ -1570,15 +1591,15 @@
   Item15: "PlasmaCannonAlienCharge, 100-130, 50-750, 60-100, 750-2000"
   Item16: "WarbotNanotubes, 57500-98600, 1-5, 19350-47400, 5-9"
   Item17: "15mmBullet, 4-5, 500-1000, 3-4, 1000-5000"
-  Item18: "ReportMilitaryClassified, 0, 0, mf=1.1-1.2, 100-150"
-  Item19: "ReportWeaponSignatures, 0, 0, mf=1.1-1.2, 100-150"
-  Item20: "ReportTransportationData, 0, 0, mf=1.1-1.2, 100-150"
+  Item18: "ReportMilitaryClassified, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item19: "ReportWeaponSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item20: "ReportTransportationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: SyndicateArmorer
   SellingText: "Without armor, your pretty much food"
   SellingGoods: "trwArmorBoost"
-  Discount: "0.25"
+  Discount: 0.25
   Item1: "ArmorLight, 250-500, 1-6, 50-240, 6-15"
   Item2: "ArmorMedium, 2500-5000, 1-5, 2000-2500, 5-10"
   Item3: "ArmorHeavy, 9000-12500, 1-3, 1900-9000, 3-5"
@@ -1591,13 +1612,13 @@
   Item10: "MultiBoostEpic, 36000-50000, 1-5, 25000-36000, 5-10"
   Item11: "ArmorBoostEpic, 36000-50000, 1-5, 25000-36000, 5-10"
   Item12: "WarBotBoostEpic, 72000-100000, 1-5, 55000-67000, 5-10" 
-  Item13: "ReportMilitaryRawData, 0, 0, mf=1.1-1.2, 100-150"
+  Item13: "ReportMilitaryRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: VeryLegalWeaponsDealer
   SellingText: "High tech weapons from legally nuetral sources for the finest marksmen."
   SellingGoods: "trwSpecial"
-  Discount: "0.15"
+  Discount: 0.15
   Item1: "AssaultRifleEpic, 4000-5000, 1-10, 1150-3700, 10-20"
   Item2: "Sniper2Epic, 29000-33000, 1-10, 14500-26700, 10-20"
   Item3: "MinigunEpic, 22000-32000, 1-10, 14500-22000, 10-20"
@@ -1618,13 +1639,13 @@
   Item18: "PulseLaserChargeRifle, 40-61, 50-100, 33-40, 100-500"
   Item19: "SciFiCannonPlasmaCharge, 42-63, 50-100, 33-42, 100-500"
   Item20: "SlowRocketHoming, 71-106, 50-100, 57-71, 100-500" 
-  Item21: "ReportMilitaryRawData, 0, 0, mf=1.1-1.2, 100-150"
+  Item21: "ReportMilitaryRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: TreauresOfGalor
   SellingText: "The finest goods sourced from Galorian conquest of the Zirax."
   SellingGoods: "trwSpecial"
-  Discount: "0.07"
+  Discount: 0.17
   Item1: "AssaultRifleEpic, 4000-5000, 1-10, 1150-3700, 10-20"
   Item2: "DetectorHVEpicUpgradeKit, 3750-4600, 3-15, 3000-3400, 15-50"
   Item3: "DetectorCVEpicUpgradeKit, 35500-98600, 1-5, 12350-31400, 5-9"
@@ -1638,13 +1659,13 @@
   Item11: "DrillEpic, 75000-90000, 1-3, 27500-72000, 3-7"
   Item12: "XenoSubstrate, 64-96, 1-75, 51-64, 75-150" 
   Item13: "5.8mmBullet, 2-3, 500-1000, 1-2, 1000-5000"
-  Item14: "ReportEconomicData, 0, 0, mf=1.1-1.2, 100-150"
+  Item14: "ReportEconomicData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: MetalsOfTheGalaxy
   SellingText: "The fairest prices for resources and precious metals in the galaxy."
   SellingGoods: "trwSpecial"
-  Discount: "0.07"
+  Discount: 0.17
   Item1: "GoldIngot, 237-250, 21-150, 175-235, 150-700"
   Item2: "PlatinBar, 25-30, 21-50, 15-21, 50-100"
   Item3: "PlatinOre, 15-30, 21-50, 10-15, 50-100" 
@@ -1657,13 +1678,13 @@
   Item10: "CompressedNeodymium, 350-400, 31-50, 275-340, 50-100"
   Item11: "CompressedSathium, 350-400, 31-50, 275-340, 50-100"
   Item12: "CompressedMagnesium, 375-425, 31-50, 325-360, 50-100"
-  Item19: "ReportTransportationData, 0, 0, mf=1.1-1.2, 100-150"
+  Item19: "ReportTransportationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: ZaganonAcquisitions
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwSpecial"
-  Discount: "0.09"
+  Discount: 0.09
   Item1: "RangerTurret, 78830-112440, 1-4, 61175-78830, 4-10"
   Item2: "RangerSVPlasmaCharge, 47-53, 64-164, 37-43, 164-256"
   Item3: "Chemicals, 64-96, 1-25, 51-64, 25-100"
@@ -1679,14 +1700,15 @@
   Item13: "IceBlocks, 12-15, 1-25, 5-11, 25-100"
   Item14: "CompressedErestrum, 1350-1400, 1-1500, 975-1340, 1500-7000"
   Item15: "CompressedZascosium, 1375-1425, 1-1500, 925-1360, 1500-7000"
-  Item16: "ReportAnomalousData, 0, 0, mf=1.1-1.2, 100-150"
-  Item17: "ReportExplorationRawData, 0, 0, mf=1.1-1.2, 100-150"
+  Item16: "ReportAnomalousData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item17: "ReportExplorationRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item18: "EpicShieldPerplexor, 12200-25300, 10-16, 9800-12150, 16-32"
 }
 
 { Trader Name: GalacticPosterSupply
   SellingText: "trwDefaultSellingText"
   SellingGoods: "trwSpecial"
-  Discount: "0.1"
+  Discount: 0.1
   Item1: "PosterBiker, 1000-2500, 5-20, 675-830, 20-40"
   Item2: "PosterBoyband, 11000-25000, 1-6, 7500-8890, 6-12"
   Item3: "PosterDontHide, 7000-14000, 1-3, 4775-5850, 3-12"
@@ -1700,5 +1722,5 @@
   Item11: "PosterTalon, 1140-1987, 4-25, 875-1070, 25-50"
   Item12: "PosterTrader, 100-250, 10-60, 75-89, 60-120"
   Item13: "PosterZiraxAlienWorld, 50000-65000, 1-2, 36175-47830, 2-4"
-  Item14: "ReportWorkShiftData, 0, 0, mf=1.1-1.2, 100-150"
+  Item14: "ReportWorkShiftData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }

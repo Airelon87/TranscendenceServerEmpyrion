@@ -161,6 +161,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 7, 14 ]     
       Probability: 0.6
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -173,6 +174,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 7, 14 ]     
       Probability: 0.6
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -185,6 +187,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 2 ]     
       Probability: 0.7
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -199,6 +202,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -215,6 +219,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 2 ]     
       Probability: 0.5
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -229,6 +234,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -245,6 +251,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 2, 4 ]     
       Probability: 0.4
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -257,6 +264,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 2, 6 ]     
       Probability: 0.5 
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -269,6 +277,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 2 ]     
       Probability: 0.7 
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -281,6 +290,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 3 ]     
       Probability: 0.3
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -295,6 +305,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 0.8
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -309,6 +320,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 0.8
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -323,6 +335,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 2, 4 ]     
       Probability: 0.8
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: Music

@@ -761,7 +761,7 @@
     Name_4: LargeOptronicBridge, param1: 0.2, param2: "1,2"
     Name_5: LargeOptronicMatrix, param1: 0.2, param2: "1,2"
     Name_6: PlasmaCannonAlien, param1: 0.02, param2: 1
-    Name_7: ReportAnomalousData, param1: 0.01, param2: 1
+    Name_7: TalonCrossbowPlayer, param1: 0.05, param2: 1
     Name_8: AlphaVirus, param1: 0.01, param2: 1
     Name_9: LegacyEnergyCore, param1: 0.01, param2: 1
 	
@@ -830,7 +830,7 @@
   SfxClose: UseActions/drone_close
 
   { Child Items
-    Name_0: ReportPlanetaryResourceData, param1: 0.08, param2: 1
+    Name_0: ReportMilitaryClassified, param1: 0.08, param2: 1
     Name_1: Robotics, param1: 0.1, param2: 1
     Name_2: SpareParts, param1: 0.1, param2: 1
     Group_0: EnergyItems, param1: 0.6
@@ -1054,7 +1054,7 @@
   SfxClose: UseActions/BarrelClose
 
   { Child Items
-    Name_0: NutrientSolution, param1: 0.4, param2: 1
+    Name_0: NutrientSolution, param1: 0.4, param2: "1,3"
     Name_1: AlienParts01, param1: 0.2, param2: "1,2"
     Name_2: AlienParts02, param1: 0.2, param2: "1,2"
     Name_3: AlienParts03, param1: 0.2, param2: "1,2"
@@ -1072,7 +1072,7 @@
     Name_16: Vegetables, param1: 0.3, param2: "1,2"
     Name_17: Fiber, param1: 0.3, param2: "1,2"
     Name_18: Spice, param1: 0.3, param2: "1,2"
-
+    Name_19: TalonCrossbowPlayer, param1: 0.05, param2: 1
   }
 }
 ## Repository 1 Level4Prop2 
@@ -1977,18 +1977,17 @@
     Name_1: Optronics, param1: 0.8, param2: "1,3"
     Name_2: ScienceEquipment, param1: 0.6, param2: 1
     Name_3: AluminiumPowder, param1: 0.4, param2: "1,2"
-    Name_4: WarbotNanotubes, param1: 0.1, param2: 1
+    Name_4: ReportPlanetaryResourceData, param1: 0.1, param2: 1
     Name_5: AlienOrganism, param1: 0.8, param2: "5,6"
     Name_6: Chemicals, param1: 0.6, param2: "2,3"
     Name_7: PlatinBar, param1: 0.4, param2: "5,15"
-    Name_8: PentaxidCrystal, param1: 0.6, param2: "1,2"
+    Name_8: PentaxidSeedCrystal, param1: 0.6, param2: "1,2"
     Name_9: DetectorHVEpicUpgradeKit, param1: 0.1, param2: 1
-    Name_10: DetectorCVEpicUpgradeKit, param1: 0.1, param2: 1
+    Name_10: ReportExplorationRawData, param1: 0.1, param2: 1
     Name_11: WarpDriveCVEpicUpgradeKit, param1: 0.1, param2: 1
-    Name_12: TeleporterBAEpicUpgradeKit, param1: 0.1, param2: 1
+    Name_12: ReportScienceRawData, param1: 0.1, param2: 1
     Name_13: NaniteChlorophyllInfusion, param1: 0.5, param2: 1
     Group_0: OresRare, param1: 0.4
-    Group_1: Reports, param1: 0.05
   }
 }
 
@@ -2051,7 +2050,7 @@
 
 ## FlameKeeper Boss on DarkPyre
 { +Container Id: 168
-  Count: "3,4"
+  Count: "4,5"
   Size: "8,2"
   SfxOpen: UseActions/drone_open
   SfxClose: UseActions/drone_close
@@ -2062,6 +2061,7 @@
     Name_3: WarbotNanotubes, param1: 0.3, param2: 1
     Name_4: WarpDriveCVEpicUpgradeKit, param1: 0.5, param2: 1
     Name_5: Token, param1: 0.2, param2: "meta=7225"
+    Name_6: LegacyEnergyCore, param1: 0.2, param2: 1
   }
 }
 
@@ -2119,6 +2119,7 @@
     Group_2: ComponentsRare, param1: 0.25
     Group_3: CraftingMaterial, param1: 0.25
     Group_4: EnergyItems, param1: 0.25
+    Group_5: Reports, param1: 0.05
   }
 }
 
@@ -2181,7 +2182,8 @@
 	  Name_6: EnergyMatrix, param1: 0.7, param2: "2,4"
 	  Name_7: AntiProtonLaserTurret, param1: 0.01, param2: "1"  
 	  Name_8: EnergyMatrix, param1: 0.7, param2: "2,4"
-    Group_0: Reports, param1: 0.03
+	  Name_9: AntiMatterRod, param1: 0.1, param2: "3,5"
+    Group_0: Reports, param1: 0.1
   }
 }
 

@@ -40,8 +40,8 @@
   #if the trigger for defense is triggered, will we have rainforcments?
   #probability in 0% - 100%  on lvl1 = ProbabilityMin | on lvl10 = ProbabilityMax
   SDScenarioGroup: ZiraxSpaceDefense
-  SDProbabilityMin: 0 #0.20
-  SDProbabilityMax: 0 #0.80
+  SDProbabilityMin: 0.20
+  SDProbabilityMax: 0.80
   #strength of the reinforcments, they will come in in 1 to 3 stages (waves)
   SDPriceMin: 30 #Price on level 1
   SDPriceMax: 300 #Price on level 10 
@@ -70,15 +70,15 @@
   #if the trigger for defense is triggered, will we have rainforcments?
   #probability in 0% - 100%  on lvl1 = ProbabilityMin | on lvl10 = ProbabilityMax
   SDScenarioGroup: PolarisSpaceDefense
-  SDProbabilityMin: 0 #0.10
-  SDProbabilityMax: 0 #0.60
+  SDProbabilityMin: 0.10
+  SDProbabilityMax: 0.60
   #strength of the reinforcments, they will com in in 1 to 3 stages (waves)
   SDPriceMin: 30 #Price on level 1
   SDPriceMax: 150 #Price on level 10 
 }
 
 { Element Name: FactionSettings
-  Faction: Alien
+  Faction: TheLegacy
   ScenarioGroup: Alien
   #Planetary base attack is currently only for Talon and Zirax
   Lvl1MinPrice:25
@@ -91,9 +91,9 @@
   #SD = SpaceDefense
   #if the trigger for defense is triggered, will we have rainforcments?
   #probability in 0% - 100%  on lvl1 = ProbabilityMin | on lvl10 = ProbabilityMax
-  SDScenarioGroup: AlienSpaceDefense
-  SDProbabilityMin: 0 #0.8
-  SDProbabilityMax: 0 #0.9
+  SDScenarioGroup: TheLegacySpaceDefense
+  SDProbabilityMin: 0.8
+  SDProbabilityMax: 0.9
   #strength of the reinforcments, they will com in in 1 to 3 stages (waves)
   SDPriceMin: 73 #Price on level 1
   SDPriceMax: 600 #Price on level 10 
@@ -114,8 +114,8 @@
   #if the trigger for defense is triggered, will we have rainforcments?
   #probability in 0% - 100%  on lvl1 = ProbabilityMin | on lvl10 = ProbabilityMax
   SDScenarioGroup: PiratesSpaceDefense
-  SDProbabilityMin: 0 #0.6
-  SDProbabilityMax: 0 #0.9
+  SDProbabilityMin: 0.6
+  SDProbabilityMax: 0.9
   #strength of the reinforcments, they will com in in 1 to 3 stages (waves)
   SDPriceMin: 11 #Price on level 1
   SDPriceMax: 150 #Price on level 10 
@@ -135,8 +135,8 @@
   #if the trigger for defense is triggered, will we have rainforcments?
   #probability in 0% - 100%  on lvl1 = ProbabilityMin | on lvl10 = ProbabilityMax
   SDScenarioGroup: TraderSpaceDefense
-  SDProbabilityMin: 0 #0.10
-  SDProbabilityMax: 0 #0.60
+  SDProbabilityMin: 0.10
+  SDProbabilityMax: 0.60
   #strength of the reinforcments, they will com in in 1 to 3 stages (waves)
   SDPriceMin: 30 #Price on level 1
   SDPriceMax: 150 #Price on level 10 
@@ -155,8 +155,8 @@
   #if the trigger for defense is triggered, will we have rainforcments?
   #probability in 0% - 100%  on lvl1 = ProbabilityMin | on lvl10 = ProbabilityMax
   SDScenarioGroup: KrielSpaceDefense
-  SDProbabilityMin: 0 #0.30
-  SDProbabilityMax: 0 #0.90
+  SDProbabilityMin: 0.30
+  SDProbabilityMax: 0.90
   #strength of the reinforcments, they will come in in 1 to 3 stages (waves)
   SDPriceMin: 30 #Price on level 1
   SDPriceMax: 300 #Price on level 10 
@@ -1294,7 +1294,7 @@
 //  ************************************************************************** 
 
 { Element Name: Unit 
-  Faction: Alien
+  Faction: TheLegacy
   ClassName: OPV_LegacyDecimator   /* class from EClassConfig or ItemConfig or .epb name for vessels (without the .epb) */
   Category: BaseDefenseOrbitVessel  /* category name. A category can contain multiple units of different strength. system will choose the best for requested price
                                     /*  - SmallMinigunDone, MediumMinigunDrone, HeavyMinigunDrone */
@@ -1302,7 +1302,7 @@
   CommandPointsPerLevel: 10          /* price per level, final price = CommandPointsLvl1 + level * CommandPointsPerLevel */
 }
 { Element Name: Unit 
-  Faction: Alien
+  Faction: TheLegacy
   ClassName: OPV_LegacyInfectorG   /* class from EClassConfig or ItemConfig or .epb name for vessels (without the .epb) */
   Category: BaseDefenseOrbitVessel  /* category name. A category can contain multiple units of different strength. system will choose the best for requested price
                                     /*  - SmallMinigunDone, MediumMinigunDrone, HeavyMinigunDrone */
@@ -1310,7 +1310,7 @@
   CommandPointsPerLevel: 5          /* price per level, final price = CommandPointsLvl1 + level * CommandPointsPerLevel */
 }
 { Element Name: Unit 
-  Faction: Alien
+  Faction: TheLegacy
   ClassName: OPV_LegacyInfectorO   /* class from EClassConfig or ItemConfig or .epb name for vessels (without the .epb) */
   Category: BaseDefenseOrbitVessel  /* category name. A category can contain multiple units of different strength. system will choose the best for requested price
                                     /*  - SmallMinigunDone, MediumMinigunDrone, HeavyMinigunDrone */
@@ -1322,7 +1322,7 @@
 { Element Name: Scenario
   Name: BD1A
   ID: 1400
-  IsInGroups: "AlienSpaceDefense"
+  IsInGroups: "TheLegacySpaceDefense"
   MaxPriceMultiplier: 2
   AttackType: BaseDefense_Space
   
@@ -1335,7 +1335,7 @@
 { Element Name: Scenario
   Name: BD2A
   ID: 1401
-  IsInGroups: "AlienSpaceDefense"
+  IsInGroups: "TheLegacyDefense"
   MaxPriceMultiplier: 2
   AttackType: BaseDefense_Space
   

@@ -173,6 +173,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 2, 2 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -189,6 +190,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 2 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -205,6 +207,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 1, 1 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
@@ -221,6 +224,7 @@ POIs:
       Mode: Survival
       CountMinMax: [ 2, 4 ]     
       Probability: 1
+      SpaceDefenseProbability: 0
       InitPower: True
       Properties: 
         - Key: RegenAfter
