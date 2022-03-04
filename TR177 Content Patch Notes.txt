@@ -1,0 +1,78 @@
+
+**Transcendence V177 B3718 Scenario Content Patch**
+
+Thank you all for waiting and being patient with the wipe. 
+Glacial has provided everyone a Living Ship. In order to claim it to prove your worthiness you must travel
+to EventOrbitPVE by Haven teleporter and claim one for yourself. Make sure to blueprint! A big note yall may have noticed is that the title 
+of the server now says "Public Test Server" instead of "Private". Its time to take on some new players and hopefully not wipe 
+till v1.8 or v1.9  
+
+**The Patch Notes**
+*1. First Introduction of the Shield Bonus mechanic.* 
+-Players can grow pentaxid and gold, add Capaciters, Perplexors, and other devices to enhance their sheild capacity and regen rate. 
+-The Shield Generators themselves use much less energy while on or off, but as players grow their sheild system 
+ energy usage will curve up whether the shield is off or on.
+-Some devices also add ShieldCapacity bonuses such as Epic Detectors. 
+-Base and CV shield generators are equal in Capacity, Recharge, and Energy. 
+-Hover Vessels have not been added to this system yet.  
+-The LegacyEnergyCore fuel tank and ZedZorgGenerator will help support a hardy shield system. 
+
+*2. Galaxy Config*
+-Legacy have been tamed down a lot. Their is more variety of peaceful planets and the addition of ZedZorg inhabited alien worlds. 
+-Fixed typo where Barren playfields caused CoQ upon warping to new star.
+-Added more factions to the outer galaxy zones for better POI spawning. 
+-Removed Talon worlds using ConArt yamls. Talon ships still explore space in the outer galaxy scouting temperate planets.
+-Fixed CoQ from wrong POI name syntax in some orbits.
+-Moved Ocean planets to the Hot habitable zone for better spawn chances. 
+
+*3. The ZedZorg are rampid in our Galaxy!*
+-21 total POIs/Ships/Asteroids exist for this series concentrated in the outer galaxy. 
+ Here players will find much need items such as LegacyEnergyCores to build powerful devices.
+-AntiProton, Antimatter, and Ranger Turrets have been designed by semi-smart lab techs to help in
+ the fight against the almighty ZedZorg. 
+-The ZedZorg have left a mess of the fallen Zirax Federation ships that defended their homeworlds. 
+ Those worlds are now glassed and settled by ZedZorg Platforms. An adventerous salvager's paradise perhaps? 
+
+*4. Suits & Boosters*
+-Normal suits can only have normal boosters. 
+-Epic suits can only have epic boosters
+-Transportation Boosters work with normal and epic suits. 
+
+*5. Instances:*
+-RipDatPow's new TunnelPortalInstance has been added to the server. Portal location is at Adelavine Commons. 
+-All instances on the server now allow a temporary embargo on volume/weight thanks to physics defying technology. 
+ This means while in an instance you can carry all you want. When you leave you must unload before you can add to your backpack. 
+ There is a catch, ZedCity & ZedAsteroid now will NOT ALLOW ENTRY if you have anything in your backpack or toolbar. 
+
+
+*6. Minor Changes, Fixes, and Tweaks*
+-Fixed/Updated several models and changes in vanilla
+-Dialogue file now includes all vanilla dialogue. Some of this may not work. 
+-Space Reinforcements have been turned off completely
+-Increased drop rate by 1 when mining resources with a drill
+-PlatinOunce is now worth 300 credits and can be deposited into an ATM
+-AlienPlasmaCannon required for certain Vlade missions to skip ahead is now craftable and unlockable. 
+-Some custom and epic devices now require reports to craft. 
+-Decreased amount of reports in containers. 
+-Updated Status Effects and Medical Items to math Vanilla. 
+-Indegestion has been nerfed on several plants and food items.
+-TalonCrossBow can now be looted from tribal items (rare drop)
+-Chainsaw harvest set from false to true.
+-Fixed Server Tab, Website still work in progress.
+
+*7. New Items and Devices*
+-ZedZorgGenerator
+-LegacyEnergyCoreTank
+-Large/Small Capacitor
+-Large/Small Perplexor
+-Epic Perplexor
+-AntiMatterPhaseCannon
+-AntiMatterRods
+-RapidChargeSheildGenerator
+-HyperShieldPOI
+-SuperShieldPOI
+-GoldSeedCrystal
+
+*The latest release is now on GitHub, check out the chart posted below for the sheild mechanics. 
+
+https://docs.google.com/spreadsheets/d/1VziiZWkjBPd9uI0Vx5hgOXVmUdCDsMNi8whuZbUzY5U/edit?usp=sharing

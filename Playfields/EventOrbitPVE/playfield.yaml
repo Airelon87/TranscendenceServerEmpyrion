@@ -32,7 +32,7 @@ POIs:
    #    Name: TempestCruiser
    #    Pos: [340, -20, 240]
    #    Rot: [0, 0, 0]
-   #    Faction: Public
+   #    Faction: None
    #    InitPower: True
    -  Type: BA_Admin
       Prefab: EventCenter
@@ -46,7 +46,7 @@ POIs:
       Name: PlayerOneDryDock
       Pos: [100, 0, 100]
       Rot: [0, 0, 0]
-      Faction: Public
+      Faction: None
       InitPower: True
       Properties: 
       -  Key: PersonalContainer
@@ -56,7 +56,7 @@ POIs:
       Name: PlayerTwoDryDock
       Pos: [150, 0, 100]
       Rot: [0, 0, 0]
-      Faction: Public
+      Faction: None
       InitPower: True
       Properties: 
       -  Key: PersonalContainer
@@ -66,7 +66,7 @@ POIs:
       Name: PlayerThreeDryDock
       Pos: [200, 0, 100]
       Rot: [0, 0, 0]
-      Faction: Public
+      Faction: None
       InitPower: True
       Properties: 
       -  Key: PersonalContainer
@@ -76,7 +76,7 @@ POIs:
       Name: PlayerFourDryDock
       Pos: [250, 0, 100]
       Rot: [0, 0, 0]
-      Faction: Public
+      Faction: None
       InitPower: True
       Properties: 
       -  Key: PersonalContainer
@@ -86,7 +86,7 @@ POIs:
       Name: PlayerFiveDryDock
       Pos: [300, 0, 100]
       Rot: [0, 0, 0]
-      Faction: Public
+      Faction: None
       InitPower: True
       Properties: 
       -  Key: PersonalContainer
@@ -96,7 +96,7 @@ POIs:
       Name: PlayerSixDryDock
       Pos: [350, 0, 100]
       Rot: [0, 0, 0]
-      Faction: Public
+      Faction: None
       InitPower: True
       Properties: 
       -  Key: PersonalContainer
@@ -106,7 +106,7 @@ POIs:
       Name: PlayerSevenDryDock
       Pos: [400, 0, 100]
       Rot: [0, 0, 0]
-      Faction: Public
+      Faction: None
       InitPower: True
       Properties: 
       -  Key: PersonalContainer
@@ -116,7 +116,7 @@ POIs:
       Name: PlayerEightDryDock
       Pos: [450, 0, 100]
       Rot: [0, 0, 0]
-      Faction: Public
+      Faction: None
       InitPower: True
       Properties: 
       -  Key: PersonalContainer
@@ -126,11 +126,103 @@ POIs:
       Name: PlayerNineDryDock
       Pos: [500, 0, 100]
       Rot: [0, 0, 0]
-      Faction: Public
+      Faction: None
       InitPower: True
       Properties: 
       -  Key: PersonalContainer
          Value: FusionCell:8, OxygenBottleLarge:10, Optronics:3, Chemicals:14, ScienceEquipment:6, SpareParts:25, PlasticMaterial:150, IronIngot:500, CopperIngot:300, SiliconIngot:300, CobaltIngot:150, NeodymiumIngot:150, SathiumIngot:100, ErestrumIngot:50, ZascosiumIngot:50, AncientRelics
+#Free CVs for v177 Private to None Wipe - First ship with Sheild bonus mechanics 
+   -  Type: CV_Player
+      Prefab: TR_AegisCarrier
+      Name: AegisCarrier_NX177i
+      Pos: [100, 50, 100]
+      Rot: [0, 0, 0]
+      Faction: None
+      InitPower: True
+      Properties:
+      -  Key: MapMarker
+         Value: Nuetral
+   -  Type: CV_Player
+      Prefab: TR_AegisCarrier
+      Name: AegisCarrier_NX177h
+      Pos: [150, 50, 100]
+      Rot: [0, 0, 0]
+      Faction: None
+      InitPower: True
+      Properties:
+      -  Key: MapMarker
+         Value: Nuetral
+   -  Type: CV_Player
+      Prefab: TR_AegisCarrier
+      Name: AegisCarrier_NX177g
+      Pos: [200, 50, 100]
+      Rot: [0, 0, 0]
+      Faction: None
+      InitPower: True
+      Properties:
+      -  Key: MapMarker
+         Value: Nuetral
+   -  Type: CV_Player
+      Prefab: TR_AegisCarrier
+      Name: AegisCarrier_NX177f
+      Pos: [250, 50, 100]
+      Rot: [0, 0, 0]
+      Faction: None
+      InitPower: True
+      Properties:
+      -  Key: MapMarker
+         Value: Nuetral
+   -  Type: CV_Player
+      Prefab: TR_AegisCarrier
+      Name: AegisCarrier_NX177e
+      Pos: [300, 50, 100]
+      Rot: [0, 0, 0]
+      Faction: None
+      InitPower: True
+      Properties:
+      -  Key: MapMarker
+         Value: Nuetral
+   -  Type: CV_Player
+      Prefab: TR_AegisCarrier
+      Name: AegisCarrier_NX177d
+      Pos: [350, 50, 100]
+      Rot: [0, 0, 0]
+      Faction: None
+      InitPower: True
+      Properties:
+      -  Key: MapMarker
+         Value: Nuetral
+   -  Type: CV_Player
+      Prefab: TR_AegisCarrier
+      Name: AegisCarrier_NX177c
+      Pos: [400, 50, 100]
+      Rot: [0, 0, 0]
+      Faction: None
+      InitPower: True
+      Properties:
+      -  Key: MapMarker
+         Value: Nuetral
+   -  Type: CV_Player
+      Prefab: TR_AegisCarrier
+      Name: AegisCarrier_NX177b
+      Pos: [450, 50, 100]
+      Rot: [0, 0, 0]
+      Faction: None
+      InitPower: True
+      Properties:
+      -  Key: MapMarker
+         Value: Nuetral
+   -  Type: CV_Player
+      Prefab: TR_AegisCarrier
+      Name: AegisCarrier_NX177a
+      Pos: [500, 50, 100]
+      Rot: [0, 0, 0]
+      Faction: None
+      InitPower: True
+      Properties:
+      -  Key: MapMarker
+         Value: Nuetral
+
 #Asteroids
    -  Type: AsteroidVoxel02Pentaxid
       Prefab: AsteroidVoxel02Pentaxid
