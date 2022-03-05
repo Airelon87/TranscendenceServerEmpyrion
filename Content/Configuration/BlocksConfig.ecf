@@ -32563,7 +32563,7 @@
   
   Radiation: 0, display: RadiationLevel
 
-  ShieldCapacityBonus: 100, type: int, display: true 
+  ShieldCapacityBonus: 250, type: int, display: true 
 
   BlastParticleIndex: 4
   BlastRadius: 5
@@ -32596,7 +32596,7 @@
   StackSize: 25
   BlockColor: "0,64,255"
   Volume: 750, type: float, display: true, formatter: Liter
-  CPUIn: 200, type: int, display: true
+  CPUIn: 75, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
   EnergyIn: 1750, type: int, display: true, formatter: Watt
   Category: Devices
@@ -32645,7 +32645,7 @@
   Volume: 250, type: float, display: true, formatter: Liter
   CPUIn: 50, type: int, display: true
   Mass: 300, type: float, display: true, formatter: Kilogram
-  EnergyIn: 350, type: int, display: true, formatter: Watt
+  EnergyIn: 25, type: int, display: true, formatter: Watt
   Category: Devices
   MaxCount: 8, type: int, display: true
 
@@ -32692,9 +32692,9 @@
   Volume: 750, type: float, display: true, formatter: Liter
   CPUIn: 200, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
-  EnergyIn: 2100, type: int, display: true, formatter: Watt
+  EnergyIn: 525, type: int, display: true, formatter: Watt
   Category: Devices
-  MaxCount: 4, type: int, display: true
+  MaxCount: 8, type: int, display: true
   
   EssentialCategory: cpgGenerator
   Group: cpgGenerator
@@ -32739,7 +32739,7 @@
   Volume: 750, type: float, display: true, formatter: Liter
   CPUIn: 200, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
-  EnergyIn: 4200, type: int, display: true, formatter: Watt
+  EnergyIn: 600, type: int, display: true, formatter: Watt
   EnergyInIdle: 750
   Category: Devices
   MaxCount: 4, type: int, display: true
@@ -32788,7 +32788,7 @@
   Volume: 250, type: float, display: true, formatter: Liter
   CPUIn: 50, type: int, display: true
   Mass: 300, type: float, display: true, formatter: Kilogram
-  EnergyIn: 900, type: int, display: true, formatter: Watt
+  EnergyIn: 200, type: int, display: true, formatter: Watt
   Category: Devices
   MaxCount: 8, type: int, display: true
   
@@ -32844,7 +32844,7 @@
 
   Mass: 124800, type: float, display: true, formatter: Kilogram
   Volume: 7700, type: float, display: true, formatter: Liter      # max volume
-  EnergyIn: 180000, type: int, display: true, formatter: Watt
+  EnergyIn: 90000, type: int, display: true, formatter: Watt
   CPUIn: 96000, type: int, display: true
   HitPoints: 16000, type: int, display: true
   SoundOnEnter: UseActions/DOOROpen02
@@ -33007,7 +33007,7 @@
   }
   IsAccessible: false, type: bool
   EnergyIn: 2, type: int, display: true, formatter: Watt
-  CPUIn: 10, type: int, display: true  
+  CPUIn: 5, type: int, display: true  
   ShieldCapacityBonus: 8, type: int, display: true
   ShieldRechargeBonus: 2, type: int, display: true
   Collide: "bullet,rocket,melee,sight"
@@ -33055,8 +33055,8 @@
     OnDeath: PlantDead2 
   }
   IsAccessible: false, type: bool
-  EnergyIn: 20, type: int, display: true, formatter: Watt
-  CPUIn: 10, type: int, display: true  
+  EnergyIn: 8, type: int, display: true, formatter: Watt
+  CPUIn: 5, type: int, display: true  
   ShieldCapacityBonus: 40, type: int, display: true
   ShieldRechargeBonus: 7, type: int, display: true
   Collide: "bullet,rocket,melee,sight"
@@ -33093,8 +33093,8 @@
   AllowedInBlueprint: true, display: true 
   IndexName: Plant
   Material: metallight
-  EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 50, type: int, display: true  
+  EnergyIn: 2, type: int, display: true, formatter: Watt
+  CPUIn: 7, type: int, display: true  
   ShieldCapacityBonus: 5, type: int, display: true
   ShieldRechargeBonus: 1, type: int, display: true
   Shape: ModelEntity
@@ -33140,8 +33140,8 @@
   AllowedInBlueprint: true, display: true 
   IndexName: Plant
   Material: metallight
-  EnergyIn: 200, type: int, display: true, formatter: Watt
-  CPUIn: 75, type: int, display: true  
+  EnergyIn: 16, type: int, display: true, formatter: Watt
+  CPUIn: 7, type: int, display: true  
   ShieldCapacityBonus: 80, type: int, display: true
   ShieldRechargeBonus: 4, type: int, display: true
   Shape: ModelEntity
