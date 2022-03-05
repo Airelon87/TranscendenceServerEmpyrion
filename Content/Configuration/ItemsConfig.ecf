@@ -1,6 +1,6 @@
 ##
-## Transcendence V16
-## 9/21/2021
+## Transcendence
+## 11/2018 A7 to 3/5/2022 v1.7
 ##
 ## Eliminates legacy config.ecf
 ## 
@@ -2473,8 +2473,8 @@
   BlastRadius: 3, display: true
   BlastDamage: 500, display: true
   # Explosion Radius: 3, display: true 
-  Durability: 350, display: false
-  DegradationProb: 1, type: float, display: false
+  Durability: 700, display: false
+  DegradationProb: 0.8, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot  
   { Child 0
     Class: LauncherSS
@@ -2494,9 +2494,9 @@
     PfxMuzzle: SniperMuzzleLaserRed
   }
 
-  UnlockCost: 1
+  UnlockCost: 25
   UnlockLevel: 25
-  TechTreeParent: RocketLauncherT2
+  TechTreeParent: ScifiCannon
   TechTreeNames: Weapons
 }
 
@@ -6851,7 +6851,7 @@
   ShowUser: Yes
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0.1, type: float, display: true, formatter: Liter
-  MarketPrice: 0.22
+  MarketPrice: 0.34
 }
 { +Item Id: 306, Name: AkuaWine, Ref: FoodTemplate
   MarketPrice: 24.95, display: true
@@ -10295,7 +10295,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Radiation: 4, type: int, display: true
   FallDamageFac: 0.60, type: float, display: true
   PowerFac: 0.53, type: float, display: true # better: 0.2
-  SpeedFac: 0.75, type: float, display: true # better: 0.2
+  SpeedFac: 0.88, type: float, display: true # better: 0.2
   JumpFac: 0.55, type: float, display: true
   JetpackFac: 1.44, type: float, display: true
   FoodFac: 1.73, type: float, display: true
@@ -10327,9 +10327,9 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Heat: 30, type: int, display: true
   Cold: 30, type: int, display: true
   Radiation: 6, type: int, display: true
-  FallDamageFac: 0.7, type: float, display: true
+  FallDamageFac: 0.75, type: float, display: true
   PowerFac: 0.43, type: float, display: true  # better: 0.085
-  SpeedFac: 0.6, type: float, display: true  # better: 0.085
+  SpeedFac: 0.83, type: float, display: true  # better: 0.085
   JumpFac: 0.45, type: float, display: true
   JetpackFac: 1.73, type: float, display: true
   FoodFac: 1.8, type: float, display: true
@@ -10983,9 +10983,9 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     RedDot: true
   }
 
-    UnlockCost: 5, display: true
-    UnlockLevel: 25, display: true
-    TechTreeParent: LaserRifle
+    UnlockCost: 10, display: true
+    UnlockLevel: 15, display: true
+    TechTreeParent: LaserCrossbow
     TechTreeNames: Weapons
 }
 #  CATEGORIE: New Drone Weapon Items id 850 - 900  
@@ -13442,7 +13442,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1411, Name: LegacyEnergyCore , Ref: TradingGoodsTemplate
   MarketPrice: 20000
   CustomIcon: TechnicalArtifact
-  FuelValue: 3000, type: int, display: true, formatter: WattHour
+  FuelValue: 4500, type: int, display: true, formatter: WattHour
   Info: Provides a massive amount of fuel. A required crafting item for the AntiprotonLaserTurret, display: true
   ShowUser: Yes
 }
@@ -13556,7 +13556,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     RedDot: true
   }
 
-  UnlockCost: 25, display: true
+  UnlockCost: 7, display: true
   UnlockLevel: 5, display: true
   TechTreeParent: Pistol
   TechTreeNames: Weapons
@@ -13945,6 +13945,94 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     DamageMultiplier_2: 0, param1: stone|dirt|rock
     DamageMultiplier_3: 0.25, param1: hull|hullarmored|hullcombat
     BlastDamageMultiplier_4: 0, param1: shield
+  }
+}
+{ +Item Id: 1612, Name: LaserCrossbow
+  Meshfile: Entities/Items/Weapons/Crossbow/TalonCrossbowPlayerPrefab
+  CustomIcon: TalonCrossbowWeaponCharged 
+  PickupToToolbar: true
+  Material: metalweapon
+  MarketPrice: 70, display: true
+  HoldType: 15
+  StackSize: 1
+  Category: Weapons/Items
+  ShowUser: Yes
+  Info: A rudimentary laser cross bow, display: true
+  Mass: 18, type: float, display: true, formatter: Kilogram
+  Volume: 36, type: float, display: true, formatter: Liter
+  Durability: 250, display: false
+  DegradationProb: 0.725, type: float, display: false
+  OverrideTradingConstraints: true
+  SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
+  { Child 0
+    Class: Ranged
+    AllowRemote: false  
+    ROF: 1.5, type: float, display: true, formatter: ROF
+    Range: 240, display: true
+    IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
+    Automatic: true
+    Buff: "Stunned, ImmunityBoosterII"
+    Buff_chance: "0.2,0.3"
+    Damage: 50, display: true
+    AmmoCapacity: 32, display: true
+    AmmoType: LaserArrows, display: true
+    NoiseStrength: 50, display: false 
+    CameraShake: 0
+    Recoil: 0, display: true
+    BulletSpread: 0.5, display: true
+    ReloadDelay: 0.9, display: true
+    ParticleTransform: Muzzle/Particle1
+    SfxBegin: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_start
+    SfxLoop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_loop
+    SfxStop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_end
+    SfxNoAmmo: Weapons/Misc/G36DryFire
+    SfxReload: Weapons/Player/Reload/RifleReloadNormal
+    PfxMuzzle: SniperMuzzleLaserBlue
+    #Tracer: Weapons/Projectiles/TracerLaserShotBlue
+    Tracer: Weapons/Projectiles/TracerOrange1
+    TracerPerBullet: 1
+	
+    DamageMultiplier_1: 5, param1: head, display: DmgMultiplierHead  
+    DamageMultiplier_2: 1.5, param1: dirt|stone|rock|wood|hullarmored|hullcombat
+    DamageMultiplier_3: 1.7, param1: shield      
+  }
+  { Child 1
+    Class: Zoom
+    ZoomOverlay: Entities/Items/Weapons/SniperScopes/ScopeNew02
+    ZoomOut: 40
+    ZoomIn: 10
+  }
+
+    UnlockCost: 2
+    UnlockLevel: 3
+    TechTreeParent: Pistol
+    TechTreeNames: Weapons 
+}
+{ +Item Id: 1613, Name: LaserArrows
+  Meshfile: Entities/Items/Weapons/Projectiles/CrossbowBoltPrefab
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  CustomIcon: FillerCharge
+  MarketPrice: 0.3, display: true
+  Material: human
+  HoldType: 0
+  Canhold: false
+  StackSize: 2000
+  Info: bkiAmmo, display: tru
+  Category: Weapons/Items
+  ShowUser: Yes
+  { Child 0
+    Class: Projectile
+    Damage: 50
+    BlastParticleIndex: 0
+    BlastRadius: 0
+    BlastDamage: 0
+    Speed: 20
+    Range: 250      # must be higher than range given in weapon to ensure that particle effect is visible
+    Ballistic: True
+		
+    DamageMultiplier_1: 5, param1: head, display: DmgMultiplierHead  
+    DamageMultiplier_2: 1.5, param1: dirt|stone|rock|wood|hullarmored|hullcombat
+    DamageMultiplier_3: 1.7, param1: shield
   }
 }
 #===============================================================================

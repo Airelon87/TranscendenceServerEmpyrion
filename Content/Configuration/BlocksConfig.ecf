@@ -19982,7 +19982,7 @@
 
   UnlockCost: 12, display: true
   UnlockLevel: 10, display: true
-  # TechTreeParent: PentaxidTankSV
+  #TechTreeParent: PentaxidTankSV
   TechTreeNames: Small Vessel
 }
 
@@ -24741,10 +24741,10 @@
 #  UpgradeTo: null, display: false
   UpgradeTo: ShieldGeneratorSuperSV, display: true
   
-  UnlockCost: 5, display: true
-  UnlockLevel: 7, display: true
-#  TechTreeParent: PentaxidTank
-  TechTreeNames: "Small Vessel"
+  UnlockCost: 10, display: true
+  UnlockLevel: 12, display: true
+  TechTreeParent: WarpDriveSV
+  TechTreeNames: Small Vessel
 }
 { +Block Id: 1811, Name: ShieldGeneratorCVT2, Ref: ShieldGeneratorCV
   Model: @models/Blocks/Misc/ShieldGeneratorLargeT2Prefab
@@ -32662,7 +32662,7 @@
   ShieldCapacityBonus: 1000, type: int, display: true
 
   UnlockCost: 5, display: true
-  UnlockLevel: 12, display: true
+  UnlockLevel: 15, display: true
   TechTreeParent: ShieldGeneratorSV
   TechTreeNames: "Small Vessel"
 
@@ -32805,7 +32805,7 @@
   ShieldRechargeBonus: 25, type: int, display: true
 
   UnlockCost: 5, display: true
-  UnlockLevel: 15, display: true
+  UnlockLevel: 17, display: true
   TechTreeParent: SmallShieldCapacitor
   TechTreeNames: "Small Vessel"
 
@@ -32859,7 +32859,7 @@
 
   UnlockCost: 25, display: true
   UnlockLevel: 25, display: true
-  TechTreeParent: TurretMSArtilleryBlocks
+  TechTreeParent: AntiProtonLaserTurret
   TechTreeNames: Capital Vessel
 
   RotSpeed: 80, type: int, display: true
@@ -32934,9 +32934,9 @@
   BlastDamage: 1500
   
   UnlockCost: 12, display: true
-  UnlockLevel: 25, display: true
-  TechTreeParent: PentaxidTank
-  TechTreeNames: "Small Vessel"
+  UnlockLevel: 20, display: true
+  TechTreeParent: SmallShieldPerplexor
+  TechTreeNames: Small Vessel
 
   ShowUser: Yes
 }
@@ -33234,7 +33234,7 @@
 
   UnlockCost: 12, display: true
   UnlockLevel: 25, display: true
-  TechTreeParent: PentaxidTank
+  TechTreeParent: ShieldGeneratorBAT2
   TechTreeNames: "Base"
 }
 #SV Drill DrillAttachment
@@ -33366,7 +33366,7 @@
   
   UnlockCost: 12, display: true
   UnlockLevel: 25, display: true
-  TechTreeParent: PentaxidTank
+  TechTreeParent: ShieldGeneratorCVT2
   TechTreeNames: "Capital Vessel"
 }
 { Block Name: RangerBomberCV       
@@ -33512,7 +33512,7 @@
   CPUIn: 900, type: int, display: true
   XpFactor: 2
 
-  UnlockCost: 50, display: true
+  UnlockCost: 20, display: true
   UnlockLevel: 20, display: true
   TechTreeParent: RangerBomberCV
   TechTreeNames: Capital Vessel

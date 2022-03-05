@@ -5408,9 +5408,8 @@
   CraftTime: 16 
   Target: "AdvC"
   { Child Inputs
-    WoodLogs: 4
-    OpticalFiber: 2
-    AlienTooth: 7
+    LaserCrossbow: 1
+    Optronics: 2
     LaserKit: 1
     ReportExplorationRawData: 1
   }
@@ -6065,6 +6064,7 @@
     ReportBiologicalData: 1
   }
 }
+
 { +Template Name: RangerThrusterSV
   DeconOverride: Continue
   CraftTime: 15 #A2 SV 7
@@ -6076,6 +6076,27 @@
     OpticalFiber: 3
     WarbotNanotubes: 1
     ReportMaterialData: 1
+  }
+}
+
+{ +Template Name: LaserCrossbow 
+  DeconOverride: Stop
+  CraftTime: 30
+  Target: "SmallC,HoverC,BaseC,SurvC"
+  { Child Inputs
+    WoodLogs: 3
+    Fiber: 3
+    IronOre: 6
+  }
+}
+
+{ +Template Name: LaserArrows 
+  CraftTime: 30
+  OutputCount: 32
+  Target: "SmallC,HoverC,BaseC,SurvC"
+  { Child Inputs
+    WoodLogs: 1
+    PromethiumPellets: 9
   }
 }
 
