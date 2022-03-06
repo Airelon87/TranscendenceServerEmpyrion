@@ -114,7 +114,7 @@
   #BUYING from player  
   Item9: "Leather, 0, 0, mf=1.1-1.2, 1000-1500"
   Item10: "GoldIngot, 0, 0, mf=1.1-1.2, 1000-1500"
-  Item11: "PlatinBar, 0, 0, mf=1.1-1.2, 1000-1500"  
+  Item11: "PlatinBar, 120-150, 1-50, 15-19, 90-100"  
   Item12: "Optronics, 0, 0, mf=1.1-1.2, 1000-1500"  
   Item13: "ToxicWaste, 0, 0, mf=1.1-1.2, 1000-1500"  
 } 
@@ -531,7 +531,7 @@
   Item9: "PlasticMaterial, 1-2, 50-100, 1-1, 100-500"
   Item10: "Optronics, 150-175, 2-7, 95-145, 7-12"
   Item11: "AluminiumPowder, 25-30, 1-50, 15-19, 50-100"
-  Item12: "PlatinBar, 25-30, 1-50, 15-19, 50-100" 
+  Item12: "PlatinBar, 120-150, 1-50, 15-19, 90-100" 
   Item13: "TitanOre, 10-20, 1-50, 5-9, 50-100" 
   Item14: "AutoMinerCore, 2200-2950, 1-10, 1070-1990, 10-45"
 }
@@ -766,7 +766,7 @@
   Item9: "GoldIngot, 0-0, 0-0, 5-10, 1-500"
   Item10: "PentaxidCrystal, 27-40, 50-100, 13-14, 100-500"
   Item11: "AluminiumPowder, 25-30, 1-50, 15-19, 50-100"
-  Item12: "PlatinBar, 25-30, 1-50, 15-19, 50-100" 
+  Item12: "PlatinBar, 120-150, 1-50, 15-19, 90-100" 
   Item13: "TitanOre, 10-20, 1-50, 5-9, 50-100" 
 }
 
@@ -810,7 +810,7 @@
   Item17: "ToxicWaste, 34-46, 1-20, 0-0, 0-0" 
   Item18: "TitanOre, 64-96, 1-5, 51-64, 5-10"
   Item19: "TitanRods, 64-96, 1-5, 51-64, 5-10"
-  Item20: "PlatinBar, 64-96, 1-5, 51-64, 5-10"
+  Item20: "PlatinBar, 120-150, 1-50, 15-19, 90-100"
   Item21: "AluminiumPowder, 64-96, 1-5, 51-64, 5-10"
 }
 
@@ -858,7 +858,7 @@
   Item7: "LargeOptronicBridge, 1500-2000, 1-5, 1000-1150, 5-10"
   Item8: "LargeOptronicMatrix, 2500-3000, 1-5, 1500-1900, 5-10" 
   Item9: "AluminiumPowder, 25-30, 1-50, 15-19, 50-100"
-  Item10: "PlatinBar, 25-30, 1-50, 15-19, 50-100" 
+  Item10: "PlatinBar, 120-150, 1-50, 15-19, 90-100" 
   Item11: "TitanOre, 10-20, 1-50, 5-9, 50-100" 
   Item12: "Token:7238, 8000-12000, 1-5, 0-0, 0-0" 
   Item13: "ArmorBoostEpic, 75000-85000, 1-5, 45000-75000, 5-10"
@@ -1000,7 +1000,7 @@
   Item7: "TransportationBoost, 590-1220, 1-15, 450-560, 15-20"
   Item8: "Optronics, 150-175, 2-7, 95-145, 7-12"
   Item9: "AluminiumPowder, 25-30, 1-50, 15-19, 50-100"
-  Item10: "PlatinBar, 25-30, 1-50, 15-19, 50-100" 
+  Item10: "PlatinBar, 120-150, 1-50, 15-19, 90-100" 
   Item11: "TitanOre, 10-20, 1-50, 5-9, 50-100" 
   Item12: "Token:7238, 800-1200, 1-5, 500-600, 5-10"
   Item13: "ArmorBoostEpic, 75000-85000, 1-5, 25000-36000, 5-10"
@@ -1112,12 +1112,13 @@
   Item6: "LuxuryGoods, 2300-3000, 1-5, 1700-2300, 5-10"
   Item7: "TransportationBoost, 590-1220, 1-15, 450-560, 15-20"
   Item8: "AluminiumPowder, 25-30, 1-50, 15-19, 50-100"
-  Item9: "PlatinBar, 25-30, 1-50, 15-19, 50-100" 
+  Item9: "PlatinBar, 120-150, 1-50, 15-19, 90-100" 
   Item10: "TitanOre, 10-20, 1-50, 5-9, 50-100" 
   Item11: "Token:7238, 800-1200, 1-5, 500-600, 5-10"
   Item12: "ArmorBoostEpic, 75000-85000, 1-5, 25000-36000, 5-10"
-  Item13: "RangerTurret, 98830-112440, 1-4, 61175-78830, 4-10"
-  Item14: "RangerSVPlasmaCharge, 47-53, 64-164, 37-43, 164-256"
+  Item13: "JetpackBoostEpic, 75000-85000, 1-5, 25000-36000, 5-10"
+  Item14: "RangerTurret, 98830-112440, 1-4, 61175-78830, 4-10"
+  Item15: "RangerSVPlasmaCharge, 47-53, 64-164, 37-43, 164-256"
 }
 
 { Trader Name: MilitaryT1
@@ -1240,7 +1241,9 @@
   Item7: "OxygenBoost, 1600-2400, 1-20, 360-440, 20-30"
   Item8: "RadiationBoost, 3000-3750, 1-20, 300-370, 20-25"
   Item9: "TransportationBoost, 590-1220, 1-15, 450-560, 15-20"
-  Item10: "ArmorBoostEpic, 19000-25000, 1-10, 12000-16000, 10-20"
+  Item10: "ArmorBoostEpic, 75000-85000, 1-5, 25000-36000, 5-10"
+  Item11: "JetpackBoostEpic, 75000-85000, 1-5, 25000-36000, 5-10"
+  Item12: "OxygenBoostEpic, 75000-85000, 1-5, 25000-36000, 5-10"
 }
 
 { Trader Name: PewPews
@@ -1408,7 +1411,7 @@
   Item10: "PentaxidCrystal, 17-30, 15-50, 9-15, 50-100"
   Item11: "Narcotics, 129-130, 1-24, 119-126, 24-50"
   Item12: "AluminiumCoil, 25-30, 1-50, 15-19, 50-100"
-  Item13: "PlatinBar, 25-30, 1-50, 15-19, 50-100" 
+  Item13: "PlatinBar, 120-150, 1-50, 15-19, 90-100" 
   Item14: "TitanOre, 10-20, 1-50, 5-9, 50-100" 
   Item15: "EmergencyRations, 75-100, 1-25, 25-60, 25-60"
   Item16: "Liquors, 25-30, 1-5, 15-19, 5-10"
@@ -1682,7 +1685,7 @@
   SellingGoods: "trwSpecial"
   Discount: 0.17
   Item1: "GoldIngot, 237-250, 21-150, 175-235, 150-700"
-  Item2: "PlatinBar, 25-30, 21-50, 15-21, 50-100"
+  Item2: "PlatinBar, 120-150, 1-50, 15-19, 90-100"
   Item3: "PlatinOre, 15-30, 21-50, 10-15, 50-100" 
   Item4: "AluminiumOre, 19-30, 21-50, 15-19, 50-100"
   Item5: "CompressedPromethium, 350-400, 1-50, 275-340, 50-100"

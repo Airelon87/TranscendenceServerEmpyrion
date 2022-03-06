@@ -6852,6 +6852,15 @@
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0.1, type: float, display: true, formatter: Liter
   MarketPrice: 0.34
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 2, display: HealthValue
+    AddStamina: 2, display: StaminaValue
+    AddFood: 3, display: FoodValue
+    AddOxygen: 0
+    SfxBegin: UseActions/playerEatingSoft
+  }
 }
 { +Item Id: 306, Name: AkuaWine, Ref: FoodTemplate
   MarketPrice: 24.95, display: true
@@ -6863,10 +6872,10 @@
     AddStamina: 40, display: StaminaValue
     AddFood: 2, display: FoodValue
     AddOxygen: 0
-	AddTemperature: -8, display: TemperatureValue
+	  AddTemperature: -8, display: TemperatureValue
     SfxBegin: UseActions/playerDrinking
     Buff: "Hangover,Intoxication"
-    Buff_chance: "0.4,0.2"
+    Buff_chance: "0.2,0.2"
    # Debuff: Cold, display: EffectiveAgainst
   }
 }
@@ -6920,7 +6929,7 @@
     AddStamina: 40, display: StaminaValue
     AddFood: 298, display: FoodValue
     AddOxygen: 0
-	AddTemperature: 5, display: TemperatureValue
+	  AddTemperature: 5, display: TemperatureValue
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -6981,10 +6990,10 @@
     AddStamina: 0, display: StaminaValue
     AddFood: 5, display: FoodValue
     AddOxygen: 0
-  # AddTemperature: -0, display: TemperatureValue
+  # AddTemperature: -1, display: TemperatureValue
     SfxBegin: UseActions/playerEatingFruit
     Buff: Indigestion
-    Buff_chance: 0.10
+    Buff_chance: 0.01
   }
 }
 { +Item Id: 317, Name: Egg, Ref: FoodTemplate
@@ -7005,7 +7014,7 @@
     AddOxygen: 0
     SfxBegin: UseActions/playerEatingPain
     Buff: Indigestion
-    Buff_chance: 0.8
+    Buff_chance: 0.2
   }
 }
 { +Item Id: 318, Name: Varonroot, Ref: FoodTemplate
@@ -7050,7 +7059,7 @@
     SfxBegin: UseActions/playerEatingSoft
     Debuff: Stunned, display: EffectiveAgainst
     Buff: "Indigestion,BadTrip"
-    Buff_chance: "0.5,0.9"
+    Buff_chance: "0.1,0.1"
   }
 }
 { +Item Id: 320, Name: AlienTooth, Ref: FoodTemplate
@@ -7077,7 +7086,7 @@
    AddStamina: 12, display: StaminaValue
    AddFood: 182, display: FoodValue
    AddOxygen: 0
-	AddTemperature: 5, display: TemperatureValue
+	 AddTemperature: 5, display: TemperatureValue
    SfxBegin: UseActions/playerEatingSoft
  }
 }
@@ -7115,7 +7124,7 @@
    AddStamina: 10, display: StaminaValue
    AddFood: 30, display: FoodValue
    AddOxygen: 0
-	AddTemperature: -3, display: TemperatureValue
+	 AddTemperature: -3, display: TemperatureValue
    Buff: Indigestion
    Buff_chance: 0.02
    SfxBegin: UseActions/playerEatingSoft
@@ -7135,7 +7144,7 @@
     AddStamina: 10, display: StaminaValue
     AddFood: 143, display: FoodValue
     AddOxygen: 0
-	AddTemperature: 3, display: TemperatureValue
+	  AddTemperature: 3, display: TemperatureValue
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -7173,7 +7182,7 @@
     AddOxygen: 0
 	  AddTemperature: -1, display: TemperatureValue
     Buff: Indigestion
-    Buff_chance: 0.2
+    Buff_chance: 0.1
     Debuff: BadTrip, display: EffectiveAgainst
     SfxBegin: UseActions/playerDrinking
   }
@@ -7209,10 +7218,10 @@
     AddStamina: 70, display: StaminaValue
     AddFood: 2, display: FoodValue
     AddOxygen: 0
-	AddTemperature: -8, display: TemperatureValue
+	  AddTemperature: -8, display: TemperatureValue
     SfxBegin: UseActions/playerDrinking
-    Buff: "Hangover"
-    Buff_chance: "0.1"
+    Buff: "Hangover,Intoxication"
+    Buff_chance: "0.2,0.2"
    # Debuff: Cold, display: EffectiveAgainst
   }
 }
@@ -7243,7 +7252,7 @@
    AddFood: 0 
    AddOxygen: 0
    Buff: PoisonFood
-   Buff_chance: 1
+   Buff_chance: 0.7
    SfxBegin: UseActions/playerEatingPain
   }
 }
@@ -7260,9 +7269,9 @@
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 0, display: HealthValue
+    AddHealth: 10, display: HealthValue
     AddStamina: -15, display: StaminaValue
-    AddFood: 0, display: FoodValue
+    AddFood: 5, display: FoodValue
     AddOxygen: 0
     Debuff: "DermalBurn,Indigestion", display: EffectiveAgainst
   #  Buff_chance: 0.025
@@ -7280,7 +7289,7 @@
  { Child 0
    Class: Eat
    ROF: 1, type: float
-   AddHealth: 0, display: HealthValue
+   AddHealth: 5, display: HealthValue
    AddStamina: 0, display: StaminaValue
    AddFood: 25, display: FoodValue
    AddOxygen: 0
@@ -7300,9 +7309,9 @@
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 15, display: HealthValue
+    AddHealth: 25, display: HealthValue
     AddStamina: 30, display: StaminaValue
-    AddFood: 35, display: FoodValue
+    AddFood: 45, display: FoodValue
     AddOxygen: 0
     SfxBegin: UseActions/playerEatingSoft
     Buff: "Indigestion,BadTrip"
@@ -7316,7 +7325,7 @@
   Category: Food
   FoodDecayTime: 54, display: true, type: int
   FoodDecayedItem: RottenFood
- ShowUser: NoButCSV
+  ShowUser: NoButCSV
   { Child 0
     Class: Eat
     ROF: 1, type: float
@@ -7324,7 +7333,7 @@
     AddStamina: 6, display: StaminaValue
     AddFood: 60, display: FoodValue
     AddOxygen: 0
-	AddTemperature: 2, display: TemperatureValue
+	  AddTemperature: 2, display: TemperatureValue
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -7344,7 +7353,7 @@
     AddFood: 35, display: FoodValue
     AddOxygen: 0
     Buff: Indigestion
-    Buff_chance: 0.15
+    Buff_chance: 0.05
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -7429,8 +7438,8 @@
     AddOxygen: 0
     Debuff: "DermalParasite,EndoParasite", display: EffectiveAgainst
     SfxBegin: UseActions/exhale
-    Buff: PoisonFood
-    Buff_chance: 0.15
+    #Buff: PoisonFood
+    #Buff_chance: 0.15
     BuffMod: "InfectedWound, -0.2, -0.4, true; Sepsis, -0.1, -0.25;EndoParasite2, 0.5, 0, false"
   }
 }
@@ -7449,8 +7458,8 @@
     AddFood: 0
     AddOxygen: 0
     Debuff: "DermalParasite,EndoParasite,EndoParasite2,InfectedWound", display: EffectiveAgainst
-    Buff: Hangover
-    Buff_chance: 0.10
+    #Buff: Hangover
+    #Buff_chance: 0.10
     SfxBegin: UseActions/exhale
     BuffMod: "Sepsis, -0.15, -0.4; EndoParasite3, -0.6, -0.2, false" 
   }
@@ -7465,14 +7474,14 @@
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: -10
+    AddHealth: 5
     AddStamina: 0
-    AddFood: -50
+    AddFood: -5
     AddOxygen: 0
     Debuff: "PoisonBit,BadTrip", display: EffectiveAgainst
     SfxBegin: UseActions/exhale
-    Buff: PoisonFood
-    Buff_chance: 0.15
+    #Buff: PoisonFood
+    #Buff_chance: 0.15
     BuffMod: "PoisonBit2, 0.6, -0.9, false;Intoxication, 1, -0.4, true"
   }
 }
@@ -7491,8 +7500,8 @@
     AddFood: 0
     AddOxygen: 0
     Debuff: "Intoxication,BadTrip,PoisonBit,PoisonBit2", display: EffectiveAgainst
-    Buff: Hangover
-    Buff_chance: 0.10
+    #Buff: Hangover
+    #Buff_chance: 0.10
     SfxBegin: UseActions/exhale
   }
 }
@@ -7536,8 +7545,8 @@
     AddRadiation: -3, display: RadiationValue
     Debuff: "RadiationPoisoning,RadiationBurn", display: EffectiveAgainst
     SfxBegin: UseActions/exhale
-    Buff: PoisonFood
-    Buff_chance: 0.15
+    #Buff: PoisonFood
+    #Buff_chance: 0.15
   }
 }
 
@@ -7556,8 +7565,8 @@
     AddOxygen: 0
     AddRadiation: -5, display: RadiationValue
     Debuff: "RadiationSickness,RadiationPoisoning,RadiationBurn", display: EffectiveAgainst
-    Buff: Hangover
-    Buff_chance: 0.10
+    #Buff: Hangover
+    #Buff_chance: 0.1
     SfxBegin: UseActions/exhale
   }
 }
@@ -7673,11 +7682,11 @@
     ROF: 1, type: float
     AddHealth: -10
     AddStamina: 0
-    AddFood: -50
+    AddFood: 5
     AddOxygen: 0
     SfxBegin: UseActions/exhale
     Buff: "RadiationImmunity,BadTrip"
-    Buff_chance: "1,0.2"
+    Buff_chance: "1,0.05"
   }
 }
 
@@ -7690,13 +7699,13 @@
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: -10
+    AddHealth: 5
     AddStamina: 0
-    AddFood: -50
+    AddFood: -5
     AddOxygen: 0
     Debuff: "DermalParasite,EndoParasite,EndoParasite2", display: EffectiveAgainst
-    Buff: PoisonFood
-    Buff_chance: 0.30
+    #Buff: PoisonFood
+    #Buff_chance: 0.30
     SfxBegin: UseActions/exhale
   }
 }
@@ -7715,8 +7724,8 @@
     AddFood: 0
     AddOxygen: 0
     Debuff: "DermalParasite,AlienParasite,EndoParasite,EndoParasite2,EndoParasite3", display: EffectiveAgainst
-    Buff: BadTrip
-    Buff_chance: 0.2
+    #Buff: BadTrip
+    #Buff_chance: 0.2
     SfxBegin: UseActions/exhale
   }
 }
@@ -7725,20 +7734,20 @@
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
   Info: bkiEnergyPills, display: true
-  MarketPrice: 30, display: true
+  MarketPrice: 60, display: true
   Category: Medical
   StackSize: 4000
   ShowUser: Yes
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: -10
+    AddHealth: 0
     AddStamina: 300
-    AddFood: -50
+    AddFood: 0
     AddOxygen: 0
-    Buff: "StimBoosterUp,BadTrip"
+    Buff: "StimBoosterUp"
     Debuff: "Stunned", display: EffectiveAgainst
-    Buff_chance: "0.8,0.1"
+    Buff_chance: 1
     SfxBegin: UseActions/playerSwallow
   }
 }
@@ -7754,9 +7763,9 @@
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 0
+    AddHealth: -5
     AddStamina: 100
-    AddFood: -20
+    AddFood: 0
     AddOxygen: 0
     Buff: StaminaBoost
     Debuff: "Stunned,PoisonBit,PoisonBit2", display: EffectiveAgainst
@@ -7781,11 +7790,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Category: Ingredients
   FoodDecayTime: 90, display: true, type: int
   FoodDecayedItem: RottenFood
+  MarketPrice: 15, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 500, display: HealthValue
+    AddHealth: 150, display: HealthValue
     AddStamina: -20, display: StaminaValue
     AddFood: 10, display: FoodValue
     AddOxygen: 0
@@ -7799,6 +7809,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Category: Food
   FoodDecayTime: 36, display: true, type: int
   FoodDecayedItem: RottenFood
+  MarketPrice: 25
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7818,6 +7829,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Category: Food
   FoodDecayTime: 33, display: true, type: int
   FoodDecayedItem: RottenFood
+  MarketPrice: 25
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7838,6 +7850,9 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Volume: 0.50, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Food
+  MarketPrice: 85
+  #FoodDecayTime: 33, display: true, type: int
+  #FoodDecayedItem: ExpiredEmergencyRations #Causes Game Break
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7848,7 +7863,6 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddOxygen: 0
     Buff: Indigestion
     Buff_chance: 0.05
-    AddRadiation: 1, display: RadiationValue
     SfxBegin: UseActions/playerEatingCrunchy
   }
 }
@@ -8792,8 +8806,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Range: 2
     Damage: 75
     SfxBegin: Enemies/Slime/Slime_SfxAttack
-    Buff: "Frostbite,DermalParasite"
-    Buff_chance: "0.4,0.15"
+    Buff: "OpenWound,DermalParasite"
+    Buff_chance: "0.2,0.15"
   }
 }
 { +Item Id: 518, Name: MeleeCrawler, Ref: MeleeTemplate
@@ -10238,10 +10252,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   MarketPrice: 1500
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Material: metal
-  Mass: 25, type: float, display: false, formatter: Kilogram
-  Volume: 24, type: float, display: true, formatter: Liter
-  VolumeCapacity: 1000, type: float, display: true, formatter: Liter     
+  Material: metal    
   HoldType: 0
   StackSize: 1
   Canhold: false
@@ -10264,9 +10275,13 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   StaminaFac: 1.21, type: float, display: true #calculations are based on 20 stamina per second while running
   NrSlots: 2, type: int, display: true
   SlotItems: "InsulationBoost, ArmorBoost, JetpackBoost, MultiBoost, OxygenBoost, MobilityBoost, RadiationBoost, EVABoost, TransportationBoost, TransportationBoostEpic"
- 
-  UnlockCost: 2, display: true
-  UnlockLevel: 5, display: true
+
+  Mass: 25, type: float, display: false, formatter: Kilogram
+  Volume: 24, type: float, display: true, formatter: Liter
+  VolumeCapacity: 1000, type: float, display: true, formatter: Liter 
+
+  UnlockCost: 1, display: true
+  UnlockLevel: 3, display: true
   TechTreeNames: Weapons
 }
 ## Please do not rename - referenced in code
@@ -10301,7 +10316,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   FoodFac: 1.73, type: float, display: true
   StaminaFac: 1.33, type: float, display: true
   NrSlots: 3, type: int, display: true
-  SlotItems: "InsulationBoost, ArmorBoost, JetpackBoost, MultiBoost, OxygenBoost, MobilityBoost, RadiationBoost, EVABoost, TransportationBoost, TransportationBoostEpic"
+  SlotItems: "InsulationBoost, ArmorBoost, JetpackBoost, MultiBoost, OxygenBoost, MobilityBoost, RadiationBoost, EVABoost, TransportationBoost"
+
+  UnlockCost: 4, display: true
+  UnlockLevel: 7, display: true
+  TechTreeNames: Weapons
+  TechTreeParent: ArmorLightEpic
 }
 ## Please do not rename - referenced in code
 { +Item Id: 602, Name: ArmorHeavy
@@ -10336,14 +10356,30 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   StaminaFac: 1.46, type: float, display: true
   NrSlots: 4, type: int, display: true
   SlotItems: "InsulationBoost, ArmorBoost, JetpackBoost, MultiBoost, OxygenBoost, MobilityBoost, RadiationBoost, EVABoost, TransportationBoost, TransportationBoostEpic"
+
+  UnlockCost: 10, display: true
+  UnlockLevel: 15, display: true
+  TechTreeNames: Weapons
+  TechTreeParent: ArmorMediumEpic
 }
 
 # Not yet used in game  
 ## Please do not rename - referenced in code
-{ Item Id: 603, Name: ArmorLightEpic, Ref: ArmorLight
+{ Item Id: 603, Name: ArmorLightEpic
+  Class: Armor
   RecipeName: LightArmorEpic
+  MarketPrice: 1500
+  Meshfile: Entities/Misc/DummyPrefab
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  Material: metal    
+  HoldType: 0
+  StackSize: 1
+  Canhold: false
+  Category: Weapons/Items
+  Info: bkiPlayerArmor, display: true
     
   Durability: 1500, display: true
+  DegradationFac: 0.1, type: float, display: false    # do not display anymore
   Oxygen: 725, type: int, display: true
   Armor: 300, type: int, display: true
   Heat: 50, type: int, display: true
@@ -10356,23 +10392,23 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   JetpackFac: 0.76, type: float, display: true
   FoodFac: 0.72, type: float, display: true
   StaminaFac: 0.91, type: float, display: true
-  NrSlots: 1, type: int, display: true
-
-  SlotItems: "TransportationBoost, ArmorBoostEpic, MultiBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic"
+  NrSlots: 2, type: int, display: true
+  SlotItems: "ArmorBoostEpic, MultiBoostEpic, OxygenBoostEpic, InsulationBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic, WarBotBoostEpic"
 
   Mass: 18, type: float, display: false, formatter: Kilogram
   Volume: 11, type: float, display: true, formatter: Liter
   VolumeCapacity: 1200, type: float, display: true, formatter: Liter   
   
-  UnlockCost: 20, display: true
-  UnlockLevel: 10, display: true
+  UnlockCost: 2, display: true
+  UnlockLevel: 5, display: true
   TechTreeNames: Weapons
+  TechTreeParent: ArmorLight
   ShowUser: Yes
 }
 
 # Not yet used in game  
 ## Please do not rename - referenced in code
-{ Item Id: 604, Name: ArmorMediumEpic, Ref: ArmorMedium
+{ Item Id: 604, Name: ArmorMediumEpic, Ref: ArmorLightEpic
   RecipeName: MediumArmorEpic
   Durability: 2800, display: true
   Oxygen: 850, type: int, display: true
@@ -10388,79 +10424,82 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   FoodFac: 0.86, type: float, display: true
   StaminaFac: 0.99, type: float, display: true
   NrSlots: 2, type: int, display: true
-  SlotItems: "TransportationBoost, ArmorBoostEpic, MultiBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic"
+  SlotItems: "ArmorBoostEpic, MultiBoostEpic, OxygenBoostEpic, InsulationBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic, WarBotBoostEpic"
   
   Mass: 18, type: float, display: false, formatter: Kilogram
   Volume: 41, type: float, display: true, formatter: Liter
   VolumeCapacity: 2500, type: float, display: true, formatter: Liter   
-  
-  UnlockLevel: 1
-  TechTreeParent: # set null in case a custom Config.ecf puts referenced ArmorMedium in TechTree
-  TechTreeNames: Hidden
+
+  UnlockCost: 10, display: true
+  UnlockLevel: 12, display: true
+  TechTreeNames: Weapons
+  TechTreeParent: ArmorMedium
+
   ShowUser: Yes
 }
 
 # Used in game (can be found in loot)
 ## Please do not rename - referenced in code
-{ +Item Id: 605, Name: ArmorHeavyEpic, Ref: ArmorHeavy
+{ +Item Id: 605, Name: ArmorHeavyEpic, Ref: ArmorLightEpic
   RecipeName: HeavyArmorEpic
   
   Durability: 5000, display: true
   Oxygen: 1000, type: int, display: true
-  Armor: 500, type: int, display: true
+  Armor: 525, type: int, display: true
   Heat: 150, type: int, display: true
   Cold: 250, type: int, display: true
   Radiation: 20, type: int, display: true
   FallDamageFac: 0.7, type: float, display: true
-  PowerFac: 0.7, type: float, display: true  # better: 0.085
-  SpeedFac: 0.8, type: float, display: true  # better: 0.085
-  JumpFac: 0.7, type: float, display: true
+  PowerFac: 0.65, type: float, display: true  # better: 0.085
+  SpeedFac: 1.0, type: float, display: true  # better: 0.085
+  JumpFac: 0.85, type: float, display: true
   JetpackFac: 1.1, type: float, display: true
   FoodFac: 0.9, type: float, display: true
   StaminaFac: 1.1, type: float, display: true
   NrSlots: 3, type: int, display: true
-  SlotItems: "WarBotBoostEpic, TransportationBoost, ArmorBoostEpic, MultiBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic"
+  SlotItems: "ArmorBoostEpic, MultiBoostEpic, OxygenBoostEpic, InsulationBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic, WarBotBoostEpic"
   
   Mass: 25, type: float, display: false, formatter: Kilogram
   Volume: 41, type: float, display: true, formatter: Liter
   VolumeCapacity: 4000, type: float, display: true, formatter: Liter   
   
-  UnlockLevel: 1
-  TechTreeParent: # set null in case a custom Config.ecf puts referenced ArmorHeavy in TechTree
-  TechTreeNames: Hidden
-  # ShowUser: No
+  UnlockCost: 12, display: true
+  UnlockLevel: 20, display: true
+  TechTreeNames: Weapons
+  TechTreeParent: ArmorHeavy
+  ShowUser: Yes
 }
 
 ##TR163 item for instance only
-{ +Item Id: 606, Name: WarbotSlotArmor, Ref: ArmorHeavy
+{ +Item Id: 606, Name: WarbotSlotArmor, Ref: ArmorLightEpic
   Class: Armor
-  RecipeName: WarbotSlotArmor
+  #RecipeName: WarbotSlotArmor
   CustomIcon: ArmorHeavyEpic
   
   Durability: 25000, display: true
   Oxygen: 1000, type: int, display: true
-  Armor: 700, type: int, display: true
+  Armor: 750, type: int, display: true
   Heat: 250, type: int, display: true
   Cold: 250, type: int, display: true
   Radiation: 99, type: int, display: true
-  FallDamageFac: 0.9, type: float, display: true
-  PowerFac: 0.32, type: float, display: true  # better: 0.085
-  SpeedFac: 1.26, type: float, display: true  # better: 0.085
-  JumpFac: 0.45, type: float, display: true
+  FallDamageFac: 0.2, type: float, display: true
+  PowerFac: 0.43, type: float, display: true  
+  SpeedFac: 1.5, type: float, display: true
+  JumpFac: 0.65, type: float, display: true
   JetpackFac: 0.55, type: float, display: true
-  FoodFac: 0.4, type: float, display: true
-  StaminaFac: 0.82, type: float, display: true
+  FoodFac: 0.1, type: float, display: true
+  StaminaFac: 0.32, type: float, display: true
   NrSlots: 1, type: int, display: true
-  SlotItems: "WarBotBoostEpic, ArmorBoostEpic, MultiBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic"
+  SlotItems: "WarBotBoostEpic"
   
-  Mass: 8, type: float, display: false, formatter: Kilogram
-  Volume: 27, type: float, display: true, formatter: Liter
-  VolumeCapacity: 10000, type: float, display: true, formatter: Liter   
+  Mass: 990, type: float, display: false, formatter: Kilogram
+  Volume: 330, type: float, display: true, formatter: Liter
+  VolumeCapacity: 50000, type: float, display: true, formatter: Liter   
   
   UnlockLevel: 1
   TechTreeParent: # set null in case a custom Config.ecf puts referenced ArmorHeavy in TechTree
   TechTreeNames: Hidden
-  # ShowUser: No
+  ShowUser: NoButCSV
 }
 
 # CATEGORIE: ARMOR BOOSTS id 620 - 699 
@@ -10495,6 +10534,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Volume: 2.5, type: float, display: true, formatter: Liter
   Mass: 5.5, type: float, display: true, formatter: Kilogram
+
+  UnlockCost: 2, display: true
+  UnlockLevel: 5, display: true
+  TechTreeParent: ArmorLight
+  TechTreeNames: Weapons
+
   ShowUser: Yes
 }
 { +Item Id: 622, Name: JetpackBoost, Ref: ArmorBoostTemplate
@@ -10523,6 +10568,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Volume: 3.5, type: float, display: true, formatter: Liter
   Mass: 7.5, type: float, display: true, formatter: Kilogram
   MarketPrice: 450
+
+  UnlockCost: 2, display: true
+  UnlockLevel: 10, display: true
+  TechTreeParent: TransportationBoost
+  TechTreeNames: Weapons
+
   ShowUser: Yes
 }
 { +Item Id: 624, Name: OxygenBoost , Ref: ArmorBoostTemplate
@@ -10561,7 +10612,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   ShowUser: Yes
 }
 { +Item Id: 627, Name: RadiationBoost, Ref: ArmorBoostTemplate
-  Radiation: 7, type: int, display: true
+  Radiation: 25, type: int, display: true
   PowerFac: -0.02, type: float, display: true
   SpeedFac: -0.05, type: float, display: true
   Armor: 15, type: int, display: true
@@ -10587,9 +10638,14 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   MarketPrice: 100
 }
 { +Item Id: 629, Name: TransportationBoost, Ref: ArmorBoostTemplate
-  VolumeCapacity: 1500, type: float, display: true, formatter: Liter 
+  VolumeCapacity: 3000, type: float, display: true, formatter: Liter 
   SpeedFac: -0.1, type: float, display: true
   CustomIcon: EVABoost
+
+  UnlockCost: 2, display: true
+  UnlockLevel: 7, display: true
+  TechTreeParent: ArmorBoost
+  TechTreeNames: Weapons
   
   ShowUser: Yes
   Mass: 4.5, type: float, display: false, formatter: Kilogram
@@ -10600,30 +10656,36 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { Item Id: 650, Name: ArmorBoostEpic, Ref: ArmorBoostTemplate
   Armor: 250, type: int, display: true
   Heat: 50, type: int, display: true
-  Radiation: 5, type: int, display: true
+  Radiation: 9, type: int, display: true
   PowerFac: -0.09, type: float, display: true
   SpeedFac: -0.14, type: float, display: true
   FoodFac: -0.15, type: float, display: true
   StaminaFac: 0.07, type: float, display: true
-  VolumeCapacity: 50, type: float, display: true, formatter: Liter
+  VolumeCapacity: 100, type: float, display: true, formatter: Liter
+
+  UnlockCost: 5, display: true
+  UnlockLevel: 12, display: true
+  TechTreeParent: MultiBoost
+  TechTreeNames: Weapons
   
   Volume: 9.5, type: float, display: true, formatter: Liter
   Mass: 15.5, type: float, display: true, formatter: Kilogram
   ShowUser: Yes
 }
-{ Item Id: 651, Name: JetpackBoostEpic , Ref: JetpackBoost #Nixxed
+{ Item Id: 651, Name: JetpackBoostEpic, Ref: JetpackBoost #Needs added to loot table and traders
   JetpackFac: -0.25, type: float, display: true
-  Armor: 25, type: int, display: true 
+  Armor: 50, type: int, display: true 
+  PowerFac: -0.10, type: float, display: true
   
   Volume: 12.5, type: float, display: true, formatter: Liter
   Mass: 21.5, type: float, display: true, formatter: Kilogram
   ShowUser: Yes
 }
-{ Item Id: 652, Name: MultiBoostEpic , Ref: MultiBoost
+{ Item Id: 652, Name: MultiBoostEpic, Ref: MultiBoost
   Armor: 25, type: int, display: true  
   Oxygen: 30, type: int, display: true  
   Radiation: 7, type: int, display: true
-  Heat: 5, type: int, display: true
+  Heat: 25, type: int, display: true
   Cold: 25, type: int, display: true
   PowerFac: 0.05, type: float, display: true
   SpeedFac: 0.15, type: float, display: true
@@ -10632,13 +10694,18 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   JumpFac: 0.1, type: float, display: true
   FoodFac: -0.25, type: float, display: true
   VolumeCapacity: 500, type: float, display: true, formatter: Liter 
+
+  UnlockCost: 5, display: true
+  UnlockLevel: 15, display: true
+  TechTreeParent: ArmorBoostEpic
+  TechTreeNames: Weapons
   
   Volume: 9.5, type: float, display: true, formatter: Liter
   Mass: 105.5, type: float, display: true, formatter: Kilogram
   ShowUser: Yes
 }
-{ Item Id: 653, Name: OxygenBoostEpic , Ref: OxygenBoost #nixxed
-  Oxygen: 250, type: int, display: true   
+{ Item Id: 653, Name: OxygenBoostEpic, Ref: OxygenBoost #nixxed
+  Oxygen: 500, type: int, display: true   
   Armor: 50, type: int, display: true 
   StaminaFac: 0.08, type: float, display: true
   VolumeCapacity: 50, type: float, display: true, formatter: Liter 
@@ -10647,48 +10714,58 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Mass: 5.5, type: float, display: true, formatter: Kilogram
   ShowUser: Yes
 }
-{ Item Id: 654, Name: InsulationBoostEpic , Ref: InsulationBoost #nixxed
-  Heat: 100, type: int, display: true
-  Cold: 50, type: int, display: true 
+{ Item Id: 654, Name: InsulationBoostEpic, Ref: InsulationBoost #nixxed
+  Heat: 250, type: int, display: true
+  Cold: 90, type: int, display: true 
   StaminaFac: -0.02, type: float, display: true
-  Armor: -25, type: int, display: true 
+  Armor: -10, type: int, display: true 
   
   Volume: 9.5, type: float, display: true, formatter: Liter
   Mass: 12.5, type: float, display: true, formatter: Kilogram
   ShowUser: Yes
 }
-{ Item Id: 655, Name: MobilityBoostEpic , Ref: MobilityBoost
-  Armor: -50, type: int, display: true 
-  PowerFac: 0.15, type: float, display: true
+{ Item Id: 655, Name: MobilityBoostEpic, Ref: MobilityBoost
+  Armor: -15, type: int, display: true 
+  PowerFac: 0.25, type: float, display: true
   SpeedFac: 0.25, type: float, display: true
   StaminaFac: -0.2, type: float, display: true
   JumpFac: 0.15, type: float, display: true
   FoodFac: 0.05, type: float, display: true
   VolumeCapacity: 750, type: float, display: true, formatter: Liter 
+
+  UnlockCost: 5, display: true
+  UnlockLevel: 20, display: true
+  TechTreeParent: MultiBoostEpic
+  TechTreeNames: Weapons
   
   Volume: 9.5, type: float, display: true, formatter: Liter
   Mass: 40.5, type: float, display: true, formatter: Kilogram
   ShowUser: Yes
 }
-{ Item Id: 656, Name: RadiationBoostEpic , Ref: RadiationBoost
+{ Item Id: 656, Name: RadiationBoostEpic, Ref: RadiationBoost
   Radiation: 175, type: int, display: true
   StaminaFac: 0.01, type: float, display: true
-  Armor: -70, type: int, display: true 
+  Armor: -20, type: int, display: true 
   VolumeCapacity: 250, type: float, display: true, formatter: Liter 
   
   Volume: 9.5, type: float, display: true, formatter: Liter
   Mass: 27.5, type: float, display: true, formatter: Kilogram
   ShowUser: Yes
 }
-{ Item Id: 657, Name: EVABoostEpic , Ref: EVABoost
+{ Item Id: 657, Name: EVABoostEpic, Ref: EVABoost
   Cold: 500, type: int, display: true
   Radiation: 15, type: int, display: true
-  Armor: -75, type: int, display: true
-  JetpackFac: -0.67, type: float, display: true   
+  Armor: -25, type: int, display: true
+  JetpackFac: -0.17, type: float, display: true   
   VolumeCapacity: 4000, type: float, display: true, formatter: Liter 
   SpeedFac: 0.15, type: float, display: true
   MarketPrice: 18000, display: true
 #  CustomIcon: ArmorBoostEpic 
+
+  UnlockCost: 5, display: true
+  UnlockLevel: 25, display: true
+  TechTreeParent: MobilityBoostEpic
+  TechTreeNames: Weapons
   
   Volume: 18, type: float, display: true, formatter: Liter
   Mass: 12.5, type: float, display: true, formatter: Kilogram
@@ -10707,7 +10784,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Mass: 75.5, type: float, display: true, formatter: Kilogram
   ShowUser: Yes
 }
-{ Item Id: 659, Name: WarBotBoostEpic , Ref: MobilityBoost
+{ Item Id: 659, Name: WarBotBoostEpic, Ref: MobilityBoost
   Armor: 1750, type: int, display: true 
   Heat: 50, type: int, display: true 
   Cold: 50, type: int, display: true 
@@ -12577,12 +12654,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     ROF: 1, type: float
     AddHealth: 120, display: HealthValue
     AddStamina: 50, display: StaminaValue
-    AddFood: -25, display: FoodValue
-    AddOxygen: -5, display: OxygenValue
+    AddFood: 10, display: FoodValue
+    AddOxygen: -10, display: OxygenValue
     Debuff: "InfectedWound,Necrosis,OpenWound,DermalParasite,BrokenLeg", display: EffectiveAgainst
     SfxBegin: UseActions/exhale
     Buff: "NarcoticStun,BadTrip"
-    Buff_chance: "0.25,0.15"
+    Buff_chance: "0.25,0.05"
   }
 }
 { +Item Id: 1006, Name: Robotics , Ref: TradingGoodsTemplate
@@ -13312,7 +13389,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   }
 }
 
-{ +Item Id: 1404, Name: OraclesTablet , Ref: TradingGoodsTemplate
+{ +Item Id: 1404, Name: OraclesTablet, Ref: TradingGoodsTemplate
   Info: Take this cyphered tablet to Admiral Kara Yarr on Haven Station, display: true
   Category: Weapons/Items
   CustomIcon: Tablet
@@ -13339,18 +13416,18 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Debuff: "BoilingBite,Intoxication,BadTrip,LethalDose,Mutilation", display: EffectiveAgainst 
     SfxBegin: UseActions/playerDrinking
     Buff: Indigestion
-    Buff_chance: 0.7
+    Buff_chance: 0.2
   }
 }
 
-{ +Item Id: 1406, Name: FlameComputerTablet , Ref: TradingGoodsTemplate
+{ +Item Id: 1406, Name: FlameComputerTablet, Ref: TradingGoodsTemplate
   Info: The Flamekeepers weapon is damaged beyond repair. This tablet will access the computer panel that might have a clue about his spare Flamethrowers., display: true
   Category: Weapons/Items
   CustomIcon: Tablet
   ShowUser: Yes
 }
 
-{ +Item Id: 1407, Name: ImmunityBoosterPill , Ref: FoodTemplate
+{ +Item Id: 1407, Name: ImmunityBoosterPill, Ref: FoodTemplate
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
   Info: This pill is packed with healthy vitamins, display: true
@@ -13368,12 +13445,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddOxygen: 0
     Debuff: "Indigestion", display: EffectiveAgainst
     SfxBegin: UseActions/playerSwallow
-    Buff: ImmunityBoosterII
+    Buff: ImmunityBooster
     Buff_chance: 0.1
   }
 }
 
-{ +Item Id: 1408, Name: NaniteBoosterPill , Ref: FoodTemplate
+{ +Item Id: 1408, Name: NaniteBoosterPill, Ref: FoodTemplate
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
   Info: This pill is packed with healthy vitamins, display: true
@@ -13391,12 +13468,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddOxygen: 0
     Debuff: "LethalDose", display: EffectiveAgainst
     SfxBegin: UseActions/playerSwallow
-    Buff: BadTrip
-    Buff_chance: 0.1
+    Buff: ImmunityBoosterII
+    Buff_chance: 1
   }
 }
 
-{ +Item Id: 1409, Name: NaniteChlorophyllInfusion , Ref: FoodTemplate
+{ +Item Id: 1409, Name: NaniteChlorophyllInfusion, Ref: FoodTemplate
   Info: Nanite technology that temporily takes control of your immune system and organs, display: true
   CustomIcon: AntiToxicPills
   Category: Medical
@@ -13411,13 +13488,13 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 3, display: FoodValue
     AddOxygen: 0
     Debuff: "KrielienWithdrawl,DermalParasite,EndoParasite,EndoParasite2,InfectedWound", display: EffectiveAgainst
-    Buff: LethalDose
-    Buff_chance: 0.5
+    Buff: "ChlorophyllInfusion,LethalDose"
+    Buff_chance: "0.9,0.1"
     SfxBegin: UseActions/exhale
   }
 }
 
-{ +Item Id: 1410, Name: Nanites , Ref: TradingGoodsTemplate
+{ +Item Id: 1410, Name: Nanites, Ref: TradingGoodsTemplate
   MarketPrice: 250
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
@@ -13435,17 +13512,39 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddOxygen: 0
 	  AddTemperature: -25, display: TemperatureValue
     SfxBegin: UseActions/playerEatingFruit
-    Buff: OrganFailure
+    Buff: FeverAttack
     Buff_chance: 1
   }  
 }
-{ +Item Id: 1411, Name: LegacyEnergyCore , Ref: TradingGoodsTemplate
+
+{ +Item Id: 1411, Name: LegacyEnergyCore, Ref: TradingGoodsTemplate
   MarketPrice: 20000
   CustomIcon: TechnicalArtifact
   FuelValue: 4500, type: int, display: true, formatter: WattHour
   Info: Provides a massive amount of fuel. A required crafting item for the AntiprotonLaserTurret, display: true
   ShowUser: Yes
 }
+
+#{ +Item Id: 1412, Name: ExpiredEmergencyRations, Ref: FoodTemplate
+#  CustomIcon: EmergencyRations
+#  Category: Food
+#  Mass: 0.3, type: float, display: true, formatter: Kilogram
+#  Volume: 0.50, type: float, display: true, formatter: Liter
+#  Info: bkiIngredient, display: true
+#  ShowUser: Yes
+#  { Child 0
+#    Class: Eat
+#    ROF: 1, type: float
+#    AddHealth: 25, display: HealthValue
+#    AddStamina: 50, display: StaminaValue
+#    AddFood: 150, display: FoodValue
+#    AddOxygen: 0
+#    Buff: Indigestion
+#    Buff_chance: 0.1
+#    AddRadiation: 0.5, display: RadiationValue
+#    SfxBegin: UseActions/playerEatingCrunchy
+#  }
+#}
 
 # =============================================================================
 # TRANSCENDENCE WEAPONS
@@ -13974,12 +14073,13 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Buff: "Stunned, ImmunityBoosterII"
     Buff_chance: "0.2,0.3"
     Damage: 50, display: true
+    BlastDamage: 50, display: true
     AmmoCapacity: 32, display: true
     AmmoType: LaserArrows, display: true
     NoiseStrength: 50, display: false 
     CameraShake: 0
     Recoil: 0, display: true
-    BulletSpread: 0.5, display: true
+    BulletSpread: 0.03, display: true
     ReloadDelay: 0.9, display: true
     ParticleTransform: Muzzle/Particle1
     SfxBegin: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_start
@@ -13994,7 +14094,13 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 	
     DamageMultiplier_1: 5, param1: head, display: DmgMultiplierHead  
     DamageMultiplier_2: 1.5, param1: dirt|stone|rock|wood|hullarmored|hullcombat
-    DamageMultiplier_3: 1.7, param1: shield      
+    DamageMultiplier_3: 3.0, param1: shield
+    BlastDamageMultiplier_1: 2, param1: head, display: DmgMultiplierHead
+    BlastDamageMultiplier_2: 2, param1: wood|woodblock|plastic
+    BlastDamageMultiplier_3: 0, param1: dirt|stone|rock
+    BlastDamageMultiplier_4: 1.5, param1: concrete|hull|hullarmored|hullcombat|metal|metalhard
+    BlastDamageMultiplier_5: 0, param1: shield 
+    BlastDamageMultiplier_6: 2, param1: human     
   }
   { Child 1
     Class: Zoom
@@ -14023,16 +14129,22 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   { Child 0
     Class: Projectile
     Damage: 50
-    BlastParticleIndex: 0
-    BlastRadius: 0
-    BlastDamage: 0
+    BlastParticleIndex: 15
+    BlastRadius: 2
+    BlastDamage: 50
     Speed: 20
     Range: 250      # must be higher than range given in weapon to ensure that particle effect is visible
     Ballistic: True
 		
     DamageMultiplier_1: 5, param1: head, display: DmgMultiplierHead  
     DamageMultiplier_2: 1.5, param1: dirt|stone|rock|wood|hullarmored|hullcombat
-    DamageMultiplier_3: 1.7, param1: shield
+    DamageMultiplier_3: 3.0, param1: shield
+    BlastDamageMultiplier_1: 2, param1: head, display: DmgMultiplierHead
+    BlastDamageMultiplier_2: 2, param1: wood|woodblock|plastic
+    BlastDamageMultiplier_3: 0, param1: dirt|stone|rock
+    BlastDamageMultiplier_4: 1.5, param1: concrete|hull|hullarmored|hullcombat|metal|metalhard
+    BlastDamageMultiplier_5: 0, param1: shield 
+    BlastDamageMultiplier_6: 2, param1: human
   }
 }
 #===============================================================================

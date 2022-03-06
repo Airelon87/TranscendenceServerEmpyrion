@@ -3223,49 +3223,49 @@
 
 ## ================================================== 
 
-# { +Entity Name: AlienBug01, Ref: PreyTemplateFlee
-  # Mesh: Enemies/AlienBugs/AlienBug01Prefab
-  # HeadTransform: Head
+ { +Entity Name: AlienBug01, Ref: PreyTemplateFlee
+   Mesh: Enemies/AlienBugs/AlienBug01Prefab
+   HeadTransform: Head
   
-  # Prefab: AlienSmall
+   Prefab: AlienSmall
 
-  # /* General entity properties */
-  # MaxHealth: 350
-  # # XpFactor: 0.8
-  # XpFactor: 1.6
-  # HandItem: MeleeAlienBug01
-  # RotateToGround: true
+   /* General entity properties */
+   MaxHealth: 350
+   # XpFactor: 0.8
+   XpFactor: 1.6
+   HandItem: MeleePlantMonster
+   RotateToGround: true
 
-  # WanderSpeed: 0.4
-  # ApproachSpeed: 1
-  # NightWanderSpeed: 0.4
-  # NightApproachSpeed: 1
-  # PanicSpeed: 1
+   WanderSpeed: 0.4
+   ApproachSpeed: 1
+   NightWanderSpeed: 0.4
+   NightApproachSpeed: 1
+   PanicSpeed: 1
 
-  # /* Determines particle effect  */
-  # SurfaceCategory: alien
+   /* Determines particle effect  */
+   SurfaceCategory: alien
 
-  # /* Sound settings */
-  # SfxRandomTime: 50.0
-  # # SfxRandom: Enemies/AlienBugs/cricket_chirping
-  # SfxRandom: Enemies/AlienBugs/AlienBug01/AlienBug01_SfxRandom
+   /* Sound settings */
+   SfxRandomTime: 50.0
+   # SfxRandom: Enemies/AlienBugs/cricket_chirping
+   SfxRandom: Enemies/AlienBugs/AlienBug01/AlienBug01_SfxRandom
 
-  # SfxAlertTime: 25.0
-  # # SfxAlert: Enemies/AlienBugs/Alien01Generic04
-  # SfxAlert: Enemies/AlienBugs/AlienBug01/AlienBug01_SfxRandom
-  # # SfxSense: Enemies/AlienBugs/Alien01Generic04
+   SfxAlertTime: 25.0
+   # SfxAlert: Enemies/AlienBugs/Alien01Generic04
+   SfxAlert: Enemies/AlienBugs/AlienBug01/AlienBug01_SfxRandom
+   # SfxSense: Enemies/AlienBugs/Alien01Generic04
 
-  # # SfxHurt: Enemies/CaveWorm/hurt
-  # SfxHurt: Enemies/AlienBugs/AlienBug01/AlienBug01_SfxHurt
-  # # SfxDeath: Enemies/CaveWorm/CritterSFX-Long
-  # SfxDeath: Enemies/AlienBugs/AlienBug01/AlienBug01_SfxDeath
+   # SfxHurt: Enemies/CaveWorm/hurt
+   SfxHurt: Enemies/AlienBugs/AlienBug01/AlienBug01_SfxHurt
+   # SfxDeath: Enemies/CaveWorm/CritterSFX-Long
+   SfxDeath: Enemies/AlienBugs/AlienBug01/AlienBug01_SfxDeath
 
-  # LootListOnDeath: 33
+   LootListOnDeath: 33
   
-  # UpdateClusterInfo: true   
-  # AllowUserInstantiate: false
-  # AllowInSpawners: false
-# }
+   UpdateClusterInfo: true   
+   AllowUserInstantiate: false
+   AllowInSpawners: true
+ }
 
 ## ========================= Special Creatures ========================= 
 
@@ -4948,12 +4948,12 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
 
   /* General entity properties */
   ViewAngle: 180
-  MaxHealth: 500
+  MaxHealth: 2000
   # XpFactor: 3
   XpFactor: 9
   RpFactor: 2
   RightHandJointName: Bip01_R_Hand
-  ItemsOnEnterGame: ZiraxMinigunWeapon
+  ItemsOnEnterGame: ZiraxLaserWeapon
   RotateToGround: false
   RotateSpeed: 6
 

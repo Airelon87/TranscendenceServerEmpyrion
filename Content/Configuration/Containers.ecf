@@ -565,9 +565,9 @@
   SfxClose: UseActions/ContainerClose
 
   { Child Items
-    Name_0: ArmorHeavyEpic, param1: 0.3, param2: 1
+    Name_0: ArmorMediumEpic, param1: 0.3, param2: 1
     Name_1: DrillEpic, param1: 0.3, param2: 1
-    Name_2: ShotgunChristmas, param1: 0.2, param2: 1
+    Name_2: LegacyEnergyCore, param1: 0.2, param2: 1
     Name_3: WarbotNanotubes, param1: 0.2, param2: 1
     Group_0: Reports, param1: 0.02
   }
@@ -728,7 +728,7 @@
     Name_5: FusionCell, param1: 0.9, param2: "15,25"
     Name_6: TurretGVToolBlocks, param1: 0.4, param2: 1
     Name_7: AutoMinerCore, param1: 0.09, param2: "2,3"
-    Name_8: ArmorHeavy, param1: 0.5, param2: 1
+    Name_8: ArmorLightEpic, param1: 0.5, param2: 1
     Name_9: PentaxidOre, param1: 0.8, param2: "30,60"
     Name_10: MedicalStationBlocks, param1: 0.9, param2: 1
     Name_11: AlienLargeBlocks, param1: 0.8, param2: "75,100"
@@ -1243,7 +1243,7 @@
     Name_8: Medikit02, param1: 0.5, param2: 1
     Name_9: NightVision, param1: 0.1, param2: 1
     Name_10: ArmorMedium, param1: 0.01, param2: 1
-    Name_11: ArmorHeavy, param1: 0.05, param2: 1
+    Name_11: InsulationBoostEpic, param1: 0.05, param2: 1
     Name_12: ArmorBoost, param1: 0.01, param2: 1
     Name_13: JetpackBoost, param1: 0.01, param2: 1
     Name_14: MultiBoost, param1: 0.01, param2: 1
@@ -1400,6 +1400,7 @@
     Name_11: SlowRocketHoming, param1: 0.1, param2: "1,2"
     Name_12: SciFiCannonPlasmaCharge, param1: 0.05, param2: "1,2"
     Name_13: Explosives, param1: 0.5, param2: 1
+    Name_14: RangerRocketCV, param1: 0.1, param2: "2,4"
   }
 }
 ## Ammo Box Large ContainerAmmoLarge 
@@ -1425,6 +1426,8 @@
     Name_12: PulseLaserChargeMS, param1: 0.1, param2: "75,100"
     Name_13: PulseLaserChargeBA, param1: 0.1, param2: "75,100"
     Name_14: RailgunBullet, param1: 0.1, param2: "5,8"
+    Name_15: RangerRocketCV, param1: 0.1, param2: "2,4"
+    Name_16: AntiMatterRod, param1: 0.1, param2: "2,4"
   }
 }
 ## Fridge T1 FridgeMS 
@@ -1519,6 +1522,7 @@
     Name_1: MoneyCard, param1: 0.3, param2: "5,10"
     Name_2: SpareParts, param1: 0.2, param2: "1,5"
     Name_3: Nanites, param1: 0.2, param2: "9,17"
+    Name_4: PlatinOunce, param1: 0.05, param2: 1
     Group_0: ComponentsBasic, param1: 0.6
     Group_1: ComponentsRare, param1: 0.1
   }
@@ -1635,7 +1639,8 @@
     Name_0: 5.8mmBullet, param1: 0.9, param2: "150,250"
     Name_1: HeavyWeaponKit, param1: 0.08, param2: "1"
     Name_2: MoneyCard, param1: 0.2, param2: "50,100"
-    Name_3: PlatinBar, param1: 0.1, param2: "1,4"
+    Name_3: PlatinBar, param1: 0.05, param2: "1,4"
+    Name_4: MobilityBoost, param1: 0.1, param2: 1
     Group_0: MedicalItems, param1: 0.4
     Group_1: TroopersFood, param1: 0.6
   }
@@ -1653,6 +1658,7 @@
     Name_1: LaserKit, param1: 0.08, param2: "1"
     Name_2: MoneyCard, param1: 0.2, param2: "50,100"
     Name_3: PlatinBar, param1: 0.1, param2: "1,4"
+    Name_4: MobilityBoostEpic, param1: 0.1, param2: 1
     Group_0: MedicalItems, param1: 0.4
     Group_1: TroopersFood, param1: 0.6
   }
@@ -1669,6 +1675,7 @@
     Name_0: ShotgunShells, param1: 0.9, param2: "4,8"
     Name_1: ShotgunKit, param1: 0.08, param2: "1"
     Name_2: MoneyCard, param1: 0.2, param2: "50,100"
+    Name_3: ArmorBoost, param1: 0.1, param2: 1
     Group_0: MedicalItems, param1: 0.4
     Group_1: TroopersFood, param1: 0.6
   }
@@ -1689,6 +1696,7 @@
     Name_3: AluminiumPowder, param1: 0.2, param2: "2,5"
     Name_4: PlatinOre, param1: 0.2, param2: "1,3"
     Name_5: LuxuryGoods, param1: 0.1, param2: 1
+    Name_6: MultiBoostEpic, param1: 0.1, param2: 1
     Group_0: MedicalItems, param1: 0.4
     Group_1: TroopersFood, param1: 0.6
   }
@@ -1702,17 +1710,18 @@
 
   { Child Items
     Name_0: PulseLaserChargeRifle, param1: 0.7, param2: "20,40"
-    Name_1: LaserRifle, param1: 0.15, param2: 1 
-    Name_2: ScienceEquipment, param1: 0.7, param2: 1
-    Name_3: MoneyCard, param1: 0.5, param2: "150,300"
+    Name_1: LaserRifle, param1: 0.2, param2: 1 
+    Name_2: ScienceEquipment, param1: 0.4, param2: 1
+    Name_3: ArmorHeavy, param1: 0.1, param2: 1
     Name_4: AluminiumPowder, param1: 0.9, param2: "5,10"
-    Name_5: PlatinBar, param1: 0.9, param2: "5,10"
+    Name_5: PlatinBar, param1: 0.5, param2: "1,5"
     Name_6: LuxuryGoods, param1: 0.3, param2: "1,3"
-    Name_7: Token, param1: 1, param2: "meta=7238"
-    Name_8: Token, param1: 0.01, param2: "meta=7225"
+    Name_7: NaniteChlorophyllInfusion, param1: 0.1, param2: "1,3"
+    Name_8: Token, param1: 1, param2: "meta=7238"
+    Name_9: Token, param1: 0.01, param2: "meta=7225"
     Group_0: MedicalItems, param1: 0.4
     Group_1: TroopersFood, param1: 0.6
-    Group_2: Reports, param1: 0.05
+    Group_2: Reports, param1: 0.1
   }
 }
 
@@ -1729,6 +1738,7 @@
   { Child Items
     Name_0: 8.3mmBullet, param1: 0.9, param2: "125,250"
     Name_1: EnergyCell, param1: 0.8, param2: "2,3"
+    Name_2: SpareParts, param1: 0.1, param2: "2,3"
     Group_0: ComponentsBasic, param1: 0.6
     Group_1: ComponentsRare, param1: 0.4
   }
@@ -1744,6 +1754,7 @@
   { Child Items
     Name_0: SlowRocket, param1: 0.9, param2: "2,4"
     Name_1: EnergyCell, param1: 0.8, param2: "2,3"
+    Name_2: SpareParts, param1: 0.1, param2: "2,3"
     Group_0: ComponentsBasic, param1: 0.6
     Group_1: ComponentsRare, param1: 0.4
   }
@@ -1862,6 +1873,7 @@
     Name_0: 15mmBullet, param1: 0.9, param2: "300,600"
     Name_1: FusionCell, param1: 0.8, param2: "2,3"
     Name_2: WeaponSV02, param1: 0.05, param2: "1"
+    Name_3: AluminiumCoil, param1: 0.2, param2: "2,3"
     Group_1: ComponentsRare, param1: 0.6
   }
 }
@@ -1877,6 +1889,7 @@
     Name_0: PlasmaCannonChargeSS, param1: 0.9, param2: "50,100"
     Name_1: FusionCell, param1: 0.8, param2: "2,3"
     Name_2: WeaponSV04, param1: 0.05, param2: "1"
+    Name_3: AluminiumCoil, param1: 0.2, param2: "2,3"
     Group_1: ComponentsRare, param1: 0.6
   }
 }
@@ -1909,6 +1922,7 @@
     Name_0: 15mmBullet, param1: 0.9, param2: "600,1000"
     Name_1: FusionCell, param1: 0.8, param2: "3,4"
     Name_2: WeaponSV02, param1: 0.05, param2: "1"
+    Name_3: AluminiumCoil, param1: 0.2, param2: "2,3"
     Group_1: ComponentsRare, param1: 0.8
   }
 }
@@ -1932,7 +1946,9 @@
     Name_8: Chemicals, param1: 0.6, param2: "2,3"
     Name_9: AncientRelics, param1: 0.2, param2: 1
     Name_10: RawDiamond, param1: 0.1, param2: 1
-    Name_11: Token, param1: 0.01, param2: "meta=7225"
+    Name_11: TalonCrossbowPlayer, param1: 0.1, param2: 1
+    Name_12: PlatinOunce, param1: 0.1, param2: "1,2"
+    Name_13: Token, param1: 0.01, param2: "meta=7225"
     Group_0: Reports, param1: 0.06
   }
 }
@@ -2020,9 +2036,12 @@
 	  Name_1: OxygenBoostEpic, param1: 0.1, param2: 1
 	  Name_2: InsulationBoostEpic, param1: 0.1, param2: 1
 	  Name_3: MobilityBoostEpic, param1: 0.15, param2: 1      
-	  Name_4: PentaxidSeedCrystal, param1: 0.25, param2: 1  
+	  Name_4: PentaxidSeedCrystal, param1: 0.15, param2: 1  
     Name_5: ToxicWaste, param1: 0.25, param2: 1 
     Name_6: Token, param1: 0.01, param2: "meta=7225"
+	  Name_7: ArmorHeavy, param1: 0.15, param2: 1      
+	  Name_8: ArmorHeavyEpic, param1: 0.1, param2: 1  
+    Name_9: JetpackBoostEpic, param1: 0.05, param2: 1 
   }
 }
 
@@ -2078,6 +2097,8 @@
 	  Name_2: ToxicWaste, param1: 0.3, param2: 1
     Name_3: Steak, param1: 1, param2: "5,10"
     Name_4: Token, param1: 0.01, param2: "meta=7225"
+    Name_5: MobilityBoostEpic, param1: 0.01, param2: 1
+    Name_6: InsulationBoostEpic, param1: 0.01, param2: 1
   }
 }
 

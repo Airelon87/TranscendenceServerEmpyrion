@@ -15853,8 +15853,8 @@
   BlastRadius: 2
   BlastDamage: 50
 
-  UnlockCost: 15, display: true
-  UnlockLevel: 12, display: true
+  UnlockCost: 3, display: true
+  UnlockLevel: 5, display: true
   TechTreeNames: Misc
   UpgradeTo: AutoMiningDeviceT2, display: true
   
@@ -15873,8 +15873,8 @@
   Mass: 3370, type: float, display: true, formatter: Kilogram
   Volume: 250, type: float, display: true, formatter: Liter
 
-  UnlockCost: 17, display: true
-  UnlockLevel: 15, display: true
+  UnlockCost: 10, display: true
+  UnlockLevel: 10, display: true
   TechTreeParent: AutoMiningDeviceT1
   TechTreeNames: Misc
   UpgradeTo: AutoMiningDeviceT3, display: true
@@ -15893,8 +15893,8 @@
   Mass: 6230, type: float, display: true, formatter: Kilogram
   Volume: 300, type: float, display: true, formatter: Liter
 
-  UnlockCost: 20, display: true
-  UnlockLevel: 20, display: true
+  UnlockCost: 14, display: true
+  UnlockLevel: 15, display: true
   TechTreeParent: AutoMiningDeviceT2
   TechTreeNames: Misc
   UpgradeTo: AutoMiningDeviceEpic, display: true
@@ -24693,7 +24693,7 @@
 
   UnlockCost: 12, display: true
   UnlockLevel: 10, display: true
-  # TechTreeParent: PentaxidTank
+  TechTreeParent: RapidChargeShieldGeneratorBA
   TechTreeNames: "Base"
 }
 { +Block Id: 1809, Name: ShieldGeneratorCV, Ref: ShieldGeneratorBA
@@ -24717,7 +24717,7 @@
   
   UnlockCost: 12, display: true
   UnlockLevel: 10, display: true
-  # TechTreeParent: PentaxidTank
+  TechTreeParent: RapidChargeShieldGenerator
   TechTreeNames: "Capital Vessel"
 }
 { +Block Id: 1810, Name: ShieldGeneratorSV, Ref: ShieldGeneratorBA
@@ -27377,9 +27377,11 @@
   BlastRadius: 2
   BlastDamage: 50
 
-  UnlockCost: 15, display: true
+  UnlockCost: 18, display: true
   UnlockLevel: 25, display: true
+  TechTreeParent: AutoMiningDeviceT3
   TechTreeNames: Misc
+
   UpgradeTo: null, display: false
   
   MapIcon: map_Drill
@@ -32590,7 +32592,7 @@
   Place: Free
   IsAccessible: false, type: bool
   AllowPlacingAt: "Base,MS", display: true
-  Info: Increases sheild capacity at the cost of high energy usage, display: true
+  Info: Increases shield capacity at the cost of high energy usage, display: true
   SizeInBlocks: "2,1,1", display: true
   SymType: 4
   StackSize: 25
@@ -33131,8 +33133,7 @@
   BlastParticleIndex: 10
   BlastRadius: 3
   BlastDamage: 150
-  Radiation: 2.0, display: RadiationLevel
-  Temperature: 15, display: false
+  Temperature: 5, display: false
 }
 { Block Id: 788, Name: PentaxidSeedCrystal2
   Model: @models2/Entities/Decorations/Plants/GlowTube01DecoPrefab
@@ -33180,8 +33181,7 @@
   BlastParticleIndex: 10
   BlastRadius: 3
   BlastDamage: 150
-  Radiation: 3.6, display: RadiationLevel
-  Temperature: 35, display: false
+  Temperature: 15, display: false
   ShowUser: NoButCSV
 }
 { Block Name: ShieldGeneratorSuperBA
@@ -33541,25 +33541,51 @@
   CustomIcon: ShieldGeneratorPOI
   MarketPrice: 4780
   AllowedInBlueprint: true, display: true     
-  AllowPlacingAt: "Base,MS", display: true
-  PickupTarget: RefurbishedShieldGenerator 
+  AllowPlacingAt: "MS", display: true
+  #PickupTarget: RapidChargeShieldGenerator 
+  TemplateRoot: ShieldGeneratorBA
+  HitPoints: 500, type: int, display: true
+  Mass: 2450, type: float, display: true, formatter: Kilogram
+  Volume: 1450, type: float, display: true, formatter: Liter
+  EnergyIn: 1500, type: int, display: true, formatter: Watt
+  CPUIn: 800, type: int, display: true 
+  EnergyInIdle: 200, type: int, display: true, formatter: Watt
+  ShieldCapacity: 3000, type: int, display: true
+  ShieldRecharge: 370, type: int, display: true # per second
+  ShieldCooldown: 15, type: int, display: true   # in seconds
+  ShieldPerCrystal: 1000, type: int, display: true
+  Info: This is a homebrew designed shield made of scrap. Cannot be upgraded or paired with other shields!, display: true
+  UpgradeTo: ShieldGeneratorCV, display: false
+  
+  UnlockCost: 4, display: true
+  UnlockLevel: 5, display: true
+  TechTreeParent: ""
+  TechTreeNames: "Capital Vessel"
+}
+{ Block Name: RapidChargeShieldGeneratorBA, Ref: ShieldGeneratorBA
+  CustomIcon: ShieldGeneratorPOI
+  MarketPrice: 5080
+  AllowedInBlueprint: true, display: true     
+  AllowPlacingAt: "Base", display: true
+  #PickupTarget: RapidChargeShieldGeneratorBA 
   TemplateRoot: ShieldGeneratorBA
   HitPoints: 700, type: int, display: true
   Mass: 2450, type: float, display: true, formatter: Kilogram
   Volume: 1450, type: float, display: true, formatter: Liter
-  EnergyIn: 7500, type: int, display: true, formatter: Watt
+  EnergyIn: 1500, type: int, display: true, formatter: Watt
   CPUIn: 800, type: int, display: true 
   EnergyInIdle: 200, type: int, display: true, formatter: Watt
-  ShieldCapacity: 3000, type: int, display: true
-  ShieldRecharge: 420, type: int, display: true # per second
+  ShieldCapacity: 3500, type: int, display: true
+  ShieldRecharge: 350, type: int, display: true # per second
   ShieldCooldown: 15, type: int, display: true   # in seconds
   ShieldPerCrystal: 1000, type: int, display: true
   Info: This is a homebrew designed shield made of scrap. Cannot be upgraded or paired with other shields!, display: true
-  UpgradeTo: null, display: false
+  UpgradeTo: ShieldGeneratorBA, display: false
   
   UnlockCost: 4, display: true
   UnlockLevel: 3, display: true
-  TechTreeNames: "Base,Capital Vessel"
+  TechTreeParent: ""
+  TechTreeNames: "Base"
 }
 { Block Name: SuperShieldPOI, Ref: ShieldGeneratorBA
   CustomIcon: ShieldGeneratorPOI
@@ -33577,7 +33603,7 @@
   UnlockCost: 0
   UnlockLevel: 1 
   TechTreeParent: ""
-  TechTreeNames: ""  
+  TechTreeNames:   
 }
 { Block Name: HyperShieldPOI, Ref: ShieldGeneratorBA
   CustomIcon: ShieldGeneratorPOI

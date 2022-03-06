@@ -488,7 +488,7 @@
 }
 { +Template Name: PlatinBar 
   BaseItem: true #A1
-  OutputCount: 10 #A1
+  OutputCount: 1 #A1
   CraftTime: 5
   Target: "SmallC,HoverC,BaseC,LargeC,AdvC,Furn"
   { Child Inputs
@@ -497,11 +497,11 @@
 }
 
 { +Template Name: PlatinOunce
-  OutputCount: 9
+  OutputCount: 2
   CraftTime: 15
   Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
-    PlatinBar: 1
+    PlatinBar: 5
   }
 }
  # ======================= 
@@ -3142,16 +3142,6 @@
   }
 }
 
-{ +Template Name: ArmorLight
-  CraftTime: 60 #1
-  Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
-  { Child Inputs
-    SteelPlate: 12
-    Electronics: 1
-    OpticalFiber: 1
-  }
-}
-
 { +Template Name: Chainsaw
   CraftTime: 20 #1
   Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
@@ -5524,6 +5514,17 @@
   }
 }
 
+{ +Template Name: RapidChargeShieldGeneratorBA
+  CraftTime: 90 #C2 CV 10
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    EnergyMatrix: 3
+    CapacitorComponent: 5
+    MechanicalComponents: 2
+    SpareParts: 6
+  }
+}
+
 { +Template Name: ShieldGeneratorSuperBA
   CraftTime: 120 
   Target: "AdvC"
@@ -5531,7 +5532,7 @@
     CompressedPromethium: 3
     AncientRelics: 7
     Robotics: 7
-    PlatinOunce: 30
+    PlatinBar: 30
     AluminiumCoil: 35
     Coolant: 5
     RawDiamond: 2
@@ -5546,7 +5547,7 @@
     CompressedPromethium: 3
     AncientRelics: 3
     Robotics: 7
-    PlatinOunce: 30
+    PlatinBar: 30
     AluminiumCoil: 25
     Coolant: 5
     RawDiamond: 1
@@ -5562,7 +5563,7 @@
     CompressedPromethium: 2
     AncientRelics: 2
     Robotics: 5
-    PlatinOunce: 20
+    PlatinBar: 20
     AluminiumCoil: 15
     Coolant: 3
     WarbotNanotubes: 1
@@ -5570,100 +5571,156 @@
   }
 }
 
-{ +Template Name: TransportationBoost
-  CraftTime: 30
-  Target: "LargeC,AdvC"
+##Suits
+{ +Template Name: ArmorLight
+  CraftTime: 20 #1
+  Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
-    PlatinBar: 7
-    AluminiumCoil: 3
-    Computer: 1
-    Nanotubes: 5
-    Motor: 1
+    SteelPlate: 12
+    Electronics: 1
+    OpticalFiber: 1
   }
 }
 
-{ +Template Name: ArmorLightEpic #LightArmorEpic????
+{ +Template Name: ArmorLightEpic 
   CraftTime: 40
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    SteelPlateArmored: 6
+    Electronics: 4
+    OpticalFiber: 2
+    Robotics: 1
+  }
+}
+
+{ +Template Name: ArmorMedium 
+  CraftTime: 60
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    ArmorLight: 1
+    SteelPlate: 12
+    OpticalFiber: 4
+    Computer: 2
+  }
+}
+
+{ +Template Name: ArmorMediumEpic
+  CraftTime: 80
+  Target: "SmallC,LargeC,AdvC"
+  { Child Inputs
+    ArmorLightEpic: 1
+    SteelPlateArmored: 12
+    OpticalFiber: 4
+    Computer: 2
+    Robotics: 4
+  }
+}
+
+{ +Template Name: ArmorHeavy 
+  CraftTime: 100
   Target: "LargeC,AdvC"
   { Child Inputs
-    AluminiumCoil: 2
-    GoldIngot: 15
-    Robotics: 1
+    ArmorMedium: 1
+    SteelPlateArmored: 12
+    OpticalFiber: 4
+    Electronics: 6
+    Robotics: 2
+  }
+}
+
+{ +Template Name: ArmorHeavyEpic
+  CraftTime: 120
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    ArmorMediumEpic: 1
+    TitanPlates: 12
+    OpticalFiber: 4
+    Robotics: 6
+    RawDiamond: 1
+  }
+}
+
+#Regular Boosters
+
+{ +Template Name: ArmorBoost #Lvl 5
+  CraftTime: 20
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    PlatinBar: 2
+    SteelPlate: 10
     PlasticMaterial: 10
-    Motor: 5
+  }
+}
+
+{ +Template Name: TransportationBoost #7
+  CraftTime: 20
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    SteelPlate: 3
+    ContainerSmallBlocks: 1
+    PlasticMaterial: 12
+  }
+}
+
+{ +Template Name:MultiBoost #Lvl 10
+  CraftTime: 30
+  Target: "AdvC"
+  { Child Inputs
+    SteelPlateArmored: 2
+    ContainerSmallBlocks: 1
+    PlasticMaterial: 12
+    Electronics: 8
   }
 }
 
 ## Epic Boosters
-{ +Template Name:ArmorBoostEpic
+{ +Template Name:ArmorBoostEpic #Lvl 12
   CraftTime: 30
   Target: "AdvC"
   { Child Inputs
     PlatinBar: 5
-    AluminiumCoil: 5
     Nanotubes: 5
     EnergyMatrix: 1
     Robotics: 1
+    LuxuryGoods: 10
     ReportMilitaryRawData: 1
   }
 }
 
-#{ +Template Name:OxygenBoostEpic
-#  CraftTime: 30
-#  Target: "AdvC"
-#  { Child Inputs
-#    AluminiumCoil: 4
-#    Nanotubes: 2
-#    EnergyMatrix: 2
-#    Robotics: 7
-#    LuxuryGoods: 10
-#  }
-#}
-
-{ +Template Name:InsulationBoostEpic
+{ +Template Name:MultiBoostEpic #Lvl 15
   CraftTime: 30
   Target: "AdvC"
   { Child Inputs
-    PlatinBar: 8
-    Fiber: 10
-    EnergyMatrix: 4
-    Robotics: 7
+    PlatinBar: 5
+    CapacitorComponent: 5
+    Nanotubes: 5
+    EnergyMatrix: 1
+    Robotics: 2
+    LuxuryGoods: 10
+    ReportMilitaryRawData: 1
+  }
+}
+
+{ +Template Name:MobilityBoostEpic #Lvl 20
+  CraftTime: 30
+  Target: "AdvC"
+  { Child Inputs
+    PlatinBar: 7
+    ErestrumGel: 5
+    EnergyMatrix: 3
+    Narcotics: 25
     LuxuryGoods: 10
   }
 }
 
-#{ +Template Name:MobilityBoostEpic
-#  CraftTime: 30
-#  Target: "AdvC"
-#  { Child Inputs
-#    PlatinBar: 7
-#    AluminiumCoil: 3
-#    ErestrumGel: 5
-#    EnergyMatrix: 7
-#    Narcotics: 25
-#    RawDiamond: 1
-#  }
-#}
-
-{ +Template Name:TransportationBoostEpic
-  CraftTime: 30
-  Target: "AdvC" 
-  { Child Inputs
-    PlatinBar: 8
-    PentaxidSeedCrystal: 10
-    CompressedZascosium: 5
-    Robotics: 2
-    Coolant: 3
-  }
-} 
-
-{ +Template Name:EVABoostEpic
+{ +Template Name:EVABoostEpic #Lvl 25
   CraftTime: 30
   Target: "AdvC" 
   { Child Inputs
     PlatinBar: 8
     CompressedZascosium: 5
     Robotics: 2
+    LuxuryGoods: 10
     ReportAtmosphericData: 3
   }
 } 
@@ -5713,10 +5770,9 @@
   Target: "SmallC,HoverC,LargeC,AdvC"
   { Child Inputs 
     Chemicals: 9
-	  FusionCell: 15
-	  ScienceEquipment: 3
-	  PlasticMaterial: 900
-	  PlatinBar: 3
+	  FusionCell: 2
+	  ScienceEquipment: 1
+    PlatinOunce: 5
   }
 }
 
