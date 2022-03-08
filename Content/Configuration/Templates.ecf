@@ -6363,3 +6363,29 @@
   }
 }
 
+#LaserSentryGun Upgrade Path. LaserSentryGunT1 is child of SentryGunBlocks
+{ +Template Name: LaserSentryGunT2
+  CraftTime: 30 
+  Target: ""
+  { Child Inputs
+    MechanicalComponents: 10
+    Electronics: 4
+    Motor: 2
+    OpticalFiber: 5
+    LaserKit: 1
+  }
+}
+{ +Template Name: LaserSentryGunT3
+  CraftTime: 30 
+  Target: ""
+  { Child Inputs
+    MechanicalComponents: 10
+    Electronics: 4
+    Motor: 2
+    OpticalFiber: 5
+    LaserKit: 2
+    ReportWeaponSignatures: 1
+  }
+}
+
+
