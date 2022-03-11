@@ -14332,7 +14332,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Meshfile: Entities/Items/Weapons/Projectiles/CrossbowBoltPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: FillerCharge
-  MarketPrice: 0.3, display: true
+  MarketPrice: 2, display: true
   Material: human
   HoldType: 0
   Canhold: false
@@ -14384,8 +14384,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Class: Ranged
     IsShootThroughCrosshair: true
     ROF: 0.5, type: float, display: true, formatter: ROF
-    AllowAt: "Space"
-    Range: 260, display: false
+    AllowAt: "UnderWater, Planet, Space"
+    Range: 200, display: false
     RangeSpace: 500, display: false
     AmmoCapacity: 128, display: true
     AmmoType: LaserArrows, display: true
@@ -14408,8 +14408,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     DamageMultiplier_2: 1, param1: dirt|stone|rock|wood|
     DamageMultiplier_3: 1.5, param1: hull|hullarmored|hullcombat
     DamageMultiplier_4: 1, param1: metallight|metal|metalhard
-    DamageMultiplier_5: 0.5, param1: shield
-    BlastDamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead
+    DamageMultiplier_5: 0.2, param1: shield
+    BlastDamageMultiplier_1: 0.25, param1: head|body, display: DmgMultiplierHead
     BlastDamageMultiplier_2: 1.5, param1: wood|woodblock|plastic|metal|metalhard
     BlastDamageMultiplier_3: 0, param1: dirt|stone|rock|concrete
     BlastDamageMultiplier_4: 2, param1: hull|hullarmored|hullcombat
@@ -14430,8 +14430,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Class: Ranged
     IsShootThroughCrosshair: true
     ROF: 0.4, type: float, display: true, formatter: ROF
-    AllowAt: "Space"
-    Range: 275, display: false
+    AllowAt: "UnderWater, Planet, Space"
+    Range: 225, display: false
     RangeSpace: 700, display: false
     AmmoCapacity: 128, display: true
     AmmoType: LaserArrows, display: true
@@ -14454,8 +14454,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     DamageMultiplier_2: 1, param1: dirt|stone|rock|wood|
     DamageMultiplier_3: 1.5, param1: hull|hullarmored|hullcombat
     DamageMultiplier_4: 1, param1: metallight|metal|metalhard
-    DamageMultiplier_5: 0.5, param1: shield
-    BlastDamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead
+    DamageMultiplier_5: 0.3, param1: shield
+    BlastDamageMultiplier_1: 0.5, param1: head|body, display: DmgMultiplierHead
     BlastDamageMultiplier_2: 1.5, param1: wood|woodblock|plastic|metal|metalhard
     BlastDamageMultiplier_3: 0, param1: dirt|stone|rock|concrete
     BlastDamageMultiplier_4: 2, param1: hull|hullarmored|hullcombat
@@ -14476,8 +14476,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Class: Ranged
     IsShootThroughCrosshair: true
     ROF: 0.5, type: float, display: true, formatter: ROF
-    AllowAt: "Space"
-    Range: 320, display: false
+    AllowAt: "UnderWater, Planet, Space"
+    Range: 250, display: false
     RangeSpace: 900, display: false
     AmmoCapacity: 128, display: true
     AmmoType: LaserArrows, display: true
@@ -14498,15 +14498,63 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     #TracerIsBeam: true
     #TracerPerBullet: 1
 
+    DamageMultiplier_1: 0.5, param1: head|body, display: DmgMultiplierHead  
+    DamageMultiplier_2: 1, param1: dirt|stone|rock|wood|
+    DamageMultiplier_3: 1.5, param1: hull|hullarmored|hullcombat
+    DamageMultiplier_4: 1, param1: metallight|metal|metalhard
+    DamageMultiplier_5: 0.4, param1: shield
+    BlastDamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead
+    BlastDamageMultiplier_2: 1.5, param1: wood|woodblock|plastic|metal|metalhard
+    BlastDamageMultiplier_3: 0, param1: dirt|stone|rock|concrete
+    BlastDamageMultiplier_4: 2, param1: hull|hullarmored|hullcombat
+    BlastDamageMultiplier_5: 0, param1: shield 
+    BlastDamageMultiplier_6: 0.5, param1: human
+  }
+}
+{ +Item Id: 1617, Name: LaserSentryGunWeaponT4, Ref: LaserSentryGunWeapon
+  Model: @models/Blocks/Turrets/TurretEnemyOrangePrefab
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  ShowUser: NoButCSV
+  Canhold: false
+  Material: metalweapon
+  HoldType: 0
+  StackSize: 1
+  Category: Weapons/Items  
+  { Child 0
+    Class: Ranged
+    IsShootThroughCrosshair: true
+    ROF: 0.5, type: float, display: true, formatter: ROF
+    AllowAt: "UnderWater, Planet, Space"
+    Range: 300, display: false
+    RangeSpace: 900, display: false
+    AmmoCapacity: 256, display: true
+    AmmoType: LaserArrows, display: true
+    IgnoreAtmo: true
+    Automatic: true
+    Damage: 275, display: true
+    BlastDamage: 225, display: true
+    AutoReload: true
+    NoiseStrength: 100, display: false   
+    ReloadDelay: 0.5, display: true
+    Bullet_use_per_shot: 0.25
+    SfxBegin: Weapons/EnergyWeapons/weapon_laser_009 
+    SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
+    SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
+    #Tracer: Weapons/Projectiles/TracerLaserShotBlue
+    TracerIsBeam: true
+    Tracer: Weapons/Projectiles/TracerOrange1
+    #TracerIsBeam: true
+    #TracerPerBullet: 1
+
     DamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead  
     DamageMultiplier_2: 1, param1: dirt|stone|rock|wood|
     DamageMultiplier_3: 1.5, param1: hull|hullarmored|hullcombat
     DamageMultiplier_4: 1, param1: metallight|metal|metalhard
     DamageMultiplier_5: 0.5, param1: shield
     BlastDamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead
-    BlastDamageMultiplier_2: 1.5, param1: wood|woodblock|plastic|metal|metalhard
+    BlastDamageMultiplier_2: 1.75, param1: wood|woodblock|plastic|metal|metalhard
     BlastDamageMultiplier_3: 0, param1: dirt|stone|rock|concrete
-    BlastDamageMultiplier_4: 2, param1: hull|hullarmored|hullcombat
+    BlastDamageMultiplier_4: 2.25, param1: hull|hullarmored|hullcombat
     BlastDamageMultiplier_5: 0, param1: shield 
     BlastDamageMultiplier_6: 0.5, param1: human
   }

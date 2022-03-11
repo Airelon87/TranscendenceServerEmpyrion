@@ -6388,6 +6388,19 @@
     ReportWeaponSignatures: 1
   }
 }
+{ +Template Name: LaserSentryGunT4
+  CraftTime: 30 
+  Target: ""
+  { Child Inputs
+    MechanicalComponents: 10
+    Electronics: 4
+    Motor: 2
+    OpticalFiber: 5
+    LaserKit: 3
+    ReportWeaponSignatures: 2
+    Robotics: 6
+  }
+}
 
 #Havenopolis SpecialFoodTemplates
 # CandyBar, FireFlyBaguette, SpikyShroomPizza, GroundRoachSalami, RootBuds, Raktajino, BlueberryCornDog, BerryCola, GrilledVegetables

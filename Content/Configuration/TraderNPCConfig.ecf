@@ -410,6 +410,9 @@
   Item5: "ArmorLightEpic, 12500-25000, 1-2, 4000-11000, 2-5"
   Item6: "LaserCrossbow, mf=1.4-2.3, 3-12, mf=0.8-1.5, 12-55"
   Item7: "LaserArrows, mf=1.5-1.7, 64-256, mf=1.1-1.2, 256-1024"
+  Item8: "LaserSentryGunT1, mf=1.1-1.4, 10-20, mf=0.8-0.9, 20-42"
+  Item9: "LaserSentryGunT2, mf=1.1-1.4, 10-20, mf=0.8-0.9, 20-42"
+  Item10: "LaserSentryGunT3, mf=1.1-1.4, 10-20, mf=0.8-0.9, 20-42"
 }
 
 { Trader Name: Bertrams
@@ -909,6 +912,7 @@
   Item8: "OxygenBottleLarge, 106-160, 0-10, 85-106, 10-20"
   Item9: "Coolant, 192-320, 1-40, 130-192, 40-100"
   Item10: "Chemicals, 64-96, 1-5, 51-64, 5-10"
+  Item11: "EnergyCellLarge, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-42"
 }
 
 { Trader Name: Science
@@ -966,6 +970,7 @@
   Item13: "MetalPieces, 106-160, 0-10, 85-106, 10-20" 
   Item14: "PlatinOunce, 306-460, 0-10, 185-306, 10-20"
   Item15: "DetectorHVEpic, 3750-4600, 0-5, 5-9, 2350-3400"
+  Item16: "LaserSentryGunT4, mf=1.4-1.8, 3-5, mf=0.4-0.8, 5-10"
 }
 
 { Trader Name: Warehouse
@@ -1269,6 +1274,10 @@
   Item11: "PulseLaserChargeRifle, 7-35, 1-600, 2-3, 600-999"
   Item12: "MinigunEpic, 22000-43000, 1-3, 11500-19000, 3-10"
   Item13: "AssaultRifleT2, 1650-1950, 1-10, 550-790, 10-20"
+  Item14: "LaserSentryGunT1, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-42"
+  Item15: "LaserSentryGunT2, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-42"
+  Item16: "LaserSentryGunT3, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-42"
+  Item17: "LaserArrows, mf=1.1-1.2, 170-340, mf=0.8-0.9, 340-680"
 }
 
 { Trader Name: ToolTime
@@ -1280,6 +1289,8 @@
   Item3: "MultiCharge, 1-3, 1-40, 1-2, 40-50"
   Item4: "DrillT2, 1000-1500, 1-100, 475-690, 100-110"
   Item5: "DrillEpic, 75000-100000, 1-3, 27500-65000, 3-5"
+  Item6: "LaserCrossbow, mf=1.2-1.5, 3-7, mf=0.6-0.9, 7-12"
+  Item7: "LaserArrows, mf=1.1-1.2, 170-340, mf=0.8-0.9, 340-680"
 }
 
 { Trader Name: GreenThumb
@@ -1332,6 +1343,7 @@
   Item5: "ShotgunKit, 100-200, 1-10, 40-80, 10-15"
   Item6: "SniperKit, 100-200, 1-20, 40-80, 20-30"
   Item7: "AssaultRifleEpic, 4000-5000, 1-4, 1150-3000, 4-7"
+  Item8: "LegacyEnergyCore, mf=1.6-1.9, 5-8, mf=0.5-0.9, 8-24"
 }
 
 { Trader Name: HoverBuilderz
@@ -1359,6 +1371,8 @@
   Item19: "DetectorHVEpic, 3750-4600, 0-5, 5-9, 2350-3400"
   Item20: "ReportGeologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item21: "ReportPlanetaryResourceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item22: "CPUExtenderHVT2, mf=1.1-1.2, 10-35, mf=0.6-0.9, 35-50"
+  Item23: "CPUExtenderHVT3, mf=1.1-1.5, 10-35, mf=0.6-0.9, 35-50"
 }
 
 { Trader Name: TheWarpSociety
@@ -1387,6 +1401,8 @@
   Item20: "ReportSpaceWeather, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item21: "SmallShieldCapacitor, 2200-4700, 10-16, 1100-2150, 16-32"
   Item22: "SmallShieldPerplexor, 2200-5300, 10-16, 1100-2150, 16-32"
+  Item23: "CPUExtenderSVT2, mf=1.1-1.2, 10-35, mf=0.6-0.9, 35-50"
+  Item24: "CPUExtenderSVT3, mf=1.1-1.5, 10-35, mf=0.6-0.9, 35-50"
 }
 
 { Trader Name: HavenArmorer
@@ -1411,7 +1427,7 @@
   Item2: "CoffeePlantStage1, 9-13, 5-25, 3-5, 25-99"
   Item3: "AdrenalineShot, 15-25, 10-20, 4-5, 20-40"
   Item4: "EnergyPills, 7-12, 5-10, 1-2, 10-20"
-  Item5: "PowerBar, 4-7, 5-15"
+  Item5: "CandyBar, 4-7, 5-15"
   Item6: "AnniversaryCake, 100-150, 1-7"
   Item7: "EnergyCell, 6-12, 10-200, 3-5, 200-300"
   Item8: "EnergyCellLarge, 12-24, 25-250, 6-12, 250-500"
@@ -1436,14 +1452,14 @@
   Item1: "LuxuryGoods, 2300-3000, 1-5, 1700-2300, 5-10"
   Item2: "AluminiumPowder, 25-30, 1-50, 15-19, 50-100"
   Item3: "PlantDead2, 8-11, 25-100, 2-3, 100-999"
-  Item4: "LargeOptronicBridge, 1500-2000, 1-2, 1000-1150, 2-3"
-  Item5: "LargeOptronicMatrix, 2500-3000, 1-2, 1500-1900, 2-3"
+  Item4: "LargeOptronicBridge, 1500-2000, 5-9, 1000-1150, 9-23"
+  Item5: "LargeOptronicMatrix, 2500-3000, 5-9, 1500-1900, 9-23"
   Item6: "AluminiumOre, 15-30, 1-50, 15-19, 50-100"
   Item7: "PlatinOre, 15-30, 1-50, 10-15, 50-100" 
-  Item8: "TitanOre, 8-16, 1-50, 5-7, 50-100" 
+  Item8: "TitanOre, 8-16, 15-50, 5-7, 50-100" 
   Item9: "Explosives, 88-132, 1-5, 20-32, 5-10"
-  Item10: "HumanNPCBlocks, 800-1200, 1-10, 400-720, 10-50"
-  Item11: "AlienNPCBlocks, 800-1200, 1-10, 400-750, 10-50"
+  Item10: "HumanNPCBlocks, 800-1200, 10-30, 400-720, 30-50"
+  Item11: "AlienNPCBlocks, 800-1200, 10-30, 400-750, 30-50"
   Item12: "Token:7238, 800-1200, 1-5, 500-600, 5-10"
   Item13: "ArmorLightEpic, 11100-17500, 1-2, 8000-11000, 2-5"
   Item14: "15mmBullet, 4-5, 500-1000, 3-4, 1000-5000"
@@ -1488,6 +1504,9 @@
   Item26: "LargeShieldCapacitor, 2800-6600, 10-16, 1100-2750, 16-32"
   Item27: "AntiMatterPhaseCannonBlocks, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item28: "ZedZorgGenerator, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item29: "Core, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item30: "CPUExtenderCVT2, mf=1.1-1.2, 10-35, mf=0.6-0.9, 35-50"
+  Item31: "CPUExtenderCVT3, mf=1.1-1.5, 10-35, mf=0.6-0.9, 35-50"
 }
 
 { Trader Name: DarkGarsGiftShop
@@ -1508,6 +1527,8 @@
   Item12: "Explosives, 88-132, 1-5, 20-32, 5-10"
   Item13: "DecoTribalBlocks, 500-570, 1-10, 280-500, 10-20"
   Item14: "AssaultRifleT2, 1550-1750, 7-15, 250-870, 15-30"
+  Item30: "CPUExtenderBAT2, mf=1.1-1.2, 10-35, mf=0.6-0.9, 35-50"
+  Item31: "CPUExtenderBAT3, mf=1.1-1.5, 10-35, mf=0.6-0.9, 35-50"
 }
 
 { Trader Name: AquaHavenia
@@ -1824,8 +1845,11 @@
   Item8: "EnergyCell, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
   Item9: "BioFuel, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
   Item10: "Chemicals, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
-  Item11: "LaserArrows, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
+  Item11: "LaserArrows, mf=1.1-1.2, 120-400, mf=0.8-0.9, 400-550"
   Item12: "LaserKit, mf=1.3-1.5, 4-12, mf=0.8-0.9, 12-20"
+  Item13: "LargeShieldCapacitor, mf=1.1-1.2, 2-4, mf=0.8-0.9, 4-8"
+  Item14: "LargeShieldPerplexor, mf=1.1-1.2, 2-4, mf=0.8-0.9, 4-8"
+  Item15: "EpicShieldPerplexor, mf=1.1-1.2, 2-4, mf=0.8-0.9, 4-8"
 }
 
 

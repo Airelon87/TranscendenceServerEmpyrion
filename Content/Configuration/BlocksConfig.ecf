@@ -19985,7 +19985,7 @@
   ShieldCapacityBonus: 925, type: int, display: true
 
   UnlockCost: 12, display: true
-  UnlockLevel: 10, display: true
+  UnlockLevel: 5, display: true
   #TechTreeParent: PentaxidTankSV
   TechTreeNames: Small Vessel
 }
@@ -20061,7 +20061,7 @@
   BlastDamage: 300
 
   UnlockCost: 10, display: true
-  UnlockLevel: 7, display: true
+  UnlockLevel: 3, display: true
   TechTreeParent: FuelTankSV
   TechTreeNames: "Small Vessel,Hover Vessel"
 
@@ -24746,7 +24746,7 @@
   UpgradeTo: ShieldGeneratorSuperSV, display: true
   
   UnlockCost: 10, display: true
-  UnlockLevel: 12, display: true
+  UnlockLevel: 7, display: true
   TechTreeParent: WarpDriveSV
   TechTreeNames: Small Vessel
 }
@@ -33042,6 +33042,11 @@
   BlastDamage: 500
   MaxCount: 16, type: int, display: true
   ForceMaxCount: true
+
+  UnlockCost: 5, display: true
+  UnlockLevel: 15, display: true
+  TechTreeParent: PentaxidSeedCrystal
+  TechTreeNames: Misc
 }
 { Block Name: GoldSeedCrystal2
   Model: @models2/Entities/Decorations/Plants/FantasyPlant1DecoPrefab
@@ -33138,6 +33143,13 @@
   BlastRadius: 3
   BlastDamage: 150
   Temperature: 5, display: false
+
+  #ShowUser: Yes
+
+  UnlockCost: 3, display: true
+  UnlockLevel: 7, display: true
+  TechTreeParent: OxygenGeneratorSmall
+  TechTreeNames: Misc
 }
 { Block Id: 788, Name: PentaxidSeedCrystal2
   Model: @models2/Entities/Decorations/Plants/GlowTube01DecoPrefab
@@ -33894,7 +33906,7 @@
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 200, type: int, display: true
   HitPoints: 150, type: int, display: true
-  UpgradeTo: null, display: false
+  UpgradeTo: LaserSentryGunT4, display: true
 
   BlastParticleIndex: 11
   BlastRadius: 3
@@ -33904,4 +33916,28 @@
   UnlockLevel: 10, display: true
   TechTreeParent: LaserSentryGunT2
   TechTreeNames: "Small Vessel,Base,Capital Vessel"
+}
+{ Block Name: LaserSentryGunT4, Ref: LaserSentryGunT2
+  CustomIcon: TurretEnemyOrange
+  Info: The final upgrade of the LaserSentryGun that fires a medium yield phaser beam with extra blast damage, display: true
+  MarketPrice: 25000, display: true
+  Place: Free
+  BlockColor: "110,110,110"
+  #TemplateRoot: SentryGunBlocks
+  PickupTarget: SentryGunBlocks
+  Model: @models/Blocks/Turrets/TurretEnemyOrangePrefab
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  WeaponItem: LaserSentryGunWeaponT4
+  AllowPlacingAt: "Base,MS,SS,GV", display: true 
+  EnergyIn: 110, type: int, display: true, formatter: Watt
+  CPUIn: 215, type: int, display: true
+  HitPoints: 250, type: int, display: true
+  RotSpeed: 250, type: int, display: true
+  UpgradeTo: null, display: false
+
+  BlastParticleIndex: 11
+  BlastRadius: 3
+  BlastDamage: 50
+
+  TechTreeNames: Hidden
 }
