@@ -1537,7 +1537,7 @@
 }
 
 { +Template Name: DetectorHVEpicUpgradeKit
-  BaseItem: true
+  #BaseItem: true
   CraftTime: 10  
   Target: "LargeC,AdvC"
   { Child Inputs
@@ -1545,6 +1545,7 @@
     Nanotubes: 12
     OpticalFiber: 4
     GlassPlate: 1
+    ReportNavigationData: 1
   }
 }
 
@@ -6385,6 +6386,97 @@
     OpticalFiber: 5
     LaserKit: 2
     ReportWeaponSignatures: 1
+  }
+}
+
+#Havenopolis SpecialFoodTemplates
+# CandyBar, FireFlyBaguette, SpikyShroomPizza, GroundRoachSalami, RootBuds, Raktajino, BlueberryCornDog, BerryCola, GrilledVegetables
+# Each Require HavenopolisRecipe to craft in FoodP
+
+{ +Template Name: CandyBar
+  CraftTime: 12
+  OutputCount: 3
+  Target: FoodP
+  { Child Inputs
+    PowerBar: 3
+    NaturalSweetener: 1
+    HavenopolisRecipe: 1
+  }
+}
+{ +Template Name: SpikyShroomPizza
+  CraftTime: 12
+  OutputCount: 2
+  Target: FoodP
+  { Child Inputs
+    Pizza: 1
+    MushroomSpiky: 1
+    HavenopolisRecipe: 1
+  }
+}
+{ +Template Name: FireFlyBaguette
+  CraftTime: 14
+  OutputCount: 3
+  Target: FoodP
+  { Child Inputs
+    Bread: 1
+    HavenopolisRecipe: 1
+  }
+}
+{ +Template Name: GroundRoachSalami
+  CraftTime: 18
+  OutputCount: 3
+  Target: FoodP
+  { Child Inputs
+    Salami: 3
+    HavenopolisRecipe: 1
+  }
+}
+{ +Template Name: RootBuds
+  CraftTime: 18
+  OutputCount: 3
+  Target: FoodP
+  { Child Inputs
+    Buds: 1
+    Varonroot: 1
+    HavenopolisRecipe: 1
+  }
+}
+{ +Template Name: Raktajino
+  CraftTime: 2
+  OutputCount: 3
+  Target: FoodP
+  { Child Inputs
+    HotBeverage: 2 
+    HavenopolisRecipe: 1
+  }
+}
+{ +Template Name: BlueberryCornDog
+  CraftTime: 12
+  OutputCount: 6
+  Target: FoodP
+  { Child Inputs
+    PhoenixFernFonds: 2
+    Berries: 1
+    Flour: 1
+    HavenopolisRecipe: 1
+  }
+}
+{ +Template Name: BerryCola
+  CraftTime: 12
+  OutputCount: 3
+  Target: FoodP
+  { Child Inputs
+    EnergyDrink: 1
+    BerryJuice: 1 
+    HavenopolisRecipe: 1
+  }
+}
+{ +Template Name: GrilledVegetables
+  CraftTime: 12
+  OutputCount: 3
+  Target: FoodP
+  { Child Inputs
+    TrumpetGreens: 3
   }
 }
 

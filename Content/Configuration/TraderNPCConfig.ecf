@@ -15,6 +15,7 @@
 { Trader Name: TraderDefault
   SellingText: "Hi, I am trader <NAME>\nI am selling <GOODS>.\nYou can pay with <PAYMENT>."
   SellingGoods: "trwFood"
+  Discount: 0.05
   Item1: "CannedVegetables, 10-15, 3-5, 8-10, 5-10"
   Item2: "CannedMeat, 22-33, 3-5, 17-22, 5-10"
 }
@@ -343,8 +344,8 @@
   Item6: "VegetableJuice, 2-3, 0-10, 1-2, 10-20"
   Item7: "Milk, 2-3, 0-10, 1-2, 10-20"
   Item8: "AkuaWine, 7-8, 5-10, 1-2, 10-20"
-  Item9: "HotBeverage, 1-2, 0-10, 1-1, 10-20"
-  Item10: "Beer, 7-8, 5-10, 1-2, 10-20"
+  Item9: "LaserCrossbow, 80-152, 0-10, 34-65, 10-20"
+  Item10: "LaserArrows, 7-8, 50-100, 1-2, 100-250"
   Item11: "Bread, 6-9, 0-20, 1-2, 20-40"
   Item12: "Cheese, 5-10, 0-10, 1-2, 10-20"
   Item13: "Stew, 9-12, 0-10, 1-2, 10-20"
@@ -392,7 +393,7 @@
   Item9: "AlienNPCBlocks, 800-1200, 1-10"
   Item10: "AkuaWine, 7-8, 5-10"
   Item11: "Beer, 2-3, 5-10"
-  Item12: "EnergyDrink, 4-5, 0-10"
+  Item12: "EnergyDrink, 19-35, 5-15, 9-17, 15-20"
   Item13: "SmallOptronicBridge, 600-900, 1-5, 300-450, 5-10"
   Item14: "SmallOptronicMatrix, 1000-1200, 1-5, 500-750, 5-10"
   Item15: "Optronics, 150-175, 2-7, 95-145, 7-12"
@@ -612,15 +613,16 @@
   SellingText: "Hi, I am trader <NAME>\nI am selling <GOODS>.\nYou can pay with <PAYMENT>."
   SellingGoods: "trwFood"
   Discount: 0.15
-  Item1: "Steak, 6-10, 0-10, 1-1, 10-20"
-  Item2: "Ham, 7-12, 0-10"
-  Item3: "Pizza, 10-12, 0-10"
-  Item4: "Sandwich, 9-10, 0-10"
-  Item5: "Bread, 7-9, 0-20"
-  Item6: "FruitJuice, 4-6, 0-10"
+  Item1: "Steak, 6-10, 2-10, 1-3, 10-20"
+  Item2: "Ham, 7-12, 7-20"
+  Item3: "Pizza, 10-12, 2-10"
+  Item4: "Sandwich, 9-10, 10-20"
+  Item5: "Bread, 7-9, 10-200"
+  Item6: "FruitJuice, 4-6, 2-10"
   Item7: "VegetableJuice, 5-9, 0-10"
   Item8: "EmergencyRations, 32-60, 20-40, 24-31, 40-50"
   Item9: "AkuaWine, 70-80, 5-10, 25-40, 10-20"
+  Item10: "Salami, 5-9, 5-25, 1-4, 25-150"
 }
 
 { Trader Name: Medic
@@ -1063,6 +1065,8 @@
   Item18: "XenoSubstrate, 64-96, 1-25, 51-64, 25-100" 
   Item19: "AncientRelics, 1000-1900, 10-50, 500-750, 50-70"
   Item20: "Token:7238, 800-1200, 1-5, 500-600, 5-10"
+  Item21: "ReportArcheologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item22: "ReportPlanetaryResourceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: Recycling
@@ -1119,6 +1123,8 @@
   Item13: "JetpackBoostEpic, 75000-85000, 1-5, 25000-36000, 5-10"
   Item14: "RangerTurret, 98830-112440, 1-4, 61175-78830, 4-10"
   Item15: "RangerSVPlasmaCharge, 47-53, 64-164, 37-43, 164-256"
+  Item16: "ReportAtmosphericData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item17: "ReportMilitaryRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: MilitaryT1
@@ -1378,7 +1384,7 @@
   Item17: "GravityGeneratorSS, 2000-4500, 1-2, 1750-2000, 2-6"
   Item18: "MinigunSSWeapon, 1000-2500, 1-2, 650-1000, 2-6"
   Item19: "ReportWarpSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item20: "ReportSpaceAnomality, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item20: "ReportSpaceWeather, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item21: "SmallShieldCapacitor, 2200-4700, 10-16, 1100-2150, 16-32"
   Item22: "SmallShieldPerplexor, 2200-5300, 10-16, 1100-2150, 16-32"
 }
@@ -1393,6 +1399,8 @@
   Item4: "ArmorLightEpic, 12500-25000, 1-2, 4000-11000, 2-5"
   Item5: "ArmorMediumEpic, 40000-75000, 1-4, 20000-39900, 4-7" 
   Item6: "ArmorHeavyEpic, 75000-90000, 1-2, 30000-60000, 2-5"
+  Item7: "ReportMilitaryRawData, mf=1.4-1.8, 10-50, mf=0.8-0.9, 55-150"
+  Item8: "ReportAtmosphericData, mf=1.4-1.8, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: StarKorsCoffee
@@ -1418,6 +1426,7 @@
   Item17: "Stew, 55-60, 5-10, 40-55, 10-30"
   Item18: "PentaxidElement, 17-30, 15-50, 9-15, 50-100" 
   Item19: "ReportScienceRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item20: "ReportMaintenanceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: StarKorsMarket
@@ -1439,9 +1448,9 @@
   Item13: "ArmorLightEpic, 11100-17500, 1-2, 8000-11000, 2-5"
   Item14: "15mmBullet, 4-5, 500-1000, 3-4, 1000-5000"
   Item15: "ReportBiologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item16: "ReportAstronomicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item16: "ReportPlanetaryResourceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item17: "ReportEconomicData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item18: "ReportMilitaryScouting, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item18: "ReportExplorationRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item19: "LargeShieldPerplexor, 2800-6600, 10-16, 1100-2750, 16-32"
   Item20: "LegacyEnergyCore, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item21: "AntiMatterRod, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
@@ -1475,7 +1484,7 @@
   Item22: "5.8mmBullet, 2-3, 500-1000, 1-2, 1000-5000"
   Item23: "ThrusterMSRoundBlocks, 1900-3600, 10-16, 1100-1750, 16-32"
   Item24: "ReportNavigationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item25: "ReportSpaceWeather, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item25: "ReportMaterialData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item26: "LargeShieldCapacitor, 2800-6600, 10-16, 1100-2750, 16-32"
   Item27: "AntiMatterPhaseCannonBlocks, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item28: "ZedZorgGenerator, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
@@ -1541,9 +1550,11 @@
   Item13: "MutatedSubstance, 10-14, 1-50, 5-10, 50-100"
   Item14: "AutoMinerCore, 2000-2550, 1-20, 1870-1990, 20-45"
   Item15: "ReportSpaceAnomality, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item16: "ReportAstronomicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item17: "ReportWarpSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item18: "ReportArcheologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item16: "ReportAnomalousData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item17: "ReportAtmosphericData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item18: "ReportPlanetaryResourceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item19: "ReportMaintenanceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item20: "ReportMaterialData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: VladianMarkets
@@ -1566,8 +1577,8 @@
   Item14: "AutoMinerCore, 1900-2350, 1-20, 1470-1790, 20-45"
   Item15: "DetectorHVEpic, 3750-4600, 0-5, 2350-3400, 5-10"
   Item16: "ReportMilitaryTroopMovement, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item17: "ReportTransportationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item18: "ReportGeologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item17: "ReportBiologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item18: "ReportMilitaryClassified, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: FlameKeepersMedic
@@ -1611,7 +1622,7 @@
   Item17: "15mmBullet, 4-5, 500-1000, 3-4, 1000-5000"
   Item18: "ReportMilitaryClassified, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
   Item19: "ReportWeaponSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item20: "ReportTransportationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item20: "ReportScienceRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
 }
 
 { Trader Name: SyndicateArmorer
@@ -1658,6 +1669,8 @@
   Item19: "SciFiCannonPlasmaCharge, 42-63, 50-100, 33-42, 100-500"
   Item20: "SlowRocketHoming, 71-106, 50-100, 57-71, 100-500" 
   Item21: "ReportMilitaryRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item22: "ReportWeaponSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item23: "ShotgunChristmas, 39000-48000, 1-5, 32500-39000, 5-20"
 }
 
 { Trader Name: TreauresOfGalor
@@ -1746,4 +1759,73 @@
 #HavenopolisOnlyVendors
 #BlueCornDog
 #RoastedRoach
-#
+#Pizzaria
+#ZipMart
+
+#{ Trader Name: TraderDefaultHavenopolis
+#  SellingText: "Hi, Welcome to the <NAME>\nI am selling <GOODS>.\nYou can pay with <PAYMENT>."
+#  SellingGoods: "trwFood"
+#  Discount: 0.05
+#  Item1: "HavenopolisRecipe, mf=1.1-1.2, 5-25, 0, 0"
+#  Item2: "TrumpetGreens, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+#}
+
+{ Trader Name: BlueCornDog
+  SellingText: "Hi, Welcome to the <NAME>\nI am selling <GOODS>.\nYou can pay with <PAYMENT>."
+  SellingGoods: "trwFood"
+  Discount: 0.05
+  Item1: "HavenopolisRecipe, mf=1.1-1.2, 5-25, 0, 0"
+  Item2: "BlueberryCornDog, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item3: "BerryCola, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item4: "TrumpetGreens, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item5: "PhoenixFernFonds, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item6: "Berries, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item7: "CandyBar, mf=1.1-1.4, 5-10, mf=0.8-0.9, 10-20"
+}
+
+{ Trader Name: RoastedRoach
+  SellingText: "Hi, Welcome to the <NAME>\nI am selling <GOODS>.\nYou can pay with <PAYMENT>."
+  SellingGoods: "trwFood"
+  Discount: 0.05
+  Item1: "HavenopolisRecipe, mf=1.1-1.2, 5-25, 0, 0"
+  Item2: "Raktajino, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item3: "RootBuds, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item4: "GroundRoachSalami, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item5: "GrilledVegetables, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item6: "Buds, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item7: "Varonroot, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item8: "HotBeverage, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+}
+
+{ Trader Name: Pizzaria
+  SellingText: "Hi, Welcome to the <NAME>\nI am selling <GOODS>.\nYou can pay with <PAYMENT>."
+  SellingGoods: "trwFood"
+  Discount: 0.05
+  Item1: "HavenopolisRecipe, mf=1.1-1.2, 5-25, 0, 0"
+  Item2: "Pizza, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item3: "SpikyShroomPizza, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item4: "FireFlyBaguette, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item5: "Beer, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item6: "Bread, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item7: "MushroomSpiky, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+}
+
+{ Trader Name: ZipMart
+  SellingText: "Hi, Welcome to the <NAME>\nI am selling <GOODS>.\nYou can pay with <PAYMENT>."
+  SellingGoods: "trwSpecial"
+  Discount: 0.05
+  Item1: "HavenopolisRecipe, mf=1.2-1.4, 15-45, 0, 0"
+  Item2: "CandyBar, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-60"
+  Item3: "LaserCrossbow, mf=1.1-1.2, 2-4, mf=0.8-0.9, 4-8"
+  Item4: "PentaxidCrystal, mf=1.1-1.4, 64-220, mf=0.6-0.8, 220-400"
+  Item5: "LegacyEnergyCore, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item6: "FusionCell, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
+  Item7: "EnergyCellLarge, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
+  Item8: "EnergyCell, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
+  Item9: "BioFuel, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
+  Item10: "Chemicals, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
+  Item11: "LaserArrows, mf=1.1-1.2, 40-500, mf=0.8-0.9, 500-550"
+  Item12: "LaserKit, mf=1.3-1.5, 4-12, mf=0.8-0.9, 12-20"
+}
+
+

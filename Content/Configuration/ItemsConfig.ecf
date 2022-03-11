@@ -2792,6 +2792,7 @@
 }
 { +Item Id: 63, Name: BioFuel, Ref: 50Caliber
   StackSize: 2000
+  MarketPrice: 4, display: true
   Info: bkiBioFuel, display: true
   AutoFill: false
   Category: Components
@@ -6786,7 +6787,7 @@
   Volume: 0.31, type: float, display: true, formatter: Liter
   FoodDecayTime: 10, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 4.20, display: true
+  MarketPrice: 4, display: true
   Category: Food
   ShowUser: Yes
   { Child 0
@@ -6936,9 +6937,9 @@
 { +Item Id: 314, Name: Bread, Ref: FoodTemplate
   Mass: 0.15, type: float, display: true, formatter: Kilogram
   Volume: 3.2, type: float, display: true, formatter: Liter
+  MarketPrice: 12, display: true
   Info: bkiConsumable, display: true
   Category: Food
-  MarketPrice: 12, display: true
   FoodDecayTime: 113, display: true, type: int
   FoodDecayedItem: RottenFood
   ShowUser: Yes
@@ -7283,6 +7284,7 @@
 { +Item Id: 336, Name: CornDogFruit, Ref: FoodTemplate
  Info: bkiConsumable, display: true
  Category: Ingredients
+ MarketPrice: 5, display: true
  FoodDecayTime: 30, display: true, type: int
  FoodDecayedItem: RottenFood
  ShowUser: NoButCSV
@@ -7302,6 +7304,7 @@
 { +Item Id: 338, Name: PhoenixFernFonds, Ref: FoodTemplate 
   Info: bkiConsumable, display: true
   Category: Food
+  MarketPrice: 3, display: true
   StackSize: 2000
   FoodDecayTime: 240, display: true, type: int
   FoodDecayedItem: MutatedSubstance
@@ -7319,29 +7322,32 @@
   }
 }
 
-# Delete when save game break 
+# Delete when save game break #Added to Havenopolis Traders
 { Item Id: 339, Name: GrilledVegetables, Ref: FoodTemplate
   Info: bkiConsumable, display: true
   Category: Food
-  FoodDecayTime: 54, display: true, type: int
+  CustomIcon: ToxicLiquid
+  MarketPrice: 64, display: true
+  FoodDecayTime: 96, display: true, type: int
   FoodDecayedItem: RottenFood
-  ShowUser: NoButCSV
+  ShowUser: Yes
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 14, display: HealthValue
-    AddStamina: 6, display: StaminaValue
-    AddFood: 60, display: FoodValue
+    AddHealth: 54, display: HealthValue
+    AddStamina: 150, display: StaminaValue
+    AddFood: 105, display: FoodValue
     AddOxygen: 0
 	  AddTemperature: 2, display: TemperatureValue
     SfxBegin: UseActions/playerEatingSoft
   }
 }
-{ +Item Id: 340, Name: TrumpetGreens, Ref: FoodTemplate
+{ +Item Id: 340, Name: TrumpetGreens, Ref: FoodTemplate #Makes GrilledVegetables with HavenopolisRecipe
   Mass: 0.05, type: float, display: true, formatter: Kilogram
   Volume: 0.07, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Ingredients
+  MarketPrice: 6, display: true
   FoodDecayTime: 24, display: true, type: int
   FoodDecayedItem: RottenFood
   ShowUser: Yes
@@ -8047,6 +8053,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Mass: 0.18, type: float, display: true, formatter: Kilogram
   Volume: 0.27, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
+  MarketPrice: 6, display: true
   Category: Ingredients
   FoodDecayTime: 20, display: true, type: int
   FoodDecayedItem: RottenFood
@@ -8055,10 +8062,10 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Class: Eat
     ROF: 1, type: float
     AddHealth: 150, display: HealthValue
-    AddStamina: -400, display: StaminaValue
+    AddStamina: -200, display: StaminaValue
     AddFood: 50, display: FoodValue
     AddOxygen: 0
-	AddRadiation: -1, display: RadiationValue
+	  AddRadiation: -2, display: RadiationValue
     Buff: Indigestion
     Buff_chance: 0.1
     SfxBegin: UseActions/playerEatingSoft
@@ -8068,17 +8075,18 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 358, Name: Tomato, Ref: FoodTemplate
  Info: bkiConsumable, display: true
  Category: Ingredients
+ MarketPrice: 4, display: true
  FoodDecayTime: 35, display: true, type: int
  FoodDecayedItem: RottenFood
  ShowUser: NoButCSV
  { Child 0
    Class: Eat
    ROF: 1, type: float
-   AddHealth: 5, display: HealthValue
+   AddHealth: 15, display: HealthValue
    AddStamina: 5, display: StaminaValue
-   AddFood: 25, display: FoodValue
+   AddFood: 35, display: FoodValue
    AddOxygen: 0
-	 AddTemperature: -3, display: TemperatureValue
+	 AddTemperature: -1, display: TemperatureValue
    Buff: Indigestion
    Buff_chance: 0.1
    SfxBegin: UseActions/playerEatingSoft
@@ -8108,6 +8116,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 }
 { +Item Id: 360, Name: Flour, Ref: FoodTemplate
  Info: bkiIngredient, display: true
+ MarketPrice: 1, display: true
  Category: Food
  FoodDecayTime: 150, display: true, type: int
  FoodDecayedItem: RottenFood
@@ -8197,6 +8206,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 365, Name: Berries, Ref: FoodTemplate
   Mass: 0.18, type: float, display: true, formatter: Kilogram
   Volume: 0.61, type: float, display: true, formatter: Liter
+  MarketPrice: 2, display: true
   Info: bkiConsumable, display: true
   Category: Ingredients
   FoodDecayTime: 25, display: true, type: int
@@ -8218,6 +8228,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 367, Name: Pizza, Ref: FoodTemplate
   Mass: 1.1, type: float, display: true, formatter: Kilogram
   Volume: 4.8, type: float, display: true, formatter: Liter
+  MarketPrice: 98, display: true
   Info: bkiConsumable, display: true
   Category: Food
   FoodDecayTime: 56, display: true, type: int
@@ -8240,6 +8251,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Mass: 0.07, type: float, display: true, formatter: Kilogram
   Volume: 0.2, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
+  MarketPrice: 50, display: true
   Category: Food
   FoodDecayTime: 69, display: true, type: int
   FoodDecayedItem: RottenFood
@@ -8264,6 +8276,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Mass: 0.28, type: float, display: true, formatter: Kilogram
   Volume: 0.3, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
+  MarketPrice: 5, display: true
   Category: Food
   FoodDecayTime: 166, display: true, type: int
   FoodDecayedItem: RottenFood
@@ -8295,7 +8308,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 44, display: StaminaValue
     AddFood: 142, display: FoodValue
     AddOxygen: 0
-	AddTemperature: 3, display: TemperatureValue
+	  AddTemperature: 3, display: TemperatureValue
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -8339,6 +8352,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 }
 { +Item Id: 375, Name: PowerBar, Ref: FoodTemplate
   Info: bkiConsumable, display: true  
+  MarketPrice: 4, display: true
   FoodDecayTime: 90, display: true, type: int
   Category: Food
   FoodDecayedItem: RottenFood
@@ -8423,6 +8437,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 383, Name: HotBeverage, Ref: FoodTemplate
   Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0.5, type: float, display: true, formatter: Liter
+  MarketPrice: 15, display: true
   Info: bkiConsumable, display: true
   Category: Food
   StackSize: 2000
@@ -8525,7 +8540,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0.3, type: float, display: true, formatter: Liter
   Info: bkiComponent, display: true
-  MarketPrice: 1, display: true
+  MarketPrice: 3, display: true
   Category: Ingredients
   FoodDecayTime: 100, display: true, type: int
   FoodDecayedItem: RottenFood
@@ -8539,14 +8554,14 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddOxygen: 0
   #  Debuff: Indigestion, display: EffectiveAgainst
   #  Buff_chance: 0.025
-  #  Debuff: PoisonBit, display: EffectiveAgainst
+    Debuff: Indigestion, display: EffectiveAgainst #TR177
     SfxBegin: UseActions/playerEatingSoft
   }
 }
 { +Item Id: 396, Name: Roots, Ref: FoodTemplate
   Info: bkiConsumable, display: true
   Category: Ingredients
-  MarketPrice: 1, display: true
+  MarketPrice: 2, display: true
   FoodDecayTime: 200, display: true, type: int
   FoodDecayedItem: RottenFood
   ShowUser: Yes
@@ -8557,9 +8572,9 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 5 
     AddFood: 12 
     AddOxygen: 0
-  #  Debuff: Indigestion, display: EffectiveAgainst
-  #  Buff_chance: 0.025
-  #  Debuff: PoisonBit, display: EffectiveAgainst
+    Buff: Indigestion #TR177
+    Buff_chance: 0.025 #TR177
+    Debuff: PoisonBit, display: EffectiveAgainst #TR177
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -8568,8 +8583,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Volume: 0.5, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Food
- # FoodDecayTime: 200, display: true, type: int
- # FoodDecayedItem: RottenFood
+  MarketPrice: 19, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -12644,7 +12658,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Buff_chance: 0.1
   }
 }
-{ +Item Id: 1005, Name: Narcotics , Ref: FoodTemplate
+{ +Item Id: 1005, Name: Narcotics, Ref: FoodTemplate
   MarketPrice: 130
   Info: bkiConsumable, display: true
   Category: Medical
@@ -12663,21 +12677,21 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Buff_chance: "0.25,0.05"
   }
 }
-{ +Item Id: 1006, Name: Robotics , Ref: TradingGoodsTemplate
+{ +Item Id: 1006, Name: Robotics, Ref: TradingGoodsTemplate
   Info: A transcendence galaxy unique and mysterious item, display: true
   MarketPrice: 3000
   ShowUser: Yes
 }
-{ +Item Id: 1007, Name: Optronics , Ref: TradingGoodsTemplate
+{ +Item Id: 1007, Name: Optronics, Ref: TradingGoodsTemplate
   Info: Used to craft bridges and matrixes for CPU extenders, display: true
   MarketPrice: 167
   ShowUser: Yes
 }
-{ +Item Id: 1008, Name: Leather , Ref: TradingGoodsTemplate
+{ +Item Id: 1008, Name: Leather, Ref: TradingGoodsTemplate
   MarketPrice: 190
   ShowUser: Yes
 }
-{ +Item Id: 1009, Name: ToxicWaste , Ref: FoodTemplate
+{ +Item Id: 1009, Name: ToxicWaste, Ref: FoodTemplate
   MarketPrice: 80
   Mass: 0.18, type: float, display: true, formatter: Kilogram
   Volume: 0.61, type: float, display: true, formatter: Liter
@@ -12698,7 +12712,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Buff_chance: 0.5
   }  
 }
-{ +Item Id: 1010, Name: AlienOrganism , Ref: FoodTemplate
+{ +Item Id: 1010, Name: AlienOrganism, Ref: FoodTemplate
   MarketPrice: 40
   Mass: 0.18, type: float, display: true, formatter: Kilogram
   Volume: 0.61, type: float, display: true, formatter: Liter
@@ -12718,56 +12732,56 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Buff_chance: 0.75
   }  
 }
-{ +Item Id: 1011, Name: AncientRelics , Ref: TradingGoodsTemplate
+{ +Item Id: 1011, Name: AncientRelics, Ref: TradingGoodsTemplate
   Info: A transcendence galaxy unique and mysterious item, display: true
   MarketPrice: 1650
   ShowUser: Yes
 }
-{ +Item Id: 1012, Name: Coolant , Ref: TradingGoodsTemplate
+{ +Item Id: 1012, Name: Coolant, Ref: TradingGoodsTemplate
   MarketPrice: 250
   Info: A unique cooling liquid created from alien toxic waste that is also highly combustable under the right conditions.
   ShowUser: Yes
 }
-{ +Item Id: 1013, Name: Chemicals , Ref: TradingGoodsTemplate
+{ +Item Id: 1013, Name: Chemicals, Ref: TradingGoodsTemplate
   MarketPrice: 85
   FuelValue: 4, type: int, display: true, formatter: WattHour
   Info: This is used for crafting unique items and can be burned off as fuel, display: true
   ShowUser: Yes
 }
-{ +Item Id: 1014, Name: Filters , Ref: TradingGoodsTemplate
+{ +Item Id: 1014, Name: Filters, Ref: TradingGoodsTemplate
   MarketPrice: 90
   ShowUser: Yes
 }
-{ +Item Id: 1015, Name: SpareParts , Ref: TradingGoodsTemplate
+{ +Item Id: 1015, Name: SpareParts, Ref: TradingGoodsTemplate
   MarketPrice: 45
   Info: This is used for crafting unique items, display: true
   ShowUser: Yes
 }
-{ +Item Id: 1016, Name: ScienceEquipment , Ref: TradingGoodsTemplate
+{ +Item Id: 1016, Name: ScienceEquipment, Ref: TradingGoodsTemplate
   MarketPrice: 400
   Info: This is used for crafting unique items, display: true
   ShowUser: Yes
 }
-{ +Item Id: 1017, Name: MutatedSubstance , Ref: TradingGoodsTemplate
+{ +Item Id: 1017, Name: MutatedSubstance, Ref: TradingGoodsTemplate
   MarketPrice: 13
   Info: Gross yet used for intentionally making ToxicWaste, display: true
   ShowUser: Yes
 }
-{ +Item Id: 1018, Name: TechnicalArtifact , Ref: TradingGoodsTemplate
+{ +Item Id: 1018, Name: TechnicalArtifact, Ref: TradingGoodsTemplate
   MarketPrice: 240
   Info: This is used for crafting unique items, display: true
   ShowUser: Yes
 }
-{ +Item Id: 1019, Name: ToxicLiquid , Ref: TradingGoodsTemplate
+{ +Item Id: 1019, Name: ToxicLiquid, Ref: TradingGoodsTemplate
   Info: A stringy liquid collected from mutated alien robot parts.
   MarketPrice: 10
   ShowUser: Yes
 }
-{ +Item Id: 1020, Name: AlphaVirus , Ref: TradingGoodsTemplate
+{ +Item Id: 1020, Name: AlphaVirus, Ref: TradingGoodsTemplate
   MarketPrice: 10
   ShowUser: Yes
 }
-{ +Item Id: 1021, Name: Tablet , Ref: TradingGoodsTemplate
+{ +Item Id: 1021, Name: Tablet, Ref: TradingGoodsTemplate
   MarketPrice: 10
   Info: An electronic tablet, display: true
   ShowUser: Yes
@@ -12787,157 +12801,157 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   ShowUser: No
 }
 #Reports Common 80%
-{ +Item Id: 1050, Name: ReportMaintenanceData , Ref: ReportsTemplate
+{ +Item Id: 1050, Name: ReportMaintenanceData, Ref: ReportsTemplate #EpicShields & more
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 100, display: true
+  MarketPrice: 275, display: true
   Mass: 0, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
-{ +Item Id: 1051, Name: ReportWorkShiftData , Ref: ReportsTemplate
+{ +Item Id: 1051, Name: ReportWorkShiftData, Ref: ReportsTemplate
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 85, display: true
 }
-{ +Item Id: 1052, Name: ReportTransportationData , Ref: ReportsTemplate
+{ +Item Id: 1052, Name: ReportTransportationData, Ref: ReportsTemplate
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 175, display: true
 }
-{ +Item Id: 1053, Name: ReportCommunicationData , Ref: ReportsTemplate
+{ +Item Id: 1053, Name: ReportCommunicationData, Ref: ReportsTemplate
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 40, display: true
 }
-{ +Item Id: 1054, Name: ReportEconomicData , Ref: ReportsTemplate
+{ +Item Id: 1054, Name: ReportEconomicData, Ref: ReportsTemplate #GoldPlant
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 150, display: true
+  MarketPrice: 275, display: true
 }
 # == Reports Science 60%
-{ +Item Id: 1060, Name: ReportScienceRawData , Ref: ReportsTemplate
+{ +Item Id: 1060, Name: ReportScienceRawData, Ref: ReportsTemplate #LegacyEnergyCore
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 50, display: true
+  MarketPrice: 275, display: true
 }
-{ +Item Id: 1061, Name: ReportBiologicalData , Ref: ReportsTemplate
+{ +Item Id: 1061, Name: ReportBiologicalData, Ref: ReportsTemplate  #MedicsPistol
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 55, display: true
 }
-{ +Item Id: 1062, Name: ReportMaterialData , Ref: ReportsTemplate
+{ +Item Id: 1062, Name: ReportMaterialData, Ref: ReportsTemplate #Robotics
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 70, display: true
 }
-{ +Item Id: 1063, Name: ReportArcheologicalData , Ref: ReportsTemplate
+{ +Item Id: 1063, Name: ReportArcheologicalData, Ref: ReportsTemplate
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 85, display: true
 }
-{ +Item Id: 1064, Name: ReportAnomalousData , Ref: ReportsTemplate
+{ +Item Id: 1064, Name: ReportAnomalousData, Ref: ReportsTemplate
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 95, display: true
 }
 # == Reports Exploration 40%
-{ +Item Id: 1070, Name: ReportExplorationRawData , Ref: ReportsTemplate
+{ +Item Id: 1070, Name: ReportExplorationRawData, Ref: ReportsTemplate #TalonCrossBow
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 64, display: true
+  MarketPrice: 275, display: true
 }
-{ +Item Id: 1071, Name: ReportGeologicalData , Ref: ReportsTemplate
+{ +Item Id: 1071, Name: ReportGeologicalData, Ref: ReportsTemplate
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 27, display: true
 }
-{ +Item Id: 1072, Name: ReportAtmosphericData , Ref: ReportsTemplate
+{ +Item Id: 1072, Name: ReportAtmosphericData, Ref: ReportsTemplate #EpicBoosters
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 35, display: true
+  MarketPrice: 275, display: true
 }
-{ +Item Id: 1073, Name: ReportAstronomicalData , Ref: ReportsTemplate
+{ +Item Id: 1073, Name: ReportAstronomicalData, Ref: ReportsTemplate
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 45, display: true
 }
-{ +Item Id: 1074, Name: ReportPlanetaryResourceData , Ref: ReportsTemplate
+{ +Item Id: 1074, Name: ReportPlanetaryResourceData, Ref: ReportsTemplate
   CustomIcon: KeyCardBlue
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 30, display: true
 }
 # == Reports Security 20%
-{ +Item Id: 1080, Name: ReportSpaceWeather , Ref: ReportsTemplate
+{ +Item Id: 1080, Name: ReportSpaceWeather, Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 60, display: true
 }
-{ +Item Id: 1081, Name: ReportNavigationData , Ref: ReportsTemplate
+{ +Item Id: 1081, Name: ReportNavigationData, Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 50, display: true
 }
-{ +Item Id: 1082, Name: ReportSpaceAnomality , Ref: ReportsTemplate
+{ +Item Id: 1082, Name: ReportSpaceAnomality, Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 50, display: true
 }
-{ +Item Id: 1083, Name: ReportWarpSignatures , Ref: ReportsTemplate
+{ +Item Id: 1083, Name: ReportWarpSignatures, Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 200, display: true
 }
-{ +Item Id: 1084, Name: ReportWeaponSignatures , Ref: ReportsTemplate
+{ +Item Id: 1084, Name: ReportWeaponSignatures, Ref: ReportsTemplate #T3 LaserSentryGun
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 200, display: true
+  MarketPrice: 3000, display: true
 }
 # == Reports Military 10%
-{ +Item Id: 1090, Name: ReportMilitaryRawData , Ref: ReportsTemplate
+{ +Item Id: 1090, Name: ReportMilitaryRawData, Ref: ReportsTemplate  #Epic Boosts
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 20, display: true
+  MarketPrice: 275, display: true
 }
-{ +Item Id: 1091, Name: ReportMilitaryScouting , Ref: ReportsTemplate
+{ +Item Id: 1091, Name: ReportMilitaryScouting, Ref: ReportsTemplate
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 30, display: true
 }
-{ +Item Id: 1092, Name: ReportMilitarySurveillance , Ref: ReportsTemplate
+{ +Item Id: 1092, Name: ReportMilitarySurveillance, Ref: ReportsTemplate
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 60, display: true
 }
-{ +Item Id: 1093, Name: ReportMilitaryTroopMovement , Ref: ReportsTemplate
+{ +Item Id: 1093, Name: ReportMilitaryTroopMovement, Ref: ReportsTemplate
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
   MarketPrice: 40, display: true
 }
-{ +Item Id: 1094, Name: ReportMilitaryClassified , Ref: ReportsTemplate
+{ +Item Id: 1094, Name: ReportMilitaryClassified, Ref: ReportsTemplate #WarbotNanotubes & Synidcate Vendor
   CustomIcon: KeyCardRed
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
@@ -12997,7 +13011,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   PropHead: SnowmanHead
   ShowUser: Yes
 }
-# ========================================= STATUS EFFECT TEST ==========================
+# ========================================= TR FlameThrower ==========================
 # Flamethrower Transcendence Epic RG Variant
 { Item Id: 1200, Name: FlameThrower
   Meshfile: Entities/Items/Weapons/DrillV2/FillerToolPrefab
@@ -13344,8 +13358,10 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 }
 # ================
 # =============================================================================
-# TRANSCENDENCE121 Items
-# =============================================================================
+# TRANSCENDENCE 121 to 177 Items
+# ================================================================================================
+# =========1400-1474 General Items, 1475-1499 Food, 1500-1599 NPC & Bosses, 1600+ misc items======
+
 { +Item Id: 1402, Name: AntiNarcotics, Ref: FoodTemplate
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
@@ -13496,7 +13512,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 }
 
 { +Item Id: 1410, Name: Nanites, Ref: TradingGoodsTemplate
-  MarketPrice: 250
+  MarketPrice: 14, display: true
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
   Info: This item can be used to craft advanced medical items or eaten at your own risk, display: true
@@ -13519,14 +13535,211 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 }
 
 { +Item Id: 1411, Name: LegacyEnergyCore, Ref: TradingGoodsTemplate
-  MarketPrice: 20000
+  MarketPrice: 17500, display: true
   CustomIcon: TechnicalArtifact
   FuelValue: 4500, type: int, display: true, formatter: WattHour
   Info: Provides a massive amount of fuel. A required crafting item for the AntiprotonLaserTurret, display: true
   ShowUser: Yes
 }
 
-#{ +Item Id: 1412, Name: ExpiredEmergencyRations, Ref: FoodTemplate
+#==========================================================================
+#Transcendence - TRv177 rev3 - 3/8/2022 Havenopolis Custom Shop Items
+#=======1475 to 1499=======================================================
+
+#Pizzaria Trader
+{ +Item Id: 1475, Name: SpikyShroomPizza, Ref: FoodTemplate
+  Mass: 1.2, type: float, display: true, formatter: Kilogram
+  Volume: 5, type: float, display: true, formatter: Liter
+  MarketPrice: 155, display: true
+  Info: bkiConsumable, display: true
+  Category: Food
+  FoodDecayTime: 30, display: true, type: int
+  FoodDecayedItem: RottenFood
+  CustomIcon: Pizza
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 90, display: HealthValue
+    AddStamina: 19, display: StaminaValue
+    AddFood: 278, display: FoodValue
+    AddOxygen: 0
+	  AddTemperature: 2, display: TemperatureValue
+    Buff: ImmunityBoosterII
+    Buff_chance: 1
+    SfxBegin: UseActions/playerEatingCrunchy
+  }
+}
+#BlueCornDog Trader
+{ +Item Id: 1476, Name: BerryCola, Ref: FoodTemplate
+  Mass: 0.5, type: float, display: true, formatter: Kilogram
+  Volume: 0.5, type: float, display: true, formatter: Liter
+  CustomIcon: EnergyDrink
+  MarketPrice: 75, display: true
+  Info: bkiConsumable, display: true
+  Category: Food
+  FoodDecayTime: 300, display: true, type: int
+  FoodDecayedItem: RottenFood
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 0, display: HealthValue
+    AddStamina: 350, display: StaminaValue
+    AddFood: 25, display: FoodValue
+    AddOxygen: 0
+	  AddTemperature: -2, display: TemperatureValue
+    Buff: Hangover
+    Buff_chance: 0.05
+    Debuff: Stunned, display: EffectiveAgainst
+    SfxBegin: UseActions/playerDrinking
+  }
+}
+{ +Item Id: 1477, Name: BlueberryCornDog, Ref: FoodTemplate
+  Mass: 0.5, type: float, display: true, formatter: Kilogram
+  Volume: 0.5, type: float, display: true, formatter: Liter
+  CustomIcon: CornDogFruit
+  MarketPrice: 15, display: true
+  Info: bkiConsumable, display: true
+  Category: Food
+  FoodDecayTime: 30, display: true, type: int
+  FoodDecayedItem: RottenFood
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 0.4, type: float
+    AddHealth: 25, display: HealthValue
+    AddStamina: 30, display: StaminaValue
+    AddFood: 45, display: FoodValue
+    AddOxygen: 0
+	  AddTemperature: -1, display: TemperatureValue
+    Buff: Indigestion
+    Buff_chance: 0.02
+    Debuff: PoisonFood, display: EffectiveAgainst
+    SfxBegin: UseActions/playerEatingSoft
+  }
+}
+#RoastedRoach Trader
+{ +Item Id: 1478, Name: Raktajino, Ref: FoodTemplate
+  Mass: 0.7, type: float, display: true, formatter: Kilogram
+  Volume: 0.7, type: float, display: true, formatter: Liter
+  CustomIcon: HotBeverage
+  MarketPrice: 100, display: true
+  Info: bkiConsumable, display: true
+  Category: Food
+  FoodDecayTime: 900, display: true, type: int
+  FoodDecayedItem: RottenFood
+  StackSize: 64
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 30, display: HealthValue
+    AddStamina: 157, display: StaminaValue
+    AddFood: 25, display: FoodValue
+    AddOxygen: 0
+    AddTemperature: 8, display: TemperatureValue
+    Debuff: "Hangover,BadTrip,FeverAttack,EndoParasite", display: EffectiveAgainst 
+    SfxBegin: UseActions/playerDrinking
+  }
+}
+{ +Item Id: 1479, Name: RootBuds, Ref: FoodTemplate
+  Mass: 0.01, type: float, display: true, formatter: Kilogram
+  Volume: 0.3, type: float, display: true, formatter: Liter
+  Info: bkiComponent, display: true
+  CustomIcon: Roots
+  MarketPrice: 75, display: true
+  Category: Ingredients
+  FoodDecayTime: 300, display: true, type: int
+  FoodDecayedItem: RottenFood
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 0.5, type: float
+    AddHealth: 145, display: HealthValue
+    AddStamina: 10, display: StaminaValue
+    AddFood: 17, display: FoodValue 
+    AddOxygen: 0
+    Debuff: "Indigestion,PoisonBit,OrganFailure", display: EffectiveAgainst 
+    SfxBegin: UseActions/playerEatingSoft
+  }
+}
+{ +Item Id: 1480, Name: GroundRoachSalami, Ref: FoodTemplate
+  Mass: 3.28, type: float, display: true, formatter: Kilogram
+  Volume: 1.1, type: float, display: true, formatter: Liter
+  MarketPrice: 40, display: true
+  Info: bkiConsumable, display: true
+  CustomIcon: Salami
+  Category: Food
+  FoodDecayTime: 332, display: true, type: int
+  FoodDecayedItem: RottenFood
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 24, display: HealthValue
+    AddStamina: 6, display: StaminaValue
+    AddFood: 150, display: FoodValue
+    AddOxygen: 0
+    Buff: Indigestion
+    Buff_chance: 0.1
+    Debuff: "DermalParasite", display: EffectiveAgainst 
+    SfxBegin: UseActions/playerEatingSoft
+  }
+}
+#ZipMart Trader
+{ +Item Id: 1481, Name: CandyBar, Ref: FoodTemplate
+  Info: bkiConsumable, display: true  
+  MarketPrice: 12, display: true
+  CustomIcon: PowerBar
+  FoodDecayTime: 360, display: true, type: int
+  Category: Food
+  FoodDecayedItem: RottenFood
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 10, display: HealthValue
+    AddStamina: 0, display: StaminaValue
+    AddFood: 90, display: FoodValue
+    AddOxygen: 0
+    Buff: Indigestion
+    Buff_chance: 0.05
+    SfxBegin: UseActions/playerEatingSoft
+  }
+}
+#Pizzaria Trader
+{ +Item Id: 1482, Name: FireFlyBaguette, Ref: FoodTemplate
+  Mass: 0.45, type: float, display: true, formatter: Kilogram
+  Volume: 5.2, type: float, display: true, formatter: Liter
+  MarketPrice: 32, display: true
+  CustomIcon: Bread
+  Info: bkiConsumable, display: true
+  Category: Food
+  FoodDecayTime: 226, display: true, type: int
+  FoodDecayedItem: RottenFood
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 18, display: HealthValue
+    AddStamina: 0, display: StaminaValue
+    AddFood: 174, display: FoodValue
+    AddOxygen: 0
+    SfxBegin: UseActions/playerEatingCrunchy
+  }
+}
+#Required to craft Havenopolis Food Items
+{ +Item Id: 1499, Name: HavenopolisRecipe, Ref: KeysTemplate
+  CustomIcon: Tablet
+  DropOnDeath: false
+  Info: A data input for food processors to craft Havenopolis local recipes, display: true
+  ShowUser: Yes
+  MarketPrice: 15, display: true
+}
+
+# Breaks Save Game or just kills player
+#{ +Item Id: 1499, Name: ExpiredEmergencyRations, Ref: FoodTemplate
 #  CustomIcon: EmergencyRations
 #  Category: Food
 #  Mass: 0.3, type: float, display: true, formatter: Kilogram
@@ -14361,7 +14574,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Mass: 4.36, type: float, display: true, formatter: Kilogram
   Volume: 0.6, type: float, display: true, formatter: Liter
   Info: A compressed set of 50 Promethium Pellets than can be decompressed in a deconstructor, display: true
-  FuelValue: 600, type: int, display: true, formatter: WattHour
+  FuelValue: 600, type: int, display: false, formatter: WattHour
   MarketPrice: 180
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
