@@ -475,7 +475,7 @@ POIs:
       -  Key: Music
          Value: DarkSoundscape
       -  Key: PersonalContainer
-         Value: AssaultRifleEpic, 5.8mmBullet:1000, 5.8mmBullet:1000, Shotgun2Epic, ShotgunShells:500, ShotgunShells:500, ShotgunShells:500, Medikit04:10, Medikit02:3, Medikit01:3, Medikit03:2, EmergencyRations:5, RawDiamond, Robotics:3, AncientRelics:3, TransportationBoost, TransportationBoost
+         Value: Sniper2Epic, 15mmBullet:250, Shotgun2Epic, ShotgunShells:500, ShotgunShells:500, Medikit04:10, Medikit03:6, Medikit02:6, Medikit01:8, EmergencyRations:5, RawDiamond, Robotics:3, AncientRelics:3, EpicTransportationBoost
    -  GroupName: HavenPortalTiny
       Faction: Admin
       CountMinMax: [1, 1]
