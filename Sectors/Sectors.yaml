@@ -175,6 +175,9 @@ SolarSystems:
           - - '-9000,0,9000'
             - TunnelPortalInstance
             - RIPTunnelPortalInstance
+          - - '18000,0,9000'
+            - RoboHoverPortalInstance
+            - RIPRoboHoverPortalInstance
           - - '0,0,0'
             - RIPzed Orbit
             - ZedOrbit
