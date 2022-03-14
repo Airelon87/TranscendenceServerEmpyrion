@@ -696,7 +696,7 @@ Biome:
 # IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
 
 PlanetType: Barren
-PlayfieldType: Moon
+PlayfieldType: Planet
 Difficulty: 3
 
 LandClaimZone: Device

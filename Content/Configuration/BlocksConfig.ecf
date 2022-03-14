@@ -10957,8 +10957,8 @@
   Temperature: 40, display: true
 
   UnlockCost: 15, display: true
-  UnlockLevel: 10, display: true
-  # TechTreeParent: PentaxidTank
+  UnlockLevel: 12, display: true
+  TechTreeParent: PentaxidTank
   TechTreeNames: Capital Vessel
 }
 { +Block Id: 721, Name: OxygenStationSV
@@ -19706,15 +19706,14 @@
   Info: This incredible core provides infinite cpu power. It cannot be salvaged once placed for its original components., display: true
   # AllowedInBlueprint: false, display: true
   BlockColor: "0,220,220"
-  EnergyIn: 25000, type: int, display: true, formatter: Watt
-  HitPoints: 5250, type: int, display: true
+  EnergyIn: 700, type: int, display: true, formatter: Watt
+  HitPoints: 3850, type: int, display: true
   UnlockCost: 25, display: true
   UnlockLevel: 25, display: true
   TechTreeParent: PentaxidTank
-  TechTreeNames: "Small Vessel,Hover Vessel,Capital Vessel,Base"
+  TechTreeNames: "Capital Vessel,Base"
   UpgradeTo: null, display: false
 }
-
 
 { Block Id: 1403, Name: LavaBlock
   AllowedInBlueprint: false, display: true
@@ -19797,7 +19796,7 @@
 
   # UnlockCost: 3, display: true
   # UnlockLevel: 3, display: true
-  # TechTreeparent: Core
+  # TechTreeParent: Core
   # TechTreeNames: Misc
 }
 
@@ -19972,21 +19971,23 @@
   SizeInBlocks: "3,2,5", display: true
   Mass: 100, type: float, display: true, formatter: Kilogram 
   Volume: 50, type: float, display: true, formatter: Liter #Do not change... PDA LunaFare
-  CPUIn: 750, type: int, display: true   #Do no change... PDA LunaFare
+  CPUIn: 250, type: int, display: true   #Do no change... PDA LunaFare
   HitPoints: 500, type: int, display: true
   Info: bkiWarpDriveSV, display: true
   
   ItemPerAU: PentaxidCrystal, display: true
   CostPerAU: 1, display: true
   CostPerLY: 1, display: true #Defualt = 0
-  RangeAU: 50, display: true #Default = 15
-  RangeLY: 15, display: true #Default = 0
+  RangeAU: 25, display: true #Default = 15
+  RangeLY: 16, display: true #Default = 0
 
-  ShieldCapacityBonus: 925, type: int, display: true
+  ShieldCapacityBonus: 500, type: int, display: true
+  ShieldRechargeBonus: 5, type: int, display: true
+  UpgradeTo: WarpDriveSVTeir2, display: true
 
   UnlockCost: 12, display: true
-  UnlockLevel: 5, display: true
-  #TechTreeParent: PentaxidTankSV
+  UnlockLevel: 7, display: true
+  TechTreeParent: PentaxidTankSV
   TechTreeNames: Small Vessel
 }
 
@@ -20991,7 +20992,7 @@
 
   # UnlockCost: 3, display: true
   # UnlockLevel: 3, display: true
-  # TechTreeparent: Core
+  # TechTreeParent: Core
   # TechTreeNames: Misc
 }
 
@@ -23223,7 +23224,8 @@
   Material: metalhard
   Shape: Turret
   # TemplateRoot: TurretBaseCannon
-  PickupTarget: TurretBaseLaserBlocks
+  # PickupTarget: TurretBaseLaserBlocks
+  PickupTarget: LaserSentryGunT4       #TR177
   Place: Face
   DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
   SoundOnEnter: UseActions/DOOROpen02
@@ -25565,7 +25567,7 @@
 
   UnlockCost: 3, display: true
   UnlockLevel: 3, display: true
-  TechTreeparent: Core
+  TechTreeParent: Core
   TechTreeNames: Misc
 }
 { +Block Id: 1957, Name: VentilatorCubeHalf, Ref: Ventilator
@@ -27233,7 +27235,7 @@
 
   UnlockCost: 15, display: true
   UnlockLevel: 20, display: true
-  TechTreeParent: PentaxidTank
+  TechTreeParent: WarpDrive
   TechTreeNames: Capital Vessel
   
   ShowUser: Yes
@@ -32550,9 +32552,65 @@
   }
 }
 
-#==================================v177======
-#TranscendenceCustomItems          3/4/2022
+#==================================v177=Rev2=
+#TranscendenceCustomItems          3/14/2022
 #==================================Airelon===
+{ Block Name: WarpDriveSVTeir3, Ref: WarpDrive
+  Model: @models/Blocks/Spaceship/WarpDriveSVPrefab
+  CustomIcon: WarpDriveSV
+  AllowPlacingAt: SS, display: true
+  MarketPrice: 3150, display: true
+  SizeInBlocks: "3,2,5", display: true
+  Mass: 200, type: float, display: true, formatter: Kilogram 
+  Volume: 50, type: float, display: true, formatter: Liter #Do not change... PDA LunaFare
+  CPUIn: 500, type: int, display: true   #Do no change... PDA LunaFare
+  HitPoints: 1000, type: int, display: true
+  Info: bkiWarpDriveSV, display: true
+  
+  ItemPerAU: PentaxidCrystal, display: true
+  CostPerAU: 1, display: true
+  CostPerLY: 1, display: true #Defualt = 0
+  RangeAU: 40, display: true #Default = 15
+  RangeLY: 64, display: true #Default = 0
+
+  ShieldCapacityBonus: 2000, type: int, display: true
+  ShieldRechargeBonus: 30, type: int, display: true
+  UpgradeTo: null, display: true
+
+  UnlockCost: 24, display: true
+  UnlockLevel: 17, display: true
+  TechTreeParent: WarpDriveSVTeir2
+  TechTreeNames: "Small Vessel"
+}
+
+{ Block Name: WarpDriveSVTeir2, Ref: WarpDrive
+  Model: @models/Blocks/Spaceship/WarpDriveSVPrefab
+  CustomIcon: WarpDriveSV
+  AllowPlacingAt: SS, display: true
+  MarketPrice: 3150, display: true
+  SizeInBlocks: "3,2,5", display: true
+  Mass: 150, type: float, display: true, formatter: Kilogram 
+  Volume: 50, type: float, display: true, formatter: Liter #Do not change... PDA LunaFare
+  CPUIn: 375, type: int, display: true   #Do no change... PDA LunaFare
+  HitPoints: 750, type: int, display: true
+  Info: bkiWarpDriveSV, display: true
+  
+  ItemPerAU: PentaxidCrystal, display: true
+  CostPerAU: 1, display: true
+  CostPerLY: 1, display: true #Defualt = 0
+  RangeAU: 30, display: true #Default = 15
+  RangeLY: 32, display: true #Default = 0
+
+  ShieldCapacityBonus: 1000, type: int, display: true
+  ShieldRechargeBonus: 15, type: int, display: true
+  UpgradeTo: WarpDriveSVTeir3, display: true
+
+  UnlockCost: 12, display: true
+  UnlockLevel: 12, display: true
+  TechTreeParent: WarpDriveSV
+  TechTreeNames: "Small Vessel"
+}
+
 { Block Name: LegacyEnergyCoreTank, Ref: FuelTankMSLarge
   LootList: 47
   MarketPrice: 7200, display: true
@@ -32604,7 +32662,7 @@
   Volume: 750, type: float, display: true, formatter: Liter
   CPUIn: 75, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
-  EnergyIn: 1750, type: int, display: true, formatter: Watt
+  EnergyIn: 250, type: int, display: true, formatter: Watt
   Category: Devices
   MaxCount: 8, type: int, display: true
 
@@ -32698,7 +32756,7 @@
   Volume: 750, type: float, display: true, formatter: Liter
   CPUIn: 200, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
-  EnergyIn: 525, type: int, display: true, formatter: Watt
+  EnergyIn: 225, type: int, display: true, formatter: Watt
   Category: Devices
   MaxCount: 8, type: int, display: true
   
@@ -32745,7 +32803,7 @@
   Volume: 750, type: float, display: true, formatter: Liter
   CPUIn: 200, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
-  EnergyIn: 600, type: int, display: true, formatter: Watt
+  EnergyIn: 300, type: int, display: true, formatter: Watt
   EnergyInIdle: 750
   Category: Devices
   MaxCount: 4, type: int, display: true
@@ -32794,7 +32852,7 @@
   Volume: 250, type: float, display: true, formatter: Liter
   CPUIn: 50, type: int, display: true
   Mass: 300, type: float, display: true, formatter: Kilogram
-  EnergyIn: 200, type: int, display: true, formatter: Watt
+  EnergyIn: 20, type: int, display: true, formatter: Watt
   Category: Devices
   MaxCount: 8, type: int, display: true
   
@@ -32811,7 +32869,7 @@
   ShieldRechargeBonus: 25, type: int, display: true
 
   UnlockCost: 5, display: true
-  UnlockLevel: 17, display: true
+  UnlockLevel: 15, display: true
   TechTreeParent: SmallShieldCapacitor
   TechTreeNames: "Small Vessel"
 
@@ -33834,7 +33892,7 @@
   Model: @models/Blocks/Turrets/TurretEnemyBluePrefab
   DropMeshfile: Entities/Misc/DropContainerNewPrefab
   WeaponItem: LaserSentryGunWeapon
-  AllowPlacingAt: "Base,MS,SS,GV", display: true 
+  AllowPlacingAt: "Base,MS,SS", display: true 
   EnergyIn: 15, type: int, display: true, formatter: Watt
   CPUIn: 160, type: int, display: true
   UpgradeTo: LaserSentryGunT2, display: true
@@ -33858,12 +33916,12 @@
   MaxCount: 12, type: int, display: true
   MarketPrice: 1073, display: true
   #TemplateRoot: SentryGunBlocks
-  PickupTarget: SentryGunBlocks
+  PickupTarget: LaserSentryGunT2
   Model: @models/Blocks/Turrets/TurretEnemyCyanPrefab
   DropMeshfile: Entities/Misc/DropContainerNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
   WeaponItem: LaserSentryGunWeaponT2
-  AllowPlacingAt: "Base,MS,SS,GV", display: true   
+  AllowPlacingAt: "Base,MS,SS", display: true   
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 400, type: float, display: true, formatter: Liter
@@ -33898,11 +33956,11 @@
   Place: Free
   BlockColor: "110,110,110"
   #TemplateRoot: SentryGunBlocks
-  PickupTarget: SentryGunBlocks
+  PickupTarget: LaserSentryGunT3
   Model: @models/Blocks/Turrets/TurretEnemyRedPrefab
   DropMeshfile: Entities/Misc/DropContainerNewPrefab
   WeaponItem: LaserSentryGunWeaponT3
-  AllowPlacingAt: "Base,MS,SS,GV", display: true 
+  AllowPlacingAt: "Base,MS,SS", display: true 
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 200, type: int, display: true
   HitPoints: 150, type: int, display: true
@@ -33913,7 +33971,7 @@
   BlastDamage: 30
 
   UnlockCost: 9, display: true
-  UnlockLevel: 10, display: true
+  UnlockLevel: 12, display: true
   TechTreeParent: LaserSentryGunT2
   TechTreeNames: "Small Vessel,Base,Capital Vessel"
 }
@@ -33924,14 +33982,14 @@
   Place: Free
   BlockColor: "110,110,110"
   #TemplateRoot: SentryGunBlocks
-  PickupTarget: SentryGunBlocks
+  PickupTarget: LaserSentryGunT4
   Model: @models/Blocks/Turrets/TurretEnemyOrangePrefab
   DropMeshfile: Entities/Misc/DropContainerNewPrefab
   WeaponItem: LaserSentryGunWeaponT4
-  AllowPlacingAt: "Base,MS,SS,GV", display: true 
+  AllowPlacingAt: "Base,MS,SS", display: true 
   EnergyIn: 110, type: int, display: true, formatter: Watt
   CPUIn: 215, type: int, display: true
-  HitPoints: 250, type: int, display: true
+  HitPoints: 275, type: int, display: true
   RotSpeed: 250, type: int, display: true
   UpgradeTo: null, display: false
 
@@ -33939,5 +33997,35 @@
   BlastRadius: 3
   BlastDamage: 50
 
+  UnlockCost: 12, display: true
+  UnlockLevel: 20, display: true
+  TechTreeParent: LaserSentryGunT3
+  TechTreeNames: "Small Vessel,Base,Capital Vessel"
+}
+{ Block Name: LaserSentryGunGalor, Ref: LaserSentryGunT2
+  CustomIcon: TurretEnemyOrange
+  Info: A Galorian variant of the LaserSentryGunT4, display: true
+  MarketPrice: 25000, display: true
+  Place: Free
+  BlockColor: "110,110,110"
+  #TemplateRoot: SentryGunBlocks
+  PickupTarget: LaserSentryGunT2
+  Model: @models/Blocks/Turrets/TurretEnemyYellowPrefab
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  WeaponItem: LaserSentryGunWeaponGalor
+  AllowPlacingAt: "Base,MS,SS", display: true 
+  EnergyIn: 110, type: int, display: true, formatter: Watt
+  CPUIn: 215, type: int, display: true
+  HitPoints: 500, type: int, display: true
+  RotSpeed: 150, type: int, display: true
+  UpgradeTo: null, display: false
+
+  BlastParticleIndex: 11
+  BlastRadius: 3
+  BlastDamage: 50
+
+  UnlockCost: 0, display: true
+  UnlockLevel: 0, display: true
+  TechTreeParent: ""
   TechTreeNames: Hidden
 }

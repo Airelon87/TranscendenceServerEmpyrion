@@ -5018,7 +5018,7 @@
     # PfxMuzzle: turretMuzzleFire
   }
 }
-{ +Item Id: 141, Name: TurretEnemyLaserWeaponT2
+{ +Item Id: 141, Name: TurretEnemyLaserWeaponT2        #Legacy and ZedZorg Laser Turrets
   Model: Entities/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   ShowUser: NoButCSV  # reported by HWS
@@ -6017,7 +6017,7 @@
   UnlockLevel: 1
   TechTreeNames: Hidden
 }
-{ +Item Id: 178, Name: TurretEnemyLaserChargeT2
+{ +Item Id: 178, Name: TurretEnemyLaserChargeT2    #Legacy Laser Turret Ammo
   Info: bkiTurretAntiProtonFactionAmmo, display: true
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketGreenPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -6032,7 +6032,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 2000, display: true   # new: because we removed explosion 
+    Damage: 1000, display: true   # new: because we removed explosion 
     BlastParticleIndex: 0
   #  BlastRadius: 3
   #  BlastDamage: 200
@@ -6378,8 +6378,8 @@
   Mass: 30, type: float, display: true, formatter: Kilogram
   Volume: 4.5, type: float, display: true, formatter: Liter
 
-  UnlockCost: 12, display: true
-  UnlockLevel: 10, display: true
+  UnlockCost: 6, display: true
+  UnlockLevel: 7, display: true
   TechTreeParent: EnergyCell
   TechTreeNames: Misc
 }
@@ -6731,7 +6731,7 @@
   Info: bkiWarpDriveCVEpicUpgradeKit, display: true
   Mass: 50, type: float, display: true, formatter: Kilogram
   Volume: 10, type: float, display: true, formatter: Liter
-  MarketPrice: 89206, display: true
+  MarketPrice: 10000, display: true
   ShowUser: Yes
 }
 
@@ -7159,8 +7159,8 @@
   ShowUser: Yes  
   Info: bkiFusionCell, display: true
 
-  UnlockCost: 25, display: true
-  UnlockLevel: 20, display: true
+  UnlockCost: 13, display: true
+  UnlockLevel: 15, display: true
   TechTreeParent: EnergyCellLarge
   TechTreeNames: Misc
 }
@@ -8146,6 +8146,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 }
 { +Item Id: 362, Name: Ham, Ref: FoodTemplate
   Info: bkiConsumable, display: true
+  MarketPrice: 27, display: true
   Category: Food
   FoodDecayTime: 106, display: true, type: int
   FoodDecayedItem: RottenFood
@@ -8157,7 +8158,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 5, display: StaminaValue
     AddFood: 92, display: FoodValue
     AddOxygen: 0
-	AddTemperature: 2, display: TemperatureValue
+	  AddTemperature: 2, display: TemperatureValue
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -10293,7 +10294,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 
   Mass: 25, type: float, display: false, formatter: Kilogram
   Volume: 24, type: float, display: true, formatter: Liter
-  VolumeCapacity: 1000, type: float, display: true, formatter: Liter 
+  VolumeCapacity: 2000, type: float, display: true, formatter: Liter 
 
   UnlockCost: 1, display: true
   UnlockLevel: 3, display: true
@@ -10309,7 +10310,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Material: metal
   Mass: 44, type: float, display: false, formatter: Kilogram
   Volume: 34, type: float, display: true, formatter: Liter
-  VolumeCapacity: 2000, type: float, display: true, formatter: Liter       
+  VolumeCapacity: 2500, type: float, display: true, formatter: Liter       
   HoldType: 0
   StackSize: 1
   Canhold: false
@@ -10401,7 +10402,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Cold: 50, type: int, display: true
   Radiation: 6, type: int, display: true
   FallDamageFac: 0.4, type: float, display: true
-  SpeedFac: 1.13, type: float, display: true
+  SpeedFac: 1.2, type: float, display: true
   PowerFac: 1.07, type: float, display: true  # better: 0.085
   JumpFac: 1.04, type: float, display: true
   JetpackFac: 0.76, type: float, display: true
@@ -10412,7 +10413,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 
   Mass: 18, type: float, display: false, formatter: Kilogram
   Volume: 11, type: float, display: true, formatter: Liter
-  VolumeCapacity: 1200, type: float, display: true, formatter: Liter   
+  VolumeCapacity: 2500, type: float, display: true, formatter: Liter   
   
   UnlockCost: 2, display: true
   UnlockLevel: 5, display: true
@@ -10433,7 +10434,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Radiation: 14, type: int, display: true
   FallDamageFac: 0.6, type: float, display: true
   PowerFac: 0.86, type: float, display: true  # better: 0.085
-  SpeedFac: 1.01, type: float, display: true
+  SpeedFac: 1.25, type: float, display: true
   JumpFac: 0.85, type: float, display: true
   JetpackFac: 0.76, type: float, display: true
   FoodFac: 0.86, type: float, display: true
@@ -10443,7 +10444,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Mass: 18, type: float, display: false, formatter: Kilogram
   Volume: 41, type: float, display: true, formatter: Liter
-  VolumeCapacity: 2500, type: float, display: true, formatter: Liter   
+  VolumeCapacity: 3000, type: float, display: true, formatter: Liter   
 
   UnlockCost: 10, display: true
   UnlockLevel: 12, display: true
@@ -10466,7 +10467,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Radiation: 20, type: int, display: true
   FallDamageFac: 0.7, type: float, display: true
   PowerFac: 0.65, type: float, display: true  # better: 0.085
-  SpeedFac: 1.0, type: float, display: true  # better: 0.085
+  SpeedFac: 1.3, type: float, display: true  # better: 0.085
   JumpFac: 0.85, type: float, display: true
   JetpackFac: 1.1, type: float, display: true
   FoodFac: 0.9, type: float, display: true
@@ -10669,84 +10670,92 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 
 # Epic Armor Booster
 { Item Id: 650, Name: ArmorBoostEpic, Ref: ArmorBoostTemplate
-  Armor: 250, type: int, display: true
-  Heat: 50, type: int, display: true
-  Radiation: 9, type: int, display: true
-  PowerFac: -0.09, type: float, display: true
-  SpeedFac: -0.14, type: float, display: true
-  FoodFac: -0.15, type: float, display: true
-  StaminaFac: 0.07, type: float, display: true
-  VolumeCapacity: 100, type: float, display: true, formatter: Liter
+  Armor: 150, type: int, display: true
+  Heat: 25, type: int, display: true
+  Cold: 25, type: int, display: true
+  Radiation: 4, type: int, display: true
+  PowerFac: -0.04, type: float, display: true
+  SpeedFac: -0.06, type: float, display: true
+  StaminaFac: 0.2, type: float, display: true
+  JetpackFac: 0.2, type: float, display: true
+  JumpFac: -0.04, type: float, display: true
+  FoodFac: 0.26, type: float, display: true
+  VolumeCapacity: 250, type: float, display: true, formatter: Liter
+  
+  MarketPrice: 50000
+  Volume: 2.5, type: float, display: true, formatter: Liter
+  Mass: 5.5, type: float, display: true, formatter: Kilogram
 
   UnlockCost: 5, display: true
   UnlockLevel: 12, display: true
   TechTreeParent: MultiBoost
   TechTreeNames: Weapons
-  
-  Volume: 9.5, type: float, display: true, formatter: Liter
-  Mass: 15.5, type: float, display: true, formatter: Kilogram
-  ShowUser: Yes
 }
 { Item Id: 651, Name: JetpackBoostEpic, Ref: JetpackBoost #Needs added to loot table and traders
-  JetpackFac: -0.25, type: float, display: true
-  Armor: 50, type: int, display: true 
-  PowerFac: -0.10, type: float, display: true
+  JetpackFac: -0.50, type: float, display: true
+  VolumeCapacity: 250, type: float, display: true, formatter: Liter
   
-  Volume: 12.5, type: float, display: true, formatter: Liter
-  Mass: 21.5, type: float, display: true, formatter: Kilogram
+  Volume: 2.25, type: float, display: true, formatter: Liter
+  Mass: 4.25, type: float, display: true, formatter: Kilogram
+  MarketPrice: 36000
   ShowUser: Yes
 }
 { Item Id: 652, Name: MultiBoostEpic, Ref: MultiBoost
-  Armor: 25, type: int, display: true  
-  Oxygen: 30, type: int, display: true  
-  Radiation: 7, type: int, display: true
-  Heat: 25, type: int, display: true
-  Cold: 25, type: int, display: true
-  PowerFac: 0.05, type: float, display: true
-  SpeedFac: 0.15, type: float, display: true
-  StaminaFac: -0.05, type: float, display: true
-  JetpackFac: -0.10, type: float, display: true
+  Armor: 60, type: int, display: true  
+  Oxygen: 100, type: int, display: true  
+  Radiation: 8, type: int, display: true
+  Heat: 24, type: int, display: true
+  Cold: 18, type: int, display: true
+  PowerFac: 0.2, type: float, display: true
+  SpeedFac: 0.2, type: float, display: true
+  StaminaFac: -0.2, type: float, display: true
+  JetpackFac: -0.20, type: float, display: true
   JumpFac: 0.1, type: float, display: true
   FoodFac: -0.25, type: float, display: true
-  VolumeCapacity: 500, type: float, display: true, formatter: Liter 
+  VolumeCapacity: 600, type: float, display: true, formatter: Liter
+  
+  Volume: 3.5, type: float, display: true, formatter: Liter
+  Mass: 7.5, type: float, display: true, formatter: Kilogram
+  MarketPrice: 36000
 
   UnlockCost: 5, display: true
   UnlockLevel: 15, display: true
   TechTreeParent: ArmorBoostEpic
   TechTreeNames: Weapons
   
-  Volume: 9.5, type: float, display: true, formatter: Liter
-  Mass: 105.5, type: float, display: true, formatter: Kilogram
   ShowUser: Yes
 }
 { Item Id: 653, Name: OxygenBoostEpic, Ref: OxygenBoost #nixxed
+  Armor: 10, type: int, display: true
   Oxygen: 500, type: int, display: true   
-  Armor: 50, type: int, display: true 
-  StaminaFac: 0.08, type: float, display: true
-  VolumeCapacity: 50, type: float, display: true, formatter: Liter 
+  PowerFac: -0.03, type: float, display: true 
+  SpeedFac: -0.03, type: float, display: true 
+  VolumeCapacity: 200, type: float, display: true, formatter: Liter 
   
   Volume: 4.5, type: float, display: true, formatter: Liter
   Mass: 5.5, type: float, display: true, formatter: Kilogram
+  MarketPrice: 36000
   ShowUser: Yes
 }
 { Item Id: 654, Name: InsulationBoostEpic, Ref: InsulationBoost #nixxed
-  Heat: 250, type: int, display: true
-  Cold: 90, type: int, display: true 
-  StaminaFac: -0.02, type: float, display: true
-  Armor: -10, type: int, display: true 
+  Heat: 150, type: int, display: true
+  Cold: 100, type: int, display: true
+  Armor: 75, type: int, display: true
+  VolumeCapacity: 200, type: float, display: true, formatter: Liter 
   
   Volume: 9.5, type: float, display: true, formatter: Liter
   Mass: 12.5, type: float, display: true, formatter: Kilogram
+  MarketPrice: 18000
   ShowUser: Yes
 }
 { Item Id: 655, Name: MobilityBoostEpic, Ref: MobilityBoost
-  Armor: -15, type: int, display: true 
+  Armor: -50, type: int, display: true
   PowerFac: 0.25, type: float, display: true
-  SpeedFac: 0.25, type: float, display: true
-  StaminaFac: -0.2, type: float, display: true
-  JumpFac: 0.15, type: float, display: true
-  FoodFac: 0.05, type: float, display: true
-  VolumeCapacity: 750, type: float, display: true, formatter: Liter 
+  SpeedFac: 0.5, type: float, display: true
+  StaminaFac: -0.4, type: float, display: true
+  JumpFac: 0.25, type: float, display: true
+  FoodFac: 0.25, type: float, display: true
+  VolumeCapacity: 100, type: float, display: true, formatter: Liter
 
   UnlockCost: 5, display: true
   UnlockLevel: 20, display: true
@@ -10755,27 +10764,29 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Volume: 9.5, type: float, display: true, formatter: Liter
   Mass: 40.5, type: float, display: true, formatter: Kilogram
+  MarketPrice: 18000
   ShowUser: Yes
 }
 { Item Id: 656, Name: RadiationBoostEpic, Ref: RadiationBoost
-  Radiation: 175, type: int, display: true
-  StaminaFac: 0.01, type: float, display: true
-  Armor: -20, type: int, display: true 
-  VolumeCapacity: 250, type: float, display: true, formatter: Liter 
+  Radiation: 100, type: int, display: true
+  PowerFac: -0.02, type: float, display: true
+  SpeedFac: -0.05, type: float, display: true
+  Armor: 60, type: int, display: true
   
-  Volume: 9.5, type: float, display: true, formatter: Liter
-  Mass: 27.5, type: float, display: true, formatter: Kilogram
+  Volume: 7.5, type: float, display: true, formatter: Liter
+  VolumeCapacity: 100, type: float, display: true, formatter: Liter
+  Mass: 9.5, type: float, display: true, formatter: Kilogram
+  MarketPrice: 9000
   ShowUser: Yes
 }
 { Item Id: 657, Name: EVABoostEpic, Ref: EVABoost
-  Cold: 500, type: int, display: true
-  Radiation: 15, type: int, display: true
-  Armor: -25, type: int, display: true
-  JetpackFac: -0.17, type: float, display: true   
-  VolumeCapacity: 4000, type: float, display: true, formatter: Liter 
-  SpeedFac: 0.15, type: float, display: true
-  MarketPrice: 18000, display: true
-#  CustomIcon: ArmorBoostEpic 
+  Armor: -50, type: int, display: true
+  Heat: 0, type: int, display: true
+  Cold: 190, type: int, display: true
+  JetpackFac: 0.1, type: float, display: true
+  PowerFac: 0.1, type: float, display: true
+  SpeedFac: 0.1, type: float, display: true
+  VolumeCapacity: 15000, type: float, display: true, formatter: Liter
 
   UnlockCost: 5, display: true
   UnlockLevel: 25, display: true
@@ -10784,15 +10795,16 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Volume: 18, type: float, display: true, formatter: Liter
   Mass: 12.5, type: float, display: true, formatter: Kilogram
+  MarketPrice: 28500
   ShowUser: Yes
 }
 
 { +Item Id: 658, Name: TransportationBoostEpic, Ref: ArmorBoostTemplate
-  Armor: 50, type: int, display: true 
+  Armor: -75, type: int, display: true 
   VolumeCapacity: 15000, type: float, display: true, formatter: Liter 
-  SpeedFac: 0.05, type: float, display: true
-  FoodFac: -0.15, type: float, display: true
-  MarketPrice: 30000, display: true
+  SpeedFac: 0.1, type: float, display: true
+  FoodFac: 0.1, type: float, display: true
+  MarketPrice: 7250, display: true
   CustomIcon: EVABoostEpic 
 
   Volume: 18, type: float, display: true, formatter: Liter
@@ -10804,7 +10816,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Heat: 50, type: int, display: true 
   Cold: 50, type: int, display: true 
   PowerFac: 0.65, type: float, display: true
-  SpeedFac: -0.23, type: float, display: true
+  SpeedFac: -0.1, type: float, display: true
   StaminaFac: -0.85, type: float, display: true
   JumpFac: 0.95, type: float, display: true
   FoodFac: -0.25, type: float, display: true
@@ -10816,6 +10828,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Volume: 409.5, type: float, display: true, formatter: Liter
   Mass: 1540.5, type: float, display: true, formatter: Kilogram
+  MarketPrice: 100000, display: true
   ShowUser: Yes
 }
 #  CATEGORIE: ARMOR EQUIPMENT id 620 - 699 
@@ -12918,7 +12931,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 200, display: true
+  MarketPrice: 7500, display: true
 }
 { +Item Id: 1084, Name: ReportWeaponSignatures, Ref: ReportsTemplate #T3 LaserSentryGun
   CustomIcon: KeyCardYellow
@@ -13540,6 +13553,11 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   FuelValue: 4500, type: int, display: true, formatter: WattHour
   Info: Provides a massive amount of fuel. A required crafting item for the AntiprotonLaserTurret, display: true
   ShowUser: Yes
+
+  UnlockCost: 25, display: true
+  UnlockLevel: 25, display: true
+  TechTreeParent: FusionCell
+  TechTreeNames: Misc
 }
 
 #==========================================================================
@@ -13727,6 +13745,54 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 174, display: FoodValue
     AddOxygen: 0
     SfxBegin: UseActions/playerEatingCrunchy
+  }
+}
+#BlueCornDog Trader
+{ +Item Id: 1483, Name: HamScramble, Ref: FoodTemplate
+  Mass: 1.0, type: float, display: true, formatter: Kilogram
+  Volume: 1.5, type: float, display: true, formatter: Liter
+  CustomIcon: Ratatouille
+  MarketPrice: 78, display: true
+  Info: bkiConsumable, display: true
+  Category: Food
+  FoodDecayTime: 212, display: true, type: int
+  FoodDecayedItem: RottenFood
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 50, display: HealthValue
+    AddStamina: 40, display: StaminaValue
+    AddFood: 122, display: FoodValue
+    AddOxygen: 0
+	  AddTemperature: 2, display: TemperatureValue
+    Buff: ImmunityBooster
+    Buff_chance: 0.25
+    Debuff: Hangover, display: EffectiveAgainst
+    SfxBegin: UseActions/playerEatingSoft
+  }
+}
+#Just Becuase it should exist
+{ +Item Id: 1484, Name: ScrambledEggs, Ref: FoodTemplate
+  Mass: 0.3, type: float, display: true, formatter: Kilogram
+  Volume: 0.5, type: float, display: true, formatter: Liter
+  CustomIcon: Ratatouille
+  MarketPrice: 17, display: true
+  Info: bkiConsumable, display: true
+  Category: Food
+  FoodDecayTime: 60, display: true, type: int
+  FoodDecayedItem: RottenFood
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 30, display: HealthValue
+    AddStamina: 15, display: StaminaValue
+    AddFood: 63, display: FoodValue
+    AddOxygen: 0
+	  AddTemperature: 1, display: TemperatureValue
+    Buff: ImmunityBooster
+    Buff_chance: 0.1
   }
 }
 #Required to craft Havenopolis Food Items
@@ -14402,12 +14468,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Bullet_use_per_shot: 0.25
     Tracer: Weapons/Projectiles/TracerLaserShotBlue
     TracerIsBeam: true
-    TracerPerBullet: 1
+    PenetrationDepth: 1, display: true
 
     DamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead  
     DamageMultiplier_2: 1, param1: dirt|stone|rock|wood|
     DamageMultiplier_3: 1.5, param1: hull|hullarmored|hullcombat
-    DamageMultiplier_4: 1, param1: metallight|metal|metalhard
+    DamageMultiplier_4: 1.75, param1: metallight|metal|metalhard
     DamageMultiplier_5: 0.2, param1: shield
     BlastDamageMultiplier_1: 0.25, param1: head|body, display: DmgMultiplierHead
     BlastDamageMultiplier_2: 1.5, param1: wood|woodblock|plastic|metal|metalhard
@@ -14448,12 +14514,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Bullet_use_per_shot: 0.25
     Tracer: Weapons/Projectiles/TracerLaserShotBlue
     TracerIsBeam: true
-    #TracerPerBullet: 1
+    PenetrationDepth: 2, display: true
 
     DamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead  
     DamageMultiplier_2: 1, param1: dirt|stone|rock|wood|
     DamageMultiplier_3: 1.5, param1: hull|hullarmored|hullcombat
-    DamageMultiplier_4: 1, param1: metallight|metal|metalhard
+    DamageMultiplier_4: 1.5, param1: metallight|metal|metalhard
     DamageMultiplier_5: 0.3, param1: shield
     BlastDamageMultiplier_1: 0.5, param1: head|body, display: DmgMultiplierHead
     BlastDamageMultiplier_2: 1.5, param1: wood|woodblock|plastic|metal|metalhard
@@ -14488,20 +14554,18 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AutoReload: true
     NoiseStrength: 100, display: false   
     ReloadDelay: 0.5, display: true
-    Bullet_use_per_shot: 0.25
     SfxBegin: Weapons/EnergyWeapons/weapon_laser_009 
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
+    Bullet_use_per_shot: 0.25
     Tracer: Weapons/Projectiles/TracerLaserShotBlue
     TracerIsBeam: true
-    #Tracer: Weapons/Projectiles/TracerOrange1
-    #TracerIsBeam: true
-    #TracerPerBullet: 1
+    PenetrationDepth: 3, display: true
 
     DamageMultiplier_1: 0.5, param1: head|body, display: DmgMultiplierHead  
     DamageMultiplier_2: 1, param1: dirt|stone|rock|wood|
     DamageMultiplier_3: 1.5, param1: hull|hullarmored|hullcombat
-    DamageMultiplier_4: 1, param1: metallight|metal|metalhard
+    DamageMultiplier_4: 1.5, param1: metallight|metal|metalhard
     DamageMultiplier_5: 0.4, param1: shield
     BlastDamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead
     BlastDamageMultiplier_2: 1.5, param1: wood|woodblock|plastic|metal|metalhard
@@ -14536,25 +14600,71 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AutoReload: true
     NoiseStrength: 100, display: false   
     ReloadDelay: 0.5, display: true
-    Bullet_use_per_shot: 0.25
     SfxBegin: Weapons/EnergyWeapons/weapon_laser_009 
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
-    #Tracer: Weapons/Projectiles/TracerLaserShotBlue
+    Bullet_use_per_shot: 0.25
+    #Tracer: Weapons/Projectiles/TracerOrange1
+    Tracer: Weapons/Projectiles/TracerLaserShotBlue
     TracerIsBeam: true
-    Tracer: Weapons/Projectiles/TracerOrange1
-    #TracerIsBeam: true
-    #TracerPerBullet: 1
+    PenetrationDepth: 4, display: true
 
     DamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead  
     DamageMultiplier_2: 1, param1: dirt|stone|rock|wood|
     DamageMultiplier_3: 1.5, param1: hull|hullarmored|hullcombat
-    DamageMultiplier_4: 1, param1: metallight|metal|metalhard
+    DamageMultiplier_4: 2, param1: metallight|metal|metalhard
     DamageMultiplier_5: 0.5, param1: shield
     BlastDamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead
-    BlastDamageMultiplier_2: 1.75, param1: wood|woodblock|plastic|metal|metalhard
+    BlastDamageMultiplier_2: 2, param1: wood|woodblock|plastic|metal|metalhard
     BlastDamageMultiplier_3: 0, param1: dirt|stone|rock|concrete
-    BlastDamageMultiplier_4: 2.25, param1: hull|hullarmored|hullcombat
+    BlastDamageMultiplier_4: 3, param1: hull|hullarmored|hullcombat
+    BlastDamageMultiplier_5: 0, param1: shield 
+    BlastDamageMultiplier_6: 0.5, param1: human
+  }
+}
+{ +Item Id: 1618, Name: LaserSentryGunWeaponGalor, Ref: LaserSentryGunWeapon
+  Model: @models/Blocks/Turrets/TurretEnemyYellowPrefab
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  ShowUser: NoButCSV
+  Canhold: false
+  Material: metalweapon
+  HoldType: 0
+  StackSize: 1
+  Category: Weapons/Items  
+  { Child 0
+    Class: Ranged
+    IsShootThroughCrosshair: true
+    ROF: 0.3, type: float, display: true, formatter: ROF
+    AllowAt: "UnderWater, Planet, Space"
+    Range: 300, display: false
+    RangeSpace: 1100, display: false
+    AmmoCapacity: 256, display: true
+    AmmoType: LaserArrows, display: true
+    IgnoreAtmo: true
+    Automatic: true
+    Damage: 350, display: true
+    BlastDamage: 175, display: true
+    AutoReload: true
+    NoiseStrength: 100, display: false   
+    ReloadDelay: 0.2, display: true
+    SfxBegin: Weapons/EnergyWeapons/weapon_laser_009 
+    SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
+    SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
+    Bullet_use_per_shot: 0.25
+    Tracer: Weapons/Projectiles/TracerOrange1
+    #Tracer: Weapons/Projectiles/TracerLaserShotBlue
+    TracerIsBeam: true
+    PenetrationDepth: 1, display: true
+
+    DamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead  
+    DamageMultiplier_2: 1, param1: dirt|stone|rock|wood|
+    DamageMultiplier_3: 1.5, param1: hull|hullarmored|hullcombat
+    DamageMultiplier_4: 2, param1: metallight|metal|metalhard
+    DamageMultiplier_5: 0.25, param1: shield
+    BlastDamageMultiplier_1: 0.75, param1: head|body, display: DmgMultiplierHead
+    BlastDamageMultiplier_2: 2, param1: wood|woodblock|plastic|metal|metalhard
+    BlastDamageMultiplier_3: 0, param1: dirt|stone|rock|concrete
+    BlastDamageMultiplier_4: 3, param1: hull|hullarmored|hullcombat
     BlastDamageMultiplier_5: 0, param1: shield 
     BlastDamageMultiplier_6: 0.5, param1: human
   }

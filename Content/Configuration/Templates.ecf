@@ -2360,20 +2360,21 @@
     TitanPlates: 75
     FluxCoil: 5
     Coolant: 32
+    RawDiamond: 1
     WarpDriveCVEpicUpgradeKit: 1
   }
 }
 
 { +Template Name: WarpDriveCVEpicUpgradeKit
   BaseItem: true
-  CraftTime: 90 #C2 CV 10
+  CraftTime: 60 #C2 CV 10
   Target: "AdvC"
   { Child Inputs
-    WarbotNanotubes: 1
+    Computer: 3
     EnergyMatrix: 1
     OpticalFiber: 1
     GlassPlate: 1
-    RawDiamond: 1
+    ReportWarpSignatures: 1
   }
 }
 
@@ -6150,10 +6151,37 @@
 { +Template Name: LaserArrows 
   CraftTime: 30
   OutputCount: 32
-  Target: "SmallC,HoverC,BaseC,SurvC"
+  Target: "SmallC,HoverC,BaseC,SurvC,LargeC,AdvC"
   { Child Inputs
     WoodLogs: 1
     PromethiumPellets: 9
+  }
+}
+
+{ +Template Name: WarpDriveSVTeir2 
+  CraftTime: 30
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    EnergyMatrix: 10
+    SteelPlate: 20
+    Nanotubes: 20
+    CobaltAlloy: 75
+    WarpDriveCVEpicUpgradeKit: 1
+  }
+}
+
+{ +Template Name: WarpDriveSVTeir3 
+  CraftTime: 30
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    EnergyMatrix: 10
+    TitanPlates: 20
+    Nanotubes: 20
+    CobaltAlloy: 100
+    WarpDriveCVEpicUpgradeKit: 1
+    RawDiamond: 1
   }
 }
 
@@ -6401,11 +6429,40 @@
     Robotics: 6
   }
 }
+{ +Template Name: LaserSentryGunGalor
+  CraftTime: 30 
+  Target: ""
+  { Child Inputs
+    MechanicalComponents: 10
+    Electronics: 6
+    Motor: 3
+    OpticalFiber: 7
+    LaserKit: 4
+    ReportWeaponSignatures: 3
+    Robotics: 5
+  }
+}
 
 #Havenopolis SpecialFoodTemplates
-# CandyBar, FireFlyBaguette, SpikyShroomPizza, GroundRoachSalami, RootBuds, Raktajino, BlueberryCornDog, BerryCola, GrilledVegetables
+# ScrambledEggs, HamScramble, CandyBar, FireFlyBaguette, SpikyShroomPizza, GroundRoachSalami, RootBuds, Raktajino, BlueberryCornDog, BerryCola, GrilledVegetables
 # Each Require HavenopolisRecipe to craft in FoodP
-
+{ +Template Name: ScrambledEggs
+  CraftTime: 6
+  OutputCount: 1
+  Target: FoodP
+  { Child Inputs
+    Egg: 3
+  }
+}
+{ +Template Name: HamScramble
+  CraftTime: 12
+  OutputCount: 2
+  Target: FoodP
+  { Child Inputs
+    ScrambledEggs: 1
+    HavenopolisRecipe: 1
+  }
+}
 { +Template Name: CandyBar
   CraftTime: 12
   OutputCount: 3

@@ -40,8 +40,6 @@ POIs:
          Value: NebularClouds
       -  Key: StationInterface
          Value: "Fuel:1.5,O2:1.2,Warp:1,Ammo:0.7,Repair:8,Shield:1"
-      -  Key: PersonalContainer
-         Value: PlatinOunce:3, TextureColorTool:1, Beer:6, Pizza:1
    -  Type: AsteroidFieldRectangle2
       Name: Asteroid Field
       Pos: [0, -2000, 0]
@@ -529,7 +527,7 @@ POIs:
    -  Mode: Survival
       Spawn: Structure
       Structure: Haven
-      Items: ['SurvivalTool, PlatinOunce:6, ConstructorSurvival, AssaultRifle, 5.8mmBullet:200, EVABoost, PowerBar:2, Medikit04:2, Bandages:2, AntibioticOintment:2, MobileAirCon, OxygenGeneratorSmall, BioFuel:5, OxygenBottleSmall:3, TransportationBoost:2', 'SurvivalTool, PlatinOunce:6 , ConstructorSurvival, AssaultRifle, 5.8mmBullet:200, EVABoost, EnergyCell:2, PowerBar, Medikit04:2, Bandages, AntibioticOintment, MobileAirCon, OxygenGeneratorSmall, BioFuel:2, OxygenBottleSmall:3, TransportationBoost:2', 'SurvivalTool, PlatinOunce:6 , ConstructorSurvival, IronIngot:5, CopperIngot:5, SiliconIngot:5, GoldCoins:50, EVABoost, EnergyCell:5, PowerBar, Medikit04, OxygenBottleSmall:5, TransportationBoost:2', '#FreshStart: SurvivalTool, Medikit04, OxygenBottleSmall:3, IronIngot:5, CopperIngot:5, SiliconIngot:5']
+      Items: ['SurvivalTool, ConstructorSurvival, AssaultRifle, 5.8mmBullet:200, EVABoost, PowerBar:2, Medikit04:2, Bandages:2, AntibioticOintment:2, MobileAirCon, OxygenGeneratorSmall, BioFuel:5, OxygenBottleSmall:3, TransportationBoost:2', 'SurvivalTool, ConstructorSurvival, AssaultRifle, 5.8mmBullet:200, EVABoost, EnergyCell:2, PowerBar, Medikit04:2, Bandages, AntibioticOintment, MobileAirCon, OxygenGeneratorSmall, BioFuel:2, OxygenBottleSmall:3, TransportationBoost:2', 'SurvivalTool, ConstructorSurvival, IronIngot:5, CopperIngot:5, SiliconIngot:5, GoldCoins:50, EVABoost, EnergyCell:5, PowerBar, Medikit04, OxygenBottleSmall:5, TransportationBoost:2', '#FreshStart: SurvivalTool, Medikit04, OxygenBottleSmall:3, IronIngot:5, CopperIngot:5, SiliconIngot:5']
       Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:350, Health: 350', '#FreshStart:Food:500, Health: 250']
       Armor: ArmorLight
 DroneBaseSetup:

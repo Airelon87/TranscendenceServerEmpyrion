@@ -1,0 +1,188 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v2.15.2.5126, Playfield Version: 1.7 [3660] (V1.7)
+# Last Saved: 2022-02-23 18:54:05
+# --------------------------------------------------------------------------------------------------------------------------
+#
+#==================================v17=======
+#Transcendence Custom World        2022-02-23
+#==================================Airelon===
+# ===Summary=== 
+# Creative mode Blank Canvas given mild land features including AlnLegacy stamps
+# 
+# ===Authors Note===
+# TR debug Seed 2309566 creates a unique feature in the center of the 
+# planet of pillars and alien land formations. Telluripods on the world
+# are attracted to the waters within the Strange biome. 
+# --------------------------------------------------------------------------------------------------------------------------
+PlanetSize:
+   SizeRange: [3, 4, 5]
+   SizeProbs: [0.5, 0.25, 0.1]
+PlanetAxis: [0, 32]
+PlayfieldLevelOverride: [0, 1]
+TemperatureMin: [-5, 10]
+TemperatureMax: [13, 27]
+TemperatureNight: [-2, -2]
+HumidityMin: [0.1, 0.35]
+HumidityMax: [0.39, 0.55]
+Radiation: [0, 13]
+LandWaterRatio: [0, 10]
+BaseLevel: [0, 0]
+SeaLevel: [0, 5]
+TerrainLevel: [5, 220]
+TerrainHeightMapMax: 490
+TemperatureHeightRange: [0, 195]
+TemperatureGradientRange: [0.1, 0.6]
+TemperatureNoiseFac: 0.2
+HumidityHeightFac: [0, 365]
+HumidityNoiseFac: 0.2
+AtmosphereDensityMinMax: [0.9, 1.2]
+AtmosphereO2MinMax: [0.03, 0.11]     
+AtmoBreathableProb: 0.3
+WaterProb: 0.5
+GravityMinMax: [-4, -21]
+Water: [WaterGreen, WaterBlue]
+Music: [Resurgence]
+HumidityMasks:
+- Global_1, 1
+TemperatureMasks:
+- Global_1, 1
+BiomeStampTries: 20
+GroundShapes:
+- GroundShape_Mercury, 1
+- GroundShape_2, 0.25
+# 
+# ====================
+# BIOMES 
+# ====================
+#
+Biomes:
+-  Name: Pole
+   AmbientSound: Mountains
+   Color: [0, 0, 0]
+   SelectionCriteria:
+   - +Lat > 0.975
+   Weather: PoleFog
+   IgnoreForcedBiome: True
+   Texture: [4, 4, 0.02]
+   StampProb: 1
+-  Name: Peaks
+   Color: [0.6, 0.5, 0.7]
+   SelectionCriteria:
+   - Height > 100
+   - Height < 280
+   Stamps:
+   - Mountain_1, 0.25
+   - Mountain_15, 0.5
+   - Mountain_2, 0.25
+   Decorations:
+   - [PromethiumStone, 0.0001, Free]
+   AmbientSound: BarrenFog
+   Weather: 'BmFogRadiationPurple'
+   IgnoreForcedBiome: True
+   Texture: [5, 5, 0.5, 3, 3, 1, 0.25]
+   UndergroundLayers:
+   - [12, 2]
+   - [15, -1]
+   - [11, 1]
+   StampProb: 0.5
+-  Name: Dunes
+   Color: [0.3, 0.2, 0.3]
+   SelectionCriteria:
+   - Height < 100
+   - Height > 50
+   - +Lat > 0.5
+   - +Lat < 0.975
+   Stamps:
+   - IceDunes_01
+   Decorations:
+   - [ConfettiMoss, 0.0001, Free]
+   AmbientSound: OpenPlains
+   IgnoreForcedBiome: True
+   Texture: [2, 2, 0.5, 3, 3, 0.8, 0.2]
+   UndergroundLayers:
+   - [0, 1]
+   - [12, 15]
+   - [15, -1]
+   - [11, 1]
+   StampProb: 0.5
+   StampTries: 5
+   Temperature: 5
+-  Name: Plains
+   Color: [0.5, 1, 0]
+   SelectionCriteria:
+   - Height < 75
+   - Height > 25
+   - +Lat < 0.5
+   Stamps:
+   - Erosion_1, 0.5
+   - AlnLegacy_Scar, 0.25
+   - MenhirCircle, 0.25
+   Decorations:
+   - [AlienPlantSpike1, 0.0001, Plant]
+   - [Snakeweed, 0.0002, Plant]
+   AmbientSound: OpenPlains
+   Texture: [4, 4, 0]
+   UndergroundLayers:
+   - [11, 2]
+   - [10, 2]
+   - [12, 15]
+   - [15, -1]
+   - [11, 1]
+   StampProb: 1
+   StampForcesBiomeType: OverlapOther
+   StampTries: 10
+   Temperature: 4
+-  Name: Strange
+   Color: [0.85, 0.44, 0.84]
+   SelectionCriteria:
+   - Height > 10
+   - Height < 25
+   Stamps:
+   - AlnLegacy_Ziggurat, 0.1
+   - AlnLegacy_Hub, 0.2
+   - AlnLegacy_Proximity, 0.2
+   - AlnLegacy_Struct, 0.3
+   - AlnLegacy_Struct_2, 0.2
+   Grass:
+   -  Name: Seaweed05
+      Density: 0.1
+      Preset: GrassDense
+   Decorations:
+   - [GlowTube01, 0.001, BigPlant]
+   - [CrystalStraight, 0.001, Free]
+   - [AlienPlantTube1, 0.001, Plant]
+   - [AlienPlantSpike1, 0.0001, Plant]
+   - [PulpitFungus, 0.0001, BigPlant]
+   - [MushroomTallGreen01, 0.0001, Free]
+   - [MushroomBigSky, 0.0001, Tree]
+   - [BrainFungusSnow, 0.0001, BigPlant]
+   - [PixieStalksSnow, 0.0001, Plant]
+   - [ElderberryBushGreen, 0.001, BigPlant]
+   - [CornDogBush, 0.002, Plant]
+   LevelMod: +1
+   AmbientSound: ArcticLowPlains
+   Texture: [0, 5, 0.9, 6, 6, 1, 0]
+   UndergroundLayers:
+   - [0, 3]
+   - [12, 2]
+   - [10, 1]
+   - [12, 2]
+   - [10, 2]
+   - [11, 2]
+   - [12, 15]
+   - [15, -1]
+   - [11, 1]
+   StampProb: 0.8
+   StampTries: 50
+   UndergroundLayersDefault: True
+-  Name: Lowlands
+   Color: [1, 0.5, 0]
+   SelectionCriteria:
+   - True
+   Stamps:
+   - Crystalline_Bubbles
+   Decorations:
+   - [RockResourceGold, 0.0001, Free]
+   AmbientSound: ArcticLowPlains
+   Texture: [0, 6, 0.45]
+   StampTries: 25

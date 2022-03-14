@@ -587,11 +587,26 @@ AsteroidResources:
    DespawnDelay: 21
 POIs:
    Random:
-   -  GroupName: HavenPortal
-      Faction: Admin
+   # -  GroupName: HavenPortal
+   #    Faction: Admin
+   #    CountMinMax: [1, 1]
+   #    IsImportant: True
+   #    PlaceAt: Terrain
+   #    DronesMinMax: [0, 0]
+   #    TroopTransport: False
+   #    InitPower: True
+   #    Properties:
+   #    -  Key: SI
+   #       Value: Off
+   #    -  Key: Music
+   #       Value: JungleDepths
+   #    -  Key: RegenAfter
+   #       Value: 120
+   -  GroupName: Havenopolis
+      Faction: UCH
       CountMinMax: [1, 1]
       IsImportant: True
-      PlaceAt: Terrain
+      PlaceAt: OnWater
       DronesMinMax: [0, 0]
       TroopTransport: False
       InitPower: True
@@ -600,8 +615,8 @@ POIs:
          Value: Off
       -  Key: Music
          Value: JungleDepths
-      -  Key: RegenAfter
-         Value: 120
+      -  Key: StationInterface
+         Value: "Fuel:0.7,O2:0.2,Warp:0.7,Ammo:0.3,Repair:0.2,Shield:0.3"
    -  GroupName: PolarisSkyT3
       Faction: Polaris
       NoShieldReload: True
@@ -610,7 +625,7 @@ POIs:
       IsCommandCenter: True
       CountMinMax: [1, 1]
       IsImportant: True
-      PlaceAt: OnWater
+      #PlaceAt: OnWater  #Havenopolis needs more spaces on water
       DroneProb: 1
       DronesMinMax: [2, 6]
       ReserveCount: 1
@@ -625,43 +640,45 @@ POIs:
          Value: Off
       -  Key: RegenAfter
          Value: 120
-   -  GroupName: Veldis_Pyramid
-      Faction: Galorian
-      LevelMod: +4
-      CountMinMax: [2, 4]
-      DroneProb: 1
-      DronesMinMax: [1, 1]
-      ReserveCount: 1
-      TroopTransport: False
-      Properties:
-      -  Key: RegenAfter
-         Value: 90
-      -  Key: Music
-         Value: DarkSoundscape
-   -  GroupName: CivilSettlement
-      Faction: Polaris
-      CountMinMax: [1, 2]
-      DronesMinMax: [1, 1]
-      TroopTransport: False
-      InitPower: True
-      SpawnPOINearRange: [50, 500]
-      Properties:
-      -  Key: RegenAfter
-         Value: 90
-   -  GroupName: PolarisDefence
-      Faction: Polaris
-      CountMinMax: [1, 3]
-      DronesMinMax: [1, 1]
-      TroopTransport: False
-      SpawnPOINear: [CivilSettlement]
-      SpawnPOINearRange: [30, 200]
-      Properties:
-      -  Key: RegenAfter
-         Value: 90
+      -  Key: StationInterface
+         Value: "Fuel:0.5,O2:0.6,Warp:1.1,Ammo:0.5,Repair:0.5,Shield:0.1"
+   # -  GroupName: Veldis_Pyramid
+   #    Faction: Galorian
+   #    LevelMod: +4
+   #    CountMinMax: [2, 4]
+   #    DroneProb: 1
+   #    DronesMinMax: [1, 1]
+   #    ReserveCount: 1
+   #    TroopTransport: False
+   #    Properties:
+   #    -  Key: RegenAfter
+   #       Value: 90
+   #    -  Key: Music
+   #       Value: DarkSoundscape
+   # -  GroupName: CivilSettlement
+   #    Faction: Polaris
+   #    CountMinMax: [1, 2]
+   #    DronesMinMax: [1, 1]
+   #    TroopTransport: False
+   #    InitPower: True
+   #    SpawnPOINearRange: [50, 500]
+   #    Properties:
+   #    -  Key: RegenAfter
+   #       Value: 90
+   # -  GroupName: PolarisDefence
+   #    Faction: Polaris
+   #    CountMinMax: [1, 3]
+   #    DronesMinMax: [1, 1]
+   #    TroopTransport: False
+   #    SpawnPOINear: [CivilSettlement]
+   #    SpawnPOINearRange: [30, 200]
+   #    Properties:
+   #    -  Key: RegenAfter
+   #       Value: 90
    -  GroupName: ArtifactsFloating
       Faction: Abyssal
       CountMinMax: [1, 4]
-      PlaceAt: OnWater
+      #PlaceAt: OnWater #Due to Havenopolis needing space above water
       DronesMinMax: [1, 1]
       ReserveCount: 1
       TroopTransport: False
@@ -676,7 +693,7 @@ POIs:
    -  GroupName: PlayerCatCat
       Faction: None
       CountMinMax: [2, 8]
-      PlaceAt: OnWater
+      PlaceAt: OnWater  #Can stay as just filler
       DronesMinMax: [1, 1]
       ReserveCount: 1
       TroopTransport: True

@@ -1978,7 +1978,8 @@
     Name_14: LargeOptronicMatrix, param1: 0.03, param2: "1,2"
     Name_15: TransportationBoost, param1: 0.03, param2: 1
     Name_16: LaserArrows, param1: 0.1, param2: "6,24"
-    Name_17: Nanites, param1: 0.1, param2: "6,24"
+    Name_17: Nanites, param1: 0.1, param2: "6,24"  
+    Name_18: HavenopolisRecipe, param1: 0.1, param2: "1,2"
     Group_0: Reports, param1: 0.1
   }
 }

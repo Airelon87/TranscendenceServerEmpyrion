@@ -8998,8 +8998,8 @@
   NPCName: "GIN Console"
   Output: "Thank you for your payemnt. Premium features are locked by a virus at this time."
   Option_1: "Smash Ctrl Alt Delete several times"
-  OptionNext_1: End
-  OptionExecute_1: "AddItem('AlphaVirus', 1)"
+  OptionNext_1: Galor_Console_Initialize
+  OptionExecute_1: "AddItem('HavenopolisRecipe', 1)"
 }
 { +Dialogue Name: Galor_Console_Initialize
   NPCName: "GIN Console"
@@ -9055,4 +9055,16 @@
   Option_1: "Click to Accept 100 credits and Return to the main menu."
   OptionNext_1: "Galor_Console_Reports"
   OptionExecute_1: "AddItem('MoneyCard', 100)"
+}
+{ +Dialogue Name: TR_Havenopolis
+  NPCName: "Havenopolis Citizen"
+  Output: "@w1 its a fine day in Havenopolis {PlayerName}. \n\n @w2 I sell some things that you only find here on Havenopolis. \n\n If you want to make our local food yourself buy a recipe from me."
+  Option_1: "I would like to buy from you."
+  OptionNext_1: TR_Havenopolis_TradeWindow
+  Option_2: "I will pass"
+  OptionNext_2: End
+}
+{ +Dialogue Name: TR_Havenopolis_TradeWindow
+  NPCName: "Havenopolis Citizen"
+  Execute_1: "OpenTraderWindow()"
 }
