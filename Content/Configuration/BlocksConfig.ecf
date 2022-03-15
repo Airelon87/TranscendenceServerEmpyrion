@@ -1628,9 +1628,9 @@
   
   Radiation: 0.25, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
 
-  UnlockCost: 4, display: true
-  UnlockLevel: 3, display: true
-  TechTreeNames: "Base,Capital Vessel"
+  UnlockCost: 2, display: true
+  UnlockLevel: 1, display: true
+  TechTreeNames: "Base,Capital Vessel,Talon"
 }
 { +Block Id: 260, Name: FuelTankMSLarge, Ref: FuelTankMSSmall
   # LootList: 23    # 20 slots
@@ -2026,7 +2026,7 @@
   Torque: 100, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
   EnergyIn: 3, type: int, display: true, formatter: Watt
-  CPUIn: 275, type: int, display: true
+  CPUIn: 175, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 4
   BlastDamage: 100
@@ -3201,6 +3201,7 @@
   DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
   BlockColor: "110,110,110"
   Place: Free
+  MarketPrice: 75, display: true   #TR177
   IsAccessible: false, type: bool
   IsOxygenTight: false, display: true
   Category: Deco Blocks
@@ -3947,7 +3948,7 @@
   # Model: Cube
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
-  AllowPlacingAt: Base, display: true
+  AllowPlacingAt: "Base,MS", display: true    #TR177 rev2
   HitPoints: 100, type: int, display: false
   Mass: 360, type: float, display: true, formatter: Kilogram
   StackSize: 1000
@@ -3972,7 +3973,7 @@
   Place: Free
   Model: Cube
   TemplateRoot: WoodBlocks
-  AllowPlacingAt: Base, display: true
+  AllowPlacingAt: "Base,MS", display: true    #TR177 rev2
   HitPoints: 100, type: int, display: true
   Mass: 360, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 8  
@@ -3998,7 +3999,7 @@
   # Model: Cube
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
-  AllowPlacingAt: Base, display: true
+  AllowPlacingAt: "Base,MS", display: true    #TR177 rev2
   HitPoints: 600, type: int, display: false
   Mass: 1100, type: float, display: true, formatter: Kilogram
   Volume: 80, type: float, display: true, formatter: Liter
@@ -4023,7 +4024,7 @@
   Place: Free
   Model: Cube
   TemplateRoot: ConcreteBlocks
-  AllowPlacingAt: Base, display: true
+  AllowPlacingAt: "Base,MS", display: true    #TR177 rev2
   HitPoints: 800, type: int, display: true
   Mass: 1100, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 8 
@@ -4445,7 +4446,7 @@
   # Torque: 2000000, type: int, display: true, formatter: NewtonMeter  
   EnergyDynamicGroup: RCS
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 32500, type: int, display: true
+  CPUIn: 2500, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 3
   BlastDamage: 80
@@ -18382,6 +18383,7 @@
   IsAccessible: false, type: bool
   AllowPlacingAt: Base, display: true
   SizeInBlocks: "1,3,1", display: true
+  MarketPrice: 388, display: true
   # ModelOffset: "0,0.5,0"
   ShowUser: No
 }
@@ -18501,6 +18503,7 @@
   Class: PlantGrowing     # to ensure that it can only be placed in growing plots
   Material: plants
   Shape: ModelEntity
+  MarketPrice: 2, display: true #TR177
   Model: @models2/Entities/Farming/SpeedTrees/PlantDeadSmallPrefab
   #   Model: @models2/Entities/Farming/ModernFarm/PlantDeadPrefab
   DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
@@ -18655,7 +18658,7 @@
   Model: Cube
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
-  AllowPlacingAt: Base, display: true
+  AllowPlacingAt: "Base,MS", display: true    #TR177 rev2
   HitPoints: 2200, type: int, display: false
   Mass: 4000, type: float, display: true, formatter: Kilogram
   Volume: 80, type: float, display: true, formatter: Liter
@@ -18678,7 +18681,7 @@
   Shape: Invisible
   Place: Free
   TemplateRoot: ConcreteArmoredBlocks
-  AllowPlacingAt: Base, display: true
+  AllowPlacingAt: "Base,MS", display: true    #TR177 rev2
   HitPoints: 2200, type: int, display: true
   Mass: 4000, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 8  
@@ -24062,11 +24065,17 @@
   AllowPlacingAt: Base, display: true
   SizeInBlocksLocked: "Base,MS"
   Shape: Invisible
+  MarketPrice: 150, display: true
   # Model: Entities/Decorations/AncientTemple/RunestonePrefab
   DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
   Info: bkiBlockGroup, display: true
   SizeInBlocks: "1,1,1", display: true
   ChildBlocks: "TribalBarrels, TribalBox, TribalBarrow, TribalBoat, TribalBaskets, TribalBed1, TribalBed2, TribalBookcase1, TribalBookcase2, TribalBuckets, TribalCabinet1, TribalCabinet2, TribalCauldron, TribalCauldron2, TribalTub, TribalDryFish, TribalLoom, TribalOven, TribalHearth, TribalSacks, TribalTable1, TribalTable2, TribalChair, TribalWoodSaw, TribalFirewood, TribalTrunkAxe, TribalTorch, TribalFirepit"
+
+  UnlockCost: 0, display: true
+  UnlockLevel: 1, display: true
+  #TechTreeParent: ""
+  TechTreeNames: Talon  #TR177 rev2
 }
 
 { +Block Id: 1740, Name: TribalBarrels, Ref: DecoTemplate
@@ -24235,7 +24244,7 @@
   Model: @models2/Entities/Decorations/TribalAssets/TribalTorchPrefab
   SizeInBlocks: "1,1,1", display: true
   TemplateRoot: DecoTribalBlocks
-  Temperature: 40, display: true
+  Temperature: 20, display: true
 }
 { +Block Id: 1760, Name: TribalFirepit, Ref: DecoTemplate
   IndexName: Light
@@ -32555,6 +32564,781 @@
 #==================================v177=Rev2=
 #TranscendenceCustomItems          3/14/2022
 #==================================Airelon===
+
+#Very Rare Functional Tribal Deco Items
+#--------------------------------------
+{ Block Name: StatueOfGravity
+  IndexName: Gravity
+  Group: cpgGravityGenerator
+  Material: concretearmored
+  Shape: ModelEntity
+  ShowBlockName: true
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 360, type: float, display: true, formatter: Liter
+  Model: @models2/Entities/Decorations/AncientTemple/TigerStatueSmallPrefab
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  Place: Free
+  AllowPlacingAt: "Base,MS", display: true
+  IsActivateable: true
+  IsOxygenTight: false, display: true 
+  Info: The eyes of this statue acivates a source of artificial gravity within an Ancient Relic, display: true
+  StackSize: 6
+  Category: Devices
+  MarketPrice: 32900, display: true
+  HitPoints: 300, type: int, display: true
+  Mass: 700, type: float, display: true, formatter: Kilogram
+  EnergyIn: 125, type: int, display: true, formatter: Watt
+  CPUIn: 50, type: int, display: true
+  CustomIcon: TigerStatue
+  MaxCount: 1, type: int, display: true
+
+  ShieldCapacityBonus: 1000, type: int, display: true
+  BlastParticleIndex: 10
+  BlastRadius: 4
+  BlastDamage: 500
+
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 13, display: true
+  UnlockLevel: 15, display: true
+  TechTreeParent: RelicOfTalonish
+  TechTreeNames: Talon
+}
+
+{ Block Name: BoatOfDirection
+  IndexName: RCS
+  Group: cpgRCS
+  Material: woodblock
+  MarketPrice: 3900, display: true
+  Shape: ModelEntity
+  ShowBlockName: true
+  CustomIcon: TribalBoat
+  Model: @models2/Entities/Decorations/TribalAssets/TribalBoatPrefab
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  Place: Free
+  AllowPlacingAt: MS, display: true
+  SizeInBlocks: "1,1,2", display: true
+  SizeInBlocksLocked: "Base,MS"
+  Volume: 140, type: float, display: true, formatter: Liter  
+  Mass: 320, type: float, display: true, formatter: Kilogram
+  IsActivateable: true
+  IsOxygenTight: false, display: true
+  IsIgnoreLC: true
+  Info: An analog warp field gyroscope fused into a Talon fishing boat, display: true
+  StackSize: 250
+  Category: Devices
+  Torque: 2500, type: int, display: true, formatter: NewtonMeter
+  EnergyDynamicGroup: RCS
+  EnergyIn: 12, type: int, display: true, formatter: Watt
+  CPUIn: 1500, type: int, display: true
+  BlastParticleIndex: 4
+  BlastRadius: 3
+  BlastDamage: 80
+  MaxCount: 6, type: int, display: true
+  ForceMaxCount: true 
+
+  ShieldCapacityBonus: 250, type: int, display: true
+
+  RepairToTemplate: true, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 10, display: true
+  UnlockLevel: 12, display: true
+  TechTreeParent: CanoeOfDirection
+  TechTreeNames: Talon
+}
+{ Block Name: CanoeOfDirection, Ref: BoatOfDirection
+  MarketPrice: 1450, display: true
+  CustomIcon: TribalBoat
+  Model: @models2/Entities/Decorations/TribalAssets/TribalBoatPrefab
+  AllowPlacingAt: "SS,GV", display: true
+  SizeInBlocks: "1,1,2", display: true
+  Volume: 33, type: float, display: true, formatter: Liter  
+  Mass: 64, type: float, display: true, formatter: Kilogram
+  Torque: 60, type: int, display: true, formatter: NewtonMeter
+  EnergyIn: 12, type: int, display: true, formatter: Watt
+  CPUIn: 100, type: int, display: true
+
+  ShieldCapacityBonus: 100, type: int, display: true
+
+  UnlockCost: 5, display: true
+  UnlockLevel: 7, display: true
+  TechTreeParent: TalonStarionFish
+  TechTreeNames: Talon
+}
+
+{ Block Name: TorchOfFaith, Ref: DecoTemplate
+  CustomIcon: TribalTorch
+  Class: Light
+  Group: cpgLight
+  IndexName: Light
+  CanSetColor: false  #Needed?
+  Material: woodblock
+  Place: Free
+  Category: Devices
+  MarketPrice: 725, display: true
+  Model: @models2/Entities/Decorations/TribalAssets/TribalTorchPrefab
+  AllowPlacingAt: "SS,GV", display: true
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 6, type: float, display: true, formatter: Liter  
+  Mass: 5, type: float, display: true, formatter: Kilogram
+  Temperature: 30, display: true
+  IsOxygenTight: false, display: true
+  EnergyIn: -8, type: int, display: true, formatter: Watt
+  Info: A torch made from the gems of an ancient relic, display: true
+  TemplateRoot: TorchOfFaith
+  Collide: "bullet,rocket"   #Needed?
+
+  MaxCount: 12, type: int, display: true
+  ForceMaxCount: true
+  
+  RepairToTemplate: true, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 1, display: true
+  UnlockLevel: 1, display: true
+  #TechTreeParent: ""
+  TechTreeNames: Talon
+}
+{ Block Name: LargeTorchOfFaith, Ref: DecoTemplate
+  CustomIcon: TribalTorch
+  Class: Light
+  Group: cpgLight
+  IndexName: Light
+  CanSetColor: false  #Needed?
+  Material: woodblock
+  Place: Free
+  Category: Devices
+  MarketPrice: 925, display: true
+  Model: @models2/Entities/Decorations/TribalAssets/TribalTorchPrefab
+  AllowPlacingAt: "Base,MS", display: true
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 9, type: float, display: true, formatter: Liter  
+  Mass: 6, type: float, display: true, formatter: Kilogram
+  Temperature: 40, display: true
+  IsOxygenTight: false, display: true
+  EnergyIn: -12, type: int, display: true, formatter: Watt
+  Info: A torch made from the gems of an ancient relic, display: true
+  TemplateRoot: LargeTorchOfFaith
+  Collide: "bullet,rocket"   #Needed?
+
+  MaxCount: 24, type: int, display: true
+  ForceMaxCount: true
+  
+  RepairToTemplate: true, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 5, display: true
+  UnlockLevel: 5, display: true
+  TechTreeParent: TorchOfFaith
+  TechTreeNames: Talon
+}
+
+{ Block Name: ShamansBookcase
+  Class: Container
+  IndexName: Container
+  Group: cpgCargoBox
+  LootList: 59
+  Category: Devices
+  Material: woodblock
+  CustomIcon: TribalBookcase2
+  Shape: Invisible
+  #ShowBlockName: true
+  MarketPrice: 925, display: true
+  ChildBlocks: "ShamansBookcaseA, ShamansBookcaseB, ShamansCabinetA, ShamansCabinetB"
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  DropInventoryEntity: DropContainer
+  Place: Free
+  AllowPlacingAt: "Base,MS,SS,GV", display: true
+  SizeInBlocks: "1,1,1", display: true    
+  Mass: 50, type: float, display: true, formatter: Kilogram
+  Volume: 25, type: float, display: true, formatter: Liter      
+  Info: These bookcases and cabinets were crafted by Wadi Talos finest Battle Shaman, display: true
+  StackSize: 1000
+  IsActivateableInCP: true
+  IsLockable: true
+  IsOxygenTight: varies, display: true
+  EnergyIn: 1, type: int, display: true, formatter: Watt
+  HitPoints: 10, type: int, display: true
+  CPUIn: 1, type: int, display: true
+  MaxCount: 24, type: int, display: true
+  ForceMaxCount: true
+  
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 2, display: true
+  UnlockLevel: 5, display: true
+  TechTreeParent: WoodAmmoBox
+  TechTreeNames: Talon
+}
+
+{ Block Name: ShamansBookcaseA
+  CustomIcon: TribalBookcase1
+  SizeInBlocks: "1,1,1", display: true 
+  Model: @models2/Entities/Decorations/TribalAssets/TribalBookcase1Prefab
+  VolumeCapacity: 1000, type: float, display: true, formatter: Liter
+  ShieldCapacityBonus: 50, type: int, display: true
+  IsOxygenTight: false, display: true
+  TemplateRoot: ShamansBookcase
+  Class: Container
+  IndexName: Container
+  Group: cpgCargoBox
+  LootList: 59
+  Category: Devices
+  Material: woodblock
+  ShowBlockName: true
+  MarketPrice: 925, display: true
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  DropInventoryEntity: DropContainer
+  Place: Free
+  Shape: ModelEntity
+  AllowPlacingAt: "Base,MS,SS,GV", display: true 
+  Mass: 50, type: float, display: true, formatter: Kilogram
+  Volume: 25, type: float, display: true, formatter: Liter      
+  Info: These bookcases and cabinets were crafted by Wadi Talos finest Battle Shaman, display: true
+  StackSize: 1000
+  IsActivateableInCP: true
+  IsLockable: true
+  EnergyIn: 1, type: int, display: true, formatter: Watt
+  HitPoints: 10, type: int, display: true
+  BlastParticleIndex: 4
+  BlastRadius: 2
+  BlastDamage: 25
+  CPUIn: 1, type: int, display: true
+  MaxCount: 24, type: int, display: true
+  ForceMaxCount: true
+}
+{ Block Name: ShamansBookcaseB, Ref: ShamansBookcaseA
+  CustomIcon: TribalBookcase2
+  SizeInBlocks: "1,1,1", display: true 
+  Model: @models2/Entities/Decorations/TribalAssets/TribalBookcase2Prefab
+  VolumeCapacity: 500, type: float, display: true, formatter: Liter
+  ShieldCapacityBonus: 75, type: int, display: true
+  IsOxygenTight: false, display: true
+  TemplateRoot: ShamansBookcase   
+}
+{ Block Name: ShamansCabinetA, Ref: ShamansBookcaseA
+  CustomIcon: TribalCabinet1
+  SizeInBlocks: "1,1,1", display: true 
+  Model: @models2/Entities/Decorations/TribalAssets/TribalCabinet1Prefab
+  VolumeCapacity: 250, type: float, display: true, formatter: Liter
+  ShieldCapacityBonus: 100, type: int, display: true
+  IsOxygenTight: false, display: true
+  TemplateRoot: ShamansBookcase   
+}
+{ Block Name: ShamansCabinetB, Ref: ShamansBookcaseA
+  CustomIcon: TribalCabinet2
+  SizeInBlocks: "1,1,1", display: true 
+  Model: @models2/Entities/Decorations/TribalAssets/TribalCabinet2Prefab
+  VolumeCapacity: 125, type: float, display: true, formatter: Liter
+  ShieldRechargeBonus: 10, type: int, display: true
+  IsOxygenTight: false, display: true
+  TemplateRoot: ShamansBookcase   
+}
+
+{ Block Name: TribalArmorAnvil
+  Class: ArmorLocker
+  Group: cpgEquipment
+  MarketPrice: 4750, display: true
+  GridSize: "5,3"
+  Material: woodblock
+  CustomIcon: TribalAnvil
+  Shape: ModelEntity
+  ShowBlockName: true
+  Model: @models2/Entities/Decorations/TribalAssets/TribalAnvilPrefab
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  DropInventoryEntity: DropContainer
+  Place: Free
+  Info: The finest anvil for armor used among Talon cheifs, display: true
+  AllowPlacingAt: "Base,MS", display: true
+  SizeInBlocks: "1,1,1"
+  StackSize: 1000
+  Category: Devices
+  IsAccessible: true, type: bool
+  IsActivateableInCP: true
+  IsOxygenTight: false, display: true
+  IsLockable: true
+  Mass: 1500, type: float, display: true, formatter: Kilogram  
+  Volume: 192, type: float, display: true, formatter: Liter
+  VolumeCapacity: 1000, type: float, display: true, formatter: Liter 
+  EnergyIn: 5, type: int, display: true, formatter: Watt
+  SoundOpen: UseActions/TrapDoor
+  SoundClose: UseActions/TrapDoor  
+  MaxCount: 4, type: int, display: true
+  ForceMaxCount: true
+
+  ShieldCapacityBonus: 300, type: int, display: true
+  
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 6, display: true
+  UnlockLevel: 10, display: true
+  TechTreeParent: SmallArmorAnvil
+  TechTreeNames: Talon
+}
+{ Block Name: SmallArmorAnvil, Ref: TribalArmorAnvil
+  MarketPrice: 1500, display: true
+  GridSize: "5,2"
+  CustomIcon: TribalAnvil
+  AllowPlacingAt: "SS,GV", display: true
+  Mass: 350, type: float, display: true, formatter: Kilogram  
+  Volume: 25, type: float, display: true, formatter: Liter
+  VolumeCapacity: 250, type: float, display: true, formatter: Liter 
+  EnergyIn: 1, type: int, display: true, formatter: Watt
+  MaxCount: 2, type: int, display: true
+  ForceMaxCount: true
+
+  ShieldCapacityBonus: 150, type: int, display: true   
+  
+  UnlockCost: 4, display: true
+  UnlockLevel: 7, display: true
+  TechTreeParent: ShamansBookcase
+  TechTreeNames: Talon
+}
+
+{ Block Name: WoodAmmoBox, Ref: DecoTemplate
+  Material: woodblock
+  Class: Container
+  Group: cpgAmmo
+  IndexName: AmmoCntr
+  Category: Devices
+  CustomIcon: TribalBox
+  Model: @models2/Entities/Decorations/TribalAssets/TribalBoxPrefab
+  DropInventoryEntity: DropContainer
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab 
+  LootList: 70
+  AllowPlacingAt: "Base,MS,SS,GV", display: true
+  Place: Free
+  SizeInBlocks: "1,1,1", display: true
+  MarketPrice: 50, display: true  
+  IsActivateableInCP: true
+  IsLockable: true
+  IsOxygenTight: false, display: true
+  ShowBlockName: true
+  Info: bkiContainerAmmo, display: true
+  StackSize: 1000
+  SoundOpen: UseActions/BarrelOpen
+  SoundClose: UseActions/BarrelClose 
+
+  BlastParticleIndex: 4
+  BlastRadius: 3
+  BlastDamage: 250
+
+  HitPoints: 50, type: int, display: true
+  EnergyIn: 1, type: int, display: true, formatter: Watt
+  VolumeCapacity: 120, type: float, display: true, formatter: Liter 
+  CPUIn: 1, type: int, display: true   
+  Volume: 32, type: float, display: true, formatter: Liter
+  Mass: 50, type: float, display: true, formatter: Kilogram
+
+  RepairToTemplate: true, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 1, display: true
+  UnlockLevel: 3, display: true
+  TechTreeParent: DecoTribalBlocks
+  TechTreeNames: Talon
+}
+
+{ Block Name: EmberOfEternalFlame, Ref: ThrusterSVDirectional
+  CustomIcon: TribalFirepit
+  Material: woodblock
+  Model: @models2/Entities/Decorations/TribalAssets/TribalFirepitPrefab
+  IsOxygenTight: false, display: true
+  AllowPlacingAt: "SS,GV", display: true
+  MarketPrice: 1350, display: true
+
+  Info: A fabled Oracle once gifted sacred embers of the Ancient Vault to the cheifs of Talonia to hasten their sky ships, display: true
+  HitPoints: 25, type: int, display: true
+  ThrusterForce: 50, type: int, display: true, formatter: Newton
+  EnergyIn: 3, type: int, display: true, formatter: Watt
+  CPUIn: 5, type: int, display: true
+  Volume: 16, type: float, display: true, formatter: Liter 
+  Mass: 17, type: float, display: true, formatter: Kilogram
+  Temperature: 145, display: true
+  BlastParticleIndex: 10
+  BlastRadius: 3
+  BlastDamage: 25
+
+  ShieldRechargeBonus: 1, type: int, display: true
+  MaxCount: 16, type: int, display: true
+  ForceMaxCount: true
+
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 12, display: true
+  UnlockLevel: 10, display: true
+  TechTreeParent: LargeTorchOfFaith
+  TechTreeNames: Talon
+}
+
+{ Block Name: LargeEmberOfEternalFlame, Ref: ThrusterMSDirectional
+  CustomIcon: TribalFirepit
+  Material: woodblock
+  Model: @models2/Entities/Decorations/TribalAssets/TribalFirepitPrefab
+  IsOxygenTight: false, display: true
+  AllowPlacingAt: MS, display: true
+  MarketPrice: 4350, display: true
+
+  Info: A fabled Oracle once gifted sacred embers of the Ancient Vault to the cheifs of Talonia to hasten their sky ships, display: true
+  HitPoints: 90, type: int, display: true
+  ThrusterForce: 3600, type: int, display: true, formatter: Newton
+  EnergyIn: 43, type: int, display: true, formatter: Watt
+  CPUIn: 500, type: int, display: true
+  Volume: 75, type: float, display: true, formatter: Liter 
+  Mass: 81, type: float, display: true, formatter: Kilogram
+  Temperature: 290, display: true
+  BlastParticleIndex: 11
+  BlastRadius: 3
+  BlastDamage: 250
+
+  ShieldRechargeBonus: 3, type: int, display: true
+  MaxCount: 24, type: int, display: true
+  ForceMaxCount: true
+
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 20, display: true
+  UnlockLevel: 15, display: true
+  TechTreeParent: EmberOfEternalFlame
+  TechTreeNames: Talon
+}
+
+{ Block Name: LoomOfPentaxid
+  Class: WarpDriveTank
+  CustomIcon: TribalLoom
+  Group: cpgWarp
+  MarketPrice: 5000, display: true
+  IndexName: WarpDriveTank
+  LootList: 13 
+  Material: woodblock
+  Shape: ModelEntity
+  ShowBlockName: true
+  Model: @models2/Entities/Decorations/TribalAssets/TribalLoomPrefab
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  DropInventoryEntity: DropContainer
+  BlockColor: "110,110,110"
+  Place: Free
+  IsActivateableInCP: true
+  IsLockable: true
+  IsDuplicateable: false
+  IsOxygenTight: false, display: true
+  MaxCount: 1, type: int, display: true
+  ForceMaxCount: true  
+  AllowPlacingAt: "MS,SS,GV", display: true
+  SizeInBlocks: "1,1,1", display: true
+  Category: Devices
+  Mass: 6, type: float, display: true, formatter: Kilogram
+  Volume: 32, type: float, display: true, formatter: Liter
+  StackSize: 1000
+  VolumeCapacity: 240, type: float, display: true, formatter: Liter
+  HitPoints: 15, type: int, display: true
+  CPUIn: 5, type: int, display: true
+  EnergyIn: 1, type: int, display: true, formatter: Watt
+  BlastParticleIndex: 10
+  BlastRadius: 5
+  BlastDamage: 500
+
+  ShieldRechargeBonus: 10, type: int, display: true  
+
+  Info: An ancient tribe of mythical Akua passed down the knowledge of weaving active pentaxid in charged platinum coated strands of fiber as storage for warp field stabilization., display: true
+  WarpAccept: PentaxidCrystal
+  
+  Radiation: 0, display: RadiationLevel
+  Temperature: -15, display: true
+  
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+  ShowUser: Yes
+  UnlockCost: 7, display: true
+  UnlockLevel: 7, display: true
+  TechTreeParent: AlchemyGenerator
+  TechTreeNames: Talon
+}
+{ Block Name: AlchemyGenerator, Ref: GeneratorSVSmall
+  Model: @models2/Entities/Decorations/TribalAssets/TribalCauldron2Prefab
+  CustomIcon: TribalCauldron2
+  IndexName: Generator
+  Class: Generator
+  Group: cpgGenerator
+  MarketPrice: 2125, display: true
+  EssentialCategory: cpgGenerator
+  LootList: 1
+  Material: metalhard
+  Shape: ModelEntity
+  ShowBlockName: true
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  BlockColor: "110,110,110"
+  Place: Free
+  AllowPlacingAt: "SS,GV", display: true
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 16, type: float, display: true, formatter: Liter  
+  Mass: 48, type: float, display: true, formatter: Kilogram
+  Info: Srisaringkan alchemists recreated an ancient complex biological soup used for power generation that can simply stew in a Talon cauldron, display: true
+  StackSize: 1000
+  IsOxygenTight: false, display: true
+  IsActivateable: true
+  IsIgnoreLC: true
+  HitPoints: 225, type: int, display: true
+  EnergyOut: 120, type: int, display: true, formatter: Watt
+  EnergyIn: -5, type: int, display: true, formatter: Watt
+  CPUIn: 5, type: int, display: true
+  Category: Devices
+  BlastParticleIndex: 2
+  BlastRadius: 4
+  BlastDamage: 500
+  MaxCount: 16, type: int, display: true
+  ForceMaxCount: true
+
+  ShieldCapacityBonus: 75, type: int, display: true
+
+  UnlockCost: 6, display: true
+  UnlockLevel: 5, display: true
+  TechTreeParent: TribalFuelBarrels
+  TechTreeNames: Talon
+  
+  Temperature: 5, display: true
+  Radiation: 0, display: RadiationLevel
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+}
+
+{ Block Name: AlchemyGeneratorMS, Ref: GeneratorSVSmall
+  Model: @models2/Entities/Decorations/TribalAssets/TribalCauldron2Prefab
+  CustomIcon: TribalCauldron2
+  IndexName: Generator
+  Class: Generator
+  Group: cpgGenerator
+  MarketPrice: 5300, display: true
+  EssentialCategory: cpgGenerator
+  LootList: 1
+  Material: metalhard
+  Shape: ModelEntity
+  ShowBlockName: true
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  BlockColor: "110,110,110"
+  Place: Free
+  AllowPlacingAt: "Base,MS", display: true
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 128, type: float, display: true, formatter: Liter  
+  Mass: 192, type: float, display: true, formatter: Kilogram
+  Info: Srisaringkan alchemists recreated an ancient complex biological soup used for power generation that can simply stew in a Talon cauldron, display: true
+  StackSize: 1000
+  IsOxygenTight: false, display: true
+  IsActivateable: true
+  IsIgnoreLC: true
+  HitPoints: 525, type: int, display: true
+  EnergyOut: 12500, type: int, display: true, formatter: Watt
+  EnergyIn: -25, type: int, display: true, formatter: Watt
+  CPUIn: 1575, type: int, display: true
+  Category: Devices
+  BlastParticleIndex: 2
+  BlastRadius: 4
+  BlastDamage: 500
+  MaxCount: 16, type: int, display: true
+  ForceMaxCount: true
+
+  ShieldCapacityBonus: 150, type: int, display: true
+
+  UnlockCost: 12, display: true
+  UnlockLevel: 10, display: true
+  TechTreeParent: AlchemyGenerator
+  TechTreeNames: Talon
+  
+  Temperature: 5, display: true
+  Radiation: 0, display: RadiationLevel
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+}
+
+{ Block Name: TalonStarionFish
+  Class: Container
+  IndexName: Fridge
+  Group: cpgFridge
+  Category: Devices
+  LootList: 1
+  DontDecayFood: true   # now this loot container is a fridge 
+  Shape: ModelEntity
+  ShowBlockName: true
+  AllowPlacingAt: "Base,MS,SS,GV", display: true
+  CustomIcon: TribalDryFish
+  Material: woodblock
+  MarketPrice: 975, display: true
+  Model: @models2/Entities/Decorations/TribalAssets/TribalDryFishPrefab
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  DropInventoryEntity: DropContainer
+  Place: Free
+  StackSize: 2000
+  BlockColor: "110,110,110"
+  SizeInBlocks: "1,1,1", display: true
+  IsActivateable: true
+  IsActivateableInCP: true
+  IsLockable: true
+  IsOxygenTight: false, display: true
+
+  EnergyIn: 1, type: int, display: true, formatter: Watt
+  CPUIn: 1, type: int, display: true
+  Volume: 9, type: float, display: true, formatter: Liter
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  VolumeCapacity: 50, type: float, display: true, formatter: Liter
+  HitPoints: 10, type: int, display: true
+  Info: Early Talonian colony ships kept food inside air fish. The Starion fish cool their stomachs to 0 degrees C when exposed to low voltages., display: true
+
+  ShieldCapacityBonus: 5, type: int, display: true
+
+  UnlockCost: 2, display: true
+  UnlockLevel: 1, display: true
+  #TechTreeParent: ""
+  TechTreeNames: Talon
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+}
+{ Block Name: TribalFuelBarrels, Ref: FuelTankSV
+  Material: woodblock
+  CustomIcon: TribalBarrels
+  MarketPrice: 9785, display: true  
+  Model: @models2/Entities/Decorations/TribalAssets/TribalBarrelsPrefab
+  SizeInBlocks: "1,1,1", display: true
+  AllowPlacingAt: "Base,MS,SS,GV", display: true
+  FuelCapacity: 150, type: int, display: true
+  FuelAccept: "BioFuel, Chemicals, Nanites"
+  EnergyIn: -10, type: int, display: true, formatter: Watt
+  CPUIn: 25, type: int, display: true
+  Volume: 9, type: float, display: true, formatter: Liter  
+  Mass: 22, type: float, display: true, formatter: Kilogram
+  HitPoints: 25, type: int, display: true
+  Info: Ancient Talon used biofuel or chemicals to fuel the first orbital sky ship on Talonia, display: true
+
+  ShieldCapacityBonus: 25, type: int, display: true
+  UpgradeTo: null, display: false
+
+  Radiation: 0, display: RadiationLevel
+
+  UnlockCost: 3, display: true
+  UnlockLevel: 3, display: true
+  TechTreeParent: FuelTankMSSmall
+  TechTreeNames: Talon
+
+  BlastParticleIndex: 10
+  BlastRadius: 2
+  BlastDamage: 300
+
+  ShowUser: Yes
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+}
+{ Block Name: OvenOfSpaceTime
+  Class: WarpDrive
+  Group: cpgWarp
+  IndexName: WarpDrive
+  Material: woodblock
+  CustomIcon: TribalOven
+  AllowPlacingAt: "MS,SS", display: true
+  MarketPrice: 15000, display: true
+  ShowBlockName: true
+  Model: @models2/Entities/Decorations/TribalAssets/TribalOvenPrefab
+  SizeInBlocks: "1,2,1", display: true
+  Mass: 150, type: float, display: true, formatter: Kilogram 
+  Volume: 50, type: float, display: true, formatter: Liter
+  EnergyIn: -125, type: int, display: true, formatter: Watt
+  CPUIn: 500, type: int, display: true   #Do no change... PDA LunaFare
+  HitPoints: 50, type: int, display: true
+  Info: The first ever known pentaxid warp field stabilizer developed by Talon revolutionists during first contact with the Zirax, display: true
+
+  IsDuplicateable: false
+  MaxCount: 1, type: int, display: true
+  ForceMaxCount: true
+  IsOxygenTight: false, display: true
+  Shape: ModelEntity
+  StackSize: 250
+  BlockColor: "110,110,110"
+  Category: Devices
+
+  ItemPerAU: PentaxidCrystal, display: true
+  CostPerAU: 1, display: true
+  CostPerLY: 1, display: true #Defualt = 0
+  RangeAU: 32, display: true #Default = 15
+  RangeLY: 27, display: true #Default = 0
+
+  ShieldCapacityBonus: 500, type: int, display: true
+  UpgradeTo: null, display: true
+
+  UnlockCost: 17, display: true
+  UnlockLevel: 12, display: true
+  TechTreeParent: LoomOfPentaxid
+  TechTreeNames: Talon
+
+  BlastParticleIndex: 4
+  BlastRadius: 3
+  BlastDamage: 1200
+
+  ShowUser: Yes
+  RepairToTemplate: false, display: true
+  AllowedInBlueprint: true, display: true
+}
+{ Block Name: RelicOfTalonish     #, Ref: ShieldGeneratorBA
+  Class: ShieldGenerator
+  IndexName: ShieldGenerator
+  EnergyDynamicGroup: Shield
+  CustomIcon: MayanStatueSnakeSmall
+  MarketPrice: 5000
+  StackSize: 250
+  Category: Devices
+
+  Group: cpgEquipment
+  Material: concrete
+  Shape: ModelEntity
+
+  Model: @models2/Entities/Decorations/AncientTemple/MayanStatueSnakeSmallPrefab
+  SizeInBlocks: "1,1,1", display: true
+  BlockColor: "170,170,170"
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  Place: Free
+  IsActivateable: true
+  IsActivatedOnPlace: false
+  IsAccessible: true, type: bool
+  IsDuplicateable: false
+  OccupySizeInBlocks: true     # do not allow to place blocks inside the bounding box
+  MaxCount: 1, type: int, display: true
+  ForceMaxCount: true   
+
+  AllowedInBlueprint: true, display: true  
+  RepairToTemplate: false, display: true   
+  AllowPlacingAt: "Base,MS,SS,GV", display: true
+  #PickupTarget: RelicOfTalonish 
+  #TemplateRoot: ShieldGeneratorBA
+  HitPoints: 69, type: int, display: true
+  Mass: 192, type: float, display: true, formatter: Kilogram
+  Volume: 32, type: float, display: true, formatter: Liter
+  EnergyIn: 50, type: int, display: true, formatter: Watt
+  CPUIn: 50, type: int, display: true 
+  EnergyInIdle: -500, type: int, display: true, formatter: Watt
+  ShieldCapacity: 1000, type: int, display: true
+  ShieldRecharge: 30, type: int, display: true # per second
+  ShieldCooldown: 5, type: int, display: true   # in seconds
+  ShieldPerCrystal: 1000, type: int, display: true
+  Info: The Talon of Wadi Talo crafted these 4000 years ago with their ancient relics passed to them from their ancestors., display: true
+  UpgradeTo: null, display: false
+  
+  UnlockCost: 7, display: true
+  UnlockLevel: 10, display: true
+  TechTreeParent: LoomOfPentaxid
+  TechTreeNames: Talon
+
+  BlastParticleIndex: 4
+  BlastRadius: 9
+  BlastDamage: 3200
+
+  ShowUser: Yes
+}
+
+#SV Warp Drive Upgrades
+#--------------------------------------
 { Block Name: WarpDriveSVTeir3, Ref: WarpDrive
   Model: @models/Blocks/Spaceship/WarpDriveSVPrefab
   CustomIcon: WarpDriveSV
@@ -32611,6 +33395,8 @@
   TechTreeNames: "Small Vessel"
 }
 
+#New items for v177 Sheild Systems and End game content
+#------------------------------------------------------
 { Block Name: LegacyEnergyCoreTank, Ref: FuelTankMSLarge
   LootList: 47
   MarketPrice: 7200, display: true
@@ -32962,6 +33748,8 @@
   Radiation: 75, display: RadiationLevel
 }
 
+#Transcendence121 to v171 Custom items
+#--------------------------------------
 { Block Name: ShieldGeneratorSuperSV, Ref: ShieldGeneratorSV                #Not yet fully used, do not remove.
   MarketPrice: 290796, display: true
   Class: ShieldGenerator
@@ -33372,6 +34160,7 @@
   ShowBlockName: true
   # ModelOffset: "0,0.5,0"
   SizeInBlocks: "2,2,2", display: true
+  MarketPrice: 4250, display: true
   Volume: 430, type: float, display: true, formatter: Liter
   Model: @models/Blocks/Mothership/gravitygeneratorMSPrefab
   Mesh-Damage-1: Mesh/D0
@@ -33392,6 +34181,7 @@
   EnergyIn: 50, type: int, display: true, formatter: Watt
   CPUIn: 20, type: int, display: true
   CustomIcon: GravityGeneratorMS
+  MaxCount: 1, type: int, display: true
 
   BlastParticleIndex: 10
   BlastRadius: 4
@@ -33538,6 +34328,9 @@
   BlastDamage: 150
   UpgradeTo: null, display: false
 
+  ShieldCapacityBonus: 50, type: int, display: true
+  ShieldRechargeBonus: 5, type: int, display: true
+
   UnlockCost: 11, display: true
   UnlockLevel: 15, display: true
   TechTreeParent: RCSBlockSV
@@ -33616,7 +34409,7 @@
   MarketPrice: 4780
   AllowedInBlueprint: true, display: true     
   AllowPlacingAt: "MS", display: true
-  #PickupTarget: RapidChargeShieldGenerator 
+  PickupTarget: RapidChargeShieldGenerator 
   TemplateRoot: ShieldGeneratorBA
   HitPoints: 500, type: int, display: true
   Mass: 2450, type: float, display: true, formatter: Kilogram
@@ -34005,11 +34798,11 @@
 { Block Name: LaserSentryGunGalor, Ref: LaserSentryGunT2
   CustomIcon: TurretEnemyOrange
   Info: A Galorian variant of the LaserSentryGunT4, display: true
-  MarketPrice: 25000, display: true
+  MarketPrice: 30000, display: true
   Place: Free
   BlockColor: "110,110,110"
   #TemplateRoot: SentryGunBlocks
-  PickupTarget: LaserSentryGunT2
+  PickupTarget: LaserSentryGunGalor
   Model: @models/Blocks/Turrets/TurretEnemyYellowPrefab
   DropMeshfile: Entities/Misc/DropContainerNewPrefab
   WeaponItem: LaserSentryGunWeaponGalor

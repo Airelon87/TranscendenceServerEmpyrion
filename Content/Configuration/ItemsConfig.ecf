@@ -6061,6 +6061,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: plants
+  MarketPrice: 25, display: true #TR177 r2
   Mass: 0.1, type: float, display: true, formatter: Kilogram
   Volume: 0.5, type: float, display: true, formatter: Liter
   Canhold: false
@@ -6075,6 +6076,7 @@
   Material: metalitem
   Canhold: false
   HoldType: 0
+  MarketPrice: 25, display: true #TR177 r2
   Mass: 8, type: float, display: true, formatter: Kilogram
   Volume: 3, type: float, display: true, formatter: Liter
   Info: bkiSourceMaterial, display: true
@@ -6086,6 +6088,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metalitem
+  MarketPrice: 25, display: true #TR177 r2
   Canhold: false
   HoldType: 0
   Mass: 0.5, type: float, display: true, formatter: Kilogram
@@ -6548,7 +6551,7 @@
 { +Item Id: 260, Name: LaserKit, Ref: ComponentsTemplate
   Mass: 5, type: float, display: true, formatter: Kilogram
   Volume: 20, type: float, display: true, formatter: Liter
-  MarketPrice: 750
+  MarketPrice: 400
   StackSize: 1000
   ShowUser: Yes
 }
@@ -11088,10 +11091,10 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     RedDot: true
   }
 
-    UnlockCost: 10, display: true
-    UnlockLevel: 15, display: true
-    TechTreeParent: LaserCrossbow
-    TechTreeNames: Weapons
+    UnlockCost: 8, display: true
+    UnlockLevel: 12, display: true
+    TechTreeParent: LaserCrossbowT2
+    TechTreeNames: Talon
 }
 #  CATEGORIE: New Drone Weapon Items id 850 - 900  
 { +Item Id: 850, Name: rocketlauncherDroneLarge
@@ -12641,11 +12644,11 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1001, Name: RawDiamond, Ref: TradingGoodsTemplate
   Info: The most sought after unique item in the galaxy, display: true
   ShowUser: Yes
-  MarketPrice: 65000
+  MarketPrice: 65000, display: true
 }
 { +Item Id: 1002, Name: LuxuryGoods, Ref: TradingGoodsTemplate
   Info: A transcendence galaxy unique item that can be used to craft a Raw Diamond or Epic Boosters, display: true
-  MarketPrice: 2300
+  MarketPrice: 2300, display: true
   ShowUser: Yes
 }
 { +Item Id: 1003, Name: Fertilizer, Ref: TradingGoodsTemplate
@@ -12653,7 +12656,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   ShowUser: Yes
 }
 { +Item Id: 1004, Name: Liquors, Ref: FoodTemplate
-  MarketPrice: 27
+  MarketPrice: 27, display: true
   Info: bkiConsumable, display: true
   Category: Food 
   StackSize: 100
@@ -12672,7 +12675,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   }
 }
 { +Item Id: 1005, Name: Narcotics, Ref: FoodTemplate
-  MarketPrice: 130
+  MarketPrice: 130, display: true
   Info: bkiConsumable, display: true
   Category: Medical
   StackSize: 100
@@ -12692,20 +12695,21 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 }
 { +Item Id: 1006, Name: Robotics, Ref: TradingGoodsTemplate
   Info: A transcendence galaxy unique and mysterious item, display: true
-  MarketPrice: 3000
+  MarketPrice: 3000, display: true
   ShowUser: Yes
 }
 { +Item Id: 1007, Name: Optronics, Ref: TradingGoodsTemplate
   Info: Used to craft bridges and matrixes for CPU extenders, display: true
-  MarketPrice: 167
+  MarketPrice: 167, display: true
   ShowUser: Yes
 }
 { +Item Id: 1008, Name: Leather, Ref: TradingGoodsTemplate
-  MarketPrice: 190
+  MarketPrice: 75, display: true
+  Info: Material used to craft comfortable handles for unique weapons. 
   ShowUser: Yes
 }
 { +Item Id: 1009, Name: ToxicWaste, Ref: FoodTemplate
-  MarketPrice: 80
+  MarketPrice: 80, display: true
   Mass: 0.18, type: float, display: true, formatter: Kilogram
   Volume: 0.61, type: float, display: true, formatter: Liter
   Info: A smelly biproduct of advanced alien bio technology used for making coolant, display: true
@@ -12726,7 +12730,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   }  
 }
 { +Item Id: 1010, Name: AlienOrganism, Ref: FoodTemplate
-  MarketPrice: 40
+  MarketPrice: 40, display: true
   Mass: 0.18, type: float, display: true, formatter: Kilogram
   Volume: 0.61, type: float, display: true, formatter: Liter
   Info: This item can be used to craft incredible alien items or eaten, display: true
@@ -12747,55 +12751,55 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 }
 { +Item Id: 1011, Name: AncientRelics, Ref: TradingGoodsTemplate
   Info: A transcendence galaxy unique and mysterious item, display: true
-  MarketPrice: 1650
+  MarketPrice: 1209, display: true
   ShowUser: Yes
 }
 { +Item Id: 1012, Name: Coolant, Ref: TradingGoodsTemplate
-  MarketPrice: 250
+  MarketPrice: 250, display: true
   Info: A unique cooling liquid created from alien toxic waste that is also highly combustable under the right conditions.
   ShowUser: Yes
 }
 { +Item Id: 1013, Name: Chemicals, Ref: TradingGoodsTemplate
-  MarketPrice: 85
+  MarketPrice: 85, display: true
   FuelValue: 4, type: int, display: true, formatter: WattHour
   Info: This is used for crafting unique items and can be burned off as fuel, display: true
   ShowUser: Yes
 }
 { +Item Id: 1014, Name: Filters, Ref: TradingGoodsTemplate
-  MarketPrice: 90
+  MarketPrice: 90, display: true
   ShowUser: Yes
 }
 { +Item Id: 1015, Name: SpareParts, Ref: TradingGoodsTemplate
-  MarketPrice: 45
+  MarketPrice: 45, display: true
   Info: This is used for crafting unique items, display: true
   ShowUser: Yes
 }
 { +Item Id: 1016, Name: ScienceEquipment, Ref: TradingGoodsTemplate
-  MarketPrice: 400
+  MarketPrice: 400, display: true
   Info: This is used for crafting unique items, display: true
   ShowUser: Yes
 }
 { +Item Id: 1017, Name: MutatedSubstance, Ref: TradingGoodsTemplate
-  MarketPrice: 13
+  MarketPrice: 13, display: true
   Info: Gross yet used for intentionally making ToxicWaste, display: true
   ShowUser: Yes
 }
 { +Item Id: 1018, Name: TechnicalArtifact, Ref: TradingGoodsTemplate
-  MarketPrice: 240
+  MarketPrice: 240, display: true
   Info: This is used for crafting unique items, display: true
   ShowUser: Yes
 }
 { +Item Id: 1019, Name: ToxicLiquid, Ref: TradingGoodsTemplate
   Info: A stringy liquid collected from mutated alien robot parts.
-  MarketPrice: 10
+  MarketPrice: 10, display: true
   ShowUser: Yes
 }
 { +Item Id: 1020, Name: AlphaVirus, Ref: TradingGoodsTemplate
-  MarketPrice: 10
+  MarketPrice: 10, display: true
   ShowUser: Yes
 }
 { +Item Id: 1021, Name: Tablet, Ref: TradingGoodsTemplate
-  MarketPrice: 10
+  MarketPrice: 10, display: true
   Info: An electronic tablet, display: true
   ShowUser: Yes
 }
@@ -12826,7 +12830,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 85, display: true
+  MarketPrice: 10, display: true
 }
 { +Item Id: 1052, Name: ReportTransportationData, Ref: ReportsTemplate
   CustomIcon: KeyCardBlack
@@ -12844,7 +12848,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   CustomIcon: KeyCardBlack
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 275, display: true
+  MarketPrice: 1275, display: true
 }
 # == Reports Science 60%
 { +Item Id: 1060, Name: ReportScienceRawData, Ref: ReportsTemplate #LegacyEnergyCore
@@ -12869,7 +12873,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   CustomIcon: KeyCardGreen
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 85, display: true
+  MarketPrice: 185, display: true
 }
 { +Item Id: 1064, Name: ReportAnomalousData, Ref: ReportsTemplate
   CustomIcon: KeyCardGreen
@@ -12919,7 +12923,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 50, display: true
+  MarketPrice: 125, display: true
 }
 { +Item Id: 1082, Name: ReportSpaceAnomality, Ref: ReportsTemplate
   CustomIcon: KeyCardYellow
@@ -12931,7 +12935,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   CustomIcon: KeyCardYellow
   Info: bkiReportsGlobalInfo, display: true
   ShowUser: Yes
-  MarketPrice: 7500, display: true
+  MarketPrice: 5200, display: true
 }
 { +Item Id: 1084, Name: ReportWeaponSignatures, Ref: ReportsTemplate #T3 LaserSentryGun
   CustomIcon: KeyCardYellow
@@ -13382,6 +13386,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Category: Medical
   CustomIcon: EnergyPills
   StackSize: 4000
+  MarketPrice: 36, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -13404,6 +13409,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Category: Medical
   CustomIcon: EnergyPills
   StackSize: 100
+  MarketPrice: 45, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -13423,6 +13429,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Info: Take this cyphered tablet to Admiral Kara Yarr on Haven Station, display: true
   Category: Weapons/Items
   CustomIcon: Tablet
+  MarketPrice: 1, display: true
   ShowUser: Yes
 }
 
@@ -13433,6 +13440,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Category: Food
   CustomIcon: HotBeverage
   StackSize: 2000
+  MarketPrice: 80, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -13454,6 +13462,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Info: The Flamekeepers weapon is damaged beyond repair. This tablet will access the computer panel that might have a clue about his spare Flamethrowers., display: true
   Category: Weapons/Items
   CustomIcon: Tablet
+  MarketPrice: 15000, display: true
   ShowUser: Yes
 }
 
@@ -13795,6 +13804,27 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Buff_chance: 0.1
   }
 }
+{ +Item Id: 1485, Name: BlackCoffee, Ref: FoodTemplate
+  Mass: 0.5, type: float, display: true, formatter: Kilogram
+  Volume: 0.5, type: float, display: true, formatter: Liter
+  MarketPrice: 20, display: true
+  Info: bkiConsumable, display: true
+  CustomIcon: HotBeverage
+  Category: Food
+  StackSize: 2000
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 20
+    AddStamina: 90, display: StaminaValue
+    AddFood: -2, display: FoodValue
+    AddOxygen: 0
+    AddTemperature: 4, display: TemperatureValue
+    Debuff: "Hangover,EndoParasite", display: EffectiveAgainst 
+    SfxBegin: UseActions/playerDrinking
+  }
+}
 #Required to craft Havenopolis Food Items
 { +Item Id: 1499, Name: HavenopolisRecipe, Ref: KeysTemplate
   CustomIcon: Tablet
@@ -13803,28 +13833,6 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   ShowUser: Yes
   MarketPrice: 15, display: true
 }
-
-# Breaks Save Game or just kills player
-#{ +Item Id: 1499, Name: ExpiredEmergencyRations, Ref: FoodTemplate
-#  CustomIcon: EmergencyRations
-#  Category: Food
-#  Mass: 0.3, type: float, display: true, formatter: Kilogram
-#  Volume: 0.50, type: float, display: true, formatter: Liter
-#  Info: bkiIngredient, display: true
-#  ShowUser: Yes
-#  { Child 0
-#    Class: Eat
-#    ROF: 1, type: float
-#    AddHealth: 25, display: HealthValue
-#    AddStamina: 50, display: StaminaValue
-#    AddFood: 150, display: FoodValue
-#    AddOxygen: 0
-#    Buff: Indigestion
-#    Buff_chance: 0.1
-#    AddRadiation: 0.5, display: RadiationValue
-#    SfxBegin: UseActions/playerEatingCrunchy
-#  }
-#}
 
 # =============================================================================
 # TRANSCENDENCE WEAPONS
@@ -14352,7 +14360,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Automatic: true
     Buff: "Stunned, ImmunityBoosterII"
     Buff_chance: "0.2,0.3"
-    Damage: 50, display: true
+    Damage: 75, display: true
     BlastDamage: 50, display: true
     AmmoCapacity: 32, display: true
     AmmoType: LaserArrows, display: true
@@ -14374,9 +14382,9 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 	
     DamageMultiplier_1: 5, param1: head, display: DmgMultiplierHead  
     DamageMultiplier_2: 1.5, param1: dirt|stone|rock|wood|hullarmored|hullcombat
-    DamageMultiplier_3: 3.0, param1: shield
+    DamageMultiplier_3: 1, param1: shield
     BlastDamageMultiplier_1: 2, param1: head, display: DmgMultiplierHead
-    BlastDamageMultiplier_2: 2, param1: wood|woodblock|plastic
+    BlastDamageMultiplier_2: 1, param1: wood|woodblock|plastic
     BlastDamageMultiplier_3: 0, param1: dirt|stone|rock
     BlastDamageMultiplier_4: 1.5, param1: concrete|hull|hullarmored|hullcombat|metal|metalhard
     BlastDamageMultiplier_5: 0, param1: shield 
@@ -14389,10 +14397,10 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     ZoomIn: 10
   }
 
-    UnlockCost: 2
-    UnlockLevel: 3
-    TechTreeParent: Pistol
-    TechTreeNames: Weapons 
+  UnlockCost: 2, display: true
+  UnlockLevel: 5, display: true
+  TechTreeParent: WoodAmmoBox
+  TechTreeNames: Talon
 }
 { +Item Id: 1613, Name: LaserArrows
   Meshfile: Entities/Items/Weapons/Projectiles/CrossbowBoltPrefab
@@ -14402,7 +14410,9 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Material: human
   HoldType: 0
   Canhold: false
-  StackSize: 2000
+  StackSize: 256
+  Mass: 0.15, type: float, display: true, formatter: Kilogram
+  Volume: 0.12, type: float, display: true, formatter: Liter
   Info: bkiAmmo, display: tru
   Category: Weapons/Items
   ShowUser: Yes
@@ -14669,6 +14679,75 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     BlastDamageMultiplier_6: 0.5, param1: human
   }
 }
+#Need T2 LaserCrossbow variant
+{ +Item Id: 1619, Name: LaserCrossbowT2
+  Meshfile: Entities/Items/Weapons/Crossbow/TalonCrossbowPlayerPrefab
+  CustomIcon: TalonCrossbowWeaponCharged 
+  PickupToToolbar: true
+  Material: metalweapon
+  MarketPrice: 420, display: true
+  HoldType: 15
+  StackSize: 1
+  Category: Weapons/Items
+  ShowUser: Yes
+  Info: A rudimentary laser cross bow, display: true
+  Mass: 22, type: float, display: true, formatter: Kilogram
+  Volume: 25, type: float, display: true, formatter: Liter
+  Durability: 500, display: false
+  DegradationProb: 0.525, type: float, display: false
+  OverrideTradingConstraints: true
+  SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
+  { Child 0
+    Class: Ranged
+    AllowRemote: false  
+    ROF: 2, type: float, display: true, formatter: ROF
+    Range: 250, display: true
+    IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
+    Automatic: true
+    Buff: "Stunned, ImmunityBoosterII"
+    Buff_chance: "0.2,0.3"
+    Damage: 125, display: true
+    BlastDamage: 75, display: true
+    AmmoCapacity: 32, display: true
+    AmmoType: LaserArrows, display: true
+    NoiseStrength: 50, display: false 
+    CameraShake: 0
+    Recoil: 0, display: true
+    BulletSpread: 0.03, display: true
+    ReloadDelay: 0.5, display: true
+    ParticleTransform: Muzzle/Particle1
+    SfxBegin: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_start
+    SfxLoop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_loop
+    SfxStop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_end
+    SfxNoAmmo: Weapons/Misc/G36DryFire
+    SfxReload: Weapons/Player/Reload/RifleReloadNormal
+    PfxMuzzle: SniperMuzzleLaserBlue
+    #Tracer: Weapons/Projectiles/TracerLaserShotBlue
+    Tracer: Weapons/Projectiles/TracerOrange1
+    TracerPerBullet: 1
+	
+    DamageMultiplier_1: 5, param1: head, display: DmgMultiplierHead  
+    DamageMultiplier_2: 1.5, param1: dirt|stone|rock|wood|hullarmored|hullcombat
+    DamageMultiplier_3: 2.0, param1: shield
+    BlastDamageMultiplier_1: 2, param1: head, display: DmgMultiplierHead
+    BlastDamageMultiplier_2: 2, param1: wood|woodblock|plastic
+    BlastDamageMultiplier_3: 0, param1: dirt|stone|rock
+    BlastDamageMultiplier_4: 1.5, param1: concrete|hull|hullarmored|hullcombat|metal|metalhard
+    BlastDamageMultiplier_5: 0, param1: shield 
+    BlastDamageMultiplier_6: 2, param1: human     
+  }
+  { Child 1
+    Class: Zoom
+    ZoomOverlay: Entities/Items/Weapons/SniperScopes/ScopeNew02
+    ZoomOut: 40
+    ZoomIn: 10
+  }
+
+  UnlockCost: 4, display: true
+  UnlockLevel: 7, display: true
+  TechTreeParent: LaserCrossbow
+  TechTreeNames: Talon
+}
 #===============================================================================
 #Transcendence121 Compressed Ingots System for easy storage and trading. 
 #===============================================================================
@@ -14840,6 +14919,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Material: metalweapon
   HoldType: 16
   StackSize: 1
+  MarketPrice: 2500000, display: true 
   Category: Weapons/Items
   Mass: 1, type: float, display: true, formatter: Kilogram
   Volume: 1, type: float, display: true, formatter: Liter

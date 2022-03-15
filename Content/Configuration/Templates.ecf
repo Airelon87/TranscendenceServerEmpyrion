@@ -5267,8 +5267,8 @@
 /* templates so some items can be recycled */
 { +Template Name: AutoMinerCore
   DeconOverride: Continue
-  CraftTime: 200
-  Target: ""
+  CraftTime: 30
+  Target: "LargeC,AdvC"
   { Child Inputs
     SteelPlate: 10
     GoldIngot: 5
@@ -5279,7 +5279,7 @@
 }
 { +Template Name: SmallOptronicBridge
   BaseItem: true 
-  CraftTime: 600
+  CraftTime: 60
   Target: "AdvC"
   { Child Inputs
     SteelPlate: 10
@@ -5290,7 +5290,7 @@
 }
 { +Template Name: SmallOptronicMatrix
   BaseItem: true 
-  CraftTime: 900
+  CraftTime: 90
   Target: "AdvC"
   { Child Inputs
     SteelPlate: 10
@@ -5301,7 +5301,7 @@
 }
 { +Template Name: LargeOptronicBridge
   BaseItem: true 
-  CraftTime: 600
+  CraftTime: 60
   Target: "AdvC"
   { Child Inputs
     SteelPlate: 30
@@ -5312,7 +5312,7 @@
 }
 { +Template Name: LargeOptronicMatrix
   BaseItem: true 
-  CraftTime: 900
+  CraftTime: 90
   Target: "AdvC"
   { Child Inputs
     SteelPlate: 30
@@ -5362,9 +5362,11 @@
 
 { +Template Name: LaserKit
   CraftTime: 2
-  Target: ""
+  Target: "AdvC"
   { Child Inputs
-    ZascosiumAlloy: 5
+    AluminiumCoil: 3
+    Optronics: 1
+    ScienceEquipment: 1
   }
 }
 
@@ -5395,15 +5397,247 @@
 #=================================================
 #Transcendence Unique Items
 #=================================================
-{ +Template Name: TalonCrossbowPlayer
-  OutputCount: 1
-  CraftTime: 16 
-  Target: "AdvC"
+{ +Template Name: DecoTribalBlocks
+  OutputCount: 3
+  DeconOverride: Continue
+  CraftTime: 24
+  Target: "SurvC,BaseC,LargeC,AdvC"
   { Child Inputs
-    LaserCrossbow: 1
-    Optronics: 2
-    LaserKit: 1
+    WoodPlanks: 5
     ReportExplorationRawData: 1
+  }
+}
+
+{ +Template Name: StatueOfGravity
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 36
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 2
+    Cement: 27
+    PlatinOunce: 10
+    LuxuryGoods: 6
+    ReportArcheologicalData: 1
+  }
+}
+
+{ +Template Name: BoatOfDirection
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 36
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 3
+    WoodPlanks: 27
+    RCSBlockMS: 1
+  }
+}
+
+{ +Template Name: CanoeOfDirection
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 24
+  Target: "SmallC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 2
+    WoodPlanks: 9
+    RCSBlockGV: 1
+  }
+}
+
+{ +Template Name: LargeTorchOfFaith
+  OutputCount: 2
+  DeconOverride: Continue
+  CraftTime: 24 
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    WoodPlanks: 4
+    PlatinBar: 2
+  }
+}
+
+{ +Template Name: TorchOfFaith
+  OutputCount: 4
+  DeconOverride: Continue
+  CraftTime: 24 
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    WoodPlanks: 2
+    PlatinBar: 1
+  }
+}
+
+{ +Template Name: ShamansBookcase
+  OutputCount: 3
+  DeconOverride: Continue
+  CraftTime: 24 
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    PentaxidCrystal: 5
+    WoodPlanks: 18
+  }
+}
+
+{ +Template Name: TribalArmorAnvil
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 36 
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    IronIngot: 64
+    WoodPlanks: 12
+  }
+}
+
+{ +Template Name: SmallArmorAnvil
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 24 
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    IronIngot: 16
+    WoodPlanks: 3
+  }
+}
+
+{ +Template Name: WoodAmmoBox
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 12 
+  Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    SteelPlate: 2
+    WoodPlanks: 6
+  }
+}
+
+{ +Template Name: EmberOfEternalFlame
+  OutputCount: 4
+  DeconOverride: Continue
+  CraftTime: 24 
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 2
+    RockDust: 20
+    WoodPlanks: 18
+    ReportArcheologicalData: 1
+  }
+}
+
+{ +Template Name: LargeEmberOfEternalFlame
+  OutputCount: 2
+  DeconOverride: Continue
+  CraftTime: 24 
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 2
+    RockDust: 20
+    WoodPlanks: 18
+    ReportArcheologicalData: 1
+  }
+}
+
+{ +Template Name: LoomOfPentaxid
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 36 
+  Target: "SmallC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    PlatinOunce: 4
+    Fiber: 11
+    WoodPlanks: 3
+    ReportExplorationRawData: 1
+  }
+}
+
+{ +Template Name: AlchemyGenerator
+  OutputCount: 2
+  DeconOverride: Continue
+  CraftTime: 24 
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    Chemicals: 4
+    MutatedSubstance: 5
+    WaterJug: 2
+    IronIngot: 4
+    ReportExplorationRawData: 1
+  }
+}
+
+{ +Template Name: AlchemyGeneratorMS
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 24 
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    Chemicals: 6
+    MutatedSubstance: 7
+    WaterJug: 3
+    IronIngot: 8
+    ReportExplorationRawData: 1
+  }
+}
+
+{ +Template Name: TalonStarionFish
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 16 
+  Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    WoodPlanks: 4
+    WaterJug: 2
+    AluminiumCoil: 1
+    ReportBiologicalData: 1
+  }
+}
+
+{ +Template Name: TribalFuelBarrels
+  OutputCount: 3
+  DeconOverride: Continue
+  CraftTime: 30 
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 1
+    WoodPlanks: 32
+    ReportExplorationRawData: 1
+  }
+}
+
+{ +Template Name: RelicOfTalonish
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 240 
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 2
+    RockDust: 32
+    AluminiumCoil: 4
+    ReportArcheologicalData: 1
+  }
+}
+
+{ +Template Name: OvenOfSpaceTime
+  OutputCount: 1
+  DeconOverride: Continue
+  CraftTime: 90 
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    AncientRelics: 2
+    AluminiumCoil: 4
+    WoodLogs: 16
+    RockDust: 42
+    PentaxidElement: 8
+    ReportArcheologicalData: 1
   }
 }
 
@@ -5841,8 +6075,8 @@
   Target: "FoodP"
   { Child Inputs
     NutrientSolution: 1
-    PromethiumPellets: 10
-    MutatedSubstance: 50
+    PromethiumPellets: 4
+    MutatedSubstance: 5
     WaterJug: 1
   }
 }
@@ -5889,7 +6123,7 @@
 
 { +Template Name: SpareParts
   BaseItem: true #A1
-  OutputCount: 3
+  OutputCount: 4
   CraftTime: 15
   Target: "SmallC,HoverC,LargeC,AdvC"
   { Child Inputs
@@ -6015,7 +6249,7 @@
     CapacitorComponent: 2
     MechanicalComponents: 4
     WarbotNanotubes: 1
-    AlienTooth: 2
+    Leather: 7
     PlatinBar: 10
     ReportAnomalousData: 1
   }
@@ -6035,7 +6269,7 @@
   }
 } 
 
-#{ +Template Name: WarbotSlotArmor
+#{ +Template Name: WarbotSlotArmor #Can now only be looted
 #  DeconOverride: Stop
 #  OutputCount: 1
 #  CraftTime: 120
@@ -6055,8 +6289,8 @@
   CraftTime: 30
   Target: "FoodP"
   { Child Inputs
-    GoldIngot: 8
-    PlatinOunce: 2
+    GoldIngot: 1
+    PlatinOunce: 1
     MoneyCard: 2
     ATM: 1
     ReportBiologicalData: 1
@@ -6071,8 +6305,8 @@
   CraftTime: 30
   Target: "FoodP"
   { Child Inputs
-    PentaxidElement: 30
-  	NutrientSolution: 2
+    PentaxidCrystal: 6
+  	NutrientSolution: 1
     ReportBiologicalData: 1
     ReportPlanetaryResourceData: 1
   }
@@ -6139,12 +6373,34 @@
 
 { +Template Name: LaserCrossbow 
   DeconOverride: Stop
-  CraftTime: 30
-  Target: "SmallC,HoverC,BaseC,SurvC"
+  CraftTime: 20
+  Target: "SmallC,HoverC,BaseC,SurvC,LargeC,AdvC"
   { Child Inputs
     WoodLogs: 3
-    Fiber: 3
+    Leather: 2
     IronOre: 6
+  }
+}
+
+{ +Template Name: LaserCrossbowT2 
+  OutputCount: 1
+  CraftTime: 16 
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    LaserCrossbow: 1
+    Leather: 4
+  }
+}
+
+
+{ +Template Name: TalonCrossbowPlayer
+  OutputCount: 1
+  CraftTime: 16 
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    LaserCrossbowT2: 1
+    Leather: 6
+    LaserKit: 1
   }
 }
 
@@ -6444,12 +6700,22 @@
 }
 
 #Havenopolis SpecialFoodTemplates
-# ScrambledEggs, HamScramble, CandyBar, FireFlyBaguette, SpikyShroomPizza, GroundRoachSalami, RootBuds, Raktajino, BlueberryCornDog, BerryCola, GrilledVegetables
+# BlackCoffee, ScrambledEggs, HamScramble, CandyBar, FireFlyBaguette, SpikyShroomPizza, GroundRoachSalami
+# RootBuds, Raktajino, BlueberryCornDog, BerryCola, GrilledVegetables
 # Each Require HavenopolisRecipe to craft in FoodP
+{ +Template Name: BlackCoffee
+  CraftTime: 2
+  OutputCount: 2
+  Target: "FoodP,SurvC,SmallC,HoverC,BaseC"
+  { Child Inputs
+    NaturalStimulant: 4
+    WaterBottle: 1 
+  }
+}
 { +Template Name: ScrambledEggs
   CraftTime: 6
   OutputCount: 1
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     Egg: 3
   }
@@ -6457,7 +6723,7 @@
 { +Template Name: HamScramble
   CraftTime: 12
   OutputCount: 2
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     ScrambledEggs: 1
     HavenopolisRecipe: 1
@@ -6476,7 +6742,7 @@
 { +Template Name: SpikyShroomPizza
   CraftTime: 12
   OutputCount: 2
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     Pizza: 1
     MushroomSpiky: 1
@@ -6486,7 +6752,7 @@
 { +Template Name: FireFlyBaguette
   CraftTime: 14
   OutputCount: 3
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     Bread: 1
     HavenopolisRecipe: 1
@@ -6495,7 +6761,7 @@
 { +Template Name: GroundRoachSalami
   CraftTime: 18
   OutputCount: 3
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     Salami: 3
     HavenopolisRecipe: 1
@@ -6504,7 +6770,7 @@
 { +Template Name: RootBuds
   CraftTime: 18
   OutputCount: 3
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     Buds: 1
     Varonroot: 1
@@ -6514,7 +6780,7 @@
 { +Template Name: Raktajino
   CraftTime: 2
   OutputCount: 3
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     HotBeverage: 2 
     HavenopolisRecipe: 1
@@ -6523,7 +6789,7 @@
 { +Template Name: BlueberryCornDog
   CraftTime: 12
   OutputCount: 6
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     PhoenixFernFonds: 2
     Berries: 1
@@ -6534,7 +6800,7 @@
 { +Template Name: BerryCola
   CraftTime: 12
   OutputCount: 3
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     EnergyDrink: 1
     BerryJuice: 1 
@@ -6544,7 +6810,7 @@
 { +Template Name: GrilledVegetables
   CraftTime: 12
   OutputCount: 3
-  Target: FoodP
+  Target: "FoodP,SmallC,HoverC,BaseC"
   { Child Inputs
     TrumpetGreens: 3
   }

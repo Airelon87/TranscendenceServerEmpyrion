@@ -128,7 +128,8 @@
   SfxClose: UseActions/stone_open_close
 
   { Child Items
-    Name_0: WoodLogs, param1: 0.9, param2: "5,15"    
+    Name_0: WoodLogs, param1: 0.9, param2: "5,15"  
+    Name_1: ReportBiologicalData, param1: 0.7, param2: 1  
     Group_0: Seeds, param1: 0.6
     Group_1: Biological01, param1: 0.6
   }
@@ -147,8 +148,12 @@
     Name_2: PowerBar, param1: 0.2, param2: "1,2"
     Name_3: Bandages, param1: 0.3, param2: "1,2"
     Name_4: HerbalLeaves, param1: 0.3, param2: "1,2"
-  #  Name_5: PentaxidOre, param1: 0.02, param2: "1,2"
-  #  Name_6: MoneyCard, param1: 0.05, param2: "10,20"
+    Name_5: ReportExplorationRawData, param1: 0.05, param2: 1
+    Name_6: ReportArcheologicalData, param1: 0.05, param2: 1
+    Name_7: LaserCrossbow, param1: 0.1, param2: 1
+    Name_8: LaserArrows, param1: 0.1, param2: "3,7"
+    Name_9: RootBuds, param1: 0.1, param2: "2,4"
+    Name_10: GoldCoins, param1: 0.1, param2: "2,4"
 
     Group_0: Sprouts, param1: 0.3
   }
@@ -163,7 +168,7 @@
 
   { Child Items
     Name_0: Meat, param2: "1,2"
-  #  Name_1: PlantProtein, param1: 0.3, param2: "1,2"
+    Name_1: PlantProtein, param1: 0.3, param2: "1,2"
     Name_2: Egg, param1: 0.6, param2: "1,2"
   }
 }
@@ -177,6 +182,7 @@
   { Child Items
     Name_0: Meat, param2: "1,2"
     Name_1: Egg, param1: 0.6, param2: "1,2"
+    Name_2: TrumpetGreens, param1: 0.2, param2: "1,2"
   }
 }
 
@@ -311,6 +317,7 @@
   { Child Items
     Name_0: Meat, param1: 1, param2: "2,3"
     Name_1: Milk, param1: 0.9, param2: "1,2"
+    Name_2: TrumpetGreens, param1: 0.2, param2: "1,2"
   }
 }
 
@@ -326,6 +333,7 @@
     Name_1: PentaxidCrystal, param1: 0.3, param2: 1
 	  Name_2: PentaxidSeedCrystal, param1: 0.2, param2: 1
 	  Name_3: MutatedSubstance, param1: 0.2, param2: 1
+	  Name_4: ReportWarpSignatures, param1: 0.1, param2: 1
   }
 }
 
@@ -443,9 +451,10 @@
     Name_0: LuxuryGoods, param1: 0.1, param2: "1,2"
     Name_1: AlienTooth, param1: 0.5, param2: "2,3"
     Name_2: Nanites, param1: 0.2, param2: "2,4"
-    Name_3: ImmunityBoosterPill, param1: 0.2, param2: "2,8"
-    Name_4: NaniteChlorophyllInfusion, param1: 0.05, param2: "1,2"
+    Name_3: ImmunityBoosterPill, param1: 0.1, param2: "2,8"
+    Name_4: NaniteChlorophyllInfusion, param1: 0.1, param2: "1,2"
     Group_0: Biological01, param1: 0.5
+    Group_1: Reports, param1: 0.05
   }
 }
 
@@ -477,8 +486,11 @@
     Name_0: Meat, param1: 0.8, param2: "2,3"
     Name_1: AlienParts02, param1: 0.5, param2: "1,2"
     Name_2: AlienTooth, param1: 0.5, param2: "1,2"
-	  Name_3: AlienOrganism, param1: 0.1, param2: "1,2"
-	  Name_4: MutatedSubstance, param1: 0.1, param2: 1
+	  Name_3: AlienOrganism, param1: 0.2, param2: "1,2"
+	  Name_4: MutatedSubstance, param1: 0.2, param2: 1
+	  Name_5: ReportBiologicalData, param1: 0.1, param2: 1
+	  Name_6: TrumpetGreens, param1: 0.1, param2: "1,2"
+	  Name_7: Leather, param1: 0.1, param2: "1,2"
     Group_0: Seeds, param1: 0.1
     # Group_1: FoodItems, param1: 0.2
   }
@@ -494,6 +506,7 @@
   { Child Items
     Name_0: Meat, param1: 1, param2: "3,4"
     Name_1: Egg, param1: 0.6, param2: "1,2"
+    Name_2: Leather, param1: 0.2, param2: "1,2"
   }
 }
 
@@ -507,6 +520,7 @@
 
   { Child Items
     Name_0: Meat, param1: 0.6, param2: 1
+    Name_1: Leather, param1: 0.1, param2: 1
   }
 }
 
@@ -540,6 +554,7 @@
     Name_2: AlienTooth, param1: 0.3, param2: "2,3"
 	  Name_3: MutatedSubstance, param1: 0.2, param2: 1
     Name_4: ReportBiologicalData, param1: 0.05, param2: 1
+    Name_5: GroundRoachSalami, param1: 0.05, param2: 1
   }
 }
 
@@ -565,11 +580,12 @@
   SfxClose: UseActions/ContainerClose
 
   { Child Items
-    Name_0: ArmorMediumEpic, param1: 0.3, param2: 1
+    Name_0: ArmorHeavyEpic, param1: 0.3, param2: 1
     Name_1: DrillEpic, param1: 0.3, param2: 1
     Name_2: LegacyEnergyCore, param1: 0.2, param2: 1
     Name_3: WarbotNanotubes, param1: 0.2, param2: 1
-    Group_0: Reports, param1: 0.02
+    Name_4: RelicOfTalonish, param1: 0.2, param2: 1
+    Group_0: Reports, param1: 0.1
   }
 }
 
@@ -632,7 +648,10 @@
     Name_11: SiliconIngot, param1: 0.9, param2: "100,125"
     Name_12: IronIngot, param1: 0.9, param2: "125,150"
     Name_13: ReportMaterialData, param1: 0.03, param2: 1
-    Name_14: ReportScienceRawData, param1: 0.01, param2: 1
+    Name_14: ReportScienceRawData, param1: 0.03, param2: 1
+    Name_15: CandyBar, param1: 0.03, param2: "1,3"
+    Name_16: AluminiumCoil, param1: 0.1, param2: "2,4"
+    Name_17: AncientRelics, param1: 0.05, param2: 1
 	
     Group_0: MedicalItems, param1: 1
     Group_1: WeaponsBasic, param1: 0.8
@@ -709,6 +728,7 @@
     Group_3: DevicesCVVeryRare, param1: 0.1
     Group_4: WeaponsVeryRare, param1: 0.1
     Group_5: LootGoldCoins, param1: 0.1
+    Group_6: TalonRelics, param1: 0.1
   }
 } */
 
@@ -738,11 +758,11 @@
     Name_15: SmallOptronicMatrix, param1: 0.07, param2: "2,3"
     Name_16: LargeOptronicBridge, param1: 0.05, param2: "2,3"
     Name_17: LargeOptronicMatrix, param1: 0.03, param2: "2,3"
-    Name_18: Leather, param1: 0.01, param2: "2,3"
+    Name_18: Leather, param1: 0.01, param2: "1,2"
 	
     Group_0: WeaponsRare, param1: 0.1
     Group_1: WeaponsRareKit, param1: 0.09
-    Group_2: Reports, param1: 0.05
+    Group_2: Reports, param1: 0.2
   }
 }
 
@@ -762,13 +782,14 @@
     Name_5: LargeOptronicMatrix, param1: 0.2, param2: "1,2"
     Name_6: PlasmaCannonAlien, param1: 0.02, param2: 1
     Name_7: TalonCrossbowPlayer, param1: 0.05, param2: 1
-    Name_8: AlphaVirus, param1: 0.01, param2: 1
+    Name_8: Leather, param1: 0.01, param2: 1
     Name_9: LegacyEnergyCore, param1: 0.01, param2: 1
 	
-    Group_0: WeaponsEpic, param1: 0.5
+    Group_0: WeaponsEpic, param1: 0.3
     Group_1: WeaponsRare, param1: 0.3
-    Group_2: WeaponsRareKit, param1: 0.1
-    Group_3: Reports, param1: 0.05
+    Group_2: WeaponsRareKit, param1: 0.2
+    Group_3: Reports, param1: 0.1
+    Group_4: TalonRelics, param1: 0.1
   }
 }
 
@@ -888,11 +909,12 @@
     Name_1: SmallOptronicMatrix, param1: 0.07, param2: 1
     Name_2: LargeOptronicBridge, param1: 0.05, param2: 1
     Name_3: LargeOptronicMatrix, param1: 0.03, param2: 1
-    Name_4: AutoMinerCore, param1: 0.2, param2: "1,2"	
+    Name_4: AutoMinerCore, param1: 0.3, param2: "1,2"	
     Name_5: Nanites, param1: 0.3, param2: "20,50"
 
-    Group_0: Reports, param1: 0.05
+    Group_0: Reports, param1: 0.1
     Group_1: WeaponsEpic, param1: 0.5
+    Group_2: TalonRelics, param1: 0.1
   }
 }
 ## Very Common NOT USED ATM 
@@ -944,7 +966,8 @@
     Name_15: MobilityBoost, param1: 0.01, param2: 1
     Name_16: RadiationBoost, param1: 0.01, param2: 1
     Name_17: EVABoost, param1: 0.025, param2: 1
-    Name_18: ArmorLightEpic, param1: 0.01, param2: 1
+    Name_18: BlackCoffee, param1: 0.1, param2: 1
+    Name_19: ArmorLightEpic, param1: 0.01, param2: 1
 
     Group_0: WeaponsBasicKit, param1: 0.2
     Group_1: Reports, param1: 0.06
@@ -966,9 +989,9 @@
     Name_5: RespiratorCharge, param1: 0.2, param2: "1,2"
     Name_6: DrillCharge, param1: 0.2, param2: 1
     Name_7: MultiCharge, param1: 0.2, param2: 1
-    # Name_8: Drill, param1: 0.1, param2: 1
+    Name_8: LaserCrossbowT2, param1: 0.1, param2: 1
     Name_9: Chainsaw, param1: 0.1, param2: 1
-    Name_10: Flashlight, param1: 0.1, param2: 1
+    Name_10: LaserArrows, param1: 0.1, param2: "10,15"
     Name_11: MultiTool, param1: 0.1, param2: 1
     Name_12: ShotgunShells, param1: 0.3, param2: "5,10"
     Name_13: 5.8mmBullet, param1: 0.3, param2: "8,10"
@@ -1071,7 +1094,7 @@
     Name_16: Vegetables, param1: 0.3, param2: "1,2"
     Name_17: Fiber, param1: 0.3, param2: "1,2"
     Name_18: Spice, param1: 0.3, param2: "1,2"
-    Name_19: TalonCrossbowPlayer, param1: 0.05, param2: 1
+    Group_0: TalonRelics, param1: 0.2
   }
 }
 ## Repository 1 Level4Prop2 
@@ -1454,7 +1477,7 @@
     Name_14: Sandwich, param1: 0.2, param2: 1
     Name_15: Ratatouille, param1: 0.3, param2: 1
     Name_16: Waffles, param1: 0.4, param2: 1
-  #  Name_17: PumpkinCookie, param1: 0.4, param2: 1
+    Name_17: BlackCoffee, param1: 0.3, param2: 1
     Name_18: PowerBar, param1: 0.4, param2: 1
     Name_19: Narcotics, param1: 0.4, param2: 1
     Name_20: Cereals, param1: 0.5, param2: 1
@@ -1471,12 +1494,12 @@
   { Child Items    
     Name_0: Stew, param1: 0.2, param2: 1
     Name_1: Milk, param1: 0.5, param2: 1
-  #  Name_2: CannedVegetables, param1: 0.3, param2: 1
-  #  Name_3: CannedMeat, param1: 0.2, param2: 1
+    Name_2: FireFlyBaguette, param1: 0.1, param2: 1
+    Name_3: CandyBar, param1: 0.1, param2: 1
     Name_4: Salami, param1: 0.4, param2: 1
     Name_5: Steak, param1: 0.4, param2: 1
-  #  Name_6: Bread, param1: 0.4, param2: 1
-  #  Name_7: Ribs, param1: 0.4, param2: 1
+    Name_6: RootBuds, param1: 0.1, param2: 1
+    Name_7: ScrambledEggs, param1: 0.2, param2: 1
     Name_8: VeggieBurger, param1: 0.3, param2: 1
     Name_9: Cheese, param1: 0.4, param2: 1
     Name_10: FriedVegetables, param1: 0.4, param2: 1
@@ -1486,9 +1509,9 @@
     Name_14: Sandwich, param1: 0.2, param2: 1
     Name_15: Ratatouille, param1: 0.3, param2: 1
     Name_16: Waffles, param1: 0.4, param2: 1
- #   Name_17: PumpkinCookie, param1: 0.4, param2: 1
+    Name_17: BlackCoffee, param1: 0.3, param2: 1
     Name_18: PowerBar, param1: 0.4, param2: 1
-  #  Name_19: FriedVegetables, param1: 0.4, param2: 1
+    Name_19: GrilledVegetables, param1: 0.1, param2: 1
     Name_20: Cereals, param1: 0.5, param2: 1
     Name_21: FruitPie, param1: 0.4, param2: 1
   }
