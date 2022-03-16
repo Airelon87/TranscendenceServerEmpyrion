@@ -19706,7 +19706,7 @@
   MarketPrice: 600000, display: true
   #Model: @models/Blocks/Misc/CoreBlockPlayerPrefab
   IsUsingCPUSystem: false
-  Info: This incredible core provides infinite cpu power. It cannot be salvaged once placed for its original components., display: true
+  Info: This incredible core provides infinite cpu power. It cannot be salvaged once placed for its original components. CPU extenders must be removed for core to function, display: true
   # AllowedInBlueprint: false, display: true
   BlockColor: "0,220,220"
   EnergyIn: 700, type: int, display: true, formatter: Watt
@@ -33201,7 +33201,7 @@
 { Block Name: TribalFuelBarrels, Ref: FuelTankSV
   Material: woodblock
   CustomIcon: TribalBarrels
-  MarketPrice: 9785, display: true  
+  MarketPrice: 978, display: true  
   Model: @models2/Entities/Decorations/TribalAssets/TribalBarrelsPrefab
   SizeInBlocks: "1,1,1", display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true

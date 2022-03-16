@@ -1876,8 +1876,8 @@
   Item16: "MobilityBoostEpic, mf=1.2-1.6, 2-4, mf=0.5-0.7, 4-8"
 }
 
-{ Trader Name: TheInfamousGraveRobber
-  SellingText: "Hi, I am <NAME>\nI will trade with you the secrets of the galaxy.\nYou can pay with <PAYMENT>."
+{ Trader Name: GraveRobber
+  SellingText: "Hi, I am the infamous <NAME>\nI will trade with you the secrets of the galaxy.\nYou can pay with <PAYMENT>."
   SellingGoods: "trwSpecial"
   Discount: 0.25
   Item1: "WolfsCraterMaker, mf=1.1-4.5, 1-2, mf=0.6-0.8, 2-3"

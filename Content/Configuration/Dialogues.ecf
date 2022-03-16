@@ -8212,7 +8212,7 @@
 }
 { +Dialogue Name: TR_PirateLuxuryGoodGame_OfferThreeOne
   NPCName: "Syndicate Ring Dealer"
-  Output: "@w1 A worhtwhile amount of moneycards is now in your inventory. Thanks for doing business with the Syndicate."
+  Output: "@w1 A worthwhile amount of moneycards is now in your inventory. Thanks for doing business with the Syndicate."
   Execute_1: "RingMoney = Random(750,8000)"
   Execute_2: "AddItem('MoneyCard', RingMoney)"
   Execute_3: "RingMoney = 0"
@@ -9067,4 +9067,78 @@
 { +Dialogue Name: TR_Havenopolis_TradeWindow
   NPCName: "Havenopolis Citizen"
   Execute_1: "OpenTraderWindow()"
+}
+{ +Dialogue Name: TR_UnlockPoints
+  NPCName: "Haven Upgrade Society"
+  Variable_1: "UnlockPoints", param1: dbstate_int
+  Variable_2: "UnlockCount", param1: dbstate_int
+  Next_1: TR_UnlockPoints_GetValue
+}  
+{ +Dialogue Name: TR_UnlockPoints_GetValue
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "UnlockPoints = Player.UpgradePoints"
+  Execute_2: "UnlockCount = 0"
+  Next_1: TR_UnlockPoints_Menu
+}  
+{ +Dialogue Name: TR_UnlockPoints_Menu
+  NPCName: "Haven Upgrade Society"
+  Output: "@w1 Hows it going {PlayerName}? \n\n @w1 Would you like trade a valuable for unlock points? \n\n If you cancel in the middle of a trade, I cannot guarentee you will recieve any points and may lose your items."
+  Option_1: "I would like to make a trade for Unlock Points."
+  OptionNext_1: TR_UnlockPoints_Check
+  Option_2: "Show me my current unlock points"
+  OptionNext_2: TR_UnlockPoints_Show
+  Option_3: "I will pass"
+  OptionNext_3: End
+}
+{ +Dialogue Name: TR_UnlockPoints_Check
+  NPCName: "Haven Upgrade Society"
+  Output: "@w1 You can trade CacheKeys, DiamondRings, or a PlatinOunce for additional unlock points. \n\n You can currently earn {UnlockCount} points by cashing in. \n\n Do not exit the dialogue until you have completed all transactions."
+  Option_1: "I will trade this CacheKey for 3 Unlock Points"
+  OptionIf_1: "HasItem('Token', 1, 7238)"
+  OptionNext_1: TR_UnlockPoints_Token
+  Option_2: "I will trade this LuxuryGood for 2 Unlock Points"
+  OptionIf_2: "HasItem('LuxuryGoods', 1)"
+  OptionNext_2: TR_UnlockPoints_LuxuryGoods
+  Option_3: "I will trade this PlatinOunce for 1 Unlock Points"
+  OptionIf_3: "HasItem('PlatinOunce', 1)"
+  OptionNext_3: TR_UnlockPoints_PlatinOunce
+  Option_4: "I am ready to cash in for {UnlockCount} Unlock Points."
+  OptionNext_4: TR_UnlockPoints_Calculate
+}
+{ +Dialogue Name: TR_UnlockPoints_Token
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "RemoveItem('Token', 1, 7238)"
+  Execute_2: "UnlockCount = UnlockCount + 3"
+  Next_1: TR_UnlockPoints_Check
+}
+{ +Dialogue Name: TR_UnlockPoints_LuxuryGoods
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "RemoveItem('LuxuryGoods', 1)"
+  Execute_2: "UnlockCount = UnlockCount + 2"
+  Next_1: TR_UnlockPoints_Check
+}
+{ +Dialogue Name: TR_UnlockPoints_PlatinOunce
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "RemoveItem('PlatinOunce', 1)"
+  Execute_2: "UnlockCount = UnlockCount + 1"
+  Next_1: TR_UnlockPoints_Check
+}
+{ +Dialogue Name: TR_UnlockPoints_Calculate
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "UnlockPoints = UnlockPoints + UnlockCount"
+  Execute_2: "Player.UpgradePoints = UnlockPoints"
+  Next_1: TR_UnlockPoints_Show
+}
+{ +Dialogue Name: TR_UnlockPoints_Show
+  NPCName: "Haven Upgrade Society"
+  Output: "You have {UnlockPoints} ungrade points total. \n\n {UnlockCount} upgrade points were recently added to your profile. \n\n Do not exit, please press continue."
+  Option_1: "CONTINUE"
+  OptionNext_1: TR_UnlockPoints_GoodBye
+}
+{ +Dialogue Name: TR_UnlockPoints_GoodBye
+  NPCName: "Haven Upgrade Society"
+  Output: "@w1 Please check your tech tree for your new unlock points {PlayerName}. "
+  Execute_1: "UnlockCount = 0"
+  Option_1: "Thanks a bunch."
+  OptionNext_1: End
 }
