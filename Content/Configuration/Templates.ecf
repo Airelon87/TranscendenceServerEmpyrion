@@ -5781,8 +5781,8 @@
   Target: "AdvC"
   { Child Inputs
     CompressedPromethium: 3
-    AncientRelics: 3
-    Robotics: 7
+    AncientRelics: 5
+    Robotics: 5
     PlatinBar: 30
     AluminiumCoil: 25
     Coolant: 5
@@ -5797,8 +5797,6 @@
   Target: "AdvC"
   { Child Inputs
     CompressedPromethium: 2
-    AncientRelics: 2
-    Robotics: 5
     PlatinBar: 20
     AluminiumCoil: 15
     Coolant: 3
@@ -6414,6 +6412,16 @@
   }
 }
 
+{ +Template Name: Filters 
+  CraftTime: 10
+  OutputCount: 16
+  Target: "FoodP,SmallC,HoverC,BaseC,SurvC,LargeC,AdvC"
+  { Child Inputs
+    WoodLogs: 1
+    Chemicals: 1
+  }
+}
+
 { +Template Name: WarpDriveSVTeir2 
   CraftTime: 30
   OutputCount: 1
@@ -6461,14 +6469,14 @@
   }
 }
 
-#{ +Template Name: CompressedTitanium
-#  DeconOverride: Continue
-#  CraftTime: 20 
-#  Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
-#  { Child Inputs
-#    TitanRods: 50
-#  }
-#}
+{ +Template Name: CompressedTitanium
+  DeconOverride: Continue
+  CraftTime: 20 
+  Target: ""
+  { Child Inputs
+    TitanRods: 50
+  }
+}
 
 { +Template Name: CompressedMagnesium
   DeconOverride: Continue
@@ -6708,7 +6716,8 @@
   OutputCount: 2
   Target: "FoodP,SurvC,SmallC,HoverC,BaseC"
   { Child Inputs
-    NaturalStimulant: 4
+    NaturalStimulant: 3
+    Filters: 1
     WaterBottle: 1 
   }
 }

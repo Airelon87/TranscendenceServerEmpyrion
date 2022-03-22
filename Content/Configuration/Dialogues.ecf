@@ -7579,30 +7579,30 @@
 /* -------------By Airelon-------------------- */
 /* ------------------------------------------- */
 /* ------A Galaxy where nothing needs--------- */
-/* ------to make since if it is silly--------- */
-/* ------enough or tortures skilled noobs----- */
+/* ------to make sense if it is silly--------- */
+/* ------enough or tortures skilled newbs----- */
 /* ------------------------------------------- */
 { +Dialogue Name: TR_RecallProgram
   NPCName: "Haven OS Terminal"
-  Output: "@w2 User {PlayerName} Detected. Do you have a recalled or defective superior item? @w1 The item must be placed on your hotbar."
+  Output: "@w2 User {PlayerName} Detected. Do you have a recalled, unwanted, or defective superior item? \n\n @w1 The item must be placed on your hotbar."
   Option_1: "Yes, I have a Base Super Shield"
   OptionIf_1: "HasItem('ShieldGeneratorSuperBA', 1)"
   OptionNext_1: TR_RecallProgram_1
   Option_2: "Yes, I have a CV SuperShield"
   OptionIf_2: "HasItem('ShieldGeneratorSuperCV', 1)"
   OptionNext_2: TR_RecallProgram_2
-  Option_3: "Yes, I have an Epic Armor Boost"
-  OptionIf_3: "HasItem('ArmorBoostEpic', 1)"
+  Option_3: "Yes, I have a ShieldGeneratorSuperSV"
+  OptionIf_3: "HasItem('ShieldGeneratorSuperSV', 1)"
   OptionNext_3: TR_RecallProgram_3
-  Option_4: "Yes, I have an Epic Mobility Boost"
-  OptionIf_4: "HasItem('MobilityBoostEpic', 1)"
-  OptionNext_4: TR_RecallProgram_MobilityBoostEpic
-  Option_5: "Yes, I have an Epic Insulation Boost"
-  OptionIf_5: "HasItem('InsulationBoostEpic', 1)"
-  OptionNext_5: TR_RecallProgram_InsulationBoostEpic
-  Option_6: "Yes, I have an Epic Oxygen Boost"
-  OptionIf_6: "HasItem('OxygenBoostEpic', 1)"
-  OptionNext_6: TR_RecallProgram_OxygenBoostEpic
+  Option_4: "Yes, I have a RelicOfTalonish"
+  OptionIf_4: "HasItem('RelicOfTalonish', 1)"
+  OptionNext_4: TR_RecallProgram_4
+  Option_5: "Yes, I have a DetectorCVEpic"
+  OptionIf_5: "HasItem('DetectorCVEpic', 1)"
+  OptionNext_5: TR_RecallProgram_5
+  Option_6: "Yes, I have a TeleporterBAEpic"
+  OptionIf_6: "HasItem('TeleporterBAEpic', 1)"
+  OptionNext_6: TR_RecallProgram_6
   Option_7: "Exit Program"
   OptionNext_7: End
   Option_8: "I need to access Haven OS"
@@ -7612,48 +7612,51 @@
   NPCName: "Haven OS Terminal"
   Output: "@w3 Transaction processed."
   Execute_1: "RemoveItem('ShieldGeneratorSuperBA', 1)"
-  Execute_2: "AddItem('RawDiamond', 3)"
-  Execute_3: "AddItem('AncientRelics', 5)"
-  Execute_4: "AddItem('Robotics', 5)"
+  Execute_2: "AddItem('RawDiamond', 2)"
+  Execute_3: "AddItem('AncientRelics', 7)"
+  Execute_4: "AddItem('Robotics', 7)"
+  Execute_5: "AddItem('WarbotNanotubes', 1)"
   Next_1: TR_RecallProgram_Refund
 }
 { +Dialogue Name: TR_RecallProgram_2
   NPCName: "Haven OS Terminal"
   Output: "@w3 Transaction processed."
   Execute_1: "RemoveItem('ShieldGeneratorSuperCV', 1)"
-  Execute_2: "AddItem('RawDiamond', 3)"
+  Execute_2: "AddItem('RawDiamond', 1)"
   Execute_3: "AddItem('AncientRelics', 5)"
   Execute_4: "AddItem('Robotics', 5)"
+  Execute_5: "AddItem('WarbotNanotubes', 1)"
   Next_1: TR_RecallProgram_Refund
 }
 { +Dialogue Name: TR_RecallProgram_3
   NPCName: "Haven OS Terminal"
   Output: "@w3 Transaction processed."
-  Execute_1: "RemoveItem('ArmorBoostEpic', 1)"
+  Execute_1: "RemoveItem('ShieldGeneratorSuperSV', 1)"
+  Execute_2: "AddItem('RawDiamond', 1)"
+  Execute_3: "AddItem('WarbotNanotubes', 1)"
+  Next_1: TR_RecallProgram_Refund
+}
+{ +Dialogue Name: TR_RecallProgram_4
+  NPCName: "Haven OS Terminal"
+  Output: "@w3 Transaction processed."
+  Execute_1: "RemoveItem('RelicOfTalonish', 1)"
   Execute_2: "AddItem('RawDiamond', 1)"
   Next_1: TR_RecallProgram_Refund
 }
-{ +Dialogue Name: TR_RecallProgram_MobilityBoostEpic
+{ +Dialogue Name: TR_RecallProgram_5
   NPCName: "Haven OS Terminal"
   Output: "@w3 Transaction processed."
-  Execute_1: "RemoveItem('MobilityBoostEpic', 1)"
-  Execute_2: "AddItem('RawDiamond', 1)"
+  Execute_1: "RemoveItem('DetectorCVEpic', 1)"
+  Execute_2: "AddItem('WarbotNanotubes', 1)"
+  Execute_3: "AddItem('LuxuryGoods', 4)"
   Next_1: TR_RecallProgram_Refund
 }
-{ +Dialogue Name: TR_RecallProgram_InsulationBoostEpic
+{ +Dialogue Name: TR_RecallProgram_6
   NPCName: "Haven OS Terminal"
   Output: "@w3 Transaction processed."
-  Execute_1: "RemoveItem('InsulationBoostEpic', 1)"
-  Execute_2: "AddItem('Robotics', 7)"
-  Execute_3: "AddItem('LuxuryGoods', 10)"
-  Next_1: TR_RecallProgram_Refund
-}
-{ +Dialogue Name: TR_RecallProgram_OxygenBoostEpic
-  NPCName: "Haven OS Terminal"
-  Output: "@w3 Transaction processed."
-  Execute_1: "RemoveItem('OxygenBoostEpic', 1)"
-  Execute_2: "AddItem('Robotics', 7)"
-  Execute_3: "AddItem('LuxuryGoods', 10)"
+  Execute_1: "RemoveItem('TeleporterBAEpic', 1)"
+  Execute_2: "AddItem('WarbotNanotubes', 1)"
+  Execute_3: "AddItem('RawDiamond', 2)"
   Next_1: TR_RecallProgram_Refund
 }
 { +Dialogue Name: TR_RecallProgram_Refund
@@ -7661,6 +7664,19 @@
   Next_1: End
 }
 { +Dialogue Name: TR_HavenOS
+  NPCName: "Haven OS Terminal"
+  Output: "@w1 HavenOS is connecting via port 30000 Nueral Slime Interface @d1 . . .  \n\n Make a selection."
+  Option_1: "HavenOS Main Menu <i>System Online<i>"
+  OptionNext_1: TR_HavenOS_MainMenu
+  Option_2: "Transcendence Server Website"
+  OptionNext_2: TR_HavenOS_Web
+}
+{ +Dialogue Name: TR_HavenOS_Web
+  NPCName: "Haven OS Terminal"
+  Execute_1: "OpenHtmlWindow('Transcendence Server', 'https://airelon87.wixsite.com/transcendanceemp', 1f, 1f)"
+  Next_1: TR_HavenOS
+}
+{ +Dialogue Name: TR_HavenOS_MainMenu
   NPCName: "Haven OS Terminal"
   Output: "@w2 User {PlayerName} What can help you with?"
   Option_1: "I want to know about the galaxy"
@@ -7677,24 +7693,26 @@
   OptionNext_6: TR_HavenOS_5  
   Option_7: "What zones in the galaxy are contested <b>PvP</b>"
   OptionNext_7: TR_HavenOS_PvP
-  Option_8: "I would like to access the Galor Intelligence Network <b>PvP</b>"
-  OptionNext_8: Galor_Console_Initialize
+  Option_8: "I would like to speak with someone about getting more unlock points."
+  OptionNext_8: TR_UnlockPoints
+  Option_9: "I would like to access the Galor Intelligence Network"
+  OptionNext_9: Galor_Console_Initialize
 }
 { +Dialogue Name: TR_HavenOS_1
   NPCName: "Haven OS Terminal"
-  Output: "@w2 Haven Station is located in the center of the galaxy within the Havenia System that hosts a super massive black hole. @p9 Most the stars within 15 LY of here are unique and within Havens sphere of influence. @p9 Planets like <i>Adelevine in the Havenia solar system, Nebulon in the Nebulo system, and Encalafar in the Wolf424 system</i> are hosts for several PDA missions. @p9 The Drakia system is where the starter planets are. Once you have a simple warp capable small vessel that system is worthless."
+  Output: "@w2 Haven Station is located in the center of the galaxy within the Havenia System that hosts a super massive black hole. @p9 Most the stars within 40 LY of here are unique and within Havens sphere of influence. @p9 Planets like <i>Adelevine in the Havenia solar system, Nebulon in the Nebulo system, and Encalafar in the Wolf424 system</i> are hosts for several PDA missions. @p9 The Drakia system is where the starter planets are. \n\n Haven authorities encourage moving off out of the Drakia system as soon as one has a warp ready ship."
   Option_1: "Main Menu"
   OptionNext_1: TR_HavenOS
 }
 { +Dialogue Name: TR_HavenOS_2
   NPCName: "Haven OS Terminal"
-  Output: "@w2 Whenever you complete certain missions you will get a Cache key. This key opens the door to the vault in the Cache Key Instance. @p9 This vault contains items for crafting Ancient Relics, Robotics, and Diamonds."
+  Output: "@w2 Whenever you complete certain missions you will get a Cache key. \n\n This key opens the door to the vault in the Cache Key Instance. @p9 This vault contains items for crafting Ancient Relics, Robotics, and Diamonds. \n\n Other unique items to our galaxy can also be looted inside the Cache Key instance."
   Option_1: "Main Menu"
   OptionNext_1: TR_HavenOS
 }
 { +Dialogue Name: TR_HavenOS_3
   NPCName: "Haven OS Terminal"
-  Output: "@w2  Epic boosters can be crafted with unique items found in the cache key instance and POIs. @p9 You can also look for the special epic container in the ZedCity or ZedAsteroid, TombOfTheGeezer, or AncientVault Instances"
+  Output: "@w1 To use epic boosters you will need an EpicLight, EpicMedium, or EpicHeavy suit. \n\n Common epics can be unlocked in the tech tree and crafted. \n\n @w1 All Epic boosters and suits can be found through raiding and exploration. @p9 A special epic container in ZedCity, ZedAsteroid, TombOfTheGeezer, and AncientVault Instances are a good spot to check for something epic."
   Option_1: "Main Menu"
   OptionNext_1: TR_HavenOS
 }
@@ -7705,10 +7723,12 @@
   OptionNext_1: TR_HavenOS_4_A
   Option_2: "Ammenities"
   OptionNext_2: TR_HavenOS_4_B
-  Option_3: "Haven Dark Market"
+  Option_3: "Haven Dark Market and HavenLounge"
   OptionNext_3: TR_HavenOS_4_C
-  Option_4: "Back To Main Menu."
-  OptionNext_4: TR_HavenOS
+  Option_4: "Admiral Kara Yarr"
+  OptionNext_4: TR_HavenOS_4_D
+  Option_5: "Back To Main Menu."
+  OptionNext_5: TR_HavenOS
 }
 { +Dialogue Name: TR_HavenOS_4_A
   NPCName: "Haven OS Terminal"
@@ -7724,7 +7744,13 @@
 }
 { +Dialogue Name: TR_HavenOS_4_C
   NPCName: "Haven OS Terminal"
-  Output: "@w2 The smelly human that runs the Haven Dark Market buys and sells the most epic or unique items. @p9 He is downstairs in the lounge either playing blackjack or refunding broken super sheilds."
+  Output: "To locate Haven Lounge find the windows on the floor in front of Haven Medical. The stairs down to the lounge will be located nearby. \n\n @w2 A human runs the Haven Dark Market and buys or sells several epic or unique items."
+  Option_1: "Main Menu"
+  OptionNext_1: TR_HavenOS
+}
+{ +Dialogue Name: TR_HavenOS_4_D
+  NPCName: "Haven OS Terminal"
+  Output: "@w2 Admiral Kara Yarr is located in her quarters where she runs the UCH Havenian forces from her iFone 9000XL. @p9 The elevator to her quarters is tucked away just to the left of the Ancient Vault Instance. \n\n There may or may not be a very legal weapons dealer vendor behind the elevator."
   Option_1: "Main Menu"
   OptionNext_1: TR_HavenOS
 }
@@ -8593,7 +8619,7 @@
 { +Dialogue Name: Teldrassil13_2B
   NPCName: "GeoStation Crew"
   Output: "@w1See the lack of Zirax attacks here on my terminal? @p9They say that our alliance with \n\n the Polaris has the Zirax distracted. @p9Theres another geocrew here that has the item you need. \n\nGood luck."
-  Option_1: "<i>**nod head**"
+  Option_1: "<i>**nod head**<i>"
   OptionNext_1: End
 }
 { +Dialogue Name: Teldrassil14
@@ -8816,7 +8842,7 @@
 }
 { +Dialogue Name: TR_WBI_Ranger_Thruster_Trade
   NPCName: "Ranger"
-  Output: "@w1 The Warbot9000 is a formidle foe comrad."
+  Output: "@w1 The UCH unite and ensure the robotics used for the Warbot9000 are never built again."
   Execute_1: "RemoveItem('WarbotNanotubes', 2)"
   Next_1: TR_WBI_Ranger_Thruster_Sold
 }
@@ -9063,6 +9089,8 @@
   OptionNext_1: TR_Havenopolis_TradeWindow
   Option_2: "I will pass"
   OptionNext_2: End
+  Option_3: "Can I use your iFone to remote access a HavenOS terminal?"
+  OptionNext_3: TR_HavenOS
 }
 { +Dialogue Name: TR_Havenopolis_TradeWindow
   NPCName: "Havenopolis Citizen"
@@ -9070,8 +9098,22 @@
 }
 { +Dialogue Name: TR_UnlockPoints
   NPCName: "Haven Upgrade Society"
+  Output: "Make a selection {PlayerName}?"
   Variable_1: "UnlockPoints", param1: dbstate_int
   Variable_2: "UnlockCount", param1: dbstate_int
+  Variable_3: "MoneyUnlockPoints", param1: dbstate_int
+  Variable_4: "MoneyUnlockCount", param1: dbstate_int
+  Variable_5: "UnlockLeftOver", param1: dbstate_int
+  Variable_6: "PlayerLevel", param1: dbstate_int
+  Option_1: "Trade <i>Valuables or MoneyCards<i> for <b>Unlock Points<b>"
+  OptionNext_1: TR_UnlockPoints_Positive
+  Option_2: "Trade <i>Unlock Points<i> for <b>MoneyCards<b>"
+  OptionNext_2: TR_UnlockPoints_Negative
+  Option_3: "Disclaimer"
+  OptionNext_3: TR_UnlockPoints_Disclaimer
+}
+{ +Dialogue Name: TR_UnlockPoints_Positive
+  NPCName: "Haven Upgrade Society"
   Next_1: TR_UnlockPoints_GetValue
 }  
 { +Dialogue Name: TR_UnlockPoints_GetValue
@@ -9082,28 +9124,36 @@
 }  
 { +Dialogue Name: TR_UnlockPoints_Menu
   NPCName: "Haven Upgrade Society"
-  Output: "@w1 Hows it going {PlayerName}? \n\n @w1 Would you like trade a valuable for unlock points? \n\n If you cancel in the middle of a trade, I cannot guarentee you will recieve any points and may lose your items."
-  Option_1: "I would like to make a trade for Unlock Points."
+  Output: "@w1 Hows it going {PlayerName}? \n\n @w1 Would you like trade a valuable or cash for unlock points? \n\n If you cancel or exit after making a trade before cashing in, You will lose your items and recieve 0 unlock points."
+  Option_1: "YES"
   OptionNext_1: TR_UnlockPoints_Check
-  Option_2: "Show me my current unlock points"
-  OptionNext_2: TR_UnlockPoints_Show
-  Option_3: "I will pass"
-  OptionNext_3: End
+  Option_2: "NO"
+  OptionNext_2: End
+  Option_3: "Show me my current unlock points"
+  OptionNext_3: TR_UnlockPoints_Show
+  Option_4: "Can you remote access me to a HavenOS terminal on Haven Station?"
+  OptionNext_4: TR_HavenOS
 }
 { +Dialogue Name: TR_UnlockPoints_Check
   NPCName: "Haven Upgrade Society"
-  Output: "@w1 You can trade CacheKeys, DiamondRings, or a PlatinOunce for additional unlock points. \n\n You can currently earn {UnlockCount} points by cashing in. \n\n Do not exit the dialogue until you have completed all transactions."
-  Option_1: "I will trade this CacheKey for 3 Unlock Points"
+  Output: "@w1 You can trade CacheKeys, DiamondRings, PlatinOunce, or 500 MoneyCards for additional unlock points. \n I will tally your trades as you go. All trades are final. \n\n You can currently earn {UnlockCount} points by cashing in. \n\n Do not exit the dialogue until you have completed all transactions."
+  Option_1: "I will trade this CacheKey for 2 Unlock Points"
   OptionIf_1: "HasItem('Token', 1, 7238)"
   OptionNext_1: TR_UnlockPoints_Token
-  Option_2: "I will trade this LuxuryGood for 2 Unlock Points"
+  Option_2: "I will trade this LuxuryGood for 3 Unlock Points"
   OptionIf_2: "HasItem('LuxuryGoods', 1)"
   OptionNext_2: TR_UnlockPoints_LuxuryGoods
   Option_3: "I will trade this PlatinOunce for 1 Unlock Points"
   OptionIf_3: "HasItem('PlatinOunce', 1)"
   OptionNext_3: TR_UnlockPoints_PlatinOunce
-  Option_4: "I am ready to cash in for {UnlockCount} Unlock Points."
-  OptionNext_4: TR_UnlockPoints_Calculate
+  Option_4: "I will pay 1000 MoneyCards for 2 Unlock Point."
+  OptionIf_4: "HasItem('MoneyCard', 1000)"
+  OptionNext_4: TR_UnlockPoints_MoneyOne
+  Option_5: "I will pay 5000 MoneyCards for 10 Unlock Point."
+  OptionIf_5: "HasItem('MoneyCard', 5000)"
+  OptionNext_5: TR_UnlockPoints_MoneyTwo
+  Option_6: "I am ready to <b>CASH IN<b> for {UnlockCount} Unlock Points."
+  OptionNext_6: TR_UnlockPoints_Calculate
 }
 { +Dialogue Name: TR_UnlockPoints_Token
   NPCName: "Haven Upgrade Society"
@@ -9123,6 +9173,18 @@
   Execute_2: "UnlockCount = UnlockCount + 1"
   Next_1: TR_UnlockPoints_Check
 }
+{ +Dialogue Name: TR_UnlockPoints_MoneyOne
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "RemoveItem('MoneyCard', 500)"
+  Execute_2: "UnlockCount = UnlockCount + 1"
+  Next_1: TR_UnlockPoints_Check
+}
+{ +Dialogue Name: TR_UnlockPoints_MoneyTwo
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "RemoveItem('MoneyCard', 5000)"
+  Execute_2: "UnlockCount = UnlockCount + 10"
+  Next_1: TR_UnlockPoints_Check
+}
 { +Dialogue Name: TR_UnlockPoints_Calculate
   NPCName: "Haven Upgrade Society"
   Execute_1: "UnlockPoints = UnlockPoints + UnlockCount"
@@ -9131,14 +9193,114 @@
 }
 { +Dialogue Name: TR_UnlockPoints_Show
   NPCName: "Haven Upgrade Society"
-  Output: "You have {UnlockPoints} ungrade points total. \n\n {UnlockCount} upgrade points were recently added to your profile. \n\n Do not exit, please press continue."
+  Output: "You have {UnlockPoints} upgrade points total. \n\n {UnlockCount} upgrade points were recently added to your profile. \n\n Do not exit, please press continue."
   Option_1: "CONTINUE"
   OptionNext_1: TR_UnlockPoints_GoodBye
 }
 { +Dialogue Name: TR_UnlockPoints_GoodBye
   NPCName: "Haven Upgrade Society"
-  Output: "@w1 Please check your tech tree for your new unlock points {PlayerName}. "
+  Output: "@w1 Please check your tech tree for your new unlock points {PlayerName}."
   Execute_1: "UnlockCount = 0"
-  Option_1: "Thanks a bunch."
+  Option_1: "GoodBye"
+  OptionNext_1: TR_UnlockPoints
+}
+{ +Dialogue Name: TR_UnlockPoints_Negative
+  NPCName: "Haven Upgrade Society"
+  Next_1: TR_UnlockPoints_MoneyGetValue
+}  
+{ +Dialogue Name: TR_UnlockPoints_MoneyGetValue
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "MoneyUnlockPoints = Player.UpgradePoints"
+  Execute_2: "MoneyUnlockCount = 0"
+  Execute_3: "UnlockLeftOver = Player.UpgradePoints"
+  Next_1: TR_UnlockPoints_MoneyCheck
+}
+{ +Dialogue Name: TR_UnlockPoints_MoneyCheck
+  NPCName: "Haven Upgrade Society"
+  Output: "Do you have points to sell?"
+  Option_1: "I do. Please proceed"
+  OptionIf_1: "MoneyUnlockPoints >= 2"
+  OptionNext_1: TR_UnlockPoints_NegativeMain
+  Option_2: "I do not. I will go away now."
+  OptionIf_2: "MoneyUnlockPoints <= 1"
+  OptionNext_2: TR_UnlockPoints
+}
+{ +Dialogue Name: TR_UnlockPoints_NoPoints
+  NPCName: "Haven Upgrade Society"
+  Output: "{PlayerName} you only have {MoneyUnlockPoints}. You must have 2 or more <i>Unlock Points<i> before I can sell them. \n I'll go ahead and clear any transactions you have made. \n\n Do Not close dialogue. Click <i>GoodBye<i>"
+  Option_1: "GoodBye"
   OptionNext_1: End
 }
+{ +Dialogue Name: TR_UnlockPoints_LowLevel
+  NPCName: "Haven Upgrade Society"
+  Output: "{PlayerName} you must be Level 25 before I can sell you unlock points."
+  Next_1: End
+}
+{ +Dialogue Name: TR_UnlockPoints_NegativeMain
+  NPCName: "Haven Upgrade Society"
+  Output: "@w1 You currently have {MoneyUnlockPoints} that can be traded for MoneyCards."
+  Option_1: "I will trade 1 <i>Unlock Point<i> for 300 <i>MoneyCards<i>"
+  OptionNext_1: TR_UnlockPoints_NegativeMain_A
+  Option_2: "I will trade 5 <i>Unlock Point<i> for 1500 <i>MoneyCards<i>"
+  OptionNext_2: TR_UnlockPoints_NegativeMain_B
+  Option_3: "I will trade 10 <i>Unlock Point<i> for 3000 <i>MoneyCards<i>"
+  OptionNext_3: TR_UnlockPoints_NegativeMain_C
+  Option_4: "I will trade 20 <i>Unlock Point<i> for 6000 <i>MoneyCards<i>"
+  OptionNext_4: TR_UnlockPoints_NegativeMain_D
+}  
+{ +Dialogue Name: TR_UnlockPoints_NegativeMain_A
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "MoneyUnlockCount = MoneyUnlockCount + 300"
+  Execute_2: "UnlockLeftOver = MoneyUnlockPoints - 1"
+  Next_1: TR_UnlockPoints_NegativeCashOut
+}
+{ +Dialogue Name: TR_UnlockPoints_NegativeMain_B
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "MoneyUnlockCount = MoneyUnlockCount + 1500"
+  Execute_2: "UnlockLeftOver = MoneyUnlockPoints - 5"
+  Next_1: TR_UnlockPoints_NegativeCashOut
+}
+{ +Dialogue Name: TR_UnlockPoints_NegativeMain_C
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "MoneyUnlockCount = MoneyUnlockCount + 3000"
+  Execute_2: "UnlockLeftOver = MoneyUnlockPoints - 10"
+  Next_1: TR_UnlockPoints_NegativeCashOut
+}
+{ +Dialogue Name: TR_UnlockPoints_NegativeMain_D
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "MoneyUnlockCount = MoneyUnlockCount + 6000"
+  Execute_2: "UnlockLeftOver = MoneyUnlockPoints - 20"
+  Next_1: TR_UnlockPoints_NegativeCashOut
+}
+{ +Dialogue Name: TR_UnlockPoints_NegativeCashOut
+  NPCName: "Haven Upgrade Society"
+  Output: "{PlayerName} you will be paid {MoneyUnlockPoints}. You will have <i> {UnlockLeftOver} Unlock Points<i> leftover. \n\n Do Not close dialogue. Click <i>Pay Me Now<i> to complete the transaction."
+  Execute_1: "Player.UpgradePoints = UnlockLeftOver + 0"
+  Execute_2: "AddItem('MoneyCard', MoneyUnlockCount)"
+  Option_1: "<b>PAY ME NOW<b>"
+  OptionNext_1: TR_UnlockPoints_Negative_Clear
+}
+{ +Dialogue Name: TR_UnlockPoints_Negative_Clear
+  NPCName: "Haven Upgrade Society"
+  Execute_1: "MoneyUnlockCount = MoneyUnlockCount - MoneyUnlockCount"
+  Execute_2: "UnlockLeftOver = MoneyUnlockPoints - MoneyUnlockPoints"
+  Execute_3: "MoneyUnlockPoints = MoneyUnlockPoints - MoneyUnlockPoints"
+  Execute_4: "PlayerLevel = 0"
+  Next_1: End
+}
+{ +Dialogue Name: TR_UnlockPoints_Disclaimer
+  NPCName: "Haven Upgrade Society"
+  Output: "I exist so you can unlock everything on Transcendence or sell your unused UpgradePoints. \n I am the extent of my programming... If you click the little X or press ESC I will lose our data. \n\n Admins will not refund points, items, or cash lost here. \nPlease let an admin know if I am broke."   
+  Option_1: "Thanks for the Info"
+  OptionNext_1: TR_UnlockPoints
+  Option_2: "Your customer service is terrible!"
+  OptionNext_2: End
+}  
+{ +Dialogue Name: TR_Leah
+  NPCName: "Leah of the Sky Isles"
+  Output: "@w1 There was once a great tribe of the <i>Talon Khajiiiiiit<i>. \n @w1 They traveled the heavens while todays galactic powers were just packs in caves. \n\n @w1 Thier villages orbited a garden of glowing embers surrounding forests of mighty space trees. \n They called the celestial body <i>Ember Tree Garden<i>. @p9 The trees were said to have been covered in shiny elemental Pentaxid vines. The leafs were covered in a Promethium dust. \n From the branches hung fruit of energized stone. \n By the prayers of the tribe the trees gifted them these fruit to escape the death of their garden." 
+  Option_1: "The fruit! They were the mysterious Ancient Relics we use to power sheilds. Are you selling any of these items."
+  OptionIf_1: "HasItem('Token', 1, 7238)"
+  OptionNext_1: TR_Leah_Trade
+  Option_2: "What a wonderful story."
+  OptionNext_2: End

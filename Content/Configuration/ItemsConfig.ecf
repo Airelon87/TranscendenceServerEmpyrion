@@ -7750,13 +7750,13 @@
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 0
-    AddStamina: 300
-    AddFood: 0
+    AddHealth: 15, display: HealthValue
+    AddStamina: 275, display: StaminaValue
+    AddFood: 15, display: FoodValue
     AddOxygen: 0
-    Buff: "StimBoosterUp"
     Debuff: "Stunned", display: EffectiveAgainst
-    Buff_chance: 1
+    Buff: "StimBoosterUp, ImmunityBoosterII, Indigestion"
+    Buff_chance: "1, 0.5, 0.5"
     SfxBegin: UseActions/playerSwallow
   }
 }
@@ -10412,7 +10412,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   FoodFac: 0.72, type: float, display: true
   StaminaFac: 0.91, type: float, display: true
   NrSlots: 2, type: int, display: true
-  SlotItems: "ArmorBoostEpic, MultiBoostEpic, OxygenBoostEpic, InsulationBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic, WarBotBoostEpic"
+  SlotItems: "ArmorBoostEpic, JetpackBoostEpic, MultiBoostEpic, OxygenBoostEpic, InsulationBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic, WarBotBoostEpic"
 
   Mass: 18, type: float, display: false, formatter: Kilogram
   Volume: 11, type: float, display: true, formatter: Liter
@@ -10443,7 +10443,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   FoodFac: 0.86, type: float, display: true
   StaminaFac: 0.99, type: float, display: true
   NrSlots: 2, type: int, display: true
-  SlotItems: "ArmorBoostEpic, MultiBoostEpic, OxygenBoostEpic, InsulationBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic, WarBotBoostEpic"
+  SlotItems: "ArmorBoostEpic, JetpackBoostEpic, MultiBoostEpic, OxygenBoostEpic, InsulationBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic, WarBotBoostEpic"
   
   Mass: 18, type: float, display: false, formatter: Kilogram
   Volume: 41, type: float, display: true, formatter: Liter
@@ -10476,7 +10476,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   FoodFac: 0.9, type: float, display: true
   StaminaFac: 1.1, type: float, display: true
   NrSlots: 3, type: int, display: true
-  SlotItems: "ArmorBoostEpic, MultiBoostEpic, OxygenBoostEpic, InsulationBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic, WarBotBoostEpic"
+  SlotItems: "ArmorBoostEpic, JetpackBoostEpic, MultiBoostEpic, OxygenBoostEpic, InsulationBoostEpic, MobilityBoostEpic, RadiationBoostEpic, EVABoostEpic, TransportationBoostEpic, WarBotBoostEpic"
   
   Mass: 25, type: float, display: false, formatter: Kilogram
   Volume: 41, type: float, display: true, formatter: Liter
@@ -10509,7 +10509,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   FoodFac: 0.1, type: float, display: true
   StaminaFac: 0.32, type: float, display: true
   NrSlots: 1, type: int, display: true
-  SlotItems: "WarBotBoostEpic"
+  SlotItems: "WarBotBoostEpic, JetpackBoostEpic"
   
   Mass: 990, type: float, display: false, formatter: Kilogram
   Volume: 330, type: float, display: true, formatter: Liter
@@ -12766,7 +12766,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   ShowUser: Yes
 }
 { +Item Id: 1014, Name: Filters, Ref: TradingGoodsTemplate
-  MarketPrice: 90, display: true
+  MarketPrice: 2, display: true
   ShowUser: Yes
 }
 { +Item Id: 1015, Name: SpareParts, Ref: TradingGoodsTemplate
@@ -12791,8 +12791,18 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 }
 { +Item Id: 1019, Name: ToxicLiquid, Ref: TradingGoodsTemplate
   Info: A stringy liquid collected from mutated alien robot parts.
-  MarketPrice: 10, display: true
+  MarketPrice: 4000, display: true
   ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 0.4, type: float
+    AddHealth: -999, display: HealthValue
+    AddStamina: 250
+    AddFood: 500, display: FoodValue
+    SfxBegin: UseActions/playerDrinking
+    Buff: Intoxication
+    Buff_chance: 1
+  }  
 }
 { +Item Id: 1020, Name: AlphaVirus, Ref: TradingGoodsTemplate
   MarketPrice: 10, display: true
@@ -13816,12 +13826,12 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 20
-    AddStamina: 90, display: StaminaValue
-    AddFood: -2, display: FoodValue
+    AddHealth: 25
+    AddStamina: 100, display: StaminaValue
+    AddFood: 2, display: FoodValue
     AddOxygen: 0
     AddTemperature: 4, display: TemperatureValue
-    Debuff: "Hangover,EndoParasite", display: EffectiveAgainst 
+    Debuff: "Hangover,EndoParasite,Frostbite", display: EffectiveAgainst 
     SfxBegin: UseActions/playerDrinking
   }
 }
@@ -14754,6 +14764,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1701, Name: CompressedSathium, Ref: ComponentsTemplate
   Mass: 0.86, type: float, display: true, formatter: Kilogram
   Volume: 0.50, type: float, display: true, formatter: Liter
+  MarketPrice: 650
   Info: A compressed set of 25 ingots than can be decompressed in a deconstructor, display: true
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
@@ -14761,6 +14772,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1702, Name: CompressedTitanium, Ref: ComponentsTemplate
   Mass: 0.86, type: float, display: true, formatter: Kilogram
   Volume: 0.50, type: float, display: true, formatter: Liter
+  MarketPrice: 650
   Info: A compressed set of 50 TitanRods than can be decompressed in a deconstructor, display: true
   ShowUser: No
   CustomIcon: ControlFieldGenerator
@@ -14768,6 +14780,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1703, Name: CompressedMagnesium, Ref: ComponentsTemplate
   Mass: 0.86, type: float, display: true, formatter: Kilogram
   Volume: 0.50, type: float, display: true, formatter: Liter
+  MarketPrice: 338
   Info: A compressed set of 50 Magnesium Powders than can be decompressed in a deconstructor, display: true
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
@@ -14775,6 +14788,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1704, Name: CompressedIron, Ref: ComponentsTemplate
   Mass: 12, type: float, display: true, formatter: Kilogram
   Volume: 1.5, type: float, display: true, formatter: Liter
+  MarketPrice: 163
   Info: A compressed set of 25 Iron ingots than can be decompressed in a deconstructor, display: true
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
@@ -14782,6 +14796,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1705, Name: CompressedCobalt, Ref: ComponentsTemplate
   Mass: 13.2, type: float, display: true, formatter: Kilogram
   Volume: 1.5, type: float, display: true, formatter: Liter
+  MarketPrice: 163
   Info: A compressed set of 25 Cobalt ingots than can be decompressed in a deconstructor, display: true
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
@@ -14789,6 +14804,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1706, Name: CompressedSilicon, Ref: ComponentsTemplate
   Mass: 3.8, type: float, display: true, formatter: Kilogram
   Volume: 1.5, type: float, display: true, formatter: Liter
+  MarketPrice: 163
   Info: A compressed set of 25 Silicon ingots than can be decompressed in a deconstructor, display: true
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
@@ -14796,6 +14812,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1707, Name: CompressedNeodymium, Ref: ComponentsTemplate
   Mass: 10.5, type: float, display: true, formatter: Kilogram
   Volume: 1.5, type: float, display: true, formatter: Liter
+  MarketPrice: 325
   Info: A compressed set of 25 Neodymium ingots than can be decompressed in a deconstructor, display: true
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
@@ -14803,6 +14820,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1708, Name: CompressedCopper, Ref: ComponentsTemplate
   Mass: 13.4, type: float, display: true, formatter: Kilogram
   Volume: 1.5, type: float, display: true, formatter: Liter
+  MarketPrice: 163
   Info: A compressed set of 25 Copper ingots than can be decompressed in a deconstructor, display: true
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
@@ -14812,13 +14830,14 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Volume: 0.6, type: float, display: true, formatter: Liter
   Info: A compressed set of 50 Promethium Pellets than can be decompressed in a deconstructor, display: true
   FuelValue: 600, type: int, display: false, formatter: WattHour
-  MarketPrice: 180
+  MarketPrice: 65
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
 }
 { +Item Id: 1710, Name: CompressedErestrum, Ref: ComponentsTemplate
   Mass: 9.3, type: float, display: true, formatter: Kilogram
   Volume: 1.5, type: float, display: true, formatter: Liter
+  MarketPrice: 650
   Info: A compressed set of 25 Erestrum ingots than can be decompressed in a deconstructor, display: true
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
@@ -14826,6 +14845,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 1711, Name: CompressedZascosium, Ref: ComponentsTemplate
   Mass: 10.72, type: float, display: true, formatter: Kilogram
   Volume: 1.5, type: float, display: true, formatter: Liter
+  MarketPrice: 650
   Info: A compressed set of 25 Zascosium ingots than can be decompressed in a deconstructor, display: true
   ShowUser: Yes
   CustomIcon: ControlFieldGenerator
