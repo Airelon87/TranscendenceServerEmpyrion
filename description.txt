@@ -1,1 +1,9 @@
-Transcendence
+3720 
+"v1.7.8"; //cVersionType
+-------------------------
+Transcendence Version:
+
+New: v1.7.8_Tr7.2.3
+------------------------
+(V1.1-V1.7.7)
+Old: TR177 rev2.3
