@@ -39,35 +39,35 @@
 # New 1.6 and 1.7 Traders 
 # =====================Jan232022===
 { Trader Name: InfoHoarderALL
-  SellingText: "Trade in valuable reports for cash and credits!"
+  SellingText: "Trade in valuable reports for cash and credits! Completely legal and authentic! Dont mind the price tag."
   SellingGoods: "trwInfoHoarderAll"
-  Discount: 0.3
+  Discount: 0.2
   #SELLING to player 
-  Item1: "ReportMaintenanceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item2: "ReportWorkShiftData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item3: "ReportTransportationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item4: "ReportCommunicationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item5: "ReportEconomicData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item6: "ReportScienceRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item7: "ReportBiologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item8: "ReportMaterialData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item9: "ReportArcheologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item10: "ReportAnomalousData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item11: "ReportExplorationRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item12: "ReportGeologicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item13: "ReportAtmosphericData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item14: "ReportAstronomicalData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item15: "ReportPlanetaryResourceData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item16: "ReportSpaceWeather, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item17: "ReportNavigationData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item18: "ReportSpaceAnomality, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item19: "ReportWarpSignatures, mf=1.1-1.2, 3-5, mf=0.8-0.9, 5-10"
-  Item20: "ReportWeaponSignatures, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item21: "ReportMilitaryRawData, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item22: "ReportMilitaryScouting, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item23: "ReportMilitarySurveillance, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item24: "ReportMilitaryTroopMovement, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
-  Item25: "ReportMilitaryClassified, mf=1.1-1.2, 10-50, mf=0.8-0.9, 55-150"
+  Item1: "ReportMaintenanceData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item2: "ReportWorkShiftData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item3: "ReportTransportationData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item4: "ReportCommunicationData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item5: "ReportEconomicData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item6: "ReportScienceRawData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item7: "ReportBiologicalData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item8: "ReportMaterialData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item9: "ReportArcheologicalData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item10: "ReportAnomalousData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item11: "ReportExplorationRawData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item12: "ReportGeologicalData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item13: "ReportAtmosphericData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item14: "ReportAstronomicalData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item15: "ReportPlanetaryResourceData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item16: "ReportSpaceWeather, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item17: "ReportNavigationData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item18: "ReportSpaceAnomality, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item19: "ReportWarpSignatures, mf=2.1-3.2, 3-5, mf=0.8-0.9, 5-10"
+  Item20: "ReportWeaponSignatures, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item21: "ReportMilitaryRawData, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item22: "ReportMilitaryScouting, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item23: "ReportMilitarySurveillance, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item24: "ReportMilitaryTroopMovement, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
+  Item25: "ReportMilitaryClassified, mf=2.1-3.2, 10-50, mf=0.8-0.9, 55-150"
 } 
 
 { Trader Name: Forger
@@ -125,7 +125,7 @@
   Item2: "Optronics, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
   Item3: "ScienceEquipment, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
   Item4: "SpareParts, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
-  Item5: "ReportCommunicationData, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
+  Item5: "ReportCommunicationData, mf=1.6-2.2, 5-20, mf=0.8-0.9, 20-40"
   Item6: "ReportMilitarySurveillance, 0, 0, mf=0.8-1.0, 20-40"
 } 
 
@@ -134,15 +134,15 @@
   SellingGoods: "trwArmorBoost"
   Discount: 0.4 
   #SELLING to player (What the trader is selling to the player)
-  Item1: "LuxuryGoods, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
-  Item2: "ReportMaintenanceData, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
+  Item1: "LuxuryGoods, mf=1.3-1.8, 5-10, mf=0.5-0.7, 10-400"
+  Item2: "ReportEconomicData, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
   Item3: "AncientRelics, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
   Item4: "TechnicalArtifact, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"   
   Item5: "MutatedSubstance, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
   Item6: "Liquors, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
   Item7: "Narcotics, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"  
   Item8: "Leather, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-150"
-  Item9: "RawDiamond, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
+  Item9: "RawDiamond, mf=1.1-1.2, 1-2, mf=0.8-0.9, 2-4"
 } 
 
 { Trader Name: Settlement
@@ -1109,7 +1109,7 @@
   Item7: "Fertilizer, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
   Item8: "AlienNPCBlocks, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
   Item9: "HumanNPCBlocks, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
-  Item10: "PlatinOunce, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item10: "PlatinOunce, 0, 0, mf=0.9-1.0, 130-500"
   Item11: "Leather, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
 }
 
@@ -1832,7 +1832,7 @@
   Item7: "Varonroot, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
   Item8: "HotBeverage, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
   Item9: "Vegetables, mf=1.1-1.2, 30-50, mf=0.8-0.9, 50-100"
-  Item10: "WarBotBoostEpic, mf=1.0-1.2, 1-2, mf=0.2-0.5, 2-3"
+  Item10: "WarBotBoostEpic, mf=1.1-1.2, 1-2, mf=0.2-0.5, 2-3"
 }
 
 { Trader Name: Pizzaria
@@ -1933,5 +1933,123 @@
   Item19: "StatueOfGravity, mf=1.6-1.9, 30-60, mf=0.9-1.2, 60-100"
   Item20: "DecoTribalBlocks, mf=1.0-1.2, 10-20, mf=0.7-0.9, 20-50"
 }
+
+#==============================
+#Haven Lake Vendors 24March2022
+#==============================
+
+{ Trader Name: HavenLakeCafe
+  SellingText: "Its always morning when your orbiting an SMBH. Care for some breakfast?"
+  SellingGoods: "trwSpecial"
+  Discount: 0.12
+  Item1: "BlackCoffee, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item2: "Raktajino, mf=1.1-1.5, 10-20, mf=0.8-0.9, 20-30"
+  Item3: "ScrambledEggs, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item4: "HamScramble, mf=1.1-1.5, 10-20, mf=0.8-0.9, 20-30"
+  Item5: "Ham, 0, 0, mf=0.9-1.0, 16-36"
+  Item6: "Egg, 0, 0, mf=0.9-1.0, 24-48"
+  Item7: "Filters, mf=1.1-1.2, 100-200, mf=0.6-0.9, 200-500"
+  Item8: "NaturalStimulant, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item9: "CoffeePlantStage1, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+}
+
+{ Trader Name: HavenLakeBistro
+  SellingText: "Everything on the menu is local. Grown and raised here at Haven Lake."
+  SellingGoods: "trwSpecial"
+  Discount: 0.12
+  Item1: "BerryCola, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item2: "BerryJuice, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item3: "FireFlyBaguette, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item4: "Steak, mf=1.1-1.5, 10-20, mf=0.8-0.9, 20-30"
+  Item5: "GrilledVegetables, mf=1.1-1.5, 10-20, mf=0.8-0.9, 20-30"
+  Item6: "FruitPie, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item7: "TrumpetGreens, 0, 0, mf=0.9-1.0, 24-48"
+}
+
+{ Trader Name: Bartender
+  SellingText: "Relax and have drink. I see plenty of space heroes like you in here all the time. That same ol look on their face and same scorch marks on their ships hulls."
+  SellingGoods: "trwSpecial"
+  Discount: 0.12
+  Item1: "Liquors, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item2: "Raktajino, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item3: "Beer, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item4: "AkuaWine, mf=1.1-1.5, 10-20, mf=0.8-0.9, 20-30"
+  Item5: "MeatBurger, mf=1.1-1.5, 10-20, mf=0.8-0.9, 20-30"
+  Item6: "ToxicWaste, mf=1.3-1.5, 3-6, mf=0.9-1.0, 6-24"
+  Item7: "ToxicLiquid, mf=1.7-2.5, 1-2, mf=1.0-1.2, 2-4"
+  Item8: "ReportMilitaryRawData, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+}
+
+{ Trader Name: CrystalDealer
+  SellingText: "Haven Lake is the premier spot for valuable gems and bleeding edge technology."
+  SellingGoods: "trwSpecial"
+  Discount: 0.12
+  Item1: "RawDiamond, mf=1.0-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item2: "LuxuryGoods, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item3: "PlatinBar, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item4: "PentaxidCrystal, mf=1.1-1.5, 10-20, mf=0.8-0.9, 20-30"
+  Item5: "PentaxidElement, mf=1.1-1.5, 10-20, mf=0.8-0.9, 20-30"
+  Item6: "LoomOfPentaxid, mf=1.1-1.2, 2-3, mf=0.8-0.9, 3-5"
+  Item7: "ReportWarpSignatures, mf=1.1-1.3, 10-30, mf=0.8-0.9, 30-50"
+  Item8: "ReportMaintenanceData, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item9: "ReportNavigationData, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item10: "TeleporterBAEpicUpgradeKit, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item11: "DetectorCVEpicUpgradeKit, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item12: "LegacyEnergyCore, 0, 0, mf=0.9-1.0, 6-18"
+}
+
+{ Trader Name: IceSkyComponents
+  SellingText: "Haven Lake is the premier spot for trading valuable components and Ores."
+  SellingGoods: "trwSpecial"
+  Discount: 0.12
+  Item1: "TitanRods, mf=1.1-1.2, 100-300, mf=0.8-0.9, 300-500"
+  Item2: "Coolant, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item3: "Optronics, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item4: "SpareParts, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-30"
+  Item5: "ErestrumOre, mf=1.1-1.2, 100-300, mf=0.8-0.9, 300-500"
+  Item6: "ZascosiumOre, mf=1.1-1.2, 100-300, mf=0.8-0.9, 300-500"
+  Item7: "AluminiumCoil, mf=1.1-1.2, 100-300, mf=0.8-0.9, 300-500"
+  Item8: "ReportExplorationRawData, mf=1.1-1.3, 10-30, mf=0.8-0.9, 30-50"
+  Item9: "ReportWeaponSignatures, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item10: "ConstructorT0, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item11: "ConstructorT1V2, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item12: "ConstructorT2, mf=1.1-1.2, 10-30, mf=0.8-0.9, 30-50"
+  Item13: "EnergyMatrix, 0, 0, mf=0.9-1.0, 16-42"
+  Item14: "WarbotNanotubes, mf=1.1-1.3, 10-30, mf=0.7-0.9, 30-50"
+}
+
+{ Trader Name: JustEpicBoosts
+  SellingText: "trwDefaultSellingText"
+  SellingGoods: "trwArmorBoost"
+  Discount: 0.12
+  Item1: "ArmorBoostEpic, mf=1.2-1.5, 5-10, mf=0.7-0.9, 10-15"
+  Item2: "EVABoostEpic, mf=1.2-1.5, 5-10, mf=0.7-0.9, 10-15"
+  Item3: "InsulationBoostEpic, mf=1.2-1.5, 5-10, mf=0.7-0.9, 10-15"
+  Item4: "JetpackBoostEpic, mf=1.2-1.5, 5-10, mf=0.7-0.9, 10-15"
+  Item5: "MobilityBoostEpic, mf=1.2-1.5, 5-10, mf=0.7-0.9, 10-15"
+  Item6: "MultiBoostEpic, mf=1.2-1.5, 5-10, mf=0.7-0.9, 10-15"
+  Item7: "OxygenBoostEpic, mf=1.2-1.5, 5-10, mf=0.7-0.9, 10-15"
+  Item8: "RadiationBoostEpic, mf=1.2-1.5, 5-10, mf=0.7-0.9, 10-15"
+  Item9: "TransportationBoostEpic, mf=1.2-1.5, 5-10, mf=0.7-0.9, 10-15"
+  Item10: "ArmorLightEpic, mf=1.1-1.5, 10-20, mf=0.8-0.9, 20-30"
+  Item11: "ArmorMediumEpic, mf=1.1-1.5, 5-10, mf=0.8-0.9, 10-15"
+  Item12: "ArmorHeavyEpic, mf=1.1-1.5, 5-10, mf=0.8-0.9, 10-15"
+  Item13: "WarbotSlotArmor, 0, 0, mf=1.1-1.9, 1-2"
+  Item14: "WarBotBoostEpic, 0, 0, mf=1.0-1.1, 1-2"
+}
+
+{ Trader Name: LasersOfTheLake
+  SellingText: "The finest Laser Archers in UCH bought their first Crossbows from me."
+  SellingGoods: "trwSpecial"
+  Discount: 0.12
+  Item1: "LaserCrossbow, mf=1.1-1.2, 5-20, mf=0.8-0.9, 20-40"
+  Item2: "LaserCrossbowT2, mf=1.1-1.2, 5-10, mf=0.8-0.9, 10-30"
+  Item3: "TalonCrossbowPlayer, mf=1.1-1.2, 5-10, mf=0.8-0.9, 10-30"
+  Item4: "LaserArrows, mf=1.1-1.2, 120-400, mf=0.8-0.9, 400-550"
+  Item5: "LaserKit, mf=1.2-1.4, 4-12, mf=0.8-0.9, 12-20"
+  Item6: "Leather, mf=1.1-1.2, 10-20, mf=0.8-0.9, 20-50"
+  Item7: "PromethiumPellets, mf=1.0-1.1, 10-20, mf=0.7-1.0, 20-5000"
+}
+
 
 

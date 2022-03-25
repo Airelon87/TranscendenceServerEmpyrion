@@ -19761,7 +19761,7 @@
   StackSize: 1000
   AllowPlacingAt: "Base,MS", display: true
   ShowUser: NoButCSV
-#  ShowUser: Yes
+  #  ShowUser: Yes
   BlockColor: "27,44,65,255"
   { Child Map
     Color: "27,44,65,255"
@@ -32581,21 +32581,23 @@
   AllowPlacingAt: "Base,MS", display: true
   IsActivateable: true
   IsOxygenTight: false, display: true 
-  Info: The eyes of this statue acivates a source of artificial gravity within an Ancient Relic, display: true
+  Info: The eyes of this statue acivates a weak force within an Ancient Relic to enhance shields, display: true
   StackSize: 6
   Category: Devices
   MarketPrice: 32900, display: true
-  HitPoints: 300, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   Mass: 700, type: float, display: true, formatter: Kilogram
-  EnergyIn: 125, type: int, display: true, formatter: Watt
-  CPUIn: 50, type: int, display: true
+  EnergyIn: -500, type: int, display: true, formatter: Watt
+  CPUIn: 10000, type: int, display: true
   CustomIcon: TigerStatue
-  MaxCount: 1, type: int, display: true
+  MaxCount: 2, type: int, display: true
+  ForceMaxCount: true 
 
-  ShieldCapacityBonus: 1000, type: int, display: true
+  ShieldCapacityBonus: 7500, type: int, display: true
+  ShieldRechargeBonus: 50, type: int, display: true
   BlastParticleIndex: 10
   BlastRadius: 4
-  BlastDamage: 500
+  BlastDamage: 10000, type: int, display: true
 
   RepairToTemplate: false, display: true
   AllowedInBlueprint: true, display: true
@@ -33728,16 +33730,19 @@
   Volume: 2668, type: float, display: true, formatter: Liter
   Mass: 137355, type: float, display: true, formatter: Kilogram
   BlockColor: "170,5,5"
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 2000, type: int, display: true
   StackSize: 250
   Info: This generator taps into the ZedZorgs quantum web with twenty Legacy Energy Cores to increase its output by 200%., display: true 
   UpgradeTo: null, display: true
   MaxCount: 2, type: int, display: true
   ForceMaxCount: true
 
+  ShieldCapacityBonus: 50000, type: int, display: true
+  ShieldRechargeBonus: 100, type: int, display: true
+
   BlastParticleIndex: 10
   BlastRadius: 4
-  BlastDamage: 5000
+  BlastDamage: 30000, type: int, display: true
   
   UnlockCost: 10, display: true
   UnlockLevel: 25, display: true
@@ -33746,6 +33751,60 @@
   
   Temperature: 950, display: true
   Radiation: 75, display: RadiationLevel
+}
+
+{ Block Name: AdminGenerator, Ref: GeneratorSVSmall
+  Model: @models/Blocks/Spaceship/GeneratorSVSmallPrefab
+  CustomIcon: GeneratorSVSmall
+  EnergyOut: 100000, type: int, display: true, formatter: Watt
+  EnergyIn: -100000, type: int, display: true, formatter: Watt
+  MarketPrice: 9999999, display: true
+  CPUIn: 1, type: int, display: true
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 1, type: float, display: true, formatter: Liter
+  Mass: 1, type: float, display: true, formatter: Kilogram
+  BlockColor: "170,5,5"
+  HitPoints: 1000000, type: int, display: true
+  StackSize: 250
+  AllowPlacingAt: "Base,MS,SS,GV", display: true
+  Info: Admin Use Only, display: true 
+  UpgradeTo: null, display: true
+  
+  UnlockCost: 0, display: true
+  UnlockLevel: 0, display: true
+  TechTreeParent: ""
+  TechTreeNames: Hidden 
+
+  ShieldCapacityBonus: 100000, type: int, display: true
+
+  Temperature: 0, display: false
+  Radiation: 0, display: RadiationLevel
+}
+
+{ Block Name: AquaHaven
+  CustomIcon: FillerBlock
+  AllowedInBlueprint: true, display: true
+  IsOxygenTight: true, display: true
+  Category: BuildingBlocks
+  CanPlayersSpawnOn: false
+  Info: bkiWaterBlock, display: true
+  # Class: LiquidStatic  
+  Material: water
+  Shape: LiquidBlock
+  Model: Cube
+  Mesh: water
+  Texture: 107
+  Place: Free
+  Mass: 10000, type: float, display: true, formatter: Kilogram
+  StackSize: 1000
+  AllowPlacingAt: "Base,MS", display: true
+  #ShowUser: NoButCSV
+  ShowUser: Yes
+  BlockColor: "118,205,233,255"
+  { Child Map
+    Color: "118,205,23,255"
+    Specular: 0.6
+  }
 }
 
 #Transcendence121 to v171 Custom items
