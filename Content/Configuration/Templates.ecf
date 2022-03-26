@@ -6668,6 +6668,7 @@
     LaserKit: 1
   }
 }
+
 { +Template Name: LaserSentryGunT3
   CraftTime: 30 
   Target: ""
@@ -6680,6 +6681,7 @@
     ReportWeaponSignatures: 1
   }
 }
+
 { +Template Name: LaserSentryGunT4
   CraftTime: 30 
   Target: ""
@@ -6704,6 +6706,23 @@
     LaserKit: 4
     ReportWeaponSignatures: 3
     Robotics: 5
+  }
+}
+
+{ +Template Name: AquaHaven
+  CraftTime: 5 
+  Target: ""
+  { Child Inputs
+    WaterJug: 12
+  }
+}
+
+{ +Template Name: LavaHaven
+  CraftTime: 5 
+  Target: ""
+  { Child Inputs
+    IronOre: 24
+    PentaxidOre: 1
   }
 }
 

@@ -555,7 +555,8 @@
   Type: staminadown
   Description: igmEffectBadTrip
   Icon: TmpEff_BadTrip
-  Actions: screen(underWaterFog);screen(underLavaFog)
+  #Actions: screen(underWaterFog);screen(underLavaFog)
+  Actions: screen(underWaterFog)
 
   { Child Modify0
     Stat: stamina
@@ -1839,33 +1840,39 @@
   OnDebuffSound: Player_Male/sigh
   Type: bleeding
   Stack: discard
-  Description: You are withdrawling from a lethal dose of a powerful drug! 
+  Description: You are withdrawling from a lethal dose of a powerful drug and need Coffee!  
   Icon: TmpEff_Sepsis  
   OnExpired: "FeverAttack"
   OnExpiredSound: Player_Male/sigh
 
   { Child Modify0
     Stat: health
-    Amount: -3
+    Amount: -2
     Rate: 2
   }
   { Child Modify1
     Stat: food
-    Amount: -5
+    Amount: -3
     Rate: 2
+  }
+  { Child Modify2
+    Stat: speedmodifier
+    SetValue: 0.3
+    Type: speedmodifier
   }
 }
 
 { StatusEffect Name: LethalDose
-  Duration: 450
+  Duration: 120
   Name: LethalDose
-  Actions: "buff(NarcoticStun); screen(underLavaFog)"
+  #Actions: "buff(NarcoticStun); screen(underLavaFog)"
+  Actions: "buff(NarcoticStun)"
   CastSound: Player_Male/GROANMaleHurtLong
   OnDebuffSound: Player_Male/sigh
   OnExpiredSound: Player_Male/sigh
   Type: bleeding
   Stack: discard
-  Description: You are feeling the effects of a dangerous and powerful drug! #NewRequired
+  Description: You are feeling the effects of a dangerous and powerful drug and feeling very hungry! #NewRequired
   Icon: TmpEff_Health  
   NextIsWorse: true
   Evolves: "KrielienWithdrawl,0.7"
@@ -1873,8 +1880,8 @@
 
   { Child Modify0
     Stat: health
-    ModifyMaxValue: -250
-    NumberOperationType: Flat
+    Amount: 9
+    Rate: 1
   }
   { Child Modify1
     Stat: food
@@ -1895,7 +1902,7 @@
   OnExpiredSound: Player_Male/sigh
   Type: bleeding
   Stack: extend
-  Description: Your blood is heating up from a toxic venom or poison! #NewRequired
+  Description: Your blood is heating up from a toxic venom. Eat some RootBuds at once! #NewRequired
   Icon: TmpEff_IncBodyTemp
 
   { Child Modify0
@@ -1921,7 +1928,7 @@
   Name: FlameON
   Type: fire
   Actions: "damage(0,2,0,0);attach(pfx_personalFire, @entity);attach(sfx_fire1, @entity);screen(heat)"
-  Description: You have been set on fire by a FlameThrower! This is harmless. 
+  Description: You have been set on fire by a FlameThrower! This is harmless. Curable with Admirals Dose. 
   Icon: TmpEff_Fire
 }
 

@@ -13697,7 +13697,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 10, display: StaminaValue
     AddFood: 17, display: FoodValue 
     AddOxygen: 0
-    Debuff: "Indigestion,PoisonBit,OrganFailure", display: EffectiveAgainst 
+    Debuff: "Indigestion,PoisonBit,OrganFailure,BoilingBite", display: EffectiveAgainst 
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -13787,7 +13787,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 	  AddTemperature: 2, display: TemperatureValue
     Buff: ImmunityBooster
     Buff_chance: 0.25
-    Debuff: Hangover, display: EffectiveAgainst
+    Debuff: "Hangover,LethalDose", display: EffectiveAgainst
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -13831,7 +13831,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 2, display: FoodValue
     AddOxygen: 0
     AddTemperature: 4, display: TemperatureValue
-    Debuff: "Hangover,EndoParasite,Frostbite", display: EffectiveAgainst 
+    Debuff: "Hangover,KrielienWithdrawl,Frostbite", display: EffectiveAgainst 
     SfxBegin: UseActions/playerDrinking
   }
 }
