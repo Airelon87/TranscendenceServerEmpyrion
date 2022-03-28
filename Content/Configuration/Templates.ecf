@@ -6726,6 +6726,18 @@
   }
 }
 
+{ +Template Name: EmberCrystal
+  CraftTime: 5 
+  DeconOverride: Continue
+  Target: ""
+  { Child Inputs
+    AluminiumPowder: 12
+    ZascosiumOre: 3
+    Nanites: 6
+    PentaxidOre: 6
+  }
+}
+
 #Havenopolis SpecialFoodTemplates
 # BlackCoffee, ScrambledEggs, HamScramble, CandyBar, FireFlyBaguette, SpikyShroomPizza, GroundRoachSalami
 # RootBuds, Raktajino, BlueberryCornDog, BerryCola, GrilledVegetables

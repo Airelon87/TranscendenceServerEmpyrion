@@ -9299,8 +9299,165 @@
 { +Dialogue Name: TR_Leah
   NPCName: "Leah of the Sky Isles"
   Output: "@w1 There was once a great tribe of the <i>Talon Khajiiiiiit<i>. \n @w1 They traveled the heavens while todays galactic powers were just packs in caves. \n\n @w1 Thier villages orbited a garden of glowing embers surrounding forests of mighty space trees. \n They called the celestial body <i>Ember Tree Garden<i>. @p9 The trees were said to have been covered in shiny elemental Pentaxid vines. The leafs were covered in a Promethium dust. \n From the branches hung fruit of energized stone. \n By the prayers of the tribe the trees gifted them these fruit to escape the death of their garden." 
-  Option_1: "The fruit! They were the mysterious Ancient Relics we use to power sheilds. Are you selling any of these items."
-  OptionIf_1: "HasItem('Token', 1, 7238)"
-  OptionNext_1: TR_Leah_Trade
-  Option_2: "What a wonderful story."
+  Option_1: "What a wonderful story. I wonder if the Talon Chief downstairs knows more."
+  OptionNext_1: End
+}
+{ +Dialogue Name: TR_EmberTree_PortalGuardian
+  NPCName: "EmberTalon"
+  Output: "Hello {PlayerName}. I am guarding Haven Lakes portal to the Ember Tree Garden Realm. \n The Talon Cheif in the Shaman Hut here at Haven Lake know everything about this portal. \n\n A <b>Ember Portal Key<b> is required to pass through this portal."   
+  Option_1: "Thank you for the information."
+  OptionNext_1: End
+}
+
+{ +Dialogue Name: TR_EmberTree
+  NPCName: "EmberChief"
+  Output: "How bright is your torch of faith {PlayerName}?"   
+  Option_1: "I saw the GraveRobber at Adelevine install one of those on a ship."
+  OptionIf_1: "GetReputation(Faction.Talon) < Reputation.NeutralMin"
+  OptionNext_1: TR_EmberTree_BadRep
+  Option_2: "My torch burns bright for the Talon."
+  OptionIf_2: "GetReputation(Faction.Talon) > Reputation.NeutralMin"
+  OptionNext_2: TR_EmberTree_Intro
+  Option_3: "GoodBye"
+  OptionNext_3: End
+}  
+{ +Dialogue Name: TR_EmberTree_BadRep
+  NPCName: "EmberChief"
+  Output: "@w1 You must restore your reputation with the Talon. We have no further topic of discussion."
+  Option_1: "GoodBye"
+  OptionNext_1: End
+}
+{ +Dialogue Name: TR_EmberTree_Intro
+  NPCName: "EmberChief"
+  Output: "@w1 Maybe you have heard wild stories of the sacred Ember Tree from other Talon tribes. \n Did you see the portal near the waterfall here on Haven Lake? \n @w1 Beyond the portal is the Ember Tree and it is time for this centuries harvest of the Ember Crystals. \n\n Will you join the EmberTalon and walk the Ember Path beyond this portal for the low bargain of <b>25 Gold Ingots<b>?" 
+  Option_1: "I will join with the Ember Talon. What do I get for my 25 Gold Ingots?"
+  OptionIf_1: "HasItem('GoldIngot', 25)"
+  OptionNext_1: TR_EmberTree_IssueToken
+  Option_2: "I want to turn in my harvest of EmberCrystals."
+  OptionIf_2: "HasItem('EmberCrystal', 5)"
+  OptionNext_2: TR_EmberTree_EmberTrade
+  Option_3: "GoodBye"
+  OptionNext_3: End
+}
+{ +Dialogue Name: TR_EmberTree_IssueToken
+  NPCName: "EmberChief"
+  Output: "@w1 I will grant you . . . \n @d1 <i>The Ember Tree Portal Key<i>. \n\nAre you ready to trade your 25 Gold Ingot donation to the Talon?"
+  Option_1: "I am ready to make the trade and gain access to the portal."
+  OptionExecute_1: "RemoveItem('GoldIngot', 25);AddReputation(Faction.Talon, +500);AddReputation(Faction.Galorian, +16);AddItem('Token', 1, 7700)"
+  OptionNext_1: End
+  Option_2: "GoodBye"
   OptionNext_2: End
+}
+{ +Dialogue Name: TR_EmberTree_EmberTrade
+  NPCName: "EmberChief"
+  Output: "@w1 I see you have <i>Ember Crystals<i> ready for collection. What would you like in return for you troubles during this harvest?"
+  Option_1: "<i>3 Unlock Points<i> for <b>5 EmberCrystal<b>."
+  OptionExecute_1: "RemoveItem('EmberCrystal', 5);AddReputation(Faction.Talon, +32);AddReputation(Faction.Galorian, +16);Player.UpgradePoints = Player.UpgradePoints + 3"
+  OptionNext_1: End
+  Option_2: "<i>1 AncientRelic<i> for <b>3 EmberCrystal<b>"
+  OptionExecute_2: "RemoveItem('EmberCrystal', 5);AddReputation(Faction.Talon, +32);AddReputation(Faction.Zirax, -16);AddItem('AncientRelics', 1)"
+  OptionNext_2: End
+}
+{ +Dialogue Name: TR_EmberTree_Villager
+  NPCName: "EmberTalon"
+  Output: "@w1 My ancestors built this village 10 millenia ago. \n Every century we call upon friends of the Talon to help us harvest EmberCrystals. \n We reward our friends with great treasure and good vibes. \n\n I can trade with you my wares, furniture, or Platinum if you have EmberCrystals."
+  Option_1: "I have Ember Crystals to turn in for the harvest."
+  OptionIf_1: "HasItem('EmberCrystal', 2)"
+  OptionNext_1: TR_EmberTree_Villager_Trade
+  Option_2: "Sorry, but I do not have at least 2 EmberCrystals for trade."
+  OptionNext_2: End
+}
+{ +Dialogue Name: TR_EmberTree_Villager_Trade
+  NPCName: "EmberTalon"
+  Output: "@w1 I see you have <i>Ember Crystals<i> ready for collection. What would you like in return for you troubles during this harvest?"
+  Option_1: "<i>3 ShamansBookcase<i> for <b>1 EmberCrystal<b>"
+  OptionExecute_1: "RemoveItem('EmberCrystal', 1);AddReputation(Faction.Talon, +8);AddReputation(Faction.Zirax, -32);AddItem('ShamansBookcase', 3)"
+  OptionNext_1: End
+  Option_2: "<i>11 Leather, 5 Fertilizer, and 2 RootBuds<i> for <b>1 EmberCrystal<b>"
+  OptionExecute_2: "RemoveItem('EmberCrystal', 1);AddReputation(Faction.Talon, +12);AddItem('Leather', 11);AddItem('Fertilizer', 5);AddItem('RootBuds', 2)"
+  OptionNext_2: End
+  Option_3: "<i>4 PlatinOunce<i> for <b>1 EmberCrystal<b>"
+  OptionExecute_3: "RemoveItem('EmberCrystal', 1);AddReputation(Faction.Talon, +8);AddReputation(Faction.Zirax, -64);AddItem('PlatinOunce', 4)"
+  OptionNext_3: End
+  Option_4: "<i>3 CV Talon Items<i> for <b>3 EmberCrystal<b>"
+  OptionExecute_4: "RemoveItem('EmberCrystal', 3);AddReputation(Faction.Talon, +8);AddItem('LargeEmberOfEternalFlame', 1);AddItem('LargeTorchOfFaith', 1);AddItem('AlchemyGeneratorMS', 1)"
+  OptionNext_4: End
+  Option_5: "<i>3 SV Talon Items<i> for <b>2 EmberCrystal<b>"
+  OptionExecute_5: "RemoveItem('EmberCrystal', 2);AddReputation(Faction.Talon, +8);AddItem('EmberOfEternalFlame', 1);AddItem('TorchOfFaith', 1);AddItem('AlchemyGenerator', 1)"
+  OptionNext_5: End
+}
+{ +Dialogue Name: TR_EmberTree_HighShaman
+  NPCName: "High Ember Shaman"
+  Output: "@w1 I must see your Portal key and 10 EmberCrystal. Then we can begin the ritual."
+  Option_1: "I have a <i>Ember Portal Key<i> and a <i>CacheKey<i>. What ritual?"
+  OptionIf_1: "HasItem('Token', 1, 7700) && HasItem('EmberCrystal', 10)"
+  OptionNext_1: TR_EmberTree_HighShaman_TempleQuest
+  Option_2: "I have a <i>Temple Key<i> from the ritual and <i>10 CrossBows<i> from the Temple."
+  OptionIf_2: "HasItem('Token', 1, 7701) && HasItem('LaserCrossbowT2', 10)"
+  OptionNext_2: TR_EmberTree_HighShaman_Reward
+  Option_3: "GoodBye."
+  OptionNext_3: End
+}
+{ +Dialogue Name: TR_EmberTree_HighShaman_TempleQuest
+  NPCName: "High Ember Shaman"
+  Output: "@w1 The ritual to save the Ancinet Ember Temple {PlayerName}. \n At the beginning of each centurial harvest a new order of EmberTalon vow their internal \n embers to the temple. @p9 @w1 At the end of the harvest their bodies are left as infected husks \n and their souls sacraficed to fuel the Ember Tree. @p9 I will enchant your <b>CacheKey<b> with the <i>10 EmberCrystal<i> to magically open the doors of the temple. \n\nYou will see the temple built a top the largest island in this Ember Realm. \nCleanse the temple of the infected husks and bring me your looted <i>7 Cross Bows<i> and your <b>Temple Key<b>."
+  Option_1: "Begin the ritual to enchant my Portal Key into a Temple Key. Then I will do as you ask."
+  OptionExecute_1: "RemoveItem('EmberCrystal', 10);RemoveItem('Token', 1, 7700);AddItem('Token', 1, 7701);AddReputation(Faction.Zirax, -64)"
+  OptionNext_1: End
+}
+{ +Dialogue Name: TR_EmberTree_HighShaman_Reward
+  NPCName: "High Ember Shaman"
+  Output: "@w1 You have completed a great task for the Ember Talon Village {PlayerName}. \n I will now disenchant your <i>Temple Key<i> into a <b>Portal Key<b>. \n\n I also have treasure for you."
+  Option_1: "May your Torch of Faith burn bright. I have the Crossbows and Temple Key ready for you."
+  OptionExecute_1: "RemoveItem('LaserCrossbowT2', 7);RemoveItem('Token', 1, 7701);AddItem('Token', 1, 7700);AddReputation(Faction.Talon, +16);AddItem('LegacyEnergyCore', 1)"
+  OptionNext_1: End
+}
+{ +Dialogue Name: TR_EmberTree_BlackSmith
+  NPCName: "EmberBlackSmith"
+  Output: "@w1 I will trade Epic boosts for EmberCrystals. Your welcome to use my Tribal Armor Anvil if you wish." 
+  Option_1: "I have Ember Crystals to turn in for the harvest for Epic Boosts."
+  OptionIf_1: "HasItem('EmberCrystal', 7)"
+  OptionNext_1: TR_EmberTree_BlackSmith_Epics
+  Option_2: "I have found a <b>Gate Key<b> and want to know more."
+  OptionIf_2: "HasItem('Token', 1, 7702)"
+  OptionNext_2: TR_EmberTree_BlackSmith_EmberOtyugh
+  Option_3: "How do I get EmberCrystals and Keys?"
+  OptionNext_3: TR_EmberTree_BlackSmith_GeneralQuest
+  Option_4: "I would just like to buy or sell from you EmberBlackSmith."
+  OptionExecute_4: "OpenTraderWindow()"
+  OptionNext_4: End
+}
+{ +Dialogue Name: TR_EmberTree_BlackSmith_Epics
+  NPCName: "EmberBlackSmith"
+  Output: "@w1 Which <i>Epic Booster<i> would you like to trade for <b>7 EmberCrystal<b>?"
+  Option_1: "<i>ArmorBoostEpic<i>."
+  OptionExecute_1: "RemoveItem('EmberCrystal', 7);AddItem('ArmorBoostEpic', 1);AddReputation(Faction.Talon, +48)"
+  OptionNext_1: End
+  Option_2: "<i>JetpackBoostEpic<i>."
+  OptionExecute_2: "RemoveItem('EmberCrystal', 7);AddItem('JetpackBoostEpic', 1);AddReputation(Faction.Talon, +32)"
+  OptionNext_2: End
+  Option_3: "<i>EVABoostEpic<i>."
+  OptionExecute_3: "RemoveItem('EmberCrystal', 7);AddItem('EVABoostEpic', 1);AddReputation(Faction.Talon, +64)"
+  OptionNext_3: End
+  Option_4: "<i>TransportationBoostEpic<i>."
+  OptionExecute_4: "RemoveItem('EmberCrystal', 7);AddItem('TransportationBoostEpic', 1);AddReputation(Faction.Talon, +16)"
+  OptionNext_4: End
+}
+{ +Dialogue Name: TR_EmberTree_BlackSmith_EmberOtyugh
+  NPCName: "EmberBlackSmith"
+  Output: "@w1 The mighty <i>EmberOtyugh Lizard<i> resides within the gated garden attached to the top of the Ember Temple. \n Your <b>Ember Gate Key<b> unlocks the gates to the garden.\n You will need to speak with a High Shaman to enter the temple. @p9 The Lizard has eaten... guard the Ember Seed key. @w1 You must defeat the EmberOtyugh, loot it for the <b>Ember Seed Key<b> and traverse the passage to the top of the Ember Tree. \n\n The key will open the <i>Personal Locker<i> underneath the sacred seed."
+  Option_1: "The mighty EmberOtyugh is no match for me."
+  OptionNext_1: TR_EmberTree_BlackSmith
+}
+{ +Dialogue Name: TR_EmberTree_BlackSmith_GeneralQuest
+  NPCName: "EmberBlackSmith"
+  Output: "@w1 As part of the Centurial Harvest you will travel around the Ember Realm and pick <i>Ember Crystals<i>. \n You will find these crystals in low lying lava islands around the village. @p9 This harvest is hard as several <i>EmberWalkers<i> are running all a muck in the realm. \n If you find a Gate Key on one of the Ember Golems let me know. @p9 When you have collected some <b>EmberCrystal<b> return the village and speak with any EmberTalon to turn them in."
+  Option_1: "EmberWalkers will not be a problem while I harvest EmberCrystals for the Ember Village."
+  OptionNext_1: TR_EmberTree_BlackSmith
+}
+{ +Dialogue Name: TR_EmberTree_Outsiders
+  NPCName: "Talon Story Teller"
+  Output: "@w1 It is time for the great and dangerous Centurial Ember Seed harvest {PlayerName}. \n Word has spread fast and the Talon need skilled adventurers. \n If you have nuetral or better reputation with the Talon you can take part in the harvest. \n\n Go to the Talon Chief at Haven Lake, HavenStation in the Shaman Hut for details."
+  Option_1: "Thanks for letting me know about this great and dangerous harvest."
+  OptionNext_1: End
+}

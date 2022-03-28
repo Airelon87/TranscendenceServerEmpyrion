@@ -2238,6 +2238,98 @@
   }
 }
 
+#Ember Tree Otyughs
+{ +Container Id: 175
+  Count: "5,5"
+  Size: "8,1"
+  SfxOpen: UseActions/drone_open
+  SfxClose: UseActions/drone_close
+
+  { Child Items
+    Name_1: EmberCrystal, param1: 1, param2: "5" 
+    Name_2: Token, param1: 1, param2: "meta=7703"
+    Name_3: ReportArcheologicalData, param1: 0.5, param2: "1"
+	  Name_4: TalonCrossbowPlayer, param1: 0.5, param2: "1"
+    Name_5: LaserArrows, param1: 0.5, param2: "32,64"
+  }
+}
+
+#Ember Tree Talon
+{ +Container Id: 176
+  Count: "2,3"
+  Size: "8,1"
+  SfxOpen: UseActions/drone_open
+  SfxClose: UseActions/drone_close
+
+  { Child Items
+    Name_1: EmberCrystal, param1: 0.3, param2: "1" 
+    Name_2: ReportExplorationRawData, param1: 0.1, param2: "1"
+    Name_3: ReportArcheologicalData, param1: 0.1, param2: "1"
+	  Name_4: LaserCrossbow, param1: 0.1, param2: "1"
+    Name_5: LaserArrows, param1: 0.1, param2: "8,16"
+    Name_6: PlatinBar, param1: 0.6, param2: "1,2"
+    Name_7: LargeTorchOfFaith, param1: 0.1, param2: "1"
+  }
+}
+
+#Ember Tree Golems
+{ +Container Id: 177
+  Count: "2,4"
+  Size: "8,1"
+  SfxOpen: UseActions/drone_open
+  SfxClose: UseActions/drone_close
+
+  { Child Items
+    Name_1: EmberCrystal, param1: 0.25, param2: "1" 
+    Name_2: ReportExplorationRawData, param1: 0.1, param2: "1"
+    Name_3: ReportArcheologicalData, param1: 0.1, param2: "1"
+    Name_4: LargeTorchOfFaith, param1: 0.1, param2: "1"
+    Name_5: PlatinOre, param1: 0.4, param2: "5,15"
+    Name_6: GoldOre, param1: 0.2, param2: "1,2"
+    Name_7: Token, param1: 0.05, param2: "meta=7702"
+    Group_0: OresAdvanced, param1: 0.4
+    Group_1: OresRare, param1: 0.3
+  }
+}
+
+#Ember Tree Infected
+{ +Container Id: 178
+  Count: "2,4"
+  Size: "8,1"
+  SfxOpen: UseActions/drone_open
+  SfxClose: UseActions/drone_close
+
+  { Child Items
+    Name_1: EmberCrystal, param1: 0.1, param2: "1" 
+    Name_2: ReportExplorationRawData, param1: 0.05, param2: "1"
+    Name_3: ReportArcheologicalData, param1: 0.05, param2: "1"
+    Name_4: LargeTorchOfFaith, param1: 0.1, param2: "1"
+    Name_5: GroundRoachSalami, param1: 0.3, param2: "1,2"
+    Name_6: LaserCrossbowT2, param1: 1, param2: "1"
+    Name_7: Token, param1: 0.05, param2: "meta=7702"
+    Group_0: MedicalItems, param1: 0.2
+  }
+}
+
+#Ember Tree Enemies
+{ +Container Id: 179
+  Count: "1,3"
+  Size: "8,1"
+  SfxOpen: UseActions/drone_open
+  SfxClose: UseActions/drone_close
+
+  { Child Items
+    Name_1: EmberCrystal, param1: 0.1, param2: "1" 
+    Name_2: ReportBiologicalData, param1: 0.05, param2: "1"
+    Name_3: Steak, param1: 0.05, param2: "1"
+    Name_4: GrilledVegetables, param1: 0.1, param2: "1"
+    Name_5: PentaxidOre, param1: 0.3, param2: "1,2"
+    Name_6: MutatedSubstance, param1: 1, param2: "1"
+    Name_7: AlienOrganism, param1: 1, param2: "1"
+    Name_8: Token, param1: 0.05, param2: "meta=7702"
+  }
+}
+
 { +Container Id: 254
   Count: "1,2"
   Size: "8,1"

@@ -12652,7 +12652,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   ShowUser: Yes
 }
 { +Item Id: 1003, Name: Fertilizer, Ref: TradingGoodsTemplate
-  MarketPrice: 150
+  MarketPrice: 75
   ShowUser: Yes
 }
 { +Item Id: 1004, Name: Liquors, Ref: FoodTemplate
@@ -13625,7 +13625,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 350, display: StaminaValue
     AddFood: 25, display: FoodValue
     AddOxygen: 0
-	  AddTemperature: -2, display: TemperatureValue
+	  AddTemperature: -8, display: TemperatureValue
     Buff: Hangover
     Buff_chance: 0.05
     Debuff: Stunned, display: EffectiveAgainst
@@ -13959,10 +13959,184 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   TechTreeNames: Weapons
 }
 
+{ +Item Id: 1502, Name: MeleeEmberOtyugh, Ref: MeleeTemplate
+  HoldType: 20
+  { Child 0
+    Class: Melee
+    ROF: 2.0, type: float
+    Range: 5
+    Damage: 2400
+    SfxBegin: Enemies/Otyugh/Otyugh_SfxAttack
+    Buff: "ChlorophyllInfusion,BoilingBite,NarcoticStun"
+    Buff_chance: "0.1,0.2,1"
+  }
+}
+
+{ +Item Id: 1503, Name: EmberOtyughFireBall
+  Meshfile: Entities/Items/Weapons/Enemies/RangedAttackPrefab
+  Material: human
+  HoldType: 0
+  Canhold: false: 1
+  Category: Weapons/Items
+  ShowUser: No
+  { Child 0
+    Class: LauncherSS
+    ROF: 0.5, type: float
+    Range: 120, display: true
+    IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
+    Damage: 1500, display: true
+    AmmoCapacity: 250, display: true
+    AmmoUnlimited: true
+    AmmoType: EmberOtyughFireBallAmmo, display: true
+    ReloadDelay: 0.3, display: true
+    SfxBegin: Enemies/Otyugh/Otyugh_SfxAttack_a2
+    Buff: "DermalBurn,NarcoticStun,FeverAttack"
+    Buff_chance: "0.5,1,0.5"
+  }
+}
+
+{ +Item Id: 1504, Name: MeleeEmberWalker, Ref: MeleeTemplate
+  { Child 0
+    Class: Melee
+    ROF: 2, type: float
+    Range: 4
+    Damage: 475
+    SfxBegin: Enemies/Golem2/HybridGrowl
+    Buff: "IncreaseRadiation,OpenWound,Stunned"
+    Buff_chance: "0.5,0.25,1"
+  }
+}
+
+{ +Item Id: 1505, Name: EmberCrystal, Ref: TradingGoodsTemplate
+  CustomIcon: CrystalsPyramidOrangeStage1
+  MarketPrice: 900, display: true
+  Info: This unqiue crystal is harvested from Ember Pyramid Crystals. An EmberTalon will reward you well for it., display: true
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 500, display: HealthValue
+    AddStamina: 500, display: StaminaValue
+    AddFood: 25, display: FoodValue
+    AddOxygen: 0
+	  AddTemperature: 20, display: TemperatureValue
+    Buff: ImmunityBoosterII
+    Buff_chance: 0.3
+    Debuff: "LethalDose,BoilingBite,FeverAttack,DermalBurn,OpenWound", display: EffectiveAgainst
+    SfxBegin: UseActions/playerEatingSoft
+  }
+}
+
+{ +Item Id: 1506, Name: LaserCrossbowEnemy, Ref: TalonCrossbowWeapon
+  Meshfile: Entities/Items/Weapons/Enemies/TalonCrossbowPrefab  
+  Material: metalweapon
+  CustomIcon: TalonCrossbowWeaponCharged 
+  PickupToToolbar: true
+  HoldType: 15
+  StackSize: 1
+  Category: Weapons/Items
+  ShowUser: No
+  Info: A rudimentary laser cross bow, display: true
+  Mass: 18, type: float, display: true, formatter: Kilogram
+  Volume: 36, type: float, display: true, formatter: Liter
+  Durability: 250, display: false
+  DegradationProb: 0.725, type: float, display: false
+  OverrideTradingConstraints: true
+  SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
+  { Child 0
+    Class: Ranged
+    AllowRemote: false  
+    ROF: 2.5, type: float, display: true, formatter: ROF
+    Range: 140, display: true
+    IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
+    Automatic: true
+    AmmoUnlimited: true
+    Buff: "Stunned"
+    Buff_chance: "0.4"
+    Damage: 375, display: true
+    BlastDamage: 350, display: true
+    AmmoCapacity: 32, display: true
+    AmmoType: EnemyLaserArrows, display: true
+    BulletSpread: 0.5, display: true
+    ReloadDelay: 2.3, display: true
+    ParticleTransform: Muzzle/Particle1
+    SfxBegin: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_start
+    SfxLoop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_loop
+    SfxStop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_end
+    SfxNoAmmo: Weapons/Misc/G36DryFire
+    SfxReload: Weapons/Player/Reload/RifleReloadNormal
+    PfxMuzzle: SniperMuzzleLaserBlue
+    #Tracer: Weapons/Projectiles/TracerLaserShotBlue
+    Tracer: Weapons/Projectiles/TracerOrange1
+    TracerPerBullet: 3  
+  }
+}
+
+{ +Item Id: 1507, Name: EnemyLaserArrows
+  Meshfile: Entities/Items/Weapons/Projectiles/CrossbowBoltPrefab
+  Material: human
+  HoldType: 0
+  Canhold: false
+  Category: Weapons/Items
+  ShowUser: No
+  { Child 0
+    Class: Projectile
+    Damage: 375
+    BlastParticleIndex: 10
+    BlastRadius: 3
+    BlastDamage: 350
+    Speed: 30
+    Range: 250
+    Ballistic: True
+
+    ParticleTransform: Muzzle/Particle2 #Muzzle/Particle1
+    SfxBegin: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_start
+    SfxLoop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_loop
+    SfxStop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_end
+    SfxNoAmmo: Weapons/Misc/G36DryFire
+    SfxReload: Weapons/Player/Reload/RifleReloadNormal
+    PfxMuzzle: SniperMuzzleLaserBlue
+    Tracer: Weapons/Projectiles/TracerOrange1
+    TracerPerBullet: 3
+		
+    DamageMultiplier_1: 1.5, param1: head, display: DmgMultiplierHead  
+    DamageMultiplier_2: 0, param1: dirt|stone|rock
+    DamageMultiplier_3: 1, param1: shield
+    BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
+    BlastDamageMultiplier_2: 0, param1: shield 
+    BlastDamageMultiplier_3: 2, param1: human
+  }
+}
+
+{ +Item Id: 1508, Name: EmberOtyughFireBallAmmo
+  Meshfile: Entities/Items/Weapons/Projectiles/OtyughFireBallPrefab
+  Material: human
+  HoldType: 0
+  Canhold: false
+  Category: Weapons/Items
+  ShowUser: No
+  { Child 0
+    Class: Projectile
+    Damage: 1500
+    BlastParticleIndex: 15
+    BlastRadius: 4
+    BlastDamage: 1000
+    Speed: 45
+    HomingSpeed: 2.5
+    Range: 120
+    Buff: "DermalBurn,NarcoticStun,BoilingBite"
+    Buff_chance: "0.5,1,0.5"
+
+    DamageMultiplier_1: 0, param1: dirt|stone
+    BlastDamageMultiplier_1: 0.01, param1: dirt|stone
+    BlastDamageMultiplier_2: 0, param1: shield
+  }
+}
+
 #========================================================================================
 #Transcendence NPC Weapons
 #==========================================================================================
-{ Item Id: 1600, Name: FlameKeeperWeapon
+{ +Item Id: 1600, Name: FlameKeeperWeapon
   Meshfile: Entities/Items/Weapons/DrillV2/FillerToolPrefab
   PickupToToolbar: true
   Material: metalweapon
@@ -14710,7 +14884,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   { Child 0
     Class: Ranged
     AllowRemote: false  
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 1.25, type: float, display: true, formatter: ROF
     Range: 250, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true

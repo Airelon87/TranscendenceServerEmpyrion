@@ -64,6 +64,25 @@
   RemoveOnUse: true
 }
 
+{ Token Id: 7700, Name: Ember Portal Key
+  Description: Allows passage through the Ember Tree Instance Portal at Haven Lake. Keep this key safe or on your hotbar.
+  RemoveOnUse: false
+}
+
+{ Token Id: 7701, Name: Ember Temple Key
+  Description: This key is enchanted and opens the Ember Temple Front Gate above the boat dock. Return this key and 10 Crossbows from the Infected within the Temple to the High Ember Shaman.
+  RemoveOnUse: false
+}
+
+{ Token Id: 7702, Name: Ember Gate Key
+  Description: This key unlocks the gate outside the top level of the Ember Temple. The Blacksmith in the Ember Village will tell you more about this key.
+  RemoveOnUse: true
+}
+
+{ Token Id: 7703, Name: Ember Seed Key
+  Description: This key will open the lockers at the top of the Ember Tree for a grand reward.
+  RemoveOnUse: true
+}
 # === Story Tokens (Do not change! ===  
 
 { Token Id: 9999, Name: AI Routine 32 Key

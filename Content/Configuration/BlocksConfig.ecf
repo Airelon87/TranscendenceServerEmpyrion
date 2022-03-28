@@ -32561,9 +32561,32 @@
   }
 }
 
-#==================================v177=Rev2=
+#==================================v1.7.x_TR7.2.x=
 #TranscendenceCustomItems          3/14/2022
-#==================================Airelon===
+#==================================Airelon========
+
+#TR7.2.5 EmberTree Instance
+{ Block Name: EmberPyramidCrystal, Ref: CrystalsPyramidOrangeStage3
+  CustomIcon: CrystalsPyramidOrangeStage1
+  Model: @models2/Entities/Farming/Crystals/CrystalsPyramidOrangeStage3Prefab
+  { Child DropOnHarvest
+    Item: EmberCrystal
+    Count: 1
+  }
+  { Child CropsGrown   
+    OnHarvest: EmberPyramidCrystalHarvested
+    OnDeath: PlantDead 
+  }
+}
+{ Block Name: EmberPyramidCrystalHarvested, Ref: CrystalsPyramidBlue
+  Model: @models2/Entities/Farming/Crystals/CrystalsPyramidOrangeStage2Prefab
+  Class: PlantGrowing
+  { Child PlantGrowing
+    Next: EmberPyramidCrystal
+    GrowthRate: 25
+    FertileLevel: 5
+  }
+}
 
 #Very Rare Functional Tribal Deco Items
 #--------------------------------------
@@ -33787,13 +33810,12 @@
   IsOxygenTight: true, display: true
   Category: BuildingBlocks
   CanPlayersSpawnOn: false
-  Info: bkiWaterBlock, display: true
-  # Class: LiquidStatic  
+  Info: bkiWaterBlock, display: true  
   Material: water
   Shape: LiquidBlock
   Model: Cube
   Mesh: water
-  Texture: 107
+  #Texture: 107
   Place: Free
   Mass: 400, type: float, display: true, formatter: Kilogram
   StackSize: 1000
@@ -33815,13 +33837,12 @@
   Category: BuildingBlocks
   CanPlayersSpawnOn: false
   PickupTarget: VentilatorBlocks
-  Info: bkiLavaBlock, display: true
-  # Class: LiquidStatic  
+  Info: bkiLavaBlock, display: true 
   Material: lava
   Shape: LiquidBlock
   Model: Cube
   Mesh: lava
-  Texture: 107
+  #Texture: 107
   Place: Free
   Mass: 400, type: float, display: true, formatter: Kilogram
   HitPoints: 3000, type: int, display: true

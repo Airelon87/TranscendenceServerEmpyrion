@@ -178,6 +178,9 @@ SolarSystems:
           - - '18000,0,9000'
             - RoboHoverPortalInstance
             - RIPRoboHoverPortalInstance
+          - - '9000,0,-9000'
+            - EmberTreeInstance
+            - EmberTreeInstance
           - - '0,0,0'
             - RIPzed Orbit
             - ZedOrbit
@@ -2592,7 +2595,7 @@ SolarSystems:
         Color: '1, 1, 1'
         SectorMapType: Planet
         Playfields:
-          - ['0,0,0', ZedZorgula, ZedZorgOG]
+          - ['0,0,0', ZedZorgula, ZedZorgula]
           #- ['-22500,-500,-5000', ZedZorgula Moon, ZedZorgagon]
           - ['0,0,0', ZedZorgula Orbit, ZedZorgOGSpace]
         Allow: []

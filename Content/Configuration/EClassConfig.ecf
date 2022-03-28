@@ -2594,46 +2594,8 @@
   FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
 }
 
-# { +Entity Name: Otyugh, Ref: PredatorTemplate
-  # Mesh: Enemies/Otyugh/OtyughPrefab
-  # MeshDead: Enemies/Otyugh/OtyughDeadPrefab
-  # # HeadTransform: Tail_bone7_end_effector
-  # HeadTransform: Head
+#Removed old commented lines for Otyugh TR7.2.5
 
-  # /* General entity properties */
-  # MaxHealth: 800
-  # # XpFactor: 1.3
-  # XpFactor: 5.46
-  # HandItem: MeleeOtyugh
-  # RotateToGround: true
-
-  # WanderSpeed: 0.4
-  # ApproachSpeed: 1.1
-  # NightWanderSpeed: 0.4
-  # NightApproachSpeed: 1.1
-  # PanicSpeed: 1.8
-
-  # /* Determines particle effect  */
-  # SurfaceCategory: human
-
-  # SfxRandomTime: 50.0
-  # # SfxRandom: Enemies/Otyugh/LizardCreature04
-  # SfxRandom: Enemies/Otyugh/Otyugh_SfxRandom
-  # SfxAlertTime: 25.0
-  # # SfxAlert: Enemies/Otyugh/LizardCreature04
-  # SfxAlert: Enemies/Otyugh/Otyugh_SfxRandom
-  # SfxHurt: Enemies/Otyugh/Otyugh_SfxHurt
-  # # SfxHurt: Enemies/Otyugh/MONSTERDeepHurtSubtle
-  # SfxDeath: Enemies/Otyugh/Otyugh_SfxDeath
-  # # SfxDeath: Enemies/Otyugh/MonsterScreams05
-
-  # LootListOnDeath: 20
-  # FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
-  
-  # UpdateClusterInfo: true   
-  # AllowUserInstantiate: true
-  # AllowInSpawners: true
-# }
 ## ========================= Alien Faction - Primitive =========================
 
 { +Entity Name: TotalHorror, Ref: PredatorTemplate
@@ -10169,4 +10131,197 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
   
   JumpHeight: 0.00
   StepHeight: 0.15
+}
+#==================================
+#Ember Tree NPCs v1.7.8_TR7.2.5
+#27March2022
+#Transcendence Scenario by Airelon
+#==================================
+{ +Entity Name: EmberTalonVillager, Ref: TalonGuardian
+  Mesh: Enemies/TalonGuardian/BAI/TalonGuardianCrossbowPrefab
+  MeshDead: Enemies/TalonGuardian/TalonGuardianRedDeadPrefab
+  
+  ItemsOnEnterGame: LaserCrossbowEnemy
+  MaxHealth: 5000
+  XpFactor: 17.5
+
+  LootListOnDeath: 176
+  
+  { Child Hints
+	UseMeleeAttack: 0
+  }  
+}
+{ +Entity Name: InfectedEmberTalon, Ref: TalonGuardian
+  Mesh: Enemies/TalonGuardian/TalonGuardianRedInfectedPrefab
+  MeshDead: Enemies/TalonGuardian/TalonGuardianRedInfectedDeadPrefab
+  SfxHurt: Enemies/TotalHorror/TotalHorror_SfxHurt
+  ItemsOnEnterGame: "MeleeEmberWalker"
+  MaxHealth: 6000
+  XpFactor: 17.5
+
+  LootListOnDeath: 176
+  TimeStayAfterDeath: 240 
+  
+  { Child Hints
+	UseMeleeAttack: 0
+  }  
+}
+{ +Entity Name: EmberRealmMonster, Ref: Hexapod
+  Mesh: Enemies/HexapodInfectedPrefab  
+  Faction: Alien
+  MeshDead: Enemies/HexapodInfectedDeadPrefab
+  HeadTransform: Head
+  SfxHurt: Enemies/TotalHorror/TotalHorror_SfxHurt 
+  ItemsOnEnterGame: MeleeEmberWalker
+  MaxHealth: 4250
+  XpFactor: 7.5
+
+  LootListOnDeath: 179
+}
+{ +Entity Name: EmberWalker, Ref: PredatorTemplate
+  Mesh: Enemies/WoodWalker/WoodWalkerPrefab
+  HeadTransform: Head
+  
+  Faction: Alien
+  
+  Prefab: AlienLarge
+
+  MaxHealth: 2250
+  XpFactor: 10
+  ItemsOnEnterGame: "MeleeEmberWalker"
+  HandItem: MeleeEmberWalker
+
+  WanderSpeed: 0.2
+  ApproachSpeed: 1.0
+  NightWanderSpeed: 0.3
+  NightApproachSpeed: 1.2
+  PanicSpeed: 0.9
+
+  /* Determines particle effect  */
+  SurfaceCategory: metal
+
+  SfxRandomTime: 50.0
+  # SfxRandom: Enemies/Golem2/MONSTERGrowlDeep08aShort
+  SfxRandom: Enemies/GolemDesert/GolemDesert_SfxRandom
+
+  SfxAlertTime: 25.0
+  # SfxAlert: Enemies/Golem2/MONSTERGrowlDeep08aShort
+  SfxAlert: Enemies/GolemDesert/GolemDesert_SfxRandom
+  # SfxSense: Enemies/Golem2/MONSTERGrowlDeep08aShort
+
+  # SfxHurt: Enemies/Golem2/MONSTERGrowlDeep07Short
+  SfxHurt: Enemies/GolemDesert/GolemDesert_SfxHurt
+  # SfxDeath: Enemies/Golem2/RoarScream07
+  SfxDeath: Enemies/GolemDesert/GolemDesert_SfxDeath
+  
+  LootListOnDeath: 177
+
+  AllowUserInstantiate: true
+  AllowInSpawners: true
+}
+{ +Entity Name: InfectedEmberTalonCrossBow, Ref: TalonGuardian
+  Mesh: Enemies/TalonGuardian/TalonGuardianCrossbowInfectedPrefab
+  MeshDead: Enemies/TalonGuardian/TalonGuardianCrossbowInfectedDeadPrefab
+  MaxHealth: 4500
+  XpFactor: 10
+  LootListOnDeath: 178
+  TimeStayAfterDeath: 240 
+  Faction: Alien
+  ItemsOnEnterGame: LaserCrossbowEnemy
+  SfxAlertTime: 25.0
+  SfxHurt: Enemies/TotalHorror/TotalHorror_SfxHurt
+  { Child Hints
+	UseMeleeAttack: 0
+  }  
+}
+{ +Entity Name: EmberOtyugh, Ref: PreyBAITemplate
+  Mesh: Enemies/LandPredator/LandPredatorPrefab
+  MeshDead: Enemies/LandPredator/LandPredatorDeadPrefab
+  # HeadTransform: Tail_bone7_end_effector
+  HeadTransform: Head
+  RightHandJointName: "WeaponNode"
+  
+  Faction: Predator
+  ItemsOnEnterGame: "MeleeEmberOtyugh,EmberOtyughFireBall"
+  /* General entity properties */
+  MaxHealth: 125000
+  XpFactor: 25
+  HandItem: MeleeEmberOtyugh
+  RotateToGround: true
+  RotateSpeed: 220 /* MaxSpeed */
+  RotateSpeedMovement: 220
+
+  /* Determines particle effect  */
+  SurfaceCategory: alien
+
+  SfxRandomTime: 40.0
+  SfxRandom: Enemies/Otyugh/Otyugh_SfxRandom
+  SfxAlertTime: 20.0
+  SfxAlert: Enemies/Triceratops/Triceratops_SfxRandom
+  SfxHurt: Enemies/Triceratops/Triceratops_SfxHurt
+  SfxDeath: Enemies/Triceratops/Triceratops_SfxDeath
+  SfxAnimationEvent0: Enemies/Otyugh/MonsterScreams05 
+  SfxAnimationEvent1: Enemies/Otyugh/RoarScream06 
+  
+  
+  LootListOnDeath: 175
+  TimeStayAfterDeath: 720
+  FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
+  
+  UpdateClusterInfo: true   
+  AllowUserInstantiate: true
+  AllowInSpawners: true
+
+  JumpHeight: 2.5
+  StepHeight: 3.75
+  
+    /* AI Properties */
+  { Child MainBehavior
+	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+	Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"	
+	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"	
+	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"	
+	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalOtyughAttack"		
+  }
+
+  { Child VariableOverride
+    SpeedCalm: 1.0
+    SpeedAlerted: 1.7
+    SpeedAttack: 2.5
+	  SpeedFlee: 1.2
+	  MeleeAttackDistance: 5.0
+	  MinimalDistanceToTarget: 4.5
+  }  
+  
+  { Child Hints
+	AttackWaitAfterAttack: 0
+	AttackRoarBeforeAttack: 3
+	IsHunting:100
+	MeleeWeaponIndex:0
+	RangedWeaponIndex:1
+  }
+  
+  {	Child VisionSensor
+	VisibleDistance: 180
+	ViewAngle: 270
+  }  
+  
+  {	Child TargetSensor
+    AttackableTypes: "Player,HV,PlayerBike"
+  }
+  
+  {	Child AlertSensor
+	AlertLevel1: 15, param1: 0
+	AlertLevel2: 25, param1: 2
+	AlertLevel3: 50, param1: 10
+	AlertLevelDrop:5 /* slow alert drop */
+	AlertAddFromVisionMinNoMovement:0 /* no alert when not moving */
+	AlertAddFromVisionMovement:250
+	AlertVisionMaxSpeed:3
+	AlertAddFromAutoAlert:30
+	MinDistanceToAutoAlert:60
+	NoiseMaxDistance:160
+	NoiseAlertMultiplier:0.3
+  }     
 }
