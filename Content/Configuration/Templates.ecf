@@ -471,7 +471,7 @@
 { +Template Name: AluminiumPowder
   BaseItem: true #A1
   OutputCount: 10 #A1
-  CraftTime: 5
+  CraftTime: 12
   Target: "SmallC,HoverC,BaseC,LargeC,AdvC,Furn"
   { Child Inputs
     AluminiumOre: 5
@@ -480,7 +480,7 @@
 
 { +Template Name: AluminiumCoil
   OutputCount: 1
-  CraftTime: 3
+  CraftTime: 16
   Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
     AluminiumPowder: 5
@@ -611,7 +611,7 @@
   CraftTime: 3
   Target: "LargeC,AdvC"
   { Child Inputs
-    GoldIngot: 1
+    GoldIngot: 2
   }
 }
 
@@ -3154,15 +3154,15 @@
   }
 }
 
-# { +Template Name: Drill
-  # CraftTime: 20 #A1
-  # Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
-  # { Child Inputs
-    # MechanicalComponents: 5
-    # Electronics: 2
-    # OpticalFiber: 1
-  # }
-# }
+{ +Template Name: Drill
+  CraftTime: 20 #A1
+  Target: "SurvC,HoverC"
+  { Child Inputs
+    MechanicalComponents: 2
+    Electronics: 1
+    OpticalFiber: 1
+  }
+}
 
 { +Template Name: DrillT2
   CraftTime: 20 #B1 

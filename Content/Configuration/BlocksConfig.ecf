@@ -8890,7 +8890,7 @@
   Group: cpgEquipment
   IsAccessible: true, type: bool
   IsLockable: true
-  DebuffNamesActivate: "Indigestion,Hangover,BadTrip", display: EffectiveAgainst
+  DebuffNamesActivate: "Indigestion,Hangover,BadTrip,Flatulence", display: EffectiveAgainst
   SfxBuffActivate: UseActions/BlockToilet
   ShowUser: Yes
 }
@@ -8901,7 +8901,7 @@
   IsAccessible: true, type: bool
   IsLockable: true
   # BuffNamesActivate: "ReduceRadiation,DecreaseBodyTemp,IncreaseBodyTemp", display: StatusEffect
-  BuffNamesActivate: "ReduceRadiation,NeutralBodyTemp", display: StatusEffect
+  BuffNamesActivate: "ReduceRadiation,NeutralBodyTemp,FreshNClean", display: StatusEffect
   SfxBuffActivate: UseActions/BlockShower
   ShowUser: Yes  
 }
@@ -15508,7 +15508,7 @@
   BlockColor: "170,170,170"
   EnergyIn: 0, type: int, display: true, formatter: Watt
   # BuffNamesActivate: "ReduceRadiation,DecreaseBodyTemp,IncreaseBodyTemp", display: StatusEffect
-  BuffNamesActivate: "ReduceRadiation,NeutralBodyTemp", display: StatusEffect
+  BuffNamesActivate: "ReduceRadiation,NeutralBodyTemp,FreshNClean", display: StatusEffect
   SfxBuffActivate: UseActions/BlockShower
   ShowUser: Yes
 }
@@ -21548,7 +21548,7 @@
   Group: cpgEquipment
   IsAccessible: true, type: bool
   IsLockable: true
-  DebuffNamesActivate: "Indigestion,Hangover,BadTrip", display: EffectiveAgainst
+  DebuffNamesActivate: "Indigestion,Hangover,BadTrip,Flatulence", display: EffectiveAgainst
   SfxBuffActivate: UseActions/BlockToilet
   ShowUser: Yes
 }

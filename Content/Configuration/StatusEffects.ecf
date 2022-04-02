@@ -1421,8 +1421,8 @@
   Duration: 30
   Name: AdrenalineBoost
   OnExpired: "AdrenalineCrash"
-  # BuffIf: "varHealth < 250"    # correct condition 
-  BuffIf: "varHealth > 2500"     # remove 
+  BuffIf: "varHealth < 250"    # correct condition 
+  # BuffIf: "varHealth > 2500"     # remove    #Switched BuffIf as comment said remove possible Eleon mistake
   DebuffIf: "varHealth >= 300"
   Type: staminaup
   Stack: extend
@@ -1942,12 +1942,12 @@
 
   { Child Modify0
     Stat: health
-    Amount: 15
+    Amount: 25
     Rate: 1
   }
   { Child Modify1
     Stat: stamina
-    Amount: -30
+    Amount: -25
     Rate: 1
   }
 }
@@ -1962,7 +1962,7 @@
 
   { Child Modify0
     Stat: health
-    Amount: 20
+    Amount: 25
     Rate: 1
   }
   { Child Modify1
@@ -1973,10 +1973,11 @@
 }
 
 { StatusEffect Name: ImmunityBooster
-  Duration: 600
+  Duration: 60
   Name: ImmunityBooster
   Type: healthup
-  Stack: discard
+  Stack: extend
+  CastSound: Player_Male/sigh
   Description: You feel as if there is a extra pep in your step! 
   Icon: TmpEff_Rested
 
@@ -1997,11 +1998,60 @@
   }  
 }
 
-{ StatusEffect Name: ImmunityBoosterII
-  Duration: 300
-  Name: ImmunityBoosterII
+{ StatusEffect Name: FreshNClean #v1.7.8 TR7.2.6
+  Duration: 9
+  Name: FreshNClean
   Type: healthup
   Stack: discard
+  CastSound: Player_Male/sigh
+  Description: You have recently used the Shower. Good for you! 
+  Icon: TmpEff_Rested
+
+  { Child Modify0
+    Stat: health
+    Amount: 5
+    Rate: 1
+  }
+  { Child Modify2
+    Stat: speedmodifier
+    SetValue: 2.0
+    Type: speedmodifier    
+  }  
+}
+
+{ StatusEffect Name: Flatulence   #v1.7.8 TR7.2.6
+  Duration: 60
+  Name: Flatulence
+  OnExpired: "AdrenalineCrash"
+  Type: staminadown
+  Stack: extend
+  CastSound: UseActions/exhausted
+  Description: You need to find a bathroom quick! 
+  Icon: TmpEff_BadTrip
+
+  { Child Modify0
+    Stat: health
+    Amount: -2
+    Rate: 5
+  }
+  { Child Modify1
+    Stat: food
+    Amount: -2
+    Rate: 10
+  }
+  { Child Modify2
+    Stat: speedmodifier
+    SetValue: 0.5
+    Type: speedmodifier    
+  }  
+}
+
+{ StatusEffect Name: ImmunityBoosterII    #v1.7.1 TR7.1.0
+  Duration: 60
+  Name: ImmunityBoosterII
+  Type: healthup
+  Stack: extend
+  CastSound: Player_Male/sigh
   Description: Your immune system has been super boosted! 
   Icon: TmpEff_Rested
 
@@ -2027,11 +2077,11 @@
   }
 }
 
-{ StatusEffect Name: ChlorophyllInfusion
-  Duration: 960
+{ StatusEffect Name: ChlorophyllInfusion    #v1.7.1 TR7.1.0
+  Duration: 30
   Name: ChlorophyllInfusion
   Type: healthup
-  Stack: discard
+  Stack: extend
   CastSound: UseActions/person_deep_sigh
   Description: Your body has adapted to endure extreme enviroments! 
   Actions: screen(underWaterFog)
@@ -2039,16 +2089,16 @@
   NextIsWorse: true
   Evolves: "LethalDose,0.7"
   OnExpired: "LethalDose"
-  Mutex: "HealBotHealz"
+  #Mutex: "HealBotHealz"
 
   { Child Modify0
     Stat: health
-    Amount: 10
+    Amount: 7
     Rate: 1
   }
   { Child Modify1
     Stat: stamina
-    Amount: 70
+    Amount: 50
     Rate: 2
   }
   { Child Modify2
@@ -2058,7 +2108,7 @@
   }  
   { Child Modify3
     Stat: oxygen
-    Amount: 5
+    Amount: 7
     Rate: 1
   }
 }

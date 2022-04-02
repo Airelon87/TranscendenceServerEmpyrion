@@ -95,7 +95,7 @@
   Meshfile: Entities/Items/Tools/flashlight01Prefab
   # DropMeshfile: Entities/Misc/BagSmallNewPrefab
   LifetimeOnDrop: 720
-  MarketPrice: 6, display: true
+  MarketPrice: 16, display: true
   Material: metalweapon
   HoldType: 14
   PickupToToolbar: true
@@ -111,6 +111,7 @@
 { +Item Id: 3, Name: Pistol
   Meshfile: Entities/Items/Weapons/Pistols/ProjectilePistolPrefab 
   PickupToToolbar: true
+  MarketPrice: 84, display: true
   Material: metalweapon
   HoldType: 14
   StackSize: 1
@@ -159,6 +160,7 @@
   Meshfile: Entities/Items/Weapons/Shotguns/Shotgun1Prefab
   PickupToToolbar: true
   Material: metalweapon
+  MarketPrice: 544, display: true
   HoldType: 15
   StackSize: 1
   Category: Weapons/Items
@@ -212,6 +214,7 @@
   Meshfile: Entities\Items\Weapons\ScifiMinigun\MinigunPrefab
   PickupToToolbar: true
   Material: metalweapon
+  MarketPrice: 544, display: true
   HoldType: 15
   StackSize: 1
   Category: Weapons/Items
@@ -259,6 +262,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT1Prefab 
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRiflePrefab
   PickupToToolbar: true
+  MarketPrice: 417, display: true
   Material: metalweapon
   HoldType: 15
   StackSize: 1
@@ -315,6 +319,7 @@
   Meshfile: Entities/Items/Weapons/Snipers/SniperRiflePrefab
   PickupToToolbar: true
   Material: metalweapon
+  MarketPrice: 800, display: true
   HoldType: 15
   StackSize: 1
   Category: Weapons/Items
@@ -367,6 +372,7 @@
 
 { +Item Id: 8, Name: Drill
   Meshfile: Entities/Items/Weapons/DrillV2/DrillT0Prefab
+  MarketPrice: 120, display: true
   PickupToToolbar: true
   Material: metalweapon
   HoldType: 16
@@ -458,6 +464,7 @@
   Meshfile: Entities/Items/Weapons/Shotguns/SciFiShotgun2BlackPrefab
   PickupToToolbar: true
   Material: metalweapon
+  MarketPrice: 1444, display: true
   HoldType: 15
   StackSize: 1
   Category: Weapons/Items
@@ -512,6 +519,7 @@
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherBlackPrefab
   PickupToToolbar: true
   Material: metalweapon
+  MarketPrice: 1644, display: true
   HoldType: 15
   StackSize: 1
   Category: Weapons/Items
@@ -556,6 +564,7 @@
   Meshfile: Entities/Items/Weapons/MultiToolT1Prefab
   PickupToToolbar: true
   Material: metalweapon
+  MarketPrice: 100, display: true
   HoldType: 16
   StackSize: 1
   Category: Weapons/Items
@@ -974,6 +983,7 @@
   Meshfile: Entities/Items/Weapons/Pistols/ScifiEnergyPistol3T1Prefab
   # Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol2BluePrefab
   PickupToToolbar: true
+  MarketPrice: 935, display: true
   Material: metalweapon
   HoldType: 14
   StackSize: 1
@@ -1038,6 +1048,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/AssaultRifle1Prefab
   # Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT1Prefab
   PickupToToolbar: true
+  MarketPrice: 250, display: true
   Material: metalweapon
   HoldType: 15
   StackSize: 1
@@ -1092,6 +1103,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle4Prefab
   PickupToToolbar: true
   Material: metalweapon
+  MarketPrice: 989, display: true
   HoldType: 15
   StackSize: 1
   Category: Weapons/Items
@@ -1164,6 +1176,7 @@
 { +Item Id: 17, Name: ScifiCannon
   Meshfile: Entities/Items/Weapons/ScifiCannon/ScifiCannonPrefab
   PickupToToolbar: true
+  MarketPrice: 3150, display: true
   Material: metalweapon
   HoldType: 15
   StackSize: 1
@@ -1205,6 +1218,7 @@
 { +Item Id: 18, Name: Sniper2
   Meshfile: Entities/Items/Weapons/Snipers/ScifiSniper3Prefab
   PickupToToolbar: true
+  MarketPrice: 1820, display: true
   Material: metalweapon
   HoldType: 15
   StackSize: 1
@@ -1257,6 +1271,7 @@
 }
 { +Item Id: 19, Name: DrillT2
   Meshfile: Entities/Items/Weapons/DrillV2/DrillT2Prefab
+  MarketPrice: 240, display: true
   PickupToToolbar: true
   Material: metalweapon
   HoldType: 16
@@ -1462,7 +1477,8 @@
 { +Item Id: 20, Name: PistolT2, Ref: Pistol
   Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol4BlackT2Prefab
   PickupToToolbar: true
-  Durability: 500, display: false
+  MarketPrice: 550, display: true
+  Durability: 400, display: false
   DegradationProb: 0.233, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot  
   { Child 0
@@ -1477,7 +1493,7 @@
     ReloadDelay: 2.375, display: true
     SfxBegin: Weapons/Player/Pistol/AWDS_AR_ Heavy Single
 	
-    DamageMultiplier_1: 5, param1: head, display: DmgMultiplierHead  
+    DamageMultiplier_1: 6, param1: head, display: DmgMultiplierHead  
     DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
     DamageMultiplier_3: 0, param1: shield 
   }
@@ -1497,6 +1513,7 @@
 # not used anymore > instead: TextureColorTool
 { +Item Id: 21, Name: ColorTool
   Meshfile: Entities/Items/Tools/ColorToolPrefab
+  MarketPrice: 2, display: true
   PickupToToolbar: true
   Material: metalweapon
   HoldType: 14
@@ -1540,6 +1557,7 @@
 # not used anymore > instead: TextureColorTool
 { +Item Id: 22, Name: TextureTool
   Meshfile: Entities/Items/Tools/TextureToolV2Prefab
+  MarketPrice: 7, display: true
   PickupToToolbar: true
   Material: metalweapon
   HoldType: 14
@@ -1583,7 +1601,7 @@
   Meshfile: Entities/Items/Tools/ChainsawV2Prefab
   PickupToToolbar: true
   Material: metalweapon
-  MarketPrice: 25, display: true
+  MarketPrice: 75, display: true
   HoldType: 16
   StackSize: 1
   Category: Weapons/Items
@@ -1629,6 +1647,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/AssaultRifleEpicPrefab
   # Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2EpicPrefab
   PickupToToolbar: true
+  MarketPrice: 6250, display: true
   Info: bkiEpicWeapon, display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
   Durability: 500, display: false
@@ -1676,6 +1695,7 @@
 { +Item Id: 25, Name: Sniper2Epic, Ref: Sniper2
   Meshfile: Entities/Items/Weapons/Snipers/ScifiSniper3EpicPrefab
   PickupToToolbar: true
+  MarketPrice: 7000, display: true
   Info: bkiEpicWeapon, display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
   Durability: 500, display: false
@@ -1723,6 +1743,7 @@
 { +Item Id: 26, Name: MinigunEpic, Ref: Minigun
   Meshfile: Entities/Items/Weapons/ScifiMinigun/ScifiMinigunEpicPrefab
   PickupToToolbar: true
+  MarketPrice: 6500, display: true
   Info: bkiEpicWeapon, display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
   Durability: 500, display: false
@@ -1764,6 +1785,7 @@
 { +Item Id: 27, Name: Shotgun2Epic, Ref: Shotgun2
   Meshfile: Entities/Items/Weapons/Shotguns/ScifiShotgun2EpicPrefab
   PickupToToolbar: true
+  MarketPrice: 12000, display: true
   Info: bkiEpicWeapon, display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
   Durability: 500, display: false
@@ -1811,6 +1833,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle4EpicPrefab
   # HoldType: 16           # no weapon shaking animation
   PickupToToolbar: true
+  MarketPrice: 14000, display: true
   Info: bkiEpicWeapon, display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
   Durability: 500, display: false
@@ -1859,6 +1882,7 @@
 { +Item Id: 29, Name: ScifiCannonEpic, Ref: ScifiCannon
   Meshfile: Entities/Items/Weapons/ScifiCannon/ScifiCannonEpicPrefab
   PickupToToolbar: true
+  MarketPrice: 34000, display: true
   Info: bkiEpicWeapon, display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
   Durability: 700, display: false
@@ -1885,6 +1909,7 @@
 { +Item Id: 30, Name: PistolEpic, Ref: Pistol
   Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol4EpicPrefab
   PickupToToolbar: true
+  MarketPrice: 3800, display: true
   Info: bkiEpicWeapon, display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
   Durability: 500, display: false
@@ -1903,7 +1928,7 @@
     ReloadDelay: 2.019, display: true
     SfxBegin: Weapons/Player/Pistol/AWDS_AR_ HK53_Heavy_Single
 	
-    DamageMultiplier_1: 5, param1: head, display: DmgMultiplierHead  
+    DamageMultiplier_1: 6, param1: head, display: DmgMultiplierHead  
     DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
     DamageMultiplier_3: 0, param1: shield 
   }
@@ -1926,6 +1951,7 @@
 }
 { +Item Id: 31, Name: MultiToolT2, Ref: MultiTool
   Meshfile: Entities/Items/Weapons/MultiToolT2Prefab
+  MarketPrice: 410, display: true
   { Child 0 # "Retrieve Blocks" (= get complete blocks in own structure, do "Salvage" in others)
     Range: 8
 	  ReturnFactor: 0.667, display: true
@@ -1974,6 +2000,7 @@
 }
 # Damage and Multipliers defined in EClassConfig > Entity Name: ExplosiveDevice
 { +Item Id: 32, Name: Explosives
+  MarketPrice: 100, display: true
   Meshfile: Entities/Misc/ScifiExplosiveDevice1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   PickupToToolbar: true
@@ -2002,6 +2029,7 @@
 { +Item Id: 33, Name: RocketLauncherT2, Ref: RocketLauncher
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherT2Prefab
   PickupToToolbar: true
+  MarketPrice: 9000, display: true
   Durability: 500, display: false
   #just for display, see ammo "SlowRocketHoming"
   BlastRadius: 3, display: true
@@ -2033,6 +2061,7 @@
 { +Item Id: 34, Name: RocketLauncherEpic, Ref: RocketLauncher
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherEpicPrefab
   PickupToToolbar: true
+  MarketPrice: 22000, display: true
   Info: bkiEpicWeapon, display: true
   #just for display, see ammo
   BlastRadius: 3, display: true
@@ -2071,6 +2100,7 @@
 { +Item Id: 35, Name: LaserPistolT2, Ref: LaserPistol
   Meshfile: Entities/Items/Weapons/Pistols/ScifiEnergyPistol3Prefab
   PickupToToolbar: true
+  MarketPrice: 1300, display: true
   # DamageMultiplier_1: 3.5, param1: head, display: DmgMultiplierHead
   # Damage: 100, display: true
   Durability: 500, display: false
@@ -2106,6 +2136,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/AssaultRifleT2Prefab
   # Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackPrefab
   PickupToToolbar: true
+  MarketPrice: 2450, display: true
   Durability: 500, display: false
   DegradationProb: 0.06, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
@@ -2146,6 +2177,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT2Prefab
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRifleT2Prefab
   PickupToToolbar: true
+  MarketPrice: 2600, display: true
   Durability: 500, display: false
   DegradationProb: 0.094, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
@@ -2181,6 +2213,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackEpicPrefab
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRifleEpicPrefab
   PickupToToolbar: true
+  MarketPrice: 7950, display: true
   Durability: 500, display: false
   DegradationProb: 0.061, type: float, display: false
   RepairDisabled: true, display: true
@@ -2230,7 +2263,7 @@
   PickupToToolbar: true
   Material: metalweapon
   LifetimeOnDrop: 720
-  MarketPrice: 100, display: true
+  MarketPrice: 1, display: true
   HoldType: 16           # no weapon shaking animation
   StackSize: 1
   Category: Weapons/Items
@@ -2355,6 +2388,7 @@
 }
 { +Item Id: 40, Name: DrillEpic, Ref: DrillT2   
   Meshfile: Entities/Items/Weapons/DrillV2/DrillT2EpicPrefab
+  MarketPrice: 44000, display: true
   { Child 0   # Resource Mining 
     Damage: 750
     Range: 9, display: false
@@ -2379,6 +2413,7 @@
   Material: metalweapon
   HoldType: 14
   StackSize: 1
+  MarketPrice: 20, display: true
   Category: Weapons/Items
   Info: bkiTextureColorTool, display: true
   Mass: 2.5, type: float, display: true, formatter: Kilogram
@@ -2416,6 +2451,7 @@
   Material: metalweapon
   HoldType: 15
   StackSize: 1
+  MarketPrice: 25000, display: true
   Category: Weapons/Items
   Mass: 60, type: float, display: false, formatter: Kilogram
   Info: bkiFlameThrower, display: true
@@ -2461,6 +2497,7 @@
   Meshfile: Entities/Items/Weapons/Flamethrower/AlienFlamethrowerPrefab
   PickupToToolbar: true
   Material: metalweapon
+  MarketPrice: 150000, display: true
   HoldType: 15
   StackSize: 1
   Category: Weapons/Items
@@ -2693,6 +2730,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metalweapon
   HoldType: 0
+  MarketPrice: 12, display: true
   Canhold: false
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -2728,6 +2766,7 @@
   HoldType: 0 
   Canhold: false
   StackSize: 4000
+  MarketPrice: 4, display: true
   Info: bkiAmmo, display: true
   Category: Weapons/Items
   Mass: 0.01, type: float, display: true, formatter: Kilogram
@@ -2738,34 +2777,38 @@
 }
 { +Item Id: 53, Name: 8.3mmBullet, Ref: 50Caliber
   StackSize: 4000
+  MarketPrice: 4, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
 }
 { +Item Id: 54, Name: 5.8mmBullet, Ref: 50Caliber
   StackSize: 4000
-  MarketPrice: 1, display: true
+  MarketPrice: 4, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
 }
 { +Item Id: 55, Name: 12.7mmBullet, Ref: 50Caliber
   StackSize: 4000
+  MarketPrice: 4, display: true
   Mass: 0.06, type: float, display: true, formatter: Kilogram
   Volume: 0.03, type: float, display: true, formatter: Liter
 }
 { +Item Id: 56, Name: 15mmBullet, Ref: 50Caliber
   StackSize: 4000
-  MarketPrice: 1
+  MarketPrice: 4, display: true
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0.1, type: float, display: true, formatter: Liter
 }
 { +Item Id: 57, Name: DrillCharge, Ref: 50Caliber
   StackSize: 2000
+  MarketPrice: 16, display: true
   Mass: 1.05, type: float, display: true, formatter: Kilogram
   Volume: 0.75, type: float, display: true, formatter: Liter
   Info: bkiAmmoFullLoad, display: true
 }
 { +Item Id: 58, Name: ShotgunShells, Ref: 50Caliber
   StackSize: 4000
+  MarketPrice: 8, display: true
   Mass: 0.03, type: float, display: true, formatter: Kilogram
   Volume: 0.02, type: float, display: true, formatter: Liter
 }
@@ -2776,16 +2819,19 @@
 }
 { +Item Id: 60, Name: PulseLaserChargePistol, Ref: 50Caliber
   StackSize: 4000
+  MarketPrice: 6, display: true
   Mass: 0.15, type: float, display: true, formatter: Kilogram
   Volume: 0.05, type: float, display: true, formatter: Liter
 }
 { +Item Id: 61, Name: PulseLaserChargeRifle, Ref: 50Caliber
   StackSize: 4000
+  MarketPrice: 7, display: true
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0.06, type: float, display: true, formatter: Liter
 }
 { +Item Id: 62, Name: MultiCharge, Ref: 50Caliber
   StackSize: 2000
+  MarketPrice: 12, display: true
   Mass: 1.05, type: float, display: true, formatter: Kilogram
   Volume: 0.6, type: float, display: true, formatter: Liter
   Info: bkiAmmoFullLoad, display: true
@@ -2805,6 +2851,7 @@
   Meshfile: Entities/Items/Weapons/Projectiles/PlasmaProjectilePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metalweapon
+  MarketPrice: 25, display: true
   HoldType: 0
   Canhold: false
   Info: bkiAmmoHoming, display: true
@@ -2839,6 +2886,7 @@
 { +Item Id: 65, Name: SlowRocketHoming, Ref: SlowRocket
   Info: bkiAmmoExplosive, display: true
   StackSize: 2000
+  MarketPrice: 40, display: true
   Mass: 1.6, type: float, display: true, formatter: Kilogram
   Volume: 1, type: float, display: true, formatter: Liter
   { Child 0
@@ -2859,6 +2907,7 @@
 { +Item Id: 66, Name: PlasmaCannonAlienCharge
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketRedPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  MarketPrice: 128, display: true
   CustomIcon: EnergyCellHydrogen
   Material: metalweapon
   HoldType: 0
@@ -2896,6 +2945,7 @@
 { +Item Id: 67, Name: FlameThrowerCanister
   Meshfile: Entities/Items/Weapons/Projectiles/FlameThrowerProjectilePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  MarketPrice: 60, display: true
   Material: metalweapon
   HoldType: 0
   Canhold: false
@@ -3064,6 +3114,7 @@
 { +Item Id: 80, Name: OxygenBottleLarge
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  MarketPrice: 10, display: true
   Material: metalweapon
   Canhold: false
   HoldType: 0
@@ -3157,6 +3208,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: Base, display: true
+  MarketPrice: 256, display: true
   Material: metal
   HoldType: 0
   StackSize: 1000
@@ -3178,6 +3230,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: SS, display: true
+  MarketPrice: 128, display: true
   Material: metal
   HoldType: 0
   StackSize: 1000
@@ -3200,6 +3253,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: MS, display: true
+  MarketPrice: 192, display: true
   Material: metal
   HoldType: 0
   StackSize: 1000
@@ -3224,6 +3278,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: GV, display: true
   Material: metal
+  MarketPrice: 96, display: true
   HoldType: 0
   StackSize: 1000
   Category: BuildingBlocks
@@ -3272,6 +3327,7 @@
   Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0.5, type: float, display: true, formatter: Liter
   O2Value: 35, display: false, type: int
+  MarketPrice: 1, display: true
   Category: Weapons/Items
   Info: bkiRespiratorCharge, display: true
   { Child 0
@@ -3282,7 +3338,6 @@
     AddFood: 0
     AddOxygen: 35, display: OxygenValue
     SfxBegin: UseActions/oxygen_tank_release_air   
-    MarketPrice: 0.65
   }
 }
 { +Item Id: 91, Name: SpawnNewBaseM
@@ -4840,7 +4895,7 @@
     Damage: 600
     Radius: 3
     Demolish: True
-	ReturnFactor: 0.8
+  	ReturnFactor: 0.8
     AmmoCapacity: 0, display: false       # no need to display since unlimited ammo
     AmmoType: AmmoInfinite, display: true
     AmmoUnlimited: true
@@ -5267,6 +5322,7 @@
   TechTreeNames: Hidden
 }
 { +Item Id: 154, Name: PulseLaserChargeSS
+  MarketPrice: 6.5, display: true
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metalweapon
@@ -5278,8 +5334,6 @@
   Volume: 0.75, type: float, display: true, formatter: Liter
   Info: bkiAmmo, display: true
   Category: Weapons/Items
-  MarketPrice: 6
-
   UnlockLevel: 1
   TechTreeNames: Hidden
 }
@@ -5293,6 +5347,7 @@
   HoldType: 0
   StackSize: 2000
   Canhold: false
+  MarketPrice: 4, display: true
   ShowUser: No
   Mass: 1, type: float, display: true, formatter: Kilogram
   Volume: 1.5, type: float, display: true, formatter: Liter
@@ -5444,6 +5499,7 @@
   Material: metalweapon
   AllowPlacingAt: "Base,MS", display: false
   HoldType: 0
+  MarketPrice: 4, display: true
   StackSize: 1000
   Canhold: false
   ShowUser: No
@@ -6341,12 +6397,13 @@
 { +Item Id: 234, Name: Oscillator, Ref: ComponentsTemplate     #former: AdvancedCPU
   Mass: 8.27, type: float, display: true, formatter: Kilogram
   Volume: 2.5, type: float, display: true, formatter: Liter
+  MarketPrice: 24, display: true
   ShowUser: Yes
 }
 { +Item Id: 235, Name: PlasticMaterial, Ref: ComponentsTemplate
   Mass: 0.18, type: float, display: true, formatter: Kilogram
   Volume: 0.12, type: float, display: true, formatter: Liter
-  MarketPrice: 0.20
+  MarketPrice: 2
   ShowUser: Yes
 }
 { +Item Id: 236, Name: SathiumOre, Ref: OreTemplate
@@ -6390,6 +6447,7 @@
 { Item Id: 240, Name: EnergyCellHydrogen, Ref: ComponentsTemplate
   FuelValue: 15, type: int, display: true, formatter: WattHour
   ShowUser: NoButCSV
+  MarketPrice: 24, display: true
   
   Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 20, type: float, display: true, formatter: Liter
@@ -6410,14 +6468,14 @@
   Meshfile: Entities/Items/Resources/WoodLogsPrefab
   Mass: 8, type: float, display: true, formatter: Kilogram
   Volume: 10, type: float, display: true, formatter: Liter
-  MarketPrice: 5
+  MarketPrice: 8
   XpFactor: 20
   ShowUser: Yes
 }
 { +Item Id: 243, Name: WoodPlanks, Ref: ComponentsTemplate
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0.1, type: float, display: true, formatter: Liter
-  MarketPrice: 0.13
+  MarketPrice: 2
   ShowUser: Yes
 }
 { +Item Id: 244, Name: Cement, Ref: ComponentsTemplate
@@ -6461,23 +6519,23 @@
 }
 { +Item Id: 249, Name: GoldOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/GoldOrePrefab
-  Mass: 8.11, type: float, display: true, formatter: Kilogram
-  Volume: 2.17, type: float, display: true, formatter: Liter
-  MarketPrice: 30
+  Mass: 3, type: float, display: true, formatter: Kilogram
+  Volume: 0.75, type: float, display: true, formatter: Liter
+  MarketPrice: 32
   XpFactor: 60
   ShowUser: Yes
 }
 { +Item Id: 250, Name: GoldIngot, Ref: ComponentsTemplate
-  Mass: 14.49, type: float, display: true, formatter: Kilogram
+  Mass: 15, type: float, display: true, formatter: Kilogram
   Volume: 0.75, type: float, display: true, formatter: Liter
-  MarketPrice: 195
+  MarketPrice: 160
   ShowUser: Yes
 }
 { +Item Id: 251, Name: GoldCoins, Ref: ComponentsTemplate
   Info: bkiCurrency, display: true
-  Mass: 1.44, type: float, display: true, formatter: Kilogram
+  Mass: 28, type: float, display: true, formatter: Kilogram
   Volume: 1.0, type: float, display: true, formatter: Liter
-  Credits: 50, display: true
+  Credits: 320, display: true
   ShowUser: Yes
 }
 { +Item Id: 252, Name: PlayerBikeKit, Ref: ComponentsTemplate
@@ -6592,6 +6650,7 @@
 { +Item Id: 265, Name: TitanPlates, Ref: ComponentsTemplate
   Mass: 15, type: float, display: true, formatter: Kilogram
   Volume: 3, type: float, display: true, formatter: Liter
+  MarketPrice: 9.75, display: true
   ShowUser: Yes
 }
 
@@ -6608,13 +6667,14 @@
 { +Item Id: 267, Name: AluminiumPowder, Ref: ComponentsTemplate
   Mass: 3.38, type: float, display: true, formatter: Kilogram
   Volume: 0.75, type: float, display: true, formatter: Liter
-  MarketPrice: 13
+  MarketPrice: 4
   ShowUser: Yes
 }
 
 { +Item Id: 268, Name: AluminiumCoil, Ref: ComponentsTemplate
   Mass: 15, type: float, display: true, formatter: Kilogram
   Volume: 3, type: float, display: true, formatter: Liter
+  MarketPrice: 25, display: true
   ShowUser: Yes
 }
 { +Item Id: 269, Name: PlatinOre, Ref: OreTemplate
@@ -6630,7 +6690,7 @@
 { +Item Id: 270, Name: PlatinBar, Ref: ComponentsTemplate
   Mass: 2, type: float, display: true, formatter: Kilogram
   Volume: 0.1, type: float, display: true, formatter: Liter
-  MarketPrice: 29.25
+  MarketPrice: 250
   ShowUser: Yes
 }
 
@@ -6638,8 +6698,8 @@
   Info: bkiCurrency, display: true
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
-  MarketPrice: 300
-  Credits: 300, display: true
+  MarketPrice: 625
+  Credits: 333, display: true
   ShowUser: Yes
 }
 
@@ -6649,6 +6709,7 @@
   FoodDecayTime: 90, display: true, type: int
   FoodDecayedItem: RottenFood
   Info: bkiAnniversaryCake, display: true
+  MarketPrice: 29.49, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -6663,22 +6724,25 @@
 }
 { +Item Id: 278, Name: ErestrumGel, Ref: ComponentsTemplate
   ShowUser: Yes
+  MarketPrice: 80, display: true
   Mass: 1.6, type: float, display: true, formatter: Kilogram
   Volume: 0.25, type: float, display: true, formatter: Liter
 }
 { +Item Id: 279, Name: ZascosiumAlloy, Ref: ComponentsTemplate
   ShowUser: Yes
+  MarketPrice: 80, display: true
   Mass: 7.33, type: float, display: true, formatter: Kilogram
   Volume: 1.12, type: float, display: true, formatter: Liter
 }
 { +Item Id: 280, Name: XenoSubstrate, Ref: ComponentsTemplate
   ShowUser: Yes 
+  MarketPrice: 128, display: true
   Mass: 5.4, type: float, display: true, formatter: Kilogram
   Volume: 1.25, type: float, display: true, formatter: Liter
-  MarketPrice: 45
 }
 { +Item Id: 281, Name: NCPowder, Ref: ComponentsTemplate
   ShowUser: Yes
+  MarketPrice: 2, display: true
   Mass: 0.18, type: float, display: true, formatter: Kilogram
   Volume: 0.15, type: float, display: true, formatter: Liter
 }
@@ -6772,6 +6836,7 @@
   Volume: 0.27, type: float, display: true, formatter: Liter
   FoodDecayTime: 13, display: true, type: int
   FoodDecayedItem: RottenFood
+  MarketPrice: 8, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -6821,7 +6886,7 @@
     AddStamina: -20, display: StaminaValue
     AddFood: 5, display: FoodValue
     AddOxygen: 0
-	AddTemperature: 1, display: TemperatureValue
+	  AddTemperature: 1, display: TemperatureValue
     Buff: Indigestion
     Buff_chance: 0.1
     SfxBegin: UseActions/playerEatingSoft
@@ -6855,7 +6920,7 @@
   ShowUser: Yes
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0.1, type: float, display: true, formatter: Liter
-  MarketPrice: 0.34
+  MarketPrice: 3
   { Child 0
     Class: Eat
     ROF: 1, type: float
@@ -6887,7 +6952,7 @@
   Mass: 0.3, type: float, display: true, formatter: Kilogram
   Volume: 0.14, type: float, display: true, formatter: Liter
   Info: bkiIngredient, display: true
-  MarketPrice: 2, display: true
+  MarketPrice: 3, display: true
   Category: Food
   StackSize: 4000
   ShowUser: Yes
@@ -6896,7 +6961,7 @@
   Mass: 0.52, type: float, display: true, formatter: Kilogram
   Volume: 0.71, type: float, display: true, formatter: Liter
   Info: bkiIngredient, display: true
-  MarketPrice: 2, display: true
+  MarketPrice: 3, display: true
   Category: Food
   StackSize: 4000
   ShowUser: Yes
@@ -6905,7 +6970,7 @@
   Mass: 0.35, type: float, display: true, formatter: Kilogram
   Volume: 0.21, type: float, display: true, formatter: Liter
   Info: bkiIngredient, display: true
-  MarketPrice: 2, display: true
+  MarketPrice: 3, display: true
   Category: Food
   StackSize: 4000
   ShowUser: Yes
@@ -6915,14 +6980,14 @@
   Category: Ingredients
   StackSize: 4000
   ShowUser: No
-  MarketPrice: 2, display: true
+  MarketPrice: 3, display: true
 }
 { +Item Id: 313, Name: Stew, Ref: FoodTemplate
   Mass: 0.75, type: float, display: true, formatter: Kilogram
   Volume: 2, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Food
-  MarketPrice: 12, display: true
+  MarketPrice: 24, display: true
   FoodDecayTime: 28, display: true, type: int
   FoodDecayedItem: RottenFood
   ShowUser: Yes
@@ -6957,7 +7022,7 @@
   }
 }
 { +Item Id: 315, Name: Fruit, Ref: FoodTemplate
-  MarketPrice: 12, display: true
+  MarketPrice: 5, display: true
   Mass: 0.08, type: float, display: true, formatter: Kilogram
   Volume: 0.18, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
@@ -6979,7 +7044,7 @@
   }
 }
 { +Item Id: 316, Name: Grain, Ref: FoodTemplate
-  MarketPrice: 12, display: true
+  MarketPrice: 4, display: true
   Info: bkiConsumable, display: true
   Category: Ingredients
   FoodDecayTime: 50, display: true, type: int
@@ -7001,7 +7066,7 @@
   }
 }
 { +Item Id: 317, Name: Egg, Ref: FoodTemplate
-  MarketPrice: 12, display: true
+  MarketPrice: 7, display: true
   Mass: 0.6, type: float, display: true, formatter: Kilogram
   Volume: 0.5, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
@@ -7017,8 +7082,8 @@
     AddFood: 21, display: FoodValue
     AddOxygen: 0
     SfxBegin: UseActions/playerEatingPain
-    Buff: Indigestion
-    Buff_chance: 0.2
+    Buff: "Indigestion,Flatulence"
+    Buff_chance: "0.05,0.05"
   }
 }
 { +Item Id: 318, Name: Varonroot, Ref: FoodTemplate
@@ -7067,7 +7132,7 @@
   }
 }
 { +Item Id: 320, Name: AlienTooth, Ref: FoodTemplate
-  MarketPrice: 12, display: true
+  MarketPrice: 7, display: true
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0.01, type: float, display: true, formatter: Liter
   Info: bkiIngredient, display: true
@@ -7136,7 +7201,7 @@
 }
 { +Item Id: 324, Name: VeggieBurger, Ref: FoodTemplate
   Info: bkiConsumable, display: true
-  MarketPrice: 12, display: true
+  MarketPrice: 46, display: true
   Category: Food
   FoodDecayTime: 60, display: true, type: int
   FoodDecayedItem: RottenFood
@@ -7158,7 +7223,7 @@
   Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 10.5, type: float, display: true, formatter: Liter
   FuelValue: 300, type: int, display: true, formatter: WattHour
-  MarketPrice: 97.5
+  MarketPrice: 100
   ShowUser: Yes  
   Info: bkiFusionCell, display: true
 
@@ -7197,6 +7262,7 @@
   Volume: 0.85, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Food
+  MarketPrice: 20, display: true
   FoodDecayTime: 48, display: true, type: int
   FoodDecayedItem: RottenFood
   ShowUser: Yes
@@ -7245,6 +7311,7 @@
   Info: bkiIngredient, display: true
   Category: Food 
   StackSize: 2000
+  MarketPrice: 1, display: true
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0.1, type: float, display: true, formatter: Liter
   ShowUser: Yes
@@ -7253,10 +7320,10 @@
    ROF: 1, type: float
    AddHealth: -10 
    AddStamina: 0 
-   AddFood: 0 
+   AddFood: 30 
    AddOxygen: 0
-   Buff: PoisonFood
-   Buff_chance: 0.7
+   Buff: "Flatulence,PoisonFood"
+   Buff_chance: "0.5,0.5"
    SfxBegin: UseActions/playerEatingPain
   }
 }
@@ -7266,7 +7333,7 @@
   Volume: 0.01, type: float, display: true, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Ingredients
-  MarketPrice: 1, display: true
+  MarketPrice: 2, display: true
   FoodDecayTime: 25, display: true, type: int
   FoodDecayedItem: RottenFood
   ShowUser: Yes
@@ -7277,7 +7344,7 @@
     AddStamina: -15, display: StaminaValue
     AddFood: 5, display: FoodValue
     AddOxygen: 0
-    Debuff: "DermalBurn,Indigestion", display: EffectiveAgainst
+    Debuff: "DermalBurn,Indigestion,Flatulence", display: EffectiveAgainst
   #  Buff_chance: 0.025
   #  Debuff: PoisonBit, display: EffectiveAgainst
     SfxBegin: UseActions/playerEatingSoft
@@ -7298,8 +7365,8 @@
    AddStamina: 0, display: StaminaValue
    AddFood: 25, display: FoodValue
    AddOxygen: 0
-   # Buff: PoisonFood
-   # Buff_chance: 0.02
+   Buff: Flatulence
+   Buff_chance: 0.02
    SfxBegin: UseActions/playerEatingSoft
  }
 }
@@ -7342,6 +7409,9 @@
     AddFood: 105, display: FoodValue
     AddOxygen: 0
 	  AddTemperature: 2, display: TemperatureValue
+    Debuff: "EndoParasite,EndoParasite2", display: EffectiveAgainst
+    Buff: Flatulence
+    Buff_chance: 0.05
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -7361,8 +7431,9 @@
     AddStamina: 50, display: StaminaValue
     AddFood: 35, display: FoodValue
     AddOxygen: 0
+    Debuff: "Flatulence,InfectedWound", display: EffectiveAgainst
     Buff: Indigestion
-    Buff_chance: 0.05
+    Buff_chance: 0.25
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -7405,7 +7476,7 @@
     AddStamina: 0
     AddFood: 0
     AddOxygen: 0
-    Debuff: "Hangover,Indigestion", display: EffectiveAgainst
+    Debuff: "Hangover,Indigestion,Flatulence", display: EffectiveAgainst
     SfxBegin: UseActions/playerSwallow
     BuffMod: "PoisonFood, -0.7, 0, true; Frostbite, 0.2, -0.7, false; Necrosis, 0, -0.85, false; OrganFailure, 0, -0.4; FeverAttack, 0.3, -0.4, false"
   }
@@ -7531,7 +7602,7 @@
     AddFood: 0
     AddOxygen: 0
     Buff: MedikitApplied
-    Debuff: "Intoxication,BadTrip,PoisonBit,PoisonBit2,DermalParasite,EndoParasite,EndoParasite2,EndoParasite3,InfectedWound,Sepsis,AlienParasite", display: EffectiveAgainst
+    Debuff: "Intoxication,BadTrip,PoisonBit,PoisonBit2,DermalParasite,EndoParasite,EndoParasite2,EndoParasite3,InfectedWound,Sepsis,AlienParasite,Flatulence", display: EffectiveAgainst
     SfxBegin: UseActions/exhale
   }
 }
@@ -7547,15 +7618,15 @@
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: -50, display: HealthValue
+    AddHealth: -10, display: HealthValue
     AddStamina: 0, display: StaminaValue
-    AddFood: -50, display: FoodValue
+    AddFood: 5, display: FoodValue
     AddOxygen: 0
-    AddRadiation: -3, display: RadiationValue
+    AddRadiation: -5, display: RadiationValue
     Debuff: "RadiationPoisoning,RadiationBurn", display: EffectiveAgainst
     SfxBegin: UseActions/exhale
-    #Buff: PoisonFood
-    #Buff_chance: 0.15
+    Buff: Flatulence
+    Buff_chance: 1
   }
 }
 
@@ -7570,12 +7641,12 @@
     ROF: 1, type: float
     AddHealth: 0
     AddStamina: 0
-    AddFood: 0
+    AddFood: 5
     AddOxygen: 0
     AddRadiation: -5, display: RadiationValue
     Debuff: "RadiationSickness,RadiationPoisoning,RadiationBurn", display: EffectiveAgainst
-    #Buff: Hangover
-    #Buff_chance: 0.1
+    Buff: Flatulence
+    Buff_chance: 0.1
     SfxBegin: UseActions/exhale
   }
 }
@@ -7710,11 +7781,11 @@
     ROF: 1, type: float
     AddHealth: 5
     AddStamina: 0
-    AddFood: -5
+    AddFood: 5
     AddOxygen: 0
     Debuff: "DermalParasite,EndoParasite,EndoParasite2", display: EffectiveAgainst
-    #Buff: PoisonFood
-    #Buff_chance: 0.30
+    Buff: Flatulence
+    Buff_chance: 0.1
     SfxBegin: UseActions/exhale
   }
 }
@@ -7808,8 +7879,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: -20, display: StaminaValue
     AddFood: 10, display: FoodValue
     AddOxygen: 0
-    Buff: "NarcoticHealing, Indigestion"
-    Buff_chance: "0.7, 0.2"
+    Buff: "NarcoticHealing,Indigestion,Flatulence"
+    Buff_chance: "0.7,0.2,0.1"
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -7827,7 +7898,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 150, display: StaminaValue
     AddFood: -25, display: FoodValue
     AddOxygen: 0
-    Debuff: "PoisonBit,InfectedWound", display: EffectiveAgainst
+    Debuff: "PoisonBit,InfectedWound,Flatulence", display: EffectiveAgainst
     Buff: "Indigestion, PoisonFood"
     Buff_chance: "1, 0.4"
     SfxBegin: UseActions/playerEatingSoft
@@ -7847,7 +7918,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 385, display: StaminaValue
     AddFood: 1, display: FoodValue
     AddOxygen: 0
-    Debuff: "DermalBurn,Frostbite,BadTrip", display: EffectiveAgainst
+    Debuff: "DermalBurn,Frostbite,BadTrip,Flatulence", display: EffectiveAgainst
     Buff: "Indigestion, PoisonFood"
     Buff_chance: "0.5, 0.5"
     SfxBegin: UseActions/playerEatingSoft
@@ -7871,8 +7942,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 300, display: FoodValue
     AddOxygen: 0
     AddRadiation: -1, display: RadiationValue
-    Buff: ImmunityBoosterII
-    Buff_chance: 0.25
+    Buff: "ImmunityBoosterII,Flatulence"
+    Buff_chance: "0.25,0.05"
     SfxBegin: UseActions/playerEatingCrunchy
   }
 }
@@ -7894,8 +7965,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 18, display: FoodValue
     AddOxygen: 0
     SfxBegin: UseActions/playerEatingCrunchy    
-    Buff: "Indigestion, PoisonFood"
-    Buff_chance: "0.3, 0.05"
+    Buff: "Indigestion,Flatulence,PoisonFood"
+    Buff_chance: "0.3,0.05,0.05"
   }
 }
 ## Please do not rename - referenced in code
@@ -7936,7 +8007,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 15, display: StaminaValue
     AddFood: 2, display: FoodValue
     AddOxygen: 0
-	AddTemperature: -8, display: TemperatureValue
+	  AddTemperature: -8, display: TemperatureValue
     Debuff: "Hangover,Fire", display: EffectiveAgainst 
     SfxBegin: UseActions/playerDrinking
   }
@@ -7977,7 +8048,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddOxygen: 0
     Buff: "Indigestion,PoisonFood,BadTrip"
     Buff_chance: "1,0.35,0.25"
-    Debuff: PoisonBit, display: EffectiveAgainst
+    Debuff: "Flatulence,PoisonBit", display: EffectiveAgainst
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -7994,17 +8065,28 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 0, display: StaminaValue
     AddFood: 5, display: FoodValue
     AddOxygen: 0
-    Debuff: DermalBurn, display: EffectiveAgainst
+    Debuff: "Flatulence,DermalBurn", display: EffectiveAgainst
     SfxBegin: UseActions/playerEatingSoft
   }
 }
 # delete when save game break
 { +Item Id: 353, Name: EggPlantParts, Ref: FoodTemplate
- Info: bkiIngredient, display: true
+ Info: bkiConsumable, display: true
  Category: Ingredients
  FoodDecayTime: 35, display: true, type: int
  FoodDecayedItem: RottenFood
  ShowUser: NoButCSV
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 5, display: HealthValue
+    AddStamina: 5, display: StaminaValue
+    AddFood: 10, display: FoodValue
+    AddOxygen: 0
+    Buff: "Flatulence,ImmunityBoosterII"
+    Buff_chance: "0.5,0.5"
+    SfxBegin: UseActions/playerEatingFruit
+  }
 }
 # delete when save game break
 { +Item Id: 354, Name: AkuaFruit, Ref: FoodTemplate
@@ -8048,7 +8130,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 	  AddRadiation: -3, display: RadiationValue
     Buff: Indigestion
     Buff_chance: 0.15
-    Debuff: PoisonBit, display: EffectiveAgainst
+    Debuff: "Flatulence,PoisonBit", display: EffectiveAgainst
     SfxBegin: UseActions/playerEatingFruit
   }
 }
@@ -8090,6 +8172,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
    AddFood: 35, display: FoodValue
    AddOxygen: 0
 	 AddTemperature: -1, display: TemperatureValue
+   Debuff: "Flatulence", display: EffectiveAgainst
    Buff: Indigestion
    Buff_chance: 0.1
    SfxBegin: UseActions/playerEatingSoft
@@ -8142,8 +8225,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 205, display: FoodValue
     AddOxygen: 0
 	  AddTemperature: 3, display: TemperatureValue
-    Buff: Indigestion
-    Buff_chance: 0.35
+    Buff: Flatulence
+    Buff_chance: 0.05
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -8180,7 +8263,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 14, display: StaminaValue
     AddFood: 106, display: FoodValue
     AddOxygen: 0
-#	AddRadiation: -1, display: RadiationValue
+ #	AddRadiation: -1, display: RadiationValue
     Buff: Indigestion
     Buff_chance: 0.05
     SfxBegin: UseActions/playerEatingSoft
@@ -8224,6 +8307,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 10, display: FoodValue
     AddOxygen: 0
 	  AddTemperature: -1, display: TemperatureValue
+    Debuff: "Flatulence", display: EffectiveAgainst
     SfxBegin: UseActions/playerEatingFruit
     Buff: "Indigestion,PoisonFood"
     Buff_chance: "0.1,0.05"
@@ -8246,8 +8330,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 243, display: FoodValue
     AddOxygen: 0
 	  AddTemperature: 4, display: TemperatureValue
-    Buff: Indigestion
-    Buff_chance: 0.2
+    Buff: "Indigestion,Flatulence"
+    Buff_chance: "0.1,0.1"
     SfxBegin: UseActions/playerEatingCrunchy
   }
 }
@@ -8292,8 +8376,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 2, display: StaminaValue
     AddFood: 47, display: FoodValue
     AddOxygen: 0
-    Buff: Indigestion
-    Buff_chance: 0.5
+    Buff: "Indigestion,Flatulence"
+    Buff_chance: "0.3,0.05"
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -8313,6 +8397,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 142, display: FoodValue
     AddOxygen: 0
 	  AddTemperature: 3, display: TemperatureValue
+    Buff: Flatulence
+    Buff_chance: 0.1
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -8331,8 +8417,9 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 12, display: StaminaValue
     AddFood: 150, display: FoodValue
     AddOxygen: 0
-	AddTemperature: 2, display: TemperatureValue
- #  AddRadiation: -1, display: RadiationValue
+	  AddTemperature: 2, display: TemperatureValue
+    Buff: Flatulence
+    Buff_chance: 0.05
     SfxBegin: UseActions/playerEatingCrunchy
   }
 }
@@ -8350,7 +8437,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
    AddStamina: 15, display: StaminaValue
    AddFood: 37, display: FoodValue
    AddOxygen: 0
-	AddRadiation: -1, display: RadiationValue
+	 AddRadiation: -1, display: RadiationValue
    SfxBegin: UseActions/playerEatingCrunchy
  }
 }
@@ -8370,8 +8457,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddOxygen: 0
  #  AddTemperature: -2, display: TemperatureValue
  #   Debuff: PoisonFood, display: EffectiveAgainst
-    Buff: Indigestion
-    Buff_chance: 0.85
+    Buff: "Indigestion,Flatulence"
+    Buff_chance: "0.4,0.1"
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -8390,9 +8477,9 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 6, display: StaminaValue
     AddFood: 32, display: FoodValue
     AddOxygen: 0
-	AddTemperature: 1, display: TemperatureValue
-    Buff: Indigestion
-    Buff_chance: 0.05
+	  AddTemperature: 1, display: TemperatureValue
+    Buff: "Indigestion,Flatulence"
+    Buff_chance: "0.1,0.1"
     SfxBegin: UseActions/playerEatingCrunchy
   }
 }
@@ -8412,8 +8499,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 64, display: FoodValue
     AddOxygen: 0
 	  AddTemperature: -3, display: TemperatureValue
-    Buff: Indigestion
-    Buff_chance: 0.02
+    Buff: "Indigestion,Flatulence"
+    Buff_chance: "0.1,0.1"
     SfxBegin: UseActions/playerEatingCrunchy
   }
 }
@@ -8433,8 +8520,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddFood: 188, display: FoodValue
     AddOxygen: 0
  #  AddRadiation: -2, display: RadiationValue
-    Buff: Indigestion
-    Buff_chance: 0.05
+    Buff: "Indigestion,Flatulence"
+    Buff_chance: "0.05,0.05"
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -8473,8 +8560,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddStamina: 25, display: StaminaValue
     AddFood: 4, display: FoodValue
     AddOxygen: 0
-    Buff: Indigestion
-    Buff_chance: 0.02
+    Buff: "Indigestion,Flatulence"
+    Buff_chance: "0.02,0.05"
     Debuff: "DermalBurn,Indigestion", display: EffectiveAgainst
     SfxBegin: UseActions/playerEatingSoft
   }
@@ -8578,7 +8665,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddOxygen: 0
     Buff: Indigestion #TR177
     Buff_chance: 0.025 #TR177
-    Debuff: PoisonBit, display: EffectiveAgainst #TR177
+    Debuff: "Flatulence,PoisonBit", display: EffectiveAgainst #TR177
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -14047,7 +14134,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     Class: Ranged
     AllowRemote: false  
     ROF: 2.5, type: float, display: true, formatter: ROF
-    Range: 140, display: true
+    Range: 120, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
     AmmoUnlimited: true
