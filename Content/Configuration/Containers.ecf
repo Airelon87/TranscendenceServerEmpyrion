@@ -2223,15 +2223,15 @@
 
   { Child Items
     Name_0: CoreNoCPU, param1: 0.01, param2: "1"
-	  Name_1: LegacyEnergyCore, param1: 0.2, param2: "1,2"
-	  Name_2: WarbotNanotubes, param1: 0.01, param2: "1"  
+	  Name_1: LegacyEnergyCore, param1: 0.3, param2: "1"
+	  Name_2: WarbotNanotubes, param1: 0.02, param2: "1"  
 	  Name_3: Nanites, param1: 0.7, param2: "16,32"
 	  Name_4: ScienceEquipment, param1: 0.3, param2: "1,3"
-	  Name_5: AlienLaserRefill, param1: 0.1, param2: "10,12"
+	  Name_5: AlienLaserRefill, param1: 0.4, param2: "10,12"
 	  Name_6: EnergyMatrix, param1: 0.7, param2: "2,4"
-	  Name_7: AntiProtonLaserTurret, param1: 0.01, param2: "1"  
+	  Name_7: AntiProtonLaserTurret, param1: 0.02, param2: "1"  
 	  Name_8: EnergyMatrix, param1: 0.7, param2: "2,4"
-	  Name_9: AntiMatterRod, param1: 0.1, param2: "3,5"
+	  Name_9: AntiMatterRod, param1: 0.3, param2: "3,5"
 	  Name_10: LaserSentryGunT3, param1: 0.1, param2: 1
 	  Name_11: LaserArrows, param1: 0.1, param2: "30,50"
     Group_0: Reports, param1: 0.1

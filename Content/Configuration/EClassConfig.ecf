@@ -1299,7 +1299,7 @@
 
   ParticleOnDeath: drone_explosion02
   # TimeStayAfterDeath: 150
-  TimeStayAfterDeath: 300
+  TimeStayAfterDeath: 600
   LootListOnDeath: 151
 
   /* Sound Setting */
@@ -1523,7 +1523,7 @@
   SpawnYAdd: 15     /* drones shall always spawn 15meters above ground */
 
   ParticleOnDeath: drone_explosion04
-  TimeStayAfterDeath: 300      
+  TimeStayAfterDeath: 600      
   # TimeStayAfterDeath: 150
   LootListOnDeath: 167
   
@@ -1727,7 +1727,7 @@
 
   ParticleOnDeath: drone_explosion02
   # TimeStayAfterDeath: 150
-  TimeStayAfterDeath: 300
+  TimeStayAfterDeath: 600
   LootListOnDeath: 160
 
   /* Sound Setting */
@@ -1806,7 +1806,7 @@
   SfxDeath: Enemies/Drone/ROBOTICTransformationSweep01Down
 
   ParticleOnDeath: drone_explosion02
-  TimeStayAfterDeath: 300
+  TimeStayAfterDeath: 600
   LootListOnDeath: 42
 
   MapIcon: map_EnemyEntityDot
@@ -1886,6 +1886,7 @@
   ItemsOnEnterGame: laserSpaceDrone
   LootListOnDeath: 174
 
+  TimeStayAfterDeath: 900
   AllowUserInstantiate: true
 }
 { +Entity Name: SpaceDroneBattered01, Ref: SpaceDronePlasma
@@ -9352,7 +9353,7 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
   #PanicSpeed: 1.8
   
   ParticleOnDeath: drone_explosion02
-  TimeStayAfterDeath: 300
+  TimeStayAfterDeath: 600
 
   /* Sound Setting */
   SfxRandomTime: 50.0   /* It will play the roam every [X/2, X] seconds */
@@ -9422,7 +9423,7 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
   SfxDeath: Enemies/Drone/ROBOTICTransformationSweep01Down
 
   ParticleOnDeath: drone_explosion02
-  TimeStayAfterDeath: 300
+  TimeStayAfterDeath: 600
 
   MapIcon: map_EnemyEntityDot
   HudInfo: false
@@ -9671,6 +9672,7 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
   HandItem: antiprotonLauncherDroneLarge
   ItemsOnEnterGame: antiprotonLauncherDroneLarge
   LootListOnDeath: 174
+  TimeStayAfterDeath: 1200
 }
 { +Entity Name: DroneSpaceLegacyAntiProton, Ref: DroneSpaceTemplate
   Mesh: Enemies/Drones/LegacyDroneCrabPrefab
@@ -9682,6 +9684,7 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
   HandItem: antiprotonLauncherDroneLarge
   ItemsOnEnterGame: antiprotonLauncherDroneLarge
   LootListOnDeath: 174
+  TimeStayAfterDeath: 1200
 }
 
 #======================================================================================
