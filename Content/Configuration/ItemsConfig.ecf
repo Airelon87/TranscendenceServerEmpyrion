@@ -7625,8 +7625,8 @@
     AddRadiation: -5, display: RadiationValue
     Debuff: "RadiationPoisoning,RadiationBurn", display: EffectiveAgainst
     SfxBegin: UseActions/exhale
-    Buff: Flatulence
-    Buff_chance: 1
+    Buff: Flatulence      #TR 7.2.6
+    Buff_chance: 0.1
   }
 }
 

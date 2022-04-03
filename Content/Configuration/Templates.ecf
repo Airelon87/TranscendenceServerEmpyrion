@@ -608,10 +608,10 @@
 
 { +Template Name: GoldCoins
   OutputCount: 5 #A2
-  CraftTime: 3
+  CraftTime: 6
   Target: "LargeC,AdvC"
   { Child Inputs
-    GoldIngot: 2
+    GoldIngot: 10
   }
 }
 

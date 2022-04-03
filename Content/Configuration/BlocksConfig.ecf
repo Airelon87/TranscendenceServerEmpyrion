@@ -33781,17 +33781,21 @@
   CustomIcon: GeneratorSVSmall
   EnergyOut: 100000, type: int, display: true, formatter: Watt
   EnergyIn: -100000, type: int, display: true, formatter: Watt
-  MarketPrice: 9999999, display: true
+  MarketPrice: 87245000, display: true
   CPUIn: 1, type: int, display: true
   SizeInBlocks: "1,1,1", display: true
   Volume: 1, type: float, display: true, formatter: Liter
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   BlockColor: "170,5,5"
-  HitPoints: 1000000, type: int, display: true
+  HitPoints: 100000, type: int, display: true
   StackSize: 250
   AllowPlacingAt: "Base,MS,SS,GV", display: true
-  Info: Admin Use Only, display: true 
+  Info: This small generator developed a growing Black Hole within its Flux Capaciter. Dont ask how it happened!, display: true 
   UpgradeTo: null, display: true
+
+  BlastParticleIndex: 10
+  BlastRadius: 12
+  BlastDamage: 90000, type: int, display: true
   
   UnlockCost: 0, display: true
   UnlockLevel: 0, display: true
@@ -33967,12 +33971,12 @@
   DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
   { Child PlantGrowing
     Next: GoldSeedCrystal2
-    GrowthRate: 15
+    GrowthRate: 30
     FertileLevel: 5
     OnDeath: PlantDead2
   }
   IsAccessible: false, type: bool
-  EnergyIn: 2, type: int, display: true, formatter: Watt
+  EnergyIn: 16, type: int, display: true, formatter: Watt
   CPUIn: 5, type: int, display: true  
   ShieldCapacityBonus: 8, type: int, display: true
   ShieldRechargeBonus: 2, type: int, display: true
@@ -33985,8 +33989,8 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: GoldCoins, display: true
-  CropYield: 5, display: true
+  CropType: GoldOre, display: true
+  CropYield: 1, display: true
   GrowthTimeInfo: 31, type: int, display: true, formatter: Minutes
   Mass: 200, type: float, display: true, formatter: Kilogram
   Volume: 120.5, type: float, display: true, formatter: Liter
@@ -34017,8 +34021,8 @@
   Shape: ModelEntity
   DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
   { Child DropOnHarvest
-    Item: GoldCoins
-    Count: 5
+    Item: GoldOre
+    Count: 1
   }
   { Child CropsGrown   
     OnHarvest: GoldSeedCrystal
@@ -34039,7 +34043,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: GoldCoins, display: true
+  CropType: GoldOre, display: true
   CropYield: 1, display: true
   GrowthTimeInfo: 31, type: int, display: true, formatter: Minutes
   Mass: 400, type: float, display: true, formatter: Kilogram
