@@ -160,6 +160,14 @@ SolarSystems:
         Playfields:
           - ['0,0,0', AdminiumSpace, AdminiumSpace]
       - Coordinates:
+          - -25
+          - -5
+          - -25
+        Color: '0.5, 0.5, 0.5'
+        SectorMapType: AsteroidField
+        Playfields:
+          - ['0,0,0', TutorialsOrbit, TutorialsOrbit]
+      - Coordinates:
           - 75
           - 0
           - 75

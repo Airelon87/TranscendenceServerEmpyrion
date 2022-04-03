@@ -9461,3 +9461,8 @@
   Option_1: "Thanks for letting me know about this great and dangerous harvest."
   OptionNext_1: End
 }
+{ +Dialogue Name: TR_KorLogicTrainer
+  NPCName: "Logic Trainer Terminal"
+  Execute_1: "OpenHtmlWindow('LogicTrainer Signal Setup', 'https://airelon87.wixsite.com/transcendanceemp/kors-logic-trainer', 1f, 1f)"
+  Next_1: End
+}

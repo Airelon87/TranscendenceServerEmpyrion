@@ -1,0 +1,114 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Kors Logic Trainer - By Dark Koreth - Transcendence Server - v1.7.8_Tr7.2.6 - 3 April 2022
+# --------------------------------------------------------------------------------------------------------------------------
+#
+# Seed: 2309566 #Defualt Transcendence Seed
+TemperatureDay: 22
+PlayfieldLevel: 2
+IsOrbitPlayfield: False
+Music: space
+Description: A place for instance style tutorial structures.
+PlanetType: Space
+PlayfieldType: Space
+AtmosphereEnabled: False
+Difficulty: 2
+LandClaimZone: Device
+SunFlare: EnvironmentalEffects/SunFlareWhiteSpace
+Build: 3720
+Radiation: 0
+PvP: False
+UseFixed: True
+AllowBA: False
+AllowCV: False
+AllowSV: False
+AllowHV: False
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+Instance:
+   Time: 240
+   MaxPlayers: 3
+   PortalOpen: 360
+   Cooldown: 120
+   DropInventory: False
+
+POIs:
+   Fixed:
+   -  Type: AsteroidFieldBoxExclude
+      Name: Asteroid Field
+      Pos: [0, 0, 0]
+      Rot: [-81, -143, 135]
+   -  Type: BA_Admin
+      Prefab: KorsLogicTrainer
+      Name: KorsLogicTrainer
+      InitPower: True
+      Pos: [116.92, 289.04, 84.95]
+      Rot: [0, 90, 0]
+      Properties:
+      -  Key: Music
+         Value: moonstone
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-610, -150, -610]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-620, 0, -600]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+   -  Type: AsteroidVoxel01Promethium
+      Prefab: AsteroidVoxel01Promethium
+      Name: Promethium Asteroid
+      Pos: [-600, 150, -620]
+      Rot: [0, -42, 0]
+      Properties:
+      -  Key: RegenAfter
+         Value: 60
+
+   # FixedPlayerStart:
+   # -  Mode: Debug
+   #    Pos: [0, 500, 0]
+   #    Items: [CrushedStone, CrushedStone, CrushedStone]
+   #    Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+
+DroneBaseSetup:
+   Fixed:
+   -  Name: MainDroneBase
+      Pos: [-5817, -1734, -1846]
+      DroneOnDuty:
+      -  Name: SpaceDroneLaser
+         Pos: [-4573, 1073, 1557]
+         Radius: 589
+      SpaceVessel:
+      -  Name: TalonShipSpace
+         Faction: UCH
+         FixedMaxSpeed: 5
+         Mission: Freighter
+         Freighter:
+            DelayBetweenRespawn: 1
+            DelayBeforeSelfDestruction: 700
+            IsRespawnAfterDestruction: True
+            PathWayPoint:
+            - [13498, 883, -2792]
+            - [15000, 516, 1122]
+            - [13842, -2028, 3388]
+            - [11713, 2246, 4719]
+            - [-11713, 800, 800]
+            - [-12701, -733, 4424]
+            - [-14012, 572, 1350]
+            - [-14211, -1437, -1650]
+            - [-12447, 2282, -4490]
+            - [-11750, -750, 1700]
+            - [11055, 1790, -5230]
+         Stock:
+         -  Name: SpaceDronePlasma
+            Amount: 1
+            Extra: 0
