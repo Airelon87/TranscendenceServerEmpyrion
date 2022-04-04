@@ -33990,7 +33990,7 @@
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
   CropType: GoldOre, display: true
-  CropYield: 1, display: true
+  CropYield: 3, display: true
   GrowthTimeInfo: 31, type: int, display: true, formatter: Minutes
   Mass: 200, type: float, display: true, formatter: Kilogram
   Volume: 120.5, type: float, display: true, formatter: Liter

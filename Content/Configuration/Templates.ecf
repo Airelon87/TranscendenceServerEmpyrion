@@ -6856,4 +6856,206 @@
   }
 }
 
+#TR7.2.6 Reports Templates 
+#Only for reports to not be required for repairs
+{ +Template Name: ReportMaintenanceData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportWorkShiftData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportTransportationData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportCommunicationData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportEconomicData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportScienceRawData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportBiologicalData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportMaterialData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportArcheologicalData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportAnomalousData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportExplorationRawData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportGeologicalData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportAtmosphericData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportAstronomicalData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportPlanetaryResourceData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportSpaceWeather
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportNavigationData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportSpaceAnomality
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportWarpSignatures
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportWeaponSignatures
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportMilitaryRawData
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportMilitaryScouting
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportMilitarySurveillance
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportMilitaryTroopMovement
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
+{ +Template Name: ReportMilitaryClassified
+  CraftTime: 1
+  OutputCount: 1
+  Target: ""
+  { Child Inputs
+    Electronics: 1
+  }
+}
 
