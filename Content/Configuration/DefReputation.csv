@@ -1,0 +1,179 @@
+# Transcendence WIP DefRep
+
+{ Reputation Name ,Action.Reputation,
+  Order                   ,Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu,   Rados, Epsilon, Ghyst,   Serdu, Abyssal,  Tesch,   Ziblon,   Galorian,   Vladian,   RoboticsSyndicate, Description
+  AttackedMember          , -0.1,  -0.1,    -0.1,    -0.1,   -0.1,   -0.1,      -0.1, -0.1,    -0.1,    -0.1,  -0.1,    -0.1,    -0.1,   -0.1,   -0.1,  -0.1,         -0.1,   -0.1,  Drops to NeutralMin
+  KilledMember            , -300,  -300,    -300,    -300,   -300,   -300,      -300, -300,    -300,    -300,  -300,    -300,    -300,   -300,   -300,  -300,         -300,   -300, NOT multiplied with damage points. Drops to UnfriendlyMax
+  DestroyBlock            , -100,   -50,     -50,    -100,    -30,    -30,       -30,  -30,     -30,     -30,   -30,     -30,     -30,    -30,    -30,   -50,          -20,    -75,
+  ShieldAttacked          ,  -50,   -30,     -30,     -30,    -30,    -30,       -30,  -30,     -30,     -30,   -30,     -30,     -30,    -30,    -30,   -50,          -10,    -30,
+  OpenContainer           ,  -10,   -10,     -10,     -10,    -10,      0,       -20, -200,    -200,    -200,  -200,    -200,    -200,   -200,   -200,   -10,           -2,    -15,
+  AttackedPrey            ,  0.1,  -0.1,       0,       0,    0.1,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,     0,            0,      0, multiplied with damage points
+  AttackedPredator        ,  0.1,   0.3,     0.1,     0.1,    0.1,    0.1,       0.1,  0.1,     0.1,     0.1,   0.1,     0.1,     0.1,    0.1,    0.1,   0.1,          0.2,    0.1, multiplied with damage points
+  StructSpawnedInTerritory, -100,  -100,    -100,    -100,   -100,   -100,      -100, -100,    -100,    -100,  -100,    -100,    -100,   -100,   -100,  -100,         -100,   -100,
+  StructStayInTerritory   ,  -25,   -50,     -25,     -50,    -25,    -25,       -25,  -25,     -25,     -25,   -25,     -25,     -25,    -25,    -25,   -25,           -5,    -25, every 5min realtime and only WITH pilot 
+  OreMined                ,    0,     0,       0,       0,      0,      0,         0,    0,     -20,     -20,   -20,     -20,     -20,    -20,    -20,   -20,           -5,    -20, about every 10 ores
+  PlantHarvest            ,    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,     0,            0,      0,
+  PlantDestroy            ,    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,     0,            0,      0,
+  OutsideHostileTerritory ,   25,    25,      25,      25,     25,     25,        25,   25,      25,      25,    25,      25,      25,     25,     25,    25,           40,     15,
+}
+
+{ Reputation Name ,Action.TriggerLevel,
+  AttackedMember  ,NeutralMin,
+  KilledMember    ,UnfriendlyMax,
+  DestroyBlock    ,NeutralMin,
+  ShieldAttacked  ,NeutralMin,
+  OpenContainer   ,NeutralMax,
+}
+
+{ Reputation Name ,Action.ThresholdLevel,
+  StructSpawnedInTerritory ,Honored,
+  StructStayInTerritory    ,Friendly,
+  OreMined                 ,Neutral,
+  PlantHarvest             ,Neutral,
+  PlantDestroy             ,Friendly,
+}
+
+{ Reputation Name ,Zirax.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0, -0.1,  -0.1,    -0.1,  -0.1,  -0.1,      -1,     0,     0,     0,     0,     0, 
+  KilledMember            ,    0,     5,     5,        15,    25,      0,         0,   -5,    -5,      -5,    -5,    -5,     -15,     0,     5,     10,    5,    -2,
+  DestroyBlock            ,    0,     0,     1,         1,     2,      0,         0,   -1,    -1,      -1,    -1,    -1,      -1,     0,     1,     10,    5,    -2,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,   -1,    -1,      -1,    -1,    -1,      -1,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,  -10,   -10,     -10,   -10,   -10,     -10,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Talon.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,    -5,     0,     2, 
+  KilledMember            ,   15,     0,    -5,         5,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,   -10,     0,     5,
+  DestroyBlock            ,    1,     0,    -1,         1,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,   -10,     0,     5,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Polaris.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     -5,     0, 
+  KilledMember            ,    5,    -5,     0,        15,     0,      0,       -10,    0,     0,       0,     0,       0,     0,     0,   -10,     0,     -5,     0,
+  DestroyBlock            ,    1,    -1,     0,         1,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,    -1,     0,     -5,     0,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,      0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,      0,     0,
+}
+{ Reputation Name ,Pirates.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     -10, 
+  KilledMember            ,   15,     1,    15,         0,    15,     15,         5,    0,     0,       0,     0,       0,     0,     0,    15,     10,   10,     -10,
+  DestroyBlock            ,    1,     1,     1,         0,     1,      1,         0,    0,     0,       0,     0,       0,     0,     0,     1,     1,     1,     -10,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,       0,
+  StructSpawnedInTerritory,    2,     0,     5,         0,     2,      5,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,       0,
+}
+{ Reputation Name ,Kriel.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0, 
+  KilledMember            ,   25,     0,     0,        30,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,    10,     0,     0,     0,
+  DestroyBlock            ,    2,     0,     0,         1,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     1,     0,     0,     0,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Trader.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     -10,     0, 
+  KilledMember            ,    0,     0,     0,        50,     0,      0,       -10,    0,     0,       0,     0,       0,     0,     0,     0,     0,     -10,     0,
+  DestroyBlock            ,    0,     0,     0,         2,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     -10,     0,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,       0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,       0,     0,
+}
+{ Reputation Name ,Xenu.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          , -0.1,     0,     0,         0,     0,      0,         0,    0,  -0.1,    -0.5,    -1,   0.1,     0.5,     0,     0,     0,     0,     0, 
+  KilledMember            ,  -15,     5,     5,        25,    50,      0,         0,    0,    -5,      -7,   -15,     2,       4,     0,     5,     0,     0,     0,
+  DestroyBlock            ,   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,     0,     0,     0,
+  OpenContainer           ,   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Rados.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          , -0.5,     0,     0,         0,     0,      0,         0, -0.1,     0,    -0.1,  -0.1,  -0.5,    -0.5,     0,     0,     0,     0,     0, 
+  KilledMember            ,  -15,     5,     5,        30,    50,      0,         0,   -5,     0,      -5,    -5,    -7,      -7,     0,     5,     0,     0,     0,
+  DestroyBlock            ,   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,     0,     0,     0,
+  OpenContainer           ,   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Epsilon.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          , -0.5,     0,     0,         0,     0,      0,         0, -0.5,  -0.1,       0,  -0.5,  -0.1,    -0.1,     0,     0,     0,     0,     0, 
+  KilledMember            ,  -10,     5,     5,        30,    50,      0,         0,   -7,    -5,       0,    -7,    -5,      -5,     0,     5,     0,     0,     0,
+  DestroyBlock            ,   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,     0,     0,     0,
+  OpenContainer           ,   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Ghyst.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          , -0.1,     0,     0,         0,     0,      0,         0,   -1,  -0.5,    -0.1,     0,   0.1,    0.5,     0,     0,     0,     0,     0, 
+  KilledMember            ,  -15,     5,     5,        30,    50,      0,         0,  -15,    -7,      -5,     0,     2,      4,     0,     5,     0,     0,     0,
+  DestroyBlock            ,   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,      0,     0,     1,     0,     0,     0,
+  OpenContainer           ,   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,      0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,      0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Serdu.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          , -0.8,     0,     0,         0,     0,      0,         0,  0.5,  -0.1,    -0.5,   0.1,     0,      -1,     0,     0,     0,     0,     0, 
+  KilledMember            ,  -20,     5,     5,        30,    50,      0,         0,    4,    -5,      -7,     2,     0,     -15,     0,     5,     0,     0,     0,
+  DestroyBlock            ,   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,     0,     0,     0,
+  OpenContainer           ,   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Abyssal.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,   -1,     0,     0,         0,     0,      0,         0,  0.5,  -0.1,    -0.5,   0.1,    -1,       0,     0,     0,     0,     0,     0, 
+  KilledMember            ,  -25,     5,     5,        30,    50,      0,         0,    4,    -5,      -7,     2,   -15,       0,     0,     5,     0,     0,     0,
+  DestroyBlock            ,   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,     0,     0,     0,
+  OpenContainer           ,   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Colonists.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0, 
+  KilledMember            ,  -10,     0,   -10,        -5,     0,    -10,         0,    0,     0,       0,     0,       0,     0,     0,   -10,     0,     0,     0,
+  DestroyBlock            ,    0,     0,     0,       -15,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Tesch.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0, 
+  KilledMember            ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  DestroyBlock            ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Ziblon.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0, 
+  KilledMember            ,    0,     0,   -15,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  DestroyBlock            ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Vladian.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate
+  AttackedMember          ,    1,     0,    -1,         0,    -1,      0,         0,    1,     1,       1,     1,       1,     0,     0,     0,     0,    -1,     0, 
+  KilledMember            ,    2,     0,    -1,         0,    -1,      0,         0,    1,     1,       1,     1,       1,     0,     0,     0,    -1,    -2,     0,
+  DestroyBlock            ,    5,     0,    -1,         0,    -1,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,    -5,    -5,     0,
+  OpenContainer           ,    0,     0,     0,         1,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,     0,     0,
+}
+{ Reputation Name ,Galorian.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate, 
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0, 
+  KilledMember            ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0,
+  DestroyBlock            ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0,
+}
+{ Reputation Name ,RoboticsSyndicate.Rivalry,
+  #Order                  ,Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Ziblon   Galorian,   Vladian,   RoboticsSyndicate, 
+  AttackedMember          ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0, 
+  KilledMember            ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0,
+  DestroyBlock            ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0,
+  OpenContainer           ,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0,
+  StructSpawnedInTerritory,    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,     0,             0,     0,
+}

@@ -6267,7 +6267,7 @@
 }
 { +Item Id: 215, Name: Nanotubes, Ref: ComponentsTemplate    # former: Pipes
   ShowUser: Yes
-  MarketPrice: 0.5, display: true
+  MarketPrice: 3, display: true
   Mass: 0.57, type: float, display: true, formatter: Kilogram
   Volume: 2.25, type: float, display: true, formatter: Liter
 }
@@ -10355,7 +10355,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 600, Name: ArmorLight
   Class: Armor
   RecipeName: LightArmor
-  MarketPrice: 1500
+  MarketPrice: 500
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metal    
@@ -10433,7 +10433,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { +Item Id: 602, Name: ArmorHeavy
   Class: Armor  
   RecipeName: HeavyArmor
-  MarketPrice: 9000
+  MarketPrice: 16000
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metal
@@ -10474,7 +10474,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { Item Id: 603, Name: ArmorLightEpic
   Class: Armor
   RecipeName: LightArmorEpic
-  MarketPrice: 1500
+  MarketPrice: 10000
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metal    
@@ -10517,6 +10517,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 { Item Id: 604, Name: ArmorMediumEpic, Ref: ArmorLightEpic
   RecipeName: MediumArmorEpic
   Durability: 2800, display: true
+  MarketPrice: 48000
   Oxygen: 850, type: int, display: true
   Armor: 400, type: int, display: true
   Heat: 100, type: int, display: true
@@ -10548,7 +10549,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
 ## Please do not rename - referenced in code
 { +Item Id: 605, Name: ArmorHeavyEpic, Ref: ArmorLightEpic
   RecipeName: HeavyArmorEpic
-  
+  MarketPrice: 64000
   Durability: 5000, display: true
   Oxygen: 1000, type: int, display: true
   Armor: 525, type: int, display: true
@@ -10747,6 +10748,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   VolumeCapacity: 3000, type: float, display: true, formatter: Liter 
   SpeedFac: -0.1, type: float, display: true
   CustomIcon: EVABoost
+  MarketPrice: 500
 
   UnlockCost: 2, display: true
   UnlockLevel: 7, display: true
@@ -10772,7 +10774,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   FoodFac: 0.26, type: float, display: true
   VolumeCapacity: 250, type: float, display: true, formatter: Liter
   
-  MarketPrice: 50000
+  MarketPrice: 20000
   Volume: 2.5, type: float, display: true, formatter: Liter
   Mass: 5.5, type: float, display: true, formatter: Kilogram
 
@@ -10787,7 +10789,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Volume: 2.25, type: float, display: true, formatter: Liter
   Mass: 4.25, type: float, display: true, formatter: Kilogram
-  MarketPrice: 36000
+  MarketPrice: 16000
   ShowUser: Yes
 }
 { Item Id: 652, Name: MultiBoostEpic, Ref: MultiBoost
@@ -10806,7 +10808,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Volume: 3.5, type: float, display: true, formatter: Liter
   Mass: 7.5, type: float, display: true, formatter: Kilogram
-  MarketPrice: 36000
+  MarketPrice: 16000
 
   UnlockCost: 5, display: true
   UnlockLevel: 15, display: true
@@ -10824,7 +10826,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Volume: 4.5, type: float, display: true, formatter: Liter
   Mass: 5.5, type: float, display: true, formatter: Kilogram
-  MarketPrice: 36000
+  MarketPrice: 16000
   ShowUser: Yes
 }
 { Item Id: 654, Name: InsulationBoostEpic, Ref: InsulationBoost #nixxed
@@ -10835,7 +10837,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Volume: 9.5, type: float, display: true, formatter: Liter
   Mass: 12.5, type: float, display: true, formatter: Kilogram
-  MarketPrice: 18000
+  MarketPrice: 12000
   ShowUser: Yes
 }
 { Item Id: 655, Name: MobilityBoostEpic, Ref: MobilityBoost
@@ -10854,7 +10856,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   
   Volume: 9.5, type: float, display: true, formatter: Liter
   Mass: 40.5, type: float, display: true, formatter: Kilogram
-  MarketPrice: 18000
+  MarketPrice: 24000
   ShowUser: Yes
 }
 { Item Id: 656, Name: RadiationBoostEpic, Ref: RadiationBoost
@@ -10866,7 +10868,7 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   Volume: 7.5, type: float, display: true, formatter: Liter
   VolumeCapacity: 100, type: float, display: true, formatter: Liter
   Mass: 9.5, type: float, display: true, formatter: Kilogram
-  MarketPrice: 9000
+  MarketPrice: 6000
   ShowUser: Yes
 }
 { Item Id: 657, Name: EVABoostEpic, Ref: EVABoost
@@ -13575,8 +13577,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 5, display: HealthValue
-    AddStamina: 3, display: StaminaValue
+    AddHealth: 20, display: HealthValue
+    AddStamina: 53, display: StaminaValue
     AddFood: 2, display: FoodValue
     AddOxygen: 0
     Debuff: "Indigestion", display: EffectiveAgainst
@@ -13598,9 +13600,9 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 5, display: HealthValue
-    AddStamina: 3, display: StaminaValue
-    AddFood: 2, display: FoodValue
+    AddHealth: 50, display: HealthValue
+    AddStamina: 30, display: StaminaValue
+    AddFood: 8, display: FoodValue
     AddOxygen: 0
     Debuff: "LethalDose", display: EffectiveAgainst
     SfxBegin: UseActions/playerSwallow
@@ -13619,8 +13621,8 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
   { Child 0
     Class: Eat
     ROF: 1, type: float
-    AddHealth: 25, display: HealthValue
-    AddStamina: 50, display: StaminaValue
+    AddHealth: 125, display: HealthValue
+    AddStamina: 150, display: StaminaValue
     AddFood: 3, display: FoodValue
     AddOxygen: 0
     Debuff: "KrielienWithdrawl,DermalParasite,EndoParasite,EndoParasite2,InfectedWound", display: EffectiveAgainst
@@ -13920,6 +13922,25 @@ Toxin:      PoisonBite,Indigestion          PoisonBite2,Intoxication
     AddTemperature: 4, display: TemperatureValue
     Debuff: "Hangover,KrielienWithdrawl,Frostbite", display: EffectiveAgainst 
     SfxBegin: UseActions/playerDrinking
+  }
+}
+{ +Item Id: 1486, Name: ZiblonNoir2309, Ref: FoodTemplate
+  MarketPrice: 100, display: true
+  CustomIcon: AkuaWine
+  Info: A fine wine among Ziblon politicians enjoyed after civil debate. As the grapes are perfect copies of one another the vintage retains the same year on the label every season., display: true
+  ShowUser: Yes
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 330, display: HealthValue
+    AddStamina: 450, display: StaminaValue
+    AddFood: 170, display: FoodValue
+    AddOxygen: 0
+	  AddTemperature: -10, display: TemperatureValue
+    SfxBegin: UseActions/playerDrinking
+    Debuff: "OpenWound,BoilingBite,FlameON", display: EffectiveAgainst 
+    Buff: "Hangover,Intoxication,Flatulence"
+    Buff_chance: "0.1,0.2,0.1"
   }
 }
 #Required to craft Havenopolis Food Items

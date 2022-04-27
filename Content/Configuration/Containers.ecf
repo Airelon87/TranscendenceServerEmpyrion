@@ -692,7 +692,7 @@
 
   { Child Items
     Name_0: SathiumIngot, param1: 0.5, param2: "15,30"
-    Name_1: DetectorHVEpicUpgradeKit, param1: 0.3, param2: 1
+    Name_1: LaserSentryGunT3, param1: 0.1, param2: 1
     Name_2: PulseRifleT2, param1: 0.4, param2: 1
     Name_3: Shotgun2, param1: 0.4, param2: 1
     Name_4: WeaponSV01, param1: 0.2, param2: 1
@@ -2021,9 +2021,9 @@
     Name_4: ReportWeaponSignatures, param1: 0.1, param2: 1
     Name_5: AlienOrganism, param1: 0.8, param2: "5,6"
     Name_6: Chemicals, param1: 0.6, param2: "2,3"
-    Name_7: PlatinBar, param1: 0.4, param2: "5,15"
-    Name_8: PentaxidSeedCrystal, param1: 0.6, param2: "1,2"
-    Name_9: DetectorHVEpicUpgradeKit, param1: 0.1, param2: 1
+    Name_7: PlatinBar, param1: 0.2, param2: "5,15"
+    Name_8: PentaxidSeedCrystal, param1: 0.4, param2: "1,2"
+    Name_9: LaserArrows, param1: 0.05, param2: "256,512"
     Name_10: ReportExplorationRawData, param1: 0.1, param2: 1
     Name_11: WarpDriveCVEpicUpgradeKit, param1: 0.1, param2: 1
     Name_12: ReportScienceRawData, param1: 0.1, param2: 1

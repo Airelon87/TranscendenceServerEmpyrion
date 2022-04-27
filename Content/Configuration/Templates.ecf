@@ -6404,7 +6404,7 @@
 
 { +Template Name: LaserArrows 
   CraftTime: 30
-  OutputCount: 32
+  OutputCount: 192
   Target: "SmallC,HoverC,BaseC,SurvC,LargeC,AdvC"
   { Child Inputs
     WoodLogs: 1
