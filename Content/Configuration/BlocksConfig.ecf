@@ -33815,11 +33815,12 @@
   Category: BuildingBlocks
   CanPlayersSpawnOn: false
   Info: bkiWaterBlock, display: true  
-  Material: water
+  #Material: water
+  Material: alien
+  Texture: 107
   Shape: LiquidBlock
   Model: Cube
   Mesh: water
-  #Texture: 107
   Place: Free
   Mass: 400, type: float, display: true, formatter: Kilogram
   StackSize: 1000
@@ -33842,11 +33843,12 @@
   CanPlayersSpawnOn: false
   PickupTarget: VentilatorBlocks
   Info: bkiLavaBlock, display: true 
-  Material: lava
+  #Material: lava
+  Material: alien
+  Texture: 121
   Shape: LiquidBlock
   Model: Cube
   Mesh: lava
-  #Texture: 107
   Place: Free
   Mass: 400, type: float, display: true, formatter: Kilogram
   HitPoints: 3000, type: int, display: true
@@ -33861,7 +33863,7 @@
     Color: "255,220,70"
     Color2: "255,0,0"
     ElevMinMax: "15,30"
-    Specular: 0.7
+    Specular: 0.8
     Emissive: 1
   }
 }
@@ -34939,4 +34941,38 @@
   UnlockLevel: 0, display: true
   TechTreeParent: ""
   TechTreeNames: Hidden
+}
+# ========================
+# Unity Custom Models
+# ========================
+{ Block Name: CustomBlockTest, Ref: GeneratorSVSmall
+  Model: @blockmodels/TR_ReflectorWall_Variant
+  CustomIcon: GeneratorSVSmall
+  EnergyOut: 100000, type: int, display: true, formatter: Watt
+  EnergyIn: -100000, type: int, display: true, formatter: Watt
+  MarketPrice: 87245000, display: true
+  CPUIn: 1, type: int, display: true
+  SizeInBlocks: "1,2,1", display: true
+  Volume: 1, type: float, display: true, formatter: Liter
+  Mass: 10000, type: float, display: true, formatter: Kilogram
+  BlockColor: "170,5,5"
+  HitPoints: 100000, type: int, display: true
+  StackSize: 250
+  AllowPlacingAt: "Base,MS,SS,GV", display: true
+  Info: This small generator developed a growing Black Hole within its Flux Capaciter. Dont ask how it happened!, display: true 
+  UpgradeTo: null, display: true
+
+  BlastParticleIndex: 10
+  BlastRadius: 12
+  BlastDamage: 90000, type: int, display: true
+  
+  UnlockCost: 0, display: true
+  UnlockLevel: 0, display: true
+  TechTreeParent: ""
+  TechTreeNames: Hidden 
+
+  ShieldCapacityBonus: 100000, type: int, display: true
+
+  Temperature: 0, display: false
+  Radiation: 0, display: RadiationLevel
 }
